@@ -122,9 +122,7 @@ export default class SongView {
   }
 
   setKey(key) {
-    this.key_e.textContent += key;
-    // this.voice_e.textContent += "[Voice 1]";
-    // this.instrument_e.textContent += "[Guitar]";
+    this.key_e.textContent = key;
   }
 
   addTuning(title, tuning, capo) {
