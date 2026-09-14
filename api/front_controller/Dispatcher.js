@@ -3,7 +3,7 @@ import ListController from '../controllers/ListController.js';
 import SongController from '../controllers/SongController.js';
 
 export default class Dispatcher {
-  #routes[];
+  #routes = [];
   
   constructor() {
     this.#routes[""] = new MainController();
