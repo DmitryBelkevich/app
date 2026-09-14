@@ -42,22 +42,20 @@ export default class SongController {
 
     // *** binding controller-view ***
 
+    // binding: view -> model
+
     // tabs
     this.view.bindTextTab(this.openText);
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
 
     // settings
-
-    // transposer
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
-    
-    // autoscroll
     this.view.bindAutoscroll(this.auto_scroll);
   }
 
-  // *** logic ***
+  // *** handlers ***
 
   // tabs
 
