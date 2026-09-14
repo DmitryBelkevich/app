@@ -4,6 +4,8 @@ import Tuning from '../helpers/Tuning.js';
 export default class SongView {
   constructor() {
     this.cssLoader = new CssLoader();
+
+    // *** components ***
     
     // reset css
     this.cssLoader.load("../api/views/css/reset.css");
@@ -96,9 +98,8 @@ export default class SongView {
     this.footer.id = "footer";
     this.footer.textContent = "Copyright © Dmitry Belkevich";
     
-    // body fill
-    this.body = document.body;
-    this.body.append(
+    // *** fill container ***
+    document.body.append(
       this.title,
       this.tabs,
       this.display,
@@ -108,6 +109,8 @@ export default class SongView {
       this.footer
     );
   }
+
+  // *** render ***
 
   setPageTitle(title) {
     document.title = title;
@@ -155,7 +158,7 @@ export default class SongView {
     this.text.innerHTML = text;
   }
 
-  // *** binding view-controller ***
+  // *** binding: view -> controller ***
 
   // tabs
   
@@ -178,8 +181,6 @@ export default class SongView {
   }
 
   // settings
-
-  // transposer
   
   bindTransposeDown(handler) {
     this.transpose_down.addEventListener("click", () => {
@@ -192,8 +193,6 @@ export default class SongView {
       handler();
     });
   }
-
-  // autoscroll
   
   bindAutoscroll(handler) {
     this.autoscroll_e.addEventListener("click", () => {
