@@ -7,13 +7,13 @@ export default class Dispatcher {
   
   constructor() {
     this.#routes[""] = new MainController();
-    this.#routes["/list"] = new ListController();
-    this.#routes["/song"] = new SongController();
+    this.#routes["list"] = new ListController();
+    this.#routes["song"] = new SongController();
   }
   
   dispatch(path) {
     const appName = "city_17";
-    const routeName = path.slice(("/" + appName).length, -1);
+    const routeName = path.slice(("/" + appName + "/").length);
     
     const controller = this.#routes[routeName];
     controller.init();

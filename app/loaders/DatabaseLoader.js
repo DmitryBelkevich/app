@@ -1,20 +1,20 @@
-export default class TextLoader {
+export default class DatabaseLoader {
   constructor() {
-    this.storage = "../storage/Text & Chords/";
+    this.database = "./database/";
   }
   
   async loadData(path) {
     try {
       // 1. Wait for the server headers and response status
-      const response = await fetch(this.storage + path);
+      const response = await fetch(this.database + path);
       
       // 2. Check if the HTTP status code is successful (200-299)
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       
-      // 3. Wait for the full body data to download and parse as text
-      const data = await response.text();
+      // 3. Wait for the full body data to download and parse as JSON
+      const data = await response.json();
       
       return data;
     } catch (error) {
