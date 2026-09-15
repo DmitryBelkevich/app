@@ -15,7 +15,7 @@ export default class Dispatcher {
     const appName = "city_17";
     const routeName = path.slice(("/" + appName + "/").length);
     
-    const controller = this.#routes[routeName];console.log(routeName);
+    const controller = this.#routes[routeName];
     controller.init();
   }
 }
