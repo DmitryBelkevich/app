@@ -11,11 +11,11 @@ export default class Dispatcher {
     this.#routes["song"] = new SongController();
   }
   
-  dispatch(path) {console.log(path);console.log(this.#routes);
+  dispatch(path) {
     const appName = "city_17";
     const routeName = path.slice(("/" + appName + "/").length);
     
-    const controller = this.#routes[routeName];
+    const controller = this.#routes[routeName];console.log(routeName);
     controller.init();
   }
 }
