@@ -4,7 +4,7 @@ import SongView from '../views/SongView.js';
 
 import TextLoader from '../loaders/TextLoader.js';
 
-import Autoscroll from '../helpers/page/AutoScroll.js';
+import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
 
 export default class SongController {
@@ -38,7 +38,7 @@ export default class SongController {
     this.transposer = new Transposer();
     this.transposer.key = this.song.key;
     
-    this.autoscroll = new Autoscroll();
+    this.autoScroll = new AutoScroll();
 
     // *** binding controller-view ***
 
@@ -52,7 +52,7 @@ export default class SongController {
     // settings
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
-    this.view.bindAutoscroll(this.auto_scroll);
+    this.view.bindAutoScroll(this.auto_scroll);
   }
 
   // *** handlers ***
@@ -85,9 +85,9 @@ export default class SongController {
     this.transposer.transposeUp();
   }
 
-  // autoscroll
+  // auto-scroll
   
   auto_scroll = () => {
-    this.autoscroll.run();
+    this.autoScroll.run();
   }
 }
