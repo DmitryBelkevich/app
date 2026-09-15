@@ -1,6 +1,6 @@
 export default class DatabaseLoader {
   constructor() {
-    this.database = "../database/";
+    this.database = "../api/database/";
   }
   
   async loadData(path) {
