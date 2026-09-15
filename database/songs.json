@@ -4051,6 +4051,16 @@
     "visible": "true"
   },
   {
+    "id": "83",
+    "band": "МакSим", "title": "Ветром стать",
+    "tags": ["Максим"],
+    "genre": "Pop, Dance",
+    "text": "Pop, Dance/МакSим/МакSим - Ветром стать.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1KNpI75bORgJEWscjgiDmz3KYIOB2E4Kd?usp=drive_link",
+    "visible": "true"
+  },
+  {
     "id": "314",
     "band": "МакSим", "title": "Знаешь ли ты",
     "tags": ["Максим"],
@@ -4068,6 +4078,26 @@
     "text": "Pop, Dance/МакSим/МакSим - Не отдам.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1XcMqIO9Yy477zsPCaJQjFD9H9YvJCrFc?usp=drive_link",
+    "visible": "true"
+  },
+  {
+    "id": "92",
+    "band": "МакSим", "title": "Отпускаю",
+    "tags": ["Максим"],
+    "genre": "Pop, Dance",
+    "text": "Pop, Dance/МакSим/МакSим - Отпускаю.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1gtIH9vA7f5m69u_e0cwF2LVsL9vDnIZr?usp=drive_link",
+    "visible": "true"
+  },
+  {
+    "id": "122",
+    "band": "МакSим", "title": "Трудный возраст",
+    "tags": ["Максим"],
+    "genre": "Pop, Dance",
+    "text": "Pop, Dance/МакSим/МакSим - Трудный возраст.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1WxlOQRy9aLKPK95M78JmmQrmBcm3CrR9?usp=drive_link",
     "visible": "true"
   },
   {
