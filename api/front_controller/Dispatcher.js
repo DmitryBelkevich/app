@@ -11,7 +11,7 @@ export default class Dispatcher {
     this.#routes["song"] = new SongController();
   }
   
-  dispatch(path) {
+  dispatch(path) {console.log(path);console.log(this.#routes);
     const appName = "city_17";
     const routeName = path.slice(("/" + appName + "/").length);
     
