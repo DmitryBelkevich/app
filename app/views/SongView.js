@@ -194,7 +194,7 @@ export default class SongView {
     });
   }
   
-  bindAutoscroll(handler) {
+  bindAutoScroll(handler) {
     this.autoscroll_e.addEventListener("click", () => {
       handler();
     });
