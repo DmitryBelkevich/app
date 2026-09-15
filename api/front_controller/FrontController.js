@@ -5,7 +5,7 @@ export default class FrontController {
     this.dispatcher = new Dispatcher();
   }
   
-  dispatch(path) {
-    this.dispatcher.dispatch(path);
+  handleRequest(request) {
+    this.dispatcher.dispatch(request);
   }
 }
