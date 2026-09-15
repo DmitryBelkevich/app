@@ -13,7 +13,7 @@ export default class Dispatcher {
   
   dispatch(path) {console.log(path);console.log(this.#routes);
     const appName = "city_17";
-    const routeName = path.slice(("/" + appName + "/").length);
+    const routeName = path.slice(("/" + appName).length, -1);
     
     const controller = this.#routes[routeName];
     controller.init();
