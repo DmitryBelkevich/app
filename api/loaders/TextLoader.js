@@ -1,6 +1,6 @@
 export default class TextLoader {
   constructor() {
-    this.storage = "../storage/Text & Chords/";
+    this.storage = "./storage/Text & Chords/";
   }
   
   async loadData(path) {
