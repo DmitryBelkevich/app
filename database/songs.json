@@ -1915,6 +1915,7 @@
     "text": "Rock, Punk/Кино/Кино - Красно-жёлтые дни.html",
     "score": "https://drive.google.com/file/d/1rw_1vN7uToKXvnxy69ieDewPHiv5srbt/view?usp=drivesdk)",
     "playback": "https://drive.google.com/drive/folders/1gudiVdepe6cunQryoq_J2PUA-0ZdDNK7?usp=drive_link",
+    "key": "Bm",
     "instruments": [
       {
         "title": "Guitar"
@@ -1932,6 +1933,7 @@
     "text": "Rock, Punk/Кино/Кино - Кукушка.html",
     "score": "https://drive.google.com/file/d/1f65wZfANd8p-848cPX4EoETCC56mOl-B/view?usp=drivesdk)",
     "playback": "https://drive.google.com/drive/folders/1HT5XPAs0uQzf7Moc73KiZ36kiqfg1kIi?usp=drive_link",
+    "key": "Am",
     "visible": "true"
   },
   {
@@ -1995,6 +1997,7 @@
     "text": "Rock, Punk/Кино/Кино - Мама, мы все тяжело больны.html",
     "score": "https://drive.google.com/file/d/1V69TViG81Fih0uXTCLHChmsSLw8gkM7t/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1aNDh-Oa0X2_vmqe4pvGuulYkAebVSjoV?usp=drive_link",
+    "key": "Bm",
     "instruments": [
       {
         "title": "Guitar"
@@ -2167,6 +2170,7 @@
     "text": "Rock, Punk/Кино/Кино - Спокойная ночь.html",
     "score": "https://drive.google.com/file/d/1S3p6F3eZLdUzVwdPyUqbcwZq--CKbm0I/view?usp=drivesdk)",
     "playback": "https://drive.google.com/drive/folders/1vB0MgxtVSE0ZuXL73wWrO_2q-r9bpVjY?usp=drive_link",
+    "key": "Am",
     "instruments": [
       {
         "title": "Guitar"
@@ -2219,6 +2223,7 @@
     "text": "Rock, Punk/Кино/Кино - Электричка.html",
     "score": "https://drive.google.com/file/d/1BvY-07Xg8Ax2g9KKZytZqp4CC2prWfYQ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1-QuzIjnI0fcTxyT94P_wCXptE9ZRHMBX?usp=drive_link",
+    "key": "Em",
     "instruments": [
       {
         "title": "Guitar"
@@ -2272,6 +2277,7 @@
     "text": "Rock, Punk/Комната культуры/Комната культуры - Поезда.html",
     "score": "https://drive.google.com/file/d/1MQ796S-_aWUagbADHZXbht-xT3ZMKR5E/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1cRnbIuaPHRkS3hPNmnoNFEUN8ctUEAoh?usp=drive_link",
+    "key": "Cm",
     "instruments": [
       {
         "title": "Guitar",
@@ -2287,6 +2293,7 @@
     "text": "Rock, Punk/Комната культуры/Комната культуры - Поезда (bass).html",
     "score": "https://drive.google.com/file/d/1MQ796S-_aWUagbADHZXbht-xT3ZMKR5E/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1cRnbIuaPHRkS3hPNmnoNFEUN8ctUEAoh?usp=drive_link",
+    "key": "Cm",
     "instruments": [
       {
         "title": "Bass Guitar"
@@ -2301,6 +2308,7 @@
     "text": "Rock, Punk/Комната культуры/Комната культуры - Самолёты.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Pia23b4ZEHbXACtLJCnXMUiDeJ8Jt29g?usp=drive_link",
+    "key": "Em",
     "visible": "true"
   },
   {
