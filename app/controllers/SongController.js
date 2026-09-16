@@ -26,7 +26,10 @@ export default class SongController {
     this.view.setBand(this.song.band);
     this.view.setKey(this.song.key);
     this.song.instruments.forEach((instrument, index) => {
-      this.view.addTuning(instrument.title, instrument.tuning, instrument.capo);
+      this.view.addTuning(instrument.title, instrument.tuning);
+
+      if (instrument.capo)
+        this.view.addCapo(instrument.capo);
     });
 
     // load text
@@ -88,6 +91,8 @@ export default class SongController {
   // auto-scroll
   
   auto_scroll = () => {
+    this.autoScroll.speed = 15;
+    
     this.autoScroll.run();
   }
 }

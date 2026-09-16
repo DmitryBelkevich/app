@@ -2,6 +2,14 @@ export default class AutoScroll {
   #speed = 15;//1 slow, 10 normal, 100 fast.
   #animationFrameId;
 
+  set speed(speed) {
+    this.#speed = speed;
+  }
+
+  get speed() {
+    return this.#speed;
+  }
+
   #step = () => {
     window.scrollBy(0, 1);
     

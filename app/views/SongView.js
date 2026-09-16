@@ -128,7 +128,7 @@ export default class SongView {
     this.key_e.textContent = key;
   }
 
-  addTuning(title, tuning, capo) {
+  addTuning(title, tuning) {
     const tuning_e = document.createElement("div");
 
     if (Tuning.isStandard(tuning))
@@ -139,16 +139,11 @@ export default class SongView {
     tuning_e.textContent = title + " (" + Tuning.getTitle(tuning) + ")" + " [" + tuning + "]";
     
     this.tuning.append(tuning_e);
-
-    if (capo)
-      this.addCapo(capo);
   }
 
   addCapo(capo) {
     const capo_e = document.createElement("div");
-
     capo_e.classList.add("capo");
-
     capo_e.textContent = "Capo: +" + capo;
 
     this.tuning.append(capo_e);
