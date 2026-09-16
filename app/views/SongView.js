@@ -88,7 +88,7 @@ export default class SongView {
     this.tuning.id = "tuning";
     
     // Text
-    // this.cssLoader.load("./app/views/css/song/text.css");
+    this.cssLoader.load("./app/views/css/song/text.css");
     this.text = document.createElement("div");
     this.text.id = "text";
     
