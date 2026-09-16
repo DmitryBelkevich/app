@@ -12,7 +12,7 @@ export default class Dispatcher {
   }
   
   dispatch(path) {
-    const appName = "city_17";
+    const appName = "app";
     const routeName = path.slice(("/" + appName + "/").length);
     
     const controller = this.#routes[routeName];
