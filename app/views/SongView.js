@@ -56,7 +56,7 @@ export default class SongView {
     this.display.append(this.key_e);
     
     // Settings
-    // this.cssLoader.load("./app/views/css/song/settings.css");
+    this.cssLoader.load("./app/views/css/song/settings.css");
     this.settings = document.createElement("div");
     this.settings.id = "settings";
 
