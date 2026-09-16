@@ -83,7 +83,7 @@ export default class SongView {
     this.settings.append(this.transposer_e, this.autoscroll_e);
     
     // Tuning
-    // this.cssLoader.load("./app/views/css/song/tuning.css");
+    this.cssLoader.load("./app/views/css/song/tuning.css");
     this.tuning = document.createElement("div");
     this.tuning.id = "tuning";
     
