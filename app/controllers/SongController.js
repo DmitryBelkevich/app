@@ -88,7 +88,11 @@ export default class SongController {
   // auto-scroll
   
   auto_scroll = () => {
-    this.autoScroll.speed = 100;//1 slow, 10 normal, 100 fast.
+    if (song.id == 334)
+      this.autoScroll.speed = 1;
+    if (song.id == 335)
+      this.autoScroll.speed = 100;
+    
     this.autoScroll.run();
   }
 }
