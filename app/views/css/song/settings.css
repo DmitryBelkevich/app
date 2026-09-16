@@ -1,6 +1,6 @@
 #settings {
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
   
   border: 1px solid black;
 }
@@ -13,20 +13,20 @@
 #settings {
   #autoscroll {
     margin: 0px;
-    padding: 20px 10px;
+    padding: 10px 5px;
   }
 }
 
 #settings {
   select {
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
   }
 }
 
 #settings {
   #transposer {
-    margin: 0px 10px;
+    margin: 0px 5px;
   }
 }
 
@@ -34,12 +34,12 @@
   #transposer {
     #transpose_up {
       margin: 0px;
-      padding: 20px 10px;
+      padding: 10px 5px;
     }
 
     #transpose_down {
       margin: 0px;
-      padding: 20px 10px;
+      padding: 10px 5px;
     }
   }
 }
