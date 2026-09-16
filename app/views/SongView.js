@@ -11,7 +11,7 @@ export default class SongView {
     this.cssLoader.load("./app/views/css/reset.css");
     
     // Title
-    // this.cssLoader.load("./app/views/css/song/title.css");
+    this.cssLoader.load("./app/views/css/song/title.css");
     this.title = document.createElement("div");
     this.title.id = "title";
 
