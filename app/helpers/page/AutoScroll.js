@@ -1,5 +1,5 @@
 export default class AutoScroll {
-  #speed = 15;//1 slow, 10 normal, 100 fast.
+  #speed = 10;//1 slow, 10 normal, 100 fast.
   #animationFrameId;
 
   set speed(speed) {

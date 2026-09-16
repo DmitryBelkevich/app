@@ -1,10 +1,13 @@
 #footer {
-  margin: 0px;
-  padding: 50px;
-  
   border: 1px solid black;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: grey;
   background-color: lightgrey;
-  
-  text-align: center;
+
+  font-size: 60%;
 }
