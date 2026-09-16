@@ -9,6 +9,10 @@
   background-color: darkgrey;
 }
 
+#display div {
+  font-size: 16px;
+}
+
 #display {
   #key {
     width: fit-content;
