@@ -39,7 +39,7 @@ export default class SongView {
     this.tab_playback.textContent = "🎧 Playbacks";
     
     // Tabs
-    // this.cssLoader.load("./app/views/css/song/tabs.css");
+    this.cssLoader.load("./app/views/css/song/tabs.css");
     this.tabs = document.createElement("div");
     this.tabs.id = "tabs";
     
