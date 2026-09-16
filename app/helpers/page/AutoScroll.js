@@ -6,6 +6,10 @@ export default class AutoScroll {
     this.#speed = speed;
   }
 
+  get speed() {
+    return this.#speed;
+  }
+
   #step = () => {
     window.scrollBy(0, 1);
     
