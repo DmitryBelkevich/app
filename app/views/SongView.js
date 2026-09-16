@@ -46,7 +46,7 @@ export default class SongView {
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
 
     // display
-    // this.cssLoader.load("./app/views/css/song/display.css");
+    this.cssLoader.load("./app/views/css/song/display.css");
     this.display = document.createElement("div");
     this.display.id = "display";
 
