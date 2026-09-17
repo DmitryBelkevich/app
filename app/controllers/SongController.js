@@ -37,6 +37,10 @@ export default class SongController {
     const text = await this.htmlLoader.load(this.song.text);
     this.view.setText(text);
 
+    // select
+    this.view.addOption();
+    this.view.addOption();
+
     // functions
     this.transposer = new Transposer();
     this.transposer.key = this.song.key;
