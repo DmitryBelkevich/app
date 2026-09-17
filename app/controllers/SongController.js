@@ -37,10 +37,7 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-
-    const instrument = this.song.instruments[this.#current_insrument_index];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
+    this.loadText();
 
     // select
     this.song.instruments.forEach((instrument, index) => {
@@ -79,6 +76,12 @@ export default class SongController {
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
     this.view.bindAutoScroll(this.auto_scroll);
+  }
+
+  loadText() {
+    const instrument = this.song.instruments[this.#current_insrument_index];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.view.setText(text);
   }
 
   // *** handlers ***
