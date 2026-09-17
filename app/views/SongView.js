@@ -50,14 +50,15 @@ export default class SongView {
     this.display = document.createElement("div");
     this.display.id = "display";
 
-    // key
+    // key-signature
     this.key_e = document.createElement("div");
     this.key_e.id = "key";
 
-    // select
+    // select-instrument
     this.select_e = document.createElement("select");
     this.select_e.id = "instruments";
-    
+
+    // fill display
     this.display.append(this.key_e, this.select_e);
     
     // Settings
