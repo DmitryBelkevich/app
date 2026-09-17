@@ -50,10 +50,15 @@ export default class SongView {
     this.display = document.createElement("div");
     this.display.id = "display";
 
+    // key
     this.key_e = document.createElement("div");
     this.key_e.id = "key";
+
+    // select
+    this.select_e = document.createElement("select");
+    this.select_e.id = "instruments";
     
-    this.display.append(this.key_e);
+    this.display.append(this.key_e, this.select_e);
     
     // Settings
     this.cssLoader.load("./app/views/css/song/settings.css");
@@ -128,6 +133,15 @@ export default class SongView {
     this.key_e.textContent = key;
   }
 
+  addOption(index, title) {
+    const option = document.createElement("option");
+
+    option.value = index;
+    option.textContent = title;
+    
+    this.select_e.append(option);
+  }
+
   addTuning(title, tuning) {
     const tuning_e = document.createElement("div");
 
@@ -172,6 +186,14 @@ export default class SongView {
   bindPlaybackTab(handler) {
     this.tab_playback.addEventListener("click", () => {
       handler();
+    });
+  }
+
+  // display
+
+  bindSelect(handler) {
+    this.select_e.addEventListener("change", (event) => {
+      handler(event);
     });
   }
 
