@@ -53,7 +53,7 @@ export default class SongView {
     // key-signature
     this.title1_e = document.createElement("div");
     this.title1_e.classList.add("title");
-    this.title1_e.textContent = "main key: ";
+    this.title1_e.textContent = "key: ";
     
     this.key_e = document.createElement("div");
     this.key_e.id = "key";
