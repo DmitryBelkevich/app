@@ -81,6 +81,8 @@ export default class SongController {
       window.open(this.song.playback, "_blank");
   }
 
+  // display
+
   // settings
 
   // transposer
