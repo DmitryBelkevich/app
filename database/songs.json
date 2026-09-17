@@ -360,6 +360,10 @@
     "instruments": [
       {
         "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar",
+        "tuning": ["D", "G", "C", "F"]
       }
     ],
     "visible": "true"
@@ -373,6 +377,9 @@
     "playback": "https://drive.google.com/drive/folders/1NzZgkt2VJ07ge67Xkyp6mceYfJQSX0aD?usp=drive_link",
     "key": "Cm",
     "instruments": [
+      {
+        "title": "Guitar"
+      },
       {
         "title": "Bass Guitar",
         "tuning": ["D", "G", "C", "F"]
@@ -392,6 +399,9 @@
       {
         "title": "Guitar",
         "tuning": ["B", "F#", "B", "E", "G#", "C#"]
+      },
+      {
+        "title": "5-string Bass Guitar"
       }
     ],
     "visible": "true"
@@ -405,6 +415,10 @@
     "playback": "https://drive.google.com/drive/folders/1jOYtYQkapoxvRZNLmaiubSZ01xmYpc63?usp=drive_link",
     "key": "Bm",
     "instruments": [
+      {
+        "title": "Guitar",
+        "tuning": ["B", "F#", "B", "E", "G#", "C#"]
+      },
       {
         "title": "5-string Bass Guitar"
       }
@@ -702,6 +716,9 @@
       {
         "title": "Guitar",
         "capo": 2
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -715,6 +732,10 @@
     "playback": "https://drive.google.com/drive/folders/1HFyp4Cl05oUFBQdZ6V2xWQ2S3sVNb-hF?usp=drive_link",
     "key": "Em",
     "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 2
+      },
       {
         "title": "Bass Guitar"
       }
@@ -924,6 +945,9 @@
       {
         "title": "Guitar",
         "capo": 2
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -937,6 +961,10 @@
     "playback": "https://drive.google.com/drive/folders/1EkgqJ9tYQ_R_d5Oj-d5ZuGBhwTrKhKOT?usp=drive_link",
     "key": "Bm",
     "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 2
+      },
       {
         "title": "Bass Guitar"
       }
@@ -988,6 +1016,9 @@
       {
         "title": "Guitar",
         "capo": 6
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -1001,6 +1032,10 @@
     "playback": "https://drive.google.com/drive/folders/1M_jW1kq2Nlh3vTB8FcRcC-9Q3OGQsjCr?usp=drive_link",
     "key": "D#m",
     "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 6
+      },
       {
         "title": "Bass Guitar"
       }
@@ -1434,6 +1469,9 @@
       {
         "title": "Guitar",
         "capo": 3
+      },
+      {
+        "title": "5-string Bass Guitar"
       }
     ],
     "visible": "true"
@@ -1447,6 +1485,10 @@
     "playback": "https://drive.google.com/drive/folders/16mVE4iegYnhYoMbBPCQapWbwM-2XAyX3?usp=drive_link",
     "key": "Gm",
     "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 3
+      },
       {
         "title": "5-string Bass Guitar"
       }
@@ -1465,6 +1507,9 @@
       {
         "title": "Guitar",
         "capo": 2
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -1478,6 +1523,10 @@
     "playback": "https://drive.google.com/drive/folders/1rNWj98ziApT6giq2fpi0lfsmjfOH2e6U?usp=drive_link",
     "key": "F#m",
     "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 2
+      },
       {
         "title": "Bass Guitar"
       }
@@ -2328,6 +2377,9 @@
       {
         "title": "Guitar",
         "capo": 3
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -2341,6 +2393,10 @@
     "playback": "https://drive.google.com/drive/folders/1cRnbIuaPHRkS3hPNmnoNFEUN8ctUEAoh?usp=drive_link",
     "key": "Cm",
     "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 3
+      },
       {
         "title": "Bass Guitar"
       }
