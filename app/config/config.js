@@ -1,5 +1,7 @@
 const config = {
-  str: "Hello World"
+  appName: "app",
+  database: "./database/",
+  storage: "./storage/Text & Chords/",
 }
 
 export default Object.freeze(config);
