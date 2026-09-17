@@ -46,7 +46,7 @@ export default class SongController {
 
       if (title == "Guitar")
         title = "🔴 " + title;
-      else if (title == "Bass Guitar")
+      else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
         title = "🟡 " + title;
       
       this.view.addOption(index, title);
