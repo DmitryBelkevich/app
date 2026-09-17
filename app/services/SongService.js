@@ -21,7 +21,7 @@ export default class SongService {
     const b = song.instruments.forEach((instrument, index) => {
       if (instrument.capo > 0)
         return true;
-    });
+    });console.log(b);
     if (b) {
       const toInsert = " (bass)";
       const index = song.text.length - ".html".length;
@@ -51,7 +51,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });console.log(song);
+    });
     
     return song;
   }
