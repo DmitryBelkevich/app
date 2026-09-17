@@ -18,15 +18,19 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    for (const instrument of song.instruments) {
-      if (instrument.capo > 0) {
-        const index = song.text.length - ".html".length;
-        song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
-      } else
-        song.text_bass = song.text;
+    song.instruments.forEach((instrument, index) => {
+      instrument.text = song.text;
+    });
+
+    // for (const instrument of song.instruments) {
+    //   if (instrument.capo > 0) {
+    //     const index = song.text.length - ".html".length;
+    //     song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
+    //   } else
+    //     song.text_bass = song.text;
       
-      break;
-    }
+    //   break;
+    // }
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
@@ -48,7 +52,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });
+    });console.log(song);
     
     return song;
   }
