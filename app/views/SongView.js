@@ -51,10 +51,6 @@ export default class SongView {
     this.display.id = "display";
 
     // key-signature
-    const title1_e = document.createElement("div");
-    title1_e.classList.add("title");
-    title1_e.textContent = "key:";
-    
     this.key_e = document.createElement("div");
     this.key_e.id = "key";
 
@@ -63,10 +59,7 @@ export default class SongView {
     this.select_e.id = "instruments";
 
     // fill display
-    this.display.append(
-      title1_e, this.key_e,
-      this.select_e,
-    );
+    this.display.append(this.key_e, this.select_e);
     
     // Settings
     this.cssLoader.load("./app/views/css/song/settings.css");
