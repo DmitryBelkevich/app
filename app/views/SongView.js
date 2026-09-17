@@ -192,8 +192,8 @@ export default class SongView {
   // display
 
   bindSelect(handler) {
-    this.select_e.addEventListener("change", () => {
-      handler();
+    this.select_e.addEventListener("change", (event) => {
+      handler(event);
     });
   }
 
