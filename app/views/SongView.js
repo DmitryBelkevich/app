@@ -57,9 +57,6 @@ export default class SongView {
     // select
     this.select_e = document.createElement("select");
     this.select_e.id = "instruments";
-
-    this.addOption();
-    this.addOption();
     
     this.display.append(this.key_e, this.select_e);
     
