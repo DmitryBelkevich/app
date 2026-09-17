@@ -249,6 +249,15 @@
     "visible": "true"
   },
   {
+    "id": "223",
+    "band": "Ария", "title": "Потерянный рай",
+    "genre": "Metal",
+    "text": "Metal/Ария/Ария - Потерянный рай.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1Q-3zCbHKP7hASdJg0UD8YNi_QLWlb1xf?usp=drive_link",
+    "visible": "true"
+  },
+  {
     "id": "14",
     "band": "Ария", "title": "Свобода",
     "genre": "Metal",
