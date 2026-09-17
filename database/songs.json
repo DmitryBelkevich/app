@@ -1515,25 +1515,6 @@
     "visible": "true"
   },
   {
-    "id": "82b",
-    "band": "ДДТ", "title": "Просвистела",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/ДДТ/ДДТ - Просвистела (bass).html",
-    "score": "https://drive.google.com/file/d/19Du4f0244a5b_KhNixdCzTdexuMK9IJo/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1rNWj98ziApT6giq2fpi0lfsmjfOH2e6U?usp=drive_link",
-    "key": "F#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "267",
     "band": "ДДТ", "title": "Родина",
     "genre": "Rock, Punk",
