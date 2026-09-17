@@ -37,7 +37,7 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-    this.loadText();
+    await this.loadText();
 
     // select
     this.song.instruments.forEach((instrument, index) => {
@@ -78,7 +78,7 @@ export default class SongController {
     this.view.bindAutoScroll(this.auto_scroll);
   }
 
-  loadText() {
+  async loadText() {
     const instrument = this.song.instruments[this.#current_insrument_index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
