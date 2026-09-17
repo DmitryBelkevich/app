@@ -37,7 +37,7 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-    await this.loadText();
+    this.loadText();
 
     // select
     this.song.instruments.forEach((instrument, index) => {
