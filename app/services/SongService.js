@@ -18,7 +18,7 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    for (const instrument of instruments) {
+    for (const instrument of song.instruments) {
       if (instrument.capo > 0) {
         const index = song.text.length - ".html".length;
         song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
