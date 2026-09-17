@@ -57,6 +57,9 @@ export default class SongController {
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
 
+    // display
+    this.view.bindSelect(this.select_instrument);
+
     // settings
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
@@ -81,9 +84,13 @@ export default class SongController {
       window.open(this.song.playback, "_blank");
   }
 
-  // display
+  // *** display-div ***
 
-  // settings
+  select_instrument = () => {
+    console.log("select_instrument");
+  }
+
+  // *** settings-div ***
 
   // transposer
 
