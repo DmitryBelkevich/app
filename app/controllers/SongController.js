@@ -40,7 +40,7 @@ export default class SongController {
     // select
     this.song.instruments.forEach((instrument, index) => {
       this.view.addOption(instrument.title);
-    }
+    });
 
     // functions
     this.transposer = new Transposer();
