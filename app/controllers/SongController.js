@@ -83,11 +83,8 @@ export default class SongController {
 
   // tabs
 
-  openText = async () => {
+  openText = () => {
     console.log("open Text tab");
-
-    const text = await this.htmlLoader.load(this.song.text_bass);
-    this.view.setText(text);
   }
 
   openScore = () => {
