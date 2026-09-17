@@ -39,7 +39,7 @@ export default class SongController {
 
     // select
     this.song.instruments.forEach((instrument, index) => {
-      this.view.addOption(instrument.title);
+      this.view.addOption(index, instrument.title);
     });
 
     // functions
