@@ -12,7 +12,7 @@ export default class SongService {
   }
   
   async getById(id) {
-    const song = await this.songDao.getById(id);
+    const song = await this.songDao.getById(id);console.log(song);
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
