@@ -1,7 +1,6 @@
-import config from './config/config.js';
 import FrontController from './front_controller/FrontController.js';
 
-function main() {console.log(config);
+function main() {
   const frontController = new FrontController();
   
   frontController.handleRequest(window.location.pathname);
