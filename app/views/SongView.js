@@ -57,6 +57,9 @@ export default class SongView {
     // select
     this.select_e = document.createElement("select");
     this.select_e.id = "instruments";
+
+    addOption();
+    addOption();
     
     this.display.append(this.key_e, this.select_e);
     
@@ -131,6 +134,11 @@ export default class SongView {
 
   setKey(key) {
     this.key_e.textContent = key;
+  }
+
+  addOption() {
+    const option = document.createElement("option");
+    this.select_e.append(option);
   }
 
   addTuning(title, tuning) {
