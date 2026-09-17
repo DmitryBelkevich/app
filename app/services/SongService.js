@@ -17,6 +17,7 @@ export default class SongService {
     const song = await this.songDao.getById(id);
 
     song.text = config.storage + song.text;
+    song.text_bass = song.text;
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
@@ -38,7 +39,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });
+    });console.log(song);
     
     return song;
   }
