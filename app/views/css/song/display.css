@@ -9,6 +9,10 @@
   background-color: darkgrey;
 }
 
+#display {
+  display: flex;
+}
+
 #display div {
   font-size: 16px;
 }
