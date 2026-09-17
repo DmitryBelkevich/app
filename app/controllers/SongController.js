@@ -87,8 +87,7 @@ export default class SongController {
   // *** display-div ***
 
   select_instrument = (event) => {
-    console.log("select instrument ");
-    console.log(event.target.value);
+    console.log("instrument: " + event.target.value);
   }
 
   // *** settings-div ***
