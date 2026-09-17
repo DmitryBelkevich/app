@@ -133,9 +133,10 @@ export default class SongView {
     this.key_e.textContent = key;
   }
 
-  addOption(title) {
+  addOption(index, title) {
     const option = document.createElement("option");
 
+    option.value = index;
     option.textContent = title;
     
     this.select_e.append(option);
