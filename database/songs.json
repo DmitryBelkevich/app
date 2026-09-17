@@ -1371,6 +1371,15 @@
     "visible": "true"
   },
   {
+    "id": "265",
+    "band": "ДДТ", "title": "Ветер",
+    "genre": "Rock, Punk",
+    "text": "Rock, Punk/ДДТ/ДДТ - Ветер.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1zecO-gs7VKVnGkt_u4YQXItHhl6b6VDH?usp=drive_link",
+    "visible": "true"
+  },
+  {
     "id": "77",
     "band": "ДДТ", "title": "Метель",
     "genre": "Rock, Punk",
@@ -1473,6 +1482,15 @@
         "title": "Bass Guitar"
       }
     ],
+    "visible": "true"
+  },
+  {
+    "id": "267",
+    "band": "ДДТ", "title": "Родина",
+    "genre": "Rock, Punk",
+    "text": "Rock, Punk/ДДТ/ДДТ - Родина.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1Uiqy_1j-VtIus19WwCubwWUNEJODSyPF?usp=drive_link",
     "visible": "true"
   },
   {
