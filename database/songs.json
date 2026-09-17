@@ -1461,28 +1461,9 @@
     "id": "80",
     "band": "ДДТ", "title": "Песня о свободе",
     "genre": "Rock, Punk",
-    "text": "Rock, Punk/ДДТ/ДДТ - Песня о свободе (3).html",
-    "score": "https://drive.google.com/file/d/1HXGRBoGMUORyZkM1OgVHi3Ukj0G6IuYR/view?usp=drive_link",
-    "playback": "https://drive.google.com/file/d/1HXGRBoGMUORyZkM1OgVHi3Ukj0G6IuYR/view?usp=drive_link",
-    "key": "Gm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
-      },
-      {
-        "title": "5-string Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "80b",
-    "band": "ДДТ", "title": "Песня о свободе",
-    "genre": "Rock, Punk",
     "text": "Rock, Punk/ДДТ/ДДТ - Песня о свободе.html",
     "score": "https://drive.google.com/file/d/1HXGRBoGMUORyZkM1OgVHi3Ukj0G6IuYR/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/16mVE4iegYnhYoMbBPCQapWbwM-2XAyX3?usp=drive_link",
+    "playback": "https://drive.google.com/file/d/1HXGRBoGMUORyZkM1OgVHi3Ukj0G6IuYR/view?usp=drive_link",
     "key": "Gm",
     "instruments": [
       {
