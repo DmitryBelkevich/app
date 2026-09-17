@@ -38,8 +38,9 @@ export default class SongController {
     this.view.setText(text);
 
     // select
-    this.view.addOption();
-    this.view.addOption();
+    this.song.instruments.forEach((instrument, index) => {
+      this.view.addOption(instrument.title);
+    }
 
     // functions
     this.transposer = new Transposer();
