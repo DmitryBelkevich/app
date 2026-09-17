@@ -50,7 +50,7 @@ export default class SongController {
         title = "🟡 " + title;
 
       if (instrument.capo > 0)
-        title += " (" + "capo: +" + instrument.capo + ")";
+        title += " (" + "Capo: +" + instrument.capo + ")";
       
       this.view.addOption(index, title);
     });
