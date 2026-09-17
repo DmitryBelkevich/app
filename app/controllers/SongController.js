@@ -18,7 +18,7 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    console.log("instrument: " + 0);
+    console.log("set instrument: " + 0);
 
     // view
     this.view = new SongView();
@@ -89,7 +89,7 @@ export default class SongController {
   // *** display-div ***
 
   select_instrument = (event) => {
-    console.log("instrument: " + event.target.value);
+    console.log("set instrument: " + event.target.value);
   }
 
   // *** settings-div ***
