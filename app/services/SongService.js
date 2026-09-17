@@ -18,19 +18,13 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    song.instruments.forEach((instrument, index) => {
-      instrument.chords = song.text;
+    song.instruments.forEach((instrument) => {
+      if (instrument.capo > 0) {
+        const index = song.text.length - ".html".length;
+        instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
+      } else
+        instrument.chords = song.text;
     });
-
-    // for (const instrument of song.instruments) {
-    //   if (instrument.capo > 0) {
-    //     const index = song.text.length - ".html".length;
-    //     song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
-    //   } else
-    //     song.text_bass = song.text;
-      
-    //   break;
-    // }
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
