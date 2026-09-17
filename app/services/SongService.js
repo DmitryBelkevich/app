@@ -12,7 +12,9 @@ export default class SongService {
   }
   
   async getById(id) {
-    const song = await this.songDao.getById(id);console.log(song);
+    const song = await this.songDao.getById(id);
+
+    song.text = "./storage/Text & Chords/" + song.text;
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
@@ -34,7 +36,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });
+    });console.log(song);
     
     return song;
   }
