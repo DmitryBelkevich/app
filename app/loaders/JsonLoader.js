@@ -1,4 +1,4 @@
-export default class DatabaseLoader {
+export default class JsonLoader {
   async load(path) {
     try {
       // 1. Wait for the server headers and response status
