@@ -138,6 +138,9 @@ export default class SongView {
 
     option.value = index;
     option.textContent = title;
+
+    if (index == 1)
+      option.selected = true;
     
     this.select_e.append(option);
   }
