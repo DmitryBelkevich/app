@@ -1,6 +1,8 @@
 import SongDao from '../dao/SongDao.js';
 
 export default class SongService {
+  #storage = "./storage/Text & Chords/";
+  
   constructor() {
     this.songDao = new SongDao();
   }
@@ -14,7 +16,7 @@ export default class SongService {
   async getById(id) {
     const song = await this.songDao.getById(id);
 
-    song.text = "./storage/Text & Chords/" + song.text;
+    song.text = this.#storage + song.text;
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
