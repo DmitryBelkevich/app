@@ -1,3 +1,5 @@
+import config from './config/config.js';
+
 import MainController from '../controllers/MainController.js';
 import ListController from '../controllers/ListController.js';
 import SongController from '../controllers/SongController.js';
@@ -12,8 +14,7 @@ export default class Dispatcher {
   }
   
   dispatch(path) {
-    const appName = "app";
-    const routeName = path.slice(("/" + appName + "/").length);
+    const routeName = path.slice(("/" + config.appName + "/").length);
     
     const controller = this.#routes[routeName];
     controller.init();
