@@ -48,7 +48,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });console.log(song);
+    });
     
     return song;
   }
