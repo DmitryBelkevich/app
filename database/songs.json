@@ -360,6 +360,10 @@
     "instruments": [
       {
         "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar",
+        "tuning": ["D", "G", "C", "F"]
       }
     ],
     "visible": "true"
@@ -373,6 +377,10 @@
     "playback": "https://drive.google.com/drive/folders/1NzZgkt2VJ07ge67Xkyp6mceYfJQSX0aD?usp=drive_link",
     "key": "Cm",
     "instruments": [
+      {
+        "title": "Bass Guitar",
+        "tuning": ["D", "G", "C", "F"]
+      },
       {
         "title": "Bass Guitar",
         "tuning": ["D", "G", "C", "F"]
