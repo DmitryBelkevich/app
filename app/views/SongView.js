@@ -50,15 +50,20 @@ export default class SongView {
     this.display = document.createElement("div");
     this.display.id = "display";
 
-    // key
+    // key-signature
+    this.title1_e = document.createElement("div");
+    this.title1_e.classList.add("title");
+    this.title1_e.textContent = "main key: ";
+    
     this.key_e = document.createElement("div");
     this.key_e.id = "key";
 
-    // select
+    // select-instrument
     this.select_e = document.createElement("select");
     this.select_e.id = "instruments";
-    
-    this.display.append(this.key_e, this.select_e);
+
+    // fill display
+    this.display.append(this.title1_e, this.key_e, this.select_e);
     
     // Settings
     this.cssLoader.load("./app/views/css/song/settings.css");
