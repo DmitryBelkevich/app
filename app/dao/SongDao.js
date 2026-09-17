@@ -1,19 +1,21 @@
 import Song from '../models/Song.js';
-import DatabaseLoader from '../loaders/DatabaseLoader.js';
+import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class SongDao {
+  #database = "./database/";
+  
   constructor() {
-    this.loader = new DatabaseLoader();
+    this.jsonLoader = new JsonLoader();
   }
 
   async getAll() {
-    const data = await this.loader.loadData("songs.json");
+    const data = await this.jsonLoader.load(this.#database + "songs.json");
     
     return data;
   }
   
   async getById(id) {
-    const data = await this.loader.loadData("songs.json");
+    const data = await this.jsonLoader.load(this.#database + "songs.json");
     const result = data.find(song => song.id == id) || null;
 
     if (!result)
