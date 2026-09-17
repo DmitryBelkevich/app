@@ -2,7 +2,7 @@ import Song from '../models/Song.js';
 import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
-import TextLoader from '../loaders/TextLoader.js';
+import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
@@ -33,8 +33,8 @@ export default class SongController {
     });
 
     // load text
-    this.loader = new TextLoader();
-    const text = await this.loader.loadData(this.song.text);
+    this.htmlLoader = new HtmlLoader();
+    const text = await this.htmlLoader.load(this.song.text);
     this.view.setText(text);
 
     // functions

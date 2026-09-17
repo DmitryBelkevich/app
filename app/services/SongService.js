@@ -14,6 +14,8 @@ export default class SongService {
   async getById(id) {
     const song = await this.songDao.getById(id);
 
+    song.text = "./storage/Text & Chords/" + song.text;
+
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
         if (!instrument.tuning)
