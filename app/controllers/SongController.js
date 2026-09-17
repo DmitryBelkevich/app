@@ -9,6 +9,7 @@ import Transposer from '../helpers/Transposer.js';
 
 export default class SongController {
   #params;
+  #current_insrument_index = 0;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
@@ -18,7 +19,7 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    console.log("set instrument: " + 0);
+    console.log("set instrument: " + this.#current_insrument_index);
 
     // view
     this.view = new SongView();
@@ -89,7 +90,9 @@ export default class SongController {
   // *** display-div ***
 
   select_instrument = (event) => {
-    console.log("set instrument: " + event.target.value);
+    this.#current_insrument_index = event.target.value;
+    
+    console.log("set instrument: " + this.#current_insrument_index);
   }
 
   // *** settings-div ***
