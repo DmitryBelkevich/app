@@ -19,9 +19,11 @@ export default class SongService {
     song.text = config.storage + song.text;
 
     const b = song.instruments.forEach((instrument, index) => {
-      if (instrument.capo > 0)
+      if (instrument.capo > 0) {
+        console.log(b);
         return true;
-    });console.log(b);
+      }
+    });
     if (b) {
       const toInsert = " (bass)";
       const index = song.text.length - ".html".length;
