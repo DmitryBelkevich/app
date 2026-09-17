@@ -38,7 +38,7 @@ export default class SongController {
     // load text
     this.htmlLoader = new HtmlLoader();
 
-    const instrument = this.song.instruments[0];
+    const instrument = this.song.instruments[this.#current_insrument_index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
 
