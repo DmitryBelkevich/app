@@ -369,25 +369,6 @@
     "visible": "true"
   },
   {
-    "id": "18b",
-    "band": "Кипелов", "title": "Я свободен!",
-    "genre": "Metal",
-    "text": "Metal/Кипелов/Кипелов - Я свободен! (bass).html",
-    "score": "https://drive.google.com/file/d/1xkSwpQp7QG6_qKK5BCv9KCTieFM_YGXo/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1NzZgkt2VJ07ge67Xkyp6mceYfJQSX0aD?usp=drive_link",
-    "key": "Cm",
-    "instruments": [
-      {
-        "title": "Guitar"
-      },
-      {
-        "title": "Bass Guitar",
-        "tuning": ["D", "G", "C", "F"]
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "20",
     "band": "Слот", "title": "Круги на воде",
     "genre": "Metal",
