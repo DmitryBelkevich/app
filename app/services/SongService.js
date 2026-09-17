@@ -20,9 +20,9 @@ export default class SongService {
 
     const b = song.instruments.forEach((instrument, index) => {
       if (instrument.capo > 0) {
-        console.log(b);
+        console.log(true);
         return true;
-      }
+      }else console.log(false);
     });
     if (b) {
       const toInsert = " (bass)";
