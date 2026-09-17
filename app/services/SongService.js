@@ -22,11 +22,9 @@ export default class SongService {
       if (instrument.capo > 0) {
         const index = song.text.length - ".html".length;
         song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
-      } else {
+      } else
         song.text_bass = song.text;
-      }
-
-      console.log(0);
+      
       break;
     }
 
@@ -50,7 +48,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });
+    });console.log(song);
     
     return song;
   }
