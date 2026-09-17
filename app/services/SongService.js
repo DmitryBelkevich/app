@@ -18,20 +18,17 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    const b = song.instruments.forEach((instrument, index) => {
+    song.instruments.forEach((instrument, index) => {
       if (instrument.capo > 0) {
-        console.log(true);
-        return true;
-      }else console.log(false);
-    });
-    if (b) {
-      const toInsert = " (bass)";
-      const index = song.text.length - ".html".length;
+        const index = song.text.length - ".html".length;
+        song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
+      } else {
+        song.text_bass = song.text;
+      }
 
-      song.text_bass = song.text.slice(0, index) + toInsert + song.text.slice(index);
-    } else {
-      song.text_bass = song.text;
-    }
+      console.log(index);
+      break;
+    });
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
