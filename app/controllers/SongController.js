@@ -42,7 +42,17 @@ export default class SongController {
 
     // select
     this.song.instruments.forEach((instrument, index) => {
-      this.view.addOption(index, instrument.title);
+      var title = instrument.title;
+
+      if (title == "Guitar")
+        title = "🔴 " + title;
+      else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
+        title = "🟡 " + title;
+
+      if (instrument.capo > 0)
+        title += " (" + "capo: +" + instrument.capo + ")";
+      
+      this.view.addOption(index, title);
     });
 
     // functions
