@@ -18,7 +18,7 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    song.instruments.forEach((instrument, index) => {
+    for (const instrument of instruments) {
       if (instrument.capo > 0) {
         const index = song.text.length - ".html".length;
         song.text_bass = song.text.slice(0, index) + " (bass)" + song.text.slice(index);
@@ -26,9 +26,9 @@ export default class SongService {
         song.text_bass = song.text;
       }
 
-      console.log(index);
+      console.log(0);
       break;
-    });
+    }
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
