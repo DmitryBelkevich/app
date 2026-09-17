@@ -43,7 +43,7 @@ export default class SongController {
       const toInsert = " (bass)";
       const index = txt.length - ".html".length;
 
-      txt = original.slice(0, index) + toInsert + txt.slice(index);
+      txt = txt.slice(0, index) + toInsert + txt.slice(index);
     }
     
     const text = await this.htmlLoader.load(txt);
