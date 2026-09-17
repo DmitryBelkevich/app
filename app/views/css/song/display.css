@@ -20,6 +20,12 @@
 }
 
 #display {
+  .title {
+    width: fit-content;
+  }
+}
+
+#display {
   #key {
     width: fit-content;
   }
