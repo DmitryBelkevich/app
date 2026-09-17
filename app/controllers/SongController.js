@@ -9,7 +9,6 @@ import Transposer from '../helpers/Transposer.js';
 
 export default class SongController {
   #params;
-  #current_insrument_index = 0;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
@@ -18,8 +17,6 @@ export default class SongController {
     // model
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
-
-    console.log("set instrument: " + this.#current_insrument_index);
 
     // view
     this.view = new SongView();
@@ -37,7 +34,7 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-    this.loadText();
+    this.loadText(0);
 
     // select
     this.song.instruments.forEach((instrument, index) => {
@@ -78,8 +75,8 @@ export default class SongController {
     this.view.bindAutoScroll(this.auto_scroll);
   }
 
-  async loadText() {
-    const instrument = this.song.instruments[this.#current_insrument_index];
+  async loadText(index) {
+    const instrument = this.song.instruments[index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
   }
@@ -105,9 +102,7 @@ export default class SongController {
   // *** display-div ***
 
   select_instrument = (event) => {
-    this.#current_insrument_index = event.target.value;
-    
-    console.log("set instrument: " + this.#current_insrument_index);
+    this.loadText(event.target.value);
   }
 
   // *** settings-div ***
