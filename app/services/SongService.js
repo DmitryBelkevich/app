@@ -17,7 +17,15 @@ export default class SongService {
     const song = await this.songDao.getById(id);
 
     song.text = config.storage + song.text;
-    song.text_bass = song.text;
+    
+    if (true) {
+      const toInsert = " (bass)";
+      const index = song.text.length - ".html".length;
+
+      song.text_bass = song.text.slice(0, index) + toInsert + song.text.slice(index);
+    } else {
+      song.text_bass = song.text;
+    }
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
