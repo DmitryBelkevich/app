@@ -189,6 +189,14 @@ export default class SongView {
     });
   }
 
+  // display
+
+  bindSelect(handler) {
+    this.select_e.addEventListener("change", () => {
+      handler();
+    });
+  }
+
   // settings
   
   bindTransposeDown(handler) {
