@@ -19,7 +19,7 @@ export default class SongService {
     song.text = config.storage + song.text;
 
     song.instruments.forEach((instrument, index) => {
-      instrument.text = song.text;
+      instrument.chords = song.text;
     });
 
     // for (const instrument of song.instruments) {
