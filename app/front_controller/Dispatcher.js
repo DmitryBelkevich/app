@@ -1,4 +1,4 @@
-import config from './config/config.js';
+import config from '../config/config.js';
 
 import MainController from '../controllers/MainController.js';
 import ListController from '../controllers/ListController.js';
