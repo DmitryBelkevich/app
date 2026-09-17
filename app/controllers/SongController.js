@@ -37,16 +37,7 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-
-    var txt = this.song.text;
-    if (true) {
-      const toInsert = " (bass)";
-      const index = txt.length - ".html".length;
-
-      txt = txt.slice(0, index) + toInsert + txt.slice(index);
-    }
-    
-    const text = await this.htmlLoader.load(txt);
+    const text = await this.htmlLoader.load(this.song.text);
     this.view.setText(text);
 
     // select
