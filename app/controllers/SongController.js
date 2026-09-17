@@ -86,7 +86,7 @@ export default class SongController {
   openText = () => {
     console.log("open Text tab");
 
-    const text = await this.htmlLoader.load(this.song.text_bass);
+    const text = this.htmlLoader.load(this.song.text_bass);
     this.view.setText(text);
   }
 
