@@ -186,7 +186,7 @@ export default class SongView {
   
   bindTextTab(handler) {
     this.tab_text.addEventListener("click", () => {
-      handler();setOption(1)
+      handler();this.setOption(1)
     });
   }
 
