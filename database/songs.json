@@ -877,25 +877,6 @@
     "visible": "true"
   },
   {
-    "id": "48b",
-    "band": "Аквариум", "title": "Город золотой",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Аквариум/Аквариум - Город золотой (bass).html",
-    "score": "https://drive.google.com/file/d/1sDnVQIPJLjd1RLNIGxdVOq4W18XIguov/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1EkgqJ9tYQ_R_d5Oj-d5ZuGBhwTrKhKOT?usp=drive_link",
-    "key": "Bm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "49",
     "band": "Алексей Понамарёв", "title": "А мы не ангелы, парень",
     "genre": "Rock, Punk",
