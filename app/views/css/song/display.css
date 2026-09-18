@@ -24,6 +24,7 @@
     border-radius: 4px;
     width: 36px;
 
+    margin: 0px 2px;
     padding: 0px 2px;
   }
 
@@ -36,7 +37,7 @@
 
 #display {
   button {
-    margin: 0px 5px;
+    margin: 0px 2px;
     padding: 10px 10px;
   }
 }
