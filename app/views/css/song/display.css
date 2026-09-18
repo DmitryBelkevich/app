@@ -37,9 +37,9 @@
 
 #display {
   button {
-    font-size: 30px;
+    font-size: 20px;
     
     margin: 0px  0px  0px 5px;
-    padding: 0px 0px;
+    padding: 5px;
   }
 }
