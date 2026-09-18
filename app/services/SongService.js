@@ -22,6 +22,10 @@ export default class SongService {
 
     // set STANDARD tunuig for each instruments
     song.instruments.forEach((instrument, index) => {
+      if (instrument.title == "Instrument")
+        if (!instrument.transposition)
+          instrument.transposition = 0;
+      
       if (instrument.title == "Guitar" || instrument.title == "E.Guitar")
         if (!instrument.tuning)
           instrument.tuning = ["E", "A", "D", "G", "B", "E"];
