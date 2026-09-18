@@ -388,25 +388,6 @@
     "visible": "true"
   },
   {
-    "id": "20b",
-    "band": "Слот", "title": "Круги на воде",
-    "genre": "Metal",
-    "text": "Metal/Слот/Слот - Круги на воде (bass).html",
-    "score": "https://drive.google.com/file/d/1vss0mNtVDcI0-9uKf6ckbgyXnZqCFoF1/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1jOYtYQkapoxvRZNLmaiubSZ01xmYpc63?usp=drive_link",
-    "key": "Bm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "tuning": ["B", "F#", "B", "E", "G#", "C#"]
-      },
-      {
-        "title": "5-string Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "21",
     "band": "Эпидемия", "title": "Всадник из льда",
     "genre": "Metal",
