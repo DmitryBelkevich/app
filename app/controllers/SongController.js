@@ -40,9 +40,15 @@ export default class SongController {
 
     // *** display ***
 
-    // key
+    // 1. key-signature
 
-    // dropdown
+    // 2. transposer
+    this.transposer = new Transposer();
+    this.transposer.key = this.song.key;
+
+    // *** settings ***
+
+    // 1. dropdown
     this.song.instruments.forEach((instrument, index) => {
       var title = instrument.title;
 
@@ -61,13 +67,7 @@ export default class SongController {
 
     this.view.selectOption(index);
 
-    // *** settings ***
-
-    // transposer
-    this.transposer = new Transposer();
-    this.transposer.key = this.song.key;
-
-    // auto-scroll
+    // 2. auto-scroll
     this.autoScroll = new AutoScroll();
 
     // *** binding controller-view ***
@@ -79,12 +79,18 @@ export default class SongController {
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
 
-    // display
-    this.view.bindDropdown(this.select_instrument);
-
-    // settings
+    // *** display ***
+    
+    // 1. key-signature
+    // 2. transposer
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
+
+    // *** settings ***
+
+    // 1. dropdown
+    this.view.bindDropdown(this.select_instrument);
+    // 2. auto-scroll
     this.view.bindAutoScroll(this.auto_scroll);
   }
 
@@ -114,13 +120,9 @@ export default class SongController {
 
   // *** display ***
 
-  select_instrument = (event) => {
-    this.loadText(event.target.value);
-  }
+  // 1. key-signature
 
-  // *** settings ***
-
-  // transposer
+  // 2. transposer
 
   transpose_down = () => {
     this.transposer.transposeDown();
@@ -130,7 +132,15 @@ export default class SongController {
     this.transposer.transposeUp();
   }
 
-  // auto-scroll
+  // *** settings ***
+
+  // 1. dropdown
+
+  select_instrument = (event) => {
+    this.loadText(event.target.value);
+  }
+
+  // 2. auto-scroll
   
   auto_scroll = () => {
     // this.autoScroll.speed = 10;
