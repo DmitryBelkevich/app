@@ -96,7 +96,7 @@ export default class SongController {
 
   // *** handlers ***
 
-  // tabs
+  // *** tabs ***
 
   openText = () => {
     console.log("open Text tab");
@@ -112,13 +112,13 @@ export default class SongController {
       window.open(this.song.playback, "_blank");
   }
 
-  // *** display-div ***
+  // *** display ***
 
   select_instrument = (event) => {
     this.loadText(event.target.value);
   }
 
-  // *** settings-div ***
+  // *** settings ***
 
   // transposer
 
