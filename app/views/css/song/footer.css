@@ -1,13 +1,17 @@
 #footer {
+  font-size: 60%;
+}
+
+#footer {
   border: 1px solid black;
   height: 50px;
 
+  color: grey;
+  background-color: lightgrey;
+}
+
+#footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color: grey;
-  background-color: lightgrey;
-
-  font-size: 60%;
 }
