@@ -485,25 +485,6 @@
     "visible": "true"
   },
   {
-    "id": "25b",
-    "band": "Joan Osborne", "title": "One of Us",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Joan Osborne/Joan Osborne - One of Us (bass).html",
-    "score": "https://drive.google.com/file/d/1dNgHW5nIDbkENnTqnzqlzyaFQ2QMss41/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1K62TmDpdAO0oKLPLcFJo9BAhR7VzCtc6?usp=drive_link",
-    "key": "F#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "26",
     "band": "Leonard Cohen", "title": "Hallelujah",
     "tags": ["аллилуйя"],
