@@ -20,7 +20,7 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    // set tunuig for each instruments
+    // set STANDARD tunuig for each instruments
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
         if (!instrument.tuning)
