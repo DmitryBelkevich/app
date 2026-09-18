@@ -5,7 +5,7 @@
   background-color: lightgrey;
   
   margin: 0px;
-  padding: 5px;
+  padding: 5px 0px;
 }
 
 #settings {
@@ -18,20 +18,16 @@
 
 #settings {
   select {
-    margin: 0px;
+    margin: 0px  5px  0px 0px;
     padding: 5px;
   }
 }
 
 #settings {
   button {
-    font-size: 16px;
-  }
-}
-
-#settings {
-  #autoscroll {
-    margin: 0px;
-    padding: 10px 5px;
+    font-size: 20px;
+    
+    margin: 0px  5px  0px 0px;
+    padding: 5px;
   }
 }

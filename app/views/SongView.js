@@ -80,7 +80,7 @@ export default class SongView {
     // auto-scroll
     this.autoscroll_e = document.createElement("button");
     this.autoscroll_e.id = "autoscroll";
-    this.autoscroll_e.textContent = "⏬ auto-scroll";
+    this.autoscroll_e.textContent = "⏬";
 
     // fill settings
     this.settings.append(this.dropdown, this.autoscroll_e);
