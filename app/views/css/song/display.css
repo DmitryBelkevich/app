@@ -17,8 +17,10 @@
   }
   
   #key {
-    border: 1px solid black;
+    border: 1px solid grey;
     border-radius: 4px;
-    width: 40px;
+    width: 36px;
+
+    padding: 0px 2px;
   }
 }
