@@ -41,7 +41,7 @@ export default class SongService {
       if (instrument.title == "Keyboards")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });console.log(song);
+    });
 
     // set transposition for each instruments
     song.instruments.forEach((instrument) => {
