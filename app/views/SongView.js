@@ -55,12 +55,17 @@ export default class SongView {
     this.key_e = document.createElement("div");
     this.key_e.id = "key";
 
-    // dropdown
-    this.dropdown = document.createElement("select");
-    this.dropdown.id = "instruments";
+    // transposer
+    this.transpose_down = document.createElement("button");
+    this.transpose_down.id = "transpose_down";
+    this.transpose_down.textContent = "🔽";
+
+    this.transpose_up = document.createElement("button");
+    this.transpose_up.id = "transpose_up";
+    this.transpose_up.textContent = "🔼";
 
     // fill display
-    this.display.append(this.key_e, this.dropdown);
+    this.display.append(this.key_e, this.transpose_down, this.transpose_up);
     
     // *** settings ***
     
@@ -68,20 +73,9 @@ export default class SongView {
     this.settings = document.createElement("div");
     this.settings.id = "settings";
 
-    // transposer
-    this.transposer_e = document.createElement("div");
-    this.transposer_e.id = "transposer";
-    
-    this.transpose_down = document.createElement("button");
-    this.transpose_down.id = "transpose_down";
-    this.transpose_down.textContent = "🔽 transpose";
-
-    this.transpose_up = document.createElement("button");
-    this.transpose_up.id = "transpose_up";
-    this.transpose_up.textContent = "🔼 transpose";
-
-    // fill transposer
-    this.transposer_e.append(this.transpose_down, this.transpose_up);
+    // dropdown
+    this.dropdown = document.createElement("select");
+    this.dropdown.id = "instruments";
     
     // auto-scroll
     this.autoscroll_e = document.createElement("button");
@@ -89,7 +83,7 @@ export default class SongView {
     this.autoscroll_e.textContent = "⏬ auto-scroll";
 
     // fill settings
-    this.settings.append(this.transposer_e, this.autoscroll_e);
+    this.settings.append(this.dropdown, this.autoscroll_e);
     
     // *** Tuning ***
     this.cssLoader.load("./app/views/css/song/tuning.css");
@@ -139,13 +133,17 @@ export default class SongView {
 
   // *** display ***
 
-  // key
+  // 1. key-signature
 
   setKey(key) {
     this.key_e.textContent = key;
   }
 
-  // dropdown
+  // 2. transposer
+
+  // *** settings ***
+
+  // 1. dropdown
 
   addOption(index, title) {
     const option = document.createElement("option");
@@ -164,7 +162,7 @@ export default class SongView {
     return this.dropdown.value;
   }
 
-  // *** settings ***
+  // 2. autoscroll
 
   // *** tuning ***
 
@@ -195,7 +193,7 @@ export default class SongView {
 
   // *** binding: view -> controller ***
 
-  // tabs
+  // *** tabs ***
   
   bindTextTab(handler) {
     this.tab_text.addEventListener("click", () => {
@@ -215,16 +213,12 @@ export default class SongView {
     });
   }
 
-  // display
+  // *** display ***
 
-  bindDropdown(handler) {
-    this.dropdown.addEventListener("change", (event) => {
-      handler(event);
-    });
-  }
+  // 1. key-signature
 
-  // settings
-  
+  // 2. transposer
+
   bindTransposeDown(handler) {
     this.transpose_down.addEventListener("click", () => {
       handler();
@@ -236,6 +230,18 @@ export default class SongView {
       handler();
     });
   }
+
+  // *** settings ***
+
+  // 1. dropdown
+
+  bindDropdown(handler) {
+    this.dropdown.addEventListener("change", (event) => {
+      handler(event);
+    });
+  }
+
+  // 2. auto-scroll
   
   bindAutoScroll(handler) {
     this.autoscroll_e.addEventListener("click", () => {

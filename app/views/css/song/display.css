@@ -5,7 +5,7 @@
   background-color: lightgrey;
   
   margin: 0px;
-  padding: 5px;
+  padding: 5px 0px;
 }
 
 #display {
@@ -24,12 +24,22 @@
     border-radius: 4px;
     width: 36px;
 
+    margin: 0px  0px  0px 5px;
     padding: 0px 2px;
   }
 
   #key {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  }
+}
+
+#display {
+  button {
+    font-size: 20px;
+    
+    margin: 0px  0px  0px 5px;
+    padding: 5px;
   }
 }
