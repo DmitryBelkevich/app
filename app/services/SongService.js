@@ -19,7 +19,8 @@ export default class SongService {
     const song = await this.songDao.getById(id);
 
     song.text = config.storage + song.text;
-    
+
+    // set tunuig for each instruments
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Guitar")
         if (!instrument.tuning)
@@ -42,10 +43,12 @@ export default class SongService {
           instrument.transposition = 0;
     });
 
+    // set transposition for each instruments
     song.instruments.forEach((instrument) => {
       instrument.transposition = Tuning.droppedTo(instrument.tuning);
     });
 
+    // set chords for each instruments
     song.instruments.forEach((instrument) => {
       const index = song.text.length - ".html".length;
       
