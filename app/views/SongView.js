@@ -145,13 +145,12 @@ export default class SongView {
     this.dropdown.append(option);
   }
 
-  selectOption(index) {
-    
+  setOption(index) {
+    dropdown.selectedIndex = index;
   }
 
   getValue() {
-    const selectedValue = this.dropdown.value;
-    console.log(selectedValue);
+    return this.dropdown.value;
   }
 
   // tuning
@@ -187,7 +186,7 @@ export default class SongView {
   
   bindTextTab(handler) {
     this.tab_text.addEventListener("click", () => {
-      handler();this.getValue();
+      handler();setOption(1)
     });
   }
 
