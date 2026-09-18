@@ -41,10 +41,12 @@ export default class SongController {
     this.song.instruments.forEach((instrument, index) => {
       var title = instrument.title;
 
-      if (title == "Guitar")
+      if (title == "Guitar" || title == "E.Guitar")
         title = "🔴 " + title;
       else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
         title = "🟡 " + title;
+      else if (title == "Keyboards")
+        title = "🟢 " + title;
 
       if (instrument.capo > 0)
         title += " (" + "Capo: +" + instrument.capo + ")";
