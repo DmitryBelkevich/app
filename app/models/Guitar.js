@@ -2,12 +2,13 @@ import Instrument from "./Instrument.js";
 
 export default class Guitar extends Instrument {
   #tuning;
-  #capo = 0;
+  #capo;
   
   constructor() {
     super();
     this._title = "Guitar";
 
+    this.#capo = 0;
     this.#tuning = ["E", "A", "D", "G", "B", "E"];
   }
 
