@@ -21,7 +21,7 @@ export default class Transposer {
 
     // transpose key on display
     const key_e = document.getElementById("key");
-    key_e.textContent = this.#key;console.log(this.#chords);
+    key_e.textContent = this.#key;
 
     // transpose all chords
     this.#chords.forEach((element) => {
