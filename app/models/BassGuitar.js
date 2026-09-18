@@ -1,4 +1,4 @@
-import BassGuitar from "./BassGuitar.js";
+import Guitar from "./Guitar.js";
 
 export default class BassGuitar extends Guitar {
   constructor() {
