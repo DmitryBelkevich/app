@@ -62,7 +62,7 @@ export default class SongView {
 
     this.transpose_up = document.createElement("button");
     this.transpose_up.id = "transpose_up";
-    this.transpose_up.textContent = "🔼";
+    this.transpose_up.textContent = "&#8593;";
 
     // fill display
     this.display.append(this.key_e, this.transpose_down, this.transpose_up);
