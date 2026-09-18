@@ -38,7 +38,7 @@ export default class SongController {
     const index = 1;//current instrument
     await this.loadText(index);
 
-    // select
+    // dropdown
     this.song.instruments.forEach((instrument, index) => {
       var title = instrument.title;
 
@@ -71,7 +71,7 @@ export default class SongController {
     this.view.bindPlaybackTab(this.openPlayback);
 
     // display
-    this.view.bindSelect(this.select_instrument);
+    this.view.bindDropdown(this.select_instrument);
 
     // settings
     this.view.bindTransposeDown(this.transpose_down);
