@@ -38,6 +38,10 @@ export default class SongController {
     const index = 0;//current instrument
     await this.loadText(index);
 
+    // *** display ***
+
+    // key
+
     // dropdown
     this.song.instruments.forEach((instrument, index) => {
       var title = instrument.title;
@@ -57,10 +61,13 @@ export default class SongController {
 
     this.view.selectOption(index);
 
-    // functions
+    // *** settings ***
+
+    // transposer
     this.transposer = new Transposer();
     this.transposer.key = this.song.key;
-    
+
+    // auto-scroll
     this.autoScroll = new AutoScroll();
 
     // *** binding controller-view ***
