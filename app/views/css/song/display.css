@@ -35,13 +35,8 @@
 }
 
 #display {
-  #transpose_up {
+  #button {
     margin: 0px;
-    padding: 10px 5px;
-  }
-
-  #transpose_down {
-    margin: 0px;
-    padding: 10px 5px;
+    padding: 10px 10px;
   }
 }
