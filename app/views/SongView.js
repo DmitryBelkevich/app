@@ -145,8 +145,8 @@ export default class SongView {
     this.dropdown.append(option);
   }
 
-  setOption(index) {
-    dropdown.selectedIndex = index;
+  selectOption(index) {
+    this.dropdown.selectedIndex = index;
   }
 
   getValue() {
@@ -186,7 +186,7 @@ export default class SongView {
   
   bindTextTab(handler) {
     this.tab_text.addEventListener("click", () => {
-      handler();this.setOption(1)
+      handler();this.selectOption(1)
     });
   }
 
