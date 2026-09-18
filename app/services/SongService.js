@@ -59,7 +59,7 @@ export default class SongService {
         instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
       else
         instrument.chords = song.text;
-    });
+    });console.log(song);
     
     return song;
   }
