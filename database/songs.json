@@ -4035,24 +4035,6 @@
     "visible": "true"
   },
   {
-    "id": "325b",
-    "band": "Пропаганда", "title": "Мелом",
-    "genre": "Pop, Dance",
-    "text": "Pop, Dance/Пропаганда/Пропаганда - Мелом (bass).html",
-    "score": "https://drive.google.com/file/d/1goZDHum_iKrmjatuKBx2UcL-0PrpOHhl/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1WBLzSdZvBdIKf-AeBmPkUuQ45pCRtyBk?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 1
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "327",
     "band": "Рок-Острова", "title": "Ничего не говори",
     "genre": "Pop, Dance",
