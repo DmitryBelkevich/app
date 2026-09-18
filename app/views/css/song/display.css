@@ -33,3 +33,15 @@
     justify-content: center;
   }
 }
+
+#display {
+  #transpose_up {
+    margin: 0px;
+    padding: 10px 5px;
+  }
+
+  #transpose_down {
+    margin: 0px;
+    padding: 10px 5px;
+  }
+}
