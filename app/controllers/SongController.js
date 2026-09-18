@@ -36,7 +36,7 @@ export default class SongController {
     // load text
     this.htmlLoader = new HtmlLoader();
     const index = 1;//current instrument
-    await this.loadText(index);console.log(index);
+    await this.loadText(index);
 
     // select
     this.song.instruments.forEach((instrument, index) => {
@@ -80,6 +80,9 @@ export default class SongController {
   }
 
   async loadText(index) {
+    console.log(index);
+    console.log(this.song.instruments);
+    
     const instrument = this.song.instruments[index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
