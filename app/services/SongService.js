@@ -25,8 +25,8 @@ export default class SongService {
       
       if (instrument.capo > 0)
         instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
-      else if (await Tuning.droppedTo(instrument.tuning) < 0)
-        instrument.chords = song.text.slice(0, index) + " (" + "-2" + ")" + song.text.slice(index);
+      else if (instrument.transposition < 0)
+        instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
       else
         instrument.chords = song.text;
     });
