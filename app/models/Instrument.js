@@ -10,6 +10,6 @@ export default class Instrument {
   }
 
   get title() {
-    return title;
+    return _title;
   }
 }
