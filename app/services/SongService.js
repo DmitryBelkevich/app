@@ -2,6 +2,8 @@ import config from '../config/config.js';
 
 import SongDao from '../dao/SongDao.js';
 
+import Tuning from '../helpers/Tuning.js';
+
 export default class SongService {
   constructor() {
     this.songDao = new SongDao();
@@ -18,8 +20,9 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
+    // set STANDARD tunuig for each instruments
     song.instruments.forEach((instrument, index) => {
-      if (instrument.title == "Guitar")
+      if (instrument.title == "Guitar" || instrument.title == "E.Guitar")
         if (!instrument.tuning)
           instrument.tuning = ["E", "A", "D", "G", "B", "E"];
 
@@ -31,13 +34,31 @@ export default class SongService {
         if (!instrument.tuning)
           instrument.tuning = ["B", "E", "A", "D", "G"];
 
-      if (instrument.title != "Keyboards")
+      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
         if (!instrument.capo)
           instrument.capo = 0;
 
-      if (instrument.title == "Keyboards")
+      if (instrument.title == "Keyboards" || instrument.title == "Instrument")
         if (!instrument.transposition)
           instrument.transposition = 0;
+    });
+
+    // set transposition for each instruments
+    song.instruments.forEach((instrument) => {
+      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
+        instrument.transposition = Tuning.droppedTo(instrument.tuning);
+    });
+
+    // set chords for each instruments
+    song.instruments.forEach((instrument) => {
+      const index = song.text.length - ".html".length;
+      
+      if (instrument.capo > 0)
+        instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
+      else if (instrument.transposition < 0 || instrument.transposition > 0)
+        instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
+      else
+        instrument.chords = song.text;
     });
     
     return song;

@@ -9,7 +9,6 @@ import Transposer from '../helpers/Transposer.js';
 
 export default class SongController {
   #params;
-  #current_insrument_index = 0;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
@@ -19,8 +18,6 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    console.log("set instrument: " + this.#current_insrument_index);
-
     // view
     this.view = new SongView();
     
@@ -29,7 +26,8 @@ export default class SongController {
     this.view.setBand(this.song.band);
     this.view.setKey(this.song.key);
     this.song.instruments.forEach((instrument, index) => {
-      this.view.addTuning(instrument.title, instrument.tuning);
+      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
+        this.view.addTuning(instrument.title, instrument.tuning);
 
       if (instrument.capo)
         this.view.addCapo(instrument.capo);
@@ -37,23 +35,27 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-    const text = await this.htmlLoader.load(this.song.text);
-    this.view.setText(text);
+    const index = 1;//current instrument
+    await this.loadText(index);
 
-    // select
+    // dropdown
     this.song.instruments.forEach((instrument, index) => {
       var title = instrument.title;
 
-      if (title == "Guitar")
+      if (title == "Guitar" || title == "E.Guitar")
         title = "🔴 " + title;
       else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
         title = "🟡 " + title;
+      else
+        title = "🟢 " + title;
 
       if (instrument.capo > 0)
         title += " (" + "Capo: +" + instrument.capo + ")";
       
       this.view.addOption(index, title);
     });
+
+    this.view.selectOption(index);
 
     // functions
     this.transposer = new Transposer();
@@ -71,12 +73,18 @@ export default class SongController {
     this.view.bindPlaybackTab(this.openPlayback);
 
     // display
-    this.view.bindSelect(this.select_instrument);
+    this.view.bindDropdown(this.select_instrument);
 
     // settings
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
     this.view.bindAutoScroll(this.auto_scroll);
+  }
+
+  async loadText(index) {
+    const instrument = this.song.instruments[index];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.view.setText(text);
   }
 
   // *** handlers ***
@@ -100,9 +108,7 @@ export default class SongController {
   // *** display-div ***
 
   select_instrument = (event) => {
-    this.#current_insrument_index = event.target.value;
-    
-    console.log("set instrument: " + this.#current_insrument_index);
+    this.loadText(event.target.value);
   }
 
   // *** settings-div ***

@@ -199,6 +199,11 @@
     "text": "Metal/Stigmata/Stigmata - Время.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1JCvok6b8cmgJC2qXt8wPGsVp8FHo4p8n?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -229,6 +234,11 @@
     "text": "Metal/Ария/Ария - Ангельская пыль.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1816p29aFDa1fkR_60Yo-B2jUY_OKmHoz?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -274,6 +284,11 @@
     "text": "Metal/Ария/Ария - Потерянный рай.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Q-3zCbHKP7hASdJg0UD8YNi_QLWlb1xf?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -369,48 +384,10 @@
     "visible": "true"
   },
   {
-    "id": "18b",
-    "band": "Кипелов", "title": "Я свободен!",
-    "genre": "Metal",
-    "text": "Metal/Кипелов/Кипелов - Я свободен! (bass).html",
-    "score": "https://drive.google.com/file/d/1xkSwpQp7QG6_qKK5BCv9KCTieFM_YGXo/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1NzZgkt2VJ07ge67Xkyp6mceYfJQSX0aD?usp=drive_link",
-    "key": "Cm",
-    "instruments": [
-      {
-        "title": "Guitar"
-      },
-      {
-        "title": "Bass Guitar",
-        "tuning": ["D", "G", "C", "F"]
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "20",
     "band": "Слот", "title": "Круги на воде",
     "genre": "Metal",
     "text": "Metal/Слот/Слот - Круги на воде.html",
-    "score": "https://drive.google.com/file/d/1vss0mNtVDcI0-9uKf6ckbgyXnZqCFoF1/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1jOYtYQkapoxvRZNLmaiubSZ01xmYpc63?usp=drive_link",
-    "key": "Bm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "tuning": ["B", "F#", "B", "E", "G#", "C#"]
-      },
-      {
-        "title": "5-string Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "20b",
-    "band": "Слот", "title": "Круги на воде",
-    "genre": "Metal",
-    "text": "Metal/Слот/Слот - Круги на воде (bass).html",
     "score": "https://drive.google.com/file/d/1vss0mNtVDcI0-9uKf6ckbgyXnZqCFoF1/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1jOYtYQkapoxvRZNLmaiubSZ01xmYpc63?usp=drive_link",
     "key": "Bm",
@@ -451,7 +428,7 @@
     "text": "Metal/Эпидемия/Эпидемия - Эпилог.html",
     "score": "https://drive.google.com/file/d/1D3Pf2G_WPgvP2eqsIInpSA2-xEaJmXxV/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1kgIDiQZDsbHGTgFG-xb6qxrb8PIxSjXU?usp=drive_link",
-    "key": "G#m",
+    "key": "Gm",
     "instruments": [
       {
         "title": "Guitar",
@@ -508,25 +485,6 @@
     "band": "Joan Osborne", "title": "One of Us",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Joan Osborne/Joan Osborne - One of Us.html",
-    "score": "https://drive.google.com/file/d/1dNgHW5nIDbkENnTqnzqlzyaFQ2QMss41/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1K62TmDpdAO0oKLPLcFJo9BAhR7VzCtc6?usp=drive_link",
-    "key": "F#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "25b",
-    "band": "Joan Osborne", "title": "One of Us",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Joan Osborne/Joan Osborne - One of Us (bass).html",
     "score": "https://drive.google.com/file/d/1dNgHW5nIDbkENnTqnzqlzyaFQ2QMss41/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1K62TmDpdAO0oKLPLcFJo9BAhR7VzCtc6?usp=drive_link",
     "key": "F#m",
@@ -724,25 +682,6 @@
     "visible": "true"
   },
   {
-    "id": "35b",
-    "band": "The Rolling Stones", "title": "Paint It Black",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/The Rolling Stones/The Rolling Stones - Paint It Black (bass).html",
-    "score": "https://drive.google.com/file/d/18SXrwiQC8MsbBDYofiXl9JyQZREyMNjN/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1HFyp4Cl05oUFBQdZ6V2xWQ2S3sVNb-hF?usp=drive_link",
-    "key": "Em",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "36",
     "band": "7Б", "title": "Молодые ветра",
     "genre": "Rock, Punk",
@@ -786,6 +725,11 @@
     "text": "Rock, Punk/Animal ДжаZ/Animal ДжаZ - Дыши.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1n_UEE--fruCrPVTwSk4TWuXGJ2Psoa-m?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -815,6 +759,11 @@
     "text": "Rock, Punk/Animal ДжаZ/Animal ДжаZ - Чувства.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1qR3fNp_gqkWHaPxs9kVQUoGYi7hKXm9h?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -877,6 +826,11 @@
     "text": "Rock, Punk/Lumen/Lumen - Три пути.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1zXrWt8xIV3pS9k5S6oW5R1FbG8Qecij5?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -953,25 +907,6 @@
     "visible": "true"
   },
   {
-    "id": "48b",
-    "band": "Аквариум", "title": "Город золотой",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Аквариум/Аквариум - Город золотой (bass).html",
-    "score": "https://drive.google.com/file/d/1sDnVQIPJLjd1RLNIGxdVOq4W18XIguov/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1EkgqJ9tYQ_R_d5Oj-d5ZuGBhwTrKhKOT?usp=drive_link",
-    "key": "Bm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "49",
     "band": "Алексей Понамарёв", "title": "А мы не ангелы, парень",
     "genre": "Rock, Punk",
@@ -1009,25 +944,6 @@
     "band": "Антон Токарев", "title": "Седьмой лепесток",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Антон Токарев/Антон Токарев - Седьмой лепесток.html",
-    "score": "",
-    "playback": "https://drive.google.com/drive/folders/1M_jW1kq2Nlh3vTB8FcRcC-9Q3OGQsjCr?usp=drive_link",
-    "key": "D#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 6
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "51b",
-    "band": "Антон Токарев", "title": "Седьмой лепесток",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Антон Токарев/Антон Токарев - Седьмой лепесток (bass).html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1M_jW1kq2Nlh3vTB8FcRcC-9Q3OGQsjCr?usp=drive_link",
     "key": "D#m",
@@ -1157,6 +1073,11 @@
     "text": "Rock, Punk/Божья коровка/Божья коровка - Гранитный камушек.html",
     "score": "https://drive.google.com/file/d/1vTygDeIXDxru6Kc9noqetNbtRuXxvFUa/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Ai3H_k2gPfvAsCYa-lANFeY6Ghg7ZGaH?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1167,6 +1088,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1I_epGx0SleBRoHLXkAZiPUzVVXfUGmMc?usp=drive_link",
     "key": "C#m",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1177,6 +1103,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/10OaYl1nA-YUVJJR4UWtwYL8tTwfhtNep?usp=drive_link",
     "key": "Cm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1219,6 +1150,11 @@
     "text": "Rock, Punk/Ваня Дмитриенко/Ваня Дмитриенко - Венера-Юпитер.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1ChIt85gemipvMTjjNQT9Lda1jCy2gYhL?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1228,6 +1164,11 @@
     "text": "Rock, Punk/Ваня Дмитриенко/Ваня Дмитриенко - Настоящая.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1WZueee1WIfbAJksV8VSS8mW0o4q5-Cxm?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1238,6 +1179,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1ExTAGOjruZERHQRu705F9tPOUfQLWf3e?usp=drive_link",
     "key": "Em",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1265,6 +1211,11 @@
     "text": "Rock, Punk/Город 312/Город 312 - Обернись.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1RMuUWtghCCANMyOpk8K1wLB427MwTtmc?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1311,6 +1262,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/199Qudn-myUU5_jUgFTyrJDuaHlqexvfP?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1321,6 +1277,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1ihmiimHZ7KEhwCDTSwuhH5IiB7JE69Ix?usp=drive_link",
     "key": "Dm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1331,6 +1292,11 @@
     "score": "https://drive.google.com/file/d/1jhUJen9jX0Dq2LONlC3bl9R3I_9GFB3w/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1vjX6ompL0UT2t5aYchy5ymnEDnasfBh7?usp=drive_link",
     "key": "Fm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1412,6 +1378,11 @@
     "text": "Rock, Punk/ДДТ/ДДТ - Ветер.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1zecO-gs7VKVnGkt_u4YQXItHhl6b6VDH?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1440,6 +1411,11 @@
     "score": "https://drive.google.com/file/d/1UnC9EgZOxejwkkvWLRXYs44mvHcWyFz8/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1g0HFFDeU4Dxo8sxnWkTut4gk5dl4d7Ae?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1477,48 +1453,10 @@
     "visible": "true"
   },
   {
-    "id": "80b",
-    "band": "ДДТ", "title": "Песня о свободе",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/ДДТ/ДДТ - Песня о свободе (bass).html",
-    "score": "https://drive.google.com/file/d/1HXGRBoGMUORyZkM1OgVHi3Ukj0G6IuYR/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/16mVE4iegYnhYoMbBPCQapWbwM-2XAyX3?usp=drive_link",
-    "key": "Gm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
-      },
-      {
-        "title": "5-string Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "82",
     "band": "ДДТ", "title": "Просвистела",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/ДДТ/ДДТ - Просвистела.html",
-    "score": "https://drive.google.com/file/d/19Du4f0244a5b_KhNixdCzTdexuMK9IJo/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1rNWj98ziApT6giq2fpi0lfsmjfOH2e6U?usp=drive_link",
-    "key": "F#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "82b",
-    "band": "ДДТ", "title": "Просвистела",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/ДДТ/ДДТ - Просвистела (bass).html",
     "score": "https://drive.google.com/file/d/19Du4f0244a5b_KhNixdCzTdexuMK9IJo/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1rNWj98ziApT6giq2fpi0lfsmjfOH2e6U?usp=drive_link",
     "key": "F#m",
@@ -1540,6 +1478,11 @@
     "text": "Rock, Punk/ДДТ/ДДТ - Родина.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Uiqy_1j-VtIus19WwCubwWUNEJODSyPF?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1586,6 +1529,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1q0K4a8eiFbUBSWeOV0fSJqb0eUCoTnQc?usp=drive_link",
     "key": "Bm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1596,6 +1544,11 @@
     "score": "https://drive.google.com/file/d/1gSijnsWcAhuJE_pXaG8Lc_RXDGsoFHst/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1FVLcY2JZGuVlWYtJCPuJRxjM-lHagEqn?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1606,6 +1559,11 @@
     "score": "https://drive.google.com/file/d/1uPK12OuiXn7iV2ArKU4PgTMqaR-gIXkL/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1PU7DJ6Z4gmdpn-l5jnAUz9r9--BGRIEV?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1616,6 +1574,11 @@
     "score": "https://drive.google.com/file/d/1zwhiDz5jL5bP7pw67l1d2g-q-_RMOG8a/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Arc0LKXwM-t1UobvmhIRMmGPQkJnJx7N?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1626,6 +1589,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1DZyYoLmcHnjWpjExMoFs5hOljRuJvbYe?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1648,25 +1616,6 @@
     "visible": "true"
   },
   {
-    "id": "91b",
-    "band": "Звери", "title": "Напитки покрепче",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Звери/Звери - Напитки покрепче (bass).html",
-    "score": "https://drive.google.com/file/d/1oDZtE4Hq7z6U-IQX3e4GOr9Fyux5PThr/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1h0NmvoDy7rpGiN2yA9DN7H5zY9nD9JeN?usp=drive_link",
-    "key": "Gm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "93",
     "band": "Звери", "title": "Просто такая сильная любовь",
     "genre": "Rock, Punk",
@@ -1674,6 +1623,11 @@
     "score": "https://drive.google.com/file/d/1GEd6UBbIZ0bLgRkFoUEXkuFczS8RNPV8/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1i0T1RZQB43ByGSISByqexm2yMoOXFSQK?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1684,6 +1638,11 @@
     "score": "https://drive.google.com/file/d/1xmv3bi83eJSFb-x7_6zUUCrEjFkCLfkG/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1wXMsu0xQrRRRM-iTPigWserglHG92NYk?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1713,6 +1672,11 @@
     "score": "https://drive.google.com/file/d/1im9VWkOWDeNDv_22bUzUHu__dEUF9MyW/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1TEq4kOInNIxSmYXikGn1Jcy9utinxtfs?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1723,6 +1687,11 @@
     "text": "Rock, Punk/Zемфира/Zемфира - Жить в твоей голове.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1a2Yj3-aooHtbnqXyKJkH-ZXom7iYhz2q?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1733,6 +1702,11 @@
     "text": "Rock, Punk/Zемфира/Zемфира - Знак бесконечность.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1G0kZhpwvxSZP5VcN6vFBQ0zv_gTo1x7y?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1744,6 +1718,11 @@
     "score": "https://drive.google.com/file/d/19bc0Xl9PI4beKaxZ9_SUA4F_AVU_wadm/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/16t5zpK0B176JKogdw2IloqSE_GJSdFGY?usp=drive_link",
     "key": "Dm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1755,6 +1734,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1W9RJ-rE0xPId4seyKaTJRBYq5-cUG6ZQ?usp=drive_link",
     "key": "C",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1765,6 +1749,11 @@
     "text": "Rock, Punk/Zемфира/Zемфира - Мы разбиваемся.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1AhUCFk9NCmemga8zGgPh-sJvwfORs38s?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1776,6 +1765,11 @@
     "score": "https://drive.google.com/file/d/1uzinYFXQ7iE42ghZYp7rKFNPLm2o3x79/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1qQaAULO5uUrEWsd8HiZBPdduAdw43x_6?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1786,6 +1780,11 @@
     "text": "Rock, Punk/Zемфира/Zемфира - Ромашки.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1h7rxKWenz4eP5b2qPXYXivgapiVgtkr-?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -1797,6 +1796,11 @@
     "score": "https://drive.google.com/file/d/1nbqNBDNiqFWIpHuXepuCkNE5fjGyXYTH/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1kCBBRKQzrRJ0ieF8OoX7VRI1OKeTaWdU?usp=drive_link",
     "key": "Dm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2029,6 +2033,11 @@
     "score": "https://drive.google.com/file/d/1f65wZfANd8p-848cPX4EoETCC56mOl-B/view?usp=drivesdk)",
     "playback": "https://drive.google.com/drive/folders/1HT5XPAs0uQzf7Moc73KiZ36kiqfg1kIi?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2066,6 +2075,11 @@
     "text": "Rock, Punk/Кино/Кино - Малыш.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1AVe8liw8LBdvKr7-y6DSLY2AKo_pMJpY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2110,6 +2124,11 @@
     "text": "Rock, Punk/Кино/Кино - Место для шага вперёд.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1anrQOY1DiR5z7mfAnXGgDUa0tSu_HSQj?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2136,6 +2155,11 @@
     "text": "Rock, Punk/Кино/Кино - Нам с тобой.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Ugxf_ardGTvNEerpR2iKHXGxfZfc9nZy?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2213,6 +2237,11 @@
     "text": "Rock, Punk/Кино/Кино - Разреши мне.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Z0NTdKNdC56aK72m018Ax3TdwfQJKvuV?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2222,6 +2251,11 @@
     "text": "Rock, Punk/Кино/Кино - Раньше в твоих глазах.html",
     "score": "https://drive.google.com/file/d/1_d8wR4fu5qSX1hKX06KIg5J0HjFXmEMQ/view?usp=drivesdk)",
     "playback": "https://drive.google.com/drive/folders/1DTZWzWi3v3VSPadCzPYDg5flIRj5StSS?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2353,6 +2387,11 @@
     "text": "Rock, Punk/Кис-Кис/Кис-Кис - Молчи.html",
     "score": "https://drive.google.com/file/d/1p9mj0PE5F0mWHLiFraYcQP8OoZr7vWnN/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1sQubXvmnbi45CzIGCz1oQwCXw0oKf_dN?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2363,6 +2402,11 @@
     "text": "Rock, Punk/KIT-I/KIT-I - Осень.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1_VTw-M8tlUqorZyNcWdo61ilhpMyGANT?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Guitar"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2379,23 +2423,7 @@
         "capo": 3
       },
       {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "143b",
-    "band": "Комната культуры", "title": "Поезда",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Комната культуры/Комната культуры - Поезда (bass).html",
-    "score": "https://drive.google.com/file/d/1MQ796S-_aWUagbADHZXbht-xT3ZMKR5E/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1cRnbIuaPHRkS3hPNmnoNFEUN8ctUEAoh?usp=drive_link",
-    "key": "Cm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
+        "title": "E.Guitar"
       },
       {
         "title": "Bass Guitar"
@@ -2411,6 +2439,11 @@
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Pia23b4ZEHbXACtLJCnXMUiDeJ8Jt29g?usp=drive_link",
     "key": "Em",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2420,6 +2453,11 @@
     "text": "Rock, Punk/Корза/Корза - Тело похудело.html",
     "score": "",
     "playback": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2429,6 +2467,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Валет и дама.html",
     "score": "https://drive.google.com/file/d/1uIy_TdK0oXd2MU-_IRFB7NKeE-yqIivo/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1dUZYZDSwOsocjqd_5LWLorzB9Z7HINYu?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2438,6 +2481,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Ведьма и осёл.html",
     "score": "https://drive.google.com/file/d/1GD29gCMX9tMdH99tXorBFI_60wZ3R_z5/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1smj9GJAhB1GoRBd8auuutqNz19TCFRlk?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2447,6 +2495,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Внезапная голова.html",
     "score": "https://drive.google.com/file/d/1iDDWK0PnxjCPtXht8EcHWOWptyJWSk8r/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Ld3vC1Q9WKagk1upxQY94rV3zcfDPzCP?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2456,6 +2509,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Воспоминание о былой любви (Instrumental).html",
     "score": "https://drive.google.com/file/d/1D38JzA2nte7u6YMOWP0-p5XC0SMwalfh/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1tkqv748L0_E6bim01k5QZcl2uEPADKU1?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2465,6 +2523,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Воспоминание о былой любви.html",
     "score": "https://drive.google.com/file/d/17-mBkLf1KF7gf5OPWXFdbo3_Uqv_Oi7w/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1hD_7lH1gcw5G11dd-De9m4HIt1eJYWQy?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2483,6 +2546,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Два вора и монета.html",
     "score": "https://drive.google.com/file/d/18VJ2ZEK70xSZ-L_WdMFSKONVU-2Y9Iep/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1QZ3YhMnaM-1u2CAQPa529HOSw0w8STqn?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2492,6 +2560,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Два монаха в одну ночь.html",
     "score": "https://drive.google.com/file/d/1X85Q-q9zo4C01wsgfUbyTEtErOfRWA4R/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1yn8LiW8fVLGyHvkHryzTq3tBiKejrW0o?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2501,6 +2574,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Дурак и молния.html",
     "score": "https://drive.google.com/file/d/1dTbg8heLO-k6wq6sS-DZCP3UPhRkoJ8V/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1_sQ7B6pVJVEwOvusiV7qjZ2WC50iP9RM?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2510,6 +2588,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Ели мясо мужики.html",
     "score": "https://drive.google.com/file/d/1SRzaQAtmfjiEoU9Bln5Lbq6Cc8wFU0My/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1L7K4XDh1GWgJHti7TYltcdLpfTPbjP6u?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2519,6 +2602,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Жаль, нет ружья!.html",
     "score": "https://drive.google.com/file/d/1qzKhWw_CTIf4L3-FVre-SxJHIv_mDt0r/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1u_UWgvnWfdPw-ZAWnC5qXbRbZ7tE2Act?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2528,6 +2616,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Забытые ботинки.html",
     "score": "https://drive.google.com/file/d/1slX6EAY6TAIXie21YnkHfQZ4ZOHXSCp3/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1rDAUUwR8lUfsWJ8RDu0SbMY2hktHip8I?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2537,6 +2630,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Камнем по голове.html",
     "score": "https://drive.google.com/file/d/1BlAAwje54zvRVHw_YKXDkotNB8wzumoL/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1LXC5f2kUNwLcs_jd3FdDGjQbdcr28GvO?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2546,6 +2644,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Кукла колдуна.html",
     "score": "https://drive.google.com/file/d/1M99-HNh_GheRXSQ0N-6eHC1Y3Xqob8g7/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1jz3YMpYSpOk5bMlbJGZvMpjRUn3FvASp?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2555,6 +2658,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Лесник.html",
     "score": "https://drive.google.com/file/d/1vEr7wObx47yDxLbO3TETwBlGf8wYaLvH/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1BhHwKp7NnNTVEa92eVRJqtszkp3HsAU_?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2564,6 +2672,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Медведь.html",
     "score": "https://drive.google.com/file/d/14nBUu7GY0GEYKgpkxNAfmMZMJZuLNXQY/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1yMww7Th8Efu4FT_4LJV8uPtm3dst_CVv?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2592,6 +2705,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Мотоцикл.html",
     "score": "https://drive.google.com/file/d/1Pr1cqgjhGFO7stEIWC3JXOt4TvCP0kc5/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1hvKqSqhzkP4CH_0XLFbs3Bl_x2BUQxqx?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2601,6 +2719,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Наблюдатель.html",
     "score": "https://drive.google.com/file/d/1UTkiCN0oi0Xxipn8roDWZ59kUtnSAcvy/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1d6t0CWB6LJQHbSnqheRcjn4TFpQg0Wb0?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2610,6 +2733,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Охотник.html",
     "score": "https://drive.google.com/file/d/1Ci3sABEvTuMVnQNk6PLEJjvDze7KfV1z/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1tor5MozHA4FRNrsqqKsXqG6aytrm5TB7?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2619,6 +2747,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Проклятый старый дом.html",
     "score": "https://drive.google.com/file/d/1bndvQ7avF-esj96vGe8dBVi4PAvT5_ve/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1EKg0XuQRgfxIKY9JMQ4w0PntiSF5GPs9?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2628,6 +2761,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Прыгну со скалы.html",
     "score": "https://drive.google.com/file/d/1Fh3Jjle_1MexYHf8j4uVExJaKn_6K7eX/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1DCrJgWbD1JDsW-cqUyCKhXlPPf3utM_G?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2637,6 +2775,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Садовник.html",
     "score": "https://drive.google.com/file/d/1v_0oJBviazeo_R5zJKVnawXeyV6xvKYR/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/16VZESaBQlqjjKcWc9BfDNFktoVokDye4?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2646,6 +2789,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Сапоги мертвеца.html",
     "score": "https://drive.google.com/file/d/1Ggr7BQaN7zW3IXd6udH44a8jgOd3HZGE/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1X4pnF-IpbCcnBnNLhZGcZWYypeR5O7Mx?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2655,6 +2803,11 @@
     "text": "Rock, Punk/Король и Шут/Король и Шут - Танец злобного гения.html",
     "score": "https://drive.google.com/file/d/1VdkPUzk-6oEO0EyhQjLVFi9hqNI7VFEM/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/165vT57umX3K0haCsXkZfjtNj9kJ8fwd8?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2664,6 +2817,11 @@
     "text": "Rock, Punk/Кукрыниксы/Кукрыниксы - Не беда.html",
     "score": "https://drive.google.com/file/d/1fimY-mVLQiO6d1yFZD1EKNPvqotm_YcK/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/11rlGlGqRRISp_sRMcWZU4zOpYAYMVx64?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2673,6 +2831,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - WWW.html",
     "score": "https://drive.google.com/file/d/1HIVKOby3_bL7HOm-0WTZ37Ywv0qo6-0-/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1bbxuiAXVUIymuhp5AcFF68aPyN3mkSEO?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2682,6 +2845,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - В Питере - пить.html",
     "score": "https://drive.google.com/file/d/12xHY-BHwXJeUVxEudMeUahqd7W1SqdpY/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1_mtoyAB4tcaOGQtPl67pTZ8izywgqs7t?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2691,6 +2859,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - Мне бы в небо.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/16ZFe9m90YkICcDLwyrEzLJIBYLoaYaQk?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2700,6 +2873,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - Свобода.html",
     "score": "https://drive.google.com/file/d/15ttzvGXFcOIx6dVFFi7ESN-IoO6XYgWt/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1uPRzWUzTivHr1MMX-64GG6-SiH0DQ_uh?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2709,6 +2887,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - Терминатор.html",
     "score": "https://drive.google.com/file/d/1-3N4XfI1EjWcOFp-6u3hIj_Cd2W-j2Cx/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1HL75U9f8UGp2ga6uFHPfqhmqWNEl0Bzf?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2718,6 +2901,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - Хуямба.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1tVBcMeZyTo9u-xzJpfPvF5KsMOLTEvmS?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2727,6 +2915,11 @@
     "text": "Rock, Punk/Ленинград/Ленинград - Экспонат.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1E0xDUQDXBKf1pSjYI0uq2Jsr06KCzNgp?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2736,6 +2929,11 @@
     "text": "Rock, Punk/Сергей Шнуров/Сергей Шнуров - Привет Морриконе.html",
     "score": "https://drive.google.com/file/d/1g-ripW65msuKe7BVk0V5OzGc0JyOrBwI/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Ji4EM4XH5TxTBlzsf4nyEMDeA4rP00Qj?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2745,6 +2943,11 @@
     "text": "Rock, Punk/Леприконсы/Леприконсы - Хали-Гали.html",
     "score": "https://drive.google.com/file/d/1YV9nbnyoEqOmI3LBaPpF1a0H4W6lgGCf/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1VVffPdUByJ9TSt3hw834862PO9iS8Kym?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2754,6 +2957,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Belarus Freedom.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1dl4BwJk0o7sVS8K6maLV4LFDRKlOnNU4?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2763,6 +2971,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Ау.html",
     "score": "https://drive.google.com/file/d/1jzbxD5oMu7XvC_L_r9kEPnG9ztuhW45G/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1I4Y51YBU9sgbskxP2Qrox94ZrAcJ5zMU?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2772,6 +2985,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Воины света.html",
     "score": "https://drive.google.com/file/d/1hq4QGkXIz_MMJiWPdVO7X2iV8rCFTkyR/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1HSMCPKfA2_nZ22DBqnOFuw02Bla6BwOh?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2781,6 +2999,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - В платье белом.html",
     "score": "https://drive.google.com/file/d/1EsoIax_3y_FT8VdWArFpqX0uWNNU2xaY/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1V-X55iTceTPuspdbQbKTvfgeHK8bIvOn?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2790,6 +3013,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Грай.html",
     "score": "https://drive.google.com/file/d/15oDPiq4oJx9lHT70QVYxfporIGDQ3yuf/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1BJyUJWnx1YRIDVb415hkkcxZKUYVXDjZ?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2800,6 +3028,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Евпатория.html",
     "score": "https://drive.google.com/file/d/1CcHN8c_RtmN_B45JaB3xrZxBMok_tv9j/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1wvU5GF1NFZpwS7OcwRGwtTyRBNAk_R7W?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2810,6 +3043,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Евпатория (remake).html",
     "score": "https://drive.google.com/file/d/19qP7gZjCAMoQOO6Zytanz_us5vSu7A50/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1U8nD3odbufKKmRgiIhIrJZHyPNT6Lt7U?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2819,6 +3057,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Золотая антилопа.html",
     "score": "https://drive.google.com/file/d/1f5EKUYE8b-GQiDnR-nKnB9wu3tmqyILI/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1AZR6pMj5zDsfXVJZJsWGsw5BxD0Ggy7y?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2829,6 +3072,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Зорачкі.html",
     "score": "https://drive.google.com/file/d/1rdb0amysWFOguATJo9qdM98u6RCExtMH/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/15v4bCBVnTrKg-BdtBkJXmI4bD3dp5gL_?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2838,6 +3086,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Капитал.html",
     "score": "https://drive.google.com/file/d/1mK7SEeTm2X_JpzYMTuIOmsXLywvJKBjj/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1GZSM2tHBPWdJAMTuaxltIQE7bm9tEAoq?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2847,6 +3100,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Манифест.html",
     "score": "https://drive.google.com/file/d/1TsW9uNlbXkg8prqT8RwQHcL-H3rX5cAX/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1u4MS1pZ1UvShj9-L2zHYUN5JmY3G-ybG?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2856,6 +3114,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Метелица.html",
     "score": "https://drive.google.com/file/d/1IG3RXptqOw_9e2ZC3yAWeEIWhLRdy1na/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1aWiq8Tko5l0Sj_xzhZQkI-LX5AXPTwQ6?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2865,6 +3128,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Не быць скотам!.html",
     "score": "https://drive.google.com/file/d/1f_bH5TPEVEr7jlZf64PcTO8leIq_wed-/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1JUHIAL0xxFwOhq1aehGXA8SIyz9m85Xd?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2874,6 +3142,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Огоньки.html",
     "score": "https://drive.google.com/file/d/1R7StDBwhDAr-jdZhL1iYB3xKMe2_K5_q/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1T80f4rmRURH4lsIx69UTDxnRwKr1UsvZ?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2883,6 +3156,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Паренёк под следствием.html",
     "score": "https://drive.google.com/file/d/1WiTkzt66klniPp5vrENEiUxXEukmHY_o/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Ssgu8AqXibQW562h2xMGYT4Zw6I48wND?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2892,6 +3170,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Сочи.html",
     "score": "https://drive.google.com/file/d/1b7PLjk0vgYKYtriI36_-_1vf4Qi0kycf/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1yq5ViqZKvm6D19L9suhOpBfnf1bD1N4o?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2901,6 +3184,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Танцуй.html",
     "score": "https://drive.google.com/file/d/1-cHSeVn0A2rqY6ODx8nVe9cFqyAHA7QZ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1m1cSCg4h91yeRwd0pLSB1NIWf0T_x9kK?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2910,6 +3198,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Харэ.html",
     "score": "https://drive.google.com/file/d/1EFi4DBlcjIA6z5fOAwiB22LwR9EsI3FR/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1YWpgLROjjAGPa9QLHM1NCeQMquvE_uXV?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2919,6 +3212,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Шут.html",
     "score": "https://drive.google.com/file/d/1E_l530UKl2S_z_QHq6xMfenbHVeGX4gn/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1CnVn-R1WWRogHMR9r_c12Eoucuy4-DW5?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2928,6 +3226,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Юность.html",
     "score": "https://drive.google.com/file/d/1EpuMeZJooaGY5fDOufImW6B2cTsmjSq6/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1JEF39SOQqURlBsyiYxV9qi2yBE3mUTga?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2937,6 +3240,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Яблони.html",
     "score": "https://drive.google.com/file/d/1-yCgbYyQGOWBWKKYVQyLtDS5u_pkXeee/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/19hThMnahzgK5_UEnPOW7NZqQLs3oLcyk?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2946,6 +3254,11 @@
     "text": "Rock, Punk/Ляпис Трубецкой/Ляпис Трубецкой - Я верю.html",
     "score": "https://drive.google.com/file/d/1Df6diPEGa1vhP4e3bh9GHNZCJExH38eg/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/12E7Dy5Q5s2JWO1WMpRnkIYx5f9Jk11My?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2972,6 +3285,11 @@
     "text": "Rock, Punk/Маша и Медведи/Маша и Медведи - Любочка.html",
     "score": "https://drive.google.com/file/d/1PxhcNXPiSG87fXRyHHl3Y3Bd3Y6JbEPW/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Lo41KwKG7g1arkSf5sXFtffbkS3d-4Ll?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2981,6 +3299,11 @@
     "text": "Rock, Punk/Мумий Тролль/Мумий Тролль - Владивосток 2000.html",
     "score": "https://drive.google.com/file/d/1wvIW40Mz5XBIDLFvuD__lQmkGO72mVrZ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1B1kRu2mpd4lgutUtHTk8xYGyQ18rJg06?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2990,6 +3313,11 @@
     "text": "Rock, Punk/Мумий Тролль/Мумий Тролль - Медведица.html",
     "score": "https://drive.google.com/file/d/13aGg13SCf1uy6vGqSWziecDcrZ0c9V8m/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1VRxFJIKJv7vZbY8LyeV08FdVqnH5Ky9Y?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -2999,6 +3327,11 @@
     "text": "Rock, Punk/Мумий Тролль/Мумий Тролль - Невеста.html",
     "score": "https://drive.google.com/file/d/1PdCZB3M3HqvfG2dG33AnX59ThNzMncyI/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1c244RpQZ7CcjlEy72VT6vt1n3Xt-nyUO?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3008,6 +3341,11 @@
     "text": "Rock, Punk/Ночные Снайперы/Ночные Снайперы - 31-я весна.html",
     "score": "https://drive.google.com/file/d/1jtzrDAbAvYZyWXHUDSujyMNq2QY3ry7v/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1OkW3qP5W-1yu7Bgm9o75HsGzt9BEo6n8?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3018,6 +3356,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Дыхание.html",
     "score": "https://drive.google.com/file/d/1jZceeOBr_lPOvA2bfv1137YWOuXhBZEP/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1CqPB9WvxeRjdtOav2OkemtuMW_L4IUgY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3028,6 +3371,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Князь тишины.html",
     "score": "https://drive.google.com/file/d/1Vpx1OJwqBChFsE_jeJa3D9-fePJBmksf/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1V4dOJXfOCEO4sq5QDeG-AzEHT1_o5IbN?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3038,6 +3386,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Крылья.html",
     "score": "https://drive.google.com/file/d/1Wq7QAGTN3GXjoLbD58lXCr2oaQYJWwAl/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1tJb1odKI1_aBFD608jobGkynN3qzLOx1?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3048,6 +3401,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Последнее письмо.html",
     "score": "https://drive.google.com/file/d/1MVkA-TzW4QR8XvRtYADe2znAU64kj7n9/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1K2sOaoCyQrIndniN9ymOnQWrT7YW29QU?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3058,6 +3416,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Прогулки по воде.html",
     "score": "https://drive.google.com/file/d/1rJh7ksVYXJ8wmp_Lo9QsjKnX73gJL5LQ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1rNEtwxH246DyvNUkdv9tahUWfA4e4EN3?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3068,6 +3431,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Скованные одной цепью.html",
     "score": "https://drive.google.com/file/d/1a0H7M_tTJYs5pDk93PQaHcCoIAtakXDX/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/15bR780pbTvXEvZeWyxekEGDiGGA2v8S_?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3078,6 +3446,11 @@
     "text": "Rock, Punk/Nautilus Pompilius/Nautilus Pompilius - Я хочу быть с тобой.html",
     "score": "https://drive.google.com/file/d/1vn9Qe6kfR3zqJKVm9rkZKqcYRUYdT21E/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/11IIu15YU0IIjBuSKe4aq_hj1NWZIVZIH?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3087,6 +3460,11 @@
     "text": "Rock, Punk/Неприкасаемые/Неприкасаемые - Напои меня водой.html",
     "score": "https://drive.google.com/file/d/1lvf1XHxarG2u6kN2AgmhT34tw6VLrlO8/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1uaTYsbQvrN35Bs_CataUxjacp-KhN_LW?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3096,6 +3474,11 @@
     "text": "Rock, Punk/Нервы/Нервы - Батареи.html",
     "score": "https://drive.google.com/file/d/12AmIdwZj-AfYpCq2-nuMwE84ZAtOOlwT/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Vn1rUt1310tL2znnaA8tn6kNGunJdIjx?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3105,6 +3488,11 @@
     "text": "Rock, Punk/Нервы/Нервы - Вороны.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1qjOWmo4mk8PE84DBRC3ik6NGENanJUPw?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3114,6 +3502,11 @@
     "text": "Rock, Punk/Нервы/Нервы - Кому ты звонишь",
     "score": "https://drive.google.com/file/d/1gPJyx564DdQRDV7xXuWPKtkDgTKDrdh1/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1r7K8kiDPCmaQCs-BK7NekzB8YZzM0ODF?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3128,20 +3521,9 @@
         "title": "Guitar",
         "tuning": ["D", "A", "D", "G", "B", "E"],
         "capo": 4
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "220",
-    "band": "Нервы", "title": "Кофе - мой друг",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Нервы/Нервы - Кофе - мой друг (e.guitar, bass).html",
-    "score": "https://drive.google.com/file/d/1Cc9tpN1Cj_yxd-A3Htjr-rgFRiGgguN2/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1T4gKNkiAOWfrgMc0-WdLkWjJvCXH50Hv?usp=drive_link",
-    "instruments": [
+      },
       {
-        "title": "Guitar"
+        "title": "E.Guitar"
       },
       {
         "title": "Bass Guitar"
@@ -3185,30 +3567,17 @@
     "visible": "true"
   },
   {
-    "id": "222b",
-    "band": "Нервы", "title": "Слишком влюблён",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Нервы/Нервы - Слишком влюблён (bass).html",
-    "score": "https://drive.google.com/file/d/1zLqm3-3tEdAUqhhVPx5orRcc32iiVxeU/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1hzS0kuO0cRDuSWAdG8tMS04I8NGIcMLA?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 4
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "224",
     "band": "Ногу свело!", "title": "Наши юные смешные голоса",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Ногу свело!/Ногу свело! - Наши юные смешные голоса.html",
     "score": "https://drive.google.com/file/d/1QqEp2MS1g15NQPPanmhtWHqRc49i3FMI/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/15dlDsk1rDKvkl8y8-0TBsIeKuqNiO2Iq?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3218,6 +3587,11 @@
     "text": "Rock, Punk/Порнофильмы/Порнофильмы - Зелёные стёкла.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/14OWULs4iCf2f2Re2dUvsdKnaJRZd1U5B?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3227,6 +3601,11 @@
     "text": "Rock, Punk/Порнофильмы/Порнофильмы - Кто все эти люди.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1PSqhhE7nRUboczr-z4BdFtBIjZW1bS6i?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3236,6 +3615,11 @@
     "text": "Rock, Punk/Порнофильмы/Порнофильмы - Приезжай!.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/14OWULs4iCf2f2Re2dUvsdKnaJRZd1U5B?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3263,6 +3647,11 @@
     "text": "Rock, Punk/Порнофильмы/Порнофильмы - Уроки любви.html",
     "score": "https://drive.google.com/file/d/1NgmRBuhPMAFnyXle7Y8Jg4AK13Tm6nZT/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1t_dFkaI59wArVjtC6YiZChEA_s3MtcCr?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3272,6 +3661,11 @@
     "text": "Rock, Punk/Порнофильмы/Порнофильмы - Это пройдёт.html",
     "score": "https://drive.google.com/file/d/1SVFh3rkccwHzDeZxUZ6l684shkgAM9A_/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/14qkQ-imGqHc7UHUpD40CNitUaS-H3Iob?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3281,6 +3675,11 @@
     "text": "Rock, Punk/Порнофильмы/Порнофильмы - Я так соскучился.html",
     "score": "https://drive.google.com/file/d/1kmRPFgDO8krXAZSxYoeE-KQKdiiuWbKn/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1WjW_Xb7bWj_oFZpqOmm-XoYLwY6r3Tcz?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3291,6 +3690,11 @@
     "text": "Rock, Punk/Пошлая Молли/Пошлая Молли - Нон стоп.html",
     "score": "https://drive.google.com/file/d/1DFC-Q1MaKBg17S3ZsmS_jVnz8gQ6VtCl/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1S8RONNinVb2tlVSfyJ0cZAIZtlrX5S35?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3300,6 +3704,11 @@
     "text": "Rock, Punk/Пошлая Молли/Пошлая Молли - Супермаркет.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1AgD_IZ43aUkSLSzaVvMT8VUz8jptIv-V?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3309,6 +3718,11 @@
     "text": "Rock, Punk/Сектор Газа/Сектор Газа - 30 лет.html",
     "score": "https://drive.google.com/file/d/1J0sZQQhQ3Q2ctjN5likyACVpHhlTJryf/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1p8tYowrkg2M4ClTOjG9b9RTrPyNze2So?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3318,6 +3732,11 @@
     "text": "Rock, Punk/Сектор Газа/Сектор Газа - Бомж.html",
     "score": "https://drive.google.com/file/d/1YiV2rkR16QG7_KHurAeC6A4ZzFOPBK-K/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/179UfzbGupXORSuYevY5iCoEGieb-Xdn6?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3327,6 +3746,11 @@
     "text": "Rock, Punk/Сектор Газа/Сектор Газа - Демобилизация.html",
     "score": "https://drive.google.com/file/d/1JGgW7P7MUZIVzcOdhBwV-fKBhblbjVVZ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1IwOoFjC0K_KGsns0fwoEc46cjXn42P1w?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3336,6 +3760,11 @@
     "text": "Rock, Punk/Сектор Газа/Сектор Газа - Лирика.html",
     "score": "https://drive.google.com/file/d/1z9IkyN5TdDxbo2dMa9xupoyMv-dqQNIl/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1WnkkBWMGe9VOT3ih_JdiuGNspdAGtY5K?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3345,6 +3774,11 @@
     "text": "Rock, Punk/Сектор Газа/Сектор Газа - Пора домой.html",
     "score": "https://drive.google.com/file/d/1F_9Hiwv0V9wFpwKBgIKUer6z-kn_OP1T/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1I55gU8zccLUMUU1tSfVTmxbDyR5dB13y?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3354,6 +3788,11 @@
     "text": "Rock, Punk/Сектор Газа/Сектор Газа - Туман.html",
     "score": "https://drive.google.com/file/d/1mZsYuKERaM_oJLMkgNnUCbz29E2-JQJ7/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1HIAmv1_J7V6vidVpfvgMmbNKx5tual9P?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3363,6 +3802,11 @@
     "text": "Rock, Punk/Сергей Бабкин/Сергей Бабкин - Забери.html",
     "score": "https://drive.google.com/file/d/12_VsFzh8LryZ6-TP3F6otgJB_tjP6spC/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1MxJ3rSD0CymSsXddKv6AIOUqRPObOhUi?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3372,6 +3816,11 @@
     "text": "Rock, Punk/Смысловые Галлюцинации/Смысловые Галлюцинации - Вечно молодой.html",
     "score": "https://drive.google.com/file/d/1Kd4F3ASicLrMNIV09SG3wKR__cNUM6ZM/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1wXKxMgZqOnA3LxLm-1gfbCz3kPNk97o-?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3381,6 +3830,11 @@
     "text": "Rock, Punk/Сплин/Сплин - Выхода нет.html",
     "score": "https://drive.google.com/file/d/1ZWJwEnuOxHvLnWel1pLoYzacnIm3RkLu/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/15vIpfy3J4_4WKloHXLAhV36Y5onP2as0?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3402,30 +3856,17 @@
     "visible": "true"
   },
   {
-    "id": "243b",
-    "band": "Сплин", "title": "Линия жизни",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Сплин/Сплин - Линия жизни (bass).html",
-    "score": "https://drive.google.com/file/d/1ExxeMbdnsULbWZglbBmkLkq8VlEvDuW3/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1zLRlR4HRy2gd_GqS1AnuLm1tqLoC_7Wk?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 7
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "245",
     "band": "Сплин", "title": "Моё сердце",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Сплин/Сплин - Моё сердце.html",
     "score": "https://drive.google.com/file/d/1XniMLu0A-8Kav50VPZeIkGY0HG7DCzxv/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1kOJq5zvOFwxPEWVvHrz8wT2l7FMlzbv4?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3435,6 +3876,11 @@
     "text": "Rock, Punk/Сплин/Сплин - Орбит без сахара.html",
     "score": "https://drive.google.com/file/d/1LSri5gV0FvjgRilw-W6bQ9ezvV4W9xTm/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1vfnp669mO_uk1Xn8A9g3yAyI3_886mGp?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3456,30 +3902,17 @@
     "visible": "true"
   },
   {
-    "id": "247b",
-    "band": "Сплин", "title": "Романс",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Сплин/Сплин - Романс (bass).html",
-    "score": "https://drive.google.com/file/d/1G17H-tthGzUSrl-YhAiEBh9NkPsF_BcQ/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1U0d1V0EuEgLZ2FDdmluiAkvvgZ67OrQe?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 5
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "249",
     "band": "Чичерина", "title": "Ту-лу-ла",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Чичерина/Чичерина - Ту-лу-ла.html",
     "score": "https://drive.google.com/file/d/1uBfEDc4ejlf150JE_iQP-TYMWXql0meD/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1YeGm-3e27k_7yBzS92Zy-p0izAvL-g-Z?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3489,6 +3922,11 @@
     "text": "Rock, Punk/Танцы Минус/Танцы Минус - Город.html",
     "score": "https://drive.google.com/file/d/1hLa6eLaDtqHurF7tMKW4cXh9zJRI0ax2/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/173ns5-40HBu3gqJA_l7XYrzbLXXTblLx?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3498,6 +3936,11 @@
     "text": "Rock, Punk/Танцы Минус/Танцы Минус - Половинка.html",
     "score": "https://drive.google.com/file/d/12sIF72lfiCiRc3mLECMF0p7_lVDRpRWU/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Rn5GNoun6H6Fskt0LgHYVO47fgmzCfGJ?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3507,6 +3950,11 @@
     "text": "Rock, Punk/Чиж & Co/Чиж & Co - О любви.html",
     "score": "https://drive.google.com/file/d/1FkJ5gD0WB_YAZGOWlxQBE-svw-KUecuA/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1V2sO542pmorgxD9FkS7N90mcTzvEOgLQ?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3516,6 +3964,11 @@
     "text": "Rock, Punk/Чиж & Co/Чиж & Co - Фантом.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1IMeUT6MGVTo3cKobmPcTLz6FBBVWxU-d?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3525,6 +3978,11 @@
     "text": "Rock, Punk/Юлия Савичева/Юлия Савичева - Если в сердце живёт любовь.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1-JG33SAC3vOGKd94sfRA5efIIy2MXdsn?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3534,6 +3992,11 @@
     "text": "Rock, Punk/Юлия Савичева/Юлия Савичева - Привет.html",
     "score": "https://drive.google.com/file/d/1y2DuBuuXJEMifdJVdzcT-eWPt_mYMFpB/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/14Rr4n4t17kIZCkDbV8HB71A-hmwFP4B-?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3543,6 +4006,11 @@
     "text": "Rock, Punk/Юта/Юта - Жили-были.html",
     "score": "https://drive.google.com/file/d/1gRFc1j-gz25LL-o21LZZFoUD7LWZXrFu/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1OhQb7LFTWpho39CpvBSefj1_hPioVWoz?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3552,6 +4020,11 @@
     "text": "Rock, Punk/Янка Дягилева/Янка Дягилева - Особый резон.html",
     "score": "",
     "playback": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -3562,6 +4035,11 @@
     "text": "Blues/Gary Moore/Gary Moore - The Loner.html",
     "score": "https://drive.google.com/file/d/1CQRVe4owz9BLCzc2GNM0HgtlbjdCFk8V/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1fW6f54lsPOGzIXPMLoic2Kt7XdpIikjO?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3571,6 +4049,11 @@
     "text": "Blues/Gary Moore/Gary Moore - The Prophet.html",
     "score": "https://drive.google.com/file/d/12UHVF343h9CxwPXEj4-j4vZXTfHoZDHj/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1EGQWXZvZkAy7anwulmVf7TNAFMe9Ec65?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -3581,6 +4064,11 @@
     "text": "Surf/Dick Dale, The Del Tones/Dick Dale, The Del Tones - Misirlou.html",
     "score": "https://drive.google.com/file/d/1s5EPMmNFBIrtNGCkNanocirlPlo7gbor/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Q4LiLH6i-j30P5cFG9r8y3PaFig-siho?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -3591,6 +4079,11 @@
     "text": "Pop, Dance/Ace of Base/Ace of Base - Happy Nation.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1HUuZT4dD4pHfTa0qhPxlQ0mwmO7IEocS?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3601,6 +4094,11 @@
     "text": "Pop, Dance/Céline Dion/Céline Dion - My Heart Will Go On.html",
     "score": "https://drive.google.com/file/d/1w2ReFUSdb4RzImu3xmAxZytBokzHNcL3/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/13-k34exRMb5l0wOzfjRMxJ4IJztJNGCf?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3610,6 +4108,11 @@
     "text": "Pop, Dance/MilleniumKid, Jbs/MilleniumKid, Jbs - Vielleicht Vielleicht.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1oZYDXKxJgIGo5ExFEm5rSMzlN5HhnJDU?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3620,6 +4123,11 @@
     "text": "Pop, Dance/Wham!/Wham! - Last Christmas.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1EXOcDuIDVGFsS4DAfDfPX-sixK62W9_m?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3630,6 +4138,11 @@
     "text": "Pop, Dance/The Limba feat. JONY & Егор Крид & A4/The Limba feat. JONY & Егор Крид & A4 - Новогодняя Песня.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1kAO8UQOJDVEkZO20RzU3Ts7GDxsB-rHt?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3637,25 +4150,6 @@
     "band": "30.02", "title": "Звёзды в лужах",
     "genre": "Pop, Dance",
     "text": "Pop, Dance/30.02/30.02 - Звёзды в лужах.html",
-    "score": "https://drive.google.com/file/d/1IspULpNsZ6ZoKUpCPXUlx4TP7G05IT-9/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1XxomKWH6wugg0OCnvX1L9ANg2jICU9iR?usp=drive_link",
-    "key": "C#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "264b",
-    "band": "30.02", "title": "Звёзды в лужах",
-    "genre": "Pop, Dance",
-    "text": "Pop, Dance/30.02/30.02 - Звёзды в лужах (bass).html",
     "score": "https://drive.google.com/file/d/1IspULpNsZ6ZoKUpCPXUlx4TP7G05IT-9/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1XxomKWH6wugg0OCnvX1L9ANg2jICU9iR?usp=drive_link",
     "key": "C#m",
@@ -3689,24 +4183,6 @@
     "visible": "true"
   },
   {
-    "id": "266b",
-    "band": "DaBro", "title": "Юность",
-    "genre": "Pop, Dance",
-    "text": "Pop, Dance/DaBro/DaBro - Юность (bass).html",
-    "score": "",
-    "playback": "https://drive.google.com/drive/folders/1BkHgcQloTrw1g_OdSZvu9t9_ALML7KSX?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 1
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "268",
     "band": "Demo", "title": "Солнышко",
     "tags": ["Демо"],
@@ -3714,6 +4190,11 @@
     "text": "Pop, Dance/Demo/Demo - Солнышко.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Ais_0wtnNnWZ7yDYSr77R5t8q60h_EED?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3723,6 +4204,11 @@
     "text": "Pop, Dance/IOWA/IOWA - Бьёт Бит.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1TsVP27qJkiiiUgsrF0K2rsf_jVXJynzp?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3732,6 +4218,11 @@
     "text": "Pop, Dance/IOWA/IOWA - Улыбайся.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/19WiVxvHA3Jo4HFhrehenMRgq9PIqppyS?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3742,6 +4233,11 @@
     "text": "Pop, Dance/LOBODA/LOBODA - 40 Градусов.html",
     "score": "https://drive.google.com/file/d/1vTOuBGPZv8KjK7fwI5R2MZP8I6H2Feut/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/18KGAWEIzfCgjOXlE8hEVxaQOemmxYcoh?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3752,6 +4248,11 @@
     "text": "Pop, Dance/LOBODA/LOBODA - Твои глаза.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1DBNNMugV9llJBRWbkIM0gLWWV5QPuHqY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3761,6 +4262,11 @@
     "text": "Pop, Dance/Mr. Credo/Mr. Credo - Сегодня в белом танце кружимся.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/19hsP2RwCVPLKeLPTNHYj0q2oWh6DKd0D?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3771,6 +4277,11 @@
     "text": "Pop, Dance/Rauf & Faik/Rauf & Faik - 5 мину.html",
     "score": "",
     "playback": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3781,6 +4292,11 @@
     "text": "Pop, Dance/Rauf & Faik/Rauf & Faik - Вечера.html",
     "score": "https://drive.google.com/file/d/1QGwjfWdcDkjy3TcF_2mzTDsGfML9Y77N/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1iYzmVS9XA5JqxvawyIh51BIYxKJjeG2C?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3791,6 +4307,11 @@
     "text": "Pop, Dance/Rauf & Faik/Rauf & Faik - Детство.html",
     "score": "https://drive.google.com/file/d/1fWTHh7Sz60TDRSWqJZueOsu8oVSraGAw/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/10ypULeYYhi0A4h2t_yZ_QAoluh4Ct0xS?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3801,6 +4322,11 @@
     "text": "Pop, Dance/Rauf & Faik/Rauf & Faik - Колыбельная.html",
     "score": "https://drive.google.com/file/d/1vC5-aVCc1gu4fmaomalHBdrnhpwQ5Q8j/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1mWS92bFR1EDnQ4A7alkqgxQ5MLtXipoP?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3811,6 +4337,11 @@
     "text": "Pop, Dance/t.A.T.u/t.A.T.u. - Люди-инвалиды.html",
     "score": "https://drive.google.com/file/d/1SC0PoIGknQ4AN5OYGEwmPcwGIwSwyn5L/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1z0C9g7w4ANKumK6pUjwzjz61KYTzElby?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3821,6 +4352,11 @@
     "text": "Pop, Dance/t.A.T.u/t.A.T.u. - Нас не догонят.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/10AknylWFvFMuAtPVS4twHJYBF9vILrBY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3831,6 +4367,11 @@
     "text": "Pop, Dance/t.A.T.u/t.A.T.u. - Не верь, не бойся, не проси.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/12y4Q49X-m83y8NwTtuJXf5ej7E8lzYMp?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3841,6 +4382,11 @@
     "text": "Pop, Dance/t.A.T.u/t.A.T.u. - Покажи мне любовь.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1_eBWrwllKfvQCynrQC7yDS22XdHaWvQK?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3851,6 +4397,11 @@
     "text": "Pop, Dance/t.A.T.u/t.A.T.u. - Я сошла с ума.html",
     "score": "https://drive.google.com/file/d/1ffl-982fGHipm7gnEp_UGcgLhUa_3eq3/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1lbZhjQyKtb4wh2dfpDCKEt81M3GQdBTb?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3861,6 +4412,11 @@
     "text": "Pop, Dance/Zoloto/Zoloto - Непроизошло.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1deQjdC-02wPVbpqfbLXYSEBadJL2mUF7?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3870,6 +4426,11 @@
     "text": "Pop, Dance/Акула/Акула - Такая любовь.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1FVFF5_56EEOLfR6p12ZClHDR3qvdz7Y9?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3879,6 +4440,11 @@
     "text": "Pop, Dance/Андрей Губин/Андрей Губин - Девушки как звёзды.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1ZktROlg4SZEo_4jlYE4rRC2XW4nClV-3?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3888,6 +4454,11 @@
     "text": "Pop, Dance/Андрей Губин/Андрей Губин - Лиза.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1SGjj00EbXnhu11uhKUUU4kYf0OlBwFwz?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3897,6 +4468,11 @@
     "text": "Pop, Dance/Андрей Губин/Андрей Губин - Мальчик-бродяга.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Rfcy_uwEL0EMI2cD4SsICs3IS75cwQHo?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3906,6 +4482,11 @@
     "text": "Pop, Dance/Андрей Губин/Андрей Губин - Ночь.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1gObqP-6HiOWjMIQa1zq11P4HNQim6wKM?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3915,6 +4496,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Вера.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1W6uEa7Gr4S-lo52j5PR-VIrGKxJYC1rQ?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3924,6 +4510,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Девушки из высшего общества.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1Bfm0ca842Aumn2JBQxd-PgVq-ELA06me?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3933,6 +4524,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Иностранец.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/12nzQSye-o3YSpKbY0uYFqa9fZmmWpk5H?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3942,6 +4538,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Как ты красива сегодня.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1WdVsMw4OriZrMJ7rdanUVttfxK1oDtx2?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3951,6 +4552,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Красиво.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1hBSczg8wc3h4xvmwW7BL6zTrvaPUZOdL?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3960,6 +4566,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Магдалина.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1gyODtl0ip5IWQndkDeTpwPbxsJnXvxIN?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3969,6 +4580,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Не тревожь мне душу скрипка.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1OtYwy66vKnpfrvAcm-_JViIB2EyHBZEM?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3978,6 +4594,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Небеса.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1eGfXETh3Z_L1LRMC7mSCTONnHyR6p13O?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3987,6 +4608,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Параллельные.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1SdIm4B09oeQXh114g4-Qsqg-0EaImdKW?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -3996,6 +4622,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Салют, Вера.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/18zUJkpzmQ7FgC0tjSp4f5AZVJGrX_OXM?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4005,6 +4636,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Самба белого мотылька.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1g-VdN9gkROM6sKNYpnsIXm20rnlVdVos?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4014,6 +4650,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Се ля ви.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1xtLJB638zP8mNKJZ-zeZGpViJkbcehvU?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4023,6 +4664,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Сэра.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1p2U7v3koUqVUlx48rtRCxJM68OaJId-b?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4032,6 +4678,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе - Текила-любовь.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1ZZrpWjI-uENbToeqLCgylPsXqKLqjR5U?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4041,6 +4692,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе, Вахтанг - Свет уходящего Солнца.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1zFaS2J8uEXET3XdjN_32hqUYqWmEFOe2?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4050,6 +4706,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе, ВИА Гра - Океан и три реки.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1QbB_ROckmcCHnU7lGRLAOtMIUSYCP2S9?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4059,6 +4720,11 @@
     "text": "Pop, Dance/Валерий Меладзе/Валерий Меладзе, ВИА Гра - Притяженья больше нет.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/11Sa2TrL-U1610oU9w0JSZU2B6514EZbb?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4069,6 +4735,11 @@
     "text": "Pop, Dance/Дилижанс/Дилижанс - Новогодняя.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1_sgeGfiRI-rpxoBwXiJa8XKa3dnF0MHG?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4079,6 +4750,11 @@
     "text": "Pop, Dance/Дискотека Авария/Дискотека Авария - Новогодняя.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/15QMGfvo6vmVxuNskbmpU8McqrpUcJMF3?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4088,6 +4764,11 @@
     "text": "Pop, Dance/Иванушки International/Иванушки International - Где-то.html",
     "score": "https://drive.google.com/file/d/1yol3UdSqrTkoT-oOB3nu8JgC_ZsdU1dY/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/14FkJV3SlQFDGsr8qc3JkXfijtS8OFPOy?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4097,6 +4778,11 @@
     "text": "Pop, Dance/Иванушки International/Иванушки International - Кукла.html",
     "score": "https://drive.google.com/file/d/15neqx4swQtKsCABoRDHfKbtMRv9FCdSK/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/159RMX8oWTPnob-Wrdbe7geJUYSAQDCgL?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4106,6 +4792,11 @@
     "text": "Pop, Dance/Иванушки International/Иванушки International - Тополиный пух.html",
     "score": "https://drive.google.com/file/d/1jcrcZrGd6ihFJ4Ow22VRfX4tmhc4MSfJ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1G9n9M0DKCyqY-LEa0Nyq5_61wsgLysWv?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4115,6 +4806,11 @@
     "text": "Pop, Dance/Иванушки International/Иванушки International - Тучи.html",
     "score": "https://drive.google.com/file/d/1ndAeEUPkLQeMXj4vMNXltYhBgMR3-9q_/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1VaZkbm2UdKMOjT6pPeipIazsff2cKIce?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4124,6 +4820,11 @@
     "text": "Pop, Dance/Ласковый май/Ласковый май - Белые розы.html",
     "score": "https://drive.google.com/file/d/1dvoJ42mKZDGNikSTdto3GhtSlRA5Gc4J/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/19RbAeJ_Z5C4Cf4KBUjKPnsFBHgQELr0L?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4133,6 +4834,11 @@
     "text": "Pop, Dance/Ласковый май/Ласковый май - Детство.html",
     "score": "https://drive.google.com/file/d/1ZG0CsplmG_NBy0vZeQnWfRezuXef9feC/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Df1Xb9Hx-CEypYrqo019VJ5IJd1SYYVg?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4142,6 +4848,11 @@
     "text": "Pop, Dance/Ласковый май/Ласковый май - Розовый вечер.html",
     "score": "https://drive.google.com/file/d/1iWXUO9HNAxATB3_GUlu0vRYB0YggNdrv/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/11Yr_MU_25kVcrgMe5o3ncfjf-Ao7a1A8?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4151,6 +4862,11 @@
     "text": "Pop, Dance/Ласковый май/Ласковый май - Седая ночь.html",
     "score": "https://drive.google.com/file/d/1LHoPM_ug2N7PI3T_iWBij_K2PRL8P3gG/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1SU2pcC6eo1w3GoNmS9uZBnJ6NaLNvp0E?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4160,6 +4876,11 @@
     "text": "Pop, Dance/Линда/Линда - Мало огня.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1hkBSI1efA2adDwfLUvwl3G7R03X-ZPji?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4170,6 +4891,11 @@
     "text": "Pop, Dance/МакSим/МакSим - Ветром стать.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1KNpI75bORgJEWscjgiDmz3KYIOB2E4Kd?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4180,6 +4906,11 @@
     "text": "Pop, Dance/МакSим/МакSим - Знаешь ли ты.html",
     "score": "https://drive.google.com/file/d/1iEEOeTzAfcEW8h4yaFtidKJ1qrtmJ4UW/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1fbooP_FIw9gT2v87HUeWgqvjzeUgyaaP?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4190,6 +4921,11 @@
     "text": "Pop, Dance/МакSим/МакSим - Не отдам.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1XcMqIO9Yy477zsPCaJQjFD9H9YvJCrFc?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4200,6 +4936,11 @@
     "text": "Pop, Dance/МакSим/МакSим - Отпускаю.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1gtIH9vA7f5m69u_e0cwF2LVsL9vDnIZr?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4210,6 +4951,11 @@
     "text": "Pop, Dance/МакSим/МакSим - Трудный возраст.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1WxlOQRy9aLKPK95M78JmmQrmBcm3CrR9?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4219,6 +4965,11 @@
     "text": "Pop, Dance/Максим Фадеев/Максим Фадеев - Танцы на стёклах.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1aJggtE8kA7Kbeiocw4iGr5o7WXJibn30?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4228,6 +4979,11 @@
     "text": "Pop, Dance/Мираж/Мираж - Музыка нас связала.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1iWVSbGMbcwmKIanp_Sp4a1sUQsIRIIFi?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4237,6 +4993,11 @@
     "text": "Pop, Dance/Мираж/Мираж - Новый герой.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1QMBnyCWwHISIccw5Kba0Jt8tQJb1OHdx?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4246,6 +5007,11 @@
     "text": "Pop, Dance/Моя Мишель/Моя Мишель - Ветер меняет направление.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1K7zRrHYG7oEcfdmR46iwoUbCd395nT1y?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4255,6 +5021,11 @@
     "text": "Pop, Dance/Моя Мишель/Моя Мишель - Зима в сердце.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/126O6dD-vSZOO2kdY7zwh8xHkAb-OQLQo?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4285,6 +5056,11 @@
     "text": "Pop, Dance/Нэнси/Нэнси - Чистый лист.html",
     "score": "https://drive.google.com/file/d/1_GkwIz0CZjZE7Nl6s2By61CFuTQU-RtO/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1zwJCQCtJ95wkwEL8zgxm5vubsuAegvLr?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4294,6 +5070,11 @@
     "text": "Pop, Dance/Пицца/Пицца - Лифт.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1M5FJUZIzPLYFBon6qWjGP-0-mtQbKk6E?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4303,6 +5084,11 @@
     "text": "Pop, Dance/Пицца/Пицца - Оружие.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1rAeYp8NkMFwSB2DoHTg2tFCnBSEf7o3A?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4324,30 +5110,17 @@
     "visible": "true"
   },
   {
-    "id": "325b",
-    "band": "Пропаганда", "title": "Мелом",
-    "genre": "Pop, Dance",
-    "text": "Pop, Dance/Пропаганда/Пропаганда - Мелом (bass).html",
-    "score": "https://drive.google.com/file/d/1goZDHum_iKrmjatuKBx2UcL-0PrpOHhl/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1WBLzSdZvBdIKf-AeBmPkUuQ45pCRtyBk?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 1
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "327",
     "band": "Рок-Острова", "title": "Ничего не говори",
     "genre": "Pop, Dance",
     "text": "Pop, Dance/Рок-Острова/Рок-Острова - Ничего не говори.html",
     "score": "https://drive.google.com/file/d/1RX7JSbUa1SXXIymqrazvQVEpKemjMBQi/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/19Ejrt2It6F4QMq0nkMJlLjjveiwf-o9S?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4357,6 +5130,11 @@
     "text": "Pop, Dance/Сладкий сон/Сладкий сон - На белом покрывале января.html",
     "score": "https://drive.google.com/file/d/1_t4RwA-vPU7K4twMfRtWL2cGjPMzYT3-/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1E17kU8I-Hq8jINdfmmlc2Ucl-D07fXjY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4367,6 +5145,11 @@
     "text": "Pop, Dance/Стекловата/Стекловата - Новый год.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1WGsoxmvZBOxgsyy8wjpM-jxuGCiFrC28?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4376,6 +5159,11 @@
     "text": "Pop, Dance/Форум/Форум - Белая ночь.html",
     "score": "https://drive.google.com/file/d/1hwOrMbJvKMZ1N912auTDJ3qYfZFq7C27/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Fiog5JRWCJcqYekOPeC3THY7OetwTu0T?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4385,6 +5173,11 @@
     "text": "Pop, Dance/Хлеб feat. Cream Soda/Хлеб feat. Cream Soda - Плачу на техно.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1D7MTbS0zI2e6FXfmqS5CJIgaK7TZfyKR?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4392,24 +5185,6 @@
     "band": "Шура", "title": "Ты не верь слезам",
     "genre": "Pop, Dance",
     "text": "Pop, Dance/Шура/Шура - Ты не верь слезам.html",
-    "score": "https://drive.google.com/file/d/1qo6aySz_SveVcrhB1bA_gcKImM38d-0D/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1UigfGjp-99bxqJG3DwDk27WYBtRKsjFq?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 1
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "331b",
-    "band": "Шура", "title": "Ты не верь слезам",
-    "genre": "Pop, Dance",
-    "text": "Pop, Dance/Шура/Шура - Ты не верь слезам (bass).html",
     "score": "https://drive.google.com/file/d/1qo6aySz_SveVcrhB1bA_gcKImM38d-0D/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1UigfGjp-99bxqJG3DwDk27WYBtRKsjFq?usp=drive_link",
     "instruments": [
@@ -4464,6 +5239,12 @@
     "text": "Rap, Hip-hop/Coolio/Coolio - Gangsta's Paradise.html",
     "score": "https://drive.google.com/file/d/1nt9M1EerDTHbi5NHPkbHu_FRBN6wxJ9e/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/13FVckQ6EcMNXH-nMMK90XSLu0708KCVA?usp=drive_link",
+    "key": "Cm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4474,6 +5255,14 @@
     "text": "Rap, Hip-hop/Face2Face/Face2Face - Кошка.html",
     "score": "https://drive.google.com/file/d/1sCCe7tszXfRqWO1t3BCCLYJ9IZDL-Kh7/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1BsV9SidaA3qFHdJDBiUWNw5s2X8thXTn?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4484,6 +5273,11 @@
     "text": "Rap, Hip-hop/Элджей, Feduk/Элджей, Feduk - Розовое вино.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1TdNhRnMjrKEmeVG6ouF4QDGbgP6wLZiC?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4494,6 +5288,11 @@
     "text": "Rap, Hip-hop/Feduk/Feduk - Хлопья летят наверх.html",
     "score": "https://drive.google.com/file/d/1rGLIrFOPi0lumwyOzZTwbJMvLLdGbz_S/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/15X5VKraUhkNCfmXjEaNVNr2FezAiXGdJ?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4504,6 +5303,11 @@
     "text": "Rap, Hip-hop/Kentukki/Kentukki - Замигает свет.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1UpFMtP0W17zr7I80hJBbt7QRqj4_hj1R?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4513,6 +5317,11 @@
     "text": "Rap, Hip-hop/Anacondaz/Anacondaz - Твоему новому парню.html",
     "score": "https://drive.google.com/file/d/161AJXlSGdnLUfktMgWp4qtrx6AUpqNDm/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1BjIUvYBauGnvyh95qTUmi4kopyEw5opH?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4522,6 +5331,11 @@
     "text": "Rap, Hip-hop/Morgenshtern/Morgenshtern - Пустой вокзал.html",
     "score": "https://drive.google.com/file/d/1XlFhofNUlcWLf2Ffbyz1IGoXge2QEufa/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1byXSTAdd3QCtHlLjXEtkYEUfvlGRDkm6?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4551,6 +5365,11 @@
     "text": "Rap, Hip-hop/Noize MC/Noize MC - Вселенная бесконечна.html",
     "score": "https://drive.google.com/file/d/1hpmrUiCIkGdnQiiXEcPtMnfmXRWLanzG/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1iEr8iqhSEYvhDP3niDePj3Xf_meX-1hU?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4561,6 +5380,11 @@
     "text": "Rap, Hip-hop/Noize MC/Noize MC - Выдыхай.html",
     "score": "https://drive.google.com/file/d/1FQMo1LaRY8tsInxD8hhrHPtoDuEoPeuI/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1WEA_g7En2Q_VZDVy4piYcAMqytqt4-bg?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4571,6 +5395,11 @@
     "text": "Rap, Hip-hop/Noize MC/Noize MC - На Марсе классно.html",
     "score": "https://drive.google.com/file/d/1kXGdYCjgfJF95U3AhagVzS9nzztgbmOc/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Vwa1pjQptM2Qv_0ICh71CuNSxc-42Ca4?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4580,6 +5409,11 @@
     "text": "Rap, Hip-hop/Баста/Баста - Выпускной (Медлячок).html",
     "score": "https://drive.google.com/file/d/18sL84gWpepFl5ejM2_4mB8etEQYLQkCJ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/129M7HikJxXnaFBYoYxhIVJ4TqPNotExx?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4589,6 +5423,11 @@
     "text": "Rap, Hip-hop/Макс Корж/Макс Корж - Небо поможет нам.html",
     "score": "https://drive.google.com/file/d/1x7LH78zpMBhSIvwgYP10-kJBA1Nj_Ial/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1B3Z7PKRrdqXYpDhVCKV4t_0NcBnZj2Io?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4598,6 +5437,11 @@
     "text": "Rap, Hip-hop/Макс Корж/Макс Корж - Шантаж.html",
     "score": "https://drive.google.com/file/d/1NDIwK2hFbYRfsyVcZs5Uc3Gama4QJ8DS/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Q7RbxKYe73Tnv7iH36D9kT8lIA5gdYTC?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4607,6 +5451,11 @@
     "text": "Rap, Hip-hop/Макс Корж/Макс Корж - Эндорфин.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1iHXkE1w82CfnIRcV8pEc6RwYDKjFL3bK?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4616,6 +5465,11 @@
     "text": "Rap, Hip-hop/Тима Белорусских/Тима Белорусских - Витаминка.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1C93xoclxO_8Vawo-qrSG6t4GPjm7T0Wz?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4625,6 +5479,11 @@
     "text": "Rap, Hip-hop/Тима Белорусских/Тима Белорусских - Мокрые кроссы.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1DOAo84wCfDYkPl5D5Mj5O_kKYxSyzzVa?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4634,6 +5493,11 @@
     "text": "Rap, Hip-hop/Тима Белорусских/Тима Белорусских - Незабудка.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1hMtBXBV3VPxjGue9t9G8SaAbpyeA0Tre?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -4644,6 +5508,11 @@
     "text": "Indie/Pixies/Pixies - Where Is My Mind.html",
     "score": "https://drive.google.com/file/d/1Dyb0AFpNR2oQcugSwtauEtJMs5Fz2DqQ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1HyEboGqSBJfAtvUl39qMiRH3-XlXE_Ut?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4654,6 +5523,11 @@
     "text": "Indie/RSAC x ELLA/RSAC x ELLA - NBA.html",
     "score": "https://drive.google.com/file/d/1vrBiLy7jkG1sNsDC3j4CIXXxzfG2nWwN/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Imutxz_heWnMO6joY1qANJax-G0qlbOP?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4664,6 +5538,11 @@
     "text": "Indie/ssshhhiiittt!/ssshhhiiittt! - Танцы.html",
     "score": "https://drive.google.com/file/d/1P9GMvr-jgYosT11B4OlJw5deTAMssa6i/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1jZUPyg7UMZZxavtVHYUgvC20EERzflZj?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4675,6 +5554,11 @@
     "score": "https://drive.google.com/file/d/1Tb6j9gaRUxcy9S-0YyOiB7-7ZXBLECMY/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/17SjbXz_KDfGA_mQiaOp84FRCuxDVzr4k?usp=drive_link",
     "key": "Em",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4684,6 +5568,11 @@
     "text": "Indie/Алёна Швец/Алёна Швец - Расстрел.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1TQ1EK87afQA4S0EOHx-Focq7808LG3Fa?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4711,6 +5600,11 @@
     "text": "Indie/Гречка/Гречка - Картина.html",
     "score": "https://drive.google.com/file/d/1sCJlTqz_if1l4Yfn8YwuaHYTsDINTzXh/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1QbRr197vZcozNXCOtchcTgwLuSlAzdTp?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4756,6 +5650,11 @@
     "text": "Indie/Мукка/Мукка - Девочка с каре.html",
     "score": "https://drive.google.com/file/d/1vgKxufhHD3uQ-xVDi3gZVFbtxu2RkTQv/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1jkvLEy2HHMmnhQFaRP3MCS6w8zkIogwc?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4766,6 +5665,11 @@
     "score": "https://drive.google.com/file/d/1mjofbO8zKsz8Kh4XtAekJccYgWyQROCI/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1IaaJ-vgDc_-0D9vwV_HR2YLbK0X9A1dJ?usp=drive_link",
     "key": "A#m",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4794,6 +5698,11 @@
     "text": "Indie/Просто Лера/Просто Лера - Мне 20.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1frIeVMu4Qrk6aCzAwWtKW5hTFuRbsITc?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4803,6 +5712,11 @@
     "text": "Indie/Просто Лера/Просто Лера - Оставь меня одну.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1V9xEbqN0kKgnWy83yFk3abFeMEr02CD7?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4812,6 +5726,11 @@
     "text": "Indie/Свидание/Свидание - Случайная любовь.html",
     "score": "https://drive.google.com/file/d/19xMXyvWNyfAqBZkqav4vLxuBKh9g2XTN/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1N1VJNYpXuyLeQsudDpsh_Z61PwqHnv_W?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4821,6 +5740,11 @@
     "text": "Indie/Сёрега Пират/Сёрега Пират - Прости я не знаю.html",
     "score": "",
     "playback": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4830,6 +5754,11 @@
     "text": "Indie/Шарлот/Шарлот - Мяу мяу мяу.html",
     "score": "https://drive.google.com/file/d/1MZoEA5n1TBTGdICoE5VH0UK6XpaD6hdx/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1704i7kOOxRf7zS9fWZunuZCN0JvasL98?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4839,6 +5768,11 @@
     "text": "Indie/Шарлот/Шарлот - Щека на щеку.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1vcKSItKqKt7MW1qHJpw1LrgXcEDVLbuC?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -4850,6 +5784,11 @@
     "text": "Estrada/Adriano Celentano/Adriano Celentano - Confessa.html",
     "score": "https://drive.google.com/file/d/1krciZr51xn4RHvzngDB90shMMOks22Ec/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1Zw3NUJ9jEq8DpPpPwcgffvKBkl6AJ18S?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4860,6 +5799,11 @@
     "text": "Estrada/Dean Martin/Dean Martin - Let It Snow! Let It Snow! Let It Snow!.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1UCbjqpAuYR7k0EpF6CzH-U2vobP3V1LR?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4886,6 +5830,11 @@
     "text": "Estrada/Григорий Лепс/Григорий Лепс - Рюмка водки на столе.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1in3ukvUsg78MwGNulRDtTHIWlC3QNO_r?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4895,6 +5844,11 @@
     "text": "Estrada/Любэ/Любэ - Давай за....html",
     "score": "https://drive.google.com/file/d/1nHDZ7XL7P9VLktNwDzzHaaoFsteq7tz7/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1s2ey6FpvxcgW6aUpUEsJ363L3GIuLjeh?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4904,6 +5858,11 @@
     "text": "Estrada/Любэ/Любэ - Конь.html",
     "score": "https://drive.google.com/file/d/1Pd3x_X8dGu_TKk2SVgsL23ynuTCL0SnQ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1N7ILq-ouKoBFDnCblhOOeN_WkrIjo_hu?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4913,6 +5872,11 @@
     "text": "Estrada/Любэ/Любэ - Позови меня тихо по имени.html",
     "score": "https://drive.google.com/file/d/1xA5SzATjDSUQSHupDkYJg7HUPCaCOc3Z/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1ysBe13t5O5s37Ylk2u8UQVpTx-SQI_P7?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4922,6 +5886,11 @@
     "text": "Estrada/Любэ/Любэ - Ты неси меня, река (Краса).html",
     "score": "https://drive.google.com/file/d/1wlDc87ATBFAasLEygoYBj3nKcPpqeISf/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/18Z3agzs-RoM0gDsra5iM9zUd9CpHJboq?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4931,6 +5900,11 @@
     "text": "Estrada/Михаил Боярский/Михаил Боярский - Всё пройдёт.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1eG0TtdJld330zi75tVwY9ViqHUgB9Jy5?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4940,6 +5914,11 @@
     "text": "Estrada/Михаил Боярский/Михаил Боярский - Зеленоглазое такси.html",
     "score": "https://drive.google.com/file/d/1zwfiwUT87I5-VSKphQHjJSTEKYRmsq9U/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/19x8R7RJ6ko9Jf7vuAOH59yYQnU8-JPfj?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4949,6 +5928,11 @@
     "text": "Estrada/Михаил Боярский/Михаил Боярский - Ланфрен-Ланфра.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1HjsK4eSY2CE7l7whMuYwoGnSnAQcp6eg?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -4970,24 +5954,6 @@
     "visible": "true"
   },
   {
-    "id": "380b",
-    "band": "Михаил Боярский", "title": "Спасибо, родная",
-    "genre": "Estrada",
-    "text": "Estrada/Михаил Боярский/Михаил Боярский - Спасибо, родная (bass).html",
-    "score": "https://drive.google.com/file/d/1uXdsiI5v8OJtFC53GJgJ8ygHQRgaEPF_/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1KFYeBadq9WHEovwMwBjpX-ABFetLitxf?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "382",
     "band": "Муслим Магомаев", "title": "Серенада Трубадура",
     "tags": ["луч солнца золотого"],
@@ -4995,6 +5961,11 @@
     "text": "Estrada/Муслим Магомаев/Муслим Магомаев - Серенада Трубадура.html",
     "score": "https://drive.google.com/file/d/16HYTAOwquGw-au46YkvGG_ZLI4lEc2rS/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1jXcE1F9UZBMYoez9wwbY1zF3SGRGZvk7?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5005,6 +5976,11 @@
     "text": "Estrada/Муслим Магомаев/Муслим Магомаев - Синяя вечность.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1mJbyfHY3p7I1sQI2o95AXEjBHXqkKpFN?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5014,6 +5990,11 @@
     "text": "Estrada/Пламя/Пламя - Снег кружится.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/16LS4uUZ6EZ0jZtpZt46cg3brB9N5LHm7?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5024,6 +6005,11 @@
     "score": "https://drive.google.com/file/d/1K10IHTfm4wWAActIuxE3Kva92jnAskwQ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1yS0pOD0N9y30K4vpuKK2OqG2TfsyzSb6?usp=drive_link",
     "key": "Bm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5033,6 +6019,11 @@
     "text": "Estrada/Татьяна Дасковская/Татьяна Дасковская - Прекрасное далёко.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1pcyQI_urfHHrXnP6igPlUtiuqikTePJ0?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5060,6 +6051,11 @@
     "text": "Estrada/Ярослав Евдокимов/Ярослав Евдокимов - Фантазёр.html",
     "score": "https://drive.google.com/file/d/1cphBetJnXQQGep1TGPbE9c5J7s4i4OCH/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1sLS-3RtyhM7HTkSJFmBywSFj2GdySpQ6?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -5089,6 +6085,11 @@
     "score": "https://drive.google.com/file/d/17Rg60eukoTK0PClbzavehGEsw706VydB/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/13lcJ_F1tUwfNwZBE6pls_qhwBCYe_-D5?usp=drive_link",
     "key": "Bm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5099,6 +6100,11 @@
     "score": "https://drive.google.com/file/d/1ly68BdghBlR7capg9ESi0-E4_5iOga3h/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1pLdVCGJCnWixsMZ_ODCfHCfLfVGMDRwv?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5109,6 +6115,11 @@
     "score": "https://drive.google.com/file/d/1INTCvPCRYe0vWBYEiou4LL1mFKhJvQaG/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1fblfRgNUktUoBSy5N85RCJjDhqtQWbxF?usp=drive_link",
     "key": "Dm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5118,6 +6129,11 @@
     "text": "Chanson/Михаил Круг/Михаил Круг - Фраер.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/175UtsrlpJA4TFxmJFlbx028XQ5uUHDQ1?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5146,6 +6162,11 @@
     "score": "https://drive.google.com/file/d/1sZEXAKSVv1hd27bOkjMUkklYmnCDTA1m/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1L_sSyjPd1YHXQY0gvMaidki1D5dLjtpz?usp=drive_link",
     "key": "Bm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -5155,6 +6176,11 @@
     "text": "Chanson/Фристайл/Фристайл - Ах, какая женщина.html",
     "score": "https://drive.google.com/file/d/1ZYlWPTdlVRHwE1V0ADVV6vKelgRiteQH/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1gzsfiabh_ltjo0843umsjD8Mfx9kFpy5?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -5166,6 +6192,11 @@
     "text": "Musical/Notre-Dame de Paris/Notre-Dame de Paris - Belle.html",
     "score": "https://drive.google.com/file/d/13MF6rj9TyQlPMm0pkJ-KLRspQvpHEHuq/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1MnDQ5bz9yLQY0m3m7Q0qUHuBzhodMG-0?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -5177,6 +6208,11 @@
     "text": "Classic/Gheorghe Zamfir/Gheorghe Zamfir - The Lonely Shepherd.html",
     "score": "https://drive.google.com/file/d/1n71bPDnLpi0kbB7BX0udtm-BDnvMvtqp/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1F-npg_RCP_q4kHyxUSTrH3hSu9m6RSQY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -5187,6 +6223,11 @@
     "text": "Template.html",
     "score": "",
     "playback": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   }
 ]
