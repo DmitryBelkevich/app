@@ -21,7 +21,8 @@ export default class Tuning {
   }
 
   static droppedTo(tuning) {
-    // const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    
     return -2;
     
     // *** Guitars ***
