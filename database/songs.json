@@ -6085,6 +6085,11 @@
     "score": "https://drive.google.com/file/d/17Rg60eukoTK0PClbzavehGEsw706VydB/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/13lcJ_F1tUwfNwZBE6pls_qhwBCYe_-D5?usp=drive_link",
     "key": "Bm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -6095,6 +6100,11 @@
     "score": "https://drive.google.com/file/d/1ly68BdghBlR7capg9ESi0-E4_5iOga3h/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1pLdVCGJCnWixsMZ_ODCfHCfLfVGMDRwv?usp=drive_link",
     "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -6105,6 +6115,11 @@
     "score": "https://drive.google.com/file/d/1INTCvPCRYe0vWBYEiou4LL1mFKhJvQaG/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1fblfRgNUktUoBSy5N85RCJjDhqtQWbxF?usp=drive_link",
     "key": "Dm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -6114,6 +6129,11 @@
     "text": "Chanson/Михаил Круг/Михаил Круг - Фраер.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/175UtsrlpJA4TFxmJFlbx028XQ5uUHDQ1?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -6142,6 +6162,11 @@
     "score": "https://drive.google.com/file/d/1sZEXAKSVv1hd27bOkjMUkklYmnCDTA1m/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1L_sSyjPd1YHXQY0gvMaidki1D5dLjtpz?usp=drive_link",
     "key": "Bm",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   {
@@ -6151,6 +6176,11 @@
     "text": "Chanson/Фристайл/Фристайл - Ах, какая женщина.html",
     "score": "https://drive.google.com/file/d/1ZYlWPTdlVRHwE1V0ADVV6vKelgRiteQH/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1gzsfiabh_ltjo0843umsjD8Mfx9kFpy5?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -6162,6 +6192,11 @@
     "text": "Musical/Notre-Dame de Paris/Notre-Dame de Paris - Belle.html",
     "score": "https://drive.google.com/file/d/13MF6rj9TyQlPMm0pkJ-KLRspQvpHEHuq/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1MnDQ5bz9yLQY0m3m7Q0qUHuBzhodMG-0?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -6173,6 +6208,11 @@
     "text": "Classic/Gheorghe Zamfir/Gheorghe Zamfir - The Lonely Shepherd.html",
     "score": "https://drive.google.com/file/d/1n71bPDnLpi0kbB7BX0udtm-BDnvMvtqp/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1F-npg_RCP_q4kHyxUSTrH3hSu9m6RSQY?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   },
   
@@ -6183,6 +6223,11 @@
     "text": "Template.html",
     "score": "",
     "playback": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
     "visible": "true"
   }
 ]
