@@ -2,7 +2,7 @@ export default class Instrument {
   _title;
 
   constructor() {
-    suoer();
+    super();
     this._title = "Instrument";
   }
 
