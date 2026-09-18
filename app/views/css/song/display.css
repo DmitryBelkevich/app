@@ -36,7 +36,7 @@
 
 #display {
   button {
-    margin: 0px;
+    margin: 0px 5px;
     padding: 10px 10px;
   }
 }
