@@ -16,6 +16,13 @@
 /* components */
 
 #settings {
+  select {
+    margin: 0px;
+    padding: 5px;
+  }
+}
+
+#settings {
   button {
     font-size: 16px;
   }
@@ -25,32 +32,5 @@
   #autoscroll {
     margin: 0px;
     padding: 10px 5px;
-  }
-}
-
-#settings {
-  select {
-    margin: 0px;
-    padding: 5px;
-  }
-}
-
-#settings {
-  #transposer {
-    margin: 0px 5px;
-  }
-}
-
-#settings {
-  #transposer {
-    #transpose_up {
-      margin: 0px;
-      padding: 10px 5px;
-    }
-
-    #transpose_down {
-      margin: 0px;
-      padding: 10px 5px;
-    }
   }
 }
