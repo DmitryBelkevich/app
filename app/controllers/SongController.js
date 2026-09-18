@@ -55,6 +55,8 @@ export default class SongController {
       this.view.addOption(index, title);
     });
 
+    this.view.selectOption(index);
+
     // functions
     this.transposer = new Transposer();
     this.transposer.key = this.song.key;
@@ -80,8 +82,6 @@ export default class SongController {
   }
 
   async loadText(index) {
-    this.view.selectOption(index);
-    
     const instrument = this.song.instruments[index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
