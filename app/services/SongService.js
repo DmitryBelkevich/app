@@ -34,7 +34,7 @@ export default class SongService {
         if (!instrument.tuning)
           instrument.tuning = ["B", "E", "A", "D", "G"];
 
-      else if (instrument.title != "Keyboards")
+      else if (instrument.title != "Keyboards" && instrument.title != "Instrument")
         if (!instrument.capo)
           instrument.capo = 0;
 
