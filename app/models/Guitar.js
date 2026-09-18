@@ -8,4 +8,12 @@ export default class Guitar extends Instrument {
     super();
     this._title = "Guitar";
   }
+
+  set capo(capo) {
+    this.#capo = capo;
+  }
+
+  get capo() {
+    return this.#capo;
+  }
 }
