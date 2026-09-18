@@ -2998,24 +2998,6 @@
     "visible": "true"
   },
   {
-    "id": "222b",
-    "band": "Нервы", "title": "Слишком влюблён",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Нервы/Нервы - Слишком влюблён (bass).html",
-    "score": "https://drive.google.com/file/d/1zLqm3-3tEdAUqhhVPx5orRcc32iiVxeU/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1hzS0kuO0cRDuSWAdG8tMS04I8NGIcMLA?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 4
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "224",
     "band": "Ногу свело!", "title": "Наши юные смешные голоса",
     "genre": "Rock, Punk",
