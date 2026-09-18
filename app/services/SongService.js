@@ -26,11 +26,11 @@ export default class SongService {
         if (!instrument.tuning)
           instrument.tuning = ["E", "A", "D", "G", "B", "E"];
 
-      else if (instrument.title == "Bass Guitar")
+      if (instrument.title == "Bass Guitar")
         if (!instrument.tuning)
           instrument.tuning = ["E", "A", "D", "G"];
 
-      else if (instrument.title == "5-string Bass Guitar")
+      if (instrument.title == "5-string Bass Guitar")
         if (!instrument.tuning)
           instrument.tuning = ["B", "E", "A", "D", "G"];
 
