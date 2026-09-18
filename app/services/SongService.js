@@ -41,11 +41,12 @@ export default class SongService {
       if (instrument.title == "Keyboards" || instrument.title == "Instrument")
         if (!instrument.transposition)
           instrument.transposition = 0;
-    });console.log(song);
+    });
 
     // set transposition for each instruments
     song.instruments.forEach((instrument) => {
-      instrument.transposition = Tuning.droppedTo(instrument.tuning);
+      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
+        instrument.transposition = Tuning.droppedTo(instrument.tuning);
     });
 
     // set chords for each instruments
