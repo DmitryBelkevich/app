@@ -3418,24 +3418,6 @@
     "visible": "true"
   },
   {
-    "id": "266b",
-    "band": "DaBro", "title": "Юность",
-    "genre": "Pop, Dance",
-    "text": "Pop, Dance/DaBro/DaBro - Юность (bass).html",
-    "score": "",
-    "playback": "https://drive.google.com/drive/folders/1BkHgcQloTrw1g_OdSZvu9t9_ALML7KSX?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 1
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "268",
     "band": "Demo", "title": "Солнышко",
     "tags": ["Демо"],
