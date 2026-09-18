@@ -79,7 +79,9 @@ export default class SongController {
     this.view.bindAutoScroll(this.auto_scroll);
   }
 
-  async loadText(index) {console.log("load Text");
+  async loadText(index) {
+    this.view.selectOption(index);
+    
     const instrument = this.song.instruments[index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
