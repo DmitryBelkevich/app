@@ -23,4 +23,10 @@
 
     padding: 0px 2px;
   }
+
+  #key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
