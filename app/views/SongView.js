@@ -143,6 +143,15 @@ export default class SongView {
     this.select_e.append(option);
   }
 
+  selectOption(index) {
+    
+  }
+
+  getValue() {
+    const selectedValue = this.select_e.value;
+    console.log(selectedValue);
+  }
+
   addTuning(title, tuning) {
     const tuning_e = document.createElement("div");
 
@@ -172,7 +181,7 @@ export default class SongView {
 
   // tabs
   
-  bindTextTab(handler) {
+  bindTextTab(handler) {this.getValue();
     this.tab_text.addEventListener("click", () => {
       handler();
     });
