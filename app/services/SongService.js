@@ -21,6 +21,10 @@ export default class SongService {
     song.text = config.storage + song.text;
 
     song.instruments.forEach((instrument) => {
+      instrument.transposition = Tuning.droppedTo(instrument.tuning);
+    });
+
+    song.instruments.forEach((instrument) => {
       const index = song.text.length - ".html".length;
       
       if (instrument.capo > 0)
