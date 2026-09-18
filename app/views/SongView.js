@@ -121,13 +121,13 @@ export default class SongView {
 
   // *** render ***
 
-  // head
+  // *** head ***
 
   setPageTitle(title) {
     document.title = title;
   }
 
-  // title
+  // *** title ***
 
   setTitle(title) {
     this.title_h.textContent = title;
