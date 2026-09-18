@@ -21,7 +21,9 @@ export default class Tuning {
   }
 
   static async droppedTo(tuning) {
-    const isEqual = await ((a, b) => {});
+    const isEqual = await ((a, b) => {
+      return a.length === b.length && a.every((val, i) => val === b[i])
+    });
     
     // *** Guitars ***
     
