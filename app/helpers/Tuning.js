@@ -22,7 +22,8 @@ export default class Tuning {
 
   static droppedTo(tuning) {
     const isEqual = (a, b) => {
-      console.log(tuning);
+      console.log(a);
+      console.log(b);
     };
 
     isEqual(tuning, ["E", "A", "D", "G", "B", "E"]);
