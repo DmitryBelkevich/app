@@ -35,7 +35,7 @@ export default class SongController {
 
     // load text
     this.htmlLoader = new HtmlLoader();
-    const index = 1;//current instrument
+    const index = 0;//current instrument
     await this.loadText(index);
 
     // dropdown
