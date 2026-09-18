@@ -929,25 +929,6 @@
     "visible": "true"
   },
   {
-    "id": "51b",
-    "band": "Антон Токарев", "title": "Седьмой лепесток",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Антон Токарев/Антон Токарев - Седьмой лепесток (bass).html",
-    "score": "",
-    "playback": "https://drive.google.com/drive/folders/1M_jW1kq2Nlh3vTB8FcRcC-9Q3OGQsjCr?usp=drive_link",
-    "key": "D#m",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 6
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "52",
     "band": "АукцЫон", "title": "Дорога",
     "genre": "Rock, Punk",
@@ -1500,25 +1481,6 @@
     "band": "Звери", "title": "Напитки покрепче",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Звери/Звери - Напитки покрепче.html",
-    "score": "https://drive.google.com/file/d/1oDZtE4Hq7z6U-IQX3e4GOr9Fyux5PThr/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1h0NmvoDy7rpGiN2yA9DN7H5zY9nD9JeN?usp=drive_link",
-    "key": "Gm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "91b",
-    "band": "Звери", "title": "Напитки покрепче",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Звери/Звери - Напитки покрепче (bass).html",
     "score": "https://drive.google.com/file/d/1oDZtE4Hq7z6U-IQX3e4GOr9Fyux5PThr/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1h0NmvoDy7rpGiN2yA9DN7H5zY9nD9JeN?usp=drive_link",
     "key": "Gm",
@@ -2246,23 +2208,7 @@
         "capo": 3
       },
       {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "143b",
-    "band": "Комната культуры", "title": "Поезда",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Комната культуры/Комната культуры - Поезда (bass).html",
-    "score": "https://drive.google.com/file/d/1MQ796S-_aWUagbADHZXbht-xT3ZMKR5E/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1cRnbIuaPHRkS3hPNmnoNFEUN8ctUEAoh?usp=drive_link",
-    "key": "Cm",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 3
+        "title": "E.Guitar"
       },
       {
         "title": "Bass Guitar"
