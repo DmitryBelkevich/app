@@ -667,25 +667,6 @@
     "visible": "true"
   },
   {
-    "id": "35b",
-    "band": "The Rolling Stones", "title": "Paint It Black",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/The Rolling Stones/The Rolling Stones - Paint It Black (bass).html",
-    "score": "https://drive.google.com/file/d/18SXrwiQC8MsbBDYofiXl9JyQZREyMNjN/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1HFyp4Cl05oUFBQdZ6V2xWQ2S3sVNb-hF?usp=drive_link",
-    "key": "Em",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 2
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "36",
     "band": "7Б", "title": "Молодые ветра",
     "genre": "Rock, Punk",
