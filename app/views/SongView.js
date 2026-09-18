@@ -45,7 +45,8 @@ export default class SongView {
     
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
 
-    // display
+    // *** display ***
+    
     this.cssLoader.load("./app/views/css/song/display.css");
     this.display = document.createElement("div");
     this.display.id = "display";
@@ -61,12 +62,13 @@ export default class SongView {
     // fill display
     this.display.append(this.key_e, this.dropdown);
     
-    // Settings
+    // *** settings ***
+    
     this.cssLoader.load("./app/views/css/song/settings.css");
     this.settings = document.createElement("div");
     this.settings.id = "settings";
 
-    // Transposer
+    // transposer
     this.transposer_e = document.createElement("div");
     this.transposer_e.id = "transposer";
     
@@ -78,33 +80,34 @@ export default class SongView {
     this.transpose_up.id = "transpose_up";
     this.transpose_up.textContent = "🔼 transpose";
 
+    // fill transposer
     this.transposer_e.append(this.transpose_down, this.transpose_up);
     
-    // Auto-scroll
+    // auto-scroll
     this.autoscroll_e = document.createElement("button");
     this.autoscroll_e.id = "autoscroll";
     this.autoscroll_e.textContent = "⏬ auto-scroll";
 
-    // Settings fill
+    // fill settings
     this.settings.append(this.transposer_e, this.autoscroll_e);
     
-    // Tuning
+    // *** Tuning ***
     this.cssLoader.load("./app/views/css/song/tuning.css");
     this.tuning = document.createElement("div");
     this.tuning.id = "tuning";
     
-    // Text
+    // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
     this.text = document.createElement("div");
     this.text.id = "text";
     
-    // Footer
+    // *** Footer ***
     this.cssLoader.load("./app/views/css/song/footer.css");
     this.footer = document.createElement("div");
     this.footer.id = "footer";
     this.footer.textContent = "Copyright © Dmitry Belkevich";
     
-    // *** fill container ***
+    // *** fill body ***
     document.body.append(
       this.title,
       this.tabs,
@@ -118,9 +121,13 @@ export default class SongView {
 
   // *** render ***
 
+  // *** head ***
+
   setPageTitle(title) {
     document.title = title;
   }
+
+  // *** title ***
 
   setTitle(title) {
     this.title_h.textContent = title;
@@ -129,6 +136,10 @@ export default class SongView {
   setBand(band) {
     this.band_h.textContent = band;
   }
+
+  // *** display ***
+
+  // key
 
   setKey(key) {
     this.key_e.textContent = key;
@@ -153,7 +164,9 @@ export default class SongView {
     return this.dropdown.value;
   }
 
-  // tuning
+  // *** settings ***
+
+  // *** tuning ***
 
   addTuning(title, tuning) {
     const tuning_e = document.createElement("div");
