@@ -9,10 +9,12 @@
 
 #tabs {
   .tab {
+    font-size: 15px;
+  }
+
+  .tab {
     margin: 0px;
     padding: 10px 0px;
-    
-    font-size: 15px;
     
     width: 33.3%;
     box-sizing: border-box;
