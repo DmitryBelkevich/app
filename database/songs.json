@@ -2941,20 +2941,9 @@
         "title": "Guitar",
         "tuning": ["D", "A", "D", "G", "B", "E"],
         "capo": 4
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "220",
-    "band": "Нервы", "title": "Кофе - мой друг",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Нервы/Нервы - Кофе - мой друг (e.guitar, bass).html",
-    "score": "https://drive.google.com/file/d/1Cc9tpN1Cj_yxd-A3Htjr-rgFRiGgguN2/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1T4gKNkiAOWfrgMc0-WdLkWjJvCXH50Hv?usp=drive_link",
-    "instruments": [
+      },
       {
-        "title": "Guitar"
+        "title": "E.Guitar"
       },
       {
         "title": "Bass Guitar"
@@ -3197,24 +3186,6 @@
     "visible": "true"
   },
   {
-    "id": "243b",
-    "band": "Сплин", "title": "Линия жизни",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Сплин/Сплин - Линия жизни (bass).html",
-    "score": "https://drive.google.com/file/d/1ExxeMbdnsULbWZglbBmkLkq8VlEvDuW3/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1zLRlR4HRy2gd_GqS1AnuLm1tqLoC_7Wk?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 7
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
     "id": "245",
     "band": "Сплин", "title": "Моё сердце",
     "genre": "Rock, Punk",
@@ -3237,24 +3208,6 @@
     "band": "Сплин", "title": "Романс",
     "genre": "Rock, Punk",
     "text": "Rock, Punk/Сплин/Сплин - Романс.html",
-    "score": "https://drive.google.com/file/d/1G17H-tthGzUSrl-YhAiEBh9NkPsF_BcQ/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1U0d1V0EuEgLZ2FDdmluiAkvvgZ67OrQe?usp=drive_link",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "capo": 5
-      },
-      {
-        "title": "Bass Guitar"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "247b",
-    "band": "Сплин", "title": "Романс",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Сплин/Сплин - Романс (bass).html",
     "score": "https://drive.google.com/file/d/1G17H-tthGzUSrl-YhAiEBh9NkPsF_BcQ/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1U0d1V0EuEgLZ2FDdmluiAkvvgZ67OrQe?usp=drive_link",
     "instruments": [
