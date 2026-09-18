@@ -6,4 +6,8 @@ export default class Tuning extends Array {
   droppedTo() {
     return 0;
   }
+
+  get title() {
+    return "Standard E";
+  }
 }
