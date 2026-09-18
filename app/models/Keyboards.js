@@ -9,4 +9,12 @@ export default class Keyboards extends Instrument {
 
     this.#transposition = 0;
   }
+
+  set transposition(transposition) {
+    this.#transposition = transposition;
+  }
+
+  get transposition() {
+    return this.#transposition;
+  }
 }
