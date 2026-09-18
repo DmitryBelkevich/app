@@ -46,7 +46,7 @@ export default class SongController {
         title = "🔴 " + title;
       else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
         title = "🟡 " + title;
-      else if (title == "Keyboards")
+      else
         title = "🟢 " + title;
 
       if (instrument.capo > 0)
