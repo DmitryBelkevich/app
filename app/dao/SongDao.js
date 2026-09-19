@@ -21,18 +21,18 @@ export default class SongDao {
     if (!result)
       return null;
     
-    // const song = new Song();
+    const song = new Song();
 
-    // song.id = result.id;
-    // song.band = result.band;
-    // song.title = result.title;
-    // song.text = result.text;
-    // song.score = result.score;
-    // song.playback = result.playback;
-    // song.key = result.key;
-    // song.voices = result.voices;
-    // song.instruments = result.instruments;
+    song.id = result.id;
+    song.band = result.band;
+    song.title = result.title;
+    song.text = result.text;
+    song.score = result.score;
+    song.playback = result.playback;
+    song.key = result.key;
+    song.voices = result.voices;
+    song.instruments = result.instruments;
 
-    return Object.setPrototypeOf(result, Song.prototype);
+    return song;
   }
 }
