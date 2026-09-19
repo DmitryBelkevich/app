@@ -28,10 +28,8 @@ export default class SongService {
         console.log("Instrument");
       } else if (instrument.title == "Keyboards") {
         console.log("Keyboards");
-      } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
+      } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
         console.log("Guitar");
-      } else if (instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
-        console.log("Bass Guitar");
       }
     });
 
