@@ -4,6 +4,12 @@ import SongDao from '../dao/SongDao.js';
 
 import Tuning from '../helpers/Tuning.js';
 
+import Instrument from '../models/Instrument.js';
+import Keyboards from '../models/Keyboards.js';
+import Guitar from '../models/Guitar.js';
+import BassGuitar from '../models/BassGuitar.js';
+import _5StringBassGuitar from '../models/_5StringBassGuitar.js';
+
 export default class SongService {
   constructor() {
     this.songDao = new SongDao();
@@ -25,9 +31,9 @@ export default class SongService {
 
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Instrument") {
-        console.log("Instrument");
+        const instrument = new Instrument();
       } else if (instrument.title == "Keyboards") {
-        console.log("Keyboards");
+        const keyboards = new Keyboards();
       } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
         console.log("Guitar");
       }
