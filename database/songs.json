@@ -6215,6 +6215,21 @@
     ],
     "visible": "true"
   },
+
+  {
+    "id": "1000",
+    "band": "Band", "title": "Title",
+    "genre": "",
+    "text": "Template.html",
+    "score": "",
+    "playback": "",
+    "instruments": [
+      {
+        "title": "Guitar"
+      }
+    ],
+    "visible": "true"
+  },
   
   {
     "id": "0",
