@@ -1,5 +1,9 @@
+import TuningTest from "../app/models/Tuning.js";
+
 export default class TuningTest {
   test() {
-    console.log("Tuning Test");
+    const tuning = new Tuning();
+    
+    console.log(tuning);
   }
 }
