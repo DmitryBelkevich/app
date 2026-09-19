@@ -1,1 +1,5 @@
-console.log("Tuning Test");
+export default class TuningTest {
+  test() {
+    console.log("Tuning Test");
+  }
+}
