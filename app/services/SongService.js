@@ -21,45 +21,47 @@ export default class SongService {
     song.text = config.storage + song.text;
 
     // set STANDARD tunuig for each instruments
-    song.instruments.forEach((instrument, index) => {
-      if (instrument.title == "Guitar" || instrument.title == "E.Guitar")
-        if (!instrument.tuning)
-          instrument.tuning = ["E", "A", "D", "G", "B", "E"];
+    // song.instruments.forEach((instrument, index) => {
+    //   if (instrument.title == "Guitar" || instrument.title == "E.Guitar")
+    //     if (!instrument.tuning)
+    //       instrument.tuning = ["E", "A", "D", "G", "B", "E"];
 
-      if (instrument.title == "Bass Guitar")
-        if (!instrument.tuning)
-          instrument.tuning = ["E", "A", "D", "G"];
+    //   if (instrument.title == "Bass Guitar")
+    //     if (!instrument.tuning)
+    //       instrument.tuning = ["E", "A", "D", "G"];
 
-      if (instrument.title == "5-string Bass Guitar")
-        if (!instrument.tuning)
-          instrument.tuning = ["B", "E", "A", "D", "G"];
+    //   if (instrument.title == "5-string Bass Guitar")
+    //     if (!instrument.tuning)
+    //       instrument.tuning = ["B", "E", "A", "D", "G"];
 
-      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-        if (!instrument.capo)
-          instrument.capo = 0;
+    //   if (instrument.title != "Keyboards" && instrument.title != "Instrument")
+    //     if (!instrument.capo)
+    //       instrument.capo = 0;
 
-      if (instrument.title == "Keyboards" || instrument.title == "Instrument")
-        if (!instrument.transposition)
-          instrument.transposition = 0;
-    });
+    //   if (instrument.title == "Keyboards" || instrument.title == "Instrument")
+    //     if (!instrument.transposition)
+    //       instrument.transposition = 0;
+    // });
 
     // set transposition for each instruments
-    song.instruments.forEach((instrument) => {
-      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-        instrument.transposition = Tuning.droppedTo(instrument.tuning);
-    });
+    // song.instruments.forEach((instrument) => {
+    //   if (instrument.title != "Keyboards" && instrument.title != "Instrument")
+    //     instrument.transposition = Tuning.droppedTo(instrument.tuning);
+    // });
 
     // set chords for each instruments
-    song.instruments.forEach((instrument) => {
-      const index = song.text.length - ".html".length;
+    // song.instruments.forEach((instrument) => {
+    //   const index = song.text.length - ".html".length;
       
-      if (instrument.capo > 0)
-        instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
-      else if (instrument.transposition < 0 || instrument.transposition > 0)
-        instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
-      else
-        instrument.chords = song.text;
-    });
+    //   if (instrument.capo > 0)
+    //     instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
+    //   else if (instrument.transposition < 0 || instrument.transposition > 0)
+    //     instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
+    //   else
+    //     instrument.chords = song.text;
+    // });
+
+    console.log(song);
     
     return song;
   }
