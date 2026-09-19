@@ -35,7 +35,13 @@ export default class SongService {
       } else if (instrument.title == "Keyboards") {
         const keyboards = new Keyboards();
       } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
-        console.log("Guitar");
+        if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
+          console.log("Guitar");
+        } else if (instrument.title == "Bass Guitar") {
+          console.log("Bass Guitar");
+        } else if (instrument.title == "5-string Bass Guitar") {
+          console.log("5-string Bass Guitar");
+        }
       }
     });
 
