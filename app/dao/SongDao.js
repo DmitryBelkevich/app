@@ -31,6 +31,8 @@ export default class SongDao {
     song.playback = result.playback;
     song.key = result.key;
     song.voices = result.voices;
+
+    console.log(result.instruments);
     song.instruments = result.instruments;
 
     return song;
