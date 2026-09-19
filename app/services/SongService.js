@@ -26,11 +26,17 @@ export default class SongService {
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Instrument") {
         console.log("Instrument");
-      } else if (instrument.title == "Keyboards") {
+      }
+      
+      if (instrument.title == "Keyboards") {
         console.log("Keyboards");
-      } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
+      }
+      
+      if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
         console.log("Guitar");
-      } else if (instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
+      }
+      
+      if (instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
         console.log("Bass Guitar");
       }
     });
