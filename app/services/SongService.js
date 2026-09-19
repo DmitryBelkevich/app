@@ -23,6 +23,18 @@ export default class SongService {
     if (!song.key)
       song.key = "";
 
+    song.instruments.forEach((instrument, index) => {
+      if (instrument.title == "Instrument") {
+        console.log("Instrument");
+      } else if (instrument.title == "Keyboards") {
+        console.log("Keyboards");
+      } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
+        console.log("Guitar");
+      } else if (instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
+        console.log("Bass Guitar");
+      }
+    });
+
     // set STANDARD tunuig for each instruments
     // song.instruments.forEach((instrument, index) => {
     //   if (instrument.title == "Guitar" || instrument.title == "E.Guitar")
