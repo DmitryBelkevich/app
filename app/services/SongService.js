@@ -18,7 +18,7 @@ export default class SongService {
   async getById(id) {
     const song = await this.songDao.getById(id);
 
-    song.text = config.storage + song.text;
+    // song.text = config.storage + song.text;
 
     // set STANDARD tunuig for each instruments
     // song.instruments.forEach((instrument, index) => {
