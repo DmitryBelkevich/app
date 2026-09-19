@@ -1,5 +1,5 @@
 export default class Tuning extends Array {
-  isStardard() {
+  isStandard() {
     return false;
   }
 
