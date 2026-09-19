@@ -32,7 +32,7 @@ export default class SongService {
         console.log("Keyboards");
       }
       
-      if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
+      else if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
         console.log("Guitar");
       }
       
