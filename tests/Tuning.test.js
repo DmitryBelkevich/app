@@ -4,6 +4,6 @@ export default class TuningTest {
   test() {
     const tuning = new Tuning();
     
-    console.log(tuning);
+    console.log(tuning.isStandard() + " | " + false);
   }
 }
