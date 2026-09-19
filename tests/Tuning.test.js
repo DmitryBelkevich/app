@@ -1,4 +1,4 @@
-import TuningTest from "../app/models/Tuning.js";
+import Tuning from "../app/models/Tuning.js";
 
 export default class TuningTest {
   test() {
