@@ -22,7 +22,7 @@ export default class SongService {
   }
   
   async getById(id) {
-    const song = await this.songDao.getById(id);
+    const song = await this.songDao.getById(id);console.log(song);
 
     song.text = config.storage + song.text;
 
@@ -36,11 +36,11 @@ export default class SongService {
         const keyboards = new Keyboards();
       } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
         if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
-          console.log(instrument);
+          // console.log(instrument);
           // const guitar = Object.setPrototypeOf(instrument, Guitar.prototype);
           // console.log(guitar);
         } else if (instrument.title == "Bass Guitar") {
-          console.log("Bass Guitar");
+          // console.log("Bass Guitar");
         } else if (instrument.title == "5-string Bass Guitar") {
           console.log("5-string Bass Guitar");
         }
