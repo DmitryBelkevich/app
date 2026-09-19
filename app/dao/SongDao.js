@@ -20,7 +20,7 @@ export default class SongDao {
 
     if (!result)
       return null;
-
+    console.log(result);
     const song = Object.setPrototypeOf(result, Song.prototype);
 
     // song.id = result.id;
