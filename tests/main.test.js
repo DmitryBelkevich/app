@@ -1,6 +1,6 @@
 import TuningTest from "./Tuning.test.js";
 
-function main() {
+export default function main() {
   const tuningTest = new TuningTest();
   tuningTest.test();
 }
