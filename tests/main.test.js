@@ -1,7 +1,8 @@
 import TuningTest from "./Tuning.test.js";
 
 function main() {
-  console.log("Hello World Test");
+  const tuningTest = new TuningTest();
+  tuningTest.test();
 }
 
 const app = main();
