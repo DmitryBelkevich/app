@@ -19,8 +19,6 @@ export default class SongController {
     
     this.#cookie = new Cookie();
     this.#current = this.#cookie.current || 0;
-
-    console.log("+++ " + this.#current);
     
     // model
     this.songService = new SongService();
