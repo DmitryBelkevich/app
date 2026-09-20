@@ -29,8 +29,6 @@ export default class SongService {
     if (!song.key)
       song.key = "";
 
-    console.log(song);
-
     song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Instrument") {
         const instrument = new Instrument();
@@ -44,8 +42,9 @@ export default class SongService {
 
           if (instrument.tuning)
             guitar.tuning = new Tuning(...instrument.tuning);
-          
-          guitar.capo = instrument.capo;
+
+          if (instrument.capo)
+            guitar.capo = instrument.capo;
           
           song.instruments[index] = guitar;
         } else if (instrument.title == "Bass Guitar") {
@@ -55,8 +54,9 @@ export default class SongService {
           
           if (instrument.tuning)
             guitar.tuning = new Tuning(...instrument.tuning);
-          
-          guitar.capo = instrument.capo;
+
+          if (instrument.capo)
+            guitar.capo = instrument.capo;
           
           song.instruments[index] = guitar;
         } else if (instrument.title == "5-string Bass Guitar") {
