@@ -17,7 +17,7 @@ export default class SongController {
     const cookie = new Cookie();
     const index = cookie.get() || 0;//current instrument
     
-    console.log(cookie);
+    console.log(index);
     
     // model
     this.songService = new SongService();
