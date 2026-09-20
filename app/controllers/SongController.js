@@ -13,6 +13,7 @@ export default class SongController {
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
+    const index = 0;//current instrument
     
     // model
     this.songService = new SongService();
@@ -74,7 +75,6 @@ export default class SongController {
     // *** text ***
 
     this.htmlLoader = new HtmlLoader();
-    const index = 0;//current instrument
     await this.loadText(index);
 
     // *** binding controller-view ***
