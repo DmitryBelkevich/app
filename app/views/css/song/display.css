@@ -44,3 +44,9 @@
     padding: 5px;
   }
 }
+
+#display {
+  #autoscroll {
+    margin-left: 100px
+  }
+}
