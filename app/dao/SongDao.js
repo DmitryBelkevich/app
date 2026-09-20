@@ -35,8 +35,7 @@ export default class SongDao {
     song.key = result.key;
     song.voices = result.voices;
 
-    const arr = [];
-    result.instruments.forEach((instrument_obj) => {
+    result.instruments.forEach((instrument_obj, index) => {
       const instrument = new Instrument();
 
       instrument.title = instrument_obj.title;
@@ -44,9 +43,8 @@ export default class SongDao {
       instrument.capo = instrument_obj.capo;
       instrument.transposition = instrument_obj.transposition;
 
-      arr.push(instrument);
+      song.instruments.[index] = instrument;
     });
-    song.instruments = arr;
 
     console.log(song);
     
