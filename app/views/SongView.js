@@ -165,15 +165,15 @@ export default class SongView {
 
   // *** tuning ***
 
-  addTuning(title, tuning) {
+  addTuning(tuning, isStandard) {
     const tuning_e = document.createElement("div");
 
-    if (Tuning.isStandard(tuning))
+    if (isStandard)
       tuning_e.classList.add("standard");
     else
       tuning_e.classList.add("non-standard");
     
-    tuning_e.textContent = title + " [" + tuning + "]";
+    tuning_e.textContent = "[" + tuning + "]";
     
     this.tuning.append(tuning_e);
   }
