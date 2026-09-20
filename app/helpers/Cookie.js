@@ -9,7 +9,7 @@ export default class Cookie {
     this.#cookie = "index=" + index;
   }
 
-  get index {
+  get index() {
     return 0;
   }
 }
