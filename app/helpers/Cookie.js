@@ -4,7 +4,7 @@ export default class Cookie {
   constructor() {
     this.#cookie = document.cookie;
 
-    this.#cookie = "str=Hello";
+    document.cookie = "str=Hello";
   }
 
   set index(index) {
