@@ -16,6 +16,7 @@ export default class SongController {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
     this.#cookie = new Cookie();
+    this.#cookie.index = 0;
     
     // model
     this.songService = new SongService();
