@@ -74,8 +74,6 @@ export default class SongService {
       else
         instrument.chords = song.text;
     });
-
-    console.log(song);
     
     return song;
   }
