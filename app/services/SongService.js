@@ -36,13 +36,13 @@ export default class SongService {
         const keyboards = new Keyboards();
       } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
         if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
-          console.log(instrument);
-          const guitar = Object.setPrototypeOf(instrument, Guitar.prototype);
-          console.log(guitar);
+          // console.log(instrument);
+          // const guitar = Object.setPrototypeOf(instrument, Guitar.prototype);
+          // console.log(guitar);
         } else if (instrument.title == "Bass Guitar") {
-          console.log(instrument);
-          const bass_guitar = Object.setPrototypeOf(instrument, BassGuitar.prototype);
-          console.log(bass_guitar);
+          // console.log(instrument);
+          // const bass_guitar = Object.setPrototypeOf(instrument, BassGuitar.prototype);
+          // console.log(bass_guitar);
         } else if (instrument.title == "5-string Bass Guitar") {
           console.log("5-string Bass Guitar");
         }
@@ -90,7 +90,7 @@ export default class SongService {
     //     instrument.chords = song.text;
     // });
 
-    console.log(song);
+    // console.log(song);
     
     return song;
   }
