@@ -5,13 +5,13 @@ export default class Cookie {
   constructor() {
     // this.#cookies = document.cookie.split("; ");
   }
+
+  get index() {
+    return this.#index;
+  }
   
   set index(index) {
     // document.cookie = "index=" + index;
     this.#index = index;
-  }
-
-  get index() {
-    return this.#index;
   }
 }
