@@ -7,13 +7,13 @@ export default class Cookie {
   
   get current() {
     const objects = document.cookie.split("; ");
-    console.log(objects);
     
     const object = objects.find(obj => obj.split("=")[0] == "current") || null;
-    console.log(object);
-
-    // if (!object)
+    
+    if (!object) {
+      console.log("hello");
       // return object.split("=")[1];
+    }
     
     return null;
   }
