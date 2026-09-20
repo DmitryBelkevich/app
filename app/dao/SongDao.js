@@ -40,6 +40,9 @@ export default class SongDao {
       const instrument = new Instrument();
 
       instrument.title = instrument_obj.title;
+      instrument.tuning = instrument_obj.tuning;
+      instrument.capo = instrument_obj.capo;
+      instrument.transposition = instrument_obj.transposition;
 
       arr.push(instrument);
     });
