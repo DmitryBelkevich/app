@@ -1,5 +1,5 @@
 export default class Tuning extends Array {
-  isStandard() {
+  isStandard( ) {
     const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
     
     // *** Guitars ***
