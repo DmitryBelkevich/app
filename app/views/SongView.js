@@ -152,6 +152,9 @@ export default class SongView {
     option.value = index;
     
     const colors = {
+      null: "⚪️",
+      undefined: "⚪️",
+      
       "grey": "⚪️",
       "red": "🔴",
       "yellow": "🟡",
