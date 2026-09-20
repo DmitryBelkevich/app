@@ -167,5 +167,4 @@ export default class Tuning extends Array {
     if (isEqual(tuning, ["G#", "C#", "F#", "B", "E"]))//-3
       return "Standard C#";
   }
-  }
 }
