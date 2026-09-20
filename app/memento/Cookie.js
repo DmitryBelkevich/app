@@ -12,10 +12,10 @@ export default class Cookie {
     const object = objects.find(obj => obj.split("=")[0] == "current") || null;
     console.log(object);
 
-    if (!object)
-      return object.split("=")[1];
+    // if (!object)
+      // return object.split("=")[1];
     
-    return 1;
+    return null;
   }
   
   set current(current) {
