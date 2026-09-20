@@ -1,15 +1,15 @@
 export default class Instrument {
-  _title;
+  title;
 
   constructor() {
-    this._title = "Instrument";
-  }
-
-  set title(title) {
-    this._title = title;
+    this.title = "Instrument";
   }
 
   get title() {
-    return this._title;
+    return this.title;
+  }
+
+  set title(title) {
+    this.title = title;
   }
 }
