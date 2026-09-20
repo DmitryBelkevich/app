@@ -1,4 +1,6 @@
 export default class Cookie {
+  #cookie;
+  
   constructor() {
     this.#cookie = document.cookie;
 
