@@ -15,7 +15,7 @@ export default class Cookie {
     if (!object)
       return object.split("=")[1];
     
-    return null;
+    return 1;
   }
   
   set current(current) {
