@@ -45,19 +45,10 @@ export default class SongController {
 
     // 1. dropdown
     this.song.instruments.forEach((instrument, index) => {
-      var title = instrument.title;
-
-      if (title == "Guitar" || title == "E.Guitar")
-        title = "🔴 " + title;
-      else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
-        title = "🟡 " + title;
-      else
-        title = "🟢 " + title;
-
       if (instrument.capo > 0)
         title += " (" + "Capo: +" + instrument.capo + ")";
       
-      this.view.addOption(index, title);
+      this.view.addOption(index, instrument.title, instrument.color);
     });
 
     this.view.selectOption(index);
