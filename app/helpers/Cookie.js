@@ -1,4 +1,4 @@
-export class Cookie {
+default class Cookie {
   constructor() {
     console.log(this);
   }
