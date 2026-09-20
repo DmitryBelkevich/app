@@ -30,31 +30,34 @@ export default class SongService {
       song.key = "";
 
     song.instruments.forEach((instrument_obj, index) => {
+      var instrument;
+      
       if (instrument_obj.title == "Instrument") {
-        const instrument = new Instrument();
+        instrument = new Instrument();
       } else if (instrument_obj.title == "Keyboards") {
-        const keyboards = new Keyboards();
+        instrument = new Keyboards();
+
+        if (instrument_obj.transposition)
+          instrument.transposition = instrument_obj.transposition;
       } else if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar" || instrument_obj.title == "Bass Guitar" || instrument_obj.title == "5-string Bass Guitar") {
-        var guitar;
-        
         if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar") {
-          guitar = new Guitar();
+          instrument = new Guitar();
         } else if (instrument_obj.title == "Bass Guitar") {
-          guitar = new BassGuitar();
+          instrument = new BassGuitar();
         } else if (instrument_obj.title == "5-string Bass Guitar") {
-          guitar = new FiveStringBassGuitar();
+          instrument = new FiveStringBassGuitar();
         }
 
-        guitar.title = instrument_obj.title;
-
-        if (instrument.tuning)
-          guitar.tuning = new Tuning(...instrument_obj.tuning);
+        if (instrument_obj.tuning)
+          instrument.tuning = new Tuning(...instrument_obj.tuning);
 
         if (instrument_obj.capo)
-          guitar.capo = instrument_obj.capo;
-        
-        song.instruments[index] = guitar;
+          instrument.capo = instrument_obj.capo;
       }
+
+      instrument.title = instrument_obj.title;
+      
+      song.instruments[index] = instrument;
     });
 
     // set STANDARD tunuig for each instruments
