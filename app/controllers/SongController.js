@@ -10,13 +10,14 @@ import Cookie from '../helpers/Cookie.js';
 
 export default class SongController {
   #params;
-  #cookie;
+  #current = 0;//state
+  // #cookie;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
-    this.#cookie = new Cookie();
-    this.#cookie.index = 0;
+    // this.#cookie = new Cookie();
+    // this.#cookie.index = 0;
     
     // model
     this.songService = new SongService();
@@ -49,7 +50,7 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(this.#cookie.index);
+    this.view.selectOption(this.#current);
 
     // *** tuning ***
 
@@ -64,7 +65,7 @@ export default class SongController {
     // *** text ***
 
     this.htmlLoader = new HtmlLoader();
-    await this.loadText(this.#cookie.index);
+    await this.loadText(this.#current);
 
     // *** binding controller-view ***
 
@@ -146,7 +147,7 @@ export default class SongController {
 
   select_instrument = (event) => {
     this.loadText(event.target.value);
-    this.#cookie.index = event.target.value;
+    this.#current = event.target.value;
   }
 
   // *** tuning ***
