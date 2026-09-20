@@ -3,12 +3,10 @@ export default class Cookie {
   
   constructor() {
     this.#cookie = document.cookie;
-
-    document.cookie = "index=" + 0;
   }
 
-  add() {
-    
+  set index(index) {
+    this.#cookie = "index=" + index;
   }
 
   get index {
