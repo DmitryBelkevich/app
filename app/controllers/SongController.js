@@ -22,6 +22,7 @@ export default class SongController {
     this.view = new SongView();
 
     // *** title ***
+    
     this.view.setPageTitle(this.song.band + " - " + this.song.title);
     this.view.setTitle(this.song.title);
     this.view.setBand(this.song.band);
@@ -80,7 +81,8 @@ export default class SongController {
 
     // binding: view -> model
 
-    // tabs
+    // *** tabs ***
+    
     this.view.bindTextTab(this.openText);
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
@@ -88,22 +90,22 @@ export default class SongController {
     // *** display ***
     
     // 1. key-signature
+    
     // 2. transposer
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
+
+    // 3. auto-scroll
+    this.view.bindAutoScroll(this.auto_scroll);
 
     // *** settings ***
 
     // 1. dropdown
     this.view.bindDropdown(this.select_instrument);
-    // 2. auto-scroll
-    this.view.bindAutoScroll(this.auto_scroll);
-  }
 
-  async loadText(index) {
-    const instrument = this.song.instruments[index];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
+    // *** tuning ***
+
+    // *** text ***
   }
 
   // *** handlers ***
@@ -138,6 +140,14 @@ export default class SongController {
     this.transposer.transposeUp();
   }
 
+  // 3. auto-scroll
+  
+  auto_scroll = () => {
+    // this.autoScroll.speed = 10;
+    
+    this.autoScroll.run();
+  }
+
   // *** settings ***
 
   // 1. dropdown
@@ -146,11 +156,13 @@ export default class SongController {
     this.loadText(event.target.value);
   }
 
-  // 2. auto-scroll
-  
-  auto_scroll = () => {
-    // this.autoScroll.speed = 10;
-    
-    this.autoScroll.run();
+  // *** tuning ***
+
+  // *** text ***
+
+  async loadText(index) {
+    const instrument = this.song.instruments[index];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.view.setText(text);
   }
 }
