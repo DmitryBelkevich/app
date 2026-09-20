@@ -29,7 +29,9 @@ export default class SongService {
     if (!song.key)
       song.key = "";
 
-    song.instruments.forEach((instrument, index) => {return;
+    console.log(song);
+
+    song.instruments.forEach((instrument, index) => {
       if (instrument.title == "Instrument") {
         const instrument = new Instrument();
       } else if (instrument.title == "Keyboards") {
@@ -104,7 +106,7 @@ export default class SongService {
     //     instrument.chords = song.text;
     // });
 
-    // console.log(song);
+    console.log(song);
     
     return song;
   }
