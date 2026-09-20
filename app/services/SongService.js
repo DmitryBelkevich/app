@@ -60,17 +60,19 @@ export default class SongService {
       song.instruments[index] = instrument;
     });
 
-    // set chords for each instruments
-    // song.instruments.forEach((instrument) => {
-    //   const index = song.text.length - ".html".length;
+    // TODO
+    
+    set chords for each instruments
+    song.instruments.forEach((instrument) => {
+      const index = song.text.length - ".html".length;
       
-    //   if (instrument.capo > 0)
-    //     instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
-    //   else if (instrument.transposition < 0 || instrument.transposition > 0)
-    //     instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
-    //   else
-    //     instrument.chords = song.text;
-    // });
+      if (instrument.capo > 0)
+        instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
+      else if (instrument.transposition < 0 || instrument.transposition > 0)
+        instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
+      else
+        instrument.chords = song.text;
+    });
 
     console.log(song);
     
