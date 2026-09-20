@@ -6,14 +6,19 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
+import Cookie from '../memento/Cookie.js';
 
 export default class SongController {
   #params;
+  #current;//state
+  #cookie;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
-    const index = 0;//current instrument
+    
+    this.#cookie = new Cookie();
+    this.#current = this.#cookie.current || 0;
     
     // model
     this.songService = new SongService();
@@ -46,7 +51,7 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(index);
+    this.view.selectOption(this.#current);
 
     // *** tuning ***
 
@@ -61,7 +66,7 @@ export default class SongController {
     // *** text ***
 
     this.htmlLoader = new HtmlLoader();
-    await this.loadText(index);
+    await this.loadText(this.#current);
 
     // *** binding controller-view ***
 
@@ -143,6 +148,9 @@ export default class SongController {
 
   select_instrument = (event) => {
     this.loadText(event.target.value);
+    
+    this.#current = event.target.value;
+    this.#cookie.current = this.#current;
   }
 
   // *** tuning ***
