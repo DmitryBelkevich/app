@@ -1,5 +1,5 @@
 import CssLoader from '../loaders/CssLoader.js';
-import Tuning from '../helpers/Tuning.js';
+import Tuning from '../models/Tuning.js';
 
 export default class SongView {
   constructor() {
