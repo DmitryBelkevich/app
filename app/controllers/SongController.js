@@ -10,14 +10,15 @@ import Cookie from '../helpers/Cookie.js';
 
 export default class SongController {
   #params;
-  #current = 0;//state
-  // #cookie;
+  #current;//state
+  #cookie;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
-    // this.#cookie = new Cookie();
-    // this.#cookie.index = 0;
+    
+    this.#cookie = new Cookie();
+    this.#current = this.#cookie.current || 0;
     
     // model
     this.songService = new SongService();
@@ -147,7 +148,9 @@ export default class SongController {
 
   select_instrument = (event) => {
     this.loadText(event.target.value);
+    
     this.#current = event.target.value;
+    this.#cookie.current = this.#current;
   }
 
   // *** tuning ***
