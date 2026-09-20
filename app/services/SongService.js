@@ -8,7 +8,7 @@ import Instrument from '../models/Instrument.js';
 import Keyboards from '../models/Keyboards.js';
 import Guitar from '../models/Guitar.js';
 import BassGuitar from '../models/BassGuitar.js';
-// import _5StringBassGuitar from '../models/_5StringBassGuitar.js';
+import FiveStringBassGuitar from '../models/_5StringBassGuitar.js';
 
 export default class SongService {
   constructor() {
@@ -42,7 +42,7 @@ export default class SongService {
         } else if (instrument.title == "Bass Guitar") {
           guitar = new BassGuitar();
         } else if (instrument.title == "5-string Bass Guitar") {
-          console.log("5-string Bass Guitar");
+          guitar = new FiveStringBassGuitar();
         }
 
         guitar.title = instrument.title;
