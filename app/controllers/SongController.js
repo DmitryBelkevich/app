@@ -35,8 +35,6 @@ export default class SongController {
     this.view.setKey(this.song.key);
 
     // 2. transposer
-    this.transposer = new Transposer();
-    this.transposer.key = this.song.key;
 
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
@@ -85,6 +83,9 @@ export default class SongController {
     // 1. key-signature
     
     // 2. transposer
+    this.transposer = new Transposer();
+    this.transposer.key = this.song.key;
+    
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
 
