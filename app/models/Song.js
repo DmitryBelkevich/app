@@ -8,61 +8,65 @@ export default class Song {
   #key;
   #voices = [];
   #instruments = [];
-
-  set id(id) {
-    this.#id = id;
-  }
   
   get id() {
     return this.#id;
   }
-  
-  set band(band) {
-    this.#band = band;
+
+  set id(id) {
+    this.#id = id;
   }
 
   get band() {
     return this.#band;
   }
 
-  set title(title) {
-    this.#title = title;
+  set band(band) {
+    this.#band = band;
   }
 
   get title() {
     return this.#title;
   }
 
-  set text(text) {
-    this.#text = text;
+  set title(title) {
+    this.#title = title;
   }
 
   get text() {
     return this.#text;
   }
 
-  set score(score) {
-    this.#score = score;
+  set text(text) {
+    this.#text = text;
   }
 
   get score() {
     return this.#score;
   }
 
-  set playback(playback) {
-    this.#playback = playback;
+  set score(score) {
+    this.#score = score;
   }
 
   get playback() {
     return this.#playback;
   }
 
-  set key(key) {
-    this.#key = key;
+  set playback(playback) {
+    this.#playback = playback;
   }
 
   get key() {
     return this.#key;
+  }
+
+  set key(key) {
+    this.#key = key;
+  }
+  
+  get voices() {
+    return [...this.#voices];
   }
 
   set voices(voices) {
@@ -72,18 +76,11 @@ export default class Song {
     this.#voices = [...voices];
   }
   
-  get voices() {
-    return [...this.#voices];
+  get instruments() {
+    return this.#instruments;
   }
 
   set instruments(instruments) {
-    if (!instruments)
-      return;
-    
-    this.#instruments = [...instruments];
-  }
-  
-  get instruments() {
-    return [...this.#instruments];
+    this.#instruments = instruments;
   }
 }
