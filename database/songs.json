@@ -6215,22 +6215,6 @@
     ],
     "visible": "true"
   },
-
-  {
-    "id": "1000",
-    "band": "Band", "title": "Title",
-    "genre": "",
-    "text": "Template.html",
-    "score": "",
-    "playback": "",
-    "instruments": [
-      {
-        "title": "Guitar",
-        "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
-      }
-    ],
-    "visible": "true"
-  },
   
   {
     "id": "0",
