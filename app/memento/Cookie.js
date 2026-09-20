@@ -1,11 +1,9 @@
 export default class Cookie {
-  #current;
-  
   get current() {
-    return this.#current;
+    return document.cookie.split("; ")objects.find(obj => obj.split("=")[0] == "current").split("=")[1] || null;
   }
   
   set current(current) {
-    this.#current = current;
+    document.cookie = "current=" + current;
   }
 }
