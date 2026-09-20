@@ -40,11 +40,8 @@ export default class SongService {
           
           guitar.title = instrument.title;
 
-          if (instrument.tuning) {
-            const tuning = new Tuning();
-            tuning.push(instrument.tuning);
-            guitar.tuning = tuning;
-          }
+          if (instrument.tuning)
+            guitar.tuning = new Tuning(...instrument.tuning);
           
           guitar.capo = instrument.capo;
           
@@ -54,10 +51,8 @@ export default class SongService {
           
           guitar.title = instrument.title;
           
-          if (instrument.tuning) {
-            guitar.tuning = new Tuning();
-            guitar.tuning.push(...instrument.tuning);
-          }
+          if (instrument.tuning)
+            guitar.tuning = new Tuning(...instrument.tuning);
           
           guitar.capo = instrument.capo;
           
