@@ -3,6 +3,8 @@ export default class Cookie {
   
   constructor() {
     this.#cookie = document.cookie;
+
+    this.#cookie = "ste=Hello";
   }
 
   set index(index) {
