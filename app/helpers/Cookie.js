@@ -11,7 +11,7 @@ export default class Cookie {
     
   }
 
-  get() {
-    
+  get index {
+    return 0;
   }
 }
