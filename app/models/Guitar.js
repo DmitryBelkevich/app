@@ -2,24 +2,23 @@ import Instrument from "./Instrument.js";
 import Tuning from "./Tuning.js";
 
 export default class Guitar extends Instrument {
-  #title;
-  #tuning;
-  #capo;
+  tuning;
+  capo;
   
   constructor() {
     super();
-    this.#title = "Guitar";
+    this.title = "Guitar";
     
-    this.#tuning = new Tuning("E", "A", "D", "G", "B", "E");
-    this.#capo = 0;
+    this.tuning = new Tuning("E", "A", "D", "G", "B", "E");
+    this.capo = 0;
   }
 
   get tuning() {
-    return this.#tuning;
+    return this.tuning;
   }
 
   set tuning(tuning) {
-    this.#tuning = tuning;
+    this.tuning = tuning;
   }
 
   get capo() {
@@ -27,6 +26,6 @@ export default class Guitar extends Instrument {
   }
 
   set capo(capo) {
-    this.#capo = capo;
+    this.capo = capo;
   }
 }
