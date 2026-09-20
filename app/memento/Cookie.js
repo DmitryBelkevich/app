@@ -1,5 +1,9 @@
 export default class Cookie {
   #current = "current";
+
+  constructor() {
+    document.cookie = this.#current + "=" + "0";
+  }
   
   get current() {
     const objects = document.cookie.split("; ");
