@@ -20,31 +20,24 @@ export default class SongController {
 
     // view
     this.view = new SongView();
-    
+
+    // *** title ***
     this.view.setPageTitle(this.song.band + " - " + this.song.title);
     this.view.setTitle(this.song.title);
     this.view.setBand(this.song.band);
-    this.view.setKey(this.song.key);
-    this.song.instruments.forEach((instrument, index) => {
-      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-        this.view.addTuning(instrument.tuning, instrument.tuning.isStandard());
-
-      if (instrument.capo)
-        this.view.addCapo(instrument.capo);
-    });
-
-    // load text
-    this.htmlLoader = new HtmlLoader();
-    const index = 0;//current instrument
-    await this.loadText(index);
 
     // *** display ***
 
     // 1. key-signature
 
+    this.view.setKey(this.song.key);
+
     // 2. transposer
     this.transposer = new Transposer();
     this.transposer.key = this.song.key;
+
+    // 3. auto-scroll
+    this.autoScroll = new AutoScroll();
 
     // *** settings ***
 
@@ -67,8 +60,21 @@ export default class SongController {
 
     this.view.selectOption(index);
 
-    // 2. auto-scroll
-    this.autoScroll = new AutoScroll();
+    // *** tuning ***
+
+    this.song.instruments.forEach((instrument, index) => {
+      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
+        this.view.addTuning(instrument.tuning, instrument.tuning.isStandard());
+
+      if (instrument.capo)
+        this.view.addCapo(instrument.capo);
+    });
+
+    // *** text ***
+
+    this.htmlLoader = new HtmlLoader();
+    const index = 0;//current instrument
+    await this.loadText(index);
 
     // *** binding controller-view ***
 
