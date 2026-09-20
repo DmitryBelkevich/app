@@ -54,8 +54,6 @@ export default class SongService {
         if (instrument_obj.capo)
           instrument.capo = instrument_obj.capo;
       }
-
-      instrument.title = instrument_obj.title;
       
       song.instruments[index] = instrument;
     });
