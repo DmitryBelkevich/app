@@ -43,12 +43,7 @@ export default class SongController {
 
     // 1. dropdown
     this.song.instruments.forEach((instrument, index) => {
-      var title = instrument.title;
-      
-      if (instrument.capo > 0)
-        title += " (" + "Capo: +" + instrument.capo + ")";
-      
-      this.view.addOption(index, title, instrument.color);
+      this.view.addOption(index, instrument.title, instrument.color);
     });
 
     this.view.selectOption(index);
