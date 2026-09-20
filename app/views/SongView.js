@@ -1,5 +1,4 @@
 import CssLoader from '../loaders/CssLoader.js';
-import Tuning from '../models/Tuning.js';
 
 export default class SongView {
   constructor() {
@@ -174,7 +173,7 @@ export default class SongView {
     else
       tuning_e.classList.add("non-standard");
     
-    tuning_e.textContent = title + " (" + Tuning.getTitle(tuning) + ")" + " [" + tuning + "]";
+    tuning_e.textContent = title + " [" + tuning + "]";
     
     this.tuning.append(tuning_e);
   }
