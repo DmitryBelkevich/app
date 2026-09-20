@@ -21,7 +21,7 @@ export default class Guitar extends Instrument {
   }
 
   get capo() {
-    return this.#capo;
+    return this.capo;
   }
 
   set capo(capo) {
