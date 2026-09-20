@@ -60,35 +60,6 @@ export default class SongService {
       song.instruments[index] = instrument;
     });
 
-    // set STANDARD tunuig for each instruments
-    // song.instruments.forEach((instrument, index) => {
-    //   if (instrument.title == "Guitar" || instrument.title == "E.Guitar")
-    //     if (!instrument.tuning)
-    //       instrument.tuning = ["E", "A", "D", "G", "B", "E"];
-
-    //   if (instrument.title == "Bass Guitar")
-    //     if (!instrument.tuning)
-    //       instrument.tuning = ["E", "A", "D", "G"];
-
-    //   if (instrument.title == "5-string Bass Guitar")
-    //     if (!instrument.tuning)
-    //       instrument.tuning = ["B", "E", "A", "D", "G"];
-
-    //   if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-    //     if (!instrument.capo)
-    //       instrument.capo = 0;
-
-    //   if (instrument.title == "Keyboards" || instrument.title == "Instrument")
-    //     if (!instrument.transposition)
-    //       instrument.transposition = 0;
-    // });
-
-    // set transposition for each instruments
-    // song.instruments.forEach((instrument) => {
-    //   if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-    //     instrument.transposition = Tuning.droppedTo(instrument.tuning);
-    // });
-
     // set chords for each instruments
     // song.instruments.forEach((instrument) => {
     //   const index = song.text.length - ".html".length;
