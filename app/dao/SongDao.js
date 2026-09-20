@@ -22,7 +22,6 @@ export default class SongDao {
     if (!result)
       return null;
 
-    console.log(result);
     const song = new Song();
 
     song.id = result.id;
@@ -35,7 +34,6 @@ export default class SongDao {
     song.voices = result.voices;
     song.instruments = result.instruments;
 
-    console.log(song);
     return song;
   }
 }
