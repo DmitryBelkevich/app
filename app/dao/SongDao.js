@@ -1,6 +1,7 @@
 import config from '../config/config.js';
 
 import Song from '../models/Song.js';
+import Song from '../models/instrument.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class SongDao {
@@ -33,7 +34,15 @@ export default class SongDao {
     song.playback = result.playback;
     song.key = result.key;
     song.voices = result.voices;
-    song.instruments = result.instruments;
+
+    result.instruments.forEach((instrument_obj, index) => {
+      const instrument = new Instrument();
+
+      instrument.title = instrument_obj.title;
+      
+      song.instruments[index] = instrument;
+    });
+    
 
     console.log(song);
     
