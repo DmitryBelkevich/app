@@ -1,4 +1,6 @@
 export default class Cookie {
+  #current = "current";
+  
   get current() {
     const objects = document.cookie.split("; ");
     console.log(objects);
@@ -10,6 +12,6 @@ export default class Cookie {
   }
   
   set current(current) {
-    document.cookie = "current=" + current;
+    document.cookie = this.#current + "=" + current;
   }
 }
