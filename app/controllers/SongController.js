@@ -6,7 +6,7 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
-import Cookie from '../helpers/Cookie.js';
+import Cookie from '../memento/Cookie.js';
 
 export default class SongController {
   #params;
