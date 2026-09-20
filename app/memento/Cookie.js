@@ -1,6 +1,6 @@
 export default class Cookie {
   get current() {
-    return document.cookie.split("; ")objects.find(obj => obj.split("=")[0] == "current").split("=")[1] || null;
+    return document.cookie.split("; ").find(obj => obj.split("=")[0] == "current").split("=")[1] || null;
   }
   
   set current(current) {
