@@ -39,7 +39,10 @@ export default class SongService {
           const guitar = new Guitar();
           
           guitar.title = instrument.title;
-          guitar.tuning = instrument.tuning;
+
+          if (instrument.tuning)
+            guitar.tuning = instrument.tuning;
+          
           guitar.capo = instrument.capo;
           
           song.instruments[index] = guitar;
@@ -47,7 +50,10 @@ export default class SongService {
           const guitar = new BassGuitar();
           
           guitar.title = instrument.title;
-          guitar.tuning = instrument.tuning;
+          
+          if (instrument.tuning)
+            guitar.tuning = instrument.tuning;
+          
           guitar.capo = instrument.capo;
           
           song.instruments[index] = guitar;
