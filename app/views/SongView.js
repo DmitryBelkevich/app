@@ -146,11 +146,19 @@ export default class SongView {
 
   // 1. dropdown
 
-  addOption(index, title) {
+  addOption(index, title, color) {
     const option = document.createElement("option");
 
     option.value = index;
-    option.textContent = title;
+    
+    const colors = {
+      "grey": "⚪️",
+      "red": "🔴",
+      "yellow": "🟡",
+      "green": "🟢",
+    };
+    
+    option.textContent = "" + " " + title;
     
     this.dropdown.append(option);
   }
