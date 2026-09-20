@@ -21,6 +21,8 @@ export default class SongDao {
     if (!result)
       return null;
     
+    sonsole.log(result);
+    
     const song = new Song();
 
     song.id = result.id;
@@ -33,6 +35,8 @@ export default class SongDao {
     song.voices = result.voices;
     song.instruments = result.instruments;
 
+    sonsole.log(song);
+    
     return song;
   }
 }
