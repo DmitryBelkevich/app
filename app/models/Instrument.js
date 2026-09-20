@@ -1,8 +1,10 @@
 export default class Instrument {
   title;
+  transposition;
 
   constructor() {
     this.title = "Instrument";
+    this.transposition = 0;
   }
 
   get title() {
@@ -11,5 +13,13 @@ export default class Instrument {
 
   set title(title) {
     this.title = title;
+  }
+
+  get transposition() {
+    return this.transposition;
+  }
+
+  set transposition(transposition) {
+    this.transposition = transposition;
   }
 }
