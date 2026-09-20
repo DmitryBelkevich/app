@@ -6,6 +6,7 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
+import Cookie from '../helpers/Cookie.js';
 
 export default class SongController {
   #params;
@@ -13,6 +14,7 @@ export default class SongController {
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
+    const cookie = new Cookie();
     const index = 0;//current instrument
     
     // model
