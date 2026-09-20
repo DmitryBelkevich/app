@@ -1,7 +1,7 @@
 import config from '../config/config.js';
 
 import Song from '../models/Song.js';
-import Song from '../models/instrument.js';
+import instrument from '../models/instrument.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class SongDao {
