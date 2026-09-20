@@ -4,7 +4,7 @@ export default class Cookie {
   get current() {
     const objects = document.cookie.split("; ");
     
-    const object = objects.find(obj => obj.split("=")[0] == "current") || null;
+    const object = objects.find(obj => obj.split("=")[0] == this.#current) || null;
     
     if (!!object)
       return object.split("=")[1];
