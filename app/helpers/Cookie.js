@@ -1,17 +1,17 @@
 export default class Cookie {
   // #cookies = [];
-  #index;
+  #current;
   
   constructor() {
     // this.#cookies = document.cookie.split("; ");
   }
 
-  get index() {
-    return this.#index;
+  get current() {
+    return this.#current;
   }
   
-  set index(index) {
+  set current(current) {
     // document.cookie = "index=" + index;
-    this.#index = index;
+    this.#current = current;
   }
 }
