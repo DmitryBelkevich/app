@@ -32,7 +32,7 @@ export default class SongDao {
     song.playback = result.playback;
     song.key = result.key;
     song.voices = result.voices;
-    song.instruments = instruments;
+    song.instruments = result.instruments;
     
     return song;
   }
