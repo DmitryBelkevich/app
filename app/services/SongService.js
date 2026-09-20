@@ -55,8 +55,8 @@ export default class SongService {
           guitar.title = instrument.title;
           
           if (instrument.tuning) {
-            guitar.tuning = new Tuning("n");
-            guitar.tuning.push("e", "w");
+            guitar.tuning = new Tuning();
+            guitar.tuning.push(...instrument.tuning);
           }
           
           guitar.capo = instrument.capo;
