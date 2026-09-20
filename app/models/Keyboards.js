@@ -1,20 +1,19 @@
 import Instrument from "./Instrument.js";
 
 export default class Keyboards extends Instrument {
-  #transposition;
+  transposition;
   
   constructor() {
     super();
-    this._title = "Keyboards";
-
-    this.#transposition = 0;
+    this.title = "Keyboards";
+    this.transposition = 0;
   }
 
   set transposition(transposition) {
-    this.#transposition = transposition;
+    this.transposition = transposition;
   }
 
   get transposition() {
-    return this.#transposition;
+    return this.transposition;
   }
 }
