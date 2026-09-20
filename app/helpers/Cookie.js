@@ -1,5 +1,9 @@
 export default class Cookie {
   constructor() {
-    console.log(this);
+    this.cookie = document.cookie;
+
+    this.cookie = "index=" + 0;
+
+    console.log(this.cookie);
   }
 }
