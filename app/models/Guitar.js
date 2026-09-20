@@ -8,7 +8,6 @@ export default class Guitar extends Instrument {
   constructor() {
     super();
     this.title = "Guitar";
-    
     this.tuning = new Tuning("E", "A", "D", "G", "B", "E");
     this.capo = 0;
   }
