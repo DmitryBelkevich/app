@@ -66,14 +66,11 @@ export default class Song {
   }
   
   get voices() {
-    return [...this.#voices];
+    return this.#voices;
   }
 
   set voices(voices) {
-    if (!voices)
-      return;
-    
-    this.#voices = [...voices];
+    this.#voices = voices;
   }
   
   get instruments() {
