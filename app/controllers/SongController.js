@@ -13,6 +13,7 @@ export default class SongController {
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
+    const index = 0;//current instrument
     
     // model
     this.songService = new SongService();
@@ -20,11 +21,42 @@ export default class SongController {
 
     // view
     this.view = new SongView();
+
+    // *** title ***
     
     this.view.setPageTitle(this.song.band + " - " + this.song.title);
     this.view.setTitle(this.song.title);
     this.view.setBand(this.song.band);
+
+    // *** display ***
+
+    // 1. key-signature
+
     this.view.setKey(this.song.key);
+
+    // 2. transposer
+    this.transposer = new Transposer();
+    this.transposer.key = this.song.key;
+
+    // 3. auto-scroll
+    this.autoScroll = new AutoScroll();
+
+    // *** settings ***
+
+    // 1. dropdown
+    this.song.instruments.forEach((instrument, index) => {
+      var title = instrument.title;
+      
+      if (instrument.capo > 0)
+        title += " (" + "Capo: +" + instrument.capo + ")";
+      
+      this.view.addOption(index, title, instrument.color);
+    });
+
+    this.view.selectOption(index);
+
+    // *** tuning ***
+
     this.song.instruments.forEach((instrument, index) => {
       if (instrument.title != "Keyboards" && instrument.title != "Instrument")
         this.view.addTuning(instrument.tuning, instrument.tuning.isStandard());
@@ -33,48 +65,17 @@ export default class SongController {
         this.view.addCapo(instrument.capo);
     });
 
-    // load text
+    // *** text ***
+
     this.htmlLoader = new HtmlLoader();
-    const index = 0;//current instrument
     await this.loadText(index);
-
-    // *** display ***
-
-    // 1. key-signature
-
-    // 2. transposer
-    this.transposer = new Transposer();
-    this.transposer.key = this.song.key;
-
-    // *** settings ***
-
-    // 1. dropdown
-    this.song.instruments.forEach((instrument, index) => {
-      var title = instrument.title;
-
-      if (title == "Guitar" || title == "E.Guitar")
-        title = "🔴 " + title;
-      else if (title == "Bass Guitar" || title == "5-string Bass Guitar")
-        title = "🟡 " + title;
-      else
-        title = "🟢 " + title;
-
-      if (instrument.capo > 0)
-        title += " (" + "Capo: +" + instrument.capo + ")";
-      
-      this.view.addOption(index, title);
-    });
-
-    this.view.selectOption(index);
-
-    // 2. auto-scroll
-    this.autoScroll = new AutoScroll();
 
     // *** binding controller-view ***
 
     // binding: view -> model
 
-    // tabs
+    // *** tabs ***
+    
     this.view.bindTextTab(this.openText);
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
@@ -82,22 +83,22 @@ export default class SongController {
     // *** display ***
     
     // 1. key-signature
+    
     // 2. transposer
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
+
+    // 3. auto-scroll
+    this.view.bindAutoScroll(this.auto_scroll);
 
     // *** settings ***
 
     // 1. dropdown
     this.view.bindDropdown(this.select_instrument);
-    // 2. auto-scroll
-    this.view.bindAutoScroll(this.auto_scroll);
-  }
 
-  async loadText(index) {
-    const instrument = this.song.instruments[index];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
+    // *** tuning ***
+
+    // *** text ***
   }
 
   // *** handlers ***
@@ -132,6 +133,14 @@ export default class SongController {
     this.transposer.transposeUp();
   }
 
+  // 3. auto-scroll
+  
+  auto_scroll = () => {
+    // this.autoScroll.speed = 10;
+    
+    this.autoScroll.run();
+  }
+
   // *** settings ***
 
   // 1. dropdown
@@ -140,11 +149,13 @@ export default class SongController {
     this.loadText(event.target.value);
   }
 
-  // 2. auto-scroll
-  
-  auto_scroll = () => {
-    // this.autoScroll.speed = 10;
-    
-    this.autoScroll.run();
+  // *** tuning ***
+
+  // *** text ***
+
+  async loadText(index) {
+    const instrument = this.song.instruments[index];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.view.setText(text);
   }
 }
