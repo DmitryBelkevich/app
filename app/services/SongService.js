@@ -36,9 +36,6 @@ export default class SongService {
         instrument = new Instrument();
       } else if (instrument_obj.title == "Keyboards") {
         instrument = new Keyboards();
-
-        if (instrument_obj.transposition)
-          instrument.transposition = instrument_obj.transposition;
       } else if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar" || instrument_obj.title == "Bass Guitar" || instrument_obj.title == "5-string Bass Guitar") {
         if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar") {
           instrument = new Guitar();
@@ -53,6 +50,12 @@ export default class SongService {
 
         if (instrument_obj.capo)
           instrument.capo = instrument_obj.capo;
+
+        if (instrument_obj.transposition)
+          instrument.transposition = instrument_obj.transposition;
+
+        if (instrument instanceof Guitar)
+          instrument.transposition = instrument.tuning.droppedTo();
       }
       
       song.instruments[index] = instrument;
