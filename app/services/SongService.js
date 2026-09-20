@@ -35,33 +35,25 @@ export default class SongService {
       } else if (instrument.title == "Keyboards") {
         const keyboards = new Keyboards();
       } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
+        var guitar;
+        
         if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
-          const guitar = new Guitar();
-          
-          guitar.title = instrument.title;
-
-          if (instrument.tuning)
-            guitar.tuning = new Tuning(...instrument.tuning);
-
-          if (instrument.capo)
-            guitar.capo = instrument.capo;
-          
-          song.instruments[index] = guitar;
+          guitar = new Guitar();
         } else if (instrument.title == "Bass Guitar") {
-          const guitar = new BassGuitar();
-          
-          guitar.title = instrument.title;
-          
-          if (instrument.tuning)
-            guitar.tuning = new Tuning(...instrument.tuning);
-
-          if (instrument.capo)
-            guitar.capo = instrument.capo;
-          
-          song.instruments[index] = guitar;
+          guitar = new BassGuitar();
         } else if (instrument.title == "5-string Bass Guitar") {
           console.log("5-string Bass Guitar");
         }
+
+        guitar.title = instrument.title;
+
+        if (instrument.tuning)
+          guitar.tuning = new Tuning(...instrument.tuning);
+
+        if (instrument.capo)
+          guitar.capo = instrument.capo;
+        
+        song.instruments[index] = guitar;
       }
     });
 
