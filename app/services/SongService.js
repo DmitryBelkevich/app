@@ -29,29 +29,29 @@ export default class SongService {
     if (!song.key)
       song.key = "";
 
-    song.instruments.forEach((instrument, index) => {
-      if (instrument.title == "Instrument") {
+    song.instruments.forEach((instrument_obj, index) => {
+      if (instrument_obj.title == "Instrument") {
         const instrument = new Instrument();
-      } else if (instrument.title == "Keyboards") {
+      } else if (instrument_obj.title == "Keyboards") {
         const keyboards = new Keyboards();
-      } else if (instrument.title == "Guitar" || instrument.title == "E.Guitar" || instrument.title == "Bass Guitar" || instrument.title == "5-string Bass Guitar") {
+      } else if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar" || instrument_obj.title == "Bass Guitar" || instrument_obj.title == "5-string Bass Guitar") {
         var guitar;
         
-        if (instrument.title == "Guitar" || instrument.title == "E.Guitar") {
+        if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar") {
           guitar = new Guitar();
-        } else if (instrument.title == "Bass Guitar") {
+        } else if (instrument_obj.title == "Bass Guitar") {
           guitar = new BassGuitar();
-        } else if (instrument.title == "5-string Bass Guitar") {
+        } else if (instrument_obj.title == "5-string Bass Guitar") {
           guitar = new FiveStringBassGuitar();
         }
 
-        guitar.title = instrument.title;
+        guitar.title = instrument_obj.title;
 
         if (instrument.tuning)
-          guitar.tuning = new Tuning(...instrument.tuning);
+          guitar.tuning = new Tuning(...instrument_obj.tuning);
 
-        if (instrument.capo)
-          guitar.capo = instrument.capo;
+        if (instrument_obj.capo)
+          guitar.capo = instrument_obj.capo;
         
         song.instruments[index] = guitar;
       }
