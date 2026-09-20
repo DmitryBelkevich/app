@@ -22,8 +22,6 @@ export default class SongDao {
     if (!result)
       return null;
     
-    console.log(result);
-    
     const song = new Song();
 
     song.id = result.id;
@@ -34,19 +32,7 @@ export default class SongDao {
     song.playback = result.playback;
     song.key = result.key;
     song.voices = result.voices;
-
-    result.instruments.forEach((instrument_obj, index) => {
-      const instrument = new Instrument();
-
-      instrument.title = instrument_obj.title;
-      instrument.tuning = instrument_obj.tuning;
-      instrument.capo = instrument_obj.capo;
-      instrument.transposition = instrument_obj.transposition;
-
-      song.instruments[index] = instrument;
-    });
-
-    console.log(song);
+    song.instruments = instruments;
     
     return song;
   }
