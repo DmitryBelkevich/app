@@ -43,7 +43,7 @@ export default class SongDao {
       instrument.capo = instrument_obj.capo;
       instrument.transposition = instrument_obj.transposition;
 
-      song.instruments.[index] = instrument;
+      song.instruments[index] = instrument;
     });
 
     console.log(song);
