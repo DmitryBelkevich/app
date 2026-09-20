@@ -158,7 +158,7 @@ export default class SongView {
       "green": "🟢",
     };
     
-    option.textContent = "" + " " + title;
+    option.textContent = colors[color] + " " + title;
     
     this.dropdown.append(option);
   }
