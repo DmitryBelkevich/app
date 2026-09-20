@@ -35,12 +35,12 @@ export default class SongDao {
     song.key = result.key;
     song.voices = result.voices;
 
-    result.instruments.forEach((instrument_obj, index) => {
+    result.instruments.forEach((instrument_obj) => {
       const instrument = new Instrument();
 
       instrument.title = instrument_obj.title;
       
-      song.instruments[index] = instrument;
+      song.instruments.push(instrument);
     });
     
 
