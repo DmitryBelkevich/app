@@ -62,7 +62,7 @@ export default class SongService {
 
     // TODO
     
-    set chords for each instruments
+    // set CHORDS_LINK for each instruments
     song.instruments.forEach((instrument) => {
       const index = song.text.length - ".html".length;
       
