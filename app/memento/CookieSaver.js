@@ -11,6 +11,10 @@ export default class CookieSaver {
     
     return null;
   }
+  
+  set current(current) {
+    document.cookie = this.#current + "=" + current;
+  }
 
   getByName() {
     const obj = {};
@@ -26,9 +30,5 @@ export default class CookieSaver {
 
   add(object) {
     
-  }
-  
-  set current(current) {
-    document.cookie = this.#current + "=" + current;
   }
 }
