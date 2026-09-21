@@ -7,7 +7,7 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
 
-import CookieService from '../services/StateService.js';
+import StateService from '../services/StateService.js';
 
 export default class SongController {
   #params;
