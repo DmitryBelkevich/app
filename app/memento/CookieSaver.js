@@ -4,8 +4,11 @@ export default class CookieSaver {
     
     const object = objects.find(obj => obj.split("=")[0] == name) || null;
     
-    if (!!object)
-      return object.split("=")[1];
+    if (!!object) {
+      const name = object.split("=")[0];
+      const value = object.split("=")[1];
+      return {name: name, value: value};
+    }
     
     return null;
   }
