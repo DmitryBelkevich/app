@@ -17,12 +17,21 @@ export default class SongController {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
     
-    this.#cookieSaver = new CookieSaver();
-    this.#current = this.#cookieSaver.current || 0;
-    
     // model
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
+
+    // cookie
+    this.#cookieSaver = new CookieSaver();
+    const default_obj = {name: "current", value: 0};
+    
+    const obj = this.#cookieSaver.getByName("current") || default_obj;
+    this.#cookieSaver.save(obj);
+
+    if (this.song.instruments.length > 1)
+      this.#current = obj.value;
+    else
+      this.#current = default_obj.value;
 
     // view
     this.view = new SongView();
@@ -150,7 +159,7 @@ export default class SongController {
     this.loadText(event.target.value);
     
     this.#current = event.target.value;
-    this.#cookieSaver.current = this.#current;
+    this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
   // *** tuning ***
