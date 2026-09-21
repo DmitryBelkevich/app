@@ -1,4 +1,14 @@
 export default class CookieSaver {
+  getAll() {
+    const obj = document.cookie.split("; ").reduce((acc, current) => {
+        const [key, value] = current.split('=');
+        acc[key] = value || "";
+      return acc;
+    }, {});
+
+    return obj;
+  }
+  
   getByName(name) {
     const obj = document.cookie.split("; ").reduce((acc, current) => {
         const [key, value] = current.split('=');
@@ -6,10 +16,9 @@ export default class CookieSaver {
       return acc;
     }, {});
 
-    if (JSON.stringify(obj) === JSON.stringify({"": ''}))
-      return null;
-
-    return obj;
+    const value = obj[name];
+    
+    return value;
   }
   
   save(obj) {
