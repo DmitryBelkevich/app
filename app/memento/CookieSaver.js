@@ -13,8 +13,12 @@ export default class CookieSaver {
     const obj = this.getAll();
 
     const value = obj[name];
+
+    const result = {name: name, value: value};
+
+    console.log(result);
     
-    return {name: name, value: value};
+    return result;
   }
   
   save(obj) {
