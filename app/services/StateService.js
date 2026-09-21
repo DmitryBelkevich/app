@@ -1,6 +1,6 @@
 import CookieSaver from '../memento/CookieSaver.js';
 
-export default class CookieService {
+export default class StateService {
   #cookieSaver;
   #current;//state
 
@@ -24,5 +24,10 @@ export default class CookieService {
 
   set current(current) {
     this.#current = current;
+    this.commit();
+  }
+
+  commit() {
+    this.#cookieSaver.save({name: "current", value: this.#current});
   }
 }
