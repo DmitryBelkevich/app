@@ -158,7 +158,7 @@ export default class SongController {
 
   // *** text ***
 
-  async loadText(index) {
+  async loadText(index) {console.log(index);
     const instrument = this.song.instruments[index];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
