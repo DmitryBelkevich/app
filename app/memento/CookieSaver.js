@@ -14,7 +14,7 @@ export default class CookieSaver {
 
     const value = cookies_obj[name];
 
-    console.log(value);
+    console.log(cookies_obj);
 
     const result = {name: name, value: value};
     
