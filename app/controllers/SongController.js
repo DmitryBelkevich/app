@@ -65,7 +65,7 @@ export default class SongController {
     // *** text ***
 
     this.htmlLoader = new HtmlLoader();
-    await this.loadText(this.cookieService.current);
+    await this.loadText(this.stateService.current);
 
     // *** binding controller-view ***
 
