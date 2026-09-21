@@ -7,7 +7,7 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
 
-import CookieService from '../memento/CookieService.js';
+import CookieService from '../services/StateService.js';
 
 export default class SongController {
   #params;
@@ -20,8 +20,8 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    // cookie
-    this.cookieService = new CookieService();
+    // state
+    this.stateService = new StateService();
 
     // view
     this.view = new SongView();
@@ -148,8 +148,7 @@ export default class SongController {
   select_instrument = (event) => {
     this.loadText(event.target.value);
     
-    this.cookieService.current = event.target.value;
-    this.#cookieSaver.save({name: "current", value: this.cookieService.current});
+    this.stateService.current = event.target.value;
   }
 
   // *** tuning ***
