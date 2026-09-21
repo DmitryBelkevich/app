@@ -20,7 +20,6 @@ export default class SongController {
     this.#cookieSaver = new CookieSaver();
     const obj = this.#cookieSaver.getByName("current") || {name: "current", value: 0};
     this.#cookieSaver.save(obj);
-    console.log(obj);
     this.#current = obj.value;
     
     // model
