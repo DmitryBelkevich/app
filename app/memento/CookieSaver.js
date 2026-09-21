@@ -6,7 +6,7 @@ export default class CookieSaver {
       return acc;
     }, {});
 
-    if (obj === JSON.stringify({"": ''}))
+    if (JSON.stringify(obj) === JSON.stringify({"": ''}))
       return null;
 
     return obj;
