@@ -33,9 +33,6 @@ export default class SongController {
     else
       this.#current = default_obj.value;
 
-    console.log(default_obj);
-    console.log(obj);
-
     // view
     this.view = new SongView();
 
