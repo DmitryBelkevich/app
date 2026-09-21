@@ -23,15 +23,15 @@ export default class SongController {
 
     // cookie
     this.#cookieSaver = new CookieSaver();
-    const default_obj = {name: "current", value: 0};
+    const default_cookie_obj = {name: "current", value: 0};
     
-    const obj = this.#cookieSaver.getByName("current") || default_obj;
-    this.#cookieSaver.save(obj);
+    const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
+    this.#cookieSaver.save(cookie_obj);
 
     if (this.song.instruments.length > 1)
-      this.#current = obj.value;
+      this.#current = cookie_obj.value;
     else
-      this.#current = default_obj.value;
+      this.#current = default_cookie_obj.value;
 
     // view
     this.view = new SongView();
