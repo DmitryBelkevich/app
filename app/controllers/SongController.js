@@ -28,11 +28,12 @@ export default class SongController {
     const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
     this.#cookieSaver.save(cookie_obj);
 
-    console.log(this.#current);
-    if (this.song.instruments.length > this.#current)
+    if (this.song.instruments.length > 1)
       this.#current = cookie_obj.value;
     else
       this.#current = default_cookie_obj.value;
+
+    console.log(this.#current);
 
     // view
     this.view = new SongView();
