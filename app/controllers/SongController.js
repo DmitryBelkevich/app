@@ -6,12 +6,11 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
-import CookieSaver from '../memento/CookieSaver.js';
+
+import StateService from '../services/StateService.js';
 
 export default class SongController {
   #params;
-  #current;//state
-  #cookieSaver;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
@@ -21,17 +20,8 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    // cookie
-    this.#cookieSaver = new CookieSaver();
-    const default_cookie_obj = {name: "current", value: 0};
-    
-    const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
-    this.#cookieSaver.save(cookie_obj);
-
-    if (this.song.instruments.length > 1)
-      this.#current = cookie_obj.value;
-    else
-      this.#current = default_cookie_obj.value;
+    // state
+    this.stateService = new StateService(this.song);
 
     // view
     this.view = new SongView();
@@ -60,7 +50,7 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(this.#current);
+    this.view.selectOption(this.stateService.current);
 
     // *** tuning ***
 
@@ -75,7 +65,7 @@ export default class SongController {
     // *** text ***
 
     this.htmlLoader = new HtmlLoader();
-    await this.loadText(this.#current);
+    await this.loadText(this.stateService.current);
 
     // *** binding controller-view ***
 
@@ -158,8 +148,7 @@ export default class SongController {
   select_instrument = (event) => {
     this.loadText(event.target.value);
     
-    this.#current = event.target.value;
-    this.#cookieSaver.save({name: "current", value: this.#current});
+    this.stateService.current = event.target.value;
   }
 
   // *** tuning ***
