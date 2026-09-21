@@ -14,7 +14,7 @@ export default class CookieSaver {
 
     const value = obj[name];
     
-    return value;
+    return {name: name, value: value};
   }
   
   save(obj) {
