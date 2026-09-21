@@ -18,9 +18,10 @@ export default class SongController {
     const id = this.#params.get("id");
     
     this.#cookieSaver = new CookieSaver();
-    const cookie_obj = this.#cookieSaver.getByName("current") || {name: "current", value: 0};
-    console.log(cookie_obj);
-    this.#current = cookie_obj.value;
+    const obj = this.#cookieSaver.getByName("current") || {name: "current", value: 0};
+    this.#cookieSaver.save(obj);
+    console.log(obj);
+    this.#current = obj.value;
     
     // model
     this.songService = new SongService();
