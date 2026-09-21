@@ -1,16 +1,12 @@
 export default class CookieSaver {
   getByName(name) {
-    const objects = document.cookie.split("; ");
-    
-    const object = objects.find(obj => obj.split("=")[0] == name) || null;
-    
-    if (!!object) {
-      const name = object.split("=")[0];
-      const value = object.split("=")[1];
-      return {name: name, value: value};
-    }
-    
-    return null;
+    const obj = document.cookie.split("; ").reduce((acc, current) => {
+        const [key, value] = current.split('=');
+        acc[key] = value || "";
+      return acc;
+    }, {});
+
+    return obj;
   }
   
   save(obj) {
