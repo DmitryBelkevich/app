@@ -23,7 +23,7 @@ export default class SongController {
 
     // cookie
     this.#cookieSaver = new CookieSaver();
-    const default_obj = {name: "curent", value: 0};
+    const default_obj = {name: "current", value: 0};
     
     const obj = this.#cookieSaver.getByName("current") || default_obj;
     this.#cookieSaver.save(obj);
