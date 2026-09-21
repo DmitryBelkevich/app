@@ -4,7 +4,7 @@ export default class StateService {
   #cookieSaver;
   #current;//state
 
-  constructor() {
+  constructor(song) {
     this.#cookieSaver = new CookieSaver();
 
     const default_cookie_obj = {name: "current", value: 0};
@@ -12,7 +12,7 @@ export default class StateService {
     const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
     this.#cookieSaver.save(cookie_obj);
 
-    if (true)//this.song.instruments.length > 1
+    if (song.instruments.length > 1)
       this.#current = cookie_obj.value;
     else
       this.#current = default_cookie_obj.value;
