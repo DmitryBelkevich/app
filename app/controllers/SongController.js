@@ -18,7 +18,8 @@ export default class SongController {
     const id = this.#params.get("id");
     
     this.#cookieSaver = new CookieSaver();
-    this.#current = this.#cookieSaver.current || 0;
+    const cookie = this.#cookieSaver.getByName("current") || {name: "current", value: 0};
+    this.#current = cookie.value;
     
     // model
     this.songService = new SongService();
@@ -150,7 +151,7 @@ export default class SongController {
     this.loadText(event.target.value);
     
     this.#current = event.target.value;
-    this.#cookieSaver.current = this.#current;
+    this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
   // *** tuning ***
