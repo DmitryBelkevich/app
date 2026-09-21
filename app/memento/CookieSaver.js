@@ -1,19 +1,26 @@
 export default class CookieSaver {
+  getAll() {
+    const cookies_obj = document.cookie.split("; ").reduce((acc, current) => {
+        const [key, value] = current.split('=');
+        acc[key] = value || "";
+      return acc;
+    }, {});
+
+    return cookies_obj;
+  }
+  
   getByName(name) {
-    const objects = document.cookie.split("; ");
-    
-    const object = objects.find(obj => obj.split("=")[0] == name) || null;
-    
-    if (!!object) {
-      const name = object.split("=")[0];
-      const value = object.split("=")[1];
+    const cookies_obj = this.getAll();
+
+    const value = cookies_obj[name];
+
+    if (value)
       return {name: name, value: value};
-    }
     
     return null;
   }
   
-  save(obj) {
-    document.cookie = obj.name + "=" + obj.value;
+  save(cookie_obj) {
+    document.cookie = cookie_obj.name + "=" + cookie_obj.value;
   }
 }
