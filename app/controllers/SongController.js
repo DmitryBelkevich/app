@@ -6,19 +6,19 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
-import Cookie from '../memento/Cookie.js';
+import CookieSaver from '../memento/CookieSaver.js';
 
 export default class SongController {
   #params;
   #current;//state
-  #cookie;
+  #cookieSaver;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
     const id = this.#params.get("id");
     
-    this.#cookie = new Cookie();
-    this.#current = this.#cookie.current || 0;
+    this.#cookieSaver = new CookieSaver();
+    this.#current = this.#cookieSaver.current || 0;
     
     // model
     this.songService = new SongService();
@@ -150,7 +150,7 @@ export default class SongController {
     this.loadText(event.target.value);
     
     this.#current = event.target.value;
-    this.#cookie.current = this.#current;
+    this.#cookieSaver.current = this.#current;
   }
 
   // *** tuning ***

@@ -1,4 +1,4 @@
-export default class Cookie {
+export default class CookieSaver {
   #current = "current";
   
   get current() {
