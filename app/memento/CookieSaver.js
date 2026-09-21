@@ -1,12 +1,14 @@
 export default class CookieSaver {
   getAll() {
-    const obj = document.cookie.split("; ").reduce((acc, current) => {
+    const cookies_obj = document.cookie.split("; ").reduce((acc, current) => {
         const [key, value] = current.split('=');
         acc[key] = value || "";
       return acc;
     }, {});
 
-    return obj;
+    // if (JSON.stringify(cookies_obj) === JSON.stringify({"": ""})) {}
+
+    return cookies_obj;// {"": ""}
   }
   
   getByName(name) {
@@ -14,11 +16,12 @@ export default class CookieSaver {
 
     const value = cookies_obj[name];
 
-    console.log(cookies_obj);
+    console.log(value);// undefined
 
-    const result = {name: name, value: value};
+    if (!value)
+      return {name: name, value: value};
     
-    return result;
+    return null;
   }
   
   save(obj) {
