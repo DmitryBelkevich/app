@@ -10,13 +10,13 @@ export default class CookieSaver {
   }
   
   getByName(name) {
-    const obj = this.getAll();
+    const cookies_obj = this.getAll();
 
-    const value = obj[name];
-
-    const result = {name: name, value: value};
+    const value = cookies_obj[name];
 
     console.log(name);
+
+    const result = {name: name, value: value};
     
     return result;
   }
