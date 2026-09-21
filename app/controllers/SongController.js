@@ -50,7 +50,7 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(this.cookieService.current);
+    this.view.selectOption(this.stateService.current);
 
     // *** tuning ***
 
