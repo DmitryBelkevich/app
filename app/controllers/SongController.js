@@ -25,7 +25,7 @@ export default class SongController {
     this.#cookieSaver = new CookieSaver();
     const default_obj = {name: "current", value: 0};
     
-    const obj = this.#cookieSaver.getByName("current") || default_obj;
+    const obj = this.#cookieSaver.getByName("current") || default_obj;console.log(obj);
     this.#cookieSaver.save(obj);
 
     if (this.song.instruments.length > 1)
