@@ -6,9 +6,7 @@ export default class CookieSaver {
       return acc;
     }, {});
 
-    // if (JSON.stringify(cookies_obj) === JSON.stringify({"": ""})) {}
-
-    return cookies_obj;// {"": ""}
+    return cookies_obj;
   }
   
   getByName(name) {
@@ -16,9 +14,7 @@ export default class CookieSaver {
 
     const value = cookies_obj[name];
 
-    console.log(value);// undefined
-
-    if (!value)
+    if (value)
       return {name: name, value: value};
     
     return null;
