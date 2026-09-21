@@ -26,6 +26,9 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
+    console.log(this.song);
+    console.log("current: " + this.#current);
+
     // view
     this.view = new SongView();
 
