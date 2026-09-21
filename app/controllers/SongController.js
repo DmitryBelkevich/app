@@ -28,6 +28,7 @@ export default class SongController {
     const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
     this.#cookieSaver.save(cookie_obj);
 
+    console.log(this.#current);
     if (this.song.instruments.length > this.#current)
       this.#current = cookie_obj.value;
     else
