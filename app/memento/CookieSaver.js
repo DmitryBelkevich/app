@@ -15,20 +15,4 @@ export default class CookieSaver {
   set current(current) {
     document.cookie = this.#current + "=" + current;
   }
-
-  getByName() {
-    const obj = {};
-
-    const name = "current";
-    const value = 0;
-    obj[name] = value;
-
-    return obj;
-    
-    return null;
-  }
-
-  add(object) {
-    
-  }
 }
