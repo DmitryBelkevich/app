@@ -20,7 +20,7 @@ export default class CookieSaver {
     return null;
   }
   
-  save(obj) {
-    document.cookie = obj.name + "=" + obj.value;
+  save(cookie_obj) {
+    document.cookie = cookie_obj.name + "=" + cookie_obj.value;
   }
 }
