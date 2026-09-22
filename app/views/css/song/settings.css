@@ -45,6 +45,20 @@
       align-items: center;
     }
     
-    
+    .string {
+      width: 20px;
+    }
+
+    .standard {
+      background: lightgreen;
+    }
+
+    .non-standard {
+      background: coral;
+    }
+
+    .capo {
+      background: coral;
+    }
   }
 }
