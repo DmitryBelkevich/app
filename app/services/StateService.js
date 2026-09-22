@@ -51,8 +51,7 @@ export default class StateService {
     console.log("save Cookie");
     
     // this.saveCookie();
-    console.log(this.#song);
-    // this.loadText();
+    this.loadText();
     // this.loadTuning();
     console.log("load Tuning");
   }
@@ -62,9 +61,10 @@ export default class StateService {
   }
 
   loadText() {
-    const instrument = this.song.instruments[this.#current];
-    const text = this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
+    console.log(this.#song);
+    // const instrument = this.song.instruments[this.#current];
+    // const text = this.htmlLoader.load(instrument.chords);
+    // this.view.setText(text);
   }
 
   loadTuning() {
