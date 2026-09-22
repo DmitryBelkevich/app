@@ -15,19 +15,12 @@ export default class StateService {
     
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
-
-    const default_cookie_obj = {name: "current", value: 0};
     
-    const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
+    const cookie_obj = this.#cookieSaver.getByName("current") || { name: "current", value: 0 };
     this.#cookieSaver.save(cookie_obj);
 
     // *** state ***
-
-    this.current = 1;
-    // if (song.instruments.length > 1)
-    //   this.current = cookie_obj.value;
-    // else
-    //   this.current = default_cookie_obj.value;
+    this.current = cookie_obj.value;
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
