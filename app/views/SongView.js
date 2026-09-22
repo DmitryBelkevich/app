@@ -96,6 +96,7 @@ export default class SongView {
     this.div6.textContent = "E";
 
     this.container = document.createElement("div");
+    this.container.id = "tun";
 
     this.container.append(this.div1, this.div2, this.div3, this.div4, this.div5, this.div6);
 
