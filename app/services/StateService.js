@@ -67,11 +67,16 @@ export default class StateService {
 
   loadTuning() {
     this.#view.clearTuning();
+
+    const instrument = this.#song.instruments[this.#current];
     
-    const tuning = this.#song.instruments[this.#current].tuning;
+    const tuning = instrument.tuning;
     
     tuning.forEach((note) => {
       this.#view.addString(note, true);
     });
+
+    if (instrument.capo)
+      this.view.addCapo(instrument.capo);
   }
 }
