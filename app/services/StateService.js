@@ -51,7 +51,8 @@ export default class StateService {
     console.log("save Cookie");
     
     // this.saveCookie();
-    this.loadText();
+    console.log(this.#song);
+    // this.loadText();
     // this.loadTuning();
     console.log("load Tuning");
   }
