@@ -40,17 +40,14 @@ export default class StateService {
   }
 
   set current(current) {
-    console.log("setter");
-    
     this.#current = current;
+  }
+
+  load() {
     this.saveCookie();
     this.loadText();
     this.loadTuning();
     this.view.selectOption(this.#current);
-  }
-
-  load() {
-    
   }
 
   saveCookie() {
