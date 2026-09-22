@@ -53,12 +53,10 @@ export default class SongController {
     this.view.selectOption(this.stateService.current);
 
     // 2. tuning
-    this.view.addString("D", false);
-    this.view.addString("A", true);
-    this.view.addString("D", true);
-    this.view.addString("G", true);
-    this.view.addString("B", true);
-    this.view.addString("E", true);
+    const tuning = ["E", "A", "D", "G", "B", "E"];
+    tuning.forEach((note) => {
+      this.view.addString(note, true);
+    });
 
     // *** tuning ***
 
