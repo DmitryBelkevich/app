@@ -76,7 +76,7 @@ export default class StateService {
       this.#view.addString(note, true);
     });
 
-    // if (instrument.capo)
-      // this.#view.addCapo(instrument.capo);
+    if (instrument.capo)
+      this.#view.addCapo(instrument.capo);
   }
 }
