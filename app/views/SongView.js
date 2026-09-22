@@ -207,8 +207,6 @@ export default class SongView {
     div.textContent = "Capo: +" + capo;
 
     this.capo_container.append(div);
-
-    this.tuning_container.append(div);
   }
 
   // *** text ***
