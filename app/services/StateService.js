@@ -61,8 +61,7 @@ export default class StateService {
   }
 
   loadText() {
-    console.log(this.#song);return;
-    const instrument = this.song.instruments[this.#current];
+    const instrument = this.#song.instruments[this.#current];
     const text = this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
   }
