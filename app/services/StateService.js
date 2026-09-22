@@ -21,6 +21,7 @@ export default class StateService {
       this.#current = default_cookie_obj.value;
 
     // *** Text ***
+    this.htmlLoader = new HtmlLoader();
 
     // *** Tuning ***
   }
