@@ -3,10 +3,12 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 import CookieSaver from '../memento/CookieSaver.js';
 
 export default class StateService {
+  #song;
   #cookieSaver;
   #current;//state
 
-  constructor(song) {console.log(song);
+  constructor(song) {
+    this.#song = song;
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
 
@@ -42,8 +44,6 @@ export default class StateService {
   }
 
   loadText() {
-    console.log(this.song);return;
-    
     const instrument = this.song.instruments[this.#current];
     const text = this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
