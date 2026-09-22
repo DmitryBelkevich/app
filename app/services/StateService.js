@@ -40,7 +40,7 @@ export default class StateService {
   }
 
   set current(current) {
-    conseole.log("setter");
+    console.log("setter");
     
     this.#current = current;
     this.saveCookie();
