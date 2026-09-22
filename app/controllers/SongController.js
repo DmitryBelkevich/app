@@ -64,8 +64,6 @@ export default class SongController {
 
     // *** text ***
 
-    await this.stateService.loadText();
-
     // *** binding controller-view ***
 
     // binding: view -> model
