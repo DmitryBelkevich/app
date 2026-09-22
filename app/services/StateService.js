@@ -30,9 +30,6 @@ export default class StateService {
     this.htmlLoader = new HtmlLoader();
 
     // *** Tuning ***
-
-    // *** operation ***
-    this.current = 0;
   }
 
   get current() {
