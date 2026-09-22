@@ -82,11 +82,11 @@ export default class SongView {
     this.dropdown.id = "instruments";
 
     // 2. tuning
-    this.container = document.createElement("div");
-    this.container.id = "tun";
+    this.tuning_container = document.createElement("div");
+    this.tuning_container.id = "tun";
 
     // fill settings
-    this.settings.append(this.dropdown, this.container);
+    this.settings.append(this.dropdown, this.tuning_container);
     
     // *** Tuning ***
     this.cssLoader.load("./app/views/css/song/tuning.css");
@@ -181,7 +181,7 @@ export default class SongView {
   // 2. tuning
 
   clearTuning() {
-    this.container.replaceChildren();
+    this.tuning_container.replaceChildren();
   }
 
   addString(note, isStandard) {
@@ -196,7 +196,7 @@ export default class SongView {
 
     div.textContent = note;
 
-    this.container.append(div);
+    this.tuning_container.append(div);
   }
 
   // *** tuning ***
