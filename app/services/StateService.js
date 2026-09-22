@@ -9,6 +9,7 @@ export default class StateService {
 
   constructor(song) {
     this.#song = song;
+    
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
 
