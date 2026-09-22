@@ -181,7 +181,7 @@ export default class SongView {
   // 2. tuning
 
   clearTuning() {
-    this.container.textContent = "";
+    this.container.replaceChildren();
   }
 
   addString(note, isStandard) {
