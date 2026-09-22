@@ -157,8 +157,7 @@ export default class SongController {
   // *** tuning ***
 
   loadTuning() {
-    if (!this.song.instruments[0])
-      return;
+    return;
     
     const tuning = this.song.instruments[0].tuning;
     // const tuning = ["E", "A", "D", "G", "B", "E"];
