@@ -83,6 +83,7 @@ export default class SongView {
 
     // 2. tuning
     this.tuning_container = document.createElement("div");
+    this.tuning_container.id = "tun";
 
     // 3. capo
 
