@@ -85,7 +85,7 @@ export default class SongView {
     this.tuning_container = document.createElement("div");
 
     // fill settings
-    this.settings.append(this.dropdown, this.capo_container);
+    this.settings.append(this.dropdown, this.tuning_container);
     
     // *** Tuning ***
     // this.cssLoader.load("./app/views/css/song/tuning.css");
