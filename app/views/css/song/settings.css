@@ -46,11 +46,11 @@
       align-items: center;
     }
 
-    div .standard {
+    .standard {
       background: green;
     }
 
-    div .non-standard {
+    .non-standard {
       background: red;
     }
   }
