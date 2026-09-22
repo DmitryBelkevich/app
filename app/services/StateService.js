@@ -43,6 +43,8 @@ export default class StateService {
   load() {
     // this.view.selectOption(this.#current);
 
+    console.log("state: " + this.#current);
+
     console.log("select Option");
     console.log("save Cookie");
     console.log("load Text");
