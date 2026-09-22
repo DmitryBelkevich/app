@@ -33,7 +33,7 @@ export default class StateService {
   set current(current) {
     this.#current = current;
     this.saveCookie();
-    await this.loadText();
+    this.loadText();
     this.loadTuning();
   }
 
