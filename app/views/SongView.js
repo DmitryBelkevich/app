@@ -183,10 +183,12 @@ export default class SongView {
   addString(note, isStandard) {
     const div = document.createElement("div");
 
-    if (isStandard)
-      div.classList.add("standard");
-    else
-      div.classList.add("non-standard");
+    const standards = {
+      true: "standard",
+      false: "non-standard",
+    }
+
+    div.classList.add(standards[isStandard]);
 
     div.textContent = note;
 
