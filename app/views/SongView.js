@@ -84,6 +84,8 @@ export default class SongView {
     // 2. tuning
     this.tuning_container = document.createElement("div");
 
+    // 3. capo
+
     // fill settings
     this.settings.append(this.dropdown, this.tuning_container);
     
