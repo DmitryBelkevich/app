@@ -11,24 +11,6 @@
 /* components */
 
 #tuning {
-  .guitar {
-    /* display: block; */
-  }
-  
-  .bass-guitar {
-    /* display: none; */
-  }
-
-  .standard {
-    color: green;
-  }
-
-  .non-standard {
-    color: red;
-  }
-}
-
-#tuning {
   .capo {
     color: red;
   }
