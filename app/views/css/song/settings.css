@@ -47,11 +47,11 @@
     }
 
     .standard {
-      background: green;
+      background: light-green;
     }
 
     .non-standard {
-      background: red;
+      background: light-red;
     }
   }
 }
