@@ -97,6 +97,8 @@ export default class SongView {
 
     this.container = document.createElement("div");
 
+    this.container.append(this.div1, this.div2, this.div3, this.div4, this.div5, this.div6);
+
     // fill settings
     this.settings.append(this.dropdown, this.container);
     
