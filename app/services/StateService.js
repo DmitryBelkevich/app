@@ -48,14 +48,12 @@ export default class StateService {
     
     console.log("state: " + this.#current);
 
-    console.log("select Option");
     console.log("save Cookie");
-    console.log("load Text");
-    console.log("load Tuning");
     
     // this.saveCookie();
-    // this.loadText();
+    this.loadText();
     // this.loadTuning();
+    console.log("load Tuning");
   }
 
   saveCookie() {
