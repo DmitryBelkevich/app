@@ -47,12 +47,7 @@ export default class SongController {
 
     // 2. tuning
 
-    // *** tuning ***
-
-    this.song.instruments.forEach((instrument, index) => {
-      if (instrument.capo)
-        this.view.addCapo(instrument.capo);
-    });
+    // *** tuning *** DELETE
 
     // *** text ***
 
