@@ -53,10 +53,7 @@ export default class SongController {
     this.view.selectOption(this.stateService.current);
 
     // 2. tuning
-    const tuning = ["E", "A", "D", "G", "B", "E"];
-    tuning.forEach((note) => {
-      this.view.addString(note, true);
-    });
+    this.loadTuning();
 
     // *** tuning ***
 
@@ -158,6 +155,15 @@ export default class SongController {
   }
 
   // *** tuning ***
+
+  loadTuning() {
+    const tuning = this.song.instruments[0].tuning;
+    // const tuning = ["E", "A", "D", "G", "B", "E"];
+    
+    tuning.forEach((note) => {
+      this.view.addString(note, true);
+    });
+  }
 
   // *** text ***
 
