@@ -180,13 +180,17 @@ export default class SongView {
 
   // 2. tuning
 
-  addString(note) {
-    this.div = document.createElement("div");
-    this.div.textContent = note;
-    
-    this.div.classList.add("standard");
+  addString(note, isStandard) {
+    const div = document.createElement("div");
 
-    this.container.append(this.div);
+    if (isStandard)
+      div.classList.add("standard");
+    else
+      div.classList.add("non-standard");
+
+    div.textContent = note;
+
+    this.container.append(div);
   }
 
   // *** tuning ***
