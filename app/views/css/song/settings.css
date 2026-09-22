@@ -32,9 +32,9 @@
     div {
       border: 1px solid grey;
       border-radius: 4px;
-      width: 36px;
+      width: 20px;
 
-      margin: 0px;
+      margin: 0px 2px;
       padding: 0px 2px;
     }
   }
