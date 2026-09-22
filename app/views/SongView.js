@@ -183,6 +183,8 @@ export default class SongView {
   addString(note) {
     this.div = document.createElement("div");
     this.div.textContent = note;
+    
+    this.div.classList.add("standard");
 
     this.container.append(this.div);
   }
