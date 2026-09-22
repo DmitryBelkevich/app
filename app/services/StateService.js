@@ -37,11 +37,14 @@ export default class StateService {
     return this.#current;
   }
 
-  set current(current) {conseole.log("setter");
+  set current(current) {
+    conseole.log("setter");
+    
     this.#current = current;
     this.saveCookie();
     this.loadText();
     this.loadTuning();
+    this.view.selectOption(this.stateService.current);
   }
 
   saveCookie() {
