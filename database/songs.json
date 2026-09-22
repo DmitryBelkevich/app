@@ -3972,6 +3972,20 @@
     "visible": "true"
   },
   {
+    "id": "326",
+    "band": "Юлия Савичева", "title": "Высоко",
+    "genre": "Rock, Punk",
+    "text": "Rock, Punk/Юлия Савичева/Юлия Савичева - Высоко.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1J3w6MtVY1Uy9zBSqJvQN-D2qwxrZDuXN?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "visible": "true"
+  },
+  {
     "id": "254",
     "band": "Юлия Савичева", "title": "Если в сердце живёт любовь",
     "genre": "Rock, Punk",
@@ -3992,6 +4006,20 @@
     "text": "Rock, Punk/Юлия Савичева/Юлия Савичева - Привет.html",
     "score": "https://drive.google.com/file/d/1y2DuBuuXJEMifdJVdzcT-eWPt_mYMFpB/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/14Rr4n4t17kIZCkDbV8HB71A-hmwFP4B-?usp=drive_link",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "visible": "true"
+  },
+  {
+    "id": "381",
+    "band": "Юлия Савичева", "title": "Прости за любовь",
+    "genre": "Rock, Punk",
+    "text": "Rock, Punk/Юлия Савичева/Юлия Савичева - Прости за любовь.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1CfiY2zLbruYmm5OFJ6YFgVroKaUP0fWw?usp=drive_link",
     "instruments": [
       {
         "title": "Instrument"
