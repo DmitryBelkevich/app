@@ -90,8 +90,8 @@ export default class SongView {
     
     // *** Tuning ***
     this.cssLoader.load("./app/views/css/song/tuning.css");
-    this.tuning = document.createElement("div");
-    this.tuning.id = "tuning";
+    this.capo_container = document.createElement("div");
+    this.capo_container.id = "tuning";
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -110,7 +110,7 @@ export default class SongView {
       this.tabs,
       this.display,
       this.settings,
-      this.tuning,
+      this.capo_container,
       this.text,
       this.footer
     );
@@ -201,25 +201,12 @@ export default class SongView {
 
   // *** tuning ***
 
-  addTuning(tuning, isStandard) {
-    const tuning_e = document.createElement("div");
-
-    if (isStandard)
-      tuning_e.classList.add("standard");
-    else
-      tuning_e.classList.add("non-standard");
-    
-    tuning_e.textContent = "[" + tuning + "]";
-    
-    this.tuning.append(tuning_e);
-  }
-
   addCapo(capo) {
-    const capo_e = document.createElement("div");
-    capo_e.classList.add("capo");
-    capo_e.textContent = "Capo: +" + capo;
+    const div = document.createElement("div");
+    div.classList.add("capo");
+    div.textContent = "Capo: +" + capo;
 
-    this.tuning.append(capo_e);
+    this.capo_container.append(div);
   }
 
   // *** text ***
