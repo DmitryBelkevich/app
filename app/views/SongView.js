@@ -82,23 +82,8 @@ export default class SongView {
     this.dropdown.id = "instruments";
 
     // 2. tuning
-    this.div1 = document.createElement("div");
-    this.div1.textContent = "E";
-    this.div2 = document.createElement("div");
-    this.div2.textContent = "A";
-    this.div3 = document.createElement("div");
-    this.div3.textContent = "D";
-    this.div4 = document.createElement("div");
-    this.div4.textContent = "G";
-    this.div5 = document.createElement("div");
-    this.div5.textContent = "B";
-    this.div6 = document.createElement("div");
-    this.div6.textContent = "E";
-
     this.container = document.createElement("div");
     this.container.id = "tun";
-
-    this.container.append(this.div1, this.div2, this.div3, this.div4, this.div5, this.div6);
 
     // fill settings
     this.settings.append(this.dropdown, this.container);
@@ -189,10 +174,17 @@ export default class SongView {
     this.dropdown.selectedIndex = index;
   }
 
-  // 2. tuning
-
   getValue() {
     return this.dropdown.value;
+  }
+
+  // 2. tuning
+
+  addString(note) {
+    this.div = document.createElement("div");
+    this.div.textContent = note;
+
+    this.container.append(this.div);
   }
 
   // *** tuning ***
