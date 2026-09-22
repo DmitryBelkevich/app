@@ -49,6 +49,10 @@ export default class StateService {
     this.view.selectOption(this.#current);
   }
 
+  load() {
+    
+  }
+
   saveCookie() {
     this.#cookieSaver.save({name: "current", value: this.#current});
   }
