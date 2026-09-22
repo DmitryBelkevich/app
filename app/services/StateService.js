@@ -1,3 +1,5 @@
+import HtmlLoader from '../loaders/HtmlLoader.js';
+
 import CookieSaver from '../memento/CookieSaver.js';
 
 export default class StateService {
@@ -5,6 +7,7 @@ export default class StateService {
   #current;//state
 
   constructor(song) {
+    // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
 
     const default_cookie_obj = {name: "current", value: 0};
@@ -16,6 +19,10 @@ export default class StateService {
       this.#current = cookie_obj.value;
     else
       this.#current = default_cookie_obj.value;
+
+    // *** Text ***
+
+    // *** Tuning ***
   }
 
   get current() {
@@ -25,17 +32,28 @@ export default class StateService {
   set current(current) {
     this.#current = current;
     this.saveCookie();
+    await this.loadText();
+    this.loadTuning();
   }
 
   saveCookie() {
     this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
-  loadText() {
-    
+  async loadText() {
+    const instrument = this.song.instruments[this.#current];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.view.setText(text);
   }
 
   loadTuning() {
+    return;
     
+    const tuning = this.song.instruments[0].tuning;
+    // const tuning = ["E", "A", "D", "G", "B", "E"];
+    
+    tuning.forEach((note) => {
+      this.view.addString(note, true);
+    });
   }
 }
