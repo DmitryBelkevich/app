@@ -66,6 +66,8 @@ export default class StateService {
   }
 
   loadTuning() {
+    this.#view.clearTuning();
+    
     const tuning = this.#song.instruments[this.#current].tuning;
     // const tuning = ["E", "A", "D", "G", "B", "E"];
     
