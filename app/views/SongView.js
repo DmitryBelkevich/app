@@ -83,10 +83,9 @@ export default class SongView {
 
     // 2. tuning
     this.tuning_container = document.createElement("div");
-    this.tuning_container.id = "tun";
 
     // fill settings
-    this.settings.append(this.dropdown, this.tuning_container);
+    this.settings.append(this.dropdown, this.capo_container);
     
     // *** Tuning ***
     // this.cssLoader.load("./app/views/css/song/tuning.css");
@@ -206,7 +205,7 @@ export default class SongView {
     div.classList.add("capo");
     div.textContent = "Capo: +" + capo;
 
-    this.tuning_container.append(div);
+    this.settings.append(div);
   }
 
   // *** text ***
