@@ -44,7 +44,7 @@ export default class StateService {
     this.saveCookie();
     this.loadText();
     this.loadTuning();
-    this.view.selectOption(this.stateService.current);
+    this.view.selectOption(this.#current);
   }
 
   saveCookie() {
