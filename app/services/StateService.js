@@ -21,18 +21,16 @@ export default class StateService {
     const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
     this.#cookieSaver.save(cookie_obj);
 
+    // *** state ***
+
+    this.current = 1;
     // if (song.instruments.length > 1)
-    //   this.#current = cookie_obj.value;
+    //   this.current = cookie_obj.value;
     // else
-    //   this.#current = default_cookie_obj.value;
+    //   this.current = default_cookie_obj.value;
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
-
-    // *** Tuning ***
-
-    // state
-    this.current = 1;
   }
 
   get current() {
