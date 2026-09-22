@@ -69,7 +69,6 @@ export default class StateService {
     this.#view.clearTuning();
     
     const tuning = this.#song.instruments[this.#current].tuning;
-    // const tuning = ["E", "A", "D", "G", "B", "E"];
     
     tuning.forEach((note) => {
       this.#view.addString(note, true);
