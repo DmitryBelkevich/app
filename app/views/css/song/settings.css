@@ -37,5 +37,11 @@
       margin: 0px 2px;
       padding: 0px 2px;
     }
+
+    div {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
 }
