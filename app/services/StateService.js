@@ -42,7 +42,8 @@ export default class StateService {
   }
 
   async loadText() {
-    console.log(this.song.instruments);
+    console.log(this.song);return;
+    
     const instrument = this.song.instruments[this.#current];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
