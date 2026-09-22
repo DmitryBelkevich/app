@@ -52,8 +52,7 @@ export default class StateService {
     
     // this.saveCookie();
     this.loadText();
-    // this.loadTuning();
-    console.log("load Tuning");
+    this.loadTuning();
   }
 
   saveCookie() {
@@ -67,9 +66,7 @@ export default class StateService {
   }
 
   loadTuning() {
-    return;
-    
-    const tuning = this.song.instruments[0].tuning;
+    const tuning = this.song.instruments[this.#current].tuning;
     // const tuning = ["E", "A", "D", "G", "B", "E"];
     
     tuning.forEach((note) => {
