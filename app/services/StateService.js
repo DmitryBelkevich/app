@@ -4,6 +4,8 @@ import CookieSaver from '../memento/CookieSaver.js';
 
 export default class StateService {
   #song;
+  #view;
+  
   #cookieSaver;
   #current;//state
 
