@@ -22,9 +22,9 @@ export default class StateService {
     this.#cookieSaver.save(cookie_obj);
 
     if (song.instruments.length > 1)
-      this.#current = cookie_obj.value;
+      this.current = cookie_obj.value;
     else
-      this.#current = default_cookie_obj.value;
+      this.current = default_cookie_obj.value;
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
