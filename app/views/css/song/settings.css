@@ -29,7 +29,7 @@
   }
 
   #tuning {
-    div {
+    .string {
       border: 1px solid grey;
       border-radius: 4px;
       width: 20px;
@@ -40,7 +40,7 @@
       padding: 0px 2px;
     }
 
-    div {
+    .string {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,6 +52,12 @@
 
     .non-standard {
       background: coral;
+    }
+  }
+
+  #tuning {
+    .capo {
+      color: red;
     }
   }
 }
