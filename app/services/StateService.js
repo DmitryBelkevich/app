@@ -41,7 +41,6 @@ export default class StateService {
   }
 
   load() {
-    // *** dropdown ***
     this.#view.selectOption(this.#current);
     
     console.log("state: " + this.#current);
