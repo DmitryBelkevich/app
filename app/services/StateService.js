@@ -70,7 +70,7 @@ export default class StateService {
     // const tuning = ["E", "A", "D", "G", "B", "E"];
     
     tuning.forEach((note) => {
-      this.view.addString(note, true);
+      this.#view.addString(note, true);
     });
   }
 }
