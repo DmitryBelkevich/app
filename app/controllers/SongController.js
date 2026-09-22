@@ -61,8 +61,8 @@ export default class SongController {
 
     // state
     this.stateService = new StateService(this.song, this.view);
-    this.stateService.state = 0;
-    this.stateService.load();//operation
+    this.stateService.current = 0;
+    this.stateService.load();
 
     // *** binding controller-view ***
 
@@ -144,6 +144,7 @@ export default class SongController {
 
   select_instrument = (event) => {
     this.stateService.current = event.target.value; // *** change STATE ***
+    this.stateService.load();
   }
 
   // *** tuning ***
