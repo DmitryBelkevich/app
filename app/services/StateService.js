@@ -24,10 +24,18 @@ export default class StateService {
 
   set current(current) {
     this.#current = current;
-    this.commit();
+    this.saveCookie();
   }
 
-  commit() {
+  saveCookie() {
     this.#cookieSaver.save({name: "current", value: this.#current});
+  }
+
+  loadText() {
+    
+  }
+
+  loadTuning() {
+    
   }
 }
