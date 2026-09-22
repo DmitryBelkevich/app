@@ -24,11 +24,11 @@
 }
 
 #settings {
-  #tun {
+  #tuning {
     display: flex;
   }
 
-  #tun {
+  #tuning {
     div {
       border: 1px solid grey;
       border-radius: 4px;
