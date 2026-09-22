@@ -32,7 +32,7 @@ export default class StateService {
     // *** Tuning ***
 
     // *** dropdown ***
-    // this.view.selectOption(this.#current);
+    this.view.selectOption(this.#current);
   }
 
   get current() {
