@@ -41,10 +41,11 @@ export default class StateService {
   }
 
   load() {
+    this.view.selectOption(this.#current);
+    
     this.saveCookie();
     this.loadText();
     this.loadTuning();
-    this.view.selectOption(this.#current);
   }
 
   saveCookie() {
