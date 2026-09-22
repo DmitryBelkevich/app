@@ -180,6 +180,10 @@ export default class SongView {
 
   // 2. tuning
 
+  clearTuning() {
+    this.container.textContent = "";
+  }
+
   addString(note, isStandard) {
     const div = document.createElement("div");
 
