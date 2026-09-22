@@ -20,7 +20,7 @@ export default class StateService {
     this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
 
     // *** state ***
-    if (this.#song.instruments < cookie_obj.value)
+    if (this.#song.instruments.length < cookie_obj.value)
       this.current = 0;
     else
       this.current = cookie_obj.value;
