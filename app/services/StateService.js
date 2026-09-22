@@ -42,10 +42,14 @@ export default class StateService {
 
   load() {
     this.view.selectOption(this.#current);
+
+    console.log("save Cookie");
+    console.log("load Text");
+    console.log("load Tuning");
     
-    this.saveCookie();
-    this.loadText();
-    this.loadTuning();
+    // this.saveCookie();
+    // this.loadText();
+    // this.loadTuning();
   }
 
   saveCookie() {
