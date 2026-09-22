@@ -107,7 +107,6 @@ export default class SongView {
       this.tabs,
       this.display,
       this.settings,
-      this.capo_container,
       this.text,
       this.footer
     );
