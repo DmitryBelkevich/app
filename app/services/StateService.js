@@ -6,7 +6,7 @@ export default class StateService {
   #cookieSaver;
   #current;//state
 
-  constructor(song) {
+  constructor(song) {console.log(song);
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
 
