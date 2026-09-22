@@ -2,8 +2,6 @@ import Song from '../models/Song.js';
 import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
-import HtmlLoader from '../loaders/HtmlLoader.js';
-
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
 
@@ -53,7 +51,6 @@ export default class SongController {
     this.view.selectOption(this.stateService.current);
 
     // 2. tuning
-    this.loadTuning();
 
     // *** tuning ***
 
@@ -68,7 +65,7 @@ export default class SongController {
     // *** text ***
 
     this.htmlLoader = new HtmlLoader();
-    await this.loadText(this.stateService.current);
+    await this.stateService.loadText();
 
     // *** binding controller-view ***
 
@@ -149,29 +146,10 @@ export default class SongController {
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.loadText(event.target.value);
-    
-    this.stateService.current = event.target.value;
+    this.stateService.current = event.target.value; // *** change STATE ***
   }
 
   // *** tuning ***
 
-  loadTuning() {
-    return;
-    
-    const tuning = this.song.instruments[0].tuning;
-    // const tuning = ["E", "A", "D", "G", "B", "E"];
-    
-    tuning.forEach((note) => {
-      this.view.addString(note, true);
-    });
-  }
-
   // *** text ***
-
-  async loadText(index) {
-    const instrument = this.song.instruments[index];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
-  }
 }
