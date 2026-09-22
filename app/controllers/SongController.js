@@ -16,7 +16,7 @@ export default class SongController {
     
     // model
     this.songService = new SongService();
-    this.song = await this.songService.getById(id);
+    this.song = await this.songService.getById(id);console.log(this.song)
 
     // state
     this.stateService = new StateService(this.song);
