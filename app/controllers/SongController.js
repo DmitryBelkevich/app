@@ -50,9 +50,6 @@ export default class SongController {
     // *** tuning ***
 
     this.song.instruments.forEach((instrument, index) => {
-      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-        this.view.addTuning(instrument.tuning, instrument.tuning.isStandard());
-
       if (instrument.capo)
         this.view.addCapo(instrument.capo);
     });
