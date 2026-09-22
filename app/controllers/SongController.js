@@ -18,9 +18,6 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    // state
-    this.stateService = new StateService(this.song);
-
     // view
     this.view = new SongView();
 
@@ -48,8 +45,6 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(this.stateService.current);
-
     // 2. tuning
 
     // *** tuning ***
@@ -63,6 +58,9 @@ export default class SongController {
     });
 
     // *** text ***
+
+    // state
+    this.stateService = new StateService(this.song, this.view);
 
     // *** binding controller-view ***
 
