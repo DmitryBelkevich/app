@@ -17,10 +17,14 @@ export default class StateService {
     this.#cookieSaver = new CookieSaver();
     
     const cookie_obj = this.#cookieSaver.getByName("current") || { name: "current", value: 0 };
-    this.#cookieSaver.save(cookie_obj);
+    this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
 
     // *** state ***
-    this.current = cookie_obj.value;
+    if (this.#song.instruments < cookie_obj.value)
+      this.current = 0;
+    else
+      this.current = cookie_obj.value;
+    
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
