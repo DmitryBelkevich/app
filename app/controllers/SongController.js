@@ -61,6 +61,8 @@ export default class SongController {
 
     // state
     this.stateService = new StateService(this.song, this.view);
+    this.stateService.state = 0;
+    this.stateService.load();//operation
 
     // *** binding controller-view ***
 
