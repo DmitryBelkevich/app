@@ -66,7 +66,7 @@ export default class StateService {
   }
 
   loadTuning() {
-    const tuning = this.song.instruments[this.#current].tuning;
+    const tuning = this.#song.instruments[this.#current].tuning;
     // const tuning = ["E", "A", "D", "G", "B", "E"];
     
     tuning.forEach((note) => {
