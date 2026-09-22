@@ -30,6 +30,9 @@ export default class StateService {
     this.htmlLoader = new HtmlLoader();
 
     // *** Tuning ***
+
+    // *** dropdown ***
+    // this.view.selectOption(this.#current);
   }
 
   get current() {
@@ -41,8 +44,6 @@ export default class StateService {
   }
 
   load() {
-    // this.view.selectOption(this.#current);
-
     console.log("state: " + this.#current);
 
     console.log("select Option");
