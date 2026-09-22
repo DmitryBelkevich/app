@@ -188,6 +188,7 @@ export default class SongView {
       false: "non-standard",
     }
 
+    div.classList.add("string");
     div.classList.add(standards[isStandard]);
 
     div.textContent = note;
