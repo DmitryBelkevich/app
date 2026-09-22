@@ -60,7 +60,7 @@ export default class StateService {
     this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
-  loadText() {
+  async loadText() {
     const instrument = this.#song.instruments[this.#current];
     const text = await this.htmlLoader.load(instrument.chords);
     this.view.setText(text);
