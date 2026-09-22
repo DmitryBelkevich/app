@@ -19,6 +19,8 @@ export default class StateService {
     const cookie_obj = this.#cookieSaver.getByName("current") || { name: "current", value: 0 };
     this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
 
+    console.log("length: " + this.#song.instruments.length);
+    console.log("cookie_obj: " + cookie_obj.value);
     // *** state ***
     if (this.#song.instruments.length < cookie_obj.value)
       this.current = 0;
