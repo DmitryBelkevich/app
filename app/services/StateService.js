@@ -33,6 +33,9 @@ export default class StateService {
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
+
+    // *** dropdown ***
+    this.#view.selectOption(this.#current);
   }
 
   get current() {
@@ -44,8 +47,6 @@ export default class StateService {
   }
 
   load() {
-    this.#view.selectOption(this.#current);
-    
     this.saveCookie();
     this.loadText();
     this.loadTuning();
