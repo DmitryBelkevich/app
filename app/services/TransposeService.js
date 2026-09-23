@@ -28,7 +28,7 @@ export default class TransposeService {
 
   transpose(count) {
     // view
-    this.#view.setKey(this.#song.key);
+    // this.#view.setKey(this.#song.key);
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
