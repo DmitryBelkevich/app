@@ -31,11 +31,11 @@ export default class StateService {
     } else
       this.current = cookie_obj.value;
 
-    // *** Text ***
-    this.htmlLoader = new HtmlLoader();
-
     // *** dropdown ***
     this.#view.selectOption(this.#current);
+
+    // *** Text ***
+    this.htmlLoader = new HtmlLoader();
   }
 
   get current() {
