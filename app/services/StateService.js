@@ -20,8 +20,8 @@ export default class StateService {
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
 
-    const default_cookie_obj = { name: "current", value: 0 };
-    const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
+    const default_cookie_obj = { name: "instrument", value: 0 };
+    const cookie_obj = this.#cookieSaver.getByName("instrument") || default_cookie_obj;
     this.#cookieSaver.save(cookie_obj);
     
     // *** state ***
@@ -50,7 +50,7 @@ export default class StateService {
 
   set current(current) {
     this.#current = current;
-    this.#cookieSaver.save({name: "current", value: this.#current});
+    this.#cookieSaver.save({name: "instrument", value: this.#current});
   }
 
   async load() {
