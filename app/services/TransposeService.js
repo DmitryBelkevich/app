@@ -27,15 +27,13 @@ export default class TransposeService {
   }
 
   transposeUp() {
-    // transpose key
+    // model
     this.#song.key = this.#transposer.upChord(this.#song.key);
-
     this.#song.transposition++;
 
-    // transpose key on display
+    // view
     this.#view.setKey(this.#song.key);
 
-    // transpose all chords
     this.#chords.forEach((element) => {
       const chord = element.textContent;
       element.textContent = this.#transposer.upChord(chord)
@@ -43,15 +41,13 @@ export default class TransposeService {
   }
 
   transposeDown() {
-    // transpose key
+    // model
     this.#song.key = this.#transposer.downChord(this.#song.key);
-
     this.#song.transposition--;
 
-    // transpose key on display
+    // view
     this.#view.setKey(this.#song.key);
 
-    // transpose all chords
     this.#chords.forEach((element) => {
       const chord = element.textContent;
       element.textContent = this.#transposer.downChord(chord);
