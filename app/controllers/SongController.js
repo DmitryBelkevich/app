@@ -27,7 +27,7 @@ export default class SongController {
     this.view.setTitle(this.song.title);
     this.view.setBand(this.song.band);
 
-    // *** display ***
+    // *** settings ***
 
     // 1. key-signature
 
@@ -65,7 +65,7 @@ export default class SongController {
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
 
-    // *** display ***
+    // *** settings ***
     
     // 1. key-signature
     
@@ -104,7 +104,7 @@ export default class SongController {
       window.open(this.song.playback, "_blank");
   }
 
-  // *** display ***
+  // *** settings ***
 
   // 1. key-signature
 
