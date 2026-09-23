@@ -22,11 +22,10 @@ export default class TransposeService {
 
   transposeUp() {
     // transpose key
-    this.#key = this.upChord(this.#key);
+    this.#song.key = this.upChord(this.#song.key);
 
     // transpose key on display
-    const key_e = document.getElementById("key");
-    key_e.textContent = this.#key;
+    this.#view.setKey(this.#song.key);
 
     // transpose all chords
     this.#chords.forEach((element) => {
@@ -37,11 +36,10 @@ export default class TransposeService {
 
   transposeDown() {
     // transpose key
-    this.#key = this.downChord(this.#key);
+    this.#song.key = this.downChord(this.#song.key);
 
     // transpose key on display
-    const key_e = document.getElementById("key");
-    key_e.textContent = this.#key;
+    this.#view.setKey(this.#song.key);
 
     // transpose all chords
     this.#chords.forEach((element) => {
