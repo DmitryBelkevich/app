@@ -3,7 +3,6 @@ import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
-import Transposer from '../helpers/Transposer.js';
 
 import StateService from '../services/StateService.js';
 
@@ -34,8 +33,8 @@ export default class SongController {
     this.view.setKey(this.song.key);
 
     // 2. transposer
-    this.transposer = new Transposer();
-    this.transposer.key = this.song.key;
+    // this.transposer = new Transposer();//DELETE
+    // this.transposer.key = this.song.key;//DELETE
 
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
