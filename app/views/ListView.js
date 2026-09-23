@@ -16,7 +16,7 @@ export default class ListView {
 
   addSong(song) {
     const song_e = document.createElement("div");
-    song_e.textContent = song.id + " | " + (song.key || "") + " | " + song.band + " - " + song.title;
+    song_e.textContent = (song.key || "") + "    | " + song.band + " - " + song.title;
 
     this.body.append(song_e);
   }
