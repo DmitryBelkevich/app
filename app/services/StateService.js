@@ -63,10 +63,10 @@ export default class StateService {
     if (!tuning)
       return;
 
-    console.log(tuning.isStandard());
+    const isStandard = tuning.isStandard();
     
     tuning.forEach((note) => {
-      this.#view.addString(note, true);
+      this.#view.addString(note, isStandard);
     });
 
     if (instrument.capo)
