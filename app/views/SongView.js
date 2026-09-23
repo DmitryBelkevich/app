@@ -74,8 +74,8 @@ export default class SongView {
     // *** instrument ***
     
     this.cssLoader.load("./app/views/css/song/instrument.css");
-    this.settings = document.createElement("div");
-    this.settings.id = "settings";
+    this.instrument = document.createElement("div");
+    this.instrument.id = "instrument";
 
     // 1. dropdown
     this.dropdown = document.createElement("select");
@@ -87,8 +87,8 @@ export default class SongView {
 
     // 3. capo
 
-    // fill settings
-    this.settings.append(this.dropdown, this.tuning);
+    // fill instrument
+    this.instrument.append(this.dropdown, this.tuning);
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -106,7 +106,7 @@ export default class SongView {
       this.title,
       this.tabs,
       this.display,
-      this.settings,
+      this.instrument,
       this.text,
       this.footer
     );
@@ -142,7 +142,7 @@ export default class SongView {
 
   // 3. autoscroll
 
-  // *** settings ***
+  // *** instrument ***
 
   // 1. dropdown
 
@@ -260,7 +260,7 @@ export default class SongView {
     });
   }
 
-  // *** settings ***
+  // *** instrument ***
 
   // 1. dropdown
 
