@@ -27,9 +27,9 @@ export default class StateService {
     // });
     
     if (this.#song.instruments.length <= cookie_obj.value) {
-      this.current = default_cookie_obj.value;
+      this.#current = default_cookie_obj.value;
     } else
-      this.current = cookie_obj.value;
+      this.#current = cookie_obj.value;
 
     // *** dropdown ***
     this.#view.selectOption(this.#current);
