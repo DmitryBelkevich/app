@@ -62,6 +62,8 @@ export default class StateService {
 
     if (!tuning)
       return;
+
+    console.log(tuning.isStandard());
     
     tuning.forEach((note) => {
       this.#view.addString(note, true);
