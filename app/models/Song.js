@@ -72,7 +72,7 @@ export default class Song {
 
   set transposition(transposition) {
     if (transposition > 11) {
-      this.#transposition = -12;
+      this.#transposition = -11;
       return;
     }
     
