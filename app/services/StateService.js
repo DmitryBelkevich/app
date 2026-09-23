@@ -18,14 +18,9 @@ export default class StateService {
 
     const default_cookie_obj = { name: "current", value: 0 };
     const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
-    this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
+    this.#cookieSaver.save(cookie_obj);
     
     // *** state ***
-    
-    // this.#song.instruments.forEach((instrument) => {
-    //   if (instrument instanceof Guitar) {}
-    // });
-    
     if (this.#song.instruments.length <= cookie_obj.value) {
       this.#current = default_cookie_obj.value;
     } else
