@@ -133,7 +133,7 @@ export default class SongController {
 
   // 1. dropdown
 
-  select_instrument = (event) => {console.log("event: " + event);
+  select_instrument = (event) => {
     this.stateService.current = event.target.value; // *** set STATE ***
     this.stateService.load();
   }
