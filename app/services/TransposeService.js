@@ -1,9 +1,12 @@
 export default class TransposeService {
+  #song;
+  #view;
+  
   #chords = [];
 
   constructor(song, view) {
-    this.song = song;
-    this.view = view;
+    this.#song = song;
+    this.#view = view;
   }
 
   getChords() {
