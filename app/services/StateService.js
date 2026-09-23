@@ -7,6 +7,8 @@ import TransposeService from './TransposeService.js';
 export default class StateService {
   #song;
   #view;
+
+  #transposeService;
   
   #cookieSaver;
   #current;//state
@@ -35,7 +37,11 @@ export default class StateService {
     this.htmlLoader = new HtmlLoader();
 
     // *** Transposer ***
-    this.transposeService = new TransposeService(song, view);
+    this.#transposeService = new TransposeService(song, view);
+  }
+
+  get transposeService() {
+    return this.#transposeService;
   }
 
   get current() {
