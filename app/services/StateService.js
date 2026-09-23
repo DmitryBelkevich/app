@@ -52,7 +52,8 @@ export default class StateService {
     const text = await this.htmlLoader.load(instrument.chords);
     this.#view.setText(text);
 
-    this.chords();
+    const transposeService = new TransposeService();
+    transposeService.print();
   }
 
   loadTuning() {
@@ -73,16 +74,5 @@ export default class StateService {
 
     if (instrument.capo)
       this.#view.addCapo(instrument.capo);
-  }
-
-  chords() {
-    const lines = document.querySelectorAll('div.chords');
-
-    console.log(lines);
-    
-    // lines.forEach(line => {
-    // const line_arr = line.querySelectorAll('div');
-    //   this.#chords.push(...line_arr);
-    // });
   }
 }
