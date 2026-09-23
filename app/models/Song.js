@@ -71,9 +71,10 @@ export default class Song {
   }
 
   set transposition(transposition) {
-    console.log(transposition > 11);
-    if (transposition > 11)
+    if (transposition > 11) {
       this.#transposition = -12;
+      return;
+    }
     
     this.#transposition = transposition;
   }
