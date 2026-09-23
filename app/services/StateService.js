@@ -58,6 +58,7 @@ export default class StateService {
     this.loadTuning();
 
     this.transposeService.getChords();
+    this.transposeService.transpose(this.#song.transposition);
   }
 
   async loadText() {
