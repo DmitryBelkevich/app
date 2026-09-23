@@ -42,7 +42,7 @@ export default class TransposeService {
           console.log(i);
         }
       }
-      else if (count > 0)
+      else if (count < 0)
         for (let i = count; i > 0; i--) {
           console.log(i);
           element.textContent = this.#transposer.downChord(chord);
