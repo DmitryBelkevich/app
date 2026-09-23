@@ -5,6 +5,7 @@ export default class TransposeService {
   #view;
 
   #transposer;
+  #transposition = 0;
   
   #chords = [];
 
@@ -38,6 +39,8 @@ export default class TransposeService {
       const chord = element.textContent;
       element.textContent = this.#transposer.upChord(chord)
     });
+
+    #transposition++;
   }
 
   transposeDown() {
@@ -52,5 +55,7 @@ export default class TransposeService {
       const chord = element.textContent;
       element.textContent = this.#transposer.downChord(chord);
     });
+
+    #transposition--;
   }
 }
