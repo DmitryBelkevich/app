@@ -26,6 +26,20 @@ export default class TransposeService {
     });
   }
 
+  transpose(count) {
+    // model
+    this.#song.key = this.#transposer.upChord(this.#song.key);
+    this.#song.transposition++;
+
+    // view
+    this.#view.setKey(this.#song.key);
+
+    this.#chords.forEach((element) => {
+      const chord = element.textContent;
+      element.textContent = this.#transposer.upChord(chord)
+    });
+  }
+
   transposeUp() {
     // model
     this.#song.key = this.#transposer.upChord(this.#song.key);
