@@ -16,8 +16,9 @@ export default class StateService {
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
 
-    const temp = { name: "current", value: 0 };
-    const cookie_obj = this.#cookieSaver.getByName("current") || { name: "current", value: 0 };
+    const default_cookie_obj = { name: "current", value: 0 };
+    const cookie_obj = this.#cookieSaver.getByName("current") || default_cookie_obj;
+    this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
     
     // *** state ***
     
@@ -26,8 +27,7 @@ export default class StateService {
     // });
     
     if (this.#song.instruments.length <= cookie_obj.value) {
-      this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
-      this.current = temp.value;
+      this.current = default_cookie_obj.value;
     } else
       this.current = cookie_obj.value;
 
