@@ -3,7 +3,6 @@ import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
-import Transposer from '../helpers/Transposer.js';
 
 import StateService from '../services/StateService.js';
 
@@ -34,8 +33,6 @@ export default class SongController {
     this.view.setKey(this.song.key);
 
     // 2. transposer
-    this.transposer = new Transposer();
-    this.transposer.key = this.song.key;
 
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
@@ -111,11 +108,11 @@ export default class SongController {
   // 2. transposer
 
   transpose_down = () => {
-    this.transposer.transposeDown();
+    this.stateService.transposeService.transposeDown();
   }
 
   transpose_up = () => {
-    this.transposer.transposeUp();
+    this.stateService.transposeService.transposeUp();
   }
 
   // 3. auto-scroll
@@ -131,7 +128,7 @@ export default class SongController {
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.stateService.current = event.target.value; // *** set STATE ***
+    this.stateService.current = event.target.value;
     this.stateService.load();
   }
 

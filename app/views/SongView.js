@@ -195,7 +195,7 @@ export default class SongView {
     this.tuning.append(div);
   }
 
-  // *** tuning ***
+  // 3. capo
 
   addCapo(capo) {
     const div = document.createElement("div");

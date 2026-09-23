@@ -2,9 +2,13 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import CookieSaver from '../memento/CookieSaver.js';
 
+import TransposeService from './TransposeService.js';
+
 export default class StateService {
   #song;
   #view;
+
+  #transposeService;
   
   #cookieSaver;
   #current;//state
@@ -31,6 +35,13 @@ export default class StateService {
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
+
+    // *** Transposer ***
+    this.#transposeService = new TransposeService(song, view);
+  }
+
+  get transposeService() {
+    return this.#transposeService;
   }
 
   get current() {
@@ -42,9 +53,11 @@ export default class StateService {
     this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
-  load() {
-    this.loadText();
+  async load() {
+    await this.loadText();
     this.loadTuning();
+
+    this.transposeService.getChords();
   }
 
   async loadText() {
