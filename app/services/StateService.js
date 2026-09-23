@@ -15,16 +15,21 @@ export default class StateService {
     
     // *** Cookie ***
     this.#cookieSaver = new CookieSaver();
-    
-    const cookie_obj = this.#cookieSaver.getByName("current") || { name: "current", value: 0 };
-    this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
 
-    // *** state ***
-    if (this.#song.instruments.length <= cookie_obj.value)
-      this.current = 0;
-    else
-      this.current = cookie_obj.value;
+    const temp = { name: "current", value: 0 };
+    const cookie_obj = this.#cookieSaver.getByName("current") || { name: "current", value: 0 };
     
+    // *** state ***
+    
+    // this.#song.instruments.forEach((instrument) => {
+    //   if (instrument instanceof Guitar) {}
+    // });
+    
+    if (this.#song.instruments.length <= cookie_obj.value) {
+      this.#cookieSaver.save(cookie_obj);// { name: "current", value: "2" }
+      this.current = temp.value;
+    } else
+      this.current = cookie_obj.value;
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
