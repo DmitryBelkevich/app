@@ -44,7 +44,7 @@ export default class StateService {
 
   set current(current) {
     this.#current = current;
-    this.#cookieSaver.save({name: "current", value: this.#current});
+    this.#cookieSaver.save({name: "current", value: this.#current});console.log("saving: " + this.#current);
   }
 
   load() {
