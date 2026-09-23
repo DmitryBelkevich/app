@@ -36,11 +36,12 @@ export default class TransposeService {
     this.#chords.forEach((element) => {
       const chord = element.textContent;
 
-      if (count > 0)
+      if (count > 0) {
+        console.log(count);
         for (let i = 0; i <= count; i++) {
-          console.log(i);
           element.textContent = this.#transposer.upChord(chord);
         }
+      }
       else if (count > 0)
         for (let i = count; i > 0; i--) {
           console.log(i);
