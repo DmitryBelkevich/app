@@ -6,6 +6,7 @@ export default class Song {
   #score;
   #playback;
   #key;
+  #transposition = 0;
   #voices = [];
   #instruments = [];
   
@@ -63,6 +64,24 @@ export default class Song {
 
   set key(key) {
     this.#key = key;
+  }
+
+  get transposition() {
+    return this.#transposition;
+  }
+
+  set transposition(transposition) {
+    if (transposition > 11) {
+      this.#transposition = -11;
+      return;
+    }
+
+    if (transposition < -11) {
+      this.#transposition = 11;
+      return;
+    }
+    
+    this.#transposition = transposition;
   }
   
   get voices() {
