@@ -44,11 +44,11 @@ export default class SongView {
     
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
 
-    // *** display ***
+    // *** settings ***
     
-    this.cssLoader.load("./app/views/css/song/display.css");
-    this.display = document.createElement("div");
-    this.display.id = "display";
+    this.cssLoader.load("./app/views/css/song/settings.css");
+    this.settings = document.createElement("div");
+    this.settings.id = "settings";
 
     // 1. key-signature
     this.key_e = document.createElement("div");
@@ -68,8 +68,8 @@ export default class SongView {
     this.autoscroll_e.id = "autoscroll";
     this.autoscroll_e.textContent = "⏬";
 
-    // fill display
-    this.display.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
+    // fill settings
+    this.settings.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
     
     // *** instrument ***
     
@@ -104,7 +104,7 @@ export default class SongView {
     document.body.append(
       this.title,
       this.tabs,
-      this.display,
+      this.settings,
       this.instrument,
       this.text,
       this.footer
@@ -129,7 +129,7 @@ export default class SongView {
     this.band_h.textContent = band;
   }
 
-  // *** display ***
+  // *** settings ***
 
   // 1. key-signature
 
@@ -233,7 +233,7 @@ export default class SongView {
     });
   }
 
-  // *** display ***
+  // *** settings ***
 
   // 1. key-signature
 
