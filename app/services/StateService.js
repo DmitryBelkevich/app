@@ -44,7 +44,7 @@ export default class StateService {
 
   set current(current) {
     this.#current = current;
-    this.#cookieSaver.save({name: "current", value: this.#current});console.log("saving: " + this.#current);
+    this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
   load() {
@@ -64,6 +64,9 @@ export default class StateService {
     const instrument = this.#song.instruments[this.#current];
     
     const tuning = instrument.tuning;
+
+    if (!tuning)
+      return;
     
     tuning.forEach((note) => {
       this.#view.addString(note, true);
