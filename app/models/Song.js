@@ -66,11 +66,11 @@ export default class Song {
     this.#key = key;
   }
 
-  get transposition() {
+  get transposition() {console.log("get");
     return this.#transposition;
   }
 
-  set transposition(transposition) {
+  set transposition(transposition) {console.log("set");
     this.#transposition = transposition;
   }
   
