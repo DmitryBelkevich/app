@@ -40,7 +40,7 @@ export default class SongController {
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
 
-    // *** settings ***
+    // *** instrument ***
 
     // 1. dropdown
     this.song.instruments.forEach((instrument, index) => {
@@ -48,8 +48,6 @@ export default class SongController {
     });
 
     // 2. tuning
-
-    // *** tuning *** DELETE
 
     // *** text ***
 
