@@ -6,7 +6,7 @@ export default class Song {
   #score;
   #playback;
   #key;
-  #transposition = 0;
+  #transposition;
   #voices = [];
   #instruments = [];
   
