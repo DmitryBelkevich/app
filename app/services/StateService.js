@@ -33,6 +33,9 @@ export default class StateService {
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
+
+    // *** Transposer ***
+    this.transposeService = new TransposeService(song, view);
   }
 
   get current() {
@@ -53,9 +56,8 @@ export default class StateService {
     const instrument = this.#song.instruments[this.#current];
     const text = await this.htmlLoader.load(instrument.chords);
     this.#view.setText(text);
-
-    const transposeService = new TransposeService();
-    transposeService.print();
+    
+    this.transposeService.print();
   }
 
   loadTuning() {
