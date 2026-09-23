@@ -54,6 +54,7 @@ export default class TransposeService {
     // model
     this.#song.key = this.#transposer.upChord(this.#song.key);
     this.#song.transposition++;
+    console.log(this.#song.transposition);
 
     // view
     this.#view.setKey(this.#song.key);
@@ -68,6 +69,7 @@ export default class TransposeService {
     // model
     this.#song.key = this.#transposer.downChord(this.#song.key);
     this.#song.transposition--;
+    console.log(this.#song.transposition);
 
     // view
     this.#view.setKey(this.#song.key);
