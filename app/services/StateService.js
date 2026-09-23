@@ -47,7 +47,7 @@ export default class StateService {
     this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
-  load() {
+  async load() {
     await this.loadText();
     this.loadTuning();
 
