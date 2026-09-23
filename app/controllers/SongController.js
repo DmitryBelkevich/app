@@ -2,10 +2,7 @@ import Song from '../models/Song.js';
 import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
-import HtmlLoader from '../loaders/HtmlLoader.js';
-
 import AutoScroll from '../helpers/page/AutoScroll.js';
-import Transposer from '../helpers/Transposer.js';
 
 import StateService from '../services/StateService.js';
 
@@ -20,9 +17,6 @@ export default class SongController {
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
 
-    // state
-    this.stateService = new StateService(this.song);
-
     // view
     this.view = new SongView();
 
@@ -32,7 +26,7 @@ export default class SongController {
     this.view.setTitle(this.song.title);
     this.view.setBand(this.song.band);
 
-    // *** display ***
+    // *** settings ***
 
     // 1. key-signature
 
@@ -43,29 +37,20 @@ export default class SongController {
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
 
-    // *** settings ***
+    // *** instrument ***
 
     // 1. dropdown
     this.song.instruments.forEach((instrument, index) => {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(this.stateService.current);
-
-    // *** tuning ***
-
-    this.song.instruments.forEach((instrument, index) => {
-      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-        this.view.addTuning(instrument.tuning, instrument.tuning.isStandard());
-
-      if (instrument.capo)
-        this.view.addCapo(instrument.capo);
-    });
+    // 2. tuning
 
     // *** text ***
 
-    this.htmlLoader = new HtmlLoader();
-    await this.loadText(this.stateService.current);
+    // state
+    this.stateService = new StateService(this.song, this.view);
+    this.stateService.load();
 
     // *** binding controller-view ***
 
@@ -77,14 +62,11 @@ export default class SongController {
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
 
-    // *** display ***
+    // *** settings ***
     
     // 1. key-signature
     
     // 2. transposer
-    this.transposer = new Transposer();
-    this.transposer.key = this.song.key;
-    
     this.view.bindTransposeDown(this.transpose_down);
     this.view.bindTransposeUp(this.transpose_up);
 
@@ -119,18 +101,18 @@ export default class SongController {
       window.open(this.song.playback, "_blank");
   }
 
-  // *** display ***
+  // *** settings ***
 
   // 1. key-signature
 
   // 2. transposer
 
   transpose_down = () => {
-    this.transposer.transposeDown();
+    this.stateService.transposeService.transposeDown();
   }
 
   transpose_up = () => {
-    this.transposer.transposeUp();
+    this.stateService.transposeService.transposeUp();
   }
 
   // 3. auto-scroll
@@ -141,23 +123,14 @@ export default class SongController {
     this.autoScroll.run();
   }
 
-  // *** settings ***
+  // *** instrument ***
 
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.loadText(event.target.value);
-    
     this.stateService.current = event.target.value;
+    this.stateService.load();
   }
-
-  // *** tuning ***
 
   // *** text ***
-
-  async loadText(index) {
-    const instrument = this.song.instruments[index];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
-  }
 }

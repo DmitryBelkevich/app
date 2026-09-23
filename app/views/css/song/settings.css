@@ -10,15 +10,44 @@
 
 #settings {
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: center; */
 }
 
 /* components */
 
 #settings {
-  select {
-    margin: 0px  5px;
+  #key {
+    font-size: 16px;
+    background: gold;
+  }
+  
+  #key {
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 36px;
+
+    margin: 0px  0px  0px 5px;
+    padding: 0px 2px;
+  }
+
+  #key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#settings {
+  button {
+    font-size: 20px;
+    
+    margin: 0px  0px  0px 5px;
     padding: 5px;
+  }
+}
+
+#settings {
+  #autoscroll {
+    margin-left: auto;
+    margin-right: 5px;
   }
 }

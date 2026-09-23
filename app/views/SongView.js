@@ -44,11 +44,11 @@ export default class SongView {
     
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
 
-    // *** display ***
+    // *** settings ***
     
-    this.cssLoader.load("./app/views/css/song/display.css");
-    this.display = document.createElement("div");
-    this.display.id = "display";
+    this.cssLoader.load("./app/views/css/song/settings.css");
+    this.settings = document.createElement("div");
+    this.settings.id = "settings";
 
     // 1. key-signature
     this.key_e = document.createElement("div");
@@ -68,26 +68,26 @@ export default class SongView {
     this.autoscroll_e.id = "autoscroll";
     this.autoscroll_e.textContent = "⏬";
 
-    // fill display
-    this.display.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
-    
-    // *** settings ***
-    
-    this.cssLoader.load("./app/views/css/song/settings.css");
-    this.settings = document.createElement("div");
-    this.settings.id = "settings";
-
-    // dropdown
-    this.dropdown = document.createElement("select");
-    this.dropdown.id = "instruments";
-
     // fill settings
-    this.settings.append(this.dropdown);
+    this.settings.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
     
-    // *** Tuning ***
-    this.cssLoader.load("./app/views/css/song/tuning.css");
+    // *** instrument ***
+    
+    this.cssLoader.load("./app/views/css/song/instrument.css");
+    this.instrument = document.createElement("div");
+    this.instrument.id = "instrument";
+
+    // 1. dropdown
+    this.dropdown = document.createElement("select");
+
+    // 2. tuning
     this.tuning = document.createElement("div");
     this.tuning.id = "tuning";
+
+    // 3. capo
+
+    // fill instrument
+    this.instrument.append(this.dropdown, this.tuning);
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -104,9 +104,8 @@ export default class SongView {
     document.body.append(
       this.title,
       this.tabs,
-      this.display,
       this.settings,
-      this.tuning,
+      this.instrument,
       this.text,
       this.footer
     );
@@ -130,7 +129,7 @@ export default class SongView {
     this.band_h.textContent = band;
   }
 
-  // *** display ***
+  // *** settings ***
 
   // 1. key-signature
 
@@ -142,7 +141,7 @@ export default class SongView {
 
   // 3. autoscroll
 
-  // *** settings ***
+  // *** instrument ***
 
   // 1. dropdown
 
@@ -174,27 +173,36 @@ export default class SongView {
     return this.dropdown.value;
   }
 
-  // *** tuning ***
+  // 2. tuning
 
-  addTuning(tuning, isStandard) {
-    const tuning_e = document.createElement("div");
-
-    if (isStandard)
-      tuning_e.classList.add("standard");
-    else
-      tuning_e.classList.add("non-standard");
-    
-    tuning_e.textContent = "[" + tuning + "]";
-    
-    this.tuning.append(tuning_e);
+  clearTuning() {
+    this.tuning.replaceChildren();
   }
 
-  addCapo(capo) {
-    const capo_e = document.createElement("div");
-    capo_e.classList.add("capo");
-    capo_e.textContent = "Capo: +" + capo;
+  addString(note, isStandard) {
+    const div = document.createElement("div");
 
-    this.tuning.append(capo_e);
+    const standards = {
+      true: "standard",
+      false: "non-standard",
+    }
+
+    div.classList.add("string");
+    div.classList.add(standards[isStandard]);
+
+    div.textContent = note;
+
+    this.tuning.append(div);
+  }
+
+  // 3. capo
+
+  addCapo(capo) {
+    const div = document.createElement("div");
+    div.classList.add("capo");
+    div.textContent = "Capo: +" + capo;
+
+    this.tuning.append(div);
   }
 
   // *** text ***
@@ -225,7 +233,7 @@ export default class SongView {
     });
   }
 
-  // *** display ***
+  // *** settings ***
 
   // 1. key-signature
 
@@ -251,7 +259,7 @@ export default class SongView {
     });
   }
 
-  // *** settings ***
+  // *** instrument ***
 
   // 1. dropdown
 
