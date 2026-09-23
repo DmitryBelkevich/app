@@ -28,19 +28,15 @@ export default class TransposeService {
 
   transpose(count) {
     // view
-    // this.#view.setKey(this.#song.key);
-
     this.#chords.forEach((element) => {
-      const chord = element.textContent;
-
       if (count > 0) {
         for (let i = 0; i < count; i++) {
+          const chord = element.textContent;
           element.textContent = this.#transposer.upChord(chord);
-          console.log(i);
         }
       } else if (count < 0)
         for (let i = count; i < 0; i++) {
-          console.log(i);
+          const chord = element.textContent;
           element.textContent = this.#transposer.downChord(chord);
         }
     });
