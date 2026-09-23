@@ -2,6 +2,8 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 import CookieSaver from '../memento/CookieSaver.js';
 
+import TransposeService from './TransposeService.js';
+
 export default class StateService {
   #song;
   #view;
