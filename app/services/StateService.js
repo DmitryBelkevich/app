@@ -47,13 +47,10 @@ export default class StateService {
   }
 
   load() {
-    this.saveCookie();
+    this.#cookieSaver.save({name: "current", value: this.#current});
+    
     this.loadText();
     this.loadTuning();
-  }
-
-  saveCookie() {
-    this.#cookieSaver.save({name: "current", value: this.#current});
   }
 
   async loadText() {
