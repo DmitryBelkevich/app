@@ -40,7 +40,7 @@ export default class TransposeService {
       element.textContent = this.#transposer.upChord(chord)
     });
 
-    #transposition++;
+    this.#transposition++;
   }
 
   transposeDown() {
@@ -56,6 +56,6 @@ export default class TransposeService {
       element.textContent = this.#transposer.downChord(chord);
     });
 
-    #transposition--;
+    this.#transposition--;
   }
 }
