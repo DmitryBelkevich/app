@@ -82,16 +82,13 @@ export default class SongView {
     this.dropdown.id = "instruments";
 
     // 2. tuning
-    this.container = document.createElement("div");
-    this.container.id = "tun";
-
-    // fill settings
-    this.settings.append(this.dropdown, this.container);
-    
-    // *** Tuning ***
-    this.cssLoader.load("./app/views/css/song/tuning.css");
     this.tuning = document.createElement("div");
     this.tuning.id = "tuning";
+
+    // 3. capo
+
+    // fill settings
+    this.settings.append(this.dropdown, this.tuning);
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -110,7 +107,6 @@ export default class SongView {
       this.tabs,
       this.display,
       this.settings,
-      this.tuning,
       this.text,
       this.footer
     );
@@ -180,6 +176,10 @@ export default class SongView {
 
   // 2. tuning
 
+  clearTuning() {
+    this.tuning.replaceChildren();
+  }
+
   addString(note, isStandard) {
     const div = document.createElement("div");
 
@@ -188,34 +188,22 @@ export default class SongView {
       false: "non-standard",
     }
 
+    div.classList.add("string");
     div.classList.add(standards[isStandard]);
 
     div.textContent = note;
 
-    this.container.append(div);
+    this.tuning.append(div);
   }
 
   // *** tuning ***
 
-  addTuning(tuning, isStandard) {
-    const tuning_e = document.createElement("div");
-
-    if (isStandard)
-      tuning_e.classList.add("standard");
-    else
-      tuning_e.classList.add("non-standard");
-    
-    tuning_e.textContent = "[" + tuning + "]";
-    
-    this.tuning.append(tuning_e);
-  }
-
   addCapo(capo) {
-    const capo_e = document.createElement("div");
-    capo_e.classList.add("capo");
-    capo_e.textContent = "Capo: +" + capo;
+    const div = document.createElement("div");
+    div.classList.add("capo");
+    div.textContent = "Capo: +" + capo;
 
-    this.tuning.append(capo_e);
+    this.tuning.append(div);
   }
 
   // *** text ***

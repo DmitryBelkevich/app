@@ -2,8 +2,6 @@ import Song from '../models/Song.js';
 import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
-import HtmlLoader from '../loaders/HtmlLoader.js';
-
 import AutoScroll from '../helpers/page/AutoScroll.js';
 import Transposer from '../helpers/Transposer.js';
 
@@ -19,9 +17,6 @@ export default class SongController {
     // model
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
-
-    // state
-    this.stateService = new StateService(this.song);
 
     // view
     this.view = new SongView();
@@ -50,25 +45,15 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    this.view.selectOption(this.stateService.current);
-
     // 2. tuning
-    this.loadTuning();
 
-    // *** tuning ***
-
-    this.song.instruments.forEach((instrument, index) => {
-      if (instrument.title != "Keyboards" && instrument.title != "Instrument")
-        this.view.addTuning(instrument.tuning, instrument.tuning.isStandard());
-
-      if (instrument.capo)
-        this.view.addCapo(instrument.capo);
-    });
+    // *** tuning *** DELETE
 
     // *** text ***
 
-    this.htmlLoader = new HtmlLoader();
-    await this.loadText(this.stateService.current);
+    // state
+    this.stateService = new StateService(this.song, this.view);
+    this.stateService.load();
 
     // *** binding controller-view ***
 
@@ -149,29 +134,11 @@ export default class SongController {
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.loadText(event.target.value);
-    
-    this.stateService.current = event.target.value;
+    this.stateService.current = event.target.value; // *** set STATE ***
+    this.stateService.load();
   }
 
   // *** tuning ***
 
-  loadTuning() {
-    return;
-    
-    const tuning = this.song.instruments[0].tuning;
-    // const tuning = ["E", "A", "D", "G", "B", "E"];
-    
-    tuning.forEach((note) => {
-      this.view.addString(note, true);
-    });
-  }
-
   // *** text ***
-
-  async loadText(index) {
-    const instrument = this.song.instruments[index];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.view.setText(text);
-  }
 }

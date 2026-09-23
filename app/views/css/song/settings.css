@@ -24,15 +24,14 @@
 }
 
 #settings {
-  #tun {
+  #tuning {
     display: flex;
   }
 
-  #tun {
+  #tuning {
     div {
       border: 1px solid grey;
       border-radius: 4px;
-      width: 20px;
 
       font-size: 16px;
 
@@ -45,12 +44,21 @@
       justify-content: center;
       align-items: center;
     }
+    
+    .string {
+      width: 20px;
+    }
 
     .standard {
       background: lightgreen;
     }
 
     .non-standard {
+      background: coral;
+    }
+
+    .capo {
+      font-size: 12px;
       background: coral;
     }
   }
