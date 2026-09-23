@@ -28,15 +28,20 @@ export default class TransposeService {
 
   transpose(count) {
     // model
-    this.#song.key = this.#transposer.upChord(this.#song.key);
-    this.#song.transposition++;
+    this.#song.transposition += count;
 
     // view
     this.#view.setKey(this.#song.key);
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
-      element.textContent = this.#transposer.upChord(chord)
+
+      if (count > 0)
+        for (let i = 0; i <= count; i++)
+          element.textContent = this.#transposer.upChord(chord);
+      else if (count > 0)
+        for (let i = count; i > 0; i--)
+          element.textContent = this.#transposer.downChord(chord);
     });
   }
 
@@ -50,7 +55,7 @@ export default class TransposeService {
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
-      element.textContent = this.#transposer.upChord(chord)
+      element.textContent = this.#transposer.upChord(chord);
     });
   }
 
