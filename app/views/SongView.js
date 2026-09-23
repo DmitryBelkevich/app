@@ -79,7 +79,6 @@ export default class SongView {
 
     // 1. dropdown
     this.dropdown = document.createElement("select");
-    // this.dropdown.id = "instruments";
 
     // 2. tuning
     this.tuning = document.createElement("div");
