@@ -108,11 +108,11 @@ export default class SongController {
   // 2. transposer
 
   transpose_down = () => {
-    this.transposer.transposeDown();
+    this.stateService.transposeService.transposeDown();
   }
 
   transpose_up = () => {
-    this.transposer.transposeUp();
+    this.stateService.transposeService.transposeUp();
   }
 
   // 3. auto-scroll
