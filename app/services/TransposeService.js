@@ -1,12 +1,18 @@
+import Transposer from '../helpers/Transposer.js';
+
 export default class TransposeService {
   #song;
   #view;
+
+  #transposer;
   
   #chords = [];
 
   constructor(song, view) {
     this.#song = song;
     this.#view = view;
+
+    this.#transposer = new Transposer();
   }
 
   getChords() {
@@ -22,7 +28,7 @@ export default class TransposeService {
 
   transposeUp() {
     // transpose key
-    this.#song.key = this.upChord(this.#song.key);
+    this.#song.key = this.#transposer.upChord(this.#song.key);
 
     // transpose key on display
     this.#view.setKey(this.#song.key);
@@ -30,13 +36,13 @@ export default class TransposeService {
     // transpose all chords
     this.#chords.forEach((element) => {
       const chord = element.textContent;
-      element.textContent = this.upChord(chord)
+      element.textContent = this.#transposer.upChord(chord)
     });
   }
 
   transposeDown() {
     // transpose key
-    this.#song.key = this.downChord(this.#song.key);
+    this.#song.key = this.#transposer.downChord(this.#song.key);
 
     // transpose key on display
     this.#view.setKey(this.#song.key);
@@ -44,115 +50,7 @@ export default class TransposeService {
     // transpose all chords
     this.#chords.forEach((element) => {
       const chord = element.textContent;
-      element.textContent = this.downChord(chord);
+      element.textContent = this.#transposer.downChord(chord);
     });
-  }
-
-  upChord(chord) {
-    var note;
-    var post;
-    
-    if (chord[1] == "#" || chord[1] == "b") {//A#m -> A# m
-      note = chord.slice(0, 2);//A#
-      post = chord.slice(2);   // m
-    } else if (chord[1] != "#" && chord[1] != "b") {//Am
-      note = chord.slice(0, 1);//A
-      post = chord.slice(1);   //m
-    }
-    
-    if (note == "A")
-      note = "A#";
-    else if (note == "B")
-      note = "C";
-    else if (note == "C")
-      note = "C#";
-    else if (note == "D")
-      note = "D#";
-    else if (note == "E")
-      note = "F";
-    else if (note == "F")
-      note = "F#";
-    else if (note == "G")
-      note = "G#";
-      
-    else if (note == "A#")
-      note = "B";
-    else if (note == "C#")
-      note = "D";
-    else if (note == "D#")
-      note = "E";
-    else if (note == "F#")
-      note = "G";
-    else if (note == "G#")
-      note = "A";
-
-    else if (note == "Bb")
-      note = "B";
-    else if (note == "Db")
-      note = "D";
-    else if (note == "Eb")
-      note = "E";
-    else if (note == "Gb")
-      note = "G";
-    else if (note == "Ab")
-      note = "A";
-
-    chord = note + post;
-    
-    return chord;
-  }
-
-  downChord(chord) {
-    var note;
-    var post;
-    
-    if (chord[1] == "#" || chord[1] == "b") {//A#m -> A# m
-      note = chord.slice(0, 2);//A#
-      post = chord.slice(2);   // m
-    } else if (chord[1] != "#" && chord[1] != "b") {//Am
-      note = chord.slice(0, 1);//A
-      post = chord.slice(1);   //m
-    }
-    
-    if (note == "A")
-      note = "Ab";
-    else if (note == "B")
-      note = "Bb";
-    else if (note == "C")
-      note = "B";
-    else if (note == "D")
-      note = "Db";
-    else if (note == "E")
-      note = "Eb";
-    else if (note == "F")
-      note = "E";
-    else if (note == "G")
-      note = "Gb";
-      
-    else if (note == "A#")
-      note = "A";
-    else if (note == "C#")
-      note = "C";
-    else if (note == "D#")
-      note = "D";
-    else if (note == "F#")
-      note = "F";
-    else if (note == "G#")
-      note = "G";
-
-    else if (note == "Bb")
-      note = "A";
-    else if (note == "Db")
-      note = "C";
-    else if (note == "Eb")
-      note = "D";
-    else if (note == "Gb")
-      note = "F";
-    else if (note == "Ab")
-      note = "G";
-
-    chord = note + post;
-    
-    return chord;
   }
 }
