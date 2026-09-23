@@ -89,7 +89,6 @@ export default class SongController {
 
   openText = () => {
     console.log("open Text tab");
-    this.stateService.transposeService.transpose(2);
   }
 
   openScore = () => {
