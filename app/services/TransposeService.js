@@ -5,7 +5,6 @@ export default class TransposeService {
   #view;
 
   #transposer;
-  #transposition = 0;
   
   #chords = [];
 
