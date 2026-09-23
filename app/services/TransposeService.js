@@ -10,6 +10,8 @@ export default class TransposeService {
   }
 
   getChords() {
+    this.#chords.length = 0;
+    
     const lines = document.querySelectorAll('div.chords');
     
     lines.forEach(line => {
