@@ -3,8 +3,6 @@ export default class TransposeService {
   
   constructor() {
     const lines = document.querySelectorAll('div.chords');
-
-    console.log(lines);
     
     lines.forEach(line => {
     const line_arr = line.querySelectorAll('div');
