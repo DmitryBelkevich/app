@@ -71,9 +71,9 @@ export default class SongView {
     // fill display
     this.display.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
     
-    // *** settings ***
+    // *** instrument ***
     
-    this.cssLoader.load("./app/views/css/song/settings.css");
+    this.cssLoader.load("./app/views/css/song/instrument.css");
     this.settings = document.createElement("div");
     this.settings.id = "settings";
 
