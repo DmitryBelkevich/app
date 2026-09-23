@@ -30,6 +30,8 @@ export default class TransposeService {
     // transpose key
     this.#song.key = this.#transposer.upChord(this.#song.key);
 
+    this.#song.transposition++;
+
     // transpose key on display
     this.#view.setKey(this.#song.key);
 
@@ -38,13 +40,13 @@ export default class TransposeService {
       const chord = element.textContent;
       element.textContent = this.#transposer.upChord(chord)
     });
-
-    this.#song.transposition++;
   }
 
   transposeDown() {
     // transpose key
     this.#song.key = this.#transposer.downChord(this.#song.key);
+
+    this.#song.transposition--;
 
     // transpose key on display
     this.#view.setKey(this.#song.key);
@@ -54,7 +56,5 @@ export default class TransposeService {
       const chord = element.textContent;
       element.textContent = this.#transposer.downChord(chord);
     });
-
-    this.#song.transposition--;
   }
 }
