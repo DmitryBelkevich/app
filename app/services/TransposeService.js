@@ -28,7 +28,7 @@ export default class TransposeService {
 
   transpose(count) {
     // model
-    this.#song.transposition += count;
+    // this.#song.transposition += count;
 
     // view
     this.#view.setKey(this.#song.key);
