@@ -50,14 +50,14 @@ export default class StateService {
   load() {
     this.loadText();
     this.loadTuning();
+
+    this.transposeService.print();
   }
 
   async loadText() {
     const instrument = this.#song.instruments[this.#current];
     const text = await this.htmlLoader.load(instrument.chords);
     this.#view.setText(text);
-    
-    this.transposeService.print();
   }
 
   loadTuning() {
