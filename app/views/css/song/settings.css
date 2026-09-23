@@ -1,6 +1,6 @@
 /* container */
 
-#display {
+#settings {
   border: 1px solid black;
   background-color: lightgrey;
   
@@ -8,13 +8,13 @@
   padding: 5px 0px;
 }
 
-#display {
+#settings {
   display: flex;
 }
 
 /* components */
 
-#display {
+#settings {
   #key {
     font-size: 16px;
     background: gold;
@@ -36,7 +36,7 @@
   }
 }
 
-#display {
+#settings {
   button {
     font-size: 20px;
     
@@ -45,7 +45,7 @@
   }
 }
 
-#display {
+#settings {
   #autoscroll {
     margin-left: auto;
     margin-right: 5px;
