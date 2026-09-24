@@ -11,7 +11,9 @@ export default class GenreDao {
   async getAll() {
     const data = await this.jsonLoader.load(config.database + "songs.json");
 
-    console.log(data);
+    const result = data.forEach(song => {
+      console.log(song.genre);
+    });
     
     return [];
   }
