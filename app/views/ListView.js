@@ -8,7 +8,7 @@ export default class ListView {
     this.cssLoader.load("./app/views/css/reset.css");
 
     // body css
-    this.cssLoader.load("./app/views/css/body.css");
+    this.cssLoader.load("./app/views/css/list/body.css");
     
     this.body = document.body;
   }
