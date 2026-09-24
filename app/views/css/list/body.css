@@ -3,9 +3,15 @@
 .genre {
   border: 1px solid black;
   background-color: lightgrey;
+
+  margin: 0px;
+  padding: 10px;
 }
 
 .song {
   border: 1px solid black;
   /* background-color: lightgrey; */
+
+  margin: 0px;
+  padding: 10px;
 }
