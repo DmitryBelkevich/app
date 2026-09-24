@@ -35,6 +35,8 @@ export default class ListView {
     
     element.textContent = band + " - " + title;
 
+    this.body.append(element);
+
     const bind = (handler) => {
       element.addEventListener('click', () => {
         handler(id);
@@ -42,7 +44,5 @@ export default class ListView {
     }
 
     this.binds.push(bind);
-
-    this.body.append(element);
   }
 }
