@@ -1,3 +1,7 @@
+import config from '../config/config.js';
+
 export default class GenreDao {
-  getAll() {}
+  async getAll() {
+    return [];
+  }
 }
