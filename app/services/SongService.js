@@ -11,7 +11,7 @@ import BassGuitar from '../models/BassGuitar.js';
 import FiveStringBassGuitar from '../models/FiveStringBassGuitar.js';
 
 export default class SongService {
-  constructor() {
+  constructor( ) {
     this.songDao = new SongDao();
   }
 
