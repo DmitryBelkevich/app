@@ -10,6 +10,8 @@ export default class SongDao {
 
   async getAll() {
     const data = await this.jsonLoader.load(config.database + "songs.json");
+
+    // TODO
     
     return data;
   }
