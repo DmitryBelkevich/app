@@ -34,14 +34,9 @@ export default class ListView {
     element.textContent = band + " - " + title;
 
     element.addEventListener('click', function(event) {
-      // window.open("https://dmitrybelkevich.github.io/app/song?id=" + id);
       window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
     });
 
     this.body.append(element);
   }
-
-  // bindSongElement(handler) {
-  //   this.elements
-  // }
 }
