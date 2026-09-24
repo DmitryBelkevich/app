@@ -2,7 +2,7 @@ import GenreService from '../services/GenreService.js';
 import ListView from '../views/ListView.js';
 
 export default class ListController {
-  async init( ) {
+  async init() {
     // model
     this.genreService = new GenreService();
     this.genres = await this.genreService.getAll();
