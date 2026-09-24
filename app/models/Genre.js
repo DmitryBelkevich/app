@@ -1,6 +1,7 @@
 export default class Genre {
   #id;
   #title;
+  #songs = [];
 
   get id() {
     return this.#id;
@@ -16,5 +17,13 @@ export default class Genre {
 
   set title(title) {
     this.#title = title;
+  }
+
+  get songs() {
+    return this.#songs;
+  }
+
+  set songs(songs) {
+    this.#songs = songs;
   }
 }
