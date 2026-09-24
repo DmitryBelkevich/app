@@ -10,8 +10,6 @@ export default class ListController {
 
     this.genreService = new GenreService();
     this.genres = await this.genreService.getAll();
-
-    console.log(this.genres);
     
     // view
     this.view = new ListView();
