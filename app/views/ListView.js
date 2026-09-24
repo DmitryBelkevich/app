@@ -37,7 +37,7 @@ export default class ListView {
 
     this.body.append(element);
 
-    this.binds.push({
+    this.binds.push(() => {
       element.addEventListener('click', () => {
         handler(id);
       });
