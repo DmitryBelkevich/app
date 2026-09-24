@@ -17,22 +17,22 @@ export default class ListView {
   }
 
   addGenre(title) {
-    const div = document.createElement("div");
+    const element = document.createElement("div");
 
-    div.classList.add("genre");
+    element.classList.add("genre");
 
-    div.textContent = title;
+    element.textContent = title;
 
-    this.body.append(div);
+    this.body.append(element);
   }
 
   addSong(band, title) {
-    const div = document.createElement("div");
+    const element = document.createElement("button");
     
-    div.classList.add("song");
+    element.classList.add("song");
     
-    div.textContent = band + " - " + title;
+    element.textContent = band + " - " + title;
 
-    this.body.append(div);
+    this.body.append(element);
   }
 }
