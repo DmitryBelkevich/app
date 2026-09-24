@@ -16,6 +16,10 @@ export default class ListController {
     // view
     this.view = new ListView();
 
+    this.genres.forEach((genre) => {
+      this.view.addGenre(genre.title);
+    });
+
     this.songs.forEach((song) => {
       this.view.addSong(song.id, song.key, song.band, song.title);
     });
