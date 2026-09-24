@@ -16,8 +16,8 @@ export default class ListController {
     // view
     this.view = new ListView();
 
-    this.songs.forEach((song, index) => {
-      this.view.addSong(song);
+    this.songs.forEach((song) => {
+      this.view.addSong(song.id, song.key, song.band, song.title);
     });
   }
 }
