@@ -30,11 +30,13 @@ export default class GenreDao {
 
         genre.id = index++;
         genre.title = element.genre;
+        //genre.songs
         
         map.set(element.genre, genre);
       }
       
       song.genre = map.get(element.genre);
+      song.genre.songs.push(song);
       
       song.text = element.text;
       song.score = element.score;
