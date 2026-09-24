@@ -10,14 +10,23 @@ export default class ListView {
     this.body = document.body;
   }
 
-  addGenre() {
-    
+  addGenre(title) {
+    const div = document.createElement("div");
+
+    div.classList.add("genre");
+
+    div.textContent = title;
+
+    this.body.append(div);
   }
 
-  addSong(song) {
-    const song_e = document.createElement("div");
-    song_e.textContent = song.id + " | " + (song.key || "___") + " | " + song.band + " - " + song.title;
+  addSong(id, key, band, title) {
+    const div = document.createElement("div");
+    
+    div.classList.add("song");
+    
+    div.textContent = id + " | " + (key || "___") + " | " + band + " - " + title;
 
-    this.body.append(song_e);
+    this.body.append(div);
   }
 }
