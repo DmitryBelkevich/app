@@ -14,15 +14,17 @@ export default class GenreDao {
 
     console.log(data);
 
+    const set = new Set();
     data.forEach((element) => {
       const song = new Song();
 
       song.id = element.id;
       song.band = element.band;
       song.title = element.title;
-      
-      song.genre = new Genre();
-      song.genre.title = element.genre;
+
+      set.add(element.genre);
+      // song.genre = new Genre();
+      // song.genre.title = element.genre;
       
       song.text = element.text;
       song.score = element.score;
@@ -32,8 +34,10 @@ export default class GenreDao {
       song.instruments = element.instruments;
       song.visible = element.visible;
       
-      console.log(song);
+      // console.log(song);
     });
+
+    console.log(set);
 
     // const genresSet = new Set();
     // data.forEach(song => genresSet.add(song.genre));
