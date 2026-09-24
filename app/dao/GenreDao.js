@@ -1,6 +1,7 @@
 import config from '../config/config.js';
 
 import Genre from '../models/Genre.js';
+import Song from '../models/Song.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class GenreDao {
@@ -13,21 +14,28 @@ export default class GenreDao {
 
     console.log(data);
 
-    const set = new Set();
-    data.forEach(song => set.add(song.genre));
-
-    const genres = Array.from(set);
-    genres.forEach((title, index) => {
-      const genre = new Genre();
-
-      genre.id = index;
-      genre.title = title;
-
-      genres[index] = genre;
+    data.forEach((element) => {
+      const song = new Song();
+      console.log(song);
     });
 
-    console.log(genres);
+    // const genresSet = new Set();
+    // data.forEach(song => genresSet.add(song.genre));
+
+    // const genres = Array.from(genresSet);
+    // genres.forEach((title, index) => {
+    //   const genre = new Genre();
+
+    //   genre.id = index;
+    //   genre.title = title;
+
+    //   genres[index] = genre;
+
+      // add genre.song
+    // });
+
+    // console.log(genres);
     
-    return genres;
+    return [];//genres
   }
 }
