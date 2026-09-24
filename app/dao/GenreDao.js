@@ -14,6 +14,8 @@ export default class GenreDao {
 
     console.log(data);
 
+    const songs = [];
+
     const set = new Set();
     data.forEach((element) => {
       const song = new Song();
@@ -34,7 +36,7 @@ export default class GenreDao {
       song.instruments = element.instruments;
       song.visible = element.visible;
       
-      // console.log(song);
+      songs.push(song);
     });
 
     console.log(set);
