@@ -26,7 +26,7 @@ export default class ListView {
     this.body.append(element);
   }
 
-  addSong(band, title) {
+  addSong(id, band, title) {
     const element = document.createElement("div");
     
     element.classList.add("song");
