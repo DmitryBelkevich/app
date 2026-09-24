@@ -15,13 +15,16 @@ export default class GenreDao {
     data.forEach(song => set.add(song.genre));
 
     const genres = [];
+    let index = 0;
     set.forEach((value, key) => {
       const genre = new Genre();
 
-      genre.id = key;
+      genre.id = index;
       genre.title = value;
 
       genres.push(genre);
+
+      index++;
     });
 
     console.log(genres);
