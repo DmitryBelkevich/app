@@ -34,9 +34,13 @@ export default class ListView {
     element.textContent = band + " - " + title;
 
     element.addEventListener('click', function(event) {
-      console.log(event);
+      console.log(event.target);
     });
 
     this.body.append(element);
   }
+
+  // bindSongElement(handler) {
+  //   this.elements
+  // }
 }
