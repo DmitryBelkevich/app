@@ -34,7 +34,7 @@ export default class ListView {
     element.textContent = band + " - " + title;
 
     element.addEventListener('click', function(event) {
-      console.log(event.target);
+      window.open("https://dmitrybelkevich.github.io/app/song?id=" + id);
     });
 
     this.body.append(element);
