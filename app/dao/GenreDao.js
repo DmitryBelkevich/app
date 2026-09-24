@@ -25,7 +25,7 @@ export default class GenreDao {
       song.title = element.title;
 
       set.add(element.genre);
-      // song.genre = new Genre();
+      song.genre = null;//new Genre();
       // song.genre.title = element.genre;
       
       song.text = element.text;
