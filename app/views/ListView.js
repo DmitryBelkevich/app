@@ -7,8 +7,11 @@ export default class ListView {
     // reset css
     this.cssLoader.load("./app/views/css/reset.css");
 
-    // body css
-    this.cssLoader.load("./app/views/css/list/body.css");
+    // genre css
+    this.cssLoader.load("./app/views/css/list/genre.css");
+
+    // song css
+    this.cssLoader.load("./app/views/css/list/song.css");
     
     this.body = document.body;
   }
