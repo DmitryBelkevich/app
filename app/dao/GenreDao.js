@@ -41,6 +41,8 @@ export default class GenreDao {
 
     console.log(set);
 
+    console.log(songs);
+
     // const genresSet = new Set();
     // data.forEach(song => genresSet.add(song.genre));
 
