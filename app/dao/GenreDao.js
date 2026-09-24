@@ -26,7 +26,7 @@ export default class GenreDao {
       console.log(title);
     });
 
-    // console.log(genres);
+    console.log(genres);
     
     return [];
   }
