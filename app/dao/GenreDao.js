@@ -16,6 +16,22 @@ export default class GenreDao {
 
     data.forEach((element) => {
       const song = new Song();
+
+      song.id = element.id;
+      song.band = element.band;
+      song.title = element.title;
+      
+      song.genre = new Genre();
+      song.genre.title = element.genre;
+      
+      song.text = element.text;
+      song.score = element.score;
+      song.playback = element.playback;
+      song.key = element.key;
+      song.voices = element.voices;
+      song.instruments = element.instruments;
+      song.visible = element.visible;
+      
       console.log(song);
     });
 
