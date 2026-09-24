@@ -6,6 +6,9 @@ export default class ListView {
     
     // reset css
     this.cssLoader.load("./app/views/css/reset.css");
+
+    // body css
+    this.cssLoader.load("./app/views/css/body.css");
     
     this.body = document.body;
   }
