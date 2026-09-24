@@ -1,6 +1,8 @@
 import CssLoader from '../loaders/CssLoader.js';
 
 export default class ListView {
+  binds = [];
+  
   constructor() {
     this.cssLoader = new CssLoader();
     
@@ -33,10 +35,6 @@ export default class ListView {
     
     element.textContent = band + " - " + title;
 
-    // element.addEventListener('click', function(event) {
-    //   window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
-    // });
-
     const bind = (handler) => {
       element.addEventListener('click', () => {
         handler(id);
@@ -47,12 +45,4 @@ export default class ListView {
 
     this.body.append(element);
   }
-
-  binds = [];
-
-  // bindSongElement(handler) {
-  //   this.elements[0].addEventListener("click", () => {
-  //     handler();
-  //   });
-  // }
 }
