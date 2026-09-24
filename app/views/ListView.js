@@ -27,11 +27,15 @@ export default class ListView {
   }
 
   addSong(band, title) {
-    const element = document.createElement("button");
+    const element = document.createElement("div");
     
     element.classList.add("song");
     
     element.textContent = band + " - " + title;
+
+    element.addEventListener('click', function(event) {
+      console.log(event);
+    });
 
     this.body.append(element);
   }
