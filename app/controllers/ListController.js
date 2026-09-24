@@ -1,17 +1,21 @@
-import SongService from '../services/SongService.js';
+import GenreService from '../services/GenreService.js';
 import ListView from '../views/ListView.js';
 
 export default class ListController {
   async init() {
     // model
-    this.songService = new SongService();
-    this.songs = await this.songService.getAll();
+    this.genreService = new GenreService();
+    this.genres = await this.genreService.getAll();
     
     // view
     this.view = new ListView();
 
-    this.songs.forEach((song, index) => {
-      this.view.addSong(song);
+    this.genres.forEach((genre) => {
+      this.view.addGenre(genre.title);
+
+      genre.songs.forEach((song) => {
+        this.view.addSong(song.band, song.title);
+      });
     });
   }
 }

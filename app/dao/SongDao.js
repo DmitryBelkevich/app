@@ -1,7 +1,6 @@
 import config from '../config/config.js';
 
 import Song from '../models/Song.js';
-import Instrument from '../models/Instrument.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class SongDao {
@@ -11,6 +10,8 @@ export default class SongDao {
 
   async getAll() {
     const data = await this.jsonLoader.load(config.database + "songs.json");
+
+    // TODO
     
     return data;
   }
