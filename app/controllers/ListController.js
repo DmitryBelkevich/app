@@ -1,4 +1,5 @@
 import SongService from '../services/SongService.js';
+import SongService from '../services/GenreService.js';
 import ListView from '../views/ListView.js';
 
 export default class ListController {
@@ -6,6 +7,11 @@ export default class ListController {
     // model
     this.songService = new SongService();
     this.songs = await this.songService.getAll();
+
+    this.genreService = new GenreService();
+    this.genres = await this.genreService.getAll();
+
+    console.log(this.genres);
     
     // view
     this.view = new ListView();
