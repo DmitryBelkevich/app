@@ -1,4 +1,4 @@
-export default class CookieSaver {
+export default class CookieLoader {
   getAll() {
     const cookies_obj = document.cookie.split("; ").reduce((acc, current) => {
         const [key, value] = current.split('=');
