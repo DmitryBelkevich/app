@@ -20,11 +20,11 @@ export default class ListController {
 
     // binds
     this.view.binds.forEach((bind) => {
-      bind(this.f);
+      bind(this.openSong);
     });
   }
 
-  f = (id) => {
-    console.log(id);
+  openSong = (id) => {
+    window.location.href = window.location.origin + "/app" + "/song?id=" + id;
   }
 }
