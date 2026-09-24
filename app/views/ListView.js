@@ -7,29 +7,36 @@ export default class ListView {
     // reset css
     this.cssLoader.load("./app/views/css/reset.css");
 
-    // body css
-    this.cssLoader.load("./app/views/css/list/body.css");
+    // genre css
+    this.cssLoader.load("./app/views/css/list/genre.css");
+
+    // song css
+    this.cssLoader.load("./app/views/css/list/song.css");
     
     this.body = document.body;
   }
 
   addGenre(title) {
-    const div = document.createElement("div");
+    const element = document.createElement("div");
 
-    div.classList.add("genre");
+    element.classList.add("genre");
 
-    div.textContent = title;
+    element.textContent = title;
 
-    this.body.append(div);
+    this.body.append(element);
   }
 
   addSong(band, title) {
-    const div = document.createElement("div");
+    const element = document.createElement("div");
     
-    div.classList.add("song");
+    element.classList.add("song");
     
-    div.textContent = band + " - " + title;
+    element.textContent = band + " - " + title;
 
-    this.body.append(div);
+    element.addEventListener('click', function(event) {
+      console.log(event);
+    });
+
+    this.body.append(element);
   }
 }
