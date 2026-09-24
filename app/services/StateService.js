@@ -1,6 +1,5 @@
 import HtmlLoader from '../loaders/HtmlLoader.js';
-
-import CookieSaver from '../memento/CookieSaver.js';
+import CookieLoader from '../loaders/CookieLoader.js';
 
 import TransposeService from './TransposeService.js';
 
@@ -10,7 +9,7 @@ export default class StateService {
 
   #transposeService;
   
-  #cookieSaver;
+  #cookieLoader;
   #current;//state
 
   constructor(song, view) {
@@ -18,11 +17,11 @@ export default class StateService {
     this.#view = view;
     
     // *** Cookie ***
-    this.#cookieSaver = new CookieSaver();
+    this.#cookieLoader = new CookieLoader();
 
     const default_cookie_obj = { name: "instrument", value: 0 };
-    const cookie_obj = this.#cookieSaver.getByName("instrument") || default_cookie_obj;
-    this.#cookieSaver.save(cookie_obj);
+    const cookie_obj = this.#cookieLoader.getByName("instrument") || default_cookie_obj;
+    this.#cookieLoader.save(cookie_obj);
     
     // *** state ***
     if (this.#song.instruments.length <= cookie_obj.value) {
@@ -50,7 +49,7 @@ export default class StateService {
 
   set current(current) {
     this.#current = current;
-    this.#cookieSaver.save({name: "instrument", value: this.#current});
+    this.#cookieLoader.save({name: "instrument", value: this.#current});
   }
 
   async load() {
