@@ -17,6 +17,7 @@ export default class GenreDao {
     const songs = [];
 
     const map = new Map();
+    let index = 0;
     data.forEach((element) => {
       const song = new Song();
 
@@ -24,9 +25,16 @@ export default class GenreDao {
       song.band = element.band;
       song.title = element.title;
 
-      map.set(element.genre, new Genre());
-      song.genre = null;//new Genre();
-      // song.genre.title = element.genre;
+      if (!map.has(element.genre)) {
+        const genre = new Genre();
+
+        genre.id = index++;
+        genre.title = element.genre;
+        
+        map.set(element.genre, genre);
+      }
+      
+      song.genre = map.get(element.genre);
       
       song.text = element.text;
       song.score = element.score;
