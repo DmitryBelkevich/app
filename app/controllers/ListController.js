@@ -1,5 +1,5 @@
 import SongService from '../services/SongService.js';
-import SongService from '../services/GenreService.js';
+import GenreService from '../services/GenreService.js';
 import ListView from '../views/ListView.js';
 
 export default class ListController {
