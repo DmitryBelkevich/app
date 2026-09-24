@@ -16,14 +16,12 @@ export default class GenreDao {
 
     const genres = [...set];
     genres.forEach((title, index) => {
-      // const genre = new Genre();
+      const genre = new Genre();
 
-      // genre.id = index;
-      // genre.title = title;
+      genre.id = index;
+      genre.title = title;
 
-      // genres.push(genre);
-
-      console.log(title);
+      genres[index] = genre;
     });
 
     console.log(genres);
