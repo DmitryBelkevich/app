@@ -33,22 +33,26 @@ export default class ListView {
     
     element.textContent = band + " - " + title;
 
-    element.addEventListener('click', function(event) {
-      window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
-    });
+    // element.addEventListener('click', function(event) {
+    //   window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
+    // });
 
-    this.elements.push(element);
-    this.binds.push(this.bindSongElement);
+    const bind = (handler) => {
+      element.addEventListener('click', () => {
+        handler();
+      });
+    }
+
+    binds.push(bind);
 
     this.body.append(element);
   }
 
-  elements = [];
   binds = [];
 
-  bindSongElement(handler) {
-    this.elements[0].addEventListener("click", () => {
-      handler();
-    });
-  }
+  // bindSongElement(handler) {
+  //   this.elements[0].addEventListener("click", () => {
+  //     handler();
+  //   });
+  // }
 }
