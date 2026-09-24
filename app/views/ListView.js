@@ -37,10 +37,17 @@ export default class ListView {
       window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
     });
 
-    bindSongElement(handler) {}
+    () => {}
+
     // this.arr.push(e);
 
     this.body.append(element);
+  }
+
+  bindSongElement(handler, id) {
+    this.autoscroll_e.addEventListener("click", () => {
+      handler(id);
+    });
   }
 
   arr = [];
