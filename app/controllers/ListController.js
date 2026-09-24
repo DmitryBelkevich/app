@@ -17,5 +17,14 @@ export default class ListController {
         this.view.addSong(song.id, song.band, song.title);
       });
     });
+
+    // binds
+    this.view.binds.forEach((bind) => {
+      bind(this.f);
+    });
+  }
+
+  f = (id) => {
+    console.log(id);
   }
 }
