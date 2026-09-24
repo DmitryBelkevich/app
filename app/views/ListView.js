@@ -37,15 +37,17 @@ export default class ListView {
       window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
     });
 
-    this.elements.push(element);
+    this.elements.add(element);
+    this.binds.push(this.bindSongElement);
 
     this.body.append(element);
   }
 
   elements = [];
+  binds = [];
 
-  bindSongElement(handler, id) {
-    this.elements[id].addEventListener("click", () => {
+  bindSongElement(handler) {
+    this.elements[0].addEventListener("click", () => {
       handler();
     });
   }
