@@ -37,7 +37,9 @@ export default class ListView {
       window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
     });
 
-    const e = () => {}
+    const e = () => {
+      
+    }
 
     this.arr.push(e);
 
