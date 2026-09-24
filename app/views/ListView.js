@@ -26,7 +26,7 @@ export default class ListView {
     this.body.append(element);
   }
 
-  addSong(band, title) {
+  addSong(id, band, title) {
     const element = document.createElement("div");
     
     element.classList.add("song");
@@ -34,7 +34,7 @@ export default class ListView {
     element.textContent = band + " - " + title;
 
     element.addEventListener('click', function(event) {
-      console.log(event);
+      window.location.href = "https://dmitrybelkevich.github.io/app/song?id=" + id;
     });
 
     this.body.append(element);
