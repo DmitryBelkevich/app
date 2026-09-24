@@ -12,8 +12,6 @@ export default class GenreDao {
   async getAll() {
     const data = await this.jsonLoader.load(config.database + "songs.json");
 
-    console.log(data);
-
     const songs = [];
 
     const map = new Map();
@@ -30,7 +28,6 @@ export default class GenreDao {
 
         genre.id = index++;
         genre.title = element.genre;
-        //genre.songs
         
         map.set(element.genre, genre);
       }
@@ -49,27 +46,9 @@ export default class GenreDao {
       songs.push(song);
     });
 
-    console.log(map);
-
-    console.log(songs);
-
-    // const genresSet = new Set();
-    // data.forEach(song => genresSet.add(song.genre));
-
-    // const genres = Array.from(genresSet);
-    // genres.forEach((title, index) => {
-    //   const genre = new Genre();
-
-    //   genre.id = index;
-    //   genre.title = title;
-
-    //   genres[index] = genre;
-
-      // add genre.song
-    // });
-
-    // console.log(genres);
+    const genres = Array.from(map);
+    console.log(genres);
     
-    return [];//genres
+    return genres;
   }
 }
