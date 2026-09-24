@@ -46,7 +46,7 @@ export default class GenreDao {
       songs.push(song);
     });
 
-    const genres = Array.from(map);
+    const genres = Array.from(map.values());
     console.log(genres);
     
     return genres;
