@@ -1,6 +1,6 @@
 import config from '../config/config.js';
 
-import Song from '../models/Song.js';
+import Genre from '../models/Genre.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class GenreDao {
