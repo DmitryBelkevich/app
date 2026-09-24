@@ -14,7 +14,7 @@ export default class GenreDao {
     const set = new Set();
     data.forEach(song => set.add(song.genre));
 
-    const genres = [...set];
+    const genres = Arrays.from(set);
     genres.forEach((title, index) => {
       const genre = new Genre();
 
@@ -26,6 +26,6 @@ export default class GenreDao {
 
     console.log(genres);
     
-    return [];
+    return genres;
   }
 }
