@@ -23,12 +23,12 @@ export default class ListView {
     this.body.append(div);
   }
 
-  addSong(id, key, band, title) {
+  addSong(band, title) {
     const div = document.createElement("div");
     
     div.classList.add("song");
     
-    div.textContent = id + " | " + (key || "___") + " | " + band + " - " + title;
+    div.textContent = band + " - " + title;
 
     this.body.append(div);
   }
