@@ -38,8 +38,8 @@ export default class ListView {
     // });
 
     const bind = (handler) => {
-      element.addEventListener('click', () => {
-        handler();
+      element.addEventListener('click', (id) => {
+        handler(id);
       });
     }
 
