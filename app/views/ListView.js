@@ -43,7 +43,7 @@ export default class ListView {
       });
     }
 
-    binds.push(bind);
+    this.binds.push(bind);
 
     this.body.append(element);
   }
