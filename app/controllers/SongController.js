@@ -20,6 +20,8 @@ export default class SongController {
     // view
     this.view = new SongView();
 
+    // *** nav ***
+
     // *** title ***
     
     this.view.setPageTitle(this.song.band + " - " + this.song.title);
@@ -56,6 +58,10 @@ export default class SongController {
 
     // binding: view -> model
 
+    // *** nav ***
+
+    this.view.bindListButton(this.openList);
+
     // *** tabs ***
     
     this.view.bindTextTab(this.openText);
@@ -84,6 +90,12 @@ export default class SongController {
   }
 
   // *** handlers ***
+
+  // *** nav ***
+
+  openList = () => {
+    window.location.href = window.location.origin + "/app" + "/list";
+  }
 
   // *** tabs ***
 
