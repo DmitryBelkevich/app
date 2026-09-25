@@ -50,7 +50,7 @@ export default class ListView {
 
     // listener
     this.binds.push((handler) => {
-      element.addEventListener('click', () => {
+      container.addEventListener('click', () => {
         handler(id);
       });
     });
