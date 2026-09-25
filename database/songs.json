@@ -6025,6 +6025,9 @@
     "key": "Gm",
     "instruments": [
       {
+        "title": "Instrument"
+      },
+      {
         "title": "Bass Guitar"
       }
     ],
@@ -6121,7 +6124,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "5-string Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6136,7 +6142,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "5-string Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6172,7 +6181,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6188,7 +6200,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6204,7 +6219,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6219,7 +6237,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6234,7 +6255,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6249,7 +6273,10 @@
     "key": "Cm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "5-string Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6326,7 +6353,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6388,7 +6418,10 @@
     "key": "F#m",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6418,7 +6451,7 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
       }
     ],
     "visible": "true"
@@ -6433,7 +6466,7 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
       }
     ],
     "visible": "true"
@@ -6463,7 +6496,10 @@
     "key": "Ebm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6513,7 +6549,10 @@
     "key": "E",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6558,7 +6597,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6639,7 +6681,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6654,7 +6699,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6670,6 +6718,9 @@
     "instruments": [
       {
         "title": "Instrument"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6684,7 +6735,10 @@
     "key": "Dm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6718,7 +6772,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6734,6 +6791,9 @@
     "instruments": [
       {
         "title": "Instrument"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6750,7 +6810,10 @@
     "key": "Dm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -6767,7 +6830,10 @@
     "key": "Dm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
