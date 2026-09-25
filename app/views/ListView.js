@@ -19,13 +19,15 @@ export default class ListView {
   }
 
   addGenre(title) {
-    const element = document.createElement("div");
+    // container
+    const container = document.createElement("div");
+    container.classList.add("genre");
+    container.textContent = title;
 
-    element.classList.add("genre");
+    // components
 
-    element.textContent = title;
-
-    this.body.append(element);
+    // fill
+    this.body.append(container);
   }
 
   addSong(id, band, title) {
