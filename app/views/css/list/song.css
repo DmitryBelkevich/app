@@ -11,12 +11,18 @@
 
 .song {
   .title {
-    
+    margin: 0px;
+    padding: 0px;
   }
 }
 
 .song {
   .band {
-    
+    color: grey;
+  }
+  
+  .band {
+    margin-left: 10px;
+    padding: 0px;
   }
 }
