@@ -231,7 +231,7 @@ export default class SongView {
 
   // *** nav ***
 
-  bindListButtob(handler) {
+  bindListButton(handler) {
     this.list_button.addEventListener("click", () => {
       handler();
     });
