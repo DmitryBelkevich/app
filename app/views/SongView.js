@@ -15,7 +15,10 @@ export default class SongView {
     this.title.id = "title";
 
     this.title_e = document.createElement('div');
+    this.title_e.classList.add("title");
+    
     this.band_e = document.createElement('div');
+    this.band_e.classList.add("band");
     
     this.title.append(this.title_e, this.band_e);
     
