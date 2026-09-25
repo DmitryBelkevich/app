@@ -5,7 +5,14 @@ nav {
   background-color: lightgrey;
 
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
 }
 
 /* components */
+
+nav {
+  button {
+    margin: 0px;
+    padding: 10px;
+  }
+}
