@@ -29,14 +29,24 @@ export default class ListView {
   }
 
   addSong(id, band, title) {
-    const element = document.createElement("div");
-    
-    element.classList.add("song");
-    
-    element.textContent = band + " - " + title;
+    // container
+    const container = document.createElement("div");
+    container.classList.add("song");
 
-    this.body.append(element);
+    // components
+    const title = document.createElement("div");
+    title.classList.add("title");
+    title.textContent = title;
 
+    const band = document.createElement("div");
+    band.classList.add("band");
+    band.textContent = band;
+
+    // fill
+    container.append(title, band);
+    this.body.append(container);
+
+    // listener
     this.binds.push((handler) => {
       element.addEventListener('click', () => {
         handler(id);
