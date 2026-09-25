@@ -34,16 +34,16 @@ export default class ListView {
     container.classList.add("song");
 
     // components
-    const title = document.createElement("div");
-    title.classList.add("title");
-    title.textContent = title;
+    const title_e = document.createElement("div");
+    title_e.classList.add("title");
+    title_e.textContent = title;
 
-    const band = document.createElement("div");
-    band.classList.add("band");
-    band.textContent = band;
+    const band_e = document.createElement("div");
+    band_e.classList.add("band");
+    band_e.textContent = band;
 
     // fill
-    container.append(title, band);
+    container.append(title_e, band_e);
     this.body.append(container);
 
     // listener
