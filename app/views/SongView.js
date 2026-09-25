@@ -103,7 +103,7 @@ export default class SongView {
     this.footer.id = "footer";
     this.footer.textContent = "Copyright © Dmitry Belkevich";
     
-    // *** fill body ***
+    // *** fill container ***
     document.body.append(
       this.title,
       this.tabs,
