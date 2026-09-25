@@ -229,6 +229,14 @@ export default class SongView {
 
   // *** binding: view -> controller ***
 
+  // *** nav ***
+
+  bindListButtob(handler) {
+    this.list_button.addEventListener("click", () => {
+      handler();
+    });
+  }
+
   // *** tabs ***
   
   bindTextTab(handler) {
