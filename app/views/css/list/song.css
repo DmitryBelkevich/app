@@ -11,6 +11,10 @@
 
 .song {
   .title {
+    font-size: 100%;
+  }
+  
+  .title {
     margin: 0px;
     padding: 0px;
   }
