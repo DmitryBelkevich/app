@@ -4,10 +4,14 @@ export default class SongView {
   constructor() {
     this.cssLoader = new CssLoader();
 
-    // *** components ***
-    
     // reset css
     this.cssLoader.load("./app/views/css/reset.css");
+
+    // *** components ***
+
+    // Navigator
+    this.cssLoader.load("./app/views/css/song/nav.css");
+    this.nav = document.createElement("nav");
     
     // Title
     this.cssLoader.load("./app/views/css/song/title.css");
@@ -19,7 +23,8 @@ export default class SongView {
     
     this.band_e = document.createElement('div');
     this.band_e.classList.add("band");
-    
+
+    // fill container
     this.title.append(this.title_e, this.band_e);
     
     // Tab 1
@@ -44,7 +49,8 @@ export default class SongView {
     this.cssLoader.load("./app/views/css/song/tabs.css");
     this.tabs = document.createElement("div");
     this.tabs.id = "tabs";
-    
+
+    // fill container
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
 
     // *** settings ***
@@ -105,6 +111,7 @@ export default class SongView {
     
     // *** fill container ***
     document.body.append(
+      this.nav,
       this.title,
       this.tabs,
       this.settings,
