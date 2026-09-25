@@ -4463,7 +4463,10 @@
     "key": "Gm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "5-string Bass Guitar"
       }
     ],
     "visible": "true"
@@ -4478,7 +4481,10 @@
     "key": "Gm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -4494,7 +4500,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
