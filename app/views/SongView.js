@@ -12,6 +12,12 @@ export default class SongView {
     // Navigator
     this.cssLoader.load("./app/views/css/song/nav.css");
     this.nav = document.createElement("nav");
+
+    this.list_button = document.createElement("button");
+    this.list_button.textContent = "list";
+
+    // fill container
+    this.nav.append(this.list_button);
     
     // Title
     this.cssLoader.load("./app/views/css/song/title.css");
