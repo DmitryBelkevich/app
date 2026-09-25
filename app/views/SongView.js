@@ -14,7 +14,7 @@ export default class SongView {
     this.nav = document.createElement("nav");
 
     this.list_button = document.createElement("button");
-    this.list_button.textContent = "< list";
+    this.list_button.textContent = "◀️";
 
     // fill container
     this.nav.append(this.list_button);
