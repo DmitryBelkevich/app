@@ -14,10 +14,10 @@ export default class SongView {
     this.title = document.createElement("div");
     this.title.id = "title";
 
-    this.title_h = document.createElement('h1');
-    this.band_h = document.createElement('h2');
+    this.title_e = document.createElement('div');
+    this.band_e = document.createElement('div');
     
-    this.title.append(this.title_h, this.band_h);
+    this.title.append(this.title_e, this.band_e);
     
     // Tab 1
     this.tab_text = document.createElement("button");
@@ -122,11 +122,11 @@ export default class SongView {
   // *** title ***
 
   setTitle(title) {
-    this.title_h.textContent = title;
+    this.title_e.textContent = title;
   }
 
   setBand(band) {
-    this.band_h.textContent = band;
+    this.band_e.textContent = band;
   }
 
   // *** settings ***
