@@ -3146,7 +3146,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3161,7 +3164,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3176,7 +3182,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3191,7 +3200,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3207,7 +3219,10 @@
     "key": "C",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3223,7 +3238,10 @@
     "key": "C",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3238,7 +3256,10 @@
     "key": "G",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3254,7 +3275,10 @@
     "key": "A",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3269,7 +3293,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3284,7 +3311,10 @@
     "key": "A",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3299,7 +3329,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3329,7 +3362,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3344,7 +3380,10 @@
     "key": "C",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3359,7 +3398,10 @@
     "key": "Gm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3374,7 +3416,10 @@
     "key": "Gm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3403,7 +3448,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3418,7 +3466,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3433,7 +3484,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3448,7 +3502,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3481,7 +3538,10 @@
     "key": "G",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3496,7 +3556,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3511,7 +3574,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3526,22 +3592,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
-      }
-    ],
-    "visible": "true"
-  },
-  {
-    "id": "207",
-    "band": "Ночные Снайперы", "title": "31-я весна",
-    "genre": "Rock, Punk",
-    "text": "Rock, Punk/Ночные Снайперы/Ночные Снайперы - 31-я весна.html",
-    "score": "https://drive.google.com/file/d/1jtzrDAbAvYZyWXHUDSujyMNq2QY3ry7v/view?usp=drive_link",
-    "playback": "https://drive.google.com/drive/folders/1OkW3qP5W-1yu7Bgm9o75HsGzt9BEo6n8?usp=drive_link",
-    "key": "Dm",
-    "instruments": [
+        "title": "Guitar"
+      },
       {
-        "title": "Instrument"
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3557,7 +3611,10 @@
     "key": "Bm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3573,7 +3630,10 @@
     "key": "Dm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3605,7 +3665,7 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3621,7 +3681,10 @@
     "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3637,7 +3700,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3653,7 +3719,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3668,7 +3737,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3683,7 +3755,10 @@
     "key": "C#m",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3712,7 +3787,10 @@
     "key": "G#m",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3787,7 +3865,28 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "visible": "true"
+  },
+  {
+    "id": "207",
+    "band": "Ночные Снайперы", "title": "31-я весна",
+    "genre": "Rock, Punk",
+    "text": "Rock, Punk/Ночные Снайперы/Ночные Снайперы - 31-я весна.html",
+    "score": "https://drive.google.com/file/d/1jtzrDAbAvYZyWXHUDSujyMNq2QY3ry7v/view?usp=drive_link",
+    "playback": "https://drive.google.com/drive/folders/1OkW3qP5W-1yu7Bgm9o75HsGzt9BEo6n8?usp=drive_link",
+    "key": "Dm",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3863,7 +3962,10 @@
     "key": "C#m",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3878,7 +3980,10 @@
     "key": "Cm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3893,7 +3998,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
@@ -3909,7 +4017,10 @@
     "key": "C#m",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
