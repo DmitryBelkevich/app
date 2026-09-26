@@ -35,6 +35,7 @@ export default class GenreDao {
       song.genre = map.get(element.genre);
       song.genre.songs.push(song);
       
+      song.raiting = element.raiting;
       song.text = element.text;
       song.score = element.score;
       song.playback = element.playback;
