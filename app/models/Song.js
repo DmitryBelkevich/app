@@ -36,6 +36,14 @@ export default class Song {
     this.#title = title;
   }
 
+  // get genre() {
+  //   return this.#genre;
+  // }
+
+  // set genre(genre) {
+  //   this.#genre = genre;
+  // }
+
   get raiting() {
     return this.#raiting;
   }
