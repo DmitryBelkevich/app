@@ -44,8 +44,12 @@ export default class ListView {
     band_e.classList.add("band");
     band_e.textContent = band;
 
+    const raiting_e = document.createElement("div");
+    raiting_e.classList.add("raiting");
+    raiting_e.textContent = "⭐️⭐️⭐️";
+
     // fill
-    container.append(title_e, band_e);
+    container.append(title_e, band_e, raiting_e);
     this.body.append(container);
 
     // listener
