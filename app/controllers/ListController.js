@@ -14,8 +14,7 @@ export default class ListController {
       this.view.addGenre(genre.title);
 
       genre.songs.forEach((song) => {
-        const raiting = 3;
-        this.view.addSong(song.id, song.band, song.title, raiting);
+        this.view.addSong(song.id, song.band, song.title, song.raiting);
       });
     });
 
