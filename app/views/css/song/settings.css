@@ -17,7 +17,7 @@
 #settings {
   #key {
     font-size: 16px;
-    /* background: gold; */
+    background: gold;
   }
   
   #key {
@@ -37,6 +37,10 @@
 
   #key.original {
     background: lightgreen;
+  }
+
+  #key.transposed {
+    background: coral;
   }
 }
 
