@@ -32,6 +32,7 @@ export default class SongController {
 
     // 1. key-signature
 
+    console.log(this.song.transposition);
     this.view.setKey(this.song.key, this.song.transposition != 0);
 
     // 2. transposer
