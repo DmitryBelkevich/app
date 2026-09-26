@@ -30,7 +30,7 @@ export default class ListView {
     this.body.append(container);
   }
 
-  addSong(id, band, title) {
+  addSong(id, band, title, raiting) {
     // container
     const container = document.createElement("div");
     container.classList.add("song");
@@ -47,7 +47,8 @@ export default class ListView {
     const raiting_e = document.createElement("div");
     raiting_e.classList.add("raiting");
     raiting_e.textContent = "";
-    raiting_e.textContent += "⭐️";
+    for (let i = 0; i < raiting; i++)
+      raiting_e.textContent += "⭐️";
 
     // fill
     container.append(title_e, band_e, raiting_e);
