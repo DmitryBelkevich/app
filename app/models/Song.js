@@ -2,6 +2,8 @@ export default class Song {
   #id;
   #band;
   #title;
+  //#genre;
+  #raiting;
   #text;
   #score;
   #playback;
@@ -32,6 +34,14 @@ export default class Song {
 
   set title(title) {
     this.#title = title;
+  }
+
+  get raiting() {
+    return this.#raiting;
+  }
+
+  set raiting(raiting) {
+    this.#raiting = raiting;
   }
 
   get text() {
