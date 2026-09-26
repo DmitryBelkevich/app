@@ -35,8 +35,10 @@
     align-items: center;
   }
 
-  #key .original {
-    background: lightgreen;
+  #key {
+    .original {
+      background: lightgreen;
+    }
   }
 }
 
