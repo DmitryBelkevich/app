@@ -151,6 +151,7 @@ export default class SongView {
 
   setKey(key) {
     this.key_e.textContent = key;
+    this.key_e.classList.add("original");
   }
 
   // 2. transposer
