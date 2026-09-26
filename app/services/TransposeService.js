@@ -48,7 +48,7 @@ export default class TransposeService {
     this.#song.transposition++;
 
     // view
-    this.#view.setKey(this.#song.key);
+    this.#view.setKey(this.#song.key, false);
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
@@ -62,7 +62,7 @@ export default class TransposeService {
     this.#song.transposition--;
 
     // view
-    this.#view.setKey(this.#song.key);
+    this.#view.setKey(this.#song.key, false);
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
