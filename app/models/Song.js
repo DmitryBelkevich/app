@@ -2,7 +2,7 @@ export default class Song {
   #id;
   #band;
   #title;
-  //#genre;
+  #genre;
   #raiting;
   #text;
   #score;
@@ -36,13 +36,13 @@ export default class Song {
     this.#title = title;
   }
 
-  // get genre() {
-  //   return this.#genre;
-  // }
+  get genre() {
+    return this.#genre;
+  }
 
-  // set genre(genre) {
-  //   this.#genre = genre;
-  // }
+  set genre(genre) {
+    this.#genre = genre;
+  }
 
   get raiting() {
     return this.#raiting;
