@@ -46,7 +46,6 @@ export default class ListView {
 
     const raiting_e = document.createElement("div");
     raiting_e.classList.add("raiting");
-    raiting_e.textContent = "";
     for (let i = 0; i < raiting; i++)
       raiting_e.textContent += "⭐️";
 
