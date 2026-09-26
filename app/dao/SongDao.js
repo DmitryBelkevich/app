@@ -19,27 +19,27 @@ export default class SongDao {
   
   async getById(id) {
     const data = await this.jsonLoader.load(config.database + "songs.json");
-    const result = data.find(song => song.id == id) || null;
+    const element = data.find(song => song.id == id) || null;
 
-    if (!result)
+    if (!element)
       return null;
 
     const song = new Song();
 
-    song.id = result.id;
-    song.band = result.band;
-    song.title = result.title;
+    song.id = element.id;
+    song.band = element.band;
+    song.title = element.title;
     
     song.genre = new Genre();
-    song.genre.title = result.genre;
+    song.genre.title = element.genre;
     
-    song.raiting = result.raiting;
-    song.text = result.text;
-    song.score = result.score;
-    song.playback = result.playback;
-    song.key = result.key;
-    song.voices = result.voices;
-    song.instruments = result.instruments;
+    song.raiting = element.raiting;
+    song.text = element.text;
+    song.score = element.score;
+    song.playback = element.playback;
+    song.key = element.key;
+    song.voices = element.voices;
+    song.instruments = element.instruments;
 
     return song;
   }
