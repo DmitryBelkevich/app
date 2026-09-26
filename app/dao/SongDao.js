@@ -34,6 +34,7 @@ export default class SongDao {
     song.score = result.score;
     song.playback = result.playback;
     song.key = result.key;
+    song.transposition = result.transposition;
     song.voices = result.voices;
     song.instruments = result.instruments;
 
