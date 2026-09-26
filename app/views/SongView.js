@@ -150,7 +150,15 @@ export default class SongView {
   // 1. key-signature
 
   setKey(key) {
+    const isTransposed = false;
+
+    const transpositions = {
+      true: "transposed",
+      false: "original",
+    };
+    
     this.key_e.textContent = key;
+    this.key_e.classList.add(transpositions[isTransposed]);
   }
 
   // 2. transposer
