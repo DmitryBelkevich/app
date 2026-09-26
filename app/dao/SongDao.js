@@ -1,5 +1,6 @@
 import config from '../config/config.js';
 
+import Genre from '../models/Genre.js';
 import Song from '../models/Song.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
@@ -28,7 +29,10 @@ export default class SongDao {
     song.id = result.id;
     song.band = result.band;
     song.title = result.title;
-    // song.genre = result.genre;
+    
+    song.genre = new Genre();
+    song.genre.title = result.genre;
+    
     song.raiting = result.raiting;
     song.text = result.text;
     song.score = result.score;
