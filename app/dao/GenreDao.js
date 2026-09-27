@@ -46,8 +46,6 @@ export default class GenreDao {
       
       songs.push(song);
     });
-
-    console.log(songs);
     
     return Array.from(map.values());
   }
