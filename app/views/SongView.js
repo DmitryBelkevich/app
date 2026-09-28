@@ -66,8 +66,8 @@ export default class SongView {
     this.settings.id = "settings";
 
     // 1. key-signature
-    this.key_e = document.createElement("div");
-    this.key_e.id = "key";
+    this.key_global = document.createElement("div");
+    this.key_global.id = "key";
 
     // 2. transposer
     this.transpose_down = document.createElement("button");
@@ -82,13 +82,24 @@ export default class SongView {
     this.key_instrument = document.createElement("div");
     this.setKeyInstrument("Em");
 
+    // transposer (instrument)
+    this.transpose_local_down = document.createElement("button");
+    this.transpose_local_down.textContent = "🔽";
+
+    this.transpose_local_up = document.createElement("button");
+    this.transpose_local_up.textContent = "🔼";
+
     // 3. auto-scroll
     this.autoscroll_e = document.createElement("button");
     this.autoscroll_e.id = "autoscroll";
     this.autoscroll_e.textContent = "⏬";
 
     // fill settings
-    this.settings.append(this.key_e, this.transpose_down, this.transpose_up, this.key_instrument, this.autoscroll_e);
+    this.settings.append(
+      this.key_global, this.transpose_down, this.transpose_up,
+      this.key_instrument, this.transpose_local_down, this.transpose_local_up,
+      this.autoscroll_e
+    );
     
     // *** instrument ***
     
@@ -161,8 +172,8 @@ export default class SongView {
       false: "original",
     };
     
-    this.key_e.textContent = key;
-    this.key_e.classList.add(transpositions[isTransposed]);
+    this.key_global.textContent = key;
+    this.key_global.classList.add(transpositions[isTransposed]);
   }
 
   // 2. transposer
