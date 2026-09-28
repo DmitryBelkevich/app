@@ -42,7 +42,7 @@ export default class SongController {
 
     // 1. key-signature (global)
 
-    const transposition = this.song.transposition;
+    const transposition = this.song.transposition;console.log(transposition);
     if (transposition > 0) {
       for (let i = 0; i < transposition; i++)
         this.#transposer.upChord(this.song.key);
