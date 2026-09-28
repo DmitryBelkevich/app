@@ -29,6 +29,8 @@ export default class SongService {
     if (!song.key)
       song.key = "";
 
+    // song.transposition (global)
+
     song.instruments.forEach((instrument_obj, index) => {
       var instrument;
       
