@@ -42,15 +42,17 @@ export default class SongController {
 
     // 1. key-signature (global)
 
-    const transposition = this.song.transposition;console.log(transposition);
+    const transposition = this.song.transposition;
+    var key = this.song.key;
     if (transposition > 0) {
       for (let i = 0; i < transposition; i++)
-        this.#transposer.upChord(this.song.key);
+        key = this.#transposer.upChord(key);
     } else if (transposition < 0) {
       for (let i = transposition; i < 0; i++)
-        this.#transposer.downChord(this.song.key);
-    } else
-      this.view.setKeyGlobal(this.song.key);
+        key = this.#transposer.downChord(key);
+    }
+    
+    this.view.setKeyGlobal(key);
 
     // 2. transposer (global)
 
