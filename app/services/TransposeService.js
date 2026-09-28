@@ -13,6 +13,10 @@ export default class TransposeService {
     this.#view = view;
 
     this.#transposer = new Transposer();
+
+    //
+
+    console.log(this.#song);
   }
 
   getChords() {
