@@ -18,3 +18,21 @@ nav {
     padding: 5px;
   }
 }
+
+/* nav {
+  #autoscroll {
+    margin-left: auto;
+    margin-right: 5px;
+  }
+} */
+
+/* nav {
+  #autoscroll {
+    position: fixed;
+    
+    bottom: 20px;
+    right: 10px;
+
+    z-index: 1000;
+  }
+} */
