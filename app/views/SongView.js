@@ -81,7 +81,6 @@ export default class SongView {
     // 0. key-signature (local)
     this.key_local = document.createElement("div");
     this.key_local.id = "key-local";
-    this.setKeyLocal("Em");
 
     // 0. transposer (local)
     this.transpose_local_down = document.createElement("button");
@@ -165,7 +164,7 @@ export default class SongView {
 
   // 1. key-signature (global)
 
-  setKey(key) {
+  setKeyGlobal(key) {
     const isTransposed = false;
 
     const transpositions = {
