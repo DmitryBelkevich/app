@@ -92,6 +92,10 @@ export default class SongView {
     this.instrument = document.createElement("div");
     this.instrument.id = "instrument";
 
+    // 0. key-instrument
+    this.key_instrument = document.createElement("div");
+    this.key_instrument.textContent = "Em";
+
     // 1. dropdown
     this.dropdown = document.createElement("select");
 
@@ -102,7 +106,7 @@ export default class SongView {
     // 3. capo
 
     // fill instrument
-    this.instrument.append(this.dropdown, this.tuning);
+    this.instrument.append(this.key_instrument, this.dropdown, this.tuning);
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
