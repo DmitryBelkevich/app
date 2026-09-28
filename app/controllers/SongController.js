@@ -30,11 +30,11 @@ export default class SongController {
 
     // *** settings ***
 
-    // 1. key-signature
+    // 1. key-signature (global)
 
     this.view.setKey(this.song.key);
 
-    // 2. transposer
+    // 2. transposer (global)
 
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
@@ -70,11 +70,11 @@ export default class SongController {
 
     // *** settings ***
     
-    // 1. key-signature
+    // 1. key-signature (global)
     
-    // 2. transposer
-    this.view.bindTransposeDown(this.transpose_down);
-    this.view.bindTransposeUp(this.transpose_up);
+    // 2. transposer (global)
+    this.view.bindTransposeDown(this.transpose_global_down);
+    this.view.bindTransposeUp(this.transpose_global_up);
 
     // 3. auto-scroll
     this.view.bindAutoScroll(this.auto_scroll);
@@ -115,15 +115,15 @@ export default class SongController {
 
   // *** settings ***
 
-  // 1. key-signature
+  // 1. key-signature (global)
 
-  // 2. transposer
+  // 2. transposer (global)
 
-  transpose_down = () => {
+  transpose_global_down = () => {
     this.stateService.transposeService.transposeDown();
   }
 
-  transpose_up = () => {
+  transpose_global_up = () => {
     this.stateService.transposeService.transposeUp();
   }
 
