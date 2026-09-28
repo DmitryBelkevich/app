@@ -80,6 +80,7 @@ export default class SongView {
 
     // 0. key-instrument
     this.key_instrument = document.createElement("div");
+    this.key_instrument.id = "key-instrument";
     this.setKeyInstrument("Em");
 
     // transposer (instrument)
