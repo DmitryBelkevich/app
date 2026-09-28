@@ -19,9 +19,13 @@ export default class TransposeService {
     this.#song.instruments.forEach((instrument) => {
       instrument.transposition += this.#song.transposition;
 
-      instrument.tuning.forEach((note) => {
-        for (let i = this.#song.transposition; i < 0; i++)
+      instrument.tuning.forEach((note, index) => {
+        
+        
+        for (let i = this.#song.transposition; i < 0; i++) {
+          const note = instrument.tuning[index];
           note = this.#transposer.upChord(note);
+        }
       });
     });
     console.log(this.#song);
