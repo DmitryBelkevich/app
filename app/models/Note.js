@@ -5,6 +5,22 @@ export default class Note {
     this.#value = value;
   }
 
+  get value() {
+    return this.#value;
+  }
+
+  set value(value) {
+    this.#value = value;
+  }
+
+  valueOf() {
+    return this.#value;
+  }
+
+  toString() {
+    return this.#value;
+  }
+
   transpose(count) {
     if (count > 1) {
       for (let i = 0; i < count; i++)
