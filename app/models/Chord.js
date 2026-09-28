@@ -1,8 +1,20 @@
 export default class Chord {
+  #prefix;
   #value;
+  #postfix;
   
   constructor(value) {
+    this.#prefix = "";
     this.#value = value;
+    this.#postfix = "";
+
+    if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
+      this.#value = value.slice(0, 2);//A#
+      this.#postfix = value.slice(2);   // m
+    } else if (value[1] != "#" && value[1] != "b") {//Am
+      this.#value = value.slice(0, 1);//A
+      this.#postfix = value.slice(1);   //m
+    }
   }
 
   get value() {
@@ -29,7 +41,7 @@ export default class Chord {
       for (let i = count; i < 0; i++)
         this.down();
     
-    return this.#value;
+    return this.#value + this.#postfix;
   }
 
   up() {
@@ -70,7 +82,7 @@ export default class Chord {
     else if (this.#value == "Ab")
       this.#value = "A";
 
-    return this.#value;
+    return this.#value + this.#postfix;
   }
 
   down() {
@@ -111,6 +123,6 @@ export default class Chord {
     else if (this.#value == "Ab")
       this.#value = "G";
 
-    return this.#value;
+    return this.#value + this.#postfix;
   }
 }
