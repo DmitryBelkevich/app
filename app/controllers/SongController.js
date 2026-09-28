@@ -22,6 +22,11 @@ export default class SongController {
 
     // *** nav ***
 
+    // 1. list
+
+    // 2. auto-scroll
+    this.autoScroll = new AutoScroll();
+
     // *** title ***
     
     this.view.setPageTitle(this.song.band + " - " + this.song.title);
@@ -42,8 +47,7 @@ export default class SongController {
 
     // 0. transposer (local)
 
-    // 3. auto-scroll
-    this.autoScroll = new AutoScroll();
+    
 
     // *** instrument ***
 
@@ -66,7 +70,11 @@ export default class SongController {
 
     // *** nav ***
 
+    // 1. list
     this.view.bindListButton(this.openList);
+
+    // 2. auto-scroll
+    this.view.bindAutoScroll(this.auto_scroll);
 
     // *** tabs ***
     
@@ -82,14 +90,11 @@ export default class SongController {
     this.view.bindTransposeDownGlobal(this.transpose_down_global);
     this.view.bindTransposeUpGlobal(this.transpose_up_global);
 
-    // 0. key-signature (local)
+    // 3. key-signature (local)
 
-    // 0. transposer (local)
+    // 4. transposer (local)
     this.view.bindTransposeDownLocal(this.transpose_down_local);
     this.view.bindTransposeUpLocal(this.transpose_up_local);
-
-    // 3. auto-scroll
-    this.view.bindAutoScroll(this.auto_scroll);
 
     // *** settings ***
 
@@ -105,8 +110,18 @@ export default class SongController {
 
   // *** nav ***
 
+  // 1. list
+
   openList = () => {
     window.location.href = window.location.origin + "/app" + "/list";
+  }
+
+  // 2. auto-scroll
+  
+  auto_scroll = () => {
+    // this.autoScroll.speed = 10;
+    
+    this.autoScroll.run();
   }
 
   // *** tabs ***
@@ -139,9 +154,9 @@ export default class SongController {
     this.stateService.transposeService.transposeUp();
   }
 
-  // 0. key-signature (local)
+  // 3. key-signature (local)
 
-  // 0. transposer (local)
+  // 4. transposer (local)
 
   transpose_down_local = () => {
     console.log("transpose_down_local");
@@ -149,14 +164,6 @@ export default class SongController {
 
   transpose_up_local = () => {
     console.log("transpose_up_local");
-  }
-
-  // 3. auto-scroll
-  
-  auto_scroll = () => {
-    // this.autoScroll.speed = 10;
-    
-    this.autoScroll.run();
   }
 
   // *** instrument ***
