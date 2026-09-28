@@ -78,23 +78,23 @@ export default class SongView {
     this.transpose_up.id = "transpose_up";
     this.transpose_up.textContent = "🔼";
 
+    // 0. key-instrument
+    this.key_instrument = document.createElement("div");
+    this.setKeyInstrument("Em");
+
     // 3. auto-scroll
     this.autoscroll_e = document.createElement("button");
     this.autoscroll_e.id = "autoscroll";
     this.autoscroll_e.textContent = "⏬";
 
     // fill settings
-    this.settings.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
+    this.settings.append(this.key_e, this.transpose_down, this.transpose_up, this.key_instrument, this.autoscroll_e);
     
     // *** instrument ***
     
     this.cssLoader.load("./app/views/css/song/instrument.css");
     this.instrument = document.createElement("div");
     this.instrument.id = "instrument";
-
-    // 0. key-instrument
-    this.key_instrument = document.createElement("div");
-    this.setKeyInstrument("Em");
 
     // 1. dropdown
     this.dropdown = document.createElement("select");
@@ -106,7 +106,7 @@ export default class SongView {
     // 3. capo
 
     // fill instrument
-    this.instrument.append(this.key_instrument, this.dropdown, this.tuning);
+    this.instrument.append(this.dropdown, this.tuning);
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -167,15 +167,15 @@ export default class SongView {
 
   // 2. transposer
 
-  // 3. autoscroll
-
-  // *** instrument ***
-
   // 0. key-instrument
 
   setKeyInstrument(key) {
     this.key_instrument.textContent = key;
   }
+
+  // 3. autoscroll
+
+  // *** instrument ***
 
   // 1. dropdown
 
