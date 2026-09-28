@@ -311,13 +311,13 @@ export default class SongView {
   // 0. transposer (local)
 
   bindTransposeDownLocal(handler) {
-    this.transpose_down_local.addEventListener("click", () => {
+    this.transpose_local_down.addEventListener("click", () => {
       handler();
     });
   }
 
   bindTransposeUpLocal(handler) {
-    this.transpose_up_local.addEventListener("click", () => {
+    this.transpose_local_up.addEventListener("click", () => {
       handler();
     });
   }
