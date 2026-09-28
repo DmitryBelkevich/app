@@ -379,10 +379,12 @@
     "key": "Dm",
     "instruments": [
       {
-        "title": "Guitar"
+        "title": "Guitar",
+        "tuning": ["D", "G", "C", "F", "A", "D"]
       },
       {
-        "title": "Bass Guitar"
+        "title": "Bass Guitar",
+        "tuning": ["D", "G", "C", "F"]
       }
     ],
     "visible": "true"
