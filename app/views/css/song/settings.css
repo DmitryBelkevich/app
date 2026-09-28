@@ -14,9 +14,9 @@
 
 /* components */
 
+/* key-global */
+
 #settings {
-  /* key-global */
-  
   #key-global {
     font-size: 16px;
     background: gold;
@@ -44,9 +44,11 @@
   #key-global.transposed {
     background: coral;
   }
+}
 
-  /* key-local */
+/* key-local */
 
+#settings {
   #key-local {
     font-size: 16px;
     background: gold;
@@ -74,11 +76,15 @@
   #key-local.transposed {
     background: coral;
   }
+}
 
+#settings {
   #key-local {
     margin-left: 40px;
   }
 }
+
+/* buttons */
 
 #settings {
   button {
@@ -86,23 +92,5 @@
     
     margin: 0px  0px  0px 5px;
     padding: 5px;
-  }
-}
-
-/* #settings {
-  #autoscroll {
-    margin-left: auto;
-    margin-right: 5px;
-  }
-} */
-
-#settings {
-  #autoscroll {
-    position: fixed;
-    
-    bottom: 20px;
-    right: 10px;
-
-    z-index: 1000;
   }
 }

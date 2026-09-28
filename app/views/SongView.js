@@ -13,11 +13,17 @@ export default class SongView {
     this.cssLoader.load("./app/views/css/song/nav.css");
     this.nav = document.createElement("nav");
 
+    // 1. list
     this.list_button = document.createElement("button");
     this.list_button.textContent = "◀️";
 
+    // 2. auto-scroll
+    this.autoscroll_e = document.createElement("button");
+    this.autoscroll_e.id = "autoscroll";
+    this.autoscroll_e.textContent = "⏬";
+
     // fill container
-    this.nav.append(this.list_button);
+    this.nav.append(this.list_button, this.autoscroll_e);
     
     // Title
     this.cssLoader.load("./app/views/css/song/title.css");
@@ -78,27 +84,21 @@ export default class SongView {
     this.transpose_up_global.id = "transpose_up_global";
     this.transpose_up_global.textContent = "🔼";
 
-    // 0. key-signature (local)
+    // 3. key-signature (local)
     this.key_local = document.createElement("div");
     this.key_local.id = "key-local";
 
-    // 0. transposer (local)
+    // 4. transposer (local)
     this.transpose_down_local = document.createElement("button");
     this.transpose_down_local.textContent = "🔽";
 
     this.transpose_up_local = document.createElement("button");
     this.transpose_up_local.textContent = "🔼";
 
-    // 3. auto-scroll
-    this.autoscroll_e = document.createElement("button");
-    this.autoscroll_e.id = "autoscroll";
-    this.autoscroll_e.textContent = "⏬";
-
     // fill settings
     this.settings.append(
-      this.key_global, this.transpose_down_global, this.transpose_up_global,
+      this.key_global, this.transpose_down_global, this.transpose_up_global
       // this.key_local, this.transpose_down_local, this.transpose_up_local,
-      this.autoscroll_e
     );
     
     // *** instrument ***
@@ -150,6 +150,10 @@ export default class SongView {
     document.title = title;
   }
 
+  // 1. list
+
+  // 2. autoscroll
+
   // *** title ***
 
   setTitle(title) {
@@ -178,15 +182,13 @@ export default class SongView {
 
   // 2. transposer (global)
 
-  // 0. key-signature (local)
+  // 3. key-signature (local)
 
   setKeyLocal(key) {
     this.key_local.textContent = key;
   }
 
-  // 0. transposer (local)
-
-  // 3. autoscroll
+  // 4. transposer (local)
 
   // *** instrument ***
 
@@ -262,8 +264,18 @@ export default class SongView {
 
   // *** nav ***
 
+  // 1. list
+
   bindListButton(handler) {
     this.list_button.addEventListener("click", () => {
+      handler();
+    });
+  }
+
+  // 2. auto-scroll
+  
+  bindAutoScroll(handler) {
+    this.autoscroll_e.addEventListener("click", () => {
       handler();
     });
   }
@@ -306,9 +318,9 @@ export default class SongView {
     });
   }
 
-  // 0. key-signature (local)
+  // 3. key-signature (local)
 
-  // 0. transposer (local)
+  // 4. transposer (local)
 
   bindTransposeDownLocal(handler) {
     this.transpose_down_local.addEventListener("click", () => {
@@ -318,14 +330,6 @@ export default class SongView {
 
   bindTransposeUpLocal(handler) {
     this.transpose_up_local.addEventListener("click", () => {
-      handler();
-    });
-  }
-
-  // 3. auto-scroll
-  
-  bindAutoScroll(handler) {
-    this.autoscroll_e.addEventListener("click", () => {
       handler();
     });
   }
