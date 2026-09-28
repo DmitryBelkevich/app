@@ -79,8 +79,8 @@ export default class SongController {
     // 1. key-signature (global)
     
     // 2. transposer (global)
-    this.view.bindTransposeDown(this.transpose_global_down);
-    this.view.bindTransposeUp(this.transpose_global_up);
+    this.view.bindTransposeDownGlobal(this.transpose_global_down);
+    this.view.bindTransposeUpGlobal(this.transpose_global_up);
 
     // 0. key-signature (local)
 
