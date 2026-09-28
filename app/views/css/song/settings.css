@@ -14,9 +14,9 @@
 
 /* components */
 
+/* key-global */
+
 #settings {
-  /* key-global */
-  
   #key-global {
     font-size: 16px;
     background: gold;
@@ -44,9 +44,11 @@
   #key-global.transposed {
     background: coral;
   }
+}
 
-  /* key-local */
+/* key-local */
 
+#settings {
   #key-local {
     font-size: 16px;
     background: gold;
