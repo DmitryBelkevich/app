@@ -8,6 +8,10 @@ nav {
   padding: 5px 0px;
 }
 
+nav {
+  display: flex;
+}
+
 /* components */
 
 nav {
