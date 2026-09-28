@@ -4,10 +4,13 @@ export default class Chord extends Note {
   #value;
   
   #prefix;
-  #note;
+  
   #postfix;
+
+  #chord;
   
   constructor(value) {
+    suoer(value);
     // this.#prefix = "";
     this.#value = value;
     // this.#postfix = "";
