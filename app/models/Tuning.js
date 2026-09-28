@@ -1,4 +1,22 @@
 export default class Tuning extends Array {
+  transpose(count) {
+    this.forEach((note, index) => {
+      note.transpose(count);
+    });
+  }
+
+  up() {
+    this.forEach((note, index) => {
+      note.up();
+    });
+  }
+
+  down() {
+    this.forEach((note, index) => {
+      note.down();
+    });
+  }
+  
   isStandard() {
     const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
     
