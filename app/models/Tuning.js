@@ -18,7 +18,7 @@ export default class Tuning extends Array {
   }
   
   isStandard() {
-    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
     
     // *** Guitars ***
     
@@ -39,7 +39,7 @@ export default class Tuning extends Array {
   }
 
   droppedTo() {
-    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
     
     // *** Guitars ***
     
@@ -113,7 +113,7 @@ export default class Tuning extends Array {
   }
 
   get title() {
-    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
     
     // *** Guitars ***
     
