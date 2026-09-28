@@ -290,21 +290,25 @@ export default class SongView {
 
   // *** settings ***
 
-  // 1. key-signature
+  // 1. key-signature (global)
 
-  // 2. transposer
+  // 2. transposer (global)
 
-  bindTransposeDown(handler) {
+  bindTransposeDownGlobal(handler) {
     this.transpose_down_global.addEventListener("click", () => {
       handler();
     });
   }
   
-  bindTransposeUp(handler) {
+  bindTransposeUpGlobal(handler) {
     this.transpose_up_global.addEventListener("click", () => {
       handler();
     });
   }
+
+  // 0. key-signature (local)
+
+  // 0. transposer (local)
 
   // 3. auto-scroll
   
