@@ -82,6 +82,10 @@ export default class SongController {
     this.view.bindTransposeDown(this.transpose_global_down);
     this.view.bindTransposeUp(this.transpose_global_up);
 
+    // 0. key-signature (local)
+
+    // 0. transposer (local)
+
     // 3. auto-scroll
     this.view.bindAutoScroll(this.auto_scroll);
 
