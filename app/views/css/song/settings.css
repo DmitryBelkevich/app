@@ -88,21 +88,3 @@
     padding: 5px;
   }
 }
-
-/* #settings {
-  #autoscroll {
-    margin-left: auto;
-    margin-right: 5px;
-  }
-} */
-
-#settings {
-  #autoscroll {
-    position: fixed;
-    
-    bottom: 20px;
-    right: 10px;
-
-    z-index: 1000;
-  }
-}
