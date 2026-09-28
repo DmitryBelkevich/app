@@ -67,7 +67,7 @@ export default class SongService {
       }
       
       song.instruments[index] = instrument;
-    });
+    });console.log(instrument_obj);
 
     // TODO
     
