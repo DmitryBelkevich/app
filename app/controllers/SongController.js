@@ -30,11 +30,17 @@ export default class SongController {
 
     // *** settings ***
 
-    // 1. key-signature
+    // 1. key-signature (global)
 
-    this.view.setKey(this.song.key);
+    this.view.setKeyGlobal(this.song.key);
 
-    // 2. transposer
+    // 2. transposer (global)
+
+    // 0. key-signature (local)
+
+    // this.view.setKeyLocal("Em");
+
+    // 0. transposer (local)
 
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
@@ -70,11 +76,17 @@ export default class SongController {
 
     // *** settings ***
     
-    // 1. key-signature
+    // 1. key-signature (global)
     
-    // 2. transposer
-    this.view.bindTransposeDown(this.transpose_down);
-    this.view.bindTransposeUp(this.transpose_up);
+    // 2. transposer (global)
+    this.view.bindTransposeDownGlobal(this.transpose_down_global);
+    this.view.bindTransposeUpGlobal(this.transpose_up_global);
+
+    // 0. key-signature (local)
+
+    // 0. transposer (local)
+    this.view.bindTransposeDownLocal(this.transpose_down_local);
+    this.view.bindTransposeUpLocal(this.transpose_up_local);
 
     // 3. auto-scroll
     this.view.bindAutoScroll(this.auto_scroll);
@@ -115,16 +127,28 @@ export default class SongController {
 
   // *** settings ***
 
-  // 1. key-signature
+  // 1. key-signature (global)
 
-  // 2. transposer
+  // 2. transposer (global)
 
-  transpose_down = () => {
+  transpose_down_global = () => {
     this.stateService.transposeService.transposeDown();
   }
 
-  transpose_up = () => {
+  transpose_up_global = () => {
     this.stateService.transposeService.transposeUp();
+  }
+
+  // 0. key-signature (local)
+
+  // 0. transposer (local)
+
+  transpose_down_local = () => {
+    console.log("transpose_down_local");
+  }
+
+  transpose_up_local = () => {
+    console.log("transpose_up_local");
   }
 
   // 3. auto-scroll

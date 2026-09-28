@@ -65,18 +65,29 @@ export default class SongView {
     this.settings = document.createElement("div");
     this.settings.id = "settings";
 
-    // 1. key-signature
-    this.key_e = document.createElement("div");
-    this.key_e.id = "key";
+    // 1. key-signature (global)
+    this.key_global = document.createElement("div");
+    this.key_global.id = "key-global";
 
-    // 2. transposer
-    this.transpose_down = document.createElement("button");
-    this.transpose_down.id = "transpose_down";
-    this.transpose_down.textContent = "🔽";
+    // 2. transposer (global)
+    this.transpose_down_global = document.createElement("button");
+    this.transpose_down_global.id = "transpose_down_global";
+    this.transpose_down_global.textContent = "🔽";
 
-    this.transpose_up = document.createElement("button");
-    this.transpose_up.id = "transpose_up";
-    this.transpose_up.textContent = "🔼";
+    this.transpose_up_global = document.createElement("button");
+    this.transpose_up_global.id = "transpose_up_global";
+    this.transpose_up_global.textContent = "🔼";
+
+    // 0. key-signature (local)
+    this.key_local = document.createElement("div");
+    this.key_local.id = "key-local";
+
+    // 0. transposer (local)
+    this.transpose_down_local = document.createElement("button");
+    this.transpose_down_local.textContent = "🔽";
+
+    this.transpose_up_local = document.createElement("button");
+    this.transpose_up_local.textContent = "🔼";
 
     // 3. auto-scroll
     this.autoscroll_e = document.createElement("button");
@@ -84,7 +95,11 @@ export default class SongView {
     this.autoscroll_e.textContent = "⏬";
 
     // fill settings
-    this.settings.append(this.key_e, this.transpose_down, this.transpose_up, this.autoscroll_e);
+    this.settings.append(
+      this.key_global, this.transpose_down_global, this.transpose_up_global,
+      // this.key_local, this.transpose_down_local, this.transpose_up_local,
+      this.autoscroll_e
+    );
     
     // *** instrument ***
     
@@ -147,9 +162,9 @@ export default class SongView {
 
   // *** settings ***
 
-  // 1. key-signature
+  // 1. key-signature (global)
 
-  setKey(key) {
+  setKeyGlobal(key) {
     const isTransposed = false;
 
     const transpositions = {
@@ -157,11 +172,19 @@ export default class SongView {
       false: "original",
     };
     
-    this.key_e.textContent = key;
-    this.key_e.classList.add(transpositions[isTransposed]);
+    this.key_global.textContent = key;
+    this.key_global.classList.add(transpositions[isTransposed]);
   }
 
-  // 2. transposer
+  // 2. transposer (global)
+
+  // 0. key-signature (local)
+
+  setKeyLocal(key) {
+    this.key_local.textContent = key;
+  }
+
+  // 0. transposer (local)
 
   // 3. autoscroll
 
@@ -267,18 +290,34 @@ export default class SongView {
 
   // *** settings ***
 
-  // 1. key-signature
+  // 1. key-signature (global)
 
-  // 2. transposer
+  // 2. transposer (global)
 
-  bindTransposeDown(handler) {
-    this.transpose_down.addEventListener("click", () => {
+  bindTransposeDownGlobal(handler) {
+    this.transpose_down_global.addEventListener("click", () => {
       handler();
     });
   }
   
-  bindTransposeUp(handler) {
-    this.transpose_up.addEventListener("click", () => {
+  bindTransposeUpGlobal(handler) {
+    this.transpose_up_global.addEventListener("click", () => {
+      handler();
+    });
+  }
+
+  // 0. key-signature (local)
+
+  // 0. transposer (local)
+
+  bindTransposeDownLocal(handler) {
+    this.transpose_down_local.addEventListener("click", () => {
+      handler();
+    });
+  }
+
+  bindTransposeUpLocal(handler) {
+    this.transpose_up_local.addEventListener("click", () => {
       handler();
     });
   }
