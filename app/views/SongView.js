@@ -83,11 +83,11 @@ export default class SongView {
     this.key_local.id = "key-local";
 
     // 0. transposer (local)
-    this.transpose_local_down = document.createElement("button");
-    this.transpose_local_down.textContent = "🔽";
+    this.transpose_down_local = document.createElement("button");
+    this.transpose_down_local.textContent = "🔽";
 
-    this.transpose_local_up = document.createElement("button");
-    this.transpose_local_up.textContent = "🔼";
+    this.transpose_up_local = document.createElement("button");
+    this.transpose_up_local.textContent = "🔼";
 
     // 3. auto-scroll
     this.autoscroll_e = document.createElement("button");
@@ -97,7 +97,7 @@ export default class SongView {
     // fill settings
     this.settings.append(
       this.key_global, this.transpose_down_global, this.transpose_up_global,
-      this.key_local, this.transpose_local_down, this.transpose_local_up,
+      this.key_local, this.transpose_down_local, this.transpose_up_local,
       this.autoscroll_e
     );
     
@@ -311,13 +311,13 @@ export default class SongView {
   // 0. transposer (local)
 
   bindTransposeDownLocal(handler) {
-    this.transpose_local_down.addEventListener("click", () => {
+    this.transpose_down_local.addEventListener("click", () => {
       handler();
     });
   }
 
   bindTransposeUpLocal(handler) {
-    this.transpose_local_up.addEventListener("click", () => {
+    this.transpose_up_local.addEventListener("click", () => {
       handler();
     });
   }
