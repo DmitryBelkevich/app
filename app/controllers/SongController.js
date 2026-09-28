@@ -145,15 +145,15 @@ export default class SongController {
   // 2. transposer (global)
 
   transpose_down_global = () => {
-    console.log("transpose down Playback");
+    console.log("transpose down global");
     
-    this.stateService.transposeService.transposeDown();
+    console.log("transpose down Playback");
   }
 
   transpose_up_global = () => {
-    console.log("transpose up Playback");
+    console.log("transpose up global");
     
-    this.stateService.transposeService.transposeUp();
+    console.log("transpose up Playback");
   }
 
   // 3. key-signature (local)
@@ -161,11 +161,11 @@ export default class SongController {
   // 4. transposer (local)
 
   transpose_down_local = () => {
-    console.log("transpose_down_local");
+    this.stateService.transposeService.transposeDown();
   }
 
   transpose_up_local = () => {
-    console.log("transpose_up_local");
+    this.stateService.transposeService.transposeUp();
   }
 
   // *** instrument ***
