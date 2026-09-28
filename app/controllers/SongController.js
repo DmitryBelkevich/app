@@ -38,7 +38,7 @@ export default class SongController {
 
     // 0. key-signature (local)
 
-    this.view.setKeyGlobal("Em");
+    this.view.setKeyLocal("Em");
 
     // 0. transposer (local)
 
