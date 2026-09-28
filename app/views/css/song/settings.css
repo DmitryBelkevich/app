@@ -76,7 +76,9 @@
   #key-local.transposed {
     background: coral;
   }
+}
 
+#settings {
   #key-local {
     margin-left: 40px;
   }
