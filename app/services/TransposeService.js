@@ -24,7 +24,7 @@ export default class TransposeService {
         
         for (let i = this.#song.transposition; i < 0; i++) {
           const note = instrument.tuning[index];
-          note = this.#transposer.upChord(note);
+          instrument.tuning[index] = this.#transposer.upChord(note);
         }
       });
     });
