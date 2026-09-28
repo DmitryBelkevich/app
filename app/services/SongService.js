@@ -64,8 +64,6 @@ export default class SongService {
 
         if (instrument instanceof Guitar)
           instrument.transposition = instrument.tuning.droppedTo();
-
-        console.log(instrument.tuning.droppedTo());
       }
       
       song.instruments[index] = instrument;
