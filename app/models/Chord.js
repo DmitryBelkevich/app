@@ -4,9 +4,9 @@ export default class Chord {
   #postfix;
   
   constructor(value) {
-    this.#prefix = "";
-    this.#value = value;
-    this.#postfix = "";
+    // this.#prefix = "";
+    // this.#value = value;
+    // this.#postfix = "";
 
     if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
       this.#value = value.slice(0, 2);//A#
