@@ -161,12 +161,14 @@ export default class SongController {
 
   transpose_down_global = () => {
     console.log("transpose down Playback");
-    console.log("transpose down global");
+    console.log("transpose down global key");
+    console.log("transpose down tuning");
   }
 
   transpose_up_global = () => {
     console.log("transpose up Playback");
-    console.log("transpose up global");
+    console.log("transpose up global key");
+    console.log("transpose up tuning");
   }
 
   // 3. key-signature (local)
