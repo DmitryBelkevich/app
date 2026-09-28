@@ -20,6 +20,7 @@ export default class TransposeService {
       instrument.transposition += this.#song.transposition;
 
       instrument.tuning.forEach((note) => {
+        note = "A";
         console.log(note);
       });
     });
