@@ -70,13 +70,13 @@ export default class SongView {
     this.key_global.id = "key-global";
 
     // 2. transposer (global)
-    this.transpose_down = document.createElement("button");
-    this.transpose_down.id = "transpose_down";
-    this.transpose_down.textContent = "🔽";
+    this.transpose_down_global = document.createElement("button");
+    this.transpose_down_global.id = "transpose_down_global";
+    this.transpose_down_global.textContent = "🔽";
 
-    this.transpose_up = document.createElement("button");
-    this.transpose_up.id = "transpose_up";
-    this.transpose_up.textContent = "🔼";
+    this.transpose_up_global = document.createElement("button");
+    this.transpose_up_global.id = "transpose_up_global";
+    this.transpose_up_global.textContent = "🔼";
 
     // 0. key-signature (local)
     this.key_local = document.createElement("div");
@@ -96,7 +96,7 @@ export default class SongView {
 
     // fill settings
     this.settings.append(
-      this.key_global, this.transpose_down, this.transpose_up,
+      this.key_global, this.transpose_down_global, this.transpose_up_global,
       this.key_local, this.transpose_local_down, this.transpose_local_up,
       this.autoscroll_e
     );
@@ -295,13 +295,13 @@ export default class SongView {
   // 2. transposer
 
   bindTransposeDown(handler) {
-    this.transpose_down.addEventListener("click", () => {
+    this.transpose_down_global.addEventListener("click", () => {
       handler();
     });
   }
   
   bindTransposeUp(handler) {
-    this.transpose_up.addEventListener("click", () => {
+    this.transpose_up_global.addEventListener("click", () => {
       handler();
     });
   }
