@@ -127,6 +127,18 @@ export default class SongController {
     this.stateService.transposeService.transposeUp();
   }
 
+  // 0. key-signature (local)
+
+  // 0. transposer (local)
+
+  transpose_local_down = () => {
+    console.log("transpose_local_down");
+  }
+
+  transpose_local_up = () => {
+    console.log("transpose_local_up");
+  }
+
   // 3. auto-scroll
   
   auto_scroll = () => {
