@@ -32,7 +32,7 @@ export default class SongService {
 
     // song.transposition (global)
 
-    song.instruments.forEach((instrument_obj, index) => {
+    song.instruments.forEach((instrument_obj, index) => {console.log(instrument_obj);
       var instrument;
       
       if (instrument_obj.title == "Instrument") {
@@ -67,7 +67,7 @@ export default class SongService {
       }
       
       song.instruments[index] = instrument;
-    });console.log(instrument_obj);
+    });
 
     // TODO
     
