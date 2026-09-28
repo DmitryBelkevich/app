@@ -32,7 +32,7 @@ export default class SongController {
 
     // 1. key-signature (global)
 
-    this.view.setKey(this.song.key);
+    this.view.setKeyGlobal(this.song.key);
 
     // 2. transposer (global)
 
