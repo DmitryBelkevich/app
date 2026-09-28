@@ -3,6 +3,7 @@ import config from '../config/config.js';
 import SongDao from '../dao/SongDao.js';
 
 import Tuning from '../models/Tuning.js';
+import Tuning from '../models/Note.js';
 
 import Instrument from '../models/Instrument.js';
 import Keyboards from '../models/Keyboards.js';
@@ -47,8 +48,13 @@ export default class SongService {
           instrument = new FiveStringBassGuitar();
         }
 
-        if (instrument_obj.tuning)
-          instrument.tuning = new Tuning(...instrument_obj.tuning);
+        if (instrument_obj.tuning) {
+          const notes = [...instrument_obj.tuning];
+          notes.forEach((note, index) => {
+            notes[index] = new Note(note);
+          });
+          instrument.tuning = new Tuning(...notes);
+        }
 
         if (instrument_obj.capo)
           instrument.capo = instrument_obj.capo;
