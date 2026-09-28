@@ -17,7 +17,7 @@ export default class TransposeService {
     //
 
     this.#song.instruments.forEach((instrument) => {
-      instrument.transposition += this.#song.transposition;
+      instrument.transposition = instrument.transposition + this.#song.transposition;
 
       instrument.tuning.transpose(this.#song.transposition);
     });
