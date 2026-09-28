@@ -8,9 +8,9 @@ nav {
   padding: 5px 0px;
 }
 
-nav {
+/* nav {
   display: flex;
-}
+} */
 
 /* components */
 
@@ -23,14 +23,14 @@ nav {
   }
 }
 
-nav {
+/* nav {
   #autoscroll {
     margin-left: auto;
     margin-right: 5px;
   }
-}
+} */
 
-/* nav {
+nav {
   #autoscroll {
     position: fixed;
     
@@ -39,4 +39,4 @@ nav {
 
     z-index: 1000;
   }
-} */
+}
