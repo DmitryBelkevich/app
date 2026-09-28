@@ -36,6 +36,12 @@ export default class SongController {
 
     // 2. transposer (global)
 
+    // 0. key-signature (local)
+
+    this.view.setKeyGlobal("Em");
+
+    // 0. transposer (local)
+
     // 3. auto-scroll
     this.autoScroll = new AutoScroll();
 
