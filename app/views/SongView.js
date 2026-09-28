@@ -97,7 +97,7 @@ export default class SongView {
     // fill settings
     this.settings.append(
       this.key_global, this.transpose_down_global, this.transpose_up_global,
-      this.key_local, this.transpose_down_local, this.transpose_up_local,
+      // this.key_local, this.transpose_down_local, this.transpose_up_local,
       this.autoscroll_e
     );
     
