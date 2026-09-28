@@ -145,10 +145,14 @@ export default class SongController {
   // 2. transposer (global)
 
   transpose_down_global = () => {
+    console.log("transpose down Playback");
+    
     this.stateService.transposeService.transposeDown();
   }
 
   transpose_up_global = () => {
+    console.log("transpose up Playback");
+    
     this.stateService.transposeService.transposeUp();
   }
 
