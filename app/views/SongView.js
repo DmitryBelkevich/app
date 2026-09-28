@@ -65,11 +65,11 @@ export default class SongView {
     this.settings = document.createElement("div");
     this.settings.id = "settings";
 
-    // 1. key-signature
+    // 1. key-signature (global)
     this.key_global = document.createElement("div");
     this.key_global.id = "key";
 
-    // 2. transposer
+    // 2. transposer (global)
     this.transpose_down = document.createElement("button");
     this.transpose_down.id = "transpose_down";
     this.transpose_down.textContent = "🔽";
@@ -78,12 +78,12 @@ export default class SongView {
     this.transpose_up.id = "transpose_up";
     this.transpose_up.textContent = "🔼";
 
-    // 0. key-instrument
-    this.key_instrument = document.createElement("div");
-    this.key_instrument.id = "key-instrument";
-    this.setKeyInstrument("Em");
+    // 0. key-signature (local)
+    this.key_local = document.createElement("div");
+    this.key_local.id = "key-instrument";
+    this.setKeyLocal("Em");
 
-    // transposer (instrument)
+    // 0. transposer (local)
     this.transpose_local_down = document.createElement("button");
     this.transpose_local_down.textContent = "🔽";
 
@@ -98,7 +98,7 @@ export default class SongView {
     // fill settings
     this.settings.append(
       this.key_global, this.transpose_down, this.transpose_up,
-      this.key_instrument, this.transpose_local_down, this.transpose_local_up,
+      this.key_local, this.transpose_local_down, this.transpose_local_up,
       this.autoscroll_e
     );
     
@@ -163,7 +163,7 @@ export default class SongView {
 
   // *** settings ***
 
-  // 1. key-signature
+  // 1. key-signature (global)
 
   setKey(key) {
     const isTransposed = false;
@@ -177,13 +177,15 @@ export default class SongView {
     this.key_global.classList.add(transpositions[isTransposed]);
   }
 
-  // 2. transposer
+  // 2. transposer (global)
 
-  // 0. key-instrument
+  // 0. key-signature (local)
 
-  setKeyInstrument(key) {
-    this.key_instrument.textContent = key;
+  setKeyLocal(key) {
+    this.key_local.textContent = key;
   }
+
+  // 0. transposer (local)
 
   // 3. autoscroll
 
