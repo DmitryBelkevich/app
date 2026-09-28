@@ -74,6 +74,10 @@
   #key-local.transposed {
     background: coral;
   }
+
+  #key-local {
+    margin-left: 20px;
+  }
 }
 
 #settings {
