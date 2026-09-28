@@ -85,6 +85,8 @@ export default class SongController {
     // 0. key-signature (local)
 
     // 0. transposer (local)
+    this.view.bindTransposeDownLocal(this.transpose_local_down);
+    this.view.bindTransposeUpLocal(this.transpose_local_up);
 
     // 3. auto-scroll
     this.view.bindAutoScroll(this.auto_scroll);
