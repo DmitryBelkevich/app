@@ -10,9 +10,9 @@ export default class Chord extends Note {
   #chord;
   
   constructor(value) {
-    suoer(value);
+    super(value);
     // this.#prefix = "";
-    this.#value = value;
+    // this.#value = value;
     // this.#postfix = "";
 
     if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
