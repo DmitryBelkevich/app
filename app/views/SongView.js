@@ -94,7 +94,7 @@ export default class SongView {
 
     // 0. key-instrument
     this.key_instrument = document.createElement("div");
-    this.key_instrument.textContent = "Em";
+    this.setKeyInstrument("Em");
 
     // 1. dropdown
     this.dropdown = document.createElement("select");
@@ -170,6 +170,12 @@ export default class SongView {
   // 3. autoscroll
 
   // *** instrument ***
+
+  // 0. key-instrument
+
+  setKeyInstrument(key) {
+    this.key_instrument.textContent = key;
+  }
 
   // 1. dropdown
 
