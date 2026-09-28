@@ -173,11 +173,11 @@
     "instruments": [
       {
         "title": "Guitar",
-        "tuning": ["D", "A", "D", "G", "B", "E"]
+        "tuning": ["C#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
-        "tuning": ["D", "A", "D", "G"]
+        "tuning": ["C#", "G#", "C#", "F#"]
       }
     ],
     "visible": "true"
