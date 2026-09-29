@@ -28,6 +28,8 @@ export default class Chord extends Note {
         return;
     });
 
+    console.log(chars);
+
     // notes
     chars.forEach((char) => {//['A', '#', '#', 'm']
       if (notes.includes(char)) {
@@ -36,6 +38,8 @@ export default class Chord extends Note {
       } else
         return;
     });
+
+    console.log(chars);
 
     this.#postfix.concat(chars);
 
