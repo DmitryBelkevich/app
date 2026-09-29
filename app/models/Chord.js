@@ -7,17 +7,31 @@ export default class Chord extends Note {
   #chord = "";
   
   constructor(chord) {
-    // this.#chord = chord;
-    const note = chord[0];
-    super(note);
+    super("");
 
-    this.#chord = this.#prefix + note + this.#postfix;
-    
-    // this.#prefix = "";
-    // this.#value = value;
-    // this.#postfix = "";
+    // parser
 
+    const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
+    // prefix
+    var chars = chord.split("");//['.', 'A', '#', '#', 'm']
+    chars.forEach((char) => {
+      if (!notes.includes(chars)) {
+        this.#prefix.concat(char);
+        chars = chars.slice(1);
+      } else
+        return;
+    });
+
+    // notes
+    chars.forEach((char) => {//['A', '#', '#', 'm']
+      if (notes.includes(chars)) {
+        this.#note.concat(char);
+        chars = chars.slice(1);
+      }
+    });
+
+    this.#postfix.concat(chars);
 
     // if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
     //   this.#note = value.slice(0, 2);//A#
