@@ -4,6 +4,7 @@ import SongDao from '../dao/SongDao.js';
 
 import Tuning from '../models/Tuning.js';
 import Note from '../models/Note.js';
+import Chord from '../models/Chord.js';
 
 import Instrument from '../models/Instrument.js';
 import Keyboards from '../models/Keyboards.js';
