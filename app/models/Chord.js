@@ -28,7 +28,7 @@ export default class Chord extends Note {
         return;
     });
 
-    console.log(chars);
+    // console.log(chars);
 
     // notes
     chars.forEach((char) => {//['A', '#', '#', 'm']
