@@ -84,7 +84,7 @@ export default class SongService {
         instrument.chords = song.text;
     });
 
-    //
+    // instrument.tuning
 
     song.instruments.forEach((instrument) => {
       instrument.transposition += song.transposition;
