@@ -29,25 +29,24 @@ export default class Chord {
         index++;
       } else
         break;
-    };
+    }
 
     chars = chars.slice(index);
 
-    console.log(this.#prefix);
-    console.log(chars);
-
     // note
-    // chars.forEach((char) => {//['A', '#', '#', 'm']
-    //   if (notes.includes(char)) {
-    //     this.note.concat(char);
-    //     chars = chars.slice(1);
-    //   } else
-    //     return;
-    // });
+    var note = "";
+    for (const char of chars) {//['A', '#', '#', 'm']
+      if (!notes.includes(char)) {
+        note = note.concat(char);
+        index++;
+      } else
+        break;
+    }
 
-    this.#note = new Note("");
+    this.#note = new Note(note);
 
-    // console.log(chars);
+    console.log(chars);
+    console.log(this.#note);
 
     // this.#postfix.concat(chars);
 
