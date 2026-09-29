@@ -1,16 +1,17 @@
 import Note from "./Note.js";
 
 export default class Chord extends Note {
-  #prefix;
-  
-  #postfix;
+  #prefix = "";
+  #postfix = "";
 
-  #chord;
+  #chord = "";
   
   constructor(chord) {
     // this.#chord = chord;
-    const note = chord[0]
+    const note = chord[0];
     super(note);
+
+    this.#chord = this.#prefix + chord + this.#postfix;
     
     // this.#prefix = "";
     // this.#value = value;
