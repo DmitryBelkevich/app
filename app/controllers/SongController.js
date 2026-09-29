@@ -3,14 +3,11 @@ import SongService from '../services/SongService.js';
 import SongView from '../views/SongView.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
-import Transposer from '../helpers/Transposer.js';
 
 import StateService from '../services/StateService.js';
 
 export default class SongController {
   #params;
-
-  #transposer;
 
   async init() {
     this.#params = new URLSearchParams(window.location.search);
@@ -19,8 +16,6 @@ export default class SongController {
     // model
     this.songService = new SongService();
     this.song = await this.songService.getById(id);
-
-    this.#transposer = new Transposer();
 
     // view
     this.view = new SongView();
