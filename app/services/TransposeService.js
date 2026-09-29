@@ -21,7 +21,7 @@ export default class TransposeService {
     const lines = document.querySelectorAll('div.chords');
     
     lines.forEach(line => {
-    const line_arr = line.querySelectorAll('div');
+      const line_arr = line.querySelectorAll('div');
       this.#chords.push(...line_arr);
     });
   }
