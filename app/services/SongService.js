@@ -74,14 +74,16 @@ export default class SongService {
     
     // set CHORDS_LINK for each instruments
     song.instruments.forEach((instrument) => {
-      const index = song.text.length - ".html".length;
+      // const index = song.text.length - ".html".length;
       
-      if (instrument.capo > 0)
-        instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
-      else if (instrument.transposition < 0 || instrument.transposition > 0)
-        instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
-      else
-        instrument.chords = song.text;
+      // if (instrument.capo > 0)
+      //   instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
+      // else if (instrument.transposition < 0 || instrument.transposition > 0)
+      //   instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
+      // else
+      //   instrument.chords = song.text;
+
+      instrument.chords = song.text;
     });
 
     // instrument.tuning
