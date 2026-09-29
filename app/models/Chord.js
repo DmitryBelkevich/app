@@ -28,7 +28,8 @@ export default class Chord extends Note {
       if (notes.includes(chars)) {
         this.#note.concat(char);
         chars = chars.slice(1);
-      }
+      } else
+        return;
     });
 
     this.#postfix.concat(chars);
