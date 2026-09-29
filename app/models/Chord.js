@@ -11,7 +11,7 @@ export default class Chord extends Note {
     const note = chord[0];
     super(note);
 
-    this.#chord = this.#prefix + chord + this.#postfix;
+    this.#chord = this.#prefix + note + this.#postfix;
     
     // this.#prefix = "";
     // this.#value = value;
