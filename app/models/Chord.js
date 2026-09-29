@@ -28,7 +28,7 @@ export default class Chord extends Note {
         this.#prefix = this.#prefix.concat(char);
         // chars = chars.slice(1);
       } else
-        return;
+        break;
     };
 
     console.log(this.#prefix);
