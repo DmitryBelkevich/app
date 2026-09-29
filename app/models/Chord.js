@@ -10,7 +10,7 @@ export default class Chord extends Note {
   constructor(chord) {
     this.#chord = chord;
     
-    super(value[0]);
+    super(chord[0]);
     
     // this.#prefix = "";
     // this.#value = value;
