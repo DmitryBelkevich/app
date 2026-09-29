@@ -1,24 +1,24 @@
 export default class Note {
-  #value;
+  #note;
   
-  constructor(value) {
-    this.#value = value;
+  constructor(note) {
+    this.#note = note;
   }
 
-  get value() {
-    return this.#value;
+  get note() {
+    return this.#note;
   }
 
-  set value(value) {
-    this.#value = value;
+  set note(note) {
+    this.#note = note;
   }
 
   valueOf() {
-    return this.#value;
+    return this.#note;
   }
 
   toString() {
-    return this.#value;
+    return this.#note;
   }
 
   transpose(count) {
@@ -29,88 +29,88 @@ export default class Note {
       for (let i = count; i < 0; i++)
         this.down();
     
-    return this.#value;
+    return this.#note;
   }
 
   up() {
-    if (this.#value == "A")
-      this.#value = "A#";
-    else if (this.#value == "B")
-      this.#value = "C";
-    else if (this.#value == "C")
-      this.#value = "C#";
-    else if (this.#value == "D")
-      this.#value = "D#";
-    else if (this.#value == "E")
-      this.#value = "F";
-    else if (this.#value == "F")
-      this.#value = "F#";
-    else if (this.#value == "G")
-      this.#value = "G#";
+    if (this.#note == "A")
+      this.#note = "A#";
+    else if (this.#note == "B")
+      this.#note = "C";
+    else if (this.#note == "C")
+      this.#note = "C#";
+    else if (this.#note == "D")
+      this.#note = "D#";
+    else if (this.#note == "E")
+      this.#note = "F";
+    else if (this.#note == "F")
+      this.#note = "F#";
+    else if (this.#note == "G")
+      this.#note = "G#";
       
-    else if (this.#value == "A#")
-      this.#value = "B";
-    else if (this.#value == "C#")
-      this.#value = "D";
-    else if (this.#value == "D#")
-      this.#value = "E";
-    else if (this.#value == "F#")
-      this.#value = "G";
-    else if (this.#value == "G#")
-      this.#value = "A";
+    else if (this.#note == "A#")
+      this.#note = "B";
+    else if (this.#note == "C#")
+      this.#note = "D";
+    else if (this.#note == "D#")
+      this.#note = "E";
+    else if (this.#note == "F#")
+      this.#note = "G";
+    else if (this.#note == "G#")
+      this.#note = "A";
 
-    else if (this.#value == "Bb")
-      this.#value = "B";
-    else if (this.#value == "Db")
-      this.#value = "D";
-    else if (this.#value == "Eb")
-      this.#value = "E";
-    else if (this.#value == "Gb")
-      this.#value = "G";
-    else if (this.#value == "Ab")
-      this.#value = "A";
+    else if (this.#note == "Bb")
+      this.#note = "B";
+    else if (this.#note == "Db")
+      this.#note = "D";
+    else if (this.#note == "Eb")
+      this.#note = "E";
+    else if (this.#note == "Gb")
+      this.#note = "G";
+    else if (this.#note == "Ab")
+      this.#note = "A";
 
-    return this.#value;
+    return this.#note;
   }
 
   down() {
-    if (this.#value == "A")
-      this.#value = "Ab";
-    else if (this.#value == "B")
-      this.#value = "Bb";
-    else if (this.#value == "C")
-      this.#value = "B";
-    else if (this.#value == "D")
-      this.#value = "Db";
-    else if (this.#value == "E")
-      this.#value = "Eb";
-    else if (this.#value == "F")
-      this.#value = "E";
-    else if (this.#value == "G")
-      this.#value = "Gb";
+    if (this.#note == "A")
+      this.#note = "Ab";
+    else if (this.#note == "B")
+      this.#note = "Bb";
+    else if (this.#note == "C")
+      this.#note = "B";
+    else if (this.#note == "D")
+      this.#note = "Db";
+    else if (this.#note == "E")
+      this.#note = "Eb";
+    else if (this.#note == "F")
+      this.#note = "E";
+    else if (this.#note == "G")
+      this.#note = "Gb";
       
-    else if (this.#value == "A#")
-      this.#value = "A";
-    else if (this.#value == "C#")
-      this.#value = "C";
-    else if (this.#value == "D#")
-      this.#value = "D";
-    else if (this.#value == "F#")
-      this.#value = "F";
-    else if (this.#value == "G#")
-      this.#value = "G";
+    else if (this.#note == "A#")
+      this.#note = "A";
+    else if (this.#note == "C#")
+      this.#note = "C";
+    else if (this.#note == "D#")
+      this.#note = "D";
+    else if (this.#note == "F#")
+      this.#note = "F";
+    else if (this.#note == "G#")
+      this.#note = "G";
 
-    else if (this.#value == "Bb")
-      this.#value = "A";
-    else if (this.#value == "Db")
-      this.#value = "C";
-    else if (this.#value == "Eb")
-      this.#value = "D";
-    else if (this.#value == "Gb")
-      this.#value = "F";
-    else if (this.#value == "Ab")
-      this.#value = "G";
+    else if (this.#note == "Bb")
+      this.#note = "A";
+    else if (this.#note == "Db")
+      this.#note = "C";
+    else if (this.#note == "Eb")
+      this.#note = "D";
+    else if (this.#note == "Gb")
+      this.#note = "F";
+    else if (this.#note == "Ab")
+      this.#note = "G";
 
-    return this.#value;
+    return this.#note;
   }
 }
