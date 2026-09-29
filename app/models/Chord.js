@@ -1,14 +1,14 @@
 import Note from "./Note.js";
 
-export default class Chord extends Note {
+export default class Chord {
   #prefix = "";
+  #note;
   #postfix = "";
 
   #chord = "";
   
   constructor(chord) {
-    super("");
-
+    this.#note = new Note();
     this.parser(chord);
     
     console.log(this);
