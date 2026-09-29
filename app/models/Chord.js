@@ -26,27 +26,27 @@ export default class Chord extends Note {
     chars.forEach((char) => {
       if (!notes.includes(char)) {
         this.#prefix.concat(char);
-        chars = chars.slice(1);
+        // chars = chars.slice(1);
       } else
         return;
     });
 
-    console.log(chars);
+    console.log(this.#prefix);
 
     // notes
-    chars.forEach((char) => {//['A', '#', '#', 'm']
-      if (notes.includes(char)) {
-        this.note.concat(char);
-        chars = chars.slice(1);
-      } else
-        return;
-    });
+    // chars.forEach((char) => {//['A', '#', '#', 'm']
+    //   if (notes.includes(char)) {
+    //     this.note.concat(char);
+    //     chars = chars.slice(1);
+    //   } else
+    //     return;
+    // });
 
-    console.log(chars);
+    // console.log(chars);
 
-    this.#postfix.concat(chars);
+    // this.#postfix.concat(chars);
 
-    this.#chord = this.#prefix + this.note + this.#postfix;
+    // this.#chord = this.#prefix + this.note + this.#postfix;
   }
 
   transpose(count) {
