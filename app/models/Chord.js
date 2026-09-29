@@ -9,7 +9,7 @@ export default class Chord extends Note {
   
   constructor(value) {
     console.log(value);
-    super(value);
+    super(value[0]);
     // this.#prefix = "";
     // this.#value = value;
     // this.#postfix = "";
