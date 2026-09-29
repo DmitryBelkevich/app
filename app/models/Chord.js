@@ -9,8 +9,6 @@ export default class Chord {
   
   constructor(chord) {
     this.parser(chord);
-    
-    console.log(this);
   }
 
   parser(chord) {
