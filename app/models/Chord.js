@@ -1,7 +1,7 @@
 import Note from "./Note.js";
 
 export default class Chord extends Note {
-  #prefix = "[";
+  #prefix = "";
   #postfix = "";
 
   #chord = "";
@@ -25,7 +25,7 @@ export default class Chord extends Note {
     
     chars.forEach((char) => {
       if (!notes.includes(char)) {
-        this.#prefix.concat(char);
+        this.#prefix = this.#prefix.concat(char);
         // chars = chars.slice(1);
       } else
         return;
