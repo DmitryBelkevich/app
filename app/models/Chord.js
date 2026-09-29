@@ -19,7 +19,7 @@ export default class Chord extends Note {
     
     // prefix
     var chars = chord.split("");//['.', 'A', '#', '#', 'm']
-    console.log(chars);
+    
     chars.forEach((char) => {
       if (!notes.includes(chars)) {
         this.#prefix.concat(char);
@@ -27,6 +27,8 @@ export default class Chord extends Note {
       } else
         return;
     });
+
+    console.log(chars);
 
     // notes
     chars.forEach((char) => {//['A', '#', '#', 'm']
