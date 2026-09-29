@@ -23,13 +23,13 @@ export default class Chord extends Note {
 
     console.log(chars);
     
-    chars.forEach((char) => {
+    for(const char of chars) {
       if (!notes.includes(char)) {
         this.#prefix = this.#prefix.concat(char);
         // chars = chars.slice(1);
       } else
         return;
-    });
+    };
 
     console.log(this.#prefix);
 
