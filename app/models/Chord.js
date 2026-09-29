@@ -8,12 +8,13 @@ export default class Chord extends Note {
   #chord;
   
   constructor(value) {
+    console.log(value);
     super(value);
     // this.#prefix = "";
     // this.#value = value;
     // this.#postfix = "";
 
-    console.log(this.value);
+    
 
     // if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
     //   this.#note = value.slice(0, 2);//A#
