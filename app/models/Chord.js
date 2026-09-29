@@ -8,9 +8,9 @@ export default class Chord extends Note {
   #chord;
   
   constructor(chord) {
-    this.#chord = chord;
-    
-    super(chord[0]);
+    // this.#chord = chord;
+    const note = chord[0]
+    super(note);
     
     // this.#prefix = "";
     // this.#value = value;
