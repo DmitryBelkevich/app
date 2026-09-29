@@ -2,6 +2,7 @@ import config from '../config/config.js';
 
 import Genre from '../models/Genre.js';
 import Song from '../models/Song.js';
+import Chord from '../models/Chord.js';
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class GenreDao {
@@ -39,7 +40,7 @@ export default class GenreDao {
       song.text = element.text;
       song.score = element.score;
       song.playback = element.playback;
-      song.key = element.key;
+      song.key = new Chord(element.key);
       song.transposition = element.transposition;
       song.voices = element.voices;
       song.instruments = element.instruments;
