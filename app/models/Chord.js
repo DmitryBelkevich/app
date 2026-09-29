@@ -51,14 +51,20 @@ export default class Chord {
   }
 
   transpose(count) {
-    return this.#prefix + this.#note.transpose(count) + this.#postfix;
+    this.#chord = this.#prefix + this.#note.transpose(count) + this.#postfix;
+    
+    return this.#chord;
   }
 
   up() {
-    return this.#prefix + this.#note.up() + this.#postfix;
+    this.#chord = this.#prefix + this.#note.up() + this.#postfix;
+    
+    return this.#chord;
   }
 
   down() {
-    return this.#prefix + this.#note.down() + this.#postfix;
+    this.#chord = this.#prefix + this.#note.down() + this.#postfix;
+    
+    return this.#chord;
   }
 }
