@@ -1,7 +1,7 @@
 import Note from "./Note.js";
 
 export default class Chord extends Note {
-  #prefix = "";
+  #prefix = "[";
   #postfix = "";
 
   #chord = "";
