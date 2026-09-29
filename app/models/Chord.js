@@ -13,7 +13,7 @@ export default class Chord {
     console.log(this);
   }
 
-  parser(chord) {
+  parser(chord ) {
     chord = "._A##m(sus4)";
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
