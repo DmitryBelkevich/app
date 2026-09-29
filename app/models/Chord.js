@@ -23,6 +23,8 @@ export default class Chord extends Note {
     //   this.#note = value.slice(0, 1);//A
     //   this.#postfix = value.slice(1);   //m
     // }
+
+    console.log(this);
   }
 
   transpose(count) {
