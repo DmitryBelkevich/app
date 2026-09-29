@@ -22,10 +22,10 @@ export default class Note {
   }
 
   transpose(count) {
-    if (count > 1) {
+    if (count > 0) {
       for (let i = 0; i < count; i++)
         this.up();
-    } else if (count < 1)
+    } else if (count < 0)
       for (let i = count; i < 0; i++)
         this.down();
     
