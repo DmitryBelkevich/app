@@ -69,12 +69,6 @@ export default class SongService {
       song.instruments[index] = instrument;
     });
 
-    song.instruments.forEach((instrument) => {
-      instrument.transposition += song.transposition;
-
-      instrument.tuning.transpose(song.transposition);
-    });
-
     // TODO
     
     // set CHORDS_LINK for each instruments
@@ -87,6 +81,14 @@ export default class SongService {
         instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
       else
         instrument.chords = song.text;
+    });
+
+    //
+
+    song.instruments.forEach((instrument) => {
+      instrument.transposition += song.transposition;
+
+      instrument.tuning.transpose(song.transposition);
     });
     
     return song;
