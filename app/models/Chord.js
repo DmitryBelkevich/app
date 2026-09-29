@@ -9,12 +9,17 @@ export default class Chord extends Note {
   constructor(chord) {
     super("");
 
-    // parser
+    this.parser(chord);
+    
+    console.log(this);
+  }
 
+  parser(chord) {
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
     // prefix
     var chars = chord.split("");//['.', 'A', '#', '#', 'm']
+    console.log(chars);
     chars.forEach((char) => {
       if (!notes.includes(chars)) {
         this.#prefix.concat(char);
@@ -35,8 +40,6 @@ export default class Chord extends Note {
     this.#postfix.concat(chars);
 
     this.#chord = this.#prefix + this.note + this.#postfix;
-
-    console.log(this);
   }
 
   transpose(count) {
