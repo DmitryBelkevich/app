@@ -31,27 +31,23 @@ export default class Chord {
 
     chars = chars.slice(index);
 
-    console.log(chars);
-
     // note
     var note = "";
     index = 0;
     for (const char of chars) {// ['A', '#', '#', 'm', '(', 's', 'u', 's', '4', ')']
-      if (!notes.includes(char)) {
+      if (notes.includes(char)) {
         note = note.concat(char);
         index++;
       } else
         break;
     }
 
-    console.log(note);
+    chars = chars.slice(index);
 
-    // chars = chars.slice(index);
+    this.#note = new Note(note);
 
-    // this.#note = new Note(note);
-
-    // console.log(chars);
-    // console.log(this.#note);
+    console.log(chars);
+    console.log(this.#note);
 
     // this.#postfix.concat(chars);
 
