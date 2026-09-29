@@ -13,7 +13,7 @@ export default class Chord extends Note {
     // this.#value = value;
     // this.#postfix = "";
 
-    console.log(this.#value);
+    console.log(this.value);
 
     // if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
     //   this.#note = value.slice(0, 2);//A#
