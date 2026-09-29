@@ -28,7 +28,7 @@ export default class SongService {
     song.text = config.storage + song.text;
 
     if (!song.key)
-      song.key = "";
+      song.key = new Chord("");
 
     // song.transposition (global)
 
