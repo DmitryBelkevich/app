@@ -26,7 +26,7 @@ export default class Chord extends Note {
     // notes
     chars.forEach((char) => {//['A', '#', '#', 'm']
       if (notes.includes(chars)) {
-        this.#note.concat(char);
+        this.note.concat(char);
         chars = chars.slice(1);
       } else
         return;
@@ -34,13 +34,7 @@ export default class Chord extends Note {
 
     this.#postfix.concat(chars);
 
-    // if (value[1] == "#" || value[1] == "b") {//A#m -> A# m
-    //   this.#note = value.slice(0, 2);//A#
-    //   this.#postfix = value.slice(2);   // m
-    // } else if (value[1] != "#" && value[1] != "b") {//Am
-    //   this.#note = value.slice(0, 1);//A
-    //   this.#postfix = value.slice(1);   //m
-    // }
+    this.#chord = this.#prefix + this.note + this.#postfix;
 
     console.log(this);
   }
