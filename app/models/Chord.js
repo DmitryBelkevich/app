@@ -18,7 +18,7 @@ export default class Chord {
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
     // prefix
-    var chars = chord.split("");// ['.', 'A', '#', '#', 'm']
+    var chars = chord.split("");// ['.', '_', 'A', '#', '#', 'm', '(', 's', 'u', 's', '4', ')']
 
     var index = 0;
     for (const char of chars) {
@@ -36,7 +36,7 @@ export default class Chord {
     // note
     var note = "";
     index = 0;
-    for (const char of chars) {//['A', '#', '#', 'm']
+    for (const char of chars) {// ['A', '#', '#', 'm', '(', 's', 'u', 's', '4', ')']
       if (!notes.includes(char)) {
         note = note.concat(char);
         index++;
@@ -44,10 +44,14 @@ export default class Chord {
         break;
     }
 
-    this.#note = new Note(note);
+    console.log(note);
 
-    console.log(chars);
-    console.log(this.#note);
+    // chars = chars.slice(index);
+
+    // this.#note = new Note(note);
+
+    // console.log(chars);
+    // console.log(this.#note);
 
     // this.#postfix.concat(chars);
 
