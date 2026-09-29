@@ -46,12 +46,11 @@ export default class Chord {
 
     this.#note = new Note(note);
 
-    console.log(chars);
-    console.log(this.#note);
+    // postfix
+    this.#postfix = chars.join("");
 
-    // this.#postfix.concat(chars);
-
-    // this.#chord = this.#prefix + this.note + this.#postfix;
+    // chord
+    this.#chord = this.#prefix + this.#note.toString() + this.#postfix;
   }
 
   transpose(count) {
