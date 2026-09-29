@@ -15,10 +15,13 @@ export default class Chord extends Note {
   }
 
   parser(chord) {
+    chord = ".A##m(sus4)";
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
     // prefix
     var chars = chord.split("");//['.', 'A', '#', '#', 'm']
+
+    console.log(chars);
     
     chars.forEach((char) => {
       if (!notes.includes(char)) {
