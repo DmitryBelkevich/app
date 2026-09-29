@@ -14,11 +14,10 @@ export default class Chord {
   }
 
   parser(chord) {
-    chord = "._A##m(sus4)";
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
     // prefix
-    var chars = chord.split("");// ['.', '_', 'A', '#', '#', 'm', '(', 's', 'u', 's', '4', ')']
+    var chars = chord.split("");
 
     var index = 0;
     for (const char of chars) {
@@ -34,7 +33,7 @@ export default class Chord {
     // note
     var note = "";
     index = 0;
-    for (const char of chars) {// ['A', '#', '#', 'm', '(', 's', 'u', 's', '4', ')']
+    for (const char of chars) {
       if (notes.includes(char)) {
         note = note.concat(char);
         index++;
@@ -54,14 +53,14 @@ export default class Chord {
   }
 
   transpose(count) {
-    return super.transpose(count) + this.#postfix;
+    return this.#prefix + this.#note.transpose(count) + this.#postfix;
   }
 
   up() {
-    return super.up() + this.#postfix;
+    return this.#prefix + this.#note.up() + this.#postfix;
   }
 
   down() {
-    return super.down() + this.#postfix;
+    return this.#prefix + this.#note.down() + this.#postfix;
   }
 }
