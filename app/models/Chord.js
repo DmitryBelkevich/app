@@ -18,12 +18,12 @@ export default class Chord {
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
     // prefix
-    var chars = chord.split("");//['.', 'A', '#', '#', 'm']
+    var chars = chord.split("");// ['.', 'A', '#', '#', 'm']
 
     console.log(chars);
 
     var index = 0;
-    for(const char of chars) {
+    for (const char of chars) {
       if (!notes.includes(char)) {
         this.#prefix = this.#prefix.concat(char);
         index++;
