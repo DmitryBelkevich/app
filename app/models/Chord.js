@@ -35,6 +35,7 @@ export default class Chord {
 
     // note
     var note = "";
+    index = 0;
     for (const char of chars) {//['A', '#', '#', 'm']
       if (!notes.includes(char)) {
         note = note.concat(char);
