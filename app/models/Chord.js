@@ -21,18 +21,16 @@ export default class Chord extends Note {
     var chars = chord.split("");//['.', 'A', '#', '#', 'm']
     
     chars.forEach((char) => {
-      if (!notes.includes(chars)) {
+      if (!notes.includes(char)) {
         this.#prefix.concat(char);
         chars = chars.slice(1);
       } else
         return;
     });
 
-    console.log(chars);
-
     // notes
     chars.forEach((char) => {//['A', '#', '#', 'm']
-      if (notes.includes(chars)) {
+      if (notes.includes(char)) {
         this.note.concat(char);
         chars = chars.slice(1);
       } else
