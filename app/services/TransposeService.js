@@ -13,15 +13,6 @@ export default class TransposeService {
     this.#view = view;
 
     this.#transposer = new Transposer();
-
-    //
-
-    this.#song.instruments.forEach((instrument) => {
-      instrument.transposition += this.#song.transposition;
-
-      instrument.tuning.transpose(this.#song.transposition);
-    });
-    console.log(this.#song);
   }
 
   getChords() {
