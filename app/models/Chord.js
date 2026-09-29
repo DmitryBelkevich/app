@@ -8,7 +8,6 @@ export default class Chord {
   #chord = "";
   
   constructor(chord) {
-    this.#note = new Note();
     this.parser(chord);
     
     console.log(this);
@@ -37,7 +36,7 @@ export default class Chord {
     console.log(this.#prefix);
     console.log(chars);
 
-    // notes
+    // note
     // chars.forEach((char) => {//['A', '#', '#', 'm']
     //   if (notes.includes(char)) {
     //     this.note.concat(char);
@@ -45,6 +44,8 @@ export default class Chord {
     //   } else
     //     return;
     // });
+
+    this.#note = new Note("");
 
     // console.log(chars);
 
