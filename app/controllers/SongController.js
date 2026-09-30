@@ -148,22 +148,30 @@ export default class SongController {
 
   transpose_down_global = () => {
     console.log("transpose down Playback");
-    
+
+    // key (global)
     this.song.transposition -= 1;
     const key = this.song.key.transpose(-1);
     this.view.setKeyGlobal(key, this.song.isTransposed());
-    
-    console.log("transpose down tuning");
+
+    // tuning
+    this.song.instruments.forEach((instrument) => {
+      instrument.tuning.down();
+    });
   }
 
   transpose_up_global = () => {
     console.log("transpose up Playback");
-    
+
+    // key (global)
     this.song.transposition += 1;
     const key = this.song.key.transpose(1);
     this.view.setKeyGlobal(key, this.song.isTransposed());
-    
-    console.log("transpose up tuning");
+
+    // tuning
+    this.song.instruments.forEach((instrument) => {
+      instrument.tuning.up();
+    });
   }
 
   // 3. key-signature (local)
