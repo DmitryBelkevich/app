@@ -127,6 +127,7 @@ export default class SongController {
 
   openText = () => {
     console.log("open Text tab");
+    console.log(this.song);// ------------- DELETE-------------------
   }
 
   openScore = () => {
@@ -147,13 +148,21 @@ export default class SongController {
 
   transpose_down_global = () => {
     console.log("transpose down Playback");
-    console.log("transpose down global key");
+    
+    this.song.transposition -= 1;
+    const key = this.song.key.transpose(this.song.transposition);
+    this.view.setKeyGlobal(key, this.song.isTransposed());
+    
     console.log("transpose down tuning");
   }
 
   transpose_up_global = () => {
     console.log("transpose up Playback");
-    console.log("transpose up global key");
+    
+    this.song.transposition += 1;
+    const key = this.song.key.transpose(this.song.transposition);
+    this.view.setKeyGlobal(key, this.song.isTransposed());
+    
     console.log("transpose up tuning");
   }
 
