@@ -157,6 +157,7 @@ export default class SongController {
     // tuning
     this.song.instruments.forEach((instrument) => {
       instrument.tuning.down();
+      instrument.transposition -= 1;
     });
   }
 
@@ -171,6 +172,7 @@ export default class SongController {
     // tuning
     this.song.instruments.forEach((instrument) => {
       instrument.tuning.up();
+      instrument.transposition += 1;
     });
   }
 
