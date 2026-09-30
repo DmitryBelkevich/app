@@ -168,9 +168,7 @@ export default class SongView {
 
   // 1. key-signature (global)
 
-  setKeyGlobal(key) {
-    const isTransposed = false;
-
+  setKeyGlobal(key, isTransposed) {
     const transpositions = {
       true: "transposed",
       false: "original",
