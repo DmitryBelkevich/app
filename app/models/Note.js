@@ -13,13 +13,13 @@ export default class Note {
     this.#value = value;
   }
 
-  valueOf() {
-    return this.#value;
-  }
+  // valueOf() {
+  //   return this.#value;
+  // }
 
-  toString() {
-    return this.#value;
-  }
+  // toString() {
+  //   return this.#value;
+  // }
 
   transpose(count) {
     if (count > 0) {
