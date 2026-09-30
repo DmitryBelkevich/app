@@ -93,6 +93,8 @@ export default class SongService {
 
       instrument.tuning.transpose(song.transposition);
     });
+
+    console.log(song);
     
     return song;
   }
