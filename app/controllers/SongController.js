@@ -159,6 +159,8 @@ export default class SongController {
       instrument.tuning.down();
       instrument.transposition -= 1;
     });
+
+    console.log("set tuning to view");
   }
 
   transpose_up_global = () => {
@@ -174,6 +176,8 @@ export default class SongController {
       instrument.tuning.up();
       instrument.transposition += 1;
     });
+
+    console.log("set tuning to view");
   }
 
   // 3. key-signature (local)
