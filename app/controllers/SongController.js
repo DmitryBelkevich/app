@@ -6,8 +6,6 @@ import AutoScroll from '../helpers/page/AutoScroll.js';
 
 import StateService from '../services/StateService.js';
 
-import Note from '../models/Note.js';
-
 export default class SongController {
   #params;
 
@@ -46,7 +44,7 @@ export default class SongController {
 
     // 3. key-signature (local)
 
-    this.view.setKeyLocal(new Note("E"));
+    this.view.setKeyLocal("Em");
 
     // 4. transposer (local)
 
