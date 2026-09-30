@@ -117,4 +117,8 @@ export default class Song {
   set instruments(instruments) {
     this.#instruments = instruments;
   }
+
+  isTransposed() {
+    return this.#transposition != 0;
+  }
 }
