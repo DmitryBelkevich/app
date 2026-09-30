@@ -39,7 +39,7 @@ export default class SongDao {
     song.score = element.score;
     song.playback = element.playback;
     song.key = new Chord(element.key);
-    song.transposition = element.transposition;
+    song.transposition = element.transposition || 0;
     song.voices = element.voices;
     song.instruments = element.instruments;
 
