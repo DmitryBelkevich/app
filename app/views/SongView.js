@@ -175,7 +175,7 @@ export default class SongView {
     };
     
     this.key_global.textContent = key;
-    this.key_global.classList.add(transpositions[isTransposed]);
+    this.key_global.classList.toggle(transpositions[isTransposed]);
   }
 
   // 2. transposer (global)
