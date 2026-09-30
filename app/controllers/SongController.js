@@ -150,7 +150,7 @@ export default class SongController {
     console.log("transpose down Playback");
     
     this.song.transposition -= 1;
-    const key = this.song.key.transpose(this.song.transposition);
+    const key = this.song.key.transpose(-1);
     this.view.setKeyGlobal(key, this.song.isTransposed());
     
     console.log("transpose down tuning");
@@ -160,7 +160,7 @@ export default class SongController {
     console.log("transpose up Playback");
     
     this.song.transposition += 1;
-    const key = this.song.key.transpose(this.song.transposition);
+    const key = this.song.key.transpose(1);
     this.view.setKeyGlobal(key, this.song.isTransposed());
     
     console.log("transpose up tuning");
