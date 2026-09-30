@@ -67,4 +67,12 @@ export default class Chord {
     
     return this.#chord;
   }
+
+  valueOf() {
+    return this.#chord;
+  }
+
+  toString() {
+    return this.#chord;
+  }
 }
