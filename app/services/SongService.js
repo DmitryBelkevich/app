@@ -6,7 +6,7 @@ import Tuning from '../models/Tuning.js';
 import Note from '../models/Note.js';
 import Chord from '../models/Chord.js';
 
-import Guitar from '../models/Guitar.js';
+import Guitar from '../models/instruments/Guitar.js';
 
 export default class SongService {
   constructor() {
