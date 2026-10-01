@@ -5,7 +5,7 @@ import BassGuitar from '../models/instruments/BassGuitar.js';
 import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js';
 
 export default class InstrumentFactory {
-  createInstrument(title) {
+  createInstrument(title, arr) {
     switch (title) {
       case "Instrument":
         return new Instrument();
@@ -13,11 +13,19 @@ export default class InstrumentFactory {
         return new Keyboards();
       case "Guitar":
       case "E.Guitar":
-        return new Guitar();
+        const guitar = new Guitar();
+        
+        guitar.tuning.forEach((note, index) => {
+          tuning[index].value = arr[index];
+        });
+        
+        return guitar;
       case "Bass Guitar":
-        return new BassGuitar();
+        const guitar = new BassGuitar();
+        return guitar;
       case "5-string Bass Guitar":
-        return new FiveStringBassGuitar();
+        const guitar = new FiveStringBassGuitar();
+        return guitar;
       default:
         return new Instrument();
     }
