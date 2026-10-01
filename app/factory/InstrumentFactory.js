@@ -21,11 +21,11 @@ export default class InstrumentFactory {
         
         return guitar;
       case "Bass Guitar":
-        const guitar = new BassGuitar();
-        return guitar;
+        const bass_guitar = new BassGuitar();
+        return bass_guitar;
       case "5-string Bass Guitar":
-        const guitar = new FiveStringBassGuitar();
-        return guitar;
+        const five_str_bass_guitar = new FiveStringBassGuitar();
+        return five_str_bass_guitar;
       default:
         return new Instrument();
     }
