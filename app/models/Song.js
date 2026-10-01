@@ -92,6 +92,11 @@ export default class Song {
     this.#transposition = transposition;
 
     this.#key.transpose(transposition);
+
+    // if (this.#instruments)
+    this.#instruments.forEach((instrument) => {
+      instrument.transposition = transposition;
+    });
   }
   
   get voices() {
@@ -108,6 +113,8 @@ export default class Song {
 
   set instruments(instruments) {
     this.#instruments = instruments;
+
+    // transposition
   }
 
   isTransposed() {
