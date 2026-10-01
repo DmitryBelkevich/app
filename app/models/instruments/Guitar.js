@@ -1,5 +1,6 @@
 import Instrument from "./Instrument.js";
 import Tuning from "./Tuning.js";
+import Note from "./Note.js";
 
 export default class Guitar extends Instrument {
   tuning;
@@ -9,7 +10,14 @@ export default class Guitar extends Instrument {
     super();
     this.title = "Guitar";
     this.color = "red";
-    this.tuning = new Tuning("E", "A", "D", "G", "B", "E");
+    this.tuning = new Tuning(
+      new Note("E"),
+      new Note("A"),
+      new Note("D"),
+      new Note("G"),
+      new Note("B"),
+      new Note("E"),
+    );
     this.capo = 0;
   }
 
