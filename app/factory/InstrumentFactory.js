@@ -6,9 +6,9 @@ import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js'
 
 export default class InstrumentFactory {
   createInstrument(obj) {
-    var instrument;
+    var instrument;console.log(obj.title);
     
-    switch (obj.title) {console.log(obj.title);
+    switch (obj.title) {
       case "Instrument":
         instrument = Instrument();
         break;
