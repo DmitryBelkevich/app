@@ -29,7 +29,7 @@ export default class SongDao {
     if (!element)
       return null;
 
-    const song = new Song();
+    const song = new Song();console.log(song);
 
     song.id = element.id;
     song.band = element.band;
