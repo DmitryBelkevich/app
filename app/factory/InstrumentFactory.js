@@ -48,8 +48,9 @@ export default class InstrumentFactory {
       note.value = obj.tuning[index];
     });
 
-    // guitar.transposition = guitar.tuning.droppedTo();
-    // guitar.capo = instrument_obj.capo;
+    guitar.transposition = guitar.tuning.droppedTo();
+    guitar.capo = obj.capo;
+    
     console.log(guitar);
 
     return guitar;
