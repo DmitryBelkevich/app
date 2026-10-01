@@ -16,11 +16,8 @@ export default class InstrumentFactory {
         const guitar = new Guitar();
         
         guitar.tuning.forEach((note, index) => {
-        //   tuning[index].value = arr[index];
-          note.value = "Z";
+          note.value = arr[index];
         });
-
-        console.log(guitar.tuning);
         
         return guitar;
       case "Bass Guitar":
