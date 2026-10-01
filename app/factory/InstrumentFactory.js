@@ -1,8 +1,8 @@
-import Instrument from '../../models/instruments/Instrument.js';
-import Keyboards from '../../models/instruments/Keyboards.js';
-import Guitar from '../../models/instruments/Guitar.js';
-import BassGuitar from '../../models/instruments/BassGuitar.js';
-import FiveStringBassGuitar from '../../models/instruments/FiveStringBassGuitar.js';
+import Instrument from '../models/instruments/Instrument.js';
+import Keyboards from '../models/instruments/Keyboards.js';
+import Guitar from '../models/instruments/Guitar.js';
+import BassGuitar from '../models/instruments/BassGuitar.js';
+import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js';
 
 export default class InstrumentFactory {
   createInstrument(title) {
