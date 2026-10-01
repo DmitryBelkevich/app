@@ -161,7 +161,6 @@ export default class SongController {
     });
 
     // tuning-view
-    console.log("set tuning to view");
     this.stateService.loadTuning();
   }
 
@@ -180,7 +179,6 @@ export default class SongController {
     });
 
     // tuning-view
-    console.log("set tuning to view");
     this.stateService.loadTuning();
   }
 
