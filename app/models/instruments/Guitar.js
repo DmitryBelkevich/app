@@ -60,8 +60,7 @@ export default class Guitar extends Instrument {
           this.capo++;
         }
       }
-    }
-    else if (count < 0) {
+    } else if (count < 0) {
       for (let i = count; i < 0; i++) {
         if (this.capo > 0) {
           this.capo--;
