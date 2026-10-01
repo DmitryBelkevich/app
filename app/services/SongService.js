@@ -28,19 +28,6 @@ export default class SongService {
       var instrument;
 
       // only for Guitars
-      if (instrument_obj.tuning) {
-        const notes = [...instrument_obj.tuning];
-        notes.forEach((note, index) => {
-          notes[index] = new Note(note);
-        });
-        instrument.tuning = new Tuning(...notes);
-      }
-
-      if (instrument_obj.capo)
-        instrument.capo = instrument_obj.capo;
-
-      if (instrument_obj.transposition)
-        instrument.transposition = instrument_obj.transposition;
 
       if (instrument instanceof Guitar)
         instrument.transposition = instrument.tuning.droppedTo();
