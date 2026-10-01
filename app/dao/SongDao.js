@@ -6,9 +6,12 @@ import Chord from '../models/Chord.js';
 
 import JsonLoader from '../loaders/JsonLoader.js';
 
+import InstrumentFactory from '../factory/InstrumentFactory.js';
+
 export default class SongDao {
   constructor() {
     this.jsonLoader = new JsonLoader();
+    this.instrumentFactory = new InstrumentFactory();
   }
 
   async getAll() {
@@ -41,8 +44,8 @@ export default class SongDao {
     song.playback = element.playback;
     song.key = new Chord(element.key || "");
     song.voices = element.voices;
-    element.instruments.forEach((instrument_obj, index) => {
-      const instrument = this.createInstrument(instrument_obj.title);
+    element.instruments.forEach((instrument_obj) => {
+      const instrument = this.instrumentFactory.createInstrument(instrument_obj.title);
       song.instruments.push(instrument);
     });
 
