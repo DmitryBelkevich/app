@@ -1,6 +1,6 @@
 import BassGuitar from "./BassGuitar.js";
-import Tuning from "./Tuning.js";
-import Note from "./Note.js";
+import Tuning from "../Tuning.js";
+import Note from "../Note.js";
 
 export default class FiveStringBassGuitar extends BassGuitar {
   constructor() {
