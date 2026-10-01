@@ -19,8 +19,8 @@ export default class InstrumentFactory {
           note.value = instrument_obj.tuning[index];
         });
 
-        guitar.transposition = guitar.tuning.droppedTo();
-        guitar.capo = instrument_obj.capo;
+        // guitar.transposition = guitar.tuning.droppedTo();
+        // guitar.capo = instrument_obj.capo;
         
         return guitar;
       case "Bass Guitar":
@@ -30,8 +30,8 @@ export default class InstrumentFactory {
           note.value = instrument_obj.tuning[index];
         });
 
-        guitar.transposition = guitar.tuning.droppedTo();
-        guitar.capo = instrument_obj.capo;
+        // guitar.transposition = guitar.tuning.droppedTo();
+        // guitar.capo = instrument_obj.capo;
         
         return guitar;
       case "5-string Bass Guitar":
@@ -41,8 +41,8 @@ export default class InstrumentFactory {
           note.value = instrument_obj.tuning[index];
         });
 
-        guitar.transposition = guitar.tuning.droppedTo();
-        guitar.capo = instrument_obj.capo;
+        // guitar.transposition = guitar.tuning.droppedTo();
+        // guitar.capo = instrument_obj.capo;
         
         return guitar;
       default:
