@@ -15,9 +15,9 @@ export default class InstrumentFactory {
       case "E.Guitar":
         const guitar = new Guitar();
         
-        guitar.tuning.forEach((note, index) => {
-          tuning[index].value = arr[index];
-        });
+        // guitar.tuning.forEach((note, index) => {
+        //   tuning[index].value = arr[index];
+        // });
         
         return guitar;
       case "Bass Guitar":
