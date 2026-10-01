@@ -19,6 +19,8 @@ export default class InstrumentFactory {
         //   tuning[index].value = arr[index];
           console.log(note + " " + index);
         });
+
+        console.log(guitar.tuning);
         
         return guitar;
       case "Bass Guitar":
