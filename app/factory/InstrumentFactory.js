@@ -22,9 +22,19 @@ export default class InstrumentFactory {
         return guitar;
       case "Bass Guitar":
         guitar = new BassGuitar();
+
+        guitar.tuning.forEach((note, index) => {
+          note.value = tuning[index];
+        });
+        
         return guitar;
       case "5-string Bass Guitar":
         guitar = new FiveStringBassGuitar();
+        
+        guitar.tuning.forEach((note, index) => {
+          note.value = tuning[index];
+        });
+        
         return guitar;
       default:
         return new Instrument();
