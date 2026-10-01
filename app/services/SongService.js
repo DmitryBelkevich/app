@@ -28,42 +28,26 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    if (!song.key)
-      song.key = new Chord("");
-
     song.instruments.forEach((instrument_obj, index) => {
       var instrument;
-      
-      if (instrument_obj.title == "Instrument") {
-        instrument = new Instrument();
-      } else if (instrument_obj.title == "Keyboards") {
-        instrument = new Keyboards();
-      } else if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar" || instrument_obj.title == "Bass Guitar" || instrument_obj.title == "5-string Bass Guitar") {
-        if (instrument_obj.title == "Guitar" || instrument_obj.title == "E.Guitar") {
-          instrument = new Guitar();
-        } else if (instrument_obj.title == "Bass Guitar") {
-          instrument = new BassGuitar();
-        } else if (instrument_obj.title == "5-string Bass Guitar") {
-          instrument = new FiveStringBassGuitar();
-        }
 
-        if (instrument_obj.tuning) {
-          const notes = [...instrument_obj.tuning];
-          notes.forEach((note, index) => {
-            notes[index] = new Note(note);
-          });
-          instrument.tuning = new Tuning(...notes);
-        }
-
-        if (instrument_obj.capo)
-          instrument.capo = instrument_obj.capo;
-
-        if (instrument_obj.transposition)
-          instrument.transposition = instrument_obj.transposition;
-
-        if (instrument instanceof Guitar)
-          instrument.transposition = instrument.tuning.droppedTo();
+      // only for Guitars
+      if (instrument_obj.tuning) {
+        const notes = [...instrument_obj.tuning];
+        notes.forEach((note, index) => {
+          notes[index] = new Note(note);
+        });
+        instrument.tuning = new Tuning(...notes);
       }
+
+      if (instrument_obj.capo)
+        instrument.capo = instrument_obj.capo;
+
+      if (instrument_obj.transposition)
+        instrument.transposition = instrument_obj.transposition;
+
+      if (instrument instanceof Guitar)
+        instrument.transposition = instrument.tuning.droppedTo();
       
       song.instruments[index] = instrument;
     });
@@ -85,12 +69,6 @@ export default class SongService {
     });
 
     // instrument.tuning
-
-    song.instruments.forEach((instrument) => {
-      instrument.transposition += song.transposition;
-
-      instrument.tuning.transpose(song.transposition);
-    });
     
     return song;
   }
