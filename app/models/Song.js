@@ -91,12 +91,12 @@ export default class Song {
   set transposition(transposition) {
     this.#transposition = transposition;
 
-    this.#key.transpose(transposition);
+    // this.#key.transpose(transposition);
 
     // if (this.#instruments)
-    this.#instruments.forEach((instrument) => {
-      instrument.transposition = transposition;
-    });
+    // this.#instruments.forEach((instrument) => {
+    //   instrument.transposition = transposition;
+    // });
   }
   
   get voices() {
