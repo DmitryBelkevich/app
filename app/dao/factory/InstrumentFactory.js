@@ -4,7 +4,7 @@ import Guitar from '../models/instruments/Guitar.js';
 import BassGuitar from '../models/instruments/BassGuitar.js';
 import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js';
 
-export default class InstrumentFacory {
+export default class InstrumentFactory {
   createInstrument(title) {
     switch (title) {
       case "Instrument":
