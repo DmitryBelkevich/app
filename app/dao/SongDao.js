@@ -1,8 +1,9 @@
 import config from '../config/config.js';
 
-import Genre from '../models/Genre.js';
 import Song from '../models/Song.js';
+import Genre from '../models/Genre.js';
 import Chord from '../models/Chord.js';
+
 import JsonLoader from '../loaders/JsonLoader.js';
 
 export default class SongDao {
@@ -38,10 +39,14 @@ export default class SongDao {
     song.text = element.text;
     song.score = element.score;
     song.playback = element.playback;
-    song.key = new Chord(element.key);
-    song.transposition = element.transposition || 0;
+    song.key = new Chord(element.key || "");
     song.voices = element.voices;
-    song.instruments = element.instruments;
+    element.instruments.forEach((instrument_obj, index) => {
+      const instrument = this.createInstrument(instrument_obj.title);
+      song.instruments.push(instrument);
+    });
+
+    song.transposition = element.transposition || 0;
 
     return song;
   }
