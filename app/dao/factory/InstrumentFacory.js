@@ -11,7 +11,8 @@ export default class InstrumentFacory {
         return new Instrument();
       case "Keyboards":
         return new Keyboards();
-      case "Guitar" || "E.Guitar":
+      case "Guitar":
+      case "E.Guitar":
         return new Guitar();
       case "Bass Guitar":
         return new BassGuitar();
