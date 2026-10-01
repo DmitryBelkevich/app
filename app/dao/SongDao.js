@@ -6,7 +6,7 @@ import Chord from '../models/Chord.js';
 
 import JsonLoader from '../loaders/JsonLoader.js';
 
-import InstrumentFactory from '../factory/InstrumentFactory.js';
+import InstrumentFactory from './factory/InstrumentFactory.js';
 
 export default class SongDao {
   constructor() {
