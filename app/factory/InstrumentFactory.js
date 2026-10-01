@@ -28,7 +28,7 @@ export default class InstrumentFactory {
     return instrument;
   }
 
-  createGuitar(obj) {console.log(obj.title);
+  createGuitar(obj) {
     var guitar;
 
     switch (obj.title) {
@@ -50,6 +50,7 @@ export default class InstrumentFactory {
 
     // guitar.transposition = guitar.tuning.droppedTo();
     // guitar.capo = instrument_obj.capo;
+    console.log(guitar);
 
     return guitar;
   }
