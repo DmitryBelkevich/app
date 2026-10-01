@@ -160,6 +160,7 @@ export default class SongController {
       instrument.transposition -= 1;
     });
 
+    // tuning-view
     console.log("set tuning to view");
   }
 
@@ -177,6 +178,7 @@ export default class SongController {
       instrument.transposition += 1;
     });
 
+    // tuning-view
     console.log("set tuning to view");
   }
 
