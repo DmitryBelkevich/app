@@ -36,4 +36,12 @@ export default class Guitar extends Instrument {
   set capo(capo) {
     this.capo = capo;
   }
+
+  set transposition(transposition) {
+    super.transposition = transposition;
+
+    this.tuning.forEach((note) => {
+      note.transpose(transposition);
+    });
+  }
 }
