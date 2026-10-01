@@ -24,4 +24,8 @@ export default class Instrument {
   set transposition(transposition) {
     this.transposition = transposition;
   }
+
+  transpose(count) {
+    this.transposition += count;
+  }
 }
