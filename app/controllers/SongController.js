@@ -37,31 +37,31 @@ export default class SongController {
 
     // 1. key-signature (global)
 
-    const key = this.song.key.transpose(this.song.transposition);
-    this.view.setKeyGlobal(key, this.song.isTransposed());
+    // const key = this.song.key.transpose(this.song.transposition);
+    // this.view.setKeyGlobal(key, this.song.isTransposed());
 
     // 2. transposer (global)
 
     // 3. key-signature (local)
 
-    this.view.setKeyLocal("Em");
+    // this.view.setKeyLocal("Em");
 
     // 4. transposer (local)
 
     // *** instrument ***
 
     // 1. dropdown
-    this.song.instruments.forEach((instrument, index) => {
-      this.view.addOption(index, instrument.title, instrument.color);
-    });
+    // this.song.instruments.forEach((instrument, index) => {
+    //   this.view.addOption(index, instrument.title, instrument.color);
+    // });
 
     // 2. tuning
 
     // *** text ***
 
     // state
-    this.stateService = new StateService(this.song, this.view);
-    this.stateService.load();
+    // this.stateService = new StateService(this.song, this.view);
+    // this.stateService.load();
 
     // *** binding controller-view ***
 
