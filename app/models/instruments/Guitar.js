@@ -1,6 +1,6 @@
 import Instrument from "./Instrument.js";
-import Tuning from "./Tuning.js";
-import Note from "./Note.js";
+import Tuning from "../Tuning.js";
+import Note from "../Note.js";
 
 export default class Guitar extends Instrument {
   tuning;
