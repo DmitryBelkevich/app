@@ -5,48 +5,52 @@ import BassGuitar from '../models/instruments/BassGuitar.js';
 import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js';
 
 export default class InstrumentFactory {
-  createInstrument(instrument_obj) {console.log(instrument_obj);
-    switch (instrument_obj.title) {
+  createInstrument(obj) {
+    var instrument;
+    
+    switch (obj.title) {
       case "Instrument":
-        return new Instrument();
+        instrument = Instrument();
+        break;
       case "Keyboards":
-        return new Keyboards();
+        instrument =  Keyboards();
+        break;
       case "Guitar":
       case "E.Guitar":
-        var guitar = new Guitar();
-        
-        guitar.tuning.forEach((note, index) => {
-          note.value = instrument_obj.tuning[index];
-        });
+      case "Bass Guitar":
+      case "5-string Bass Guitar":
+        instrument = this.createGuitar(obj);
+        break;
+      default:
+        instrument =  Instrument();
+    }
 
-        // guitar.transposition = guitar.tuning.droppedTo();
-        // guitar.capo = instrument_obj.capo;
-        
-        return guitar;
+    return instrument;
+  }
+
+  createGuitar(obj) {
+    var guitar;
+
+    switch (obj.title) {
+      case "Guitar":
+      case "E.Guitar":
+        guitar = new Guitar();
+        break;
       case "Bass Guitar":
         guitar = new BassGuitar();
-
-        guitar.tuning.forEach((note, index) => {
-          note.value = instrument_obj.tuning[index];
-        });
-
-        // guitar.transposition = guitar.tuning.droppedTo();
-        // guitar.capo = instrument_obj.capo;
-        
-        return guitar;
+        break;
       case "5-string Bass Guitar":
         guitar = new FiveStringBassGuitar();
-        
-        guitar.tuning.forEach((note, index) => {
-          note.value = instrument_obj.tuning[index];
-        });
-
-        // guitar.transposition = guitar.tuning.droppedTo();
-        // guitar.capo = instrument_obj.capo;
-        
-        return guitar;
-      default:
-        return new Instrument();
+        break;
     }
+
+    guitar.tuning.forEach((note, index) => {
+      note.value = obj.tuning[index];
+    });
+
+    // guitar.transposition = guitar.tuning.droppedTo();
+    // guitar.capo = instrument_obj.capo;
+
+    return guitar;
   }
 }
