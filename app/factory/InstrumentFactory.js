@@ -8,7 +8,7 @@ export default class InstrumentFactory {
   createInstrument(obj) {
     var instrument;
     
-    switch (obj.title) {
+    switch (obj.title) {console.log(obj.title);
       case "Instrument":
         instrument = Instrument();
         break;
