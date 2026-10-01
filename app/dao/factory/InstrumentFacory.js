@@ -1,8 +1,8 @@
-import Instrument from '../models/Instrument.js';
-import Keyboards from '../models/Keyboards.js';
-import Guitar from '../models/Guitar.js';
-import BassGuitar from '../models/BassGuitar.js';
-import FiveStringBassGuitar from '../models/FiveStringBassGuitar.js';
+import Instrument from '../models/instruments/Instrument.js';
+import Keyboards from '../models/instruments/Keyboards.js';
+import Guitar from '../models/instruments/Guitar.js';
+import BassGuitar from '../models/instruments/BassGuitar.js';
+import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js';
 
 export default class InstrumentFacory {
   createInstrument(title) {
