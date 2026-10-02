@@ -91,7 +91,7 @@ export default class Song {
   set transposition(transposition) {
     this.#transposition = transposition;
 
-    this.transpose(transposition);
+    this.transpose(transposition - this.#transposition);
   }
 
   transpose(count) {
