@@ -75,5 +75,7 @@ export default class Guitar extends Instrument {
         }
       }
     }
+
+    this.key.transpose(count);
   }
 }
