@@ -47,6 +47,8 @@ export default class SongService {
     });
 
     // instrument.tuning
+
+    console.log(song);
     
     return song;
   }
