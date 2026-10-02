@@ -19,11 +19,13 @@ export default class InstrumentFactory {
       case "E.Guitar":
       case "Bass Guitar":
       case "5-string Bass Guitar":
-        instrument = this.createGuitar(obj);
+        return this.createGuitar(obj);
         break;
       default:
         instrument =  Instrument();
     }
+
+    instrument.transposition = obj.transposition;
 
     return instrument;
   }
