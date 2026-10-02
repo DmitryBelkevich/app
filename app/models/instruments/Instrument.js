@@ -7,6 +7,7 @@ export default class Instrument {
   constructor() {
     this.title = "Instrument";
     this.color = "grey";
+    this.key;
     this.transposition = 0;
   }
 
