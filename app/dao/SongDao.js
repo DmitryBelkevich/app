@@ -39,7 +39,7 @@ export default class SongDao {
     song.genre.title = element.genre;
     
     song.raiting = element.raiting;
-    song.text = element.text;
+    song.text = config.storage + element.text;
     song.score = element.score;
     song.playback = element.playback;
     song.key = new Chord(element.key || "");
