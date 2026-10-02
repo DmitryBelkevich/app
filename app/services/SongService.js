@@ -24,11 +24,11 @@ export default class SongService {
 
     song.text = config.storage + song.text;
 
-    song.instruments.forEach((instrument_obj, index) => {
-      var instrument;
+    // song.instruments.forEach((instrument_obj, index) => {
+    //   var instrument;
       
-      song.instruments[index] = instrument;
-    });
+    //   song.instruments[index] = instrument;
+    // });
 
     // TODO
     
