@@ -26,11 +26,6 @@ export default class SongService {
 
     song.instruments.forEach((instrument_obj, index) => {
       var instrument;
-
-      // only for Guitars
-
-      if (instrument instanceof Guitar)
-        instrument.transposition = instrument.tuning.droppedTo();
       
       song.instruments[index] = instrument;
     });
