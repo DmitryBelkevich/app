@@ -29,7 +29,7 @@ export default class SongDao {
     if (!element)
       return null;
 
-    const song = new Song();console.log(song);
+    const song = new Song();
 
     song.id = element.id;
     song.band = element.band;
@@ -46,9 +46,10 @@ export default class SongDao {
     song.voices = element.voices;
     element.instruments.forEach((instrument_obj) => {
       const instrument = this.instrumentFactory.createInstrument(instrument_obj);
-      console.log(instrument);
       song.instruments.push(instrument);
     });
+
+    console.log(song);
 
     song.transposition = element.transposition || 0;
 
