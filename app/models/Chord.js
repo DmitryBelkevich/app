@@ -5,17 +5,17 @@ export default class Chord {
   #note;
   #postfix = "";
 
-  #chord = "";
+  #value = "";
   
-  constructor(chord) {
-    this.parser(chord);
+  constructor(value) {
+    this.parser(value);
   }
 
-  parser(chord) {
+  parser(value) {
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
     // prefix
-    var chars = chord.split("");
+    var chars = value.split("");
 
     var index = 0;
     for (const char of chars) {
@@ -46,33 +46,33 @@ export default class Chord {
     // postfix
     this.#postfix = chars.join("");
 
-    // chord
-    this.#chord = this.#prefix + this.#note.toString() + this.#postfix;
+    // value
+    this.#value = this.#prefix + this.#note.toString() + this.#postfix;
   }
 
   transpose(count) {
-    this.#chord = this.#prefix + this.#note.transpose(count) + this.#postfix;
+    this.#value = this.#prefix + this.#note.transpose(count) + this.#postfix;
     
-    return this.#chord;
+    return this.#value;
   }
 
   up() {
-    this.#chord = this.#prefix + this.#note.up() + this.#postfix;
+    this.#value = this.#prefix + this.#note.up() + this.#postfix;
     
-    return this.#chord;
+    return this.#value;
   }
 
   down() {
-    this.#chord = this.#prefix + this.#note.down() + this.#postfix;
+    this.#value = this.#prefix + this.#note.down() + this.#postfix;
     
-    return this.#chord;
+    return this.#value;
   }
 
   valueOf() {
-    return this.#chord;
+    return this.#value;
   }
 
   toString() {
-    return this.#chord;
+    return this.#value;
   }
 }
