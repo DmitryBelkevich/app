@@ -29,7 +29,7 @@ export default class InstrumentFactory {
     return instrument;
   }
 
-  createGuitar(obj) {
+  async createGuitar(obj) {
     var guitar;
 
     switch (obj.title) {
