@@ -46,10 +46,11 @@ export default class SongDao {
     song.voices = element.voices;
     element.instruments.forEach((instrument_obj) => {
       const instrument = this.instrumentFactory.createInstrument(instrument_obj);
+
+      console.log(instrument);
+      
       song.instruments.push(instrument);
     });
-
-    console.log(song.instruments);
 
     song.transposition = element.transposition || 0;
 
