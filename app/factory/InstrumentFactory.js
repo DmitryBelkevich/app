@@ -53,8 +53,6 @@ export default class InstrumentFactory {
 
     if (obj.capo)
       guitar.capo = obj.capo;
-    
-    console.log(guitar);
 
     return guitar;
   }
