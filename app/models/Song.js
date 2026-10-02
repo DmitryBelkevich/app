@@ -99,11 +99,13 @@ export default class Song {
   }
 
   transpose(count) {
-    //transposition
+    // this.#transposition += count;
     
     this.#key.transpose(count);
 
-    //instruments
+    // this.#instruments.forEach((instrument) => {
+    //   instrument.transpose(count);
+    // });
   }
   
   get voices() {
