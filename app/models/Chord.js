@@ -9,6 +9,7 @@ export default class Chord {
   
   constructor(value) {
     this.parser(value);
+    this.#value = this.#prefix + this.#note + this.#postfix;
   }
 
   get value() {
@@ -17,6 +18,7 @@ export default class Chord {
 
   set value(value) {
     this.parser(value);
+    this.#value = this.#prefix + this.#note + this.#postfix;
   }
 
   parser(value) {
@@ -53,9 +55,6 @@ export default class Chord {
 
     // postfix
     this.#postfix = chars.join("");
-
-    // value
-    this.#value = this.#prefix + this.#note + this.#postfix;
   }
 
   valueOf() {
