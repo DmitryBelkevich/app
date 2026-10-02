@@ -28,8 +28,6 @@ export default class Note {
     } else if (count < 0)
       for (let i = count; i < 0; i++)
         this.down();
-    
-    return this.#value;
   }
 
   up() {
@@ -69,8 +67,6 @@ export default class Note {
       this.#value = "G";
     else if (this.#value == "Ab")
       this.#value = "A";
-
-    return this.#value;
   }
 
   down() {
@@ -110,7 +106,5 @@ export default class Note {
       this.#value = "F";
     else if (this.#value == "Ab")
       this.#value = "G";
-
-    return this.#value;
   }
 }
