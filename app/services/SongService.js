@@ -22,8 +22,6 @@ export default class SongService {
   async getById(id) {
     const song = await this.songDao.getById(id);
 
-    song.text = config.storage + song.text;
-
     // TODO
     
     // set CHORDS_LINK for each instruments
