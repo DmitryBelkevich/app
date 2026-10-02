@@ -51,6 +51,7 @@ export default class SongDao {
       console.log(instrument);
     });
 
+    song.instruments.push({});
     console.log(song.instruments);
 
     song.transposition = element.transposition || 0;
