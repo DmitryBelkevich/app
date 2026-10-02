@@ -93,9 +93,9 @@ export default class Song {
 
     this.#key.transpose(transposition);
 
-    // this.#instruments.forEach((instrument) => {
-    //   instrument.transposition = transposition;
-    // });
+    this.#instruments.forEach((instrument) => {
+      instrument.transpose(transposition);
+    });
   }
   
   get voices() {
