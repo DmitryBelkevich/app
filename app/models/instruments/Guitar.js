@@ -60,7 +60,7 @@ export default class Guitar extends Instrument {
       for (let i = 0; i < count; i++) {
         if (this.transposition < 0) {
           this.transposition++;
-          this.tuning.forEach(note => note.up());
+          this.tuning.up();
         } else if (this.transposition == 0) {
           this.capo++;
         }
@@ -71,7 +71,7 @@ export default class Guitar extends Instrument {
           this.capo--;
         } else if (this.capo == 0) {
           this.transposition--;
-          this.tuning.forEach(note => note.down());
+          this.tuning.down();
         }
       }
     }
