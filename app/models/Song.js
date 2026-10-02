@@ -93,7 +93,6 @@ export default class Song {
 
     this.#key.transpose(transposition);
 
-    // if (this.#instruments)
     // this.#instruments.forEach((instrument) => {
     //   instrument.transposition = transposition;
     // });
