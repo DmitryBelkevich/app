@@ -1,6 +1,7 @@
 export default class Instrument {
   title;
   color;
+  key;
   transposition;
 
   constructor() {
@@ -15,6 +16,22 @@ export default class Instrument {
 
   set title(title) {
     this.title = title;
+  }
+
+  get color() {
+    return this.color;
+  }
+
+  set color(color) {
+    this.color = color;
+  }
+
+  get key() {
+    return this.key;
+  }
+
+  set key(key) {
+    this.key = key;
   }
 
   get transposition() {
