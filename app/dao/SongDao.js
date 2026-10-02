@@ -49,7 +49,7 @@ export default class SongDao {
       song.instruments.push(instrument);
     });
 
-    console.log(song);
+    console.log(song.instruments);
 
     song.transposition = element.transposition || 0;
 
