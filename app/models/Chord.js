@@ -11,6 +11,14 @@ export default class Chord {
     this.parser(value);
   }
 
+  get value() {
+    return this.#value;
+  }
+
+  set value(value) {
+    this.parser(value);
+  }
+
   parser(value) {
     const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
     
@@ -50,6 +58,14 @@ export default class Chord {
     this.#value = this.#prefix + this.#note.toString() + this.#postfix;
   }
 
+  valueOf() {
+    return this.#value;
+  }
+
+  toString() {
+    return this.#value;
+  }
+
   transpose(count) {
     this.#value = this.#prefix + this.#note.transpose(count) + this.#postfix;
     
@@ -65,14 +81,6 @@ export default class Chord {
   down() {
     this.#value = this.#prefix + this.#note.down() + this.#postfix;
     
-    return this.#value;
-  }
-
-  valueOf() {
-    return this.#value;
-  }
-
-  toString() {
     return this.#value;
   }
 }
