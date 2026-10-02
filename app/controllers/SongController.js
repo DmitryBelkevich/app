@@ -125,7 +125,7 @@ export default class SongController {
   // *** tabs ***
 
   openText = () => {
-    console.log("open Text tab");
+    // console.log("open Text tab");
     console.log(this.song);
   }
 
@@ -146,39 +146,39 @@ export default class SongController {
   // 2. transposer (global)
 
   transpose_down_global = () => {
-    console.log("transpose down Playback");
+    // console.log("transpose down Playback");
 
     // key (global)
     this.song.transposition -= 1;
-    const key = this.song.key.transpose(-1);
-    this.view.setKeyGlobal(key, this.song.isTransposed());
+    // const key = this.song.key.transpose(-1);
+    this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
 
     // tuning
-    this.song.instruments.forEach((instrument) => {
-      instrument.tuning.down();
-      instrument.transposition -= 1;
-    });
+    // this.song.instruments.forEach((instrument) => {
+    //   instrument.tuning.down();
+    //   instrument.transposition -= 1;
+    // });
 
     // tuning-view
-    this.stateService.loadTuning();
+    // this.stateService.loadTuning();
   }
 
   transpose_up_global = () => {
-    console.log("transpose up Playback");
+    // console.log("transpose up Playback");
 
     // key (global)
     this.song.transposition += 1;
-    const key = this.song.key.transpose(1);
-    this.view.setKeyGlobal(key, this.song.isTransposed());
+    // const key = this.song.key.transpose(1);
+    this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
 
     // tuning
-    this.song.instruments.forEach((instrument) => {
-      instrument.tuning.up();
-      instrument.transposition += 1;
-    });
+    // this.song.instruments.forEach((instrument) => {
+    //   instrument.tuning.up();
+    //   instrument.transposition += 1;
+    // });
 
     // tuning-view
-    this.stateService.loadTuning();
+    // this.stateService.loadTuning();
   }
 
   // 3. key-signature (local)
