@@ -55,7 +55,7 @@ export default class Chord {
     this.#postfix = chars.join("");
 
     // value
-    this.#value = this.#prefix + this.#note.toString() + this.#postfix;
+    this.#value = this.#prefix + this.#note + this.#postfix;
   }
 
   valueOf() {
