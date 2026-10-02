@@ -20,7 +20,6 @@ export default class InstrumentFactory {
       case "Bass Guitar":
       case "5-string Bass Guitar":
         return this.createGuitar(obj);
-        break;
       default:
         instrument =  Instrument();
     }
