@@ -9,7 +9,7 @@ export default class CookieService {
   }
 
   getAll() {
-    return this.getAll();
+    return this.#cookieDao.getAll();
   }
 
   getByName(name) {
