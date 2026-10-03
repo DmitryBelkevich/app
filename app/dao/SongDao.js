@@ -48,6 +48,7 @@ export default class SongDao {
       const instrument = this.instrumentFactory.createInstrument(instrument_obj);
       
       instrument.key = new Chord(song.key.toString());
+      instrument.chords = this.createChords(song.text);
       
       song.instruments.push(instrument);
     });
@@ -55,5 +56,21 @@ export default class SongDao {
     song.transposition = element.transposition || 0;
 
     return song;
+  }
+
+  // create CHORDS_LINK for instrument
+  createChords(text) {
+    // const index = song.text.length - ".html".length;
+      
+    // if (instrument.capo > 0)
+    //   instrument.chords = song.text.slice(0, index) + " (" + instrument.capo + ")" + song.text.slice(index);
+    // else if (instrument.transposition < 0 || instrument.transposition > 0)
+    //   instrument.chords = song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
+    // else
+    //   instrument.chords = song.text;
+
+    // instrument.chords = song.text;
+    
+    return text;
   }
 }
