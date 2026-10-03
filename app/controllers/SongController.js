@@ -52,9 +52,9 @@ export default class SongController {
     // *** instrument ***
 
     // 1. dropdown
-    // this.song.instruments.forEach((instrument, index) => {
-    //   this.view.addOption(index, instrument.title, instrument.color);
-    // });
+    this.song.instruments.forEach((instrument, index) => {
+      this.view.addOption(index, instrument.title, instrument.color);
+    });
 
     // 2. tuning
 
