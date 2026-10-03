@@ -32,7 +32,7 @@ export default class Instrument {
   }
 
   set transposition(transposition) {
-    this.transpose(transposition - this.#transposition);
+    this.transpose(transposition - this.transposition);
   }
 
   get key() {
