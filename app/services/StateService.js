@@ -19,7 +19,7 @@ export default class StateService {
     // *** Cookie ***
     this.#cookieService = new CookieService();
 
-    const cookie_obj = this.#cookieService.getByName("instrument") || this.#cookieService.getDefault();
+    const cookie_obj = this.#cookieService.getByName("instrument");
     this.#cookieService.save(cookie_obj);
     
     // *** state ***
