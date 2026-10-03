@@ -1,5 +1,5 @@
 import HtmlLoader from '../loaders/HtmlLoader.js';
-import CookieLoader from '../loaders/CookieLoader.js';
+import CookieDao from '../dao/CookieDao.js';
 
 import TransposeService from './TransposeService.js';
 
@@ -9,7 +9,7 @@ export default class StateService {
 
   #transposeService;
   
-  #cookieLoader;
+  #cookieDao;
   #current;//state
 
   constructor(song, view) {
@@ -17,11 +17,11 @@ export default class StateService {
     this.#view = view;
     
     // *** Cookie ***
-    this.#cookieLoader = new CookieLoader();
+    this.#cookieDao = new CookieDao();
 
     const default_cookie_obj = { name: "instrument", value: 0 };
     const cookie_obj = this.#cookieLoader.getByName("instrument") || default_cookie_obj;
-    this.#cookieLoader.save(cookie_obj);
+    this.#cookieDao.save(cookie_obj);
     
     // *** state ***
     if (this.#song.instruments.length <= cookie_obj.value) {
