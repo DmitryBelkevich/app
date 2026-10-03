@@ -1,3 +1,5 @@
+import CookieDao from '../dao/CookieDao.js';
+
 export default class CookieService {
   #cookieDao;
   #default_obj;
