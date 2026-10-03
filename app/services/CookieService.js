@@ -4,9 +4,8 @@ export default class CookieService {
   #cookieDao;
   #default_obj;
   
-  consctructor() {
+  constructor() {
     this.#cookieDao = new CookieDao();
-    console.log(this.#cookieDao);
 
     this.#default_obj = { name: "instrument", value: 0 };
   }
@@ -16,8 +15,7 @@ export default class CookieService {
   }
 
   getByName(name) {
-    // return this.#cookieDao.getByName(name) || this.#default_obj;
-    return null;
+    return this.#cookieDao.getByName(name) || this.#default_obj;
   }
 
   save(obj) {
