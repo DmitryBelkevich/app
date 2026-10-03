@@ -94,9 +94,7 @@ export default class Song {
 
   transpose(count) {
     this.#transposition += count;
-    
     this.#key.transpose(count);
-
     this.#instruments.forEach(instrument => instrument.transpose(count));
   }
   
@@ -114,7 +112,6 @@ export default class Song {
 
   set instruments(instruments) {
     this.#instruments = instruments;
-
     this.#instruments.forEach(instrument => instrument.transpose(count));
   }
 
