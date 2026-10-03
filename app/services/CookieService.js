@@ -13,11 +13,7 @@ export default class CookieService {
   }
 
   getByName(name) {
-    return this.#cookieDao.getByName(name);
-  }
-
-  getDeafult() {
-    return this.#default_obj;
+    return this.#cookieDao.getByName(name) || this.#default_obj;
   }
 
   save(obj) {
