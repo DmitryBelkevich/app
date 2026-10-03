@@ -35,8 +35,6 @@ export default class SongService {
 
       instrument.chords = song.text;
     });
-
-    // instrument.tuning
     
     return song;
   }
