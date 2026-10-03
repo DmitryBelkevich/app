@@ -1,6 +1,6 @@
 import HtmlLoader from '../loaders/HtmlLoader.js';
-import CookieDao from '../dao/CookieDao.js';
 
+import CookieService from './CookieService.js';
 import TransposeService from './TransposeService.js';
 
 export default class StateService {
