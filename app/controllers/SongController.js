@@ -43,7 +43,9 @@ export default class SongController {
 
     // 3. key-signature (local)
 
-    // this.view.setKeyLocal("Em");
+    this.stateService = new StateService(this.song, this.view);
+    const instrument = this.song.instruments[this.stateService.current];
+    this.view.setKeyLocal(instrument.key.toString());
 
     // 4. transposer (local)
 
@@ -59,7 +61,6 @@ export default class SongController {
     // *** text ***
 
     // state
-    // this.stateService = new StateService(this.song, this.view);
     // this.stateService.load();
 
     // *** binding controller-view ***
