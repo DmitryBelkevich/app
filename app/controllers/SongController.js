@@ -61,7 +61,7 @@ export default class SongController {
     // *** text ***
 
     // state
-    // this.stateService.load();
+    this.stateService.load();
 
     // *** binding controller-view ***
 
@@ -155,7 +155,7 @@ export default class SongController {
 
     // tuning
     // this.song.instruments.forEach((instrument) => {
-    //   instrument.transposition -= 1;
+    //   instrument.transpose(-1);
     // });
 
     // tuning-view
@@ -171,7 +171,7 @@ export default class SongController {
 
     // tuning
     // this.song.instruments.forEach((instrument) => {
-    //   instrument.transposition += 1;
+    //   instrument.transpose(+1);
     // });
 
     // tuning-view
