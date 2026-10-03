@@ -150,12 +150,10 @@ export default class SongController {
 
     // key (global)
     this.song.transpose(-1);
-    // const key = this.song.key.transpose(-1);
     this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
 
     // tuning
     // this.song.instruments.forEach((instrument) => {
-    //   instrument.tuning.down();
     //   instrument.transposition -= 1;
     // });
 
@@ -168,12 +166,10 @@ export default class SongController {
 
     // key (global)
     this.song.transpose(1);
-    // const key = this.song.key.transpose(1);
     this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
 
     // tuning
     // this.song.instruments.forEach((instrument) => {
-    //   instrument.tuning.up();
     //   instrument.transposition += 1;
     // });
 
