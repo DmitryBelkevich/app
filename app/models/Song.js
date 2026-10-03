@@ -89,8 +89,6 @@ export default class Song {
   }
 
   set transposition(transposition) {
-    this.#transposition = transposition;
-
     this.transpose(transposition - this.#transposition);
   }
 
@@ -99,9 +97,7 @@ export default class Song {
     
     this.#key.transpose(count);
 
-    this.#instruments.forEach((instrument) => {
-      instrument.transpose(count);
-    });
+    this.#instruments.forEach(instrument => instrument.transpose(count));
   }
   
   get voices() {
@@ -119,7 +115,7 @@ export default class Song {
   set instruments(instruments) {
     this.#instruments = instruments;
 
-    // transposition
+    this.#instruments.forEach(instrument => instrument.transpose(count));
   }
 
   isTransposed() {
