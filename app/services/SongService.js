@@ -23,7 +23,7 @@ export default class SongService {
     // TODO
     
     // set CHORDS_LINK for each instruments
-    song.instruments.forEach((instrument) => {
+    // song.instruments.forEach((instrument) => {
       // const index = song.text.length - ".html".length;
       
       // if (instrument.capo > 0)
@@ -33,8 +33,8 @@ export default class SongService {
       // else
       //   instrument.chords = song.text;
 
-      instrument.chords = song.text;
-    });
+      // instrument.chords = song.text;
+    // });
     
     return song;
   }
