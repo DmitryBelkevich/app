@@ -15,7 +15,8 @@ export default class CookieService {
   }
 
   getByName(name) {
-    return this.#cookieDao.getByName(name) || this.#default_obj;
+    // return this.#cookieDao.getByName(name) || this.#default_obj;
+    return null;
   }
 
   save(obj) {
