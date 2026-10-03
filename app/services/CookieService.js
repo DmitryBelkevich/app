@@ -5,7 +5,8 @@ export default class CookieService {
   #default_obj;
   
   consctructor() {
-    this.#cookieDao = new CookieDao();console.log(this.#cookieDao);
+    this.#cookieDao = new CookieDao();
+    console.log(this.#cookieDao);
 
     this.#default_obj = { name: "instrument", value: 0 };
   }
