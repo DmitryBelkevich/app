@@ -7,9 +7,9 @@ export default class StateService {
   #song;
   #view;
 
+  #cookieService;
   #transposeService;
   
-  #cookieDao;
   #current;//state
 
   constructor(song, view) {
@@ -17,17 +17,13 @@ export default class StateService {
     this.#view = view;
     
     // *** Cookie ***
-    this.#cookieDao = new CookieDao();
+    this.#cookieService = new CookieService();
 
-    const default_cookie_obj = { name: "instrument", value: 0 };
-    const cookie_obj = this.#cookieLoader.getByName("instrument") || default_cookie_obj;
-    this.#cookieDao.save(cookie_obj);
+    const cookie_obj = this.#cookieService.getByName("instrument") || this.#cookieService.getDefault();
+    this.#cookieService.save(cookie_obj);
     
     // *** state ***
-    if (this.#song.instruments.length <= cookie_obj.value) {
-      this.#current = default_cookie_obj.value;
-    } else
-      this.#current = cookie_obj.value;
+    this.#current = cookie_obj.value;
 
     // *** dropdown ***
     this.#view.selectOption(this.#current);
@@ -49,7 +45,7 @@ export default class StateService {
 
   set current(current) {
     this.#current = current;
-    this.#cookieLoader.save({name: "instrument", value: this.#current});
+    this.#cookieService.save({name: "instrument", value: this.#current});
   }
 
   async load() {
