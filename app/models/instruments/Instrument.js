@@ -32,7 +32,7 @@ export default class Instrument {
     return this._transposition;
   }
 
-  set transposition(transposition) {console.log("setter Instrument.transposition " + transposition);
+  set transposition(transposition) {
     this.transpose(transposition - this._transposition);
   }
 
@@ -52,11 +52,9 @@ export default class Instrument {
     this.chords = chords;
   }
 
-  transpose(count) {console.log("Hello World");
+  transpose(count) {
     this._transposition += count;
     // this.key.transpose(count);
-
-    console.log("transpose: " + count);
   }
 
   isTransposed() {
