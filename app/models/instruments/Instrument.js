@@ -52,7 +52,7 @@ export default class Instrument {
     this.chords = chords;
   }
 
-  transpose(count) {
+  transpose(count) {console.log("Hello World");
     this._transposition += count;
     // this.key.transpose(count);
 
