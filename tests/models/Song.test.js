@@ -11,8 +11,6 @@ export default class SongTest {
   async test() {
     const song = await this.#songDao.getById(0);
 
-    const instrument = song.instruments[2];
-
-    console.log(instrument);
+    song.instruments.forEach(instrument => console.log(instrument));
   }
 }
