@@ -10,24 +10,24 @@ export default class Tuning extends Array {
     return this.#transposition;
   }
 
-  // set transposition(transposition) {
-  //   this.transpose(transposition - this.#transposition);
-  // }
+  set transposition(transposition) {
+    this.transpose(transposition - this.#transposition);
+  }
   
-  // transpose(count) {
-  //   this.#transposition += count;
-  //   this.forEach(note => note.transpose(count));
-  // }
+  transpose(count) {
+    this.#transposition += count;
+    this.forEach(note => note.transpose(count));
+  }
 
-  // up() {
-  //   this.#transposition += 1;
-  //   this.forEach(note => note.up());
-  // }
+  up() {
+    this.#transposition += 1;
+    this.forEach(note => note.up());
+  }
 
-  // down() {
-  //   this.#transposition -= 1;
-  //   this.forEach(note => note.down());
-  // }
+  down() {
+    this.#transposition -= 1;
+    this.forEach(note => note.down());
+  }
   
   isStandard() {
     const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
