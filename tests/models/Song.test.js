@@ -2,7 +2,7 @@ import Song from "../../app/models/Song.js";
 import SongDao from "../../app/dao/SongDao.js";
 
 export default class SongTest {
-  this.#songDao;
+  #songDao;
   
   constructor() {
     this.#songDao = new SongDao();
