@@ -56,7 +56,7 @@ export default class Guitar extends Instrument {
   //   this.transpose(transposition - this.transposition);
   }
 
-  transpose(count) {console.log("guitar.transpose");
+  transpose(count) {
     // var transposition = 0;
     // var tuning = 0;
     // var capo = 0;
@@ -76,6 +76,8 @@ export default class Guitar extends Instrument {
     //     capo = -count;
     //   }
     // }
+
+    super._transposition += count;
     
     // this.transposition += transposition;
     // this.tuning.transpose(tuning);
