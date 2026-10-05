@@ -118,4 +118,12 @@ export default class Song {
   isTransposed() {
     return this.#transposition != 0;
   }
+
+  toString() {
+    return
+      this.#key
+        + " " + this.#transposition
+        + " " + this.#instruments
+        ;
+  }
 }
