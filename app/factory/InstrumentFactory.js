@@ -56,6 +56,8 @@ export default class InstrumentFactory {
       });
 
       const tuning = new Tuning(notes);
+
+      guitar.tuning = tuning;
     }
     
     // guitar.transposition = guitar.tuning.droppedTo();
