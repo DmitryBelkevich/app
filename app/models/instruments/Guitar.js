@@ -34,17 +34,18 @@ export default class Guitar extends Instrument {
   }
 
   set capo(capo) {
-    // if (capo < 0) {
-    //   capo = 0;
+    if (capo < 0) {
+      capo = 0;
     //   super.transposition = capo;
-    // }
+    }
     
     this.capo = capo;
 
     // this.transpose(count);
+    this.transposition = this.tuning.transposition + this.capo;
   }
 
-  // set transposition(transposition) {
+  set transposition(transposition) {
   //   if (transposition > 0) {
   //     transposition = 0;
   //     this.capo = transposition;
@@ -53,7 +54,7 @@ export default class Guitar extends Instrument {
   //   super.transposition = transposition;
 
   //   this.transpose(transposition - this.transposition);
-  // }
+  }
 
   transpose(count) {
     // var transposition = 0;
