@@ -8,7 +8,7 @@ export default class SongTest {
     this.#songDao = new SongDao();
   }
   
-  test() {
+  async test() {
     const song = await this.#songDao.getById(17);
 
     console.log(song);
