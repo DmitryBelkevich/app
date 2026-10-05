@@ -1,4 +1,4 @@
-import Song from "../app/models/Song.js";
+import Song from "../../app/models/Song.js";
 
 export default class SongTest {
   test() {
