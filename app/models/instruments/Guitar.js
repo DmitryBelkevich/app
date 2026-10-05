@@ -27,6 +27,8 @@ export default class Guitar extends Instrument {
 
   set tuning(tuning) {
     this._tuning = tuning;
+
+    // transpose
   }
 
   get capo() {
