@@ -56,10 +56,8 @@ export default class InstrumentFactory {
       guitar.tuning = new Tuning(...notes);
     }
 
-    if (obj.capo) {
-      console.log("Hello World");
+    if (obj.capo)
       guitar.capo = obj.capo;
-    }
 
     // guitar.transposition = guitar.tuning.transposition + guitar.capo;
 
