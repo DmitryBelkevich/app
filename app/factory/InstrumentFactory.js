@@ -51,13 +51,9 @@ export default class InstrumentFactory {
     if (obj.tuning) {
       const notes = [];
       
-      obj.tuning.forEach((note) => {
-        notes.push(new Note(note));
-      });
+      obj.tuning.forEach(note => notes.push(new Note(note)));
 
-      const tuning = new Tuning(...notes);
-
-      guitar.tuning = tuning;
+      guitar.tuning = new Tuning(...notes);
     }
     
     // guitar.transposition = guitar.tuning.droppedTo();
