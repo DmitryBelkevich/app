@@ -10,10 +10,10 @@ export default class InstrumentFactory {
     
     switch (obj.title) {
       case "Instrument":
-        instrument = Instrument();
+        instrument = new Instrument();
         break;
       case "Keyboards":
-        instrument =  Keyboards();
+        instrument = new Keyboards();
         break;
       case "Guitar":
       case "E.Guitar":
@@ -21,7 +21,7 @@ export default class InstrumentFactory {
       case "5-string Bass Guitar":
         return this.createGuitar(obj);
       default:
-        instrument =  Instrument();
+        instrument = new Instrument();
     }
 
     instrument.transposition = obj.transposition;
