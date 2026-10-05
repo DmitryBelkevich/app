@@ -162,6 +162,8 @@ export default class SongController {
 
     // tuning-view
     // this.stateService.loadTuning();
+
+    console.log(this.song.transposition());
   }
 
   transpose_up_global = () => {
@@ -178,6 +180,8 @@ export default class SongController {
 
     // tuning-view
     // this.stateService.loadTuning();
+
+    console.log(this.song.transposition());
   }
 
   // 3. key-signature (local)
