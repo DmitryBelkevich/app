@@ -33,6 +33,7 @@ export default class Instrument {
   }
 
   set transposition(transposition) {
+    console.log("Hello World");
     this.transpose(transposition - this._transposition);
   }
 
