@@ -1,4 +1,4 @@
-import TuningTest from "./models/Song.test.js";
+import SongTest from "./models/Song.test.js";
 
 export default function main() {
   const songTest = new SongTest();
