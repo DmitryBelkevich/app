@@ -17,8 +17,7 @@
       },
       {
         "title": "Guitar",
-        "tuning": ["D", "G", "C", "F", "A", "D"],
-        "capo": 4
+        "tuning": ["D", "G", "C", "F", "A", "D"]
       }
     ],
     "visible": "true"
