@@ -11,8 +11,6 @@ export default class SongTest {
   test() {
     const song = await this.#songDao.getById(17);
 
-    console.log("Song.toString()");
-    console.log("must be: " + false);
-    console.log(song.toString() + " | " + false);
+    console.log(song);
   }
 }
