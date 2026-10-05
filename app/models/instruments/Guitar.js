@@ -18,7 +18,7 @@ export default class Guitar extends Instrument {
       new Note("B"),
       new Note("E"),
     );
-    this.capo = 0;
+    this._capo = 0;
   }
 
   get tuning() {
