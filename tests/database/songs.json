@@ -11,6 +11,9 @@
     "instruments": [
       {
         "title": "Instrument"
+      },
+      {
+        "title": "Keyboards"
       }
     ],
     "visible": "true"
