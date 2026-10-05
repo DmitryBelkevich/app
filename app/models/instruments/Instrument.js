@@ -33,7 +33,6 @@ export default class Instrument {
   }
 
   set transposition(transposition) {
-    console.log("Hello World");
     this.transpose(transposition - this._transposition);
   }
 
@@ -56,6 +55,8 @@ export default class Instrument {
   transpose(count) {
     this._transposition += count;
     // this.key.transpose(count);
+
+    console.log(count);
   }
 
   isTransposed() {
