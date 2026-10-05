@@ -52,8 +52,6 @@ export default class Guitar extends Instrument {
   //   }
     
     this.transpose(transposition - this._transposition);
-
-  //   this.transpose(transposition - this.transposition);
   }
 
   transpose(count) {
