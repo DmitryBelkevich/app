@@ -58,15 +58,15 @@ export default class SongDao {
     return song;
   }
 
-  // createChords(text, instrument) {
-  //   const index = text.length - ".html".length;
+  createChords(text, instrument) {
+    const index = text.length - ".html".length;
       
-  //   if (instrument.capo > 0)
-  //     return text.slice(0, index) + " (" + instrument.capo + ")" + text.slice(index);
+    if (instrument.capo > 0)
+      return text.slice(0, index) + " (" + instrument.capo + ")" + text.slice(index);
     
-  //   if (instrument.transposition < 0 || instrument.transposition > 0)
-  //     return text.slice(0, index) + " (" + instrument.transposition + ")" + text.slice(index);
+    if (instrument.transposition < 0 || instrument.transposition > 0)
+      return text.slice(0, index) + " (" + instrument.transposition + ")" + text.slice(index);
     
-  //   return text;
-  // }
+    return text;
+  }
 }
