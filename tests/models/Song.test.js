@@ -1,8 +1,15 @@
 import Song from "../../app/models/Song.js";
+import SongDao from "../../app/dao/SongDao.js";
 
 export default class SongTest {
+  this.#songDao;
+  
+  constructor() {
+    this.#songDao = new SongDao();
+  }
+  
   test() {
-    const song = new Song();
+    const song = await this.#songDao.getById(17);
 
     console.log("Song.toString()");
     console.log("must be: " + false);
