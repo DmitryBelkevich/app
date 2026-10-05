@@ -3,14 +3,14 @@ import Tuning from "../Tuning.js";
 import Note from "../Note.js";
 
 export default class Guitar extends Instrument {
-  tuning;
-  capo;
+  _tuning;
+  _capo;
   
   constructor() {
     super();
     this.title = "Guitar";
     this.color = "red";
-    this.tuning = new Tuning(
+    this._tuning = new Tuning(
       new Note("E"),
       new Note("A"),
       new Note("D"),
@@ -39,7 +39,7 @@ export default class Guitar extends Instrument {
     //   super.transposition = capo;
     }
     
-    this.capo = capo;
+    this._capo = capo;
 
     console.log("capo setter");
 
