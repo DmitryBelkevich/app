@@ -3,7 +3,7 @@ export default class Instrument {
   _color;
   _transposition;
   _key;
-  chords;
+  _chords;
 
   constructor() {
     this._title = "Instrument";
@@ -45,11 +45,11 @@ export default class Instrument {
   }
 
   get chords() {
-    return this.chords;
+    return this._chords;
   }
 
   set chords(chords) {
-    this.chords = chords;
+    this._chords = chords;
   }
 
   transpose(count) {
