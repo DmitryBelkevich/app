@@ -4,7 +4,7 @@ export default class Tuning extends Array {
   constructor(array) {
     super(array);
 
-    this.transposition = this.droppedTo();
+    this.transposition = -10;//this.droppedTo();
   }
 
   get transposition() {
