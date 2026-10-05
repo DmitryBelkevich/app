@@ -4,6 +4,9 @@ import Guitar from '../models/instruments/Guitar.js';
 import BassGuitar from '../models/instruments/BassGuitar.js';
 import FiveStringBassGuitar from '../models/instruments/FiveStringBassGuitar.js';
 
+import Tuning from '../models/Tuning.js';
+import Note from '../models/Note.js';
+
 export default class InstrumentFactory {
   createInstrument(obj) {
     var instrument;
