@@ -22,15 +22,15 @@ export default class Guitar extends Instrument {
   }
 
   get tuning() {
-    return this.tuning;
+    return this._tuning;
   }
 
   set tuning(tuning) {
-    this.tuning = tuning;
+    this._tuning = tuning;
   }
 
   get capo() {
-    return this.capo;
+    return this._capo;
   }
 
   set capo(capo) {
