@@ -6,9 +6,9 @@ export default class Tuning extends Array {
     this.#transposition = this.droppedTo();
   }
 
-  // get transposition() {
-  //   return this.#transposition;
-  // }
+  get transposition() {
+    return this.#transposition;
+  }
 
   // set transposition(transposition) {
   //   this.transpose(transposition - this.#transposition);
