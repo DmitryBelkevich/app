@@ -48,7 +48,7 @@ export default class SongDao {
       const instrument = this.instrumentFactory.createInstrument(instrument_obj);
 
       instrument.key = new Chord(song.key.toString());
-      // instrument.chords = this.createChords(song.text, instrument);
+      instrument.chords = this.createChords(song.text, instrument);
       
       song.instruments.push(instrument);
     });
@@ -60,11 +60,8 @@ export default class SongDao {
 
   createChords(text, instrument) {
     const index = text.length - ".html".length;
-      
-    if (instrument.capo > 0)
-      return text.slice(0, index) + " (" + instrument.capo + ")" + text.slice(index);
     
-    if (instrument.transposition < 0 || instrument.transposition > 0)
+    if (instrument.isTransposed())
       return text.slice(0, index) + " (" + instrument.transposition + ")" + text.slice(index);
     
     return text;
