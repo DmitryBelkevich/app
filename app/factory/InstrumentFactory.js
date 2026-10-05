@@ -59,8 +59,6 @@ export default class InstrumentFactory {
     if (obj.capo)
       guitar.capo = obj.capo;
 
-    // guitar.transposition = guitar.tuning.transposition + guitar.capo;
-
     return guitar;
   }
 }
