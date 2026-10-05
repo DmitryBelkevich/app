@@ -120,7 +120,7 @@ export default class Song {
   }
 
   toString() {
-    return this.#key;
+    return this;
       //   + " " + this.#transposition
       //   + " " + this.#instruments
   }
