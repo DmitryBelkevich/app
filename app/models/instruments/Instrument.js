@@ -1,14 +1,14 @@
 export default class Instrument {
   title;
   color;
-  transposition;
+  _transposition;
   key;
   chords;
 
   constructor() {
     this.title = "Instrument";
     this.color = "grey";
-    this.transposition = 0;
+    this._transposition = 0;
     this.key;
   }
 
@@ -29,11 +29,11 @@ export default class Instrument {
   }
 
   get transposition() {
-    return this.transposition;
+    return this._transposition;
   }
 
   set transposition(transposition) {
-    this.transpose(transposition - this.transposition);
+    this.transpose(transposition - this._transposition);
   }
 
   get key() {
@@ -53,11 +53,11 @@ export default class Instrument {
   }
 
   transpose(count) {
-    this.transposition += count;
+    this._transposition += count;
     this.key.transpose(count);
   }
 
   isTransposed() {
-    return this.transposition != 0;
+    return this._transposition != 0;
   }
 }
