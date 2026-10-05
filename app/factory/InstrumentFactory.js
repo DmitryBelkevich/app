@@ -55,7 +55,7 @@ export default class InstrumentFactory {
         notes.push(new Note(note));
       });
 
-      const tuning = new Tuning(notes);
+      const tuning = new Tuning(...notes);
 
       guitar.tuning = tuning;
     }
