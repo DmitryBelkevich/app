@@ -51,10 +51,10 @@ export default class InstrumentFactory {
       });
     }
     
-    guitar.transposition = guitar.tuning.droppedTo();
+    // guitar.transposition = guitar.tuning.droppedTo();
 
-    if (obj.capo)
-      guitar.capo = obj.capo;
+    // if (obj.capo)
+    //   guitar.capo = obj.capo;
 
     return guitar;
   }
