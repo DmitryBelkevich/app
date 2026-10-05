@@ -3,7 +3,9 @@ export default class Tuning extends Array {
 
   constructor(...args) {
     super(...args);
-    this.#transposition = this.droppedTo();
+    // this.#transposition = this.droppedTo();
+    const dropped = this.droppedTo();
+    console.log(dropped);
   }
 
   get transposition() {
