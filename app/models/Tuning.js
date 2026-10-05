@@ -8,13 +8,13 @@ export default class Tuning extends Array {
     console.log(dropped);
   }
 
-  get transposition() {
-    return this.#transposition;
-  }
+  // get transposition() {
+  //   return this.#transposition;
+  // }
 
-  set transposition(transposition) {
-    this.transpose(transposition - this.#transposition);
-  }
+  // set transposition(transposition) {
+  //   this.transpose(transposition - this.#transposition);
+  // }
   
   // transpose(count) {
   //   this.#transposition += count;
