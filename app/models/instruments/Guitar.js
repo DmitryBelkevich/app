@@ -6,7 +6,7 @@ export default class Guitar extends Instrument {
   _tuning;
   _capo;
   
-  constructor( ) {
+  constructor() {
     super();
     this.title = "Guitar";
     this.color = "red";
