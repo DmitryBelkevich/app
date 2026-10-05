@@ -1,5 +1,5 @@
 export default class Instrument {
-  title;
+  _title;
   color;
   _transposition;
   key;
@@ -13,11 +13,11 @@ export default class Instrument {
   }
 
   get title() {
-    return this.title;
+    return this._title;
   }
 
   set title(title) {
-    this.title = title;
+    this._title = title;
   }
 
   get color() {
