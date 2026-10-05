@@ -41,10 +41,8 @@ export default class Guitar extends Instrument {
     
     this._capo = capo;
 
-    console.log("capo setter");
-
     // this.transpose(count);
-    this.transposition(-15);//this.tuning.transposition + this.capo;
+    this.transposition = -15;//this.tuning.transposition + this.capo;
   }
 
   set transposition(transposition) {
@@ -53,6 +51,7 @@ export default class Guitar extends Instrument {
   //     this.capo = transposition;
   //   }
 
+    console.log("transposition setter");
     console.log(transposition);
     super.transposition = transposition;
 
