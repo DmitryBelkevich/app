@@ -24,7 +24,7 @@ export default class InstrumentFactory {
         instrument = new Instrument();
     }
 
-    instrument.transposition = obj.transposition || 0;
+    instrument.transposition = obj.transposition || instrument.transposition;
 
     return instrument;
   }
