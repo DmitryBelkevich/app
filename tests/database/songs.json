@@ -16,7 +16,8 @@
         "title": "Keyboards"
       },
       {
-        "title": "Guitar"
+        "title": "Guitar",
+        "tuning": ["D", "G", "C", "F", "A", "D"]
       }
     ],
     "visible": "true"
