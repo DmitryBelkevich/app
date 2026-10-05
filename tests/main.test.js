@@ -1,8 +1,8 @@
-import TuningTest from "./models/Tuning.test.js";
+import TuningTest from "./models/Song.test.js";
 
 export default function main() {
-  const tuningTest = new TuningTest();
-  tuningTest.test();
+  const songTest = new SongTest();
+  songTest.test();
 }
 
 const app = main();
