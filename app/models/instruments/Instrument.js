@@ -1,13 +1,13 @@
 export default class Instrument {
   _title;
-  color;
+  _color;
   _transposition;
   key;
   chords;
 
   constructor() {
-    this.title = "Instrument";
-    this.color = "grey";
+    this._title = "Instrument";
+    this._color = "grey";
     this._transposition = 0;
     this.key;
   }
@@ -21,11 +21,11 @@ export default class Instrument {
   }
 
   get color() {
-    return this.color;
+    return this._color;
   }
 
   set color(color) {
-    this.color = color;
+    this._color = color;
   }
 
   get transposition() {
