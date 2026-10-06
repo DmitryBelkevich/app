@@ -42,6 +42,7 @@ export default class Instrument {
 
   set key(key) {
     this._key = key;
+    this._key.transpose(this._transposition);
   }
 
   get chords() {
