@@ -20,8 +20,6 @@ export default class Tuning extends Array {
     
     this.#transposition += count;
     this.forEach(note => note.transpose(count));
-
-    console.log(count);
   }
 
   up() {
