@@ -3,7 +3,7 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 import CookieService from './CookieService.js';
 import TransposeService from './TransposeService.js';
 
-export default class StateService {
+export default class InstrumentService {
   #song;
   #view;
 
