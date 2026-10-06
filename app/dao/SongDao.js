@@ -9,7 +9,7 @@ import JsonLoader from '../loaders/JsonLoader.js';
 import InstrumentFactory from '../factory/InstrumentFactory.js';
 
 export default class SongDao {
-  constructor( ) {
+  constructor() {
     this.jsonLoader = new JsonLoader();
     this.instrumentFactory = new InstrumentFactory();
   }
