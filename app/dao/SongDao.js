@@ -62,7 +62,7 @@ export default class SongDao {
     const index = text.length - ".html".length;
     
     if (instrument.isTransposed())
-      return text.slice(0, index) + " (" + instrument.transposition + ")" + text.slice(index);
+      return text.slice(0, index) + " (" + (-instrument.transposition) + ")" + text.slice(index);
     
     return text;
   }
