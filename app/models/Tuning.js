@@ -17,6 +17,8 @@ export default class Tuning extends Array {
   transpose(count) {
     this.#transposition += count;
     this.forEach(note => note.transpose(count));
+
+    console.log(count);
   }
 
   up() {
