@@ -53,7 +53,7 @@ export default class SongDao {
       song.instruments.push(instrument);
     });
 
-    // song.transposition = element.transposition || 0;
+    song.transposition = element.transposition || song.transposition;
 
     return song;
   }
