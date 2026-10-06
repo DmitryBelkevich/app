@@ -128,8 +128,6 @@ export default class SongController {
   openText = () => {
     // console.log("open Text tab");
     console.log(this.song);
-    console.log(this.instrumentService.current);
-    this.view.selectOption(1);
   }
 
   openScore = () => {
