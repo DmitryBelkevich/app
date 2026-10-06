@@ -54,7 +54,7 @@ export default class Instrument {
 
   transpose(count) {
     this._transposition += count;
-    this._key.transpose(count);
+    // this._key.transpose(count);
   }
 
   isTransposed() {
