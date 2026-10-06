@@ -1,5 +1,5 @@
 export default class Note {
-  #value ;
+  #value;
   
   constructor(value) {
     this.#value = value;
