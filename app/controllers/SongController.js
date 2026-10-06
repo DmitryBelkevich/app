@@ -44,7 +44,7 @@ export default class SongController {
     // 3. key-signature (local)
 
     this.instrumentService = new InstrumentService(this.song, this.view);
-    const instrument = this.song.instruments[this.instrumentService.current];
+    const instrument = this.instrumentService.getCurrentInstrument();
     this.view.setKeyLocal(instrument.key.toString());
 
     // 4. transposer (local)
