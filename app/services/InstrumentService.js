@@ -43,7 +43,7 @@ export default class InstrumentService {
     return this.#current;
   }
 
-  get currentInstrument() {
+  getCurrentInstrument() {
     return this.#song.instruments[this.#current];
   }
 
