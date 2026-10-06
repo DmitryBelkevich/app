@@ -66,6 +66,9 @@ export default class Chord {
   }
 
   transpose(count) {
+    if (!count)
+      return;
+    
     this.#note.transpose(count);
     this.#value = this.#prefix + this.#note + this.#postfix;
   }
