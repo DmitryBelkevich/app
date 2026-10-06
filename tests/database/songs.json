@@ -11,8 +11,7 @@
     
     "instruments": [
       {
-        "title": "Guitar",
-        "tuning": ["D", "G", "C", "F", "A", "D"]
+        "title": "Guitar"
       }
     ],
     "visible": "true"
