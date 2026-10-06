@@ -8,12 +8,14 @@
     "score": "",
     "playback": "",
     "key": "Am",
+    
     "instruments": [
       {
         "title": "Instrument"
       },
       {
-        "title": "Keyboards"
+        "title": "Keyboards",
+        "transposition": 3,
       },
       {
         "title": "Guitar",
