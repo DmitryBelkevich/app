@@ -54,6 +54,9 @@ export default class Instrument {
   }
 
   transpose(count) {
+    if (!count)
+      return;
+    
     this._transposition += count;
 
     if (this._key)
