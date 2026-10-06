@@ -4,7 +4,7 @@ import SongView from '../views/SongView.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 
-import StateService from '../services/StateService.js';
+import InstrumentService from '../services/InstrumentService.js';
 
 export default class SongController {
   #params;
@@ -43,8 +43,8 @@ export default class SongController {
 
     // 3. key-signature (local)
 
-    this.stateService = new StateService(this.song, this.view);
-    const instrument = this.song.instruments[this.stateService.current];
+    this.instrumentService = new InstrumentService(this.song, this.view);
+    const instrument = this.song.instruments[this.instrumentService.current];
     this.view.setKeyLocal(instrument.key.toString());
 
     // 4. transposer (local)
@@ -61,7 +61,7 @@ export default class SongController {
     // *** text ***
 
     // state
-    this.stateService.load();
+    this.instrumentService.load();
 
     // *** binding controller-view ***
 
@@ -128,7 +128,7 @@ export default class SongController {
   openText = () => {
     // console.log("open Text tab");
     console.log(this.song);
-    console.log(this.stateService.current);
+    console.log(this.instrumentService.current);
     this.view.selectOption(1);
   }
 
@@ -161,7 +161,7 @@ export default class SongController {
     // });
 
     // tuning-view
-    // this.stateService.loadTuning();
+    // this.instrumentService.loadTuning();
 
     console.log(this.song.toString());
   }
@@ -179,7 +179,7 @@ export default class SongController {
     // });
 
     // tuning-view
-    // this.stateService.loadTuning();
+    // this.instrumentService.loadTuning();
 
     console.log(this.song.toString());
   }
@@ -189,11 +189,11 @@ export default class SongController {
   // 4. transposer (local)
 
   transpose_down_local = () => {
-    this.stateService.transposeService.transposeDown();
+    this.instrumentService.transposeService.transposeDown();
   }
 
   transpose_up_local = () => {
-    this.stateService.transposeService.transposeUp();
+    this.instrumentService.transposeService.transposeUp();
   }
 
   // *** instrument ***
@@ -201,8 +201,8 @@ export default class SongController {
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.stateService.current = event.target.value;
-    this.stateService.load();
+    this.instrumentService.current = event.target.value;
+    this.instrumentService.load();
   }
 
   // *** text ***
