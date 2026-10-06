@@ -43,6 +43,10 @@ export default class InstrumentService {
     return this.#current;
   }
 
+  get currentInstrument() {
+    return this.#song.instruments[this.#current];
+  }
+
   set current(current) {
     this.#current = current;
     this.#cookieService.save({name: "instrument", value: this.#current});
