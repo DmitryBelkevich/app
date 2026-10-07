@@ -8,7 +8,9 @@ export default class InstrumentTest {
 
   run() {
     // this.test_transposition_1();
-    this.test_transposition_2();
+    // this.test_transposition_2();
+
+    this.test_transposition_key_1();
   }
 
   // transposition
@@ -92,15 +94,15 @@ export default class InstrumentTest {
     else
       console.log("🔴" + "instrument.transposition");
 
-    console.log(instrument);
+    // console.log(instrument);
   }
 
-  // transposition
-  test10() {
+  // transposition, key
+  test_transposition_key_1() {
     const instrument = new Instrument();
-    
-    instrument.key = new Chord("Am");
+
     instrument.key.transpose(2);
+    instrument.key = new Chord("Am");
 
     if (instrument.key == "Bm")
       console.log("🟢" + "instrument.key");
