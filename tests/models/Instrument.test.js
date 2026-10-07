@@ -10,5 +10,10 @@ export default class InstrumentTest {
     instrument.key.transpose(2);
 
     console.log(instrument);
+
+    if (instrument.key == "Bm")
+      console.log("+");
+    else
+      console.log("-");
   }
 }
