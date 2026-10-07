@@ -7,6 +7,8 @@ export default class InstrumentTest {
 
     instrument.key = new Chord("Am");
 
+    instrument.key.transpose(2);
+
     console.log(instrument);
   }
 }
