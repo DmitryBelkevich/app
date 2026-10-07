@@ -7,12 +7,12 @@ export default class InstrumentTest {
   }
 
   run() {
-    this.test1();
-    // this.test2();
+    // this.test_transposition_1();
+    this.test_transposition_2();
   }
 
   // transposition
-  test1() {
+  test_transposition_1() {
     const instrument = new Instrument();
 
     instrument.transposition = -2;
@@ -47,12 +47,40 @@ export default class InstrumentTest {
   }
 
   // transpose
-  test2() {
+  test_transposition_2() {
     const instrument = new Instrument();
     
-    instrument.transpose(-2);
+    instrument.transpose(1);
 
-    if (instrument.transposition == -2)
+    if (instrument.transposition == 1)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+
+    instrument.transpose(1);
+
+    if (instrument.transposition == 2)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+
+    instrument.transpose(-1);
+
+    if (instrument.transposition == 1)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+
+    instrument.transpose(-1);
+
+    if (instrument.transposition == 0)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+
+    instrument.transpose(-1);
+
+    if (instrument.transposition == -1)
       console.log("🟢" + "instrument.transposition");
     else
       console.log("🔴" + "instrument.transposition");
