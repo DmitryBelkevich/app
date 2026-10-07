@@ -17,13 +17,13 @@ export default class InstrumentTest {
     console.log(this.instrument);
 
     if (this.instrument.key == "Bm")
-      console.log("+");
+      console.log("instrument.key " + "+");
     else
-      console.log("-");
+      console.log("instrument.key " + "-");
 
     if (this.instrument.transposition == 2)
-      console.log("+");
+      console.log("instrument.transposition " + "+");
     else
-      console.log("-");
+      console.log("instrument.transposition " + "-");
   }
 }
