@@ -3,7 +3,7 @@ import Chord from "../../app/models/Chord.js";
 
 export default class InstrumentTest {
   constructor() {
-    this.instrument = new Instrument();
+    
   }
 
   run() {
@@ -11,25 +11,35 @@ export default class InstrumentTest {
   }
 
   test1() {
+    this.instrument = new Instrument();
+    
     this.instrument.key.transpose(-2);
+
+    if (this.instrument.transposition == 2)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+
     console.log(this.instrument);
   }
 
   // transposition
   test2() {
+    this.instrument = new Instrument();
+    
     this.instrument.key = new Chord("Am");
     this.instrument.key.transpose(2);
 
-    console.log(this.instrument);
-
     if (this.instrument.key == "Bm")
-      console.log("instrument.key " + "+");
+      console.log("🟢" + "instrument.key");
     else
-      console.log("instrument.key " + "-");
+      console.log("🔴" + "instrument.key");
 
     if (this.instrument.transposition == 2)
-      console.log("instrument.transposition " + "+");
+      console.log("🟢" + "instrument.transposition");
     else
-      console.log("instrument.transposition " + "-");
+      console.log("🔴" + "instrument.transposition");
+
+    console.log(this.instrument);
   }
 }
