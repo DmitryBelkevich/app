@@ -13,9 +13,9 @@ export default class InstrumentTest {
   test1() {
     const instrument = new Instrument();
     
-    instrument.transpose(-2);
+    instrument.transposition = -2;
 
-    if (instrument.transposition == 2)
+    if (instrument.transposition == -2)
       console.log("🟢" + "instrument.transposition");
     else
       console.log("🔴" + "instrument.transposition");
