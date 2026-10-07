@@ -11,6 +11,7 @@ export default class InstrumentTest {
   }
 
   test1() {
+    this.instrument.key.transpose(-2);
     console.log(this.instrument);
   }
 
