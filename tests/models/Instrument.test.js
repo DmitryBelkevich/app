@@ -1,4 +1,4 @@
-import Instrument from "../../app/models/Instrument.js";
+import Instrument from "../../app/models/instruments/Instrument.js";
 
 export default class InstrumentTest {
   test() {
