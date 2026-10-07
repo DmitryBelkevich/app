@@ -85,6 +85,13 @@ export default class InstrumentTest {
     else
       console.log("🔴" + "instrument.transposition");
 
+    instrument.transpose(-1);
+
+    if (instrument.transposition == -2)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+
     console.log(instrument);
   }
 
