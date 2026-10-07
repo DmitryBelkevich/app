@@ -13,7 +13,7 @@ export default class InstrumentTest {
   test1() {
     this.instrument = new Instrument();
     
-    this.instrument.key.transpose(-2);
+    this.instrument.transpose(-2);
 
     if (this.instrument.transposition == 2)
       console.log("🟢" + "instrument.transposition");
