@@ -64,4 +64,24 @@ export default class TuningTest {
 
     // console.log(tuning);
   }
+
+  tuning_transposition4_test() {
+    console.log("tuning.transposition test:");
+    
+    const tuning = new Tuning(
+      new Note("D"),
+      new Note("G"),
+      new Note("C"),
+      new Note("F"),
+      new Note("A"),
+      new Note("D"),
+    );
+
+    if (tuning.transposition == -2)
+      console.log("🟢" + "tuning.transposition");
+    else
+      console.log("🔴" + "tuning.transposition");
+
+    // console.log(tuning);
+  }
 }
