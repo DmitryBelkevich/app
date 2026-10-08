@@ -10,6 +10,7 @@ export default class TuningTest {
     this.tuning_transposition_test();
     this.tuning_transposition2_test();
     this.tuning_transposition3_test();
+    this.tuning_transposition4_test();
   }
 
   tuning_transposition_test() {
@@ -21,6 +22,11 @@ export default class TuningTest {
       console.log("🟢" + "tuning.transposition");
     else
       console.log("🔴" + "tuning.transposition");
+
+    if (tuning.isStandard())
+      console.log("🟢" + "tuning.isStandard");
+    else
+      console.log("🔴" + "tuning.isStandard");
 
     // console.log(tuning);
   }
