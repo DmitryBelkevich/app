@@ -114,14 +114,14 @@ export default class TuningTest {
 
     [-2, -1, 0, 1, 2].forEach((value) => {
       tuning.transposition = value;
-
-    if (tuning.transposition == value)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
+      
+      if (tuning.transposition == value)
+        console.log("🟢" + "tuning.transposition");
+      else
+        console.log("🔴" + "tuning.transposition");
     });
-
-    console.log(tuning);
+    
+    // console.log(tuning);
   }
 
   // isStandard
