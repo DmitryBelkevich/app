@@ -12,5 +12,9 @@ export default class GuitarTest {
 
   test() {
     console.log("test");
+
+    const guitar = new Guitar();
+
+    console.log(guitar);
   }
 }
