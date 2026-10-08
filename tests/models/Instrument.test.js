@@ -101,7 +101,7 @@ export default class InstrumentTest {
   test_transposition_key_1() {
     const instrument = new Instrument();
 
-    instrument.key.transpose(2);
+    instrument.transpose(2);
     instrument.key = new Chord("Am");
 
     if (instrument.key == "Bm")
