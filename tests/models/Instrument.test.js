@@ -7,6 +7,8 @@ export default class InstrumentTest {
   }
 
   run() {
+    this.transposition_default_test();
+    
     this.transposition_setter_without_key_test();
     this.transposition_setter_with_key_test();
     
@@ -14,8 +16,19 @@ export default class InstrumentTest {
     this.transpose_with_key_test();
   }
 
-  transposition_setter_without_key_test() {
+  transposition_default_test() {
     console.log("transposition setter (without key) test:");
+
+    const instrument = new Instrument();
+
+    if (instrument.transposition == 0)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
+  }
+
+  transposition_setter_without_key_test() {
+    console.log("transposition default test:");
     
     const instrument = new Instrument();
 
@@ -26,23 +39,9 @@ export default class InstrumentTest {
     else
       console.log("🔴" + "instrument.transposition");
 
-    instrument.transposition = -4;
-
-    if (instrument.transposition == -4)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
-
     instrument.transposition = 2;
 
     if (instrument.transposition == 2)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
-
-    instrument.transposition = 4;
-
-    if (instrument.transposition == 4)
       console.log("🟢" + "instrument.transposition");
     else
       console.log("🔴" + "instrument.transposition");
@@ -78,22 +77,15 @@ export default class InstrumentTest {
     console.log("transpose (without key) test:");
     
     const instrument = new Instrument();
+
+    instrument.transpose(0);
+
+    if (instrument.transposition == 0)
+      console.log("🟢" + "instrument.transposition");
+    else
+      console.log("🔴" + "instrument.transposition");
     
     instrument.transpose(1);
-
-    if (instrument.transposition == 1)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
-
-    instrument.transpose(1);
-
-    if (instrument.transposition == 2)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
-
-    instrument.transpose(-1);
 
     if (instrument.transposition == 1)
       console.log("🟢" + "instrument.transposition");
@@ -114,9 +106,9 @@ export default class InstrumentTest {
     else
       console.log("🔴" + "instrument.transposition");
 
-    instrument.transpose(-1);
+    instrument.transpose(1);
 
-    if (instrument.transposition == -2)
+    if (instrument.transposition == 0)
       console.log("🟢" + "instrument.transposition");
     else
       console.log("🔴" + "instrument.transposition");
