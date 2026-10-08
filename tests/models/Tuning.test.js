@@ -109,9 +109,9 @@ export default class TuningTest {
       new Note("E"),
     );
 
-    tuning.transposition = -1;
+    tuning.transposition = -2;
 
-    if (tuning.transposition == -1)
+    if (tuning.transposition == -2)
       console.log("🟢" + "tuning.transposition");
     else
       console.log("🔴" + "tuning.transposition");
