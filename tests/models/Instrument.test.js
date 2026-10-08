@@ -7,12 +7,11 @@ export default class InstrumentTest {
   }
 
   run() {
-    this.transposition_setter_without_key_test();
+    // this.transposition_setter_without_key_test();
     this.transposition_setter_with_key_test();
     
-    this.transpose_test();
-
-    this.transpose_key_test();
+    // this.transpose_without_key_test();
+    // this.transpose_with_key_test();
   }
 
   transposition_setter_without_key_test() {
@@ -53,10 +52,18 @@ export default class InstrumentTest {
 
   transposition_setter_with_key_test() {
     console.log("transposition setter (with key) test:");
+
+    const instrument = new Instrument();
+    instrument.key = new Chord("Am");
+
+    if (instrument.key == "Bm")
+      console.log("🟢" + "instrument.key");
+    else
+      console.log("🔴" + "instrument.key");
   }
 
-  transpose_test() {
-    console.log("transpose test:");
+  transpose_without_key_test() {
+    console.log("transpose (without key) test:");
     
     const instrument = new Instrument();
     
@@ -105,8 +112,8 @@ export default class InstrumentTest {
     // console.log(instrument);
   }
 
-  transpose_key_test() {
-    console.log("transpose key test:");
+  transpose_with_key_test() {
+    console.log("transpose (with key) test:");
     
     const instrument = new Instrument();
 
@@ -123,6 +130,6 @@ export default class InstrumentTest {
     else
       console.log("🔴" + "instrument.transposition");
 
-    console.log(instrument);
+    // console.log(instrument);
   }
 }
