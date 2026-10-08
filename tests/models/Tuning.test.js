@@ -7,18 +7,18 @@ export default class TuningTest {
   }
   
   run() {
-    // this.tuning_transposition_test();
-    // this.tuning_transposition2_test();
-    // this.tuning_transposition3_test();
-    // this.tuning_transposition4_test();
+    // this.transposition_test1();
+    // this.transposition_test2();
+    // this.transposition_test3();
+    // this.transposition_test4();
 
-    this.transpose_test1();
-    this.transpose_test2();
-    this.transpose_test3();
-    this.transpose_test4();
+    // this.isStandard_test1();
+    // this.isStandard_test2();
+    // this.isStandard_test3();
+    // this.isStandard_test4();
   }
 
-  tuning_transposition_test() {
+  transposition_test1() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning();
@@ -31,7 +31,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  tuning_transposition2_test() {
+  transposition_test2() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning(
@@ -51,7 +51,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  tuning_transposition3_test() {
+  transposition_test3() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning(
@@ -71,7 +71,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  tuning_transposition4_test() {
+  transposition_test4() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning(
@@ -93,7 +93,7 @@ export default class TuningTest {
 
   // isStandard
 
-  transpose_test1() {
+  isStandard_test1() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning();
@@ -106,7 +106,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  transpose_test2() {
+  isStandard_test2() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning(
@@ -126,7 +126,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  transpose_test3() {
+  isStandard_test3() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning(
@@ -146,7 +146,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  transpose_test4() {
+  isStandard_test4() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning(
