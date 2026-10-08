@@ -7,10 +7,11 @@ export default class TuningTest {
   }
   
   run() {
+    // this.get_transposition_test0();
+
     // this.get_transposition_test1();
     // this.get_transposition_test2();
     // this.get_transposition_test3();
-    // this.get_transposition_test4();
 
     this.set_transposition_test1();
 
@@ -20,9 +21,9 @@ export default class TuningTest {
     // this.isStandard_test4();
   }
 
-  // get_transposition
+  // get_transposition (empty tuning)
 
-  get_transposition_test1() {
+  get_transposition_test0() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning();
@@ -35,7 +36,9 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  get_transposition_test2() {
+  // get_transposition
+
+  get_transposition_test1() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning(
@@ -55,7 +58,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  get_transposition_test3() {
+  get_transposition_test2() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning(
@@ -75,7 +78,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  get_transposition_test4() {
+  get_transposition_test3() {
     console.log("tuning.transposition test:");
     
     const tuning = new Tuning(
@@ -116,11 +119,6 @@ export default class TuningTest {
       console.log("🟢" + "tuning.transposition");
     else
       console.log("🔴" + "tuning.transposition");
-
-    if (!tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
 
     console.log(tuning);
   }
