@@ -31,7 +31,7 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
-    [-2, -1, 0, 1, 2].forEach((value) => {
+    [-2, -1, -1, 0, 0, 1, 1, 2].forEach((value) => {
       guitar.transposition = value;
 
       if (guitar.transposition == value)
