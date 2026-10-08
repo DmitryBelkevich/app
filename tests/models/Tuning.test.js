@@ -173,7 +173,7 @@ export default class TuningTest {
   //
 
   set_transposition_test1() {
-    console.log("tuning.isStandard test:");
+    console.log("tuning.set_transposition test:");
     
     const tuning = new Tuning(
       new Note("E"),
