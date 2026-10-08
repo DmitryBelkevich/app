@@ -1,5 +1,5 @@
 export default class Tuning extends Array {
-  #transposition = 0;
+  #transposition;
 
   constructor(...args) {
     super(...args);
