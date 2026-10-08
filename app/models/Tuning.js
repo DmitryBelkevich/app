@@ -14,7 +14,7 @@ export default class Tuning extends Array {
     this.transpose(transposition - this.#transposition);
   }
   
-  transpose(count) {console.log("Tuning.transpose: " + count);
+  transpose(count) {
     if (!count)
       return;
     
