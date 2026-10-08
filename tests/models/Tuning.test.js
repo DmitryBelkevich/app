@@ -12,10 +12,10 @@ export default class TuningTest {
     // this.tuning_transposition3_test();
     // this.tuning_transposition4_test();
 
-    this.test1();
-    this.test2();
-    this.test3();
-    this.test4();
+    this.transpose_test1();
+    this.transpose_test2();
+    this.transpose_test3();
+    this.transpose_test4();
   }
 
   tuning_transposition_test() {
@@ -93,7 +93,7 @@ export default class TuningTest {
 
   // isStandard
 
-  test1() {
+  transpose_test1() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning();
@@ -106,7 +106,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  test2() {
+  transpose_test2() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning(
@@ -126,7 +126,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  test3() {
+  transpose_test3() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning(
@@ -146,7 +146,7 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
-  test4() {
+  transpose_test4() {
     console.log("tuning.isStandard test:");
     
     const tuning = new Tuning(
