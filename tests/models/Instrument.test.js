@@ -71,7 +71,7 @@ export default class InstrumentTest {
     else
       console.log("🔴" + "instrument.key");
 
-    console.log(instrument);
+    // console.log(instrument);
   }
 
   transpose_without_key_test() {
