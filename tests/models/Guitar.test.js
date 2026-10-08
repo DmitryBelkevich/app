@@ -7,11 +7,11 @@ export default class GuitarTest {
   }
 
   run() {
-    this.test();
+    this.transposition_setter_test();
   }
 
-  test() {
-    console.log("test");
+  transposition_setter_test() {
+    console.log("transposition_setter_test");
 
     const guitar = new Guitar();
 
