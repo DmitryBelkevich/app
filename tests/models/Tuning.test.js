@@ -184,8 +184,6 @@ export default class TuningTest {
       new Note("E"),
     );
 
-    console.log(tuning);
-
     tuning.transposition = -1;
 
     if (!tuning.isStandard())
