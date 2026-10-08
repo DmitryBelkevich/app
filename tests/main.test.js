@@ -8,10 +8,10 @@ export default function main() {
   // instrumentTest.run();
   
   const guitarTest = new GuitarTest();
-  // guitarTest.run();
+  guitarTest.run();
 
   const tuningTest = new TuningTest();
-  tuningTest.run();
+  // tuningTest.run();
 }
 
 const app = main();
