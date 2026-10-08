@@ -112,6 +112,10 @@ export default class TuningTest {
       new Note("E"),
     );
 
+    [-2, -1, 0, 1, 2].forEach((value) = {
+      console.log("value");
+    });
+
     tuning.transposition = -2;
 
     if (tuning.transposition == -2)
