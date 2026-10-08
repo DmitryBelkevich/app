@@ -14,6 +14,8 @@ export default class TuningTest {
 
     this.test1();
     this.test2();
+    this.test3();
+    this.test4();
   }
 
   tuning_transposition_test() {
@@ -46,11 +48,6 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    if (tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
-
     // console.log(tuning);
   }
 
@@ -71,11 +68,6 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    if (!tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
-
     // console.log(tuning);
   }
 
@@ -95,11 +87,6 @@ export default class TuningTest {
       console.log("🟢" + "tuning.transposition");
     else
       console.log("🔴" + "tuning.transposition");
-
-    if (!tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
 
     // console.log(tuning);
   }
@@ -132,6 +119,46 @@ export default class TuningTest {
     );
 
     if (tuning.isStandard())
+      console.log("🟢" + "tuning.isStandard");
+    else
+      console.log("🔴" + "tuning.isStandard");
+
+    // console.log(tuning);
+  }
+
+  test3() {
+    console.log("tuning.isStandard test:");
+    
+    const tuning = new Tuning(
+      new Note("D#"),
+      new Note("G#"),
+      new Note("C#"),
+      new Note("F#"),
+      new Note("A#"),
+      new Note("D#"),
+    );
+
+    if (!tuning.isStandard())
+      console.log("🟢" + "tuning.isStandard");
+    else
+      console.log("🔴" + "tuning.isStandard");
+
+    // console.log(tuning);
+  }
+
+  test4() {
+    console.log("tuning.isStandard test:");
+    
+    const tuning = new Tuning(
+      new Note("D"),
+      new Note("G"),
+      new Note("C"),
+      new Note("F"),
+      new Note("A"),
+      new Note("D"),
+    );
+
+    if (!tuning.isStandard())
       console.log("🟢" + "tuning.isStandard");
     else
       console.log("🔴" + "tuning.isStandard");
