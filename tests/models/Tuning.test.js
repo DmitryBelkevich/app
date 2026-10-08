@@ -41,11 +41,6 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    if (tuning.transposition == 0)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
-
     console.log(tuning);
   }
 }
