@@ -9,8 +9,8 @@ export default class GuitarTest {
   run() {
     this.transposition_default_test();
     
-    this.set_transposition_without_key_test();
-    // this.set_transposition_with_key_test();
+    // this.set_transposition_without_key_test();
+    this.set_transposition_with_key_test();
   }
 
   transposition_default_test() {
@@ -31,7 +31,7 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
-    [-2, -1, -1, 0, 0, 1, 1, 2].forEach((value) => {
+    [-2, -1, 0, 1, 2].forEach((value) => {
       guitar.transposition = value;
 
       if (guitar.transposition == value)
@@ -48,12 +48,16 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
-    // guitar.transposition = -2;
+    // guitar
 
-    // if (guitar.transposition == -2)
-    //   console.log("🟢" + "guitar.transposition");
-    // else
-    //   console.log("🔴" + "guitar.transposition");
+    [0].forEach(value => {
+      guitar.transposition = value;
+
+      if (guitar.transposition == value)
+        console.log("🟢" + "guitar.transposition");
+      else
+        console.log("🔴" + "guitar.transposition");
+    });
 
     console.log(guitar);
   }
