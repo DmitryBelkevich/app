@@ -14,7 +14,7 @@ export default class TuningTest {
     
     const tuning = new Tuning();
 
-    if (tuning.transposition == undefined)
+    if (tuning.transposition == 0)
       console.log("🟢" + "tuning.transposition");
     else
       console.log("🔴" + "tuning.transposition");
