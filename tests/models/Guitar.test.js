@@ -5,4 +5,12 @@ export default class GuitarTest {
   constructor() {
     
   }
+
+  run() {
+    this.test();
+  }
+
+  test() {
+    console.log("test");
+  }
 }
