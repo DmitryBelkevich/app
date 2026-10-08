@@ -54,12 +54,16 @@ export default class InstrumentTest {
     console.log("transposition setter (with key) test:");
 
     const instrument = new Instrument();
+
+    instrument.transposition = 2;
     instrument.key = new Chord("Am");
 
     if (instrument.key == "Bm")
       console.log("🟢" + "instrument.key");
     else
       console.log("🔴" + "instrument.key");
+
+    console.log(instrument);
   }
 
   transpose_without_key_test() {
