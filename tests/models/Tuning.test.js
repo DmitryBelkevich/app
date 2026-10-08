@@ -16,7 +16,11 @@ export default class TuningTest {
     // this.isStandard_test2();
     // this.isStandard_test3();
     // this.isStandard_test4();
+
+    this.set_transposition_test1();
   }
+
+  // transposition_getter
 
   transposition_getter_test1() {
     console.log("tuning.transposition test:");
@@ -164,5 +168,31 @@ export default class TuningTest {
       console.log("🔴" + "tuning.isStandard");
 
     // console.log(tuning);
+  }
+
+  //
+
+  set_transposition_test1() {
+    console.log("tuning.isStandard test:");
+    
+    const tuning = new Tuning(
+      new Note("E"),
+      new Note("A"),
+      new Note("D"),
+      new Note("G"),
+      new Note("B"),
+      new Note("E"),
+    );
+
+    console.log(tuning);
+
+    tuning.transposition = -1;
+
+    if (!tuning.isStandard())
+      console.log("🟢" + "tuning.isStandard");
+    else
+      console.log("🔴" + "tuning.isStandard");
+
+    console.log(tuning);
   }
 }
