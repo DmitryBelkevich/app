@@ -1,7 +1,8 @@
+import InstrumentTest from "./models/Instrument.test.js";
 import GuitarTest from "./models/Guitar.test.js";
 
 export default function main() {
-  const test = new GuitarTest();
+  const test = new InstrumentTest();
   test.run();
 }
 
