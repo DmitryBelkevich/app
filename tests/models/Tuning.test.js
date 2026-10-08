@@ -12,12 +12,12 @@ export default class TuningTest {
     this.get_transposition_test3();
     this.get_transposition_test4();
 
+    this.set_transposition_test1();
+
     this.isStandard_test1();
     this.isStandard_test2();
     this.isStandard_test3();
     this.isStandard_test4();
-
-    this.set_transposition_test1();
   }
 
   // get_transposition
@@ -95,6 +95,30 @@ export default class TuningTest {
     // console.log(tuning);
   }
 
+  // set_transposition
+
+  set_transposition_test1() {
+    console.log("tuning.set_transposition test:");
+    
+    const tuning = new Tuning(
+      new Note("E"),
+      new Note("A"),
+      new Note("D"),
+      new Note("G"),
+      new Note("B"),
+      new Note("E"),
+    );
+
+    tuning.transposition = -1;
+
+    if (!tuning.isStandard())
+      console.log("🟢" + "tuning.isStandard");
+    else
+      console.log("🔴" + "tuning.isStandard");
+
+    // console.log(tuning);
+  }
+
   // isStandard
 
   isStandard_test1() {
@@ -168,29 +192,5 @@ export default class TuningTest {
       console.log("🔴" + "tuning.isStandard");
 
     // console.log(tuning);
-  }
-
-  //
-
-  set_transposition_test1() {
-    console.log("tuning.set_transposition test:");
-    
-    const tuning = new Tuning(
-      new Note("E"),
-      new Note("A"),
-      new Note("D"),
-      new Note("G"),
-      new Note("B"),
-      new Note("E"),
-    );
-
-    tuning.transposition = -1;
-
-    if (!tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
-
-    console.log(tuning);
   }
 }
