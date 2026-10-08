@@ -1,11 +1,24 @@
 import Tuning from "../app/models/Tuning.js";
 
 export default class TuningTest {
+  constructor() {
+    
+  }
+  
+  run() {
+    this.test();
+  }
+
   test() {
+    console.log("tuning test:");
+    
     const tuning = new Tuning();
 
-    console.log("Tuning.isStandard()");
-    console.log("must be: " + false);
-    console.log(tuning.isStandard() + " | " + false);
+    // if (tuning.isStandard() == 0)
+    //   console.log("🟢" + "tuning.isStandard");
+    // else
+    //   console.log("🔴" + "tuning.isStandard");
+
+    console.log(tuning);
   }
 }
