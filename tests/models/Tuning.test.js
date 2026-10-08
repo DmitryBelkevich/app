@@ -1,4 +1,5 @@
 import Tuning from "../../app/models/Tuning.js";
+import Note from "../../app/models/Note.js";
 
 export default class TuningTest {
   constructor() {
