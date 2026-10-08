@@ -56,9 +56,17 @@ export default class InstrumentTest {
     const instrument = new Instrument();
 
     instrument.transposition = 2;
+    
     instrument.key = new Chord("Am");
 
     if (instrument.key == "Bm")
+      console.log("🟢" + "instrument.key");
+    else
+      console.log("🔴" + "instrument.key");
+
+    instrument.transposition = -2;
+
+    if (instrument.key == "Gm")
       console.log("🟢" + "instrument.key");
     else
       console.log("🔴" + "instrument.key");
