@@ -7,14 +7,14 @@ export default class InstrumentTest {
   }
 
   run() {
-    this.transposition_test_1();
-    this.transposition_test_2();
+    this.transposition_setter_test();
+    this.transpose_test();
 
-    this.transposition_key_test_1();
+    this.transpose_key_test();
   }
 
-  transposition_test_1() {
-    console.log("transposition test 1:");
+  transposition_setter_test() {
+    console.log("transposition setter test:");
     
     const instrument = new Instrument();
 
@@ -49,8 +49,8 @@ export default class InstrumentTest {
     // console.log(instrument);
   }
 
-  transposition_test_2() {
-    console.log("transposition test 2:");
+  transpose_test() {
+    console.log("transpose test:");
     
     const instrument = new Instrument();
     
@@ -99,9 +99,8 @@ export default class InstrumentTest {
     // console.log(instrument);
   }
 
-  // transposition, key
-  transposition_key_test_1() {
-    console.log("transposition key test 2:");
+  transpose_key_test() {
+    console.log("transpose key test:");
     
     const instrument = new Instrument();
 
