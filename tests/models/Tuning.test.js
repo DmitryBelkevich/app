@@ -6,19 +6,19 @@ export default class TuningTest {
   }
   
   run() {
-    this.test();
+    this.tuning_transposition_test();
   }
 
-  test() {
-    console.log("tuning test:");
+  tuning_transposition_test() {
+    console.log("tuning.transposition test:");
     
     const tuning = new Tuning();
 
-    // if (tuning.isStandard() == 0)
-    //   console.log("🟢" + "tuning.isStandard");
-    // else
-    //   console.log("🔴" + "tuning.isStandard");
+    if (tuning.transposition == undefined)
+      console.log("🟢" + "tuning.transposition");
+    else
+      console.log("🔴" + "tuning.transposition");
 
-    console.log(tuning);
+    // console.log(tuning);
   }
 }
