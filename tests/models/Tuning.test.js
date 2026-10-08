@@ -112,23 +112,14 @@ export default class TuningTest {
       new Note("E"),
     );
 
-    [-2, -1, 0, 1, 2].forEach((value) = {
-      console.log("value");
+    [-2, -1, 0, 1, 2].forEach((value) => {
+      tuning.transposition = value;
+
+    if (tuning.transposition == value)
+      console.log("🟢" + "tuning.transposition");
+    else
+      console.log("🔴" + "tuning.transposition");
     });
-
-    tuning.transposition = -2;
-
-    if (tuning.transposition == -2)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
-
-    tuning.transposition = -1;
-
-    if (tuning.transposition == -1)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
 
     console.log(tuning);
   }
