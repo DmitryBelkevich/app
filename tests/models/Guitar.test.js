@@ -16,6 +16,11 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
+    if (guitar.transposition == 0)
+      console.log("🟢" + "guitar.transposition");
+    else
+      console.log("🔴" + "guitar.transposition");
+
     guitar.transposition = -2;
 
     if (guitar.transposition == -2)
@@ -23,7 +28,14 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.transposition");
 
-    console.log(guitar);
+    guitar.transposition = 2;
+
+    if (guitar.transposition == 2)
+      console.log("🟢" + "guitar.transposition");
+    else
+      console.log("🔴" + "guitar.transposition");
+
+    // console.log(guitar);
   }
 
   transposition_setter_with_key_test() {
