@@ -10,13 +10,13 @@ export default class GuitarTest {
   }
 
   run() {
-    // this.transposition_default_test();
+    this.transposition_default_test();
     
-    // this.set_transposition_without_key_test();
-    // this.set_transposition_with_key_test();
+    this.set_transposition_without_key_test();
+    this.set_transposition_with_key_test();
 
-    // this.set_tuning_test1();
-    // this.set_tuning_test2();
+    this.set_tuning_test1();
+    this.set_tuning_test2();
 
     this.capo_test1();
     this.capo_test2();
