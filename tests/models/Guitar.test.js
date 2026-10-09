@@ -9,7 +9,7 @@ export default class GuitarTest {
   run() {
     this.transposition_default_test();
     
-    this.set_transposition_without_key_test();
+    // this.set_transposition_without_key_test();
     // this.set_transposition_with_key_test();
   }
 
@@ -22,6 +22,8 @@ export default class GuitarTest {
       console.log("🟢" + "guitar.transposition");
     else
       console.log("🔴" + "guitar.transposition");
+
+    console.log(guitar);
   }
 
   // set_transposition
