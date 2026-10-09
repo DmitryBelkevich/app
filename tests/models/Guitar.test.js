@@ -9,8 +9,8 @@ export default class GuitarTest {
   run() {
     // this.transposition_default_test();
     
-    // this.set_transposition_without_key_test();
-    this.set_transposition_with_key_test();
+    this.set_transposition_without_key_test();
+    // this.set_transposition_with_key_test();
   }
 
   transposition_default_test() {
