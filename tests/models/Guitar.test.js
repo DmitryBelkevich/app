@@ -98,14 +98,14 @@ export default class GuitarTest {
 
     // guitar.key = new Chord("Am");
 
-    // guitar.tuning = new Tuning(
-    //   new Note("D"),
-    //   new Note("G"),
-    //   new Note("C"),
-    //   new Note("F"),
-    //   new Note("A"),
-    //   new Note("D"),
-    // );
+    guitar.tuning = new Tuning(
+      new Note("D"),
+      new Note("G"),
+      new Note("C"),
+      new Note("F"),
+      new Note("A"),
+      new Note("D"),
+    );
 
     console.log(guitar);
   }
