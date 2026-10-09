@@ -19,6 +19,7 @@ export default class GuitarTest {
     // this.set_tuning_test2();
 
     this.capo_test1();
+    this.capo_test2();
   }
 
   transposition_default_test() {
