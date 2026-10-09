@@ -48,6 +48,8 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
+    guitar.key = new Chord("Am");
+
     [
       {transposition: 0, key: "Am"},
       {transposition: -2, key: "Gm"},
@@ -55,13 +57,11 @@ export default class GuitarTest {
     ].forEach((obj) => {
       guitar.transposition = obj.transposition;
 
-      if (guitar.key.value.toString() == obj.key)
+      if (guitar.key.value == obj.key)
         console.log("🟢" + "guitar.transposition");
       else
         console.log("🔴" + "guitar.transposition");
     });
-
-    guitar.key = new Chord("Am");
 
     console.log(guitar);
   }
