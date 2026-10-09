@@ -9,8 +9,8 @@ export default class InstrumentTest {
   run() {
     this.transposition_default_test();
     
-    this.transposition_setter_without_key_test();
-    this.transposition_setter_with_key_test();
+    this.set_transposition_without_key_test();
+    this.set_transposition_with_key_test();
     
     this.transpose_without_key_test();
     this.transpose_with_key_test();
@@ -27,51 +27,49 @@ export default class InstrumentTest {
       console.log("🔴" + "instrument.transposition");
   }
 
-  transposition_setter_without_key_test() {
+  // set_transposition
+
+  set_transposition_without_key_test() {
     console.log("transposition default test:");
     
     const instrument = new Instrument();
 
-    instrument.transposition = -2;
+    [-2, -1, 0, 1, 2].forEach((value) => {
+      instrument.transposition = value;
 
-    if (instrument.transposition == -2)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
-
-    instrument.transposition = 2;
-
-    if (instrument.transposition == 2)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
+      if (instrument.transposition == value)
+        console.log("🟢" + "instrument.transposition");
+      else
+        console.log("🔴" + "instrument.transposition");
+    });
 
     // console.log(instrument);
   }
 
-  transposition_setter_with_key_test() {
+  set_transposition_with_key_test() {
     console.log("transposition setter (with key) test:");
 
     const instrument = new Instrument();
 
-    instrument.transposition = 2;
-    
     instrument.key = new Chord("Am");
 
-    if (instrument.key == "Bm")
-      console.log("🟢" + "instrument.key");
-    else
-      console.log("🔴" + "instrument.key");
+    [
+      {transposition: 0, key: "Am"},
+      {transposition: -2, key: "Gm"},
+      {transposition: 2, key: "Bm"},
+    ].forEach((obj) => {
+      instrument.transposition = obj.transposition;
 
-    instrument.transposition = -2;
-
-    if (instrument.key == "Gm")
-      console.log("🟢" + "instrument.key");
-    else
-      console.log("🔴" + "instrument.key");
+      if (instrument.key == obj.key)
+        console.log("🟢" + "instrument.key");
+      else
+        console.log("🔴" + "instrument.key");
+    });
 
     // console.log(instrument);
   }
+
+  // transpose
 
   transpose_without_key_test() {
     console.log("transpose (without key) test:");
