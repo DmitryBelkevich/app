@@ -54,6 +54,7 @@ export default class GuitarTest {
       {transposition: 0, key: "Am"},
       {transposition: -2, key: "Gm"},
       {transposition: 2, key: "Bm"},
+      {transposition: -2, key: "Gm"},
     ].forEach((obj) => {
       guitar.transposition = obj.transposition;
 
