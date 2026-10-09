@@ -93,6 +93,8 @@ export default class GuitarTest {
 
     guitar.key = new Chord("Am");
 
+    guitar.transposition = -2;
+
     console.log(guitar);
   }
 }
