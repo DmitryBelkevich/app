@@ -1,5 +1,8 @@
 import Guitar from "../../app/models/instruments/Guitar.js";
+
 import Chord from "../../app/models/Chord.js";
+import Note from "../../app/models/Note.js";
+import Tuning from "../../app/models/Tuning.js";
 
 export default class GuitarTest {
   constructor() {
@@ -86,6 +89,8 @@ export default class GuitarTest {
     console.log(guitar);
   }
 
+  // tuning
+
   test() {
     console.log("test");
 
@@ -93,7 +98,14 @@ export default class GuitarTest {
 
     guitar.key = new Chord("Am");
 
-    guitar.transposition = -2;
+    // guitar.tuning = new Tuning(
+    //   new Note("D"),
+    //   new Note("G"),
+    //   new Note("C"),
+    //   new Note("F"),
+    //   new Note("A"),
+    //   new Note("D"),
+    // );
 
     console.log(guitar);
   }
