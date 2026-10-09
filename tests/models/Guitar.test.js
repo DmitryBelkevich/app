@@ -10,7 +10,9 @@ export default class GuitarTest {
     // this.transposition_default_test();
     
     // this.set_transposition_without_key_test();
-    this.set_transposition_with_key_test();
+    // this.set_transposition_with_key_test();
+
+    this.test();
   }
 
   transposition_default_test() {
@@ -80,6 +82,16 @@ export default class GuitarTest {
       else
         console.log("🔴" + "guitar.tuning.transposition");
     });
+
+    console.log(guitar);
+  }
+
+  test() {
+    console.log("test");
+
+    const guitar = new Guitar();
+
+    guitar.key = new Chord("Am");
 
     console.log(guitar);
   }
