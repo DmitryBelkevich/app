@@ -40,7 +40,7 @@ export default class GuitarTest {
         console.log("🔴" + "guitar.transposition");
     });
 
-    // console.log(guitar);
+    console.log(guitar);
   }
 
   set_transposition_with_key_test() {
