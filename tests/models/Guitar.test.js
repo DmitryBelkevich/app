@@ -96,7 +96,7 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
-    guitar.key = new Chord("Am");
+    // guitar.key = new Chord("Am");
 
     guitar.tuning = new Tuning(
       new Note("D"),
@@ -106,6 +106,8 @@ export default class GuitarTest {
       new Note("A"),
       new Note("D"),
     );
+
+    guitar.key = new Chord("Am");
 
     console.log(guitar);
   }
