@@ -139,6 +139,10 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
+    // guitar.key = new Chord("Am");
+
+    guitar.capo = 2;
+
     console.log(guitar);
   }
 }
