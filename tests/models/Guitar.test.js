@@ -45,6 +45,11 @@ export default class GuitarTest {
         console.log("🟢" + "guitar.transposition");
       else
         console.log("🔴" + "guitar.transposition");
+
+      if (guitar.tuning.transposition == value)
+        console.log("🟢" + "guitar.tuning.transposition");
+      else
+        console.log("🔴" + "guitar.tuning.transposition");
     });
 
     console.log(guitar);
