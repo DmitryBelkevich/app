@@ -44,13 +44,13 @@ export default class Guitar extends Instrument {
     this.transposition = this.tuning.transposition + this.capo;
   }
 
-  get transposition() {
-    return this._transposition;
-  }
+  // get transposition() {
+  //   return this._transposition;
+  // }
 
-  set transposition(transposition) {
-    this.transpose(transposition - this._transposition);
-  }
+  // set transposition(transposition) {
+  //   this.transpose(transposition - this._transposition);
+  // }
 
   transpose(count) {
     if (!count)
