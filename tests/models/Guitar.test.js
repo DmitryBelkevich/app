@@ -15,7 +15,8 @@ export default class GuitarTest {
     this.set_transposition_without_key_test();
     this.set_transposition_with_key_test();
 
-    this.test();
+    this.test1();
+    this.test2();
   }
 
   transposition_default_test() {
@@ -91,12 +92,10 @@ export default class GuitarTest {
 
   // tuning
 
-  test() {
+  test1() {
     console.log("test");
 
     const guitar = new Guitar();
-
-    // guitar.key = new Chord("Am");
 
     guitar.tuning = new Tuning(
       new Note("D"),
@@ -108,6 +107,25 @@ export default class GuitarTest {
     );
 
     guitar.key = new Chord("Am");
+
+    console.log(guitar);
+  }
+
+  test2() {
+    console.log("test");
+
+    const guitar = new Guitar();
+
+    guitar.key = new Chord("Am");
+
+    guitar.tuning = new Tuning(
+      new Note("D"),
+      new Note("G"),
+      new Note("C"),
+      new Note("F"),
+      new Note("A"),
+      new Note("D"),
+    );
 
     console.log(guitar);
   }
