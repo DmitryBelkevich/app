@@ -48,10 +48,14 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
-    [-2].forEach((value) => {
-      guitar.transposition = value;
+    [
+      {transposition: 0, key: "Am"},
+      {transposition: -2, key: "Gm"},
+      {transposition: 2, key: "Bm"},
+    ].forEach((obj) => {
+      guitar.transposition = obj.transposition;
 
-      if (guitar.transposition == value)
+      if (guitar.transposition == obj.key)
         console.log("🟢" + "guitar.transposition");
       else
         console.log("🔴" + "guitar.transposition");
