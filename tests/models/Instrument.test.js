@@ -60,7 +60,7 @@ export default class InstrumentTest {
     ].forEach((obj) => {
       instrument.transposition = obj.transposition;
 
-      if (instrument.key == obj.key)
+      if (instrument.key.value == obj.key)
         console.log("🟢" + "instrument.key");
       else
         console.log("🔴" + "instrument.key");
