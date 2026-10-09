@@ -32,7 +32,7 @@ export default class Guitar extends Instrument {
 
     console.log(this._key);
 
-    //this._key.transposition = -2;//this._tuning.transposition + this._capo;
+    this._key.transposition = -2;//this._tuning.transposition + this._capo;
   }
 
   get capo() {
