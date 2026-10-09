@@ -146,9 +146,9 @@ export default class GuitarTest {
     guitar.key = new Chord("Am");
 
     if (guitar.key.value == "Bm")
-      console.log("🟢" + "guitar.transposition");
+      console.log("🟢" + "guitar.capo");
     else
-      console.log("🔴" + "guitar.transposition");
+      console.log("🔴" + "guitar.capo");
 
     console.log(guitar);
   }
