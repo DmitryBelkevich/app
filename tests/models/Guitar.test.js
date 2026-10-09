@@ -139,11 +139,26 @@ export default class GuitarTest {
 
     const guitar = new Guitar();
 
-    // guitar.key = new Chord("Am");
-
     guitar.capo = 2;
 
     guitar.key = new Chord("Am");
+
+    if (guitar.key.value == "Bm")
+      console.log("🟢" + "guitar.capo");
+    else
+      console.log("🔴" + "guitar.capo");
+
+    console.log(guitar);
+  }
+
+  capo_test2() {
+    console.log("capo test");
+
+    const guitar = new Guitar();
+
+    guitar.key = new Chord("Am");
+
+    guitar.capo = 2;
 
     if (guitar.key.value == "Bm")
       console.log("🟢" + "guitar.capo");
