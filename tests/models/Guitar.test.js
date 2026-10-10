@@ -286,7 +286,7 @@ export default class GuitarTest {
     console.log(guitar);
   }
 
-  transpose_test4() {
+  transpose_test5() {
     // title
     console.log("transpose + (with key) test");
 
