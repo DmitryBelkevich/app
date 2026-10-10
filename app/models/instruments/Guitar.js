@@ -101,7 +101,7 @@ export default class Guitar extends Instrument {
 
   calcucateCapo(count) {
     if (count < 0)
-      if (this._capo < -count)
+      if (-count > this._capo)
         return -this._capo;
     
     return count;
