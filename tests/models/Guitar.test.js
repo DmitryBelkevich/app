@@ -24,6 +24,7 @@ export default class GuitarTest {
     // this.transpose_test1();
     this.transpose_test2();
     this.transpose_test3();
+    // this.transpose_test4();
   }
 
   transposition_default_test() {
@@ -195,6 +196,8 @@ export default class GuitarTest {
     console.log(guitar);
   }
 
+  // transpose -
+
   transpose_test2() {
     console.log("transpose (with key) test");
 
@@ -213,6 +216,11 @@ export default class GuitarTest {
       console.log("🟢" + "guitar.tuning.transposition");
     else
       console.log("🔴" + "guitar.tuning.transposition");
+
+    if (guitar.key.value == "Gm")
+      console.log("🟢" + "guitar.key");
+    else
+      console.log("🔴" + "guitar.key");
 
     console.log(guitar);
   }
@@ -235,6 +243,40 @@ export default class GuitarTest {
       console.log("🟢" + "guitar.tuning.transposition");
     else
       console.log("🔴" + "guitar.tuning.transposition");
+
+    if (guitar.key.value == "Gm")
+      console.log("🟢" + "guitar.key");
+    else
+      console.log("🔴" + "guitar.key");
+
+    console.log(guitar);
+  }
+
+  // transpose +
+
+  transpose_test4() {
+    console.log("transpose (with key) test");
+
+    const guitar = new Guitar();
+
+    guitar.key = new Chord("Am");
+
+    guitar.transpose(2);
+
+    if (guitar.transposition == 2)
+      console.log("🟢" + "guitar.transposition");
+    else
+      console.log("🔴" + "guitar.transposition");
+
+    if (guitar.tuning.transposition == 2)
+      console.log("🟢" + "guitar.tuning.transposition");
+    else
+      console.log("🔴" + "guitar.tuning.transposition");
+
+    if (guitar.key.value == "Bm")
+      console.log("🟢" + "guitar.key");
+    else
+      console.log("🔴" + "guitar.key");
 
     console.log(guitar);
   }
