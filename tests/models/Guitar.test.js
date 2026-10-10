@@ -372,21 +372,18 @@ export default class GuitarTest {
     guitar.transposition = -2;
 
     // checks
-    if (guitar.transposition == -2)
-      console.log("🟢" + "guitar.transposition: " + guitar.transposition + " | " + (-2));
-    else
-      console.log("🔴" + "guitar.transposition: " + guitar.transposition + " | " + (-2));
-
-    if (guitar.tuning.transposition == -2)
-      console.log("🟢" + "guitar.tuning.transposition: " + guitar.tuning.transposition + " | " + (-2));
-    else
-      console.log("🔴" + "guitar.tuning.transposition: " + guitar.tuning.transposition + " | " + (-2));
-
-    if (guitar.key.value == "Gm")
-      console.log("🟢" + "guitar.key: " + guitar.key + " | " + "Gm");
-    else
-      console.log("🔴" + "guitar.key: " + guitar.key + " | " + "Gm");
+    this.check("guitar.transposition", guitar.transposition == -2, guitar.transposition, -2);
+    this.check("guitar.tuning.transposition", guitar.tuning.transposition == -2, guitar.tuning.transposition, -2);
+    this.check("guitar.key", guitar.key.value == "Gm", guitar.key, "Gm");
 
     console.log(guitar);
+  }
+
+  check(title, condition, result, expected) {
+    if (true) {
+      console.log("🟢" + title + ": " + result + " | " + expected);
+    } else {
+      console.log("🔴" + title + ": " + result + " | " + expected);
+    }
   }
 }
