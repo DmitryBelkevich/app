@@ -373,19 +373,19 @@ export default class GuitarTest {
 
     // checks
     if (guitar.transposition == -2)
-      console.log("🟢" + "guitar.transposition");
+      console.log("🟢" + "guitar.transposition: " + guitar.transposition);
     else
-      console.log("🔴" + "guitar.transposition");
+      console.log("🔴" + "guitar.transposition: " + guitar.transposition);
 
     if (guitar.tuning.transposition == -2)
-      console.log("🟢" + "guitar.tuning.transposition");
+      console.log("🟢" + "guitar.tuning.transposition: " + guitar.tuning.transposition);
     else
-      console.log("🔴" + "guitar.tuning.transposition");
+      console.log("🔴" + "guitar.tuning.transposition: " + guitar.tuning.transposition;
 
     if (guitar.key.value == "Gm")
-      console.log("🟢" + "guitar.key");
+      console.log("🟢" + "guitar.key: " + guitar.key);
     else
-      console.log("🔴" + "guitar.key");
+      console.log("🔴" + "guitar.key: " + guitar.key);
 
     console.log(guitar);
   }
