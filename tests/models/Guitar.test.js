@@ -22,9 +22,9 @@ export default class GuitarTest {
     // this.set_capo_test2();
 
     // this.transpose_test1();
-    this.transpose_test2();
-    this.transpose_test3();
-    // this.transpose_test4();
+    // this.transpose_test2();
+    // this.transpose_test3();
+    this.transpose_test4();
   }
 
   transposition_default_test() {
@@ -255,14 +255,49 @@ export default class GuitarTest {
   // transpose +
 
   transpose_test4() {
-    console.log("transpose (with key) test");
+    // title
+    console.log("transpose + (with key) test");
 
+    // init
     const guitar = new Guitar();
 
     guitar.key = new Chord("Am");
 
+    // method
     guitar.transpose(2);
 
+    // checks
+    if (guitar.transposition == 2)
+      console.log("🟢" + "guitar.transposition");
+    else
+      console.log("🔴" + "guitar.transposition");
+
+    if (guitar.tuning.transposition == 2)
+      console.log("🟢" + "guitar.tuning.transposition");
+    else
+      console.log("🔴" + "guitar.tuning.transposition");
+
+    if (guitar.key.value == "Bm")
+      console.log("🟢" + "guitar.key");
+    else
+      console.log("🔴" + "guitar.key");
+
+    console.log(guitar);
+  }
+
+  transpose_test4() {
+    // title
+    console.log("transpose + (with key) test");
+
+    // init
+    const guitar = new Guitar();
+
+    // method
+    guitar.transpose(2);
+
+    guitar.key = new Chord("Am");
+
+    // checks
     if (guitar.transposition == 2)
       console.log("🟢" + "guitar.transposition");
     else
