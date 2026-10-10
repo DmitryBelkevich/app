@@ -1,3 +1,5 @@
+import Test from "./Test.js";
+
 import Guitar from "../../app/models/instruments/Guitar.js";
 
 import Chord from "../../app/models/Chord.js";
@@ -372,9 +374,9 @@ export default class GuitarTest {
     guitar.transposition = -2;
 
     // checks
-    this.test.check("guitar.transposition", guitar.transposition, -2);
-    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
-    this.test.check("guitar.key.value", guitar.key.value, "Gm");
+    this.test.execute("guitar.transposition", guitar.transposition, -2);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.execute("guitar.key.value", guitar.key.value, "Gm");
 
     console.log(guitar);
   }
