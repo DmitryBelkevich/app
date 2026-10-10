@@ -391,7 +391,7 @@ export default class GuitarTest {
     // init
     const guitar = new Guitar();
 
-    guitar.key = new Chord("Bm");
+    guitar.key = new Chord("Am");
 
     // method
     guitar.transposition = 2;
