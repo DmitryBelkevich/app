@@ -148,7 +148,7 @@ export default class Guitar extends Instrument {
     }
 
     if (count < 0) {
-      if (-count > this._capo) {
+      if (count < -this._capo) {
         return -this._capo;
       }
       
