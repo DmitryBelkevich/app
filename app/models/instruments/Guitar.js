@@ -53,36 +53,11 @@ export default class Guitar extends Instrument {
   transpose(count) {
     if (!count)
       return;
-    
-    // var transposition = 0;
-    // var tuning = 0;
-    // var capo = 0;
-    
-    // if (count > 0) {// go to -> RIGHT ->
-    //   if (this._transposition < 0) {// отрицательное
-    //     transposition = count;
-    //     tuning = count;
-    //   } else if (this._transposition >= 0) {//положительное
-    //     capo = count;
-    //   }
-    // } else if (count < 0) {// go to <- LEFL <-
-    //   if (this.capo <= 0) {// отрицательное
-    //     transposition = -count;
-    //     tuning = -count;
-    //   } else if (this.capo > 0) {// положительное
-    //     capo = -count;
-    //   }
-    // }
 
     this._transposition += count;
-    
-    // this._transposition += transposition;
-    // this._tuning.transpose(tuning);
-    // this.capo += capo;
 
     if (this._key)
       this._key.transpose(count);
-    // this.key.transpose(-this.capo);
 
     const tuning = this.tuningOffset(count);
     const capo = this.capoOffset(count);
