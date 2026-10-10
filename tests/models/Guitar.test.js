@@ -21,7 +21,8 @@ export default class GuitarTest {
     // this.set_capo_test1();
     // this.set_capo_test2();
 
-    this.transpose_test1();
+    // this.transpose_test1();
+    this.transpose_test2();
   }
 
   transposition_default_test() {
