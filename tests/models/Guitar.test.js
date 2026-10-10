@@ -368,6 +368,7 @@ export default class GuitarTest {
 
     // method
     guitar.transposition = -2;
+    guitar.transposition = -4;
 
     // checks
     if (guitar.transposition == -2)
