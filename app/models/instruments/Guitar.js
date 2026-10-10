@@ -116,7 +116,7 @@ export default class Guitar extends Instrument {
     }
 
     if (count > 0) {// tuning UP
-      if (-this._tuning.transposition > count) {
+      if (count > -this._tuning.transposition) {
         return -this._tuning.transposition;
       }
       
