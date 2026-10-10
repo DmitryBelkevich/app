@@ -408,7 +408,7 @@ export default class GuitarTest {
     this.test.execute("guitar.transposition", guitar.transposition, 2);
     this.test.execute("guitar.key.value", guitar.key.value, "Bm");
 
-    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 2);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
     this.test.execute("guitar.capo", guitar.capo, 2);
 
     // print object
