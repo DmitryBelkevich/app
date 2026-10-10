@@ -215,4 +215,26 @@ export default class GuitarTest {
 
     console.log(guitar);
   }
+
+  transpose_test3() {
+    console.log("transpose (with key) test");
+
+    const guitar = new Guitar();
+
+    guitar.transpose(-2);
+    
+    guitar.key = new Chord("Am");
+
+    if (guitar.transposition == -2)
+      console.log("🟢" + "guitar.transposition");
+    else
+      console.log("🔴" + "guitar.transposition");
+
+    if (guitar.tuning.transposition == -2)
+      console.log("🟢" + "guitar.tuning.transposition");
+    else
+      console.log("🔴" + "guitar.tuning.transposition");
+
+    console.log(guitar);
+  }
 }
