@@ -174,9 +174,11 @@ export default class GuitarTest {
   // transpose
 
   transpose_test1() {
-    console.log("transpose test");
+    console.log("transpose (no key) test");
 
     const guitar = new Guitar();
+
+    guitar.transpose(-2);
 
     console.log(guitar);
   }
