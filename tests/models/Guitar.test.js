@@ -29,10 +29,13 @@ export default class GuitarTest {
   }
 
   transposition_default_test() {
+    // title
     console.log("transposition_default_test");
 
+    // init
     const guitar = new Guitar();
 
+    // checks
     if (guitar.transposition == 0)
       console.log("🟢" + "guitar.transposition");
     else
@@ -49,13 +52,17 @@ export default class GuitarTest {
   // set_transposition
 
   set_transposition_without_key_test() {
+    // title
     console.log("set_transposition_without_key_test");
 
+    // init
     const guitar = new Guitar();
 
     [-2, -1, 0, 1, 2].forEach((value) => {
+      // method
       guitar.transposition = value;
 
+      // checks
       if (guitar.transposition == value)
         console.log("🟢" + "guitar.transposition");
       else
@@ -73,6 +80,7 @@ export default class GuitarTest {
   set_transposition_with_key_test() {
     console.log("set_transposition_with_key_test");
 
+    // init
     const guitar = new Guitar();
 
     guitar.key = new Chord("Am");
@@ -83,8 +91,10 @@ export default class GuitarTest {
       {transposition: 2, key: "Bm"},
       {transposition: -2, key: "Gm"},
     ].forEach((obj) => {
+      // method
       guitar.transposition = obj.transposition;
 
+      // checks
       if (guitar.key.value == obj.key)
         console.log("🟢" + "guitar.transposition");
       else
@@ -102,10 +112,13 @@ export default class GuitarTest {
   // set tuning
 
   set_tuning_test1() {
+    // title
     console.log("set_tuning test");
 
+    // init
     const guitar = new Guitar();
 
+    // method
     guitar.tuning = new Tuning(
       new Note("D"),
       new Note("G"),
@@ -116,17 +129,22 @@ export default class GuitarTest {
     );
 
     guitar.key = new Chord("Am");
+
+    // checks
 
     console.log(guitar);
   }
 
   set_tuning_test2() {
+    // title
     console.log("set_tuning test");
 
+    // init
     const guitar = new Guitar();
 
     guitar.key = new Chord("Am");
 
+    // method
     guitar.tuning = new Tuning(
       new Note("D"),
       new Note("G"),
@@ -135,6 +153,8 @@ export default class GuitarTest {
       new Note("A"),
       new Note("D"),
     );
+
+    // checks
 
     console.log(guitar);
   }
@@ -142,14 +162,18 @@ export default class GuitarTest {
   // set capo
 
   set_capo_test1() {
+    // title
     console.log("set capo test");
 
+    // init
     const guitar = new Guitar();
 
+    // method
     guitar.capo = 2;
 
     guitar.key = new Chord("Am");
 
+    // checks
     if (guitar.key.value == "Bm")
       console.log("🟢" + "guitar.capo");
     else
@@ -159,14 +183,18 @@ export default class GuitarTest {
   }
 
   set_capo_test2() {
+    // title
     console.log("set capo test");
 
+    // init
     const guitar = new Guitar();
 
     guitar.key = new Chord("Am");
 
+    // method
     guitar.capo = 2;
 
+    // checks
     if (guitar.key.value == "Bm")
       console.log("🟢" + "guitar.capo");
     else
@@ -178,12 +206,16 @@ export default class GuitarTest {
   // transpose
 
   transpose_test1() {
+    // title
     console.log("transpose (without key) test");
 
+    // init
     const guitar = new Guitar();
 
+    // method
     guitar.transpose(-2);
 
+    // checks
     if (guitar.transposition == -2)
       console.log("🟢" + "guitar.transposition");
     else
@@ -200,14 +232,18 @@ export default class GuitarTest {
   // transpose -
 
   transpose_test2() {
+    // title
     console.log("transpose (with key) test");
 
+    // init
     const guitar = new Guitar();
 
     guitar.key = new Chord("Am");
 
+    // method
     guitar.transpose(-2);
 
+    // checks
     if (guitar.transposition == -2)
       console.log("🟢" + "guitar.transposition");
     else
@@ -227,14 +263,18 @@ export default class GuitarTest {
   }
 
   transpose_test3() {
+    // title
     console.log("transpose (with key) test");
 
+    // init
     const guitar = new Guitar();
 
+    // method
     guitar.transpose(-2);
     
     guitar.key = new Chord("Am");
 
+    // checks
     if (guitar.transposition == -2)
       console.log("🟢" + "guitar.transposition");
     else
