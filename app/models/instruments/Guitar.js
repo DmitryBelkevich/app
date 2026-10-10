@@ -94,35 +94,43 @@ export default class Guitar extends Instrument {
     this._capo += capo;
   }
 
-  tuningOffset(count) {
-    if (count < 0) {
-      return count;
-    }
+  // tuningOffset(count) {
+  //   if (count < 0) {
+  //     return count;
+  //   }
 
-    if (count > 0) {// tuning UP
-      if (count > -this._tuning.transposition) {
-        return -this._tuning.transposition;
-      }
+  //   if (count > 0) {// tuning UP
+  //     if (count > -this._tuning.transposition) {
+  //       return -this._tuning.transposition;
+  //     }
       
-      return count;
-    }
+  //     return count;
+  //   }
 
+  //   return 0;
+  // }
+
+  // capoOffset(count) {
+  //   if (count > 0) {
+  //     return count;
+  //   }
+
+  //   if (count < 0) {
+  //     if (-count > this._capo) {
+  //       return -this._capo;
+  //     }
+      
+  //     return count;
+  //   }
+
+  //   return 0;
+  // }
+
+  tuningOffset(count) {
     return 0;
   }
 
   capoOffset(count) {
-    if (count > 0) {
-      return count;
-    }
-
-    if (count < 0) {
-      if (-count > this._capo) {
-        return -this._capo;
-      }
-      
-      return count;
-    }
-
     return 0;
   }
 }
