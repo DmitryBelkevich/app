@@ -24,8 +24,10 @@ export default class GuitarTest {
     // this.transpose_test1();
     // this.transpose_test2();
     // this.transpose_test3();
-    this.transpose_test4();
-    this.transpose_test5();
+    // this.transpose_test4();
+    // this.transpose_test5();
+
+    this.test6();
   }
 
   transposition_default_test() {
@@ -353,6 +355,35 @@ export default class GuitarTest {
       console.log("🟢" + "guitar.key");
     else
       console.log("🔴" + "guitar.key");
+
+    console.log(guitar);
+  }
+
+  test6() {
+    // title
+    console.log("test");
+
+    // init
+    const guitar = new Guitar();
+
+    // method
+    // guitar.transposition = -2;
+
+    // checks
+    if (guitar.transposition == -2)
+      console.log("🟢" + "guitar.transposition");
+    else
+      console.log("🔴" + "guitar.transposition");
+
+    if (guitar.tuning.transposition == -2)
+      console.log("🟢" + "guitar.tuning.transposition");
+    else
+      console.log("🔴" + "guitar.tuning.transposition");
+
+    // if (guitar.key.value == "Gm")
+    //   console.log("🟢" + "guitar.key");
+    // else
+    //   console.log("🔴" + "guitar.key");
 
     console.log(guitar);
   }
