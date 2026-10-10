@@ -367,7 +367,7 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // method
-    // guitar.transposition = -2;
+    guitar.transposition = -2;
 
     // checks
     if (guitar.transposition == -2)
