@@ -372,14 +372,16 @@ export default class GuitarTest {
     guitar.transposition = -2;
 
     // checks
-    this.check("guitar.transposition", guitar.transposition == -2, guitar.transposition, -2);
-    this.check("guitar.tuning.transposition", guitar.tuning.transposition == -2, guitar.tuning.transposition, -2);
-    this.check("guitar.key", guitar.key.value == "Gm", guitar.key, "Gm");
+    this.check("guitar.transposition", guitar.transposition, -2);
+    this.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.check("guitar.key.value", guitar.key.value, "Gm");
 
     console.log(guitar);
   }
 
-  check(title, condition, result, expected) {
+  check(title, result, expected) {
+    const condition = result == expected;
+    
     const icons = {
       true: "🟢",
       false: "🔴",
