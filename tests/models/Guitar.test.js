@@ -371,12 +371,12 @@ export default class GuitarTest {
     guitar.transposition = -4;
 
     // checks
-    if (guitar.transposition == -2)
+    if (guitar.transposition == -4)
       console.log("🟢" + "guitar.transposition");
     else
       console.log("🔴" + "guitar.transposition");
 
-    if (guitar.tuning.transposition == -2)
+    if (guitar.tuning.transposition == -4)
       console.log("🟢" + "guitar.tuning.transposition");
     else
       console.log("🔴" + "guitar.tuning.transposition");
