@@ -6,7 +6,7 @@ import Tuning from "../../app/models/Tuning.js";
 
 export default class GuitarTest {
   constructor() {
-    
+    this.test = new Test();
   }
 
   run() {
@@ -372,13 +372,15 @@ export default class GuitarTest {
     guitar.transposition = -2;
 
     // checks
-    this.check("guitar.transposition", guitar.transposition, -2);
-    this.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
-    this.check("guitar.key.value", guitar.key.value, "Gm");
+    this.test.check("guitar.transposition", guitar.transposition, -2);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.key.value", guitar.key.value, "Gm");
 
     console.log(guitar);
   }
+}
 
+class Test {
   check(title, result, expected) {
     const condition = result == expected;
     
