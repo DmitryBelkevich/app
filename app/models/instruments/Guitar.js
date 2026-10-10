@@ -87,7 +87,7 @@ export default class Guitar extends Instrument {
     if (this._transposition < 0) {
       this._tuning.transpose(count);
       this._capo += 0;
-    } else if () {
+    } else if (this._transposition > 0) {
       this._tuning.transpose(0);
       this._capo += count;
     }
