@@ -115,11 +115,15 @@ export default class Guitar extends Instrument {
       return count;
     }
 
-    if (count > 0) {
+    if (count > 0) {// tuning UP
+      if (-this._tuning.transposition > count) {
+        return -this._tuning.transposition;
+      }
+      
       return count;
     }
 
-    return 0;
+    return count;
   }
 
   capoOffset(count) {
