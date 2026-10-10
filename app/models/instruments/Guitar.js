@@ -127,10 +127,18 @@ export default class Guitar extends Instrument {
   // }
 
   tuningOffset(count) {
+    if (count < 0) {
+      return count;
+    }
+    
     return 0;
   }
 
   capoOffset(count) {
+    if (count > 0) {
+      return count;
+    }
+    
     return 0;
   }
 }
