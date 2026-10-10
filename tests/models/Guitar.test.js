@@ -379,18 +379,3 @@ export default class GuitarTest {
     console.log(guitar);
   }
 }
-
-class Test {
-  check(title, result, expected) {
-    const condition = result == expected;
-    
-    const icons = {
-      true: "🟢",
-      false: "🔴",
-    }
-    
-    const message = icons[condition] + title + ": " + result + " | " + expected;
-
-    console.log(message);
-  }
-}
