@@ -10,16 +10,18 @@ export default class GuitarTest {
   }
 
   run() {
-    this.transposition_default_test();
+    // this.transposition_default_test();
     
-    this.set_transposition_without_key_test();
-    this.set_transposition_with_key_test();
+    // this.set_transposition_without_key_test();
+    // this.set_transposition_with_key_test();
 
-    this.set_tuning_test1();
-    this.set_tuning_test2();
+    // this.set_tuning_test1();
+    // this.set_tuning_test2();
 
-    this.capo_test1();
-    this.capo_test2();
+    // this.set_capo_test1();
+    // this.set_capo_test2();
+
+    this.transpose_test1();
   }
 
   transposition_default_test() {
@@ -133,10 +135,10 @@ export default class GuitarTest {
     console.log(guitar);
   }
 
-  // capo
+  // set capo
 
-  capo_test1() {
-    console.log("capo test");
+  set_capo_test1() {
+    console.log("set capo test");
 
     const guitar = new Guitar();
 
@@ -149,11 +151,11 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.capo");
 
-    console.log(guitar);
+    // console.log(guitar);
   }
 
-  capo_test2() {
-    console.log("capo test");
+  set_capo_test2() {
+    console.log("set capo test");
 
     const guitar = new Guitar();
 
@@ -165,6 +167,16 @@ export default class GuitarTest {
       console.log("🟢" + "guitar.capo");
     else
       console.log("🔴" + "guitar.capo");
+
+    // console.log(guitar);
+  }
+
+  // transpose
+
+  transpose_test1() {
+    console.log("transpose test");
+
+    const guitar = new Guitar();
 
     console.log(guitar);
   }
