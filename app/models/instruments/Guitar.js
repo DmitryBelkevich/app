@@ -130,12 +130,20 @@ export default class Guitar extends Instrument {
     if (count < 0) {
       return count;
     }
+
+    if (count > 0) {
+      return count;
+    }
     
     return 0;
   }
 
   capoOffset(count) {
     if (count > 0) {
+      return count;
+    }
+
+    if (count < 0) {
       return count;
     }
     
