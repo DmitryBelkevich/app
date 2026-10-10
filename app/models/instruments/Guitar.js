@@ -136,7 +136,7 @@ export default class Guitar extends Instrument {
         return -this._tuning.transposition;
       }
       
-      return 0;
+      return count;
     }
     
     return 0;
@@ -152,7 +152,7 @@ export default class Guitar extends Instrument {
         return -this._capo;
       }
       
-      return 0;
+      return count;
     }
     
     return 0;
