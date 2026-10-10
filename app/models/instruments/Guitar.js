@@ -143,6 +143,6 @@ export default class Guitar extends Instrument {
     
     // return 0;
 
-    return 0;
+    return count;
   }
 }
