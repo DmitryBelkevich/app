@@ -380,10 +380,13 @@ export default class GuitarTest {
   }
 
   check(title, condition, result, expected) {
-    if (true) {
-      console.log("🟢" + title + ": " + result + " | " + expected);
-    } else {
-      console.log("🔴" + title + ": " + result + " | " + expected);
+    var message = title + ": " + result + " | " + expected;
+
+    icons = {
+      true: 🟢,
+      false: 🔴,
     }
+
+    console.log(icons[condition] + message);
   }
 }
