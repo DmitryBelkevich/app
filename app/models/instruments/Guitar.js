@@ -71,12 +71,15 @@ export default class Guitar extends Instrument {
 
   tuningOffset(count) {
     if (count < 0) {
+      if (count < this._tuning.transposition) {//???
+        return this._tuning.transposition;
+      }
+      
       return count;
     }
 
     if (count > 0) {
       if (count > -this._tuning.transposition) {
-        console.log(this._tuning.transposition);
         return -this._tuning.transposition;
       }
       
@@ -88,12 +91,15 @@ export default class Guitar extends Instrument {
 
   capoOffset(count) {
     if (count > 0) {
+      if (count < this._tuning.transposition) {//???
+        return this._tuning.transposition;
+      }
+      
       return count;
     }
 
     if (count < 0) {
       if (count < -this._capo) {
-        console.log(this._capo);
         return -this._capo;
       }
       
