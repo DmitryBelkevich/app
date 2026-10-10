@@ -132,7 +132,7 @@ export default class Guitar extends Instrument {
     }
 
     if (count > 0) {
-      return count;
+      return 0;
     }
     
     return 0;
@@ -144,7 +144,7 @@ export default class Guitar extends Instrument {
     }
 
     if (count < 0) {
-      return count;
+      return 0;
     }
     
     return 0;
