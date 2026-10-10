@@ -92,18 +92,18 @@ export default class Guitar extends Instrument {
   }
 
   calcucateTuning(count) {
-    // if (this._tuning.transposition < 0) {
-    //   tuning = 2;
-    // }
-
-    // if (this._capo > 0) {
-    //   capo = -2;
-    // }
+    if (count > 0)
+      if (-this._tuning.transposition < count)
+        return this._tuning.transposition;
     
     return count;
   }
 
   calcucateCapo(count) {
+    if (count < 0)
+      if (this._capo < count)
+        return this._capo;
+    
     return count;
   }
 }
