@@ -380,13 +380,13 @@ export default class GuitarTest {
   }
 
   check(title, condition, result, expected) {
-    var message = title + ": " + result + " | " + expected;
-
-    icons = {
-      true: 🟢,
-      false: 🔴,
+    const icons = {
+      true: "🟢",
+      false: "🔴",
     }
+    
+    const message = icons[condition] + title + ": " + result + " | " + expected;
 
-    console.log(icons[condition] + message);
+    console.log(message);
   }
 }
