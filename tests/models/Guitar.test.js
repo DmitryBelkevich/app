@@ -23,6 +23,7 @@ export default class GuitarTest {
 
     // this.transpose_test1();
     this.transpose_test2();
+    this.transpose_test3();
   }
 
   transposition_default_test() {
