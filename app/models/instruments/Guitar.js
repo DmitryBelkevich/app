@@ -95,22 +95,6 @@ export default class Guitar extends Instrument {
   }
 
   tuningOffset(count) {
-    // if (this._tuning.transposition < 0) {// отрицательное
-    //   if (count < 0) {// <-
-    //     return count;
-    //   }
-
-    //   if (count > 0) {// ->
-    //     if (count < -this._tuning.transposition) {
-    //       return count;
-    //     } else if (count >= -this._tuning.transposition) {
-    //       return -this._tuning.transposition;
-    //     }
-    //   }
-    // }
-    
-    // return 0;
-
     if (count < 0) {
       return count;
     }
@@ -127,21 +111,9 @@ export default class Guitar extends Instrument {
   }
 
   capoOffset(count) {
-    // if (this._capo > 0) {// положительное
-    //   if (count < 0) {// <-
-    //     if (-count <= this._capo) {
-    //       return count;
-    //     } else if (-count > this._capo) {
-    //       return -this._capo;
-    //     }
-    //   }
-      
-    //   if (count > 0) {// ->
-    //     return count;
-    //   }
-    // }
-    
-    // return 0;
+    if (count > 0) {
+      return count;
+    }
 
     return count;
   }
