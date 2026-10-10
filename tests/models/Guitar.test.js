@@ -375,8 +375,10 @@ export default class GuitarTest {
 
     // checks
     this.test.execute("guitar.transposition", guitar.transposition, -2);
-    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, -2);
     this.test.execute("guitar.key.value", guitar.key.value, "Gm");
+
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.execute("guitar.capo", guitar.capo, 0);
 
     console.log(guitar);
   }
