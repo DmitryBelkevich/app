@@ -87,8 +87,8 @@ export default class Guitar extends Instrument {
     const tuning = this.tuningOffset(count);
     const capo = this.capoOffset(count);
 
-    // console.log("tuning offset: " + tuning);
-    // console.log("capo offset: " + capo);
+    console.log("tuning offset: " + tuning);
+    console.log("capo offset: " + capo);
 
     this._tuning.transpose(tuning);
     this._capo += capo;
@@ -101,7 +101,7 @@ export default class Guitar extends Instrument {
       }
 
       if (count > 0) {// ->
-        if (count < 2) {
+        if (count < -this._tuning.transposition) {
           return count;
         } else if (count >= -this._tuning.transposition) {
           return -this._tuning.transposition;
@@ -113,15 +113,18 @@ export default class Guitar extends Instrument {
   }
 
   capoOffset(count) {
-    if (count < 0) {// <-
-      console.log("capo left: " + count);
+    if (this._capo > 0) {// положительное
+      if (count < 0) {// <-
+        if (-count <= this._capo) {
+          return count;
+        } else if (-count > this._capo) {
+          return -this._capo;
+        }
+      }
       
-      // if (-count > this._capo)
-      //   return -this._capo;
-    }
-    
-    if (count > 0) {// ->
-      console.log("capo right: " + count);
+      if (count > 0) {// ->
+        return count;
+      }
     }
     
     return 0;
