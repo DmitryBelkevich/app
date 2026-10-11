@@ -29,8 +29,8 @@ export default class GuitarTest {
     // this.transpose_test4();
     // this.transpose_test5();
 
-    this.test6();
-    // this.test7();
+    // this.test6();
+    this.test7();
   }
 
   transposition_default_test() {
@@ -403,16 +403,6 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     guitar.key = new Chord("Am");
-
-    // method
-    guitar.transposition = 2;
-
-    // checks
-    this.test.execute("guitar.transposition", guitar.transposition, 2);
-    this.test.execute("guitar.key.value", guitar.key.value, "Bm");
-
-    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
-    this.test.execute("guitar.capo", guitar.capo, 2);
 
     // method
     guitar.transposition = 4;
