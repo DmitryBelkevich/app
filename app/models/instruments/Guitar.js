@@ -93,9 +93,15 @@ export default class Guitar extends Instrument {
     }
     
     if (count > 0) {// capo UP
-      console.log("capo UP");
+      if (true) {
+        console.log("capo UP");
+        return count;
+      }
       
-      return 0;
+      if (false) {
+        console.log("capo 0");
+        return 0;
+      }
     }
     
     return 0;
