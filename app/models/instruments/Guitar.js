@@ -99,9 +99,9 @@ export default class Guitar extends Instrument {
     }
     
     if (count > 0) {// capo UP
-      if (count > -this._tuning.transposition) {//???
-        return -this._tuning.transposition;
-      }
+      // if (count > -this._tuning.transposition) {//???
+      //   return -this._tuning.transposition;
+      // }
       
       return count;
     }
