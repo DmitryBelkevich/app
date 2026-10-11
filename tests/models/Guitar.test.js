@@ -405,16 +405,6 @@ export default class GuitarTest {
     guitar.key = new Chord("Am");
 
     // method
-    guitar.transposition = 4;
-
-    // checks
-    this.test.execute("guitar.transposition", guitar.transposition, 4);
-    this.test.execute("guitar.key.value", guitar.key.value, "C#m");
-
-    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
-    this.test.execute("guitar.capo", guitar.capo, 4);
-
-    // method
     guitar.transposition = 2;
 
     // checks
@@ -423,6 +413,16 @@ export default class GuitarTest {
 
     this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
     this.test.execute("guitar.capo", guitar.capo, 2);
+
+    // method
+    guitar.transposition = 4;
+
+    // checks
+    this.test.execute("guitar.transposition", guitar.transposition, 4);
+    this.test.execute("guitar.key.value", guitar.key.value, "C#m");
+
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.execute("guitar.capo", guitar.capo, 4);
 
     // print object
     console.log(guitar);
