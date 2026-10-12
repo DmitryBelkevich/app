@@ -74,20 +74,28 @@ export default class Guitar extends Instrument {
   }
 
   tuningOffset(count) {
-    if (count < 0) {// tuning DOWN
+    if (count < 0) {
       if (this._transposition <= 0) {
         return count;
       }
+    }
 
+    if (count < 0) {
       if (false) {
         return 0;
       }
     }
     
-    if (count > 0) {// tuning UP
-      // console.log("tuning UP");
-      
-      return 0;
+    if (count > 0) {
+      if (false) {
+        return 0;
+      }
+    }
+
+    if (count > 0) {
+      if (false) {
+        return 0;
+      }
     }
     
     return 0;
@@ -99,7 +107,9 @@ export default class Guitar extends Instrument {
         console.log(1);
         return 0;
       }
+    }
 
+    if (count < 0) {
       if (this._transposition < 0) {//находится слева
         console.log(2);
         return count - (-this._transposition);
@@ -111,7 +121,9 @@ export default class Guitar extends Instrument {
         console.log(3);
         return count;
       }
-      
+    }
+
+    if (count > 0) {
       if (this._transposition < 0) {//находится слева
         console.log(4);
         return count - (-this._transposition);
