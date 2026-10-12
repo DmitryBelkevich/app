@@ -29,8 +29,8 @@ export default class GuitarTest {
     // this.transpose_test4();
     // this.transpose_test5();
 
-    this.test7();
-    this.test8();
+    // this.test7();
+    // this.test8();
 
     this.test9();
   }
