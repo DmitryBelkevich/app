@@ -71,13 +71,13 @@ export default class Guitar extends Instrument {
 
   tuningOffset(count) {
     if (count < 0) {// tuning DOWN
-      console.log("tuning DOWN");
+      // console.log("tuning DOWN");
       
       return 0;
     }
     
     if (count > 0) {// tuning UP
-      console.log("tuning UP");
+      // console.log("tuning UP");
       
       return 0;
     }
