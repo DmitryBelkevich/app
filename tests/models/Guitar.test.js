@@ -17,11 +17,11 @@ export default class GuitarTest {
     // this.set_transposition_without_key_test();
     // this.set_transposition_with_key_test();
 
-    this.set_tuning_test1();
-    this.set_tuning_test2();
+    // this.set_tuning_test1();
+    // this.set_tuning_test2();
 
-    // this.set_capo_test1();
-    // this.set_capo_test2();
+    this.set_capo_test1();
+    this.set_capo_test2();
 
     // this.transpose_test1();
     // this.transpose_test2();
@@ -168,12 +168,11 @@ export default class GuitarTest {
     guitar.key = new Chord("Am");
 
     // checks
-    if (guitar.key.value == "Bm")
-      console.log("🟢" + "guitar.capo");
-    else
-      console.log("🔴" + "guitar.capo");
+    this.test.execute("guitar.key.value", guitar.key.value, "Bm");
+    this.test.execute("guitar.capo", guitar.capo, 2);
 
-    // console.log(guitar);
+    // print object
+    console.log(guitar);
   }
 
   set_capo_test2() {
@@ -189,12 +188,11 @@ export default class GuitarTest {
     guitar.capo = 2;
 
     // checks
-    if (guitar.key.value == "Bm")
-      console.log("🟢" + "guitar.capo");
-    else
-      console.log("🔴" + "guitar.capo");
+    this.test.execute("guitar.key.value", guitar.key.value, "Bm");
+    this.test.execute("guitar.capo", guitar.capo, 2);
 
-    // console.log(guitar);
+    // print object
+    console.log(guitar);
   }
 
   // transpose
