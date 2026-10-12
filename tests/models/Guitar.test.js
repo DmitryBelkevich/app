@@ -14,8 +14,8 @@ export default class GuitarTest {
   run() {
     this.transposition_default_test();
     
-    // this.set_transposition_without_key_test();
-    // this.set_transposition_with_key_test();
+    this.set_transposition_without_key_test();
+    this.set_transposition_with_key_test();
 
     // this.set_tuning_test1();
     // this.set_tuning_test2();
@@ -64,15 +64,8 @@ export default class GuitarTest {
       guitar.transposition = value;
 
       // checks
-      if (guitar.transposition == value)
-        console.log("🟢" + "guitar.transposition");
-      else
-        console.log("🔴" + "guitar.transposition");
-
-      if (guitar.tuning.transposition == value)
-        console.log("🟢" + "guitar.tuning.transposition");
-      else
-        console.log("🔴" + "guitar.tuning.transposition");
+      this.test.execute("guitar.transposition", guitar.transposition, value);
+      this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, value);
     });
 
     // print object
@@ -80,6 +73,7 @@ export default class GuitarTest {
   }
 
   set_transposition_with_key_test() {
+    // title
     console.log("set_transposition_with_key_test");
 
     // init
@@ -97,15 +91,9 @@ export default class GuitarTest {
       guitar.transposition = obj.transposition;
 
       // checks
-      if (guitar.key.value == obj.key)
-        console.log("🟢" + "guitar.transposition");
-      else
-        console.log("🔴" + "guitar.transposition");
 
-      if (guitar.tuning.transposition == obj.transposition)
-        console.log("🟢" + "guitar.tuning.transposition");
-      else
-        console.log("🔴" + "guitar.tuning.transposition");
+      this.test.execute("guitar.transposition", guitar.key.value, obj.key);
+      this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, obj.transposition);
     });
 
     // print object
