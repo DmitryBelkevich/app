@@ -96,21 +96,24 @@ export default class Guitar extends Instrument {
   capoOffset(count) {
     if (count < 0) {
       if (false) {//находится справа
-        console.log("capo DOWN");
+        console.log(1);
         return 0;
       }
 
       if (this._transposition < 0) {//находится слева
+        console.log(2);
         return count - (-this._transposition);
       }
     }
     
     if (count > 0) {
       if (this._transposition >= 0) {//находится справа
+        console.log(3);
         return count;
       }
       
       if (this._transposition < 0) {//находится слева
+        console.log(4);
         return count - (-this._transposition);
       }
     }
