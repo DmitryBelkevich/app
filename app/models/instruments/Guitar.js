@@ -54,26 +54,34 @@ export default class Guitar extends Instrument {
     if (!count)
       return;
 
-    this._transposition += count;
-
-    if (this._key)
-      this._key.transpose(count);
+    // 1
 
     const tuning = this.tuningOffset(count);
     const capo = this.capoOffset(count);
 
-    // console.log("tuning offset: " + tuning);
+    console.log("tuning offset: " + tuning);
     console.log("capo offset: " + capo);
 
     this._tuning.transpose(tuning);
     this._capo += capo;
+
+    // 2
+
+    this._transposition += count;
+
+    if (this._key)
+      this._key.transpose(count);
   }
 
   tuningOffset(count) {
     if (count < 0) {// tuning DOWN
-      // console.log("tuning DOWN");
-      
-      return 0;
+      if (this._transposition <= 0) {
+        return count;
+      }
+
+      if (false) {
+        return 0;
+      }
     }
     
     if (count > 0) {// tuning UP
@@ -86,7 +94,7 @@ export default class Guitar extends Instrument {
   }
 
   capoOffset(count) {
-    if (count < 0) {// capo DOWN
+    if (count < 0) {
       if (true) {//находится справа
         console.log("capo DOWN");
         return 0;
@@ -98,15 +106,13 @@ export default class Guitar extends Instrument {
       }
     }
     
-    if (count > 0) {// capo UP
-      if (true) {//находится справа
-        console.log("capo UP");
+    if (count > 0) {
+      if (this._transposition >= 0) {//находится справа
         return count;
       }
       
-      if (false) {//находится слева
-        console.log("capo 0");
-        return 0;
+      if (this._transposition < 0) {//находится слева
+        return count - (-this._transposition);
       }
     }
     
