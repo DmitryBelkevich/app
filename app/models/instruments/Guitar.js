@@ -125,7 +125,7 @@ export default class Guitar extends Instrument {
 
     if (count > 0) {
       if (this._transposition < 0) {//находится слева
-        console.log(count - 0);
+        console.log(this._transposition);
         return count - (-this._transposition);
       }
     }
