@@ -62,7 +62,7 @@ export default class Guitar extends Instrument {
     const tuning = this.tuningOffset(count);
     const capo = this.capoOffset(count);
 
-    console.log("tuning offset: " + tuning);
+    // console.log("tuning offset: " + tuning);
     console.log("capo offset: " + capo);
 
     this._tuning.transpose(tuning);
