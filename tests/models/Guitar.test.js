@@ -445,7 +445,7 @@ export default class GuitarTest {
     this.test.execute("guitar.transposition", guitar.transposition, -2);
     this.test.execute("guitar.key.value", guitar.key.value, "Gm");
 
-    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, -2);
     this.test.execute("guitar.capo", guitar.capo, 0);
 
     // method
@@ -455,7 +455,7 @@ export default class GuitarTest {
     this.test.execute("guitar.transposition", guitar.transposition, -4);
     this.test.execute("guitar.key.value", guitar.key.value, "Fm");
 
-    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, -4);
     this.test.execute("guitar.capo", guitar.capo, 0);
 
     // print object
