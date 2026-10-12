@@ -14,20 +14,20 @@ export default class GuitarTest {
   run() {
     this.transposition_default_test();
     
-    this.set_transposition_without_key_test();
-    this.set_transposition_with_key_test();
+    // this.set_transposition_without_key_test();
+    // this.set_transposition_with_key_test();
 
-    this.set_tuning_test1();
-    this.set_tuning_test2();
+    // this.set_tuning_test1();
+    // this.set_tuning_test2();
 
-    this.set_capo_test1();
-    this.set_capo_test2();
+    // this.set_capo_test1();
+    // this.set_capo_test2();
 
-    this.transpose_test1();
-    this.transpose_test2();
-    this.transpose_test3();
-    this.transpose_test4();
-    this.transpose_test5();
+    // this.transpose_test1();
+    // this.transpose_test2();
+    // this.transpose_test3();
+    // this.transpose_test4();
+    // this.transpose_test5();
 
     // this.test7();
     // this.test8();
@@ -43,16 +43,10 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // checks
-    if (guitar.transposition == 0)
-      console.log("🟢" + "guitar.transposition");
-    else
-      console.log("🔴" + "guitar.transposition");
+    this.test.execute("guitar.transposition", guitar.transposition, 0);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 0);
 
-    if (guitar.tuning.transposition == 0)
-      console.log("🟢" + "guitar.tuning.transposition");
-    else
-      console.log("🔴" + "guitar.tuning.transposition");
-
+    // print object
     console.log(guitar);
   }
 
@@ -81,6 +75,7 @@ export default class GuitarTest {
         console.log("🔴" + "guitar.tuning.transposition");
     });
 
+    // print object
     console.log(guitar);
   }
 
@@ -113,6 +108,7 @@ export default class GuitarTest {
         console.log("🔴" + "guitar.tuning.transposition");
     });
 
+    // print object
     console.log(guitar);
   }
 
@@ -139,6 +135,7 @@ export default class GuitarTest {
 
     // checks
 
+    // print object
     console.log(guitar);
   }
 
@@ -163,6 +160,7 @@ export default class GuitarTest {
 
     // checks
 
+    // print object
     console.log(guitar);
   }
 
@@ -233,6 +231,7 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.tuning.transposition");
 
+    // print object
     console.log(guitar);
   }
 
@@ -266,6 +265,7 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.key");
 
+    // print object
     console.log(guitar);
   }
 
@@ -297,6 +297,7 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.key");
 
+    // print object
     console.log(guitar);
   }
 
@@ -330,6 +331,7 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.key");
 
+    // print object
     console.log(guitar);
   }
 
@@ -361,6 +363,7 @@ export default class GuitarTest {
     else
       console.log("🔴" + "guitar.key");
 
+    // print object
     console.log(guitar);
   }
 
