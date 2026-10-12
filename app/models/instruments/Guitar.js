@@ -71,6 +71,8 @@ export default class Guitar extends Instrument {
 
     if (this._key)
       this._key.transpose(count);
+
+    this._tuning.transpose(count);
   }
 
   tuningOffset(count) {
