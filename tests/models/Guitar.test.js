@@ -56,14 +56,29 @@ export default class GuitarTest {
     // init
     const guitar = new Guitar();
 
-    [-2, -1, 0, 1, 2].forEach((value) => {
-      // method
-      guitar.transposition = value;
+    // method
+    guitar.transposition = -2;
 
-      // checks
-      this.test.check("guitar.transposition", guitar.transposition, value);
-      this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, value);
-    });
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, -2);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.capo", guitar.capo, 0);
+
+    // method
+    guitar.transposition = 0;
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, 0);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.check("guitar.capo", guitar.capo, 0);
+
+    // method
+    guitar.transposition = 2;
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, 2);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.check("guitar.capo", guitar.capo, 2);
 
     // print object
     console.log(guitar);
