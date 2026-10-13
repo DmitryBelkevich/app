@@ -54,48 +54,41 @@ export default class Guitar extends Instrument {
     if (!count)
       return;
 
-    // 1
-
-    // const tuning = this.tuningOffset(count);
-    // const capo = this.capoOffset(count);
-
-    // console.log("tuning offset: " + tuning);
-    // console.log("capo offset: " + capo);
-
-    // this._tuning.transpose(tuning);
-    // this._capo += capo;
-
-    // 2
-
     this._transposition += count;
 
     if (this._key)
       this._key.transpose(count);
 
-    this._tuning.transpose(count);
-    this._capo += 0;
+    const tuningCount = this.#tuningOffset(count);
+    const capoCount = this.#capoOffset(count);
+
+    this._tuning.transpose(tuningCount);
+    this._capo += capoCount;
   }
 
-  tuningOffset(count) {
-    if (count < 0) {
-      if (this._transposition <= 0) {
+  #tuningOffset(count) {
+    const up = count > 0;
+    const down = count < 0;
+    
+    if (down) {
+      if (false) {
         return count;
       }
     }
 
-    if (count < 0) {
+    if (down) {
       if (false) {
         return 0;
       }
     }
     
-    if (count > 0) {
+    if (up) {
       if (false) {
         return 0;
       }
     }
 
-    if (count > 0) {
+    if (up) {
       if (false) {
         return 0;
       }
@@ -104,27 +97,30 @@ export default class Guitar extends Instrument {
     return 0;
   }
 
-  capoOffset(count) {
-    if (count > 0) {
-      if (this._transposition >= 0) {//находится справа
+  #capoOffset(count) {
+    const up = count > 0;
+    const down = count < 0;
+    
+    if (up) {
+      if (false) {//находится справа
         return count;
       }
     }
 
-    if (count > 0) {
-      if (this._transposition < 0) {//находится слева
+    if (up) {
+      if (false) {//находится слева
         return count - (-this._transposition);
       }
     }
     
-    if (count < 0) {
-      if (this._transposition >= 0) {//находится справа
+    if (down) {
+      if (false) {//находится справа
         return -count - (-this._transposition);
       }
     }
 
-    if (count < 0) {
-      if (this._transposition < 0) {//находится слева
+    if (down) {
+      if (false) {//находится слева
         return 0;
       }
     }
