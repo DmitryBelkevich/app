@@ -308,14 +308,15 @@ export default class GuitarTest {
 
     // init
     const guitar = new Guitar();
+    guitar.key = new Chord("Am");
 
     // method
     guitar.transpose(2);
-    guitar.transpose(-4);
 
     // checks
-    this.test.check("guitar.transposition", guitar.transposition, -2);
-    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.transposition", guitar.transposition, 2);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 2);
+    this.test.check("guitar.key.value", guitar.key.value, "Bm");
 
     // print object
     console.log(guitar);
