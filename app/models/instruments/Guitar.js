@@ -71,7 +71,6 @@ export default class Guitar extends Instrument {
     const down = count < 0;
 
     const offset = this._transposition + count;
-    console.log("offset: " + offset);
 
     if (offset > 0) {
       return 0;
@@ -111,30 +110,40 @@ export default class Guitar extends Instrument {
   #capoOffset(count) {
     const up = count > 0;
     const down = count < 0;
-    
-    if (up) {
-      if (false) {//находится справа
-        return count;
-      }
+
+    const offset = this._transposition + count;
+
+    if (offset < 0) {
+      return 0;
     }
 
-    if (up) {
-      if (false) {//находится слева
-        return count - (-this._transposition);
-      }
+    if (offset > 0) {
+      return offset;
     }
     
-    if (down) {
-      if (false) {//находится справа
-        return -count - (-this._transposition);
-      }
-    }
+    // if (up) {
+    //   if (false) {//находится справа
+    //     return count;
+    //   }
+    // }
 
-    if (down) {
-      if (false) {//находится слева
-        return 0;
-      }
-    }
+    // if (up) {
+    //   if (false) {//находится слева
+    //     return count - (-this._transposition);
+    //   }
+    // }
+    
+    // if (down) {
+    //   if (false) {//находится справа
+    //     return -count - (-this._transposition);
+    //   }
+    // }
+
+    // if (down) {
+    //   if (false) {//находится слева
+    //     return 0;
+    //   }
+    // }
     
     return 0;
   }
