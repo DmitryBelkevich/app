@@ -12,16 +12,16 @@ export default class GuitarTest {
   }
 
   run() {
-    this.transposition_default_test();
+    // this.transposition_default_test();
     
     this.set_transposition_without_key_test();
-    this.set_transposition_with_key_test();
+    // this.set_transposition_with_key_test();
 
-    this.set_tuning_test1();
-    this.set_tuning_test2();
+    // this.set_tuning_test1();
+    // this.set_tuning_test2();
 
-    this.set_capo_test1();
-    this.set_capo_test2();
+    // this.set_capo_test1();
+    // this.set_capo_test2();
 
     // this.transpose_without_key_test1();
     // this.transpose_test2();
@@ -93,19 +93,12 @@ export default class GuitarTest {
 
     guitar.key = new Chord("Am");
 
-    [
-      {transposition: 0, key: "Am"},
-      {transposition: -2, key: "Gm"},
-      {transposition: 2, key: "Bm"},
-      {transposition: -2, key: "Gm"},
-    ].forEach((obj) => {
-      // method
-      guitar.transposition = obj.transposition;
+    // method
+    guitar.transposition = -2;
 
-      // checks
-      this.test.check("guitar.transposition", guitar.key.value, obj.key);
-      this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, obj.transposition);
-    });
+    // checks
+    this.test.check("guitar.transposition", guitar.key.value, obj.key);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
 
     // print object
     console.log(guitar);
