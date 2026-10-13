@@ -69,6 +69,9 @@ export default class Guitar extends Instrument {
   #tuningOffset(count) {
     const up = count > 0;
     const down = count < 0;
+
+    console.log("up: " + up);
+    console.log("down: " + down);
     
     if (down) {
       if (false) {
