@@ -1,4 +1,4 @@
-export default class Test {
+export default class UnitTest {
   execute(title, result, expected) {
     const condition = result == expected;
     
@@ -9,6 +9,6 @@ export default class Test {
     
     const message = icons[condition] + title + ": " + result + " | " + expected;
 
-    console.log("[check] " + message);
+    console.log(message);
   }
 }
