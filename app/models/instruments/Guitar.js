@@ -70,7 +70,8 @@ export default class Guitar extends Instrument {
     const up = count > 0;
     const down = count < 0;
 
-    console.log("offset: " + this._transposition + count);
+    const offset = this._transposition + count;
+    console.log("offset: " + offset);
     
     if (down) {
       if (false) {
