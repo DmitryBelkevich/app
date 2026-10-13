@@ -1,4 +1,4 @@
-import Test from "../Test.js";
+import Test from "../UnitTest.js";
 
 import Guitar from "../../app/models/instruments/Guitar.js";
 
@@ -8,7 +8,7 @@ import Tuning from "../../app/models/Tuning.js";
 
 export default class GuitarTest {
   constructor() {
-    this.test = new Test();
+    this.test = new UnitTest();
   }
 
   run() {
