@@ -9,6 +9,6 @@ export default class Test {
     
     const message = icons[condition] + title + ": " + result + " | " + expected;
 
-    console.log(message);
+    console.log("[Test] " + message);
   }
 }
