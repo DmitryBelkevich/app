@@ -274,20 +274,9 @@ export default class GuitarTest {
     guitar.transpose(2);
 
     // checks
-    if (guitar.transposition == 2)
-      console.log("🟢" + "guitar.transposition");
-    else
-      console.log("🔴" + "guitar.transposition");
-
-    if (guitar.tuning.transposition == 2)
-      console.log("🟢" + "guitar.tuning.transposition");
-    else
-      console.log("🔴" + "guitar.tuning.transposition");
-
-    if (guitar.key.value == "Bm")
-      console.log("🟢" + "guitar.key");
-    else
-      console.log("🔴" + "guitar.key");
+    this.test.execute("guitar.transposition", guitar.transposition, 2);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, 2);
+    this.test.execute("guitar.key.value", guitar.key.value, "Bm");
 
     // print object
     console.log(guitar);
