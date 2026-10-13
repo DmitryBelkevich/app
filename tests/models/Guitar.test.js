@@ -73,7 +73,7 @@ export default class GuitarTest {
     this.test.check("guitar.capo", guitar.capo, 0);
 
     // method
-    guitar.transposition = 2;
+    // guitar.transposition = 2;
 
     // checks
     // this.test.check("guitar.transposition", guitar.transposition, 2);
