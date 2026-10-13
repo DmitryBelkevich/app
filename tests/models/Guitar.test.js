@@ -1,4 +1,4 @@
-import Test from "../UnitTest.js";
+import UnitTest from "../UnitTest.js";
 
 import Guitar from "../../app/models/instruments/Guitar.js";
 
