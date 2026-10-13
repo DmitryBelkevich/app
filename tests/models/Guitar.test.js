@@ -34,7 +34,7 @@ export default class GuitarTest {
 
   transposition_default_test() {
     // title
-    console.log("transposition_default_test");
+    console.log("[TEST] " + "transposition_default_test");
 
     // init
     const guitar = new Guitar();
@@ -51,7 +51,7 @@ export default class GuitarTest {
 
   set_transposition_without_key_test() {
     // title
-    console.log("set_transposition_without_key_test");
+    console.log("[TEST] " + "set_transposition_without_key_test");
 
     // init
     const guitar = new Guitar();
@@ -71,7 +71,7 @@ export default class GuitarTest {
 
   set_transposition_with_key_test() {
     // title
-    console.log("set_transposition_with_key_test");
+    console.log("[TEST] " + "set_transposition_with_key_test");
 
     // init
     const guitar = new Guitar();
@@ -100,7 +100,7 @@ export default class GuitarTest {
 
   set_tuning_test1() {
     // title
-    console.log("set_tuning test");
+    console.log("[TEST] " + "set_tuning test");
 
     // init
     const guitar = new Guitar();
@@ -126,7 +126,7 @@ export default class GuitarTest {
 
   set_tuning_test2() {
     // title
-    console.log("set_tuning test");
+    console.log("[TEST] " + "set_tuning test");
 
     // init
     const guitar = new Guitar();
@@ -154,7 +154,7 @@ export default class GuitarTest {
 
   set_capo_test1() {
     // title
-    console.log("set capo test");
+    console.log("[TEST] " + "set capo test");
 
     // init
     const guitar = new Guitar();
@@ -174,7 +174,7 @@ export default class GuitarTest {
 
   set_capo_test2() {
     // title
-    console.log("set capo test");
+    console.log("[TEST] " + "set capo test");
 
     // init
     const guitar = new Guitar();
@@ -196,7 +196,7 @@ export default class GuitarTest {
 
   transpose_without_key_test1() {
     // title
-    console.log("transpose (without key) test");
+    console.log("[TEST] " + "transpose (without key) test");
 
     // init
     const guitar = new Guitar();
@@ -216,7 +216,7 @@ export default class GuitarTest {
 
   transpose_test2() {
     // title
-    console.log("transpose (with key) test");
+    console.log("[TEST] " + "transpose (with key) test");
 
     // init
     const guitar = new Guitar();
@@ -237,7 +237,7 @@ export default class GuitarTest {
 
   transpose_test3() {
     // title
-    console.log("transpose (with key) test");
+    console.log("[TEST] " + "transpose (with key) test");
 
     // init
     const guitar = new Guitar();
@@ -260,7 +260,7 @@ export default class GuitarTest {
 
   transpose_test4() {
     // title
-    console.log("transpose + (with key) test");
+    console.log("[TEST] " + "transpose + (with key) test");
 
     // init
     const guitar = new Guitar();
@@ -281,7 +281,7 @@ export default class GuitarTest {
 
   transpose_test5() {
     // title
-    console.log("transpose + (with key) test");
+    console.log("[TEST] " + "transpose + (with key) test");
 
     // init
     const guitar = new Guitar();
