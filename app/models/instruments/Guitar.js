@@ -72,30 +72,38 @@ export default class Guitar extends Instrument {
 
     const offset = this._transposition + count;
     console.log("offset: " + offset);
-    
-    if (down) {
-      if (false) {
-        return count;
-      }
+
+    if (offset > 0) {
+      return 0;
     }
 
-    if (down) {
-      if (false) {
-        return 0;
-      }
+    if (offset < 0) {
+      return offset;
     }
     
-    if (up) {
-      if (false) {
-        return 0;
-      }
-    }
+    // if (down) {
+    //   if (false) {
+    //     return count;
+    //   }
+    // }
 
-    if (up) {
-      if (false) {
-        return 0;
-      }
-    }
+    // if (down) {
+    //   if (false) {
+    //     return 0;
+    //   }
+    // }
+    
+    // if (up) {
+    //   if (false) {
+    //     return 0;
+    //   }
+    // }
+
+    // if (up) {
+    //   if (false) {
+    //     return 0;
+    //   }
+    // }
     
     return 0;
   }
