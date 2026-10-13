@@ -311,10 +311,11 @@ export default class GuitarTest {
 
     // method
     guitar.transpose(-2);
+    guitar.transpose(-2);
 
     // checks
-    this.test.check("guitar.transposition", guitar.transposition, -2);
-    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.transposition", guitar.transposition, -4);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -4);
 
     // print object
     console.log(guitar);
