@@ -208,15 +208,8 @@ export default class GuitarTest {
     guitar.transpose(-2);
 
     // checks
-    if (guitar.transposition == -2)
-      console.log("🟢" + "guitar.transposition");
-    else
-      console.log("🔴" + "guitar.transposition");
-
-    if (guitar.tuning.transposition == -2)
-      console.log("🟢" + "guitar.tuning.transposition");
-    else
-      console.log("🔴" + "guitar.tuning.transposition");
+    this.test.execute("guitar.transposition", guitar.transposition, -2);
+    this.test.execute("guitar.tuning.transposition", guitar.tuning.transposition, -2);
 
     // print object
     console.log(guitar);
