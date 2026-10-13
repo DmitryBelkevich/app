@@ -1,5 +1,5 @@
 export default class UnitTest {
-  execute(title, result, expected) {
+  check(title, result, expected) {
     const condition = result == expected;
     
     const icons = {
