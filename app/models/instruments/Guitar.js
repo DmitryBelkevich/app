@@ -54,99 +54,33 @@ export default class Guitar extends Instrument {
     if (!count)
       return;
 
+    this._transposition += count;
+
+    if (this._key)
+      this._key.transpose(count);
+
     const tuningCount = this.#tuningOffset(count);
     const capoCount = this.#capoOffset(count);
 
     this._tuning.transpose(tuningCount);
     this._capo += capoCount;
-
-    this._transposition += count;
-
-    if (this._key)
-      this._key.transpose(count);
   }
 
   #tuningOffset(count) {
-    const up = count > 0;
-    const down = count < 0;
+    // const up = count > 0;
+    // const down = count < 0;
 
-    const offset = this._transposition + count;
-
-    console.log("offset: " + offset);
-
-    if (offset > 0) {
-      return 0;
-    }
-
-    if (offset < 0) {
-      return offset;
-    }
+    return count - this._capo;
     
-    // if (down) {
-    //   if (false) {
-    //     return count;
-    //   }
-    // }
-
-    // if (down) {
-    //   if (false) {
-    //     return 0;
-    //   }
-    // }
-    
-    // if (up) {
-    //   if (false) {
-    //     return 0;
-    //   }
-    // }
-
-    // if (up) {
-    //   if (false) {
-    //     return 0;
-    //   }
-    // }
-    
-    return 0;
+    // return 0;
   }
 
   #capoOffset(count) {
-    const up = count > 0;
-    const down = count < 0;
+    // const up = count > 0;
+    // const down = count < 0;
 
-    const offset = this._transposition + count;
-
-    if (offset < 0) {
-      return 0;
-    }
-
-    if (offset > 0) {
-      return offset;
-    }
+    return count - this._tuning.transposition;
     
-    // if (up) {
-    //   if (false) {//находится справа
-    //     return count;
-    //   }
-    // }
-
-    // if (up) {
-    //   if (false) {//находится слева
-    //     return count - (-this._transposition);
-    //   }
-    // }
-    
-    // if (down) {
-    //   if (false) {//находится справа
-    //     return -count - (-this._transposition);
-    //   }
-    // }
-
-    // if (down) {
-    //   if (false) {//находится слева
-    //     return 0;
-    //   }
-    // }
-    
-    return 0;
+    // return 0;
   }
 }
