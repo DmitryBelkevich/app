@@ -68,6 +68,8 @@ export default class Guitar extends Instrument {
 
   #tuningOffset(count) {
     const result = this._tuning.transposition + count;
+
+    console.log("tuning result: " + result);
     
     if (0 < result) {
       return -this._tuning.transposition;
@@ -82,6 +84,8 @@ export default class Guitar extends Instrument {
 
   #capoOffset(count) {
     const result = this._capo + count;
+
+    console.log("capo result: " + result);
 
     if (0 < result) {
       return count;
