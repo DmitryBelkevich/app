@@ -71,7 +71,7 @@ export default class Guitar extends Instrument {
 
     console.log("tuning result: " + result);
     
-    if (0 < result) {
+    if (result >= 0) {
       return -this._tuning.transposition;
     }
 
@@ -87,7 +87,7 @@ export default class Guitar extends Instrument {
 
     console.log("capo result: " + result);
 
-    if (0 < result) {
+    if (result >= 0) {
       return count;
     }
 
