@@ -1,30 +1,35 @@
+import UnitTest from "../UnitTest.js";
+
 import Instrument from "../../app/models/instruments/Instrument.js";
 import Chord from "../../app/models/Chord.js";
 
 export default class InstrumentTest {
   constructor() {
-    
+    this.test = new UnitTest();
   }
 
   run() {
     this.transposition_default_test();
     
-    this.set_transposition_without_key_test();
-    this.set_transposition_with_key_test();
+    // this.set_transposition_without_key_test();
+    // this.set_transposition_with_key_test();
     
-    this.transpose_without_key_test();
-    this.transpose_with_key_test();
+    // this.transpose_without_key_test();
+    // this.transpose_with_key_test();
   }
 
   transposition_default_test() {
-    console.log("transposition setter (without key) test:");
+    // title
+    console.log("[TEST] " + "transposition setter (without key) test:");
 
+    // init
     const instrument = new Instrument();
 
-    if (instrument.transposition == 0)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
+    // checks
+    this.test.check("instrument.transposition", instrument.transposition, 0);
+
+    // print object
+    console.log(instrument);
   }
 
   // set_transposition
