@@ -209,6 +209,7 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // method
+    console.log("[method] " + "guitar.tuning = new Tuning()");
     guitar.tuning = new Tuning(
       new Note("D"),
       new Note("G"),
@@ -218,6 +219,7 @@ export default class GuitarTest {
       new Note("D"),
     );
 
+    console.log("[method] " + "guitar.key = new Chord(Am)");
     guitar.key = new Chord("Am");
 
     // checks
@@ -284,6 +286,7 @@ export default class GuitarTest {
     // init
     const guitar = new Guitar();
 
+    console.log("[method] " + "guitar.key = new Chord(Am)");
     guitar.key = new Chord("Am");
 
     // method
