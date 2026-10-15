@@ -19,11 +19,11 @@ export default class GuitarTest {
     this.set_transposition_test_3();
     this.set_transposition_test_4();
 
-    // this.set_tuning_test1();
-    // this.set_tuning_test2();
+    this.set_tuning_test1();
+    this.set_tuning_test2();
 
-    // this.set_capo_test1();
-    // this.set_capo_test2();
+    this.set_capo_test1();
+    this.set_capo_test2();
 
     this.transpose_without_key_test1();
     // this.transpose_test2();
@@ -237,6 +237,7 @@ export default class GuitarTest {
     guitar.key = new Chord("Am");
 
     // method
+    console.log("[method] " + "guitar.tuning = new Tuning()");
     guitar.tuning = new Tuning(
       new Note("D"),
       new Note("G"),
@@ -263,6 +264,7 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // method
+    console.log("[method] " + "guitar.capo = 2");
     guitar.capo = 2;
 
     guitar.key = new Chord("Am");
@@ -285,6 +287,7 @@ export default class GuitarTest {
     guitar.key = new Chord("Am");
 
     // method
+    console.log("[method] " + "guitar.capo = 2");
     guitar.capo = 2;
 
     // checks
