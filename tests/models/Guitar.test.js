@@ -57,6 +57,7 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // method
+    console.log("[method] " + "guitar.transposition = -2");
     guitar.transposition = -2;
 
     // checks
