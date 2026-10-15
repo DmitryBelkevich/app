@@ -224,6 +224,7 @@ export default class GuitarTest {
 
     // checks
     this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.capo", guitar.capo, 0);
 
     // print object
     console.log(guitar);
@@ -251,6 +252,7 @@ export default class GuitarTest {
 
     // checks
     this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.capo", guitar.capo, 0);
 
     // print object
     console.log(guitar);
