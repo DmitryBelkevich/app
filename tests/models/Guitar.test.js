@@ -25,7 +25,7 @@ export default class GuitarTest {
     // this.set_capo_test1();
     // this.set_capo_test2();
 
-    // this.transpose_without_key_test1();
+    this.transpose_without_key_test1();
     // this.transpose_test2();
     // this.transpose_test3();
     // this.transpose_test4();
@@ -305,11 +305,13 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // method
+    console.log("[method] " + "guitar.transpose(-2)");
     guitar.transpose(-2);
 
     // checks
     this.test.check("guitar.transposition", guitar.transposition, -2);
     this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    this.test.check("guitar.capo", guitar.capo, 0);
 
     // print object
     console.log(guitar);
