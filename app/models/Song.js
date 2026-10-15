@@ -115,7 +115,7 @@ export default class Song {
 
   set instruments(instruments) {
     this.#instruments = instruments;
-    this.#instruments.forEach(instrument => instrument.transpose(count));
+    // this.#instruments.forEach(instrument => instrument.transpose(count));
   }
 
   isTransposed() {
