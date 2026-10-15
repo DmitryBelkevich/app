@@ -7,6 +7,10 @@ export default class SongTest {
   constructor() {
     this.#songDao = new SongDao();
   }
+
+  run() {
+    this.test();
+  }
   
   async test() {
     const song = await this.#songDao.getById(0);
