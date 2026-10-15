@@ -30,8 +30,6 @@ export default class GuitarTest {
     this.transpose_test2();
     this.transpose_test3();
     this.transpose_test4();
-
-    this.transpose_test_01();
   }
 
   transposition_default_test() {
@@ -307,7 +305,9 @@ export default class GuitarTest {
     console.log(guitar);
   }
 
-  // transpose
+  // *** transpose ***
+
+  // without_key
 
   transpose_without_key_test1() {
     // title
@@ -329,6 +329,8 @@ export default class GuitarTest {
     console.log(guitar);
   }
 
+  // with_key
+
   // transpose -
 
   transpose_test1() {
@@ -337,10 +339,10 @@ export default class GuitarTest {
 
     // init
     const guitar = new Guitar();
-
     guitar.key = new Chord("Am");
 
     // method
+    console.log("[method] " + "guitar.transpose(-2)");
     guitar.transpose(-2);
 
     // checks
@@ -348,6 +350,16 @@ export default class GuitarTest {
     this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
     this.test.check("guitar.capo", guitar.capo, 0);
     this.test.check("guitar.key.value", guitar.key.value, "Gm");
+
+    // method
+    console.log("[method] " + "guitar.transpose(-2)");
+    guitar.transpose(-2);
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, -4);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -4);
+    this.test.check("guitar.capo", guitar.capo, 0);
+    this.test.check("guitar.key.value", guitar.key.value, "Fm");
 
     // print object
     console.log(guitar);
@@ -359,11 +371,21 @@ export default class GuitarTest {
 
     // init
     const guitar = new Guitar();
+    guitar.key = new Chord("Am");
 
     // method
-    guitar.transpose(-2);
-    
-    guitar.key = new Chord("Am");
+    console.log("[method] " + "guitar.transpose(-4)");
+    guitar.transpose(-4);
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, -4);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -4);
+    this.test.check("guitar.capo", guitar.capo, 0);
+    this.test.check("guitar.key.value", guitar.key.value, "Fm");
+
+    // method
+    console.log("[method] " + "guitar.transpose(2)");
+    guitar.transpose(2);
 
     // checks
     this.test.check("guitar.transposition", guitar.transposition, -2);
@@ -383,17 +405,27 @@ export default class GuitarTest {
 
     // init
     const guitar = new Guitar();
-
     guitar.key = new Chord("Am");
 
     // method
-    guitar.transpose(2);
+    console.log("[method] " + "guitar.transpose(2)");
+    guitar.transpose(4);
 
     // checks
     this.test.check("guitar.transposition", guitar.transposition, 2);
     this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
     this.test.check("guitar.capo", guitar.capo, 2);
     this.test.check("guitar.key.value", guitar.key.value, "Bm");
+
+    // method
+    console.log("[method] " + "guitar.transpose(2)");
+    guitar.transpose(-2);
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, 4);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.check("guitar.capo", guitar.capo, 4);
+    this.test.check("guitar.key.value", guitar.key.value, "C#m");
 
     // print object
     console.log(guitar);
@@ -405,33 +437,10 @@ export default class GuitarTest {
 
     // init
     const guitar = new Guitar();
-
-    // method
-    guitar.transpose(2);
-
-    guitar.key = new Chord("Am");
-
-    // checks
-    this.test.check("guitar.transposition", guitar.transposition, 2);
-    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
-    this.test.check("guitar.capo", guitar.capo, 2);
-    this.test.check("guitar.key.value", guitar.key.value, "Bm");
-
-    // print object
-    console.log(guitar);
-  }
-
-  // *** transpose ***
-
-  transpose_test_01() {
-    // title
-    console.log("[TEST] " + "transpose test");
-
-    // init
-    const guitar = new Guitar();
     guitar.key = new Chord("Am");
 
     // method
+    console.log("[method] " + "guitar.transpose(2)");
     guitar.transpose(2);
 
     // checks
@@ -439,6 +448,16 @@ export default class GuitarTest {
     this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
     this.test.check("guitar.capo", guitar.capo, 2);
     this.test.check("guitar.key.value", guitar.key.value, "Bm");
+
+    // method
+    console.log("[method] " + "guitar.transpose(2)");
+    guitar.transpose(2);
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, 4);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.check("guitar.capo", guitar.capo, 4);
+    this.test.check("guitar.key.value", guitar.key.value, "C#m");
 
     // print object
     console.log(guitar);
