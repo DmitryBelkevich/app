@@ -60,7 +60,7 @@ export default class Guitar extends Instrument {
       if (count <= -this._tuning.transposition) {
         tuningCount = count;
         capoCount = 0;
-      } else {
+      } else if (count > -this._tuning.transposition) {
         tuningCount = -this._tuning.transposition;
         capoCount = count - tuningCount;
       }
@@ -70,7 +70,7 @@ export default class Guitar extends Instrument {
       if (count >= -this._capo) {
         capoCount = count;
         tuningCount = 0;
-      } else {
+      } else if (count < -this._capo) {
         capoCount = -this._capo;
         tuningCount = count - capoCount;
       }
