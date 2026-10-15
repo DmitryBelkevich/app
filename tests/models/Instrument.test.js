@@ -9,7 +9,7 @@ export default class InstrumentTest {
   }
 
   run() {
-    console.log("[Instrument tests]"");
+    console.log("[Instrument tests]");
     
     // this.transposition_default_test();
     
