@@ -57,17 +57,17 @@ export default class Guitar extends Instrument {
     var capoCount = 0;
 
     if (count > 0) {
-      if (count < -this._tuning.transposition) {
+      if (count <= -this._tuning.transposition) {
         tuningCount = count;
         capoCount = 0;
       } else {
-        tuningCount = -this._tuning.transposition;//4 = -(-4)
+        tuningCount = -this._tuning.transposition;
         capoCount = count - tuningCount;
       }
     }
 
     if (count < 0) {
-      if (count > -this._capo) {
+      if (count >= -this._capo) {
         capoCount = count;
         tuningCount = 0;
       } else {
