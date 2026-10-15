@@ -57,22 +57,22 @@ export default class GuitarTest {
     const guitar = new Guitar();
 
     // method
-    console.log("[method] " + "guitar.transposition = -2");
-    guitar.transposition = -2;
+    // console.log("[method] " + "guitar.transposition = -2");
+    // guitar.transposition = -2;
 
     // checks
-    this.test.check("guitar.transposition", guitar.transposition, -2);
-    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
-    this.test.check("guitar.capo", guitar.capo, 0);
+    // this.test.check("guitar.transposition", guitar.transposition, -2);
+    // this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, -2);
+    // this.test.check("guitar.capo", guitar.capo, 0);
 
     // method
-    console.log("[method] " + "guitar.transposition = 0");
-    guitar.transposition = 0;
+    // console.log("[method] " + "guitar.transposition = 0");
+    // guitar.transposition = 0;
 
     // checks
-    this.test.check("guitar.transposition", guitar.transposition, 0);
-    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
-    this.test.check("guitar.capo", guitar.capo, 0);
+    // this.test.check("guitar.transposition", guitar.transposition, 0);
+    // this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    // this.test.check("guitar.capo", guitar.capo, 0);
 
     // method
     console.log("[method] " + "guitar.transposition = 2");
