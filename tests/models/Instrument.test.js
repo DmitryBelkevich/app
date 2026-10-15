@@ -9,6 +9,8 @@ export default class InstrumentTest {
   }
 
   run() {
+    console.log("[Instrument tests]"");
+    
     // this.transposition_default_test();
     
     this.set_transposition_without_key_test();
