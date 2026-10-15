@@ -7,7 +7,7 @@ import SongTest from "./models/Song.test.js";
 
 export default function main() {
   const instrumentTest = new InstrumentTest();
-  // instrumentTest.run();
+  instrumentTest.run();
   
   const guitarTest = new GuitarTest();
   // guitarTest.run();
@@ -16,7 +16,7 @@ export default function main() {
   // tuningTest.run();
 
   const songTest = new SongTest();
-  songTest.run();
+  // songTest.run();
 }
 
 const app = main();
