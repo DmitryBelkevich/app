@@ -75,6 +75,15 @@ export default class GuitarTest {
     this.test.check("guitar.capo", guitar.capo, 0);
 
     // method
+    console.log("[method] " + "guitar.transposition = 4");
+    guitar.transposition = 4;
+
+    // checks
+    this.test.check("guitar.transposition", guitar.transposition, 4);
+    this.test.check("guitar.tuning.transposition", guitar.tuning.transposition, 0);
+    this.test.check("guitar.capo", guitar.capo, 4);
+
+    // method
     console.log("[method] " + "guitar.transposition = 2");
     guitar.transposition = 2;
 
