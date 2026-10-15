@@ -59,8 +59,8 @@ export default class Guitar extends Instrument {
     if (this._key)
       this._key.transpose(count);
 
-    var tun;
-    var capo;
+    var tun = 0;
+    var capo = 0;
 
     if (count > 0) {
       tun = -this._tuning.transposition;//3 = -(-3)
