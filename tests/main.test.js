@@ -7,13 +7,13 @@ import SongTest from "./models/Song.test.js";
 
 export default function main() {
   const instrumentTest = new InstrumentTest();
-  instrumentTest.run();
+  // instrumentTest.run();
   
   const guitarTest = new GuitarTest();
   // guitarTest.run();
 
   const tuningTest = new TuningTest();
-  // tuningTest.run();
+  tuningTest.run();
 
   const songTest = new SongTest();
   // songTest.run();
