@@ -7,6 +7,8 @@ export default class TuningTest {
   }
   
   run() {
+    console.log("[Tuning tests]");
+    
     // this.get_transposition_test0();
 
     // this.get_transposition_test1();
