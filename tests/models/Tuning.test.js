@@ -35,7 +35,8 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   // get_transposition
@@ -57,7 +58,8 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   get_transposition_test2() {
@@ -77,7 +79,8 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   get_transposition_test3() {
@@ -97,7 +100,8 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.transposition");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   // set_transposition
@@ -122,8 +126,9 @@ export default class TuningTest {
       else
         console.log("🔴" + "tuning.transposition");
     });
-    
-    // console.log(tuning);
+
+    // print object
+    console.log(tuning);
   }
 
   // isStandard
@@ -158,7 +163,8 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.isStandard");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   isStandard_test3() {
@@ -178,7 +184,8 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.isStandard");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   isStandard_test4() {
@@ -198,6 +205,7 @@ export default class TuningTest {
     else
       console.log("🔴" + "tuning.isStandard");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 }
