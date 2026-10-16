@@ -35,10 +35,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (tuning.transposition == 0)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
+    this.test.check("tuning.transposition", tuning.transposition, 0);
 
     // print object
     console.log(tuning);
@@ -63,10 +60,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (tuning.transposition == 0)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
+    this.test.check("tuning.transposition", tuning.transposition, 0);
 
     // print object
     console.log(tuning);
@@ -89,10 +83,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (tuning.transposition == -1)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
+    this.test.check("tuning.transposition", tuning.transposition, -1);
 
     // print object
     console.log(tuning);
@@ -115,10 +106,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (tuning.transposition == -2)
-      console.log("🟢" + "tuning.transposition");
-    else
-      console.log("🔴" + "tuning.transposition");
+    this.test.check("tuning.transposition", tuning.transposition, -2);
 
     // print object
     console.log(tuning);
@@ -140,16 +128,40 @@ export default class TuningTest {
       new Note("E"),
     );
 
-    [-2, -1, 0, 1, 2].forEach((value) => {
-      // method
-      tuning.transposition = value;
+    // method
+    console.log("[method] " + "tuning.transposition = -2");
+    tuning.transposition = -2;
 
-      // checks
-      if (tuning.transposition == value)
-        console.log("🟢" + "tuning.transposition");
-      else
-        console.log("🔴" + "tuning.transposition");
-    });
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, -2);
+
+    // method
+    console.log("[method] " + "tuning.transposition = -1");
+    tuning.transposition = -1;
+
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, -1);
+    
+    // method
+    console.log("[method] " + "tuning.transposition = 0");
+    tuning.transposition = 0;
+
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, 0);/
+
+    // method
+    console.log("[method] " + "tuning.transposition = 1");
+    tuning.transposition = 1;
+
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, 1);
+
+    // method
+    console.log("[method] " + "tuning.transposition = 2");
+    tuning.transposition = 2;
+
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, 2);
 
     // print object
     console.log(tuning);
@@ -172,7 +184,8 @@ export default class TuningTest {
     // else
     //   console.log("🔴" + "tuning.isStandard");
 
-    // console.log(tuning);
+    // print object
+    console.log(tuning);
   }
 
   isStandard_test2() {
