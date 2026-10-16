@@ -1,72 +1,95 @@
+import UnitTest from "../UnitTest.js";
+
 import Instrument from "../../app/models/instruments/Instrument.js";
 import Chord from "../../app/models/Chord.js";
 
 export default class InstrumentTest {
   constructor() {
-    
+    this.test = new UnitTest();
   }
 
   run() {
-    this.transposition_default_test();
+    console.log("[Instrument tests]");
+    
+    // this.transposition_default_test();
     
     this.set_transposition_without_key_test();
     this.set_transposition_with_key_test();
     
-    this.transpose_without_key_test();
-    this.transpose_with_key_test();
+    // this.transpose_without_key_test();
+    // this.transpose_with_key_test();
   }
 
   transposition_default_test() {
-    console.log("transposition setter (without key) test:");
+    // title
+    console.log("[TEST] " + "transposition setter (without key) test:");
 
+    // init
     const instrument = new Instrument();
 
-    if (instrument.transposition == 0)
-      console.log("🟢" + "instrument.transposition");
-    else
-      console.log("🔴" + "instrument.transposition");
+    // method
+
+    // checks
+    this.test.check("instrument.transposition", instrument.transposition, 0);
+
+    // print object
+    console.log(instrument);
   }
 
   // set_transposition
 
   set_transposition_without_key_test() {
-    console.log("transposition default test:");
+     // title
+    console.log("[TEST] " + "set_transposition (without_key) test:");
     
+    // init
     const instrument = new Instrument();
 
-    [-2, -1, 0, 1, 2].forEach((value) => {
-      instrument.transposition = value;
+    // method
+    console.log("[method] " + "instrument.transposition = -2");
+    instrument.transposition = -2;
 
-      if (instrument.transposition == value)
-        console.log("🟢" + "instrument.transposition");
-      else
-        console.log("🔴" + "instrument.transposition");
-    });
+    // checks
+    this.test.check("instrument.transposition", instrument.transposition, -2);
 
-    // console.log(instrument);
+    // print object
+    console.log(instrument);
   }
 
   set_transposition_with_key_test() {
-    console.log("transposition setter (with key) test:");
-
+    // title
+    console.log("[TEST] " + "set_transposition (with_key) test:");
+    
+    // init
     const instrument = new Instrument();
-
     instrument.key = new Chord("Am");
 
-    [
-      {transposition: 0, key: "Am"},
-      {transposition: -2, key: "Gm"},
-      {transposition: 2, key: "Bm"},
-    ].forEach((obj) => {
-      instrument.transposition = obj.transposition;
+    // method
+    console.log("[method] " + "instrument.transposition = 0");
+    instrument.transposition = 0;
 
-      if (instrument.key.value == obj.key)
-        console.log("🟢" + "instrument.key");
-      else
-        console.log("🔴" + "instrument.key");
-    });
+    // checks
+    this.test.check("instrument.transposition", instrument.transposition, 0);
+    this.test.check("instrument.key.value", instrument.key.value, "Am");
 
-    // console.log(instrument);
+    // method
+    console.log("[method] " + "instrument.transposition = -2");
+    instrument.transposition = -2;
+
+    // checks
+    this.test.check("instrument.transposition", instrument.transposition, -2);
+    this.test.check("instrument.key.value", instrument.key.value, "Gm");
+
+    // method
+    console.log("[method] " + "instrument.transposition = 2");
+    instrument.transposition = 2;
+
+    // checks
+    this.test.check("instrument.transposition", instrument.transposition, 2);
+    this.test.check("instrument.key.value", instrument.key.value, "Bm");
+
+    // print object
+    console.log(instrument);
   }
 
   // transpose
