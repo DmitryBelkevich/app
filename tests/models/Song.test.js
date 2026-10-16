@@ -9,6 +9,8 @@ export default class SongTest {
   }
 
   run() {
+    console.log("[Song tests]");
+    
     this.test();
   }
   
