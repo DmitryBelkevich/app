@@ -12,6 +12,8 @@ export default class GuitarTest {
   }
 
   run() {
+    console.log("[Guitar tests]");
+    
     this.transposition_default_test();
     
     this.set_transposition_test_1();
