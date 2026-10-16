@@ -28,7 +28,8 @@ export default class TuningTest {
   get_transposition_test0() {
     // title
     console.log("[TEST] " + "transposition test");
-    
+
+    // init
     const tuning = new Tuning();
 
     if (tuning.transposition == 0)
@@ -45,7 +46,8 @@ export default class TuningTest {
   get_transposition_test1() {
     // title
     console.log("[TEST] " + "transposition test");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("E"),
       new Note("A"),
@@ -67,7 +69,8 @@ export default class TuningTest {
   get_transposition_test2() {
     // title
     console.log("[TEST] " + "transposition test");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("D#"),
       new Note("G#"),
@@ -89,7 +92,8 @@ export default class TuningTest {
   get_transposition_test3() {
     // title
     console.log("[TEST] " + "transposition test");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("D"),
       new Note("G"),
@@ -113,7 +117,8 @@ export default class TuningTest {
   set_transposition_test1() {
     // title
     console.log("[TEST] " + "set transposition test");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("E"),
       new Note("A"),
@@ -141,7 +146,8 @@ export default class TuningTest {
   isStandard_test1() {
     // title
     console.log("[TEST] " + "isStandard test");
-    
+
+    // init
     const tuning = new Tuning();
 
     // if (tuning.isStandard())
@@ -154,7 +160,8 @@ export default class TuningTest {
 
   isStandard_test2() {
     console.log("tuning.isStandard test:");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("E"),
       new Note("A"),
@@ -176,7 +183,8 @@ export default class TuningTest {
   isStandard_test3() {
     // title
     console.log("[TEST] " + "isStandard test");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("D#"),
       new Note("G#"),
@@ -198,7 +206,8 @@ export default class TuningTest {
   isStandard_test4() {
     // title
     console.log("[TEST] " + "isStandard test");
-    
+
+    // init
     const tuning = new Tuning(
       new Note("D"),
       new Note("G"),
