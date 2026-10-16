@@ -32,6 +32,7 @@ export default class TuningTest {
     // init
     const tuning = new Tuning();
 
+    // checks
     if (tuning.transposition == 0)
       console.log("🟢" + "tuning.transposition");
     else
@@ -57,6 +58,7 @@ export default class TuningTest {
       new Note("E"),
     );
 
+    // checks
     if (tuning.transposition == 0)
       console.log("🟢" + "tuning.transposition");
     else
@@ -80,6 +82,7 @@ export default class TuningTest {
       new Note("D#"),
     );
 
+    // checks
     if (tuning.transposition == -1)
       console.log("🟢" + "tuning.transposition");
     else
@@ -103,6 +106,7 @@ export default class TuningTest {
       new Note("D"),
     );
 
+    // checks
     if (tuning.transposition == -2)
       console.log("🟢" + "tuning.transposition");
     else
@@ -130,7 +134,8 @@ export default class TuningTest {
 
     [-2, -1, 0, 1, 2].forEach((value) => {
       tuning.transposition = value;
-      
+
+      // checks
       if (tuning.transposition == value)
         console.log("🟢" + "tuning.transposition");
       else
@@ -150,6 +155,7 @@ export default class TuningTest {
     // init
     const tuning = new Tuning();
 
+    // checks
     // if (tuning.isStandard())
     //   console.log("🟢" + "tuning.isStandard");
     // else
@@ -171,6 +177,7 @@ export default class TuningTest {
       new Note("E"),
     );
 
+    // checks
     if (tuning.isStandard())
       console.log("🟢" + "tuning.isStandard");
     else
@@ -194,6 +201,7 @@ export default class TuningTest {
       new Note("D#"),
     );
 
+    // checks
     if (!tuning.isStandard())
       console.log("🟢" + "tuning.isStandard");
     else
@@ -217,6 +225,7 @@ export default class TuningTest {
       new Note("D"),
     );
 
+    // checks
     if (!tuning.isStandard())
       console.log("🟢" + "tuning.isStandard");
     else
