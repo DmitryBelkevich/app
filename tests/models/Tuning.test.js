@@ -179,10 +179,7 @@ export default class TuningTest {
     // method
 
     // checks
-    // if (tuning.isStandard())
-    //   console.log("🟢" + "tuning.isStandard");
-    // else
-    //   console.log("🔴" + "tuning.isStandard");
+    this.test.check("tuning.isStandard()", tuning.isStandard(), true);
 
     // print object
     console.log(tuning);
@@ -204,10 +201,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
+    this.test.check("tuning.isStandard()", tuning.isStandard(), true);
 
     // print object
     console.log(tuning);
@@ -230,10 +224,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (!tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
+    this.test.check("tuning.isStandard()", tuning.isStandard(), false);
 
     // print object
     console.log(tuning);
@@ -256,10 +247,7 @@ export default class TuningTest {
     // method
 
     // checks
-    if (!tuning.isStandard())
-      console.log("🟢" + "tuning.isStandard");
-    else
-      console.log("🔴" + "tuning.isStandard");
+    this.test.check("tuning.isStandard()", tuning.isStandard(), false);
 
     // print object
     console.log(tuning);
