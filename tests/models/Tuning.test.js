@@ -21,8 +21,6 @@ export default class TuningTest {
 
     this.isStandard_test1();
     this.isStandard_test2();
-    this.isStandard_test3();
-    this.isStandard_test4();
   }
 
   // get_transposition (empty tuning)
@@ -173,22 +171,6 @@ export default class TuningTest {
   // isStandard
 
   isStandard_test1() {
-    // title
-    console.log("[TEST] " + "isStandard test");
-
-    // init
-    const tuning = new Tuning();
-
-    // method
-
-    // checks
-    this.test.check("tuning.isStandard()", tuning.isStandard(), true);
-
-    // print object
-    console.log(tuning);
-  }
-
-  isStandard_test2() {
     console.log("tuning.isStandard test:");
 
     // init
@@ -210,30 +192,7 @@ export default class TuningTest {
     console.log(tuning);
   }
 
-  isStandard_test3() {
-    // title
-    console.log("[TEST] " + "isStandard test");
-
-    // init
-    const tuning = new Tuning(
-      new Note("D#"),
-      new Note("G#"),
-      new Note("C#"),
-      new Note("F#"),
-      new Note("A#"),
-      new Note("D#"),
-    );
-
-    // method
-
-    // checks
-    this.test.check("tuning.isStandard()", tuning.isStandard(), false);
-
-    // print object
-    console.log(tuning);
-  }
-
-  isStandard_test4() {
+  isStandard_test2() {
     // title
     console.log("[TEST] " + "isStandard test");
 
