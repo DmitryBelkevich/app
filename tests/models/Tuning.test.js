@@ -19,10 +19,10 @@ export default class TuningTest {
 
     this.set_transposition_test1();
 
-    // this.isStandard_test1();
-    // this.isStandard_test2();
-    // this.isStandard_test3();
-    // this.isStandard_test4();
+    this.isStandard_test1();
+    this.isStandard_test2();
+    this.isStandard_test3();
+    this.isStandard_test4();
   }
 
   // get_transposition (empty tuning)
