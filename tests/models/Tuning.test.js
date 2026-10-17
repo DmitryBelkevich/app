@@ -3,7 +3,7 @@ import Note from "../../app/models/Note.js";
 
 export default class TuningTest {
   constructor() {
-    
+    this.test = new UnitTest();
   }
   
   run() {
@@ -135,35 +135,34 @@ export default class TuningTest {
     // checks
     console.log(tuning.transposition);
     this.test.check("tuning.transposition", tuning.transposition, -2);
-    // this.test.check("tuning.transposition", tuning.transposition, -2);
 
-    // // method
-    // console.log("[method] " + "tuning.transposition = -1");
-    // tuning.transposition = -1;
+    // method
+    console.log("[method] " + "tuning.transposition = -1");
+    tuning.transposition = -1;
 
-    // // checks
-    // this.test.check("tuning.transposition", tuning.transposition, -1);
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, -1);
     
-    // // method
-    // console.log("[method] " + "tuning.transposition = 0");
-    // tuning.transposition = 0;
+    // method
+    console.log("[method] " + "tuning.transposition = 0");
+    tuning.transposition = 0;
 
-    // // checks
-    // this.test.check("tuning.transposition", tuning.transposition, 0);
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, 0);
 
-    // // method
-    // console.log("[method] " + "tuning.transposition = 1");
-    // tuning.transposition = 1;
+    // method
+    console.log("[method] " + "tuning.transposition = 1");
+    tuning.transposition = 1;
 
-    // // checks
-    // this.test.check("tuning.transposition", tuning.transposition, 1);
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, 1);
 
-    // // method
-    // console.log("[method] " + "tuning.transposition = 2");
-    // tuning.transposition = 2;
+    // method
+    console.log("[method] " + "tuning.transposition = 2");
+    tuning.transposition = 2;
 
-    // // checks
-    // this.test.check("tuning.transposition", tuning.transposition, 2);
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, 2);
 
     // print object
     console.log(tuning);
