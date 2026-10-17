@@ -11,11 +11,11 @@ export default class TuningTest {
   run() {
     console.log("[Tuning tests]");
     
-    // this.get_transposition_test0();
+    this.get_transposition_test0();
 
-    // this.get_transposition_test1();
-    // this.get_transposition_test2();
-    // this.get_transposition_test3();
+    this.get_transposition_test1();
+    this.get_transposition_test2();
+    this.get_transposition_test3();
 
     this.set_transposition_test1();
 
