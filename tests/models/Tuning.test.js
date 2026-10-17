@@ -132,8 +132,8 @@ export default class TuningTest {
     console.log("[method] " + "tuning.transposition = -2");
     tuning.transposition = -2;
 
-    // // checks
-    // this.test.check("tuning.transposition", tuning.transposition, -2);
+    // checks
+    this.test.check("tuning.transposition", tuning.transposition, -2);
 
     // // method
     // console.log("[method] " + "tuning.transposition = -1");
