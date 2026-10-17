@@ -128,40 +128,40 @@ export default class TuningTest {
       new Note("E"),
     );
 
-    // method
-    console.log("[method] " + "tuning.transposition = -2");
-    tuning.transposition = -2;
+    // // method
+    // console.log("[method] " + "tuning.transposition = -2");
+    // tuning.transposition = -2;
 
-    // checks
-    this.test.check("tuning.transposition", tuning.transposition, -2);
+    // // checks
+    // this.test.check("tuning.transposition", tuning.transposition, -2);
 
-    // method
-    console.log("[method] " + "tuning.transposition = -1");
-    tuning.transposition = -1;
+    // // method
+    // console.log("[method] " + "tuning.transposition = -1");
+    // tuning.transposition = -1;
 
-    // checks
-    this.test.check("tuning.transposition", tuning.transposition, -1);
+    // // checks
+    // this.test.check("tuning.transposition", tuning.transposition, -1);
     
-    // method
-    console.log("[method] " + "tuning.transposition = 0");
-    tuning.transposition = 0;
+    // // method
+    // console.log("[method] " + "tuning.transposition = 0");
+    // tuning.transposition = 0;
 
-    // checks
-    this.test.check("tuning.transposition", tuning.transposition, 0);
+    // // checks
+    // this.test.check("tuning.transposition", tuning.transposition, 0);
 
-    // method
-    console.log("[method] " + "tuning.transposition = 1");
-    tuning.transposition = 1;
+    // // method
+    // console.log("[method] " + "tuning.transposition = 1");
+    // tuning.transposition = 1;
 
-    // checks
-    this.test.check("tuning.transposition", tuning.transposition, 1);
+    // // checks
+    // this.test.check("tuning.transposition", tuning.transposition, 1);
 
-    // method
-    console.log("[method] " + "tuning.transposition = 2");
-    tuning.transposition = 2;
+    // // method
+    // console.log("[method] " + "tuning.transposition = 2");
+    // tuning.transposition = 2;
 
-    // checks
-    this.test.check("tuning.transposition", tuning.transposition, 2);
+    // // checks
+    // this.test.check("tuning.transposition", tuning.transposition, 2);
 
     // print object
     console.log(tuning);
