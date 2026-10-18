@@ -14,10 +14,10 @@ export default class SongTest {
   run() {
     console.log("[Song tests]");
     
-    this.test();
+    this.test1();
   }
   
-  async test() {
+  async test1() {
     // title
     console.log("[TEST] " + "song test");
 
