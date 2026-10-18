@@ -13,10 +13,10 @@ export default function main() {
   // guitarTest.run();
 
   const tuningTest = new TuningTest();
-  tuningTest.run();
+  // tuningTest.run();
 
   const songTest = new SongTest();
-  // songTest.run();
+  songTest.run();
 }
 
 const app = main();
