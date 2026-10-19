@@ -44,11 +44,11 @@ export default class TransposeService {
 
   transposeUp() {
     // model
-    this.#song.key = this.#transposer.upChord(this.#song.key);
-    this.#song.transposition++;
+    // this.#song.key = this.#transposer.upChord(this.#song.key);
+    // this.#song.transposition++;
 
     // view
-    this.#view.setKeyLocal(this.#song.key);
+    // this.#view.setKeyLocal(this.#song.key);
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
@@ -58,11 +58,11 @@ export default class TransposeService {
 
   transposeDown() {
     // model
-    this.#song.key = this.#transposer.downChord(this.#song.key);
-    this.#song.transposition--;
+    // this.#song.key = this.#transposer.downChord(this.#song.key);
+    // this.#song.transposition--;
 
     // view
-    this.#view.setKeyLocal(this.#song.key);
+    // this.#view.setKeyLocal(this.#song.key);
 
     this.#chords.forEach((element) => {
       const chord = element.textContent;
