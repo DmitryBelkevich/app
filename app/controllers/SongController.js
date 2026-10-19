@@ -183,11 +183,19 @@ export default class SongController {
   // 4. transposer (local)
 
   transpose_down_local = () => {
-    this.instrumentService.transposeService.transposeDown();
+    // this.instrumentService.transposeService.transposeDown();
+
+    const instrument = this.instrumentService.getCurrentInstrument();
+    instrument.transpose(1);
+    this.view.setKeyLocal(instrument.key);
   }
 
   transpose_up_local = () => {
-    this.instrumentService.transposeService.transposeUp();
+    // this.instrumentService.transposeService.transposeUp();
+
+    const instrument = this.instrumentService.getCurrentInstrument();
+    instrument.transpose(-1);
+    this.view.setKeyLocal(instrument.key);
   }
 
   // *** instrument ***
