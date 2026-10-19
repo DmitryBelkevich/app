@@ -16,5 +16,23 @@
       }
     ],
     "visible": "true"
+  },
+  {
+    "id": "1",
+    "band": "Band", "title": "Title",
+    "genre": "",
+    "raiting": 0,
+    "text": "Template.html",
+    "score": "",
+    "playback": "",
+    "key": "F#m",
+    
+    "instruments": [
+      {
+        "title": "Guitar",
+        "capo": 2
+      }
+    ],
+    "visible": "true"
   }
 ]
