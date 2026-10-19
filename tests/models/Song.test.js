@@ -22,7 +22,7 @@ export default class SongTest {
     console.log("[TEST] " + "song test");
 
     // init
-    const song = await this.#songDao.getById(0);
+    const song = await this.#songDao.getById(1);
 
     // method
     // song.transpose(2);
