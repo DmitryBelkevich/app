@@ -96,7 +96,7 @@ export default class Song {
     if (!count)
       return;
     
-    // this.#transposition += count;
+    this.#transposition += count;
     // this.#key.transpose(count);
     // this.#instruments.forEach(instrument => instrument.transpose(count));
   }
