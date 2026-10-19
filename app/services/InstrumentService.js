@@ -57,7 +57,7 @@ export default class InstrumentService {
     this.loadTuning();
 
     this.transposeService.getChords();
-    this.transposeService.transpose(this.#song.transposition);
+    // this.transposeService.transpose(this.#song.transposition);
   }
 
   async loadText() {
