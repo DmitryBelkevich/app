@@ -32,8 +32,6 @@ export default class Guitar extends Instrument {
 
     if (this._key)
       this._key.transpose(-this._transposition);
-
-    console.log("TUNING SETTER");
   }
 
   get capo() {
@@ -50,8 +48,6 @@ export default class Guitar extends Instrument {
 
     if (this._key)
       this._key.transpose(-this._transposition);
-
-    console.log("CAPO SETTER");
   }
 
   transpose(count) {
