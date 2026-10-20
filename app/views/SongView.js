@@ -80,6 +80,9 @@ export default class SongView {
     this.transpose_down_global.id = "transpose_down_global";
     this.transpose_down_global.textContent = "🔽";
 
+    this.transposition_global = document.createElement("div");
+    this.transposition_global.textContent = "0";
+
     this.transpose_up_global = document.createElement("button");
     this.transpose_up_global.id = "transpose_up_global";
     this.transpose_up_global.textContent = "🔼";
@@ -97,7 +100,7 @@ export default class SongView {
 
     // fill settings
     this.settings.append(
-      this.key_global, this.transpose_down_global, this.transpose_up_global,
+      this.key_global, this.transpose_down_global, this.transposition_global, this.transpose_up_global,
       this.key_local, this.transpose_down_local, this.transpose_up_local,
     );
     
