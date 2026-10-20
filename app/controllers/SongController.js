@@ -157,6 +157,7 @@ export default class SongController {
     // });
 
     // tuning-view
+    this.instrumentService.loadKey();
     this.instrumentService.loadTuning();
   }
 
@@ -171,6 +172,7 @@ export default class SongController {
     // });
 
     // tuning-view
+    this.instrumentService.loadKey();
     this.instrumentService.loadTuning();
   }
 
