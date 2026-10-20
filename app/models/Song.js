@@ -96,7 +96,7 @@ export default class Song {
     if (!count)
       return;
 
-    console.log("transpose Playback" + " (" + count + "): " + this.song.key);
+    console.log("transpose Playback" + " (" + count + "): " + this.key);
     
     this.#transposition += count;
     this.#key.transpose(count);
