@@ -53,6 +53,8 @@ export default class InstrumentService {
   }
 
   async load() {
+    const instrument = this.getCurrentInstrument();
+    this.#view.setKeyLocal(instrument.key);
     this.loadTuning();
     await this.loadText();
 
