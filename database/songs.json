@@ -382,12 +382,12 @@
     "instruments": [
       {
         "title": "Guitar",
-        "key": "Em",
+        "key": "Gm",
         "tuning": ["D", "G", "C", "F", "A", "D"]
       },
       {
         "title": "Bass Guitar",
-        "key": "Em",
+        "key": "Bm",
         "tuning": ["D", "G", "C", "F"]
       }
     ],
