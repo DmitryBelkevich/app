@@ -1,6 +1,39 @@
 export default class Tuning extends Array {
+  #transposition;
+
+  constructor(...args) {
+    super(...args);
+    this.#transposition = this.droppedTo() || 0;
+  }
+
+  get transposition() {
+    return this.#transposition;
+  }
+
+  set transposition(transposition) {
+    this.transpose(transposition - this.#transposition);
+  }
+  
+  transpose(count) {
+    if (!count)
+      return;
+    
+    this.#transposition += count;
+    this.forEach(note => note.transpose(count));
+  }
+
+  up() {
+    this.#transposition += 1;
+    this.forEach(note => note.up());
+  }
+
+  down() {
+    this.#transposition -= 1;
+    this.forEach(note => note.down());
+  }
+  
   isStandard() {
-    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
     
     // *** Guitars ***
     
@@ -21,7 +54,7 @@ export default class Tuning extends Array {
   }
 
   droppedTo() {
-    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
     
     // *** Guitars ***
     
@@ -95,7 +128,7 @@ export default class Tuning extends Array {
   }
 
   get title() {
-    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val === b[i]);
+    const isEqual = (a, b) => a.length === b.length && a.every((val, i) => val.toString() === b[i]);
     
     // *** Guitars ***
     

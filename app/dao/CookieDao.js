@@ -1,4 +1,4 @@
-export default class CookieLoader {
+export default class CookieDao {
   getAll() {
     const cookies_obj = document.cookie.split("; ").reduce((acc, current) => {
         const [key, value] = current.split('=');

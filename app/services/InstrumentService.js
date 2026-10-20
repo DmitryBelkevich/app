@@ -1,15 +1,15 @@
 import HtmlLoader from '../loaders/HtmlLoader.js';
-import CookieLoader from '../loaders/CookieLoader.js';
 
+import CookieService from './CookieService.js';
 import TransposeService from './TransposeService.js';
 
-export default class StateService {
+export default class InstrumentService {
   #song;
   #view;
 
+  #cookieService;
   #transposeService;
   
-  #cookieLoader;
   #current;//state
 
   constructor(song, view) {
@@ -17,17 +17,13 @@ export default class StateService {
     this.#view = view;
     
     // *** Cookie ***
-    this.#cookieLoader = new CookieLoader();
+    this.#cookieService = new CookieService();
 
-    const default_cookie_obj = { name: "instrument", value: 0 };
-    const cookie_obj = this.#cookieLoader.getByName("instrument") || default_cookie_obj;
-    this.#cookieLoader.save(cookie_obj);
+    const cookie_obj = this.#cookieService.getByName("instrument");
+    this.#cookieService.save(cookie_obj);
     
     // *** state ***
-    if (this.#song.instruments.length <= cookie_obj.value) {
-      this.#current = default_cookie_obj.value;
-    } else
-      this.#current = cookie_obj.value;
+    this.#current = cookie_obj.value;
 
     // *** dropdown ***
     this.#view.selectOption(this.#current);
@@ -47,23 +43,27 @@ export default class StateService {
     return this.#current;
   }
 
+  getCurrentInstrument() {
+    return this.#song.instruments[this.#current];
+  }
+
   set current(current) {
     this.#current = current;
-    this.#cookieLoader.save({name: "instrument", value: this.#current});
+    this.#cookieService.save({name: "instrument", value: this.#current});
   }
 
   async load() {
-    await this.loadText();
+    this.loadKey();
     this.loadTuning();
+    await this.loadText();
 
-    this.transposeService.getChords();
-    this.transposeService.transpose(this.#song.transposition);
+    // this.transposeService.getChords();
+    // this.transposeService.transpose(this.#song.transposition);
   }
 
-  async loadText() {
-    const instrument = this.#song.instruments[this.#current];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.#view.setText(text);
+  loadKey() {
+    const instrument = this.getCurrentInstrument();
+    this.#view.setKeyLocal(instrument.key);
   }
 
   loadTuning() {
@@ -84,5 +84,11 @@ export default class StateService {
 
     if (instrument.capo)
       this.#view.addCapo(instrument.capo);
+  }
+
+  async loadText() {
+    const instrument = this.#song.instruments[this.#current];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.#view.setText(text);
   }
 }

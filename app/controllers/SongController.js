@@ -4,7 +4,7 @@ import SongView from '../views/SongView.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 
-import StateService from '../services/StateService.js';
+import InstrumentService from '../services/InstrumentService.js';
 
 export default class SongController {
   #params;
@@ -36,14 +36,16 @@ export default class SongController {
     // *** settings ***
 
     // 1. key-signature (global)
-
-    this.view.setKeyGlobal(this.song.key);
+    
+    this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
 
     // 2. transposer (global)
 
     // 3. key-signature (local)
 
-    this.view.setKeyLocal("Em");
+    this.instrumentService = new InstrumentService(this.song, this.view);
+    const instrument = this.instrumentService.getCurrentInstrument();
+    this.view.setKeyLocal(instrument.key.toString());
 
     // 4. transposer (local)
 
@@ -59,8 +61,7 @@ export default class SongController {
     // *** text ***
 
     // state
-    this.stateService = new StateService(this.song, this.view);
-    this.stateService.load();
+    this.instrumentService.load();
 
     // *** binding controller-view ***
 
@@ -125,7 +126,8 @@ export default class SongController {
   // *** tabs ***
 
   openText = () => {
-    console.log("open Text tab");
+    // console.log("open Text tab");
+    console.log(this.song);
   }
 
   openScore = () => {
@@ -145,13 +147,33 @@ export default class SongController {
   // 2. transposer (global)
 
   transpose_down_global = () => {
-    console.log("transpose down Playback");
-    console.log("transpose down global");
+    // key (global)
+    this.song.transpose(-1);
+    this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
+
+    // tuning
+    // this.song.instruments.forEach((instrument) => {
+    //   instrument.transpose(-1);
+    // });
+
+    // tuning-view
+    this.instrumentService.loadKey();
+    this.instrumentService.loadTuning();
   }
 
   transpose_up_global = () => {
-    console.log("transpose up Playback");
-    console.log("transpose up global");
+    // key (global)
+    this.song.transpose(1);
+    this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
+
+    // tuning
+    // this.song.instruments.forEach((instrument) => {
+    //   instrument.transpose(+1);
+    // });
+
+    // tuning-view
+    this.instrumentService.loadKey();
+    this.instrumentService.loadTuning();
   }
 
   // 3. key-signature (local)
@@ -159,11 +181,25 @@ export default class SongController {
   // 4. transposer (local)
 
   transpose_down_local = () => {
-    this.stateService.transposeService.transposeDown();
+    // this.instrumentService.transposeService.transposeDown();
+
+    const instrument = this.instrumentService.getCurrentInstrument();
+    instrument.transpose(-1);
+    this.instrumentService.loadKey();
+
+    // tuning-view
+    this.instrumentService.loadTuning();
   }
 
   transpose_up_local = () => {
-    this.stateService.transposeService.transposeUp();
+    // this.instrumentService.transposeService.transposeUp();
+
+    const instrument = this.instrumentService.getCurrentInstrument();
+    instrument.transpose(1);
+    this.instrumentService.loadKey();
+
+    // tuning-view
+    this.instrumentService.loadTuning();
   }
 
   // *** instrument ***
@@ -171,8 +207,8 @@ export default class SongController {
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.stateService.current = event.target.value;
-    this.stateService.load();
+    this.instrumentService.current = event.target.value;
+    this.instrumentService.load();
   }
 
   // *** text ***

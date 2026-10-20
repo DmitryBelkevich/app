@@ -89,17 +89,21 @@ export default class Song {
   }
 
   set transposition(transposition) {
-    if (transposition > 11) {
-      this.#transposition = -11;
-      return;
-    }
+    this.transpose(transposition - this.#transposition);
+  }
 
-    if (transposition < -11) {
-      this.#transposition = 11;
+  transpose(count) {
+    if (!count)
       return;
-    }
-    
-    this.#transposition = transposition;
+
+    this.#key.transpose(count);
+    this.#transposition += count;
+    this.#instruments.forEach(instrument => {
+      instrument.key.transpose(count);
+      instrument.transpose(count);
+    });
+
+    console.log("transpose Playback" + " (" + count + "): " + this.#key);
   }
   
   get voices() {
@@ -116,5 +120,10 @@ export default class Song {
 
   set instruments(instruments) {
     this.#instruments = instruments;
+    // this.#instruments.forEach(instrument => instrument.transpose(count));
+  }
+
+  isTransposed() {
+    return this.#transposition != 0;
   }
 }

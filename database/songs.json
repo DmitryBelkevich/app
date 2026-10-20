@@ -170,6 +170,7 @@
     "score": "https://drive.google.com/file/d/1Xr0QUfaBNugsVc_W3NMH3paBfovH1vrc/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1CjOs7eybz-6riE14VolKm2xZuZ8_NQOT?usp=drive_link",
     "key": "Abm",
+    "transposition": 1,
     "instruments": [
       {
         "title": "Guitar",
@@ -377,13 +378,16 @@
     "score": "https://drive.google.com/file/d/1NYAeDFngwEXKEo56SC9PDFaq_dsuyvWr/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1e9-FDJW1efTbYdrQN6OzKbhjTHYu_xQ1",
     "key": "Dm",
+    "transposition": 2,
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Em",
         "tuning": ["D", "G", "C", "F", "A", "D"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Em",
         "tuning": ["D", "G", "C", "F"]
       }
     ],
@@ -1557,6 +1561,7 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Em",
         "capo": 2
       },
       {

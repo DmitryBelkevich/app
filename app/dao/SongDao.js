@@ -1,12 +1,17 @@
 import config from '../config/config.js';
 
-import Genre from '../models/Genre.js';
 import Song from '../models/Song.js';
+import Genre from '../models/Genre.js';
+import Chord from '../models/Chord.js';
+
 import JsonLoader from '../loaders/JsonLoader.js';
+
+import InstrumentFactory from '../factory/InstrumentFactory.js';
 
 export default class SongDao {
   constructor() {
     this.jsonLoader = new JsonLoader();
+    this.instrumentFactory = new InstrumentFactory();
   }
 
   async getAll() {
@@ -34,13 +39,31 @@ export default class SongDao {
     song.genre.title = element.genre;
     
     song.raiting = element.raiting;
-    song.text = element.text;
+    song.text = config.storage + element.text;
     song.score = element.score;
     song.playback = element.playback;
-    song.key = element.key;
+    song.key = new Chord(element.key || "");
     song.voices = element.voices;
-    song.instruments = element.instruments;
+    element.instruments.forEach((instrument_obj) => {
+      const instrument = this.instrumentFactory.createInstrument(instrument_obj);
+
+      instrument.key = new Chord(instrument_obj.key || song.key.toString());
+      instrument.chords = this.createChords(song.text, instrument);
+      
+      song.instruments.push(instrument);
+    });
+
+    song.transposition = element.transposition || song.transposition;
 
     return song;
+  }
+
+  createChords(text, instrument) {
+    const index = text.length - ".html".length;
+    
+    if (instrument.isTransposed())
+      return text.slice(0, index) + " (" + instrument.transposition + ")" + text.slice(index);
+    
+    return text;
   }
 }
