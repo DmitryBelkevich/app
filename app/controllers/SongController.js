@@ -185,7 +185,7 @@ export default class SongController {
 
     const instrument = this.instrumentService.getCurrentInstrument();
     instrument.transpose(-1);
-    this.view.setKeyLocal(instrument.key);
+    this.instrumentService.loadKey();
 
     // tuning-view
     this.instrumentService.loadTuning();
@@ -196,7 +196,7 @@ export default class SongController {
 
     const instrument = this.instrumentService.getCurrentInstrument();
     instrument.transpose(1);
-    this.view.setKeyLocal(instrument.key);
+    this.instrumentService.loadKey();
 
     // tuning-view
     this.instrumentService.loadTuning();
