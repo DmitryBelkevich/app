@@ -147,8 +147,6 @@ export default class SongController {
   // 2. transposer (global)
 
   transpose_down_global = () => {
-    // console.log("transpose down Playback");
-
     // key (global)
     this.song.transpose(-1);
     this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
@@ -159,12 +157,11 @@ export default class SongController {
     // });
 
     // tuning-view
-    // this.instrumentService.loadTuning();
+    this.instrumentService.loadKey();
+    this.instrumentService.loadTuning();
   }
 
   transpose_up_global = () => {
-    // console.log("transpose up Playback");
-
     // key (global)
     this.song.transpose(1);
     this.view.setKeyGlobal(this.song.key, this.song.isTransposed());
@@ -175,7 +172,8 @@ export default class SongController {
     // });
 
     // tuning-view
-    // this.instrumentService.loadTuning();
+    this.instrumentService.loadKey();
+    this.instrumentService.loadTuning();
   }
 
   // 3. key-signature (local)
@@ -183,11 +181,25 @@ export default class SongController {
   // 4. transposer (local)
 
   transpose_down_local = () => {
-    this.instrumentService.transposeService.transposeDown();
+    // this.instrumentService.transposeService.transposeDown();
+
+    const instrument = this.instrumentService.getCurrentInstrument();
+    instrument.transpose(-1);
+    this.instrumentService.loadKey();
+
+    // tuning-view
+    this.instrumentService.loadTuning();
   }
 
   transpose_up_local = () => {
-    this.instrumentService.transposeService.transposeUp();
+    // this.instrumentService.transposeService.transposeUp();
+
+    const instrument = this.instrumentService.getCurrentInstrument();
+    instrument.transpose(1);
+    this.instrumentService.loadKey();
+
+    // tuning-view
+    this.instrumentService.loadTuning();
   }
 
   // *** instrument ***

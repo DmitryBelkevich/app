@@ -47,7 +47,7 @@ export default class SongDao {
     element.instruments.forEach((instrument_obj) => {
       const instrument = this.instrumentFactory.createInstrument(instrument_obj);
 
-      instrument.key = new Chord(song.key.toString());
+      instrument.key = new Chord(instrument_obj.key || song.key.toString());
       instrument.chords = this.createChords(song.text, instrument);
       
       song.instruments.push(instrument);
