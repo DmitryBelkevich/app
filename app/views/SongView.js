@@ -81,7 +81,6 @@ export default class SongView {
     this.transpose_down_global.textContent = "🔽";
 
     this.transposition_global = document.createElement("div");
-    this.transposition_global.textContent = "0";
 
     this.transpose_up_global = document.createElement("button");
     this.transpose_up_global.id = "transpose_up_global";
@@ -186,6 +185,12 @@ export default class SongView {
   }
 
   // 2. transposer (global)
+
+  // 2. transposition_global
+
+  setTranspositionGlobal(count) {
+    this.transposition_global.textContent = count;
+  }
 
   // 3. key-signature (local)
 
