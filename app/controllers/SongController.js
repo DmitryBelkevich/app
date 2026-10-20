@@ -41,6 +41,9 @@ export default class SongController {
 
     // 2. transposer (global)
 
+    // 2. transposition_global
+    this.view.setTranspositionGlobal(this.song.transposition);
+
     // 3. key-signature (local)
 
     this.instrumentService = new InstrumentService(this.song, this.view);
