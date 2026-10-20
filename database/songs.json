@@ -1561,10 +1561,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Em",
         "capo": 2
       },
       {
-        "title": "Bass Guitar"
+        "title": "Bass Guitar",
+        "key": "Em",
       }
     ],
     "visible": "true"
