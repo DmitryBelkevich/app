@@ -147,7 +147,7 @@ export default class SongController {
   // 2. transposer (global)
 
   transpose_down_global = () => {
-    // console.log("transpose down Playback");
+    console.log("transpose Playback (-1): " + this.song.key);
 
     // key (global)
     this.song.transpose(-1);
@@ -163,7 +163,7 @@ export default class SongController {
   }
 
   transpose_up_global = () => {
-    // console.log("transpose up Playback");
+    console.log("transpose Playback (+1): " + this.song.key);
 
     // key (global)
     this.song.transpose(1);
