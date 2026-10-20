@@ -53,8 +53,7 @@ export default class InstrumentService {
   }
 
   async load() {
-    const instrument = this.getCurrentInstrument();
-    this.#view.setKeyLocal(instrument.key);
+    this.loadKey();
     this.loadTuning();
     await this.loadText();
 
@@ -62,10 +61,9 @@ export default class InstrumentService {
     // this.transposeService.transpose(this.#song.transposition);
   }
 
-  async loadText() {
-    const instrument = this.#song.instruments[this.#current];
-    const text = await this.htmlLoader.load(instrument.chords);
-    this.#view.setText(text);
+  loadKey() {
+    const instrument = this.getCurrentInstrument();
+    this.#view.setKeyLocal(instrument.key);
   }
 
   loadTuning() {
@@ -86,5 +84,11 @@ export default class InstrumentService {
 
     if (instrument.capo)
       this.#view.addCapo(instrument.capo);
+  }
+
+  async loadText() {
+    const instrument = this.#song.instruments[this.#current];
+    const text = await this.htmlLoader.load(instrument.chords);
+    this.#view.setText(text);
   }
 }
