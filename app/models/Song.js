@@ -95,12 +95,12 @@ export default class Song {
   transpose(count) {
     if (!count)
       return;
-
-    console.log("transpose Playback" + " (" + count + "): " + this.#key);
     
     this.#transposition += count;
     this.#key.transpose(count);
     this.#instruments.forEach(instrument => instrument.transpose(count));
+
+    console.log("transpose Playback" + " (" + count + "): " + this.#key);
   }
   
   get voices() {
