@@ -88,8 +88,8 @@ export default class SongView {
     this.transpose_up_global.textContent = "🔼";
 
     // 3. key-signature (instrument)
-    this.key_local = document.createElement("div");
-    this.key_local.id = "key-local";
+    this.key_instrument = document.createElement("div");
+    this.key_instrument.id = "key-instrument";
 
     // 4. transposer (instrument)
     this.transpose_down_local = document.createElement("button");
@@ -101,7 +101,7 @@ export default class SongView {
     // fill settings
     this.settings.append(
       this.key_song, this.transposition_song, this.transpose_down_global, this.transpose_up_global,
-      this.key_local, this.transpose_down_local, this.transpose_up_local,
+      this.key_instrument, this.transpose_down_local, this.transpose_up_local,
     );
     
     // *** instrument ***
@@ -196,7 +196,7 @@ export default class SongView {
   // 3. key-signature (instrument)
 
   setKeyLocal(key) {
-    this.key_local.textContent = key;
+    this.key_instrument.textContent = key;
   }
 
   // 4. transposer (instrument)
