@@ -14,15 +14,15 @@
 
 /* components */
 
-/* key-global */
+/* key-song */
 
 #settings {
-  #key-global {
+  #key-song {
     font-size: 16px;
     background: gold;
   }
   
-  #key-global {
+  #key-song {
     border: 1px solid grey;
     border-radius: 4px;
     width: 36px;
@@ -31,17 +31,17 @@
     padding: 0px 2px;
   }
 
-  #key-global {
+  #key-song {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  #key-global.original {
+  #key-song.original {
     background: lightgreen;
   }
 
-  #key-global.transposed {
+  #key-song.transposed {
     background: coral;
   }
 }
