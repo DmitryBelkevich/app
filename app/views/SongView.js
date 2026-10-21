@@ -75,22 +75,23 @@ export default class SongView {
     this.key_global = document.createElement("div");
     this.key_global.id = "key-global";
 
+    // 2. transposition (song)
+    this.transposition_song = document.createElement("div");
+
     // 2. transposer (global)
     this.transpose_down_global = document.createElement("button");
     this.transpose_down_global.id = "transpose_down_global";
     this.transpose_down_global.textContent = "🔽";
 
-    this.transposition_global = document.createElement("div");
-
     this.transpose_up_global = document.createElement("button");
     this.transpose_up_global.id = "transpose_up_global";
     this.transpose_up_global.textContent = "🔼";
 
-    // 3. key-signature (local)
+    // 3. key-signature (instrument)
     this.key_local = document.createElement("div");
     this.key_local.id = "key-local";
 
-    // 4. transposer (local)
+    // 4. transposer (instrument)
     this.transpose_down_local = document.createElement("button");
     this.transpose_down_local.textContent = "🔽";
 
@@ -99,7 +100,7 @@ export default class SongView {
 
     // fill settings
     this.settings.append(
-      this.key_global, this.transpose_down_global, this.transposition_global, this.transpose_up_global,
+      this.key_global, this.transpose_down_global, this.transposition_song, this.transpose_up_global,
       this.key_local, this.transpose_down_local, this.transpose_up_local,
     );
     
@@ -168,7 +169,7 @@ export default class SongView {
 
   // *** settings ***
 
-  // 1. key-signature (global)
+  // 1. key-signature (song)
 
   setKeyGlobal(key, isTransposed) {
     const transpositions = {
@@ -184,21 +185,21 @@ export default class SongView {
     this.key_global.classList.add(transpositions[isTransposed]);
   }
 
-  // 2. transposer (global)
-
-  // 2. transposition_global
+  // 2. transposition_song
 
   setTranspositionGlobal(count) {
-    this.transposition_global.textContent = count;
+    this.transposition_song.textContent = count;
   }
 
-  // 3. key-signature (local)
+  // 2. transposer (song)
+
+  // 3. key-signature (instrument)
 
   setKeyLocal(key) {
     this.key_local.textContent = key;
   }
 
-  // 4. transposer (local)
+  // 4. transposer (instrument)
 
   // *** instrument ***
 
@@ -312,9 +313,9 @@ export default class SongView {
 
   // *** settings ***
 
-  // 1. key-signature (global)
+  // 1. key-signature (song)
 
-  // 2. transposer (global)
+  // 2. transposer (song)
 
   bindTransposeDownGlobal(handler) {
     this.transpose_down_global.addEventListener("click", () => {
@@ -328,9 +329,9 @@ export default class SongView {
     });
   }
 
-  // 3. key-signature (local)
+  // 3. key-signature (instrument)
 
-  // 4. transposer (local)
+  // 4. transposer (instrument)
 
   bindTransposeDownLocal(handler) {
     this.transpose_down_local.addEventListener("click", () => {
