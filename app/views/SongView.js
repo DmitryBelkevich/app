@@ -73,7 +73,7 @@ export default class SongView {
 
     // 1. key-signature (song)
     this.key_global = document.createElement("div");
-    this.key_global.id = "key-global";
+    this.key_global.id = "key-song";
 
     // 2. transposition (song)
     this.transposition_song = document.createElement("div");
