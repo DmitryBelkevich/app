@@ -72,8 +72,8 @@ export default class SongView {
     this.settings.id = "settings";
 
     // 1. key-signature (song)
-    this.key_global = document.createElement("div");
-    this.key_global.id = "key-song";
+    this.key_song = document.createElement("div");
+    this.key_song.id = "key-song";
 
     // 2. transposition (song)
     this.transposition_song = document.createElement("div");
@@ -100,7 +100,7 @@ export default class SongView {
 
     // fill settings
     this.settings.append(
-      this.key_global, this.transposition_song, this.transpose_down_global, this.transpose_up_global,
+      this.key_song, this.transposition_song, this.transpose_down_global, this.transpose_up_global,
       this.key_local, this.transpose_down_local, this.transpose_up_local,
     );
     
@@ -177,12 +177,12 @@ export default class SongView {
       false: "original",
     };
     
-    this.key_global.textContent = key;
+    this.key_song.textContent = key;
 
-    this.key_global.classList.remove(transpositions[true]);
-    this.key_global.classList.remove(transpositions[false]);
+    this.key_song.classList.remove(transpositions[true]);
+    this.key_song.classList.remove(transpositions[false]);
     
-    this.key_global.classList.add(transpositions[isTransposed]);
+    this.key_song.classList.add(transpositions[isTransposed]);
   }
 
   // 2. transposition_song
