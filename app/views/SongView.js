@@ -80,11 +80,11 @@ export default class SongView {
 
     // 2. transposer (song)
     this.transpose_down_song = document.createElement("button");
-    this.transpose_down_song.id = "transpose_down_song";
+    // this.transpose_down_song.id = "transpose_down_song";
     this.transpose_down_song.textContent = "🔽";
 
     this.transpose_up_song = document.createElement("button");
-    this.transpose_up_song.id = "transpose_up_song";
+    // this.transpose_up_song.id = "transpose_up_song";
     this.transpose_up_song.textContent = "🔼";
 
     // 3. key-signature (instrument)
@@ -99,7 +99,7 @@ export default class SongView {
     this.transpose_up_instrument.textContent = "🔼";
 
     // fill settings
-    .append(
+    this.settings_song.append(
       this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
       this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
     );
