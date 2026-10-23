@@ -68,8 +68,8 @@ export default class SongView {
     // *** settings ***
     
     this.cssLoader.load("./app/views/css/song/settings.css");
-    this.settings = document.createElement("div");
-    this.settings.id = "settings";
+    this.settings_song = document.createElement("div");
+    this.settings_song.id = "settings";
 
     // 1. key-signature (song)
     this.key_song = document.createElement("div");
@@ -99,7 +99,7 @@ export default class SongView {
     this.transpose_up_instrument.textContent = "🔼";
 
     // fill settings
-    this.settings.append(
+    .append(
       this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
       this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
     );
@@ -121,6 +121,10 @@ export default class SongView {
 
     // fill instrument
     this.instrument.append(this.dropdown, this.tuning);
+
+    // *** settings-instrument ***
+
+    this.settings_instrument = document.createElement("div");
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -138,8 +142,9 @@ export default class SongView {
       this.nav,
       this.title,
       this.tabs,
-      this.settings,
+      this.settings_song,
       this.instrument,
+      this.settings_instrument,
       this.text,
       this.footer
     );
