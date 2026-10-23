@@ -101,7 +101,6 @@ export default class SongView {
     // fill settings
     this.settings_song.append(
       this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
-      this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
     );
     
     // *** instrument ***
@@ -125,7 +124,12 @@ export default class SongView {
     // *** settings-instrument ***
 
     this.settings_instrument = document.createElement("div");
-    this.settings_instrument.append(this.tuning);
+
+    // fill settings_instrument
+    this.settings_instrument.append(
+      this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
+      this.tuning,
+    );
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
