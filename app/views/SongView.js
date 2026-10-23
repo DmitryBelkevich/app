@@ -124,6 +124,7 @@ export default class SongView {
     // *** settings-instrument ***
 
     this.settings_instrument = document.createElement("div");
+    this.settings_instrument.id = "settings-instrument";
 
     // fill settings_instrument
     this.settings_instrument.append(
