@@ -43,3 +43,44 @@
     background: coral;
   }
 }
+
+#settings-instrument {
+  #tuning {
+    display: flex;
+  }
+
+  #tuning {
+    div {
+      border: 1px solid grey;
+      border-radius: 4px;
+
+      font-size: 16px;
+
+      margin: 0px 1px;
+      padding: 0px 2px;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .string {
+      width: 20px;
+    }
+
+    .standard {
+      background: lightgreen;
+    }
+
+    .non-standard {
+      background: coral;
+    }
+
+    .capo {
+      font-size: 12px;
+      background: coral;
+    }
+  }
+}
