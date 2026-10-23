@@ -92,16 +92,16 @@ export default class SongView {
     this.key_instrument.id = "key-instrument";
 
     // 4. transposer (instrument)
-    this.transpose_down_local = document.createElement("button");
-    this.transpose_down_local.textContent = "🔽";
+    this.transpose_down_instrument = document.createElement("button");
+    this.transpose_down_instrument.textContent = "🔽";
 
-    this.transpose_up_local = document.createElement("button");
-    this.transpose_up_local.textContent = "🔼";
+    this.transpose_up_instrument = document.createElement("button");
+    this.transpose_up_instrument.textContent = "🔼";
 
     // fill settings
     this.settings.append(
       this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
-      this.key_instrument, this.transpose_down_local, this.transpose_up_local,
+      this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
     );
     
     // *** instrument ***
@@ -334,13 +334,13 @@ export default class SongView {
   // 4. transposer (instrument)
 
   bindTransposeDownLocal(handler) {
-    this.transpose_down_local.addEventListener("click", () => {
+    this.transpose_down_instrument.addEventListener("click", () => {
       handler();
     });
   }
 
   bindTransposeUpLocal(handler) {
-    this.transpose_up_local.addEventListener("click", () => {
+    this.transpose_up_instrument.addEventListener("click", () => {
       handler();
     });
   }
