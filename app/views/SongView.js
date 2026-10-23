@@ -123,6 +123,7 @@ export default class SongView {
 
     // *** settings-instrument ***
 
+    this.cssLoader.load("./app/views/css/song/settings_instrument.css");
     this.settings_instrument = document.createElement("div");
     this.settings_instrument.id = "settings-instrument";
 
