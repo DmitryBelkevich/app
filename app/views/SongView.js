@@ -79,13 +79,13 @@ export default class SongView {
     this.transposition_song = document.createElement("div");
 
     // 2. transposer (song)
-    this.transpose_down_global = document.createElement("button");
-    this.transpose_down_global.id = "transpose_down_global";
-    this.transpose_down_global.textContent = "🔽";
+    this.transpose_down_song = document.createElement("button");
+    this.transpose_down_song.id = "transpose_down_song";
+    this.transpose_down_song.textContent = "🔽";
 
-    this.transpose_up_global = document.createElement("button");
-    this.transpose_up_global.id = "transpose_up_global";
-    this.transpose_up_global.textContent = "🔼";
+    this.transpose_up_song = document.createElement("button");
+    this.transpose_up_song.id = "transpose_up_song";
+    this.transpose_up_song.textContent = "🔼";
 
     // 3. key-signature (instrument)
     this.key_instrument = document.createElement("div");
@@ -100,7 +100,7 @@ export default class SongView {
 
     // fill settings
     this.settings.append(
-      this.key_song, this.transposition_song, this.transpose_down_global, this.transpose_up_global,
+      this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
       this.key_instrument, this.transpose_down_local, this.transpose_up_local,
     );
     
@@ -318,13 +318,13 @@ export default class SongView {
   // 2. transposer (song)
 
   bindTransposeDownGlobal(handler) {
-    this.transpose_down_global.addEventListener("click", () => {
+    this.transpose_down_song.addEventListener("click", () => {
       handler();
     });
   }
   
   bindTransposeUpGlobal(handler) {
-    this.transpose_up_global.addEventListener("click", () => {
+    this.transpose_up_song.addEventListener("click", () => {
       handler();
     });
   }
