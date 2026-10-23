@@ -120,11 +120,12 @@ export default class SongView {
     // 3. capo
 
     // fill instrument
-    this.instrument.append(this.dropdown, this.tuning);
+    this.instrument.append(this.dropdown);
 
     // *** settings-instrument ***
 
     this.settings_instrument = document.createElement("div");
+    this.settings_instrument.append(this.tuning);
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
