@@ -42,7 +42,7 @@ export default class SongController {
     // 2. transposer (song)
 
     // 2. transposition_song
-    this.view.setTranspositionGlobal(this.song.transposition);
+    this.view.setTranspositionSong(this.song.transposition);
 
     // 3. key-signature (instrument)
 
@@ -89,8 +89,8 @@ export default class SongController {
     // 1. key-signature (song)
     
     // 2. transposer (song)
-    this.view.bindTransposeDownGlobal(this.transpose_down_global);
-    this.view.bindTransposeUpGlobal(this.transpose_up_global);
+    this.view.bindTransposeDownSong(this.transpose_down_song);
+    this.view.bindTransposeUpSong(this.transpose_up_song);
 
     // 3. key-signature (instrument)
 
@@ -149,7 +149,7 @@ export default class SongController {
 
   // 2. transposer (song)
 
-  transpose_down_global = () => {
+  transpose_down_song = () => {
     // key (song)
     this.song.transpose(-1);
     this.view.setKeySong(this.song.key, this.song.isTransposed());
@@ -164,7 +164,7 @@ export default class SongController {
     this.instrumentService.loadTuning();
   }
 
-  transpose_up_global = () => {
+  transpose_up_song = () => {
     // key (song)
     this.song.transpose(1);
     this.view.setKeySong(this.song.key, this.song.isTransposed());
