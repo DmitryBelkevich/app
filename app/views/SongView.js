@@ -112,10 +112,6 @@ export default class SongView {
     this.transpose_up_instrument = document.createElement("button");
     this.transpose_up_instrument.textContent = "🔼";
 
-    // 2. tuning
-    this.tuning = document.createElement("div");
-    this.tuning.id = "tuning";
-
     // 3. capo
 
     // fill instrument
@@ -124,16 +120,11 @@ export default class SongView {
       this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
     );
 
-    // *** settings-instrument ***
+    // *** tuning ***
 
-    this.cssLoader.load("./app/views/css/song/settings_instrument.css");
-    this.settings_instrument = document.createElement("div");
-    this.settings_instrument.id = "settings-instrument";
-
-    // fill settings_instrument
-    this.settings_instrument.append(
-      this.tuning,
-    );
+    this.cssLoader.load("./app/views/css/song/tuning.css");
+    this.tuning = document.createElement("div");
+    this.tuning.id = "tuning";
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -153,7 +144,7 @@ export default class SongView {
       this.tabs,
       this.settings_song,
       this.instrument,
-      this.settings_instrument,
+      this.tuning,
       this.text,
       this.footer
     );
