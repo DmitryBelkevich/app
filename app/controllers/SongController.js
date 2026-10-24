@@ -33,24 +33,16 @@ export default class SongController {
     this.view.setTitle(this.song.title);
     this.view.setBand(this.song.band);
 
-    // *** settings ***
+    // *** settings-song ***
 
     // 1. key-signature (song)
-    
     this.view.setKeySong(this.song.key, this.song.isTransposed());
-
-    // 2. transposer (song)
 
     // 2. transposition_song
     this.view.setTranspositionSong(this.song.transposition);
 
-    // 3. key-signature (instrument)
-
-    this.instrumentService = new InstrumentService(this.song, this.view);
-    const instrument = this.instrumentService.getCurrentInstrument();
-    this.view.setKeyInstrument(instrument.key.toString());
-
-    // 4. transposer (instrument)
+    // 3. transpose down (song)
+    // 4. transpose up (song)
 
     // *** instrument ***
 
@@ -59,7 +51,17 @@ export default class SongController {
       this.view.addOption(index, instrument.title, instrument.color);
     });
 
-    // 2. tuning
+    // 2. key-signature (instrument)
+
+    this.instrumentService = new InstrumentService(this.song, this.view);
+    const instrument = this.instrumentService.getCurrentInstrument();
+    this.view.setKeyInstrument(instrument.key.toString());
+
+    // 3. transpose down (instrument)
+
+    // 4. transpose up (instrument)
+
+    // *** tuning ***
 
     // *** text ***
 
@@ -84,24 +86,30 @@ export default class SongController {
     this.view.bindScoreTab(this.openScore);
     this.view.bindPlaybackTab(this.openPlayback);
 
-    // *** settings ***
+    // *** settings-song ***
     
     // 1. key-signature (song)
+
+    // 2. transposition (song)
     
-    // 2. transposer (song)
+    // 3. transpose down (song)
     this.view.bindTransposeDownSong(this.transpose_down_song);
+    
+    // 4. transpose up (song)
     this.view.bindTransposeUpSong(this.transpose_up_song);
 
-    // 3. key-signature (instrument)
-
-    // 4. transposer (instrument)
-    this.view.bindTransposeDownInstrument(this.transpose_down_instrument);
-    this.view.bindTransposeUpInstrument(this.transpose_up_instrument);
-
-    // *** settings ***
+    // *** instrument ***
 
     // 1. dropdown
     this.view.bindDropdown(this.select_instrument);
+
+    // 2. key-signature (instrument)
+
+    // 3. transpose down (instrument)
+    this.view.bindTransposeDownInstrument(this.transpose_down_instrument);
+
+    // 4. transpose up (instrument)
+    this.view.bindTransposeUpInstrument(this.transpose_up_instrument);
 
     // *** tuning ***
 
@@ -143,45 +151,48 @@ export default class SongController {
       window.open(this.song.playback, "_blank");
   }
 
-  // *** settings ***
+  // *** settings-song ***
 
   // 1. key-signature (song)
 
-  // 2. transposer (song)
+  // 2. transposition (song)
+
+  // 3. transpose down (song)
 
   transpose_down_song = () => {
     // key (song)
     this.song.transpose(-1);
     this.view.setKeySong(this.song.key, this.song.isTransposed());
 
-    // tuning
-    // this.song.instruments.forEach((instrument) => {
-    //   instrument.transpose(-1);
-    // });
-
     // tuning-view
     this.instrumentService.loadKey();
     this.instrumentService.loadTuning();
   }
+
+  // 4. transpose up (song)
 
   transpose_up_song = () => {
     // key (song)
     this.song.transpose(1);
     this.view.setKeySong(this.song.key, this.song.isTransposed());
 
-    // tuning
-    // this.song.instruments.forEach((instrument) => {
-    //   instrument.transpose(+1);
-    // });
-
     // tuning-view
     this.instrumentService.loadKey();
     this.instrumentService.loadTuning();
   }
 
-  // 3. key-signature (instrument)
+  // *** instrument ***
 
-  // 4. transposer (instrument)
+  // 1. dropdown
+
+  select_instrument = (event) => {
+    this.instrumentService.current = event.target.value;
+    this.instrumentService.load();
+  }
+
+  // 2. key-signature (instrument)
+
+  // 3. transpose down (instrument)
 
   transpose_down_instrument = () => {
     // this.instrumentService.transposeService.transposeDown();
@@ -194,6 +205,8 @@ export default class SongController {
     this.instrumentService.loadTuning();
   }
 
+  // 4. transpose down (instrument)
+
   transpose_up_instrument = () => {
     // this.instrumentService.transposeService.transposeUp();
 
@@ -203,15 +216,6 @@ export default class SongController {
 
     // tuning-view
     this.instrumentService.loadTuning();
-  }
-
-  // *** instrument ***
-
-  // 1. dropdown
-
-  select_instrument = (event) => {
-    this.instrumentService.current = event.target.value;
-    this.instrumentService.load();
   }
 
   // *** text ***
