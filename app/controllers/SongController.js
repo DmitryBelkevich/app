@@ -95,8 +95,8 @@ export default class SongController {
     // 3. key-signature (instrument)
 
     // 4. transposer (instrument)
-    this.view.bindTransposeDownLocal(this.transpose_down_local);
-    this.view.bindTransposeUpLocal(this.transpose_up_local);
+    this.view.bindTransposeDownInstrument(this.transpose_down_instrument);
+    this.view.bindTransposeUpInstrument(this.transpose_up_instrument);
 
     // *** settings ***
 
@@ -183,7 +183,7 @@ export default class SongController {
 
   // 4. transposer (instrument)
 
-  transpose_down_local = () => {
+  transpose_down_instrument = () => {
     // this.instrumentService.transposeService.transposeDown();
 
     const instrument = this.instrumentService.getCurrentInstrument();
@@ -194,7 +194,7 @@ export default class SongController {
     this.instrumentService.loadTuning();
   }
 
-  transpose_up_local = () => {
+  transpose_up_instrument = () => {
     // this.instrumentService.transposeService.transposeUp();
 
     const instrument = this.instrumentService.getCurrentInstrument();
