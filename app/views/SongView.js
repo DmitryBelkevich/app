@@ -69,7 +69,7 @@ export default class SongView {
     
     this.cssLoader.load("./app/views/css/song/settings.css");
     this.settings_song = document.createElement("div");
-    this.settings_song.id = "settings";
+    this.settings_song.id = "settings-song";
 
     // 1. key-signature (song)
     this.key_song = document.createElement("div");
