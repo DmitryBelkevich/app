@@ -230,7 +230,7 @@ export default class SongView {
     this.dropdown.append(option);
   }
 
-  selectOption(index) {
+  setOption(index) {
     this.dropdown.selectedIndex = index;
   }
 
@@ -238,7 +238,7 @@ export default class SongView {
     return this.dropdown.value;
   }
 
-  // 2. tuning
+  // *** tuning ***
 
   clearTuning() {
     this.tuning.replaceChildren();
@@ -259,8 +259,6 @@ export default class SongView {
 
     this.tuning.append(div);
   }
-
-  // 3. capo
 
   addCapo(capo) {
     const div = document.createElement("div");
