@@ -27,7 +27,7 @@
 
 /* key */
 
-#settings-instrument {
+#instrument {
   #key-instrument {
     font-size: 16px;
     background: gold;
@@ -59,7 +59,7 @@
 
 /* buttons */
 
-#settings-instrument {
+#instrument {
   button {
     font-size: 20px;
     
