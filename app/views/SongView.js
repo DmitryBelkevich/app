@@ -87,17 +87,6 @@ export default class SongView {
     // this.transpose_up_song.id = "transpose_up_song";
     this.transpose_up_song.textContent = "🔼";
 
-    // 3. key-signature (instrument)
-    this.key_instrument = document.createElement("div");
-    this.key_instrument.id = "key-instrument";
-
-    // 4. transposer (instrument)
-    this.transpose_down_instrument = document.createElement("button");
-    this.transpose_down_instrument.textContent = "🔽";
-
-    this.transpose_up_instrument = document.createElement("button");
-    this.transpose_up_instrument.textContent = "🔼";
-
     // fill settings
     this.settings_song.append(
       this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
@@ -112,6 +101,17 @@ export default class SongView {
     // 1. dropdown
     this.dropdown = document.createElement("select");
 
+    // 3. key-signature (instrument)
+    this.key_instrument = document.createElement("div");
+    this.key_instrument.id = "key-instrument";
+
+    // 4. transposer (instrument)
+    this.transpose_down_instrument = document.createElement("button");
+    this.transpose_down_instrument.textContent = "🔽";
+
+    this.transpose_up_instrument = document.createElement("button");
+    this.transpose_up_instrument.textContent = "🔼";
+
     // 2. tuning
     this.tuning = document.createElement("div");
     this.tuning.id = "tuning";
@@ -119,7 +119,10 @@ export default class SongView {
     // 3. capo
 
     // fill instrument
-    this.instrument.append(this.dropdown);
+    this.instrument.append(
+      this.dropdown,
+      this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
+    );
 
     // *** settings-instrument ***
 
@@ -129,7 +132,6 @@ export default class SongView {
 
     // fill settings_instrument
     this.settings_instrument.append(
-      this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
       this.tuning,
     );
     
