@@ -63,7 +63,7 @@ export default class InstrumentService {
 
   loadKey() {
     const instrument = this.getCurrentInstrument();
-    this.#view.setKeyLocal(instrument.key);
+    this.#view.setKeyInstrument(instrument.key);
   }
 
   loadTuning() {
