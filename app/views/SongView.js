@@ -209,7 +209,7 @@ export default class SongView {
 
   // 3. key-signature (instrument)
 
-  setKeyLocal(key) {
+  setKeyInstrument(key) {
     this.key_instrument.textContent = key;
   }
 
