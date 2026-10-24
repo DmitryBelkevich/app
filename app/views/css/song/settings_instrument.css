@@ -15,36 +15,6 @@
 /* components */
 
 #settings-instrument {
-  #key-instrument {
-    font-size: 16px;
-    background: gold;
-  }
-  
-  #key-instrument {
-    border: 1px solid grey;
-    border-radius: 4px;
-    width: 36px;
-
-    margin: 0px  0px  0px 5px;
-    padding: 0px 2px;
-  }
-
-  #key-instrument {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #key-instrument.original {
-    background: lightgreen;
-  }
-
-  #key-instrument.transposed {
-    background: coral;
-  }
-}
-
-#settings-instrument {
   #tuning {
     display: flex;
   }
@@ -82,16 +52,5 @@
       font-size: 12px;
       background: coral;
     }
-  }
-}
-
-/* buttons */
-
-#settings-instrument {
-  button {
-    font-size: 20px;
-    
-    margin: 0px  0px  0px 5px;
-    padding: 5px;
   }
 }
