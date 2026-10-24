@@ -201,7 +201,7 @@ export default class SongView {
 
   // 2. transposition_song
 
-  setTranspositionGlobal(count) {
+  setTranspositionSong(count) {
     this.transposition_song.textContent = count;
   }
 
@@ -331,13 +331,13 @@ export default class SongView {
 
   // 2. transposer (song)
 
-  bindTransposeDownGlobal(handler) {
+  bindTransposeDownSong(handler) {
     this.transpose_down_song.addEventListener("click", () => {
       handler();
     });
   }
   
-  bindTransposeUpGlobal(handler) {
+  bindTransposeUpSong(handler) {
     this.transpose_up_song.addEventListener("click", () => {
       handler();
     });
