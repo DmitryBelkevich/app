@@ -347,13 +347,13 @@ export default class SongView {
 
   // 4. transposer (instrument)
 
-  bindTransposeDownLocal(handler) {
+  bindTransposeDownInstrument(handler) {
     this.transpose_down_instrument.addEventListener("click", () => {
       handler();
     });
   }
 
-  bindTransposeUpLocal(handler) {
+  bindTransposeUpInstrument(handler) {
     this.transpose_up_instrument.addEventListener("click", () => {
       handler();
     });
