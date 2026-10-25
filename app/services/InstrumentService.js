@@ -26,7 +26,7 @@ export default class InstrumentService {
     this.#current = cookie_obj.value;
 
     // *** dropdown ***
-    this.#view.setOption(this.#current);
+    this.#view.instrument.setOption(this.#current);
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
