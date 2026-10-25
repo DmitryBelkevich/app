@@ -3,6 +3,7 @@ import Title from './Title.js';
 import Song from './Song.js';
 import Instrument from './Instrument.js';
 import Tuning from './Tuning.js';
+import Text from './Text.js';
 
 import CssLoader from '../loaders/CssLoader.js';
 
@@ -12,6 +13,7 @@ export default class SongView {
   song;
   instrument;
   tuning;
+  text;
   
   constructor() {
     this.navigator = new Navigator();
@@ -19,10 +21,10 @@ export default class SongView {
     this.song = new Song();
     this.instrument = new Instrument();
     this.tuning = new Tuning();
+    this.text = new Text();
     
-    this.cssLoader = new CssLoader();
-
     // reset css
+    this.cssLoader = new CssLoader();
     this.cssLoader.load("./app/views/css/reset.css");
 
     // *** components ***
@@ -53,11 +55,6 @@ export default class SongView {
     // fill container
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
     
-    // *** Text ***
-    this.cssLoader.load("./app/views/css/song/text.css");
-    this.text = document.createElement("div");
-    this.text.id = "text";
-    
     // *** Footer ***
     this.cssLoader.load("./app/views/css/song/footer.css");
     this.footer = document.createElement("div");
@@ -72,23 +69,15 @@ export default class SongView {
       this.song.container,
       this.instrument.container,
       this.tuning.container,
-      this.text,
+      this.text.container,
       this.footer
     );
   }
 
   // *** render ***
 
-  // *** head ***
-
   setPageTitle(title) {
     document.title = title;
-  }
-
-  // *** text ***
-
-  setText(text) {
-    this.text.innerHTML = text;
   }
 
   // *** binding: view -> controller ***
