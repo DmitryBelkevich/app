@@ -48,7 +48,7 @@ export default class SongController {
 
     // 1. dropdown
     this.song.instruments.forEach((instrument, index) => {
-      this.view.addOption(index, instrument.title, instrument.color);
+      this.view.instrument.addOption(index, instrument.title, instrument.color);
     });
 
     // 2. key-signature (instrument)
