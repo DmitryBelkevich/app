@@ -24,7 +24,7 @@ export default class Tuning {
 
   // 1. tuning
 
-  clearTuning() {
+  clear() {
     this.#container.replaceChildren();
   }
 
