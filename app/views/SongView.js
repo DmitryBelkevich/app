@@ -223,6 +223,7 @@ class Song {
   transpose_up;
   
   constructor() {
+    this.cssLoader = new CssLoader();
     this.cssLoader.load("./app/views/css/song/settings_song.css");
     
     // container
@@ -310,6 +311,7 @@ class Instrument {
   transpose_up;
   
   constructor() {
+    this.cssLoader = new CssLoader();
     this.cssLoader.load("./app/views/css/song/instrument.css");
 
     // container
