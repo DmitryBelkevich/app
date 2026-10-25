@@ -19,7 +19,7 @@ export default class SongView {
   text;
   footer;
   
-  constructor( ) {
+  constructor() {
     this.navigator = new Navigator();
     this.title = new Title();
     this.tabs = new Tabs();
