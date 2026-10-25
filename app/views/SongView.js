@@ -1,3 +1,4 @@
+import Title from './Title.js';
 import Song from './Song.js';
 import Instrument from './Instrument.js';
 import Tuning from './Tuning.js';
