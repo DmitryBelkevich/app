@@ -1,3 +1,4 @@
+import Navigator from './Navigator.js';
 import Title from './Title.js';
 import Song from './Song.js';
 import Instrument from './Instrument.js';
@@ -6,12 +7,14 @@ import Tuning from './Tuning.js';
 import CssLoader from '../loaders/CssLoader.js';
 
 export default class SongView {
+  navigator;
   title;
   song;
   instrument;
   tuning;
   
   constructor() {
+    this.navigator = new Nav();
     this.title = new Title();
     this.song = new Song();
     this.instrument = new Instrument();
@@ -23,22 +26,6 @@ export default class SongView {
     this.cssLoader.load("./app/views/css/reset.css");
 
     // *** components ***
-
-    // navigator
-    this.cssLoader.load("./app/views/css/song/nav.css");
-    this.nav = document.createElement("nav");
-
-    // 1. list
-    this.list_button = document.createElement("button");
-    this.list_button.textContent = "◀️";
-
-    // 2. auto-scroll
-    this.autoscroll_e = document.createElement("button");
-    this.autoscroll_e.id = "autoscroll";
-    this.autoscroll_e.textContent = "⏬";
-
-    // fill container
-    this.nav.append(this.list_button, this.autoscroll_e);
     
     // Tab 1
     this.tab_text = document.createElement("button");
@@ -79,7 +66,7 @@ export default class SongView {
     
     // *** fill container ***
     document.body.append(
-      this.nav,
+      this.navigator.container,
       this.title.container,
       this.tabs,
       this.song.container,
@@ -98,10 +85,6 @@ export default class SongView {
     document.title = title;
   }
 
-  // 1. list
-
-  // 2. autoscroll
-
   // *** text ***
 
   setText(text) {
@@ -109,24 +92,6 @@ export default class SongView {
   }
 
   // *** binding: view -> controller ***
-
-  // *** nav ***
-
-  // 1. list
-
-  bindListButton(handler) {
-    this.list_button.addEventListener("click", () => {
-      handler();
-    });
-  }
-
-  // 2. auto-scroll
-  
-  bindAutoScroll(handler) {
-    this.autoscroll_e.addEventListener("click", () => {
-      handler();
-    });
-  }
 
   // *** tabs ***
   
