@@ -31,7 +31,7 @@ export default class Song {
     this.transpose_up = document.createElement("button");
     this.transpose_up.textContent = "🔼";
 
-    // fill settings
+    // fill container
     this.#container.append(
       this.key,
       this.transposition,
