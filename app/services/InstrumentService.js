@@ -67,7 +67,7 @@ export default class InstrumentService {
   }
 
   loadTuning() {
-    this.#view.clearTuning();
+    this.#view.tuning.clear();
 
     const instrument = this.#song.instruments[this.#current];
     
