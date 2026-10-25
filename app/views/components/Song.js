@@ -1,4 +1,4 @@
-import CssLoader from '../loaders/CssLoader.js';
+import CssLoader from '../../loaders/CssLoader.js';
 
 export default class Song {
   #container;
