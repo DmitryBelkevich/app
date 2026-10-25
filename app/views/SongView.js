@@ -5,6 +5,7 @@ import Song from './components/Song.js';
 import Instrument from './components/Instrument.js';
 import Tuning from './components/Tuning.js';
 import Text from './components/Text.js';
+import Footer from './components/Footer.js';
 
 import CssLoader from '../loaders/CssLoader.js';
 
@@ -16,6 +17,7 @@ export default class SongView {
   instrument;
   tuning;
   text;
+  footer;
   
   constructor() {
     this.navigator = new Navigator();
@@ -25,6 +27,7 @@ export default class SongView {
     this.instrument = new Instrument();
     this.tuning = new Tuning();
     this.text = new Text();
+    this.footer = new Footer();
     
     // reset css
     this.cssLoader = new CssLoader();
@@ -32,13 +35,7 @@ export default class SongView {
 
     // *** components ***
     
-    // *** Footer ***
-    this.cssLoader.load("./app/views/css/song/footer.css");
-    this.footer = document.createElement("div");
-    this.footer.id = "footer";
-    this.footer.textContent = "Copyright © Dmitry Belkevich";
-    
-    // *** fill container ***
+    // fill container
     document.body.append(
       this.navigator.container,
       this.title.container,
@@ -47,11 +44,9 @@ export default class SongView {
       this.instrument.container,
       this.tuning.container,
       this.text.container,
-      this.footer
+      this.footer.container,
     );
   }
-
-  // *** render ***
 
   setPageTitle(title) {
     document.title = title;
