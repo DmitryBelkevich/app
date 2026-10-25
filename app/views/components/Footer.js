@@ -1,6 +1,6 @@
 import CssLoader from '../../loaders/CssLoader.js';
 
-export default Footer {
+export default class Footer {
   #container;
 
   constructor() {
