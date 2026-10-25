@@ -5,11 +5,13 @@ import Tuning from './Tuning.js';
 import CssLoader from '../loaders/CssLoader.js';
 
 export default class SongView {
+  title;
   song;
   instrument;
   tuning;
   
   constructor() {
+    this.title = new Title();
     this.song = new Song();
     this.instrument = new Instrument();
     this.tuning = new Tuning();
@@ -36,20 +38,6 @@ export default class SongView {
 
     // fill container
     this.nav.append(this.list_button, this.autoscroll_e);
-    
-    // title
-    this.cssLoader.load("./app/views/css/song/title.css");
-    this.title = document.createElement("div");
-    this.title.id = "title";
-
-    this.title_e = document.createElement('div');
-    this.title_e.classList.add("title");
-    
-    this.band_e = document.createElement('div');
-    this.band_e.classList.add("band");
-
-    // fill container
-    this.title.append(this.title_e, this.band_e);
     
     // Tab 1
     this.tab_text = document.createElement("button");
@@ -112,16 +100,6 @@ export default class SongView {
   // 1. list
 
   // 2. autoscroll
-
-  // *** title ***
-
-  setTitle(title) {
-    this.title_e.textContent = title;
-  }
-
-  setBand(band) {
-    this.band_e.textContent = band;
-  }
 
   // *** text ***
 
