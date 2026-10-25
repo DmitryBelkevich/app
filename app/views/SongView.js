@@ -80,7 +80,7 @@ export default class SongView {
     // *** fill container ***
     document.body.append(
       this.nav,
-      this.title,
+      this.title.container,
       this.tabs,
       this.song.container,
       this.instrument.container,
