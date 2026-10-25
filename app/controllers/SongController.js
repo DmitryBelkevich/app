@@ -101,7 +101,7 @@ export default class SongController {
     // *** instrument ***
 
     // 1. dropdown
-    this.view.bindDropdown(this.select_instrument);
+    this.view.instrument.bindDropdown(this.select_instrument);
 
     // 2. key-signature (instrument)
 
