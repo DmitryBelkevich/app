@@ -1,7 +1,13 @@
 import CssLoader from '../loaders/CssLoader.js';
 
 export default class SongView {
+  song;
+  instrument;
+  
   constructor() {
+    this.song = new Song();
+    this.instrument = new Instrument();
+    
     this.cssLoader = new CssLoader();
 
     // reset css
@@ -67,64 +73,15 @@ export default class SongView {
 
     // *** settings-song ***
     
-    this.cssLoader.load("./app/views/css/song/settings_song.css");
-    this.settings_song = document.createElement("div");
-    this.settings_song.id = "settings-song";
-
-    // 1. key-signature (song)
-    this.key_song = document.createElement("div");
-    this.key_song.id = "key-song";
-
-    // 2. transposition (song)
-    this.transposition_song = document.createElement("div");
-
-    // 3. transpose down (song)
-    this.transpose_down_song = document.createElement("button");
-    this.transpose_down_song.textContent = "🔽";
-
-    // 4. transpose up (song)
-    this.transpose_up_song = document.createElement("button");
-    this.transpose_up_song.textContent = "🔼";
-
-    // fill settings
-    this.settings_song.append(
-      this.key_song, this.transposition_song, this.transpose_down_song, this.transpose_up_song,
-    );
-    
     // *** instrument ***
-    
-    this.cssLoader.load("./app/views/css/song/instrument.css");
-    this.instrument = document.createElement("div");
-    this.instrument.id = "instrument";
-
-    // 1. dropdown
-    this.dropdown = document.createElement("select");
-
-    // 2. key-signature (instrument)
-    this.key_instrument = document.createElement("div");
-    this.key_instrument.id = "key-instrument";
-
-    // 3. transpose down (instrument)
-    this.transpose_down_instrument = document.createElement("button");
-    this.transpose_down_instrument.textContent = "🔽";
-
-    // 4. transpose up (instrument)
-    this.transpose_up_instrument = document.createElement("button");
-    this.transpose_up_instrument.textContent = "🔼";
-
-    // 3. capo
-
-    // fill instrument
-    this.instrument.append(
-      this.dropdown,
-      this.key_instrument, this.transpose_down_instrument, this.transpose_up_instrument,
-    );
 
     // *** tuning ***
 
     this.cssLoader.load("./app/views/css/song/tuning.css");
     this.tuning = document.createElement("div");
     this.tuning.id = "tuning";
+
+    // 3. capo
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -142,8 +99,8 @@ export default class SongView {
       this.nav,
       this.title,
       this.tabs,
-      this.settings_song,
-      this.instrument,
+      this.song.container,
+      this.instrument.container,
       this.tuning,
       this.text,
       this.footer
@@ -174,73 +131,7 @@ export default class SongView {
 
   // *** settings-song ***
 
-  // 1. key-signature (song)
-
-  setKeySong(key, isTransposed) {
-    const transpositions = {
-      true: "transposed",
-      false: "original",
-    };
-    
-    this.key_song.textContent = key;
-
-    this.key_song.classList.remove(transpositions[true]);
-    this.key_song.classList.remove(transpositions[false]);
-    
-    this.key_song.classList.add(transpositions[isTransposed]);
-  }
-
-  // 2. transposition_song
-
-  setTranspositionSong(count) {
-    this.transposition_song.textContent = count;
-  }
-
-  // 3. transpose down (song)
-
-  // 4. transpose up (song)
-
   // *** instrument ***
-
-  // 1. dropdown
-
-  addOption(index, title, color) {
-    const option = document.createElement("option");
-
-    option.value = index;
-    
-    const colors = {
-      null: "⚪️",
-      undefined: "⚪️",
-      
-      "grey": "⚪️",
-      "red": "🔴",
-      "yellow": "🟡",
-      "green": "🟢",
-    };
-    
-    option.textContent = colors[color] + " " + title;
-    
-    this.dropdown.append(option);
-  }
-
-  setOption(index) {
-    this.dropdown.selectedIndex = index;
-  }
-
-  getValue() {
-    return this.dropdown.value;
-  }
-
-  // 2. key-signature (instrument)
-
-  setKeyInstrument(key) {
-    this.key_instrument.textContent = key;
-  }
-
-  // 3. transpose down (instrument)
-
-  // 4. transpose up (instrument)
 
   // *** tuning ***
 
@@ -320,25 +211,178 @@ export default class SongView {
 
   // *** settings-song ***
 
-  // 1. key-signature (song)
-
-  // 2. transpose down (song)
-
-  bindTransposeDownSong(handler) {
-    this.transpose_down_song.addEventListener("click", () => {
-      handler();
-    });
-  }
-
-  // 3. transpose up (song)
-  
-  bindTransposeUpSong(handler) {
-    this.transpose_up_song.addEventListener("click", () => {
-      handler();
-    });
-  }
-
   // *** instrument ***
+}
+
+class Song {
+  #container;
+  
+  key;
+  transposition;
+  transpose_down;
+  transpose_up;
+  
+  constructor() {
+    this.cssLoader.load("./app/views/css/song/settings_song.css");
+    
+    // container
+    this.#container = document.createElement("div");
+    this.#container.id = "settings-song";
+
+    // 1. key-signature
+    this.key = document.createElement("div");
+    this.key.id = "key-song";
+
+    // 2. transposition
+    this.transposition = document.createElement("div");
+
+    // 3. transpose down
+    this.transpose_down = document.createElement("button");
+    this.transpose_down.textContent = "🔽";
+
+    // 4. transpose up
+    this.transpose_up = document.createElement("button");
+    this.transpose_up.textContent = "🔼";
+
+    // fill settings
+    this.#container.append(
+      this.key, this.transposition, this.transpose_down, this.transpose_up,
+    );
+  }
+
+  get container() {
+    return this.#container;
+  }
+
+  // 1. key-signature
+
+  setKey(key, isTransposed) {
+    const transpositions = {
+      true: "transposed",
+      false: "original",
+    };
+    
+    this.key.textContent = key;
+
+    this.key.classList.remove(transpositions[true]);
+    this.key.classList.remove(transpositions[false]);
+    
+    this.key.classList.add(transpositions[isTransposed]);
+  }
+
+  // 2. transposition
+
+  setTransposition(count) {
+    this.transposition.textContent = count;
+  }
+
+  // 3. transpose down
+
+  // 4. transpose up
+
+  // *** binding: view -> controller ***
+
+  // 1. key-signature
+
+  // 2. transpose down
+
+  bindTransposeDown(handler) {
+    this.transpose_down.addEventListener("click", () => {
+      handler();
+    });
+  }
+
+  // 3. transpose up
+  
+  bindTransposeUp(handler) {
+    this.transpose_up.addEventListener("click", () => {
+      handler();
+    });
+  }
+}
+
+class Instrument {
+  #container;
+  
+  dropdown;
+  key;
+  transpose_down;
+  transpose_up;
+  
+  constructor() {
+    this.cssLoader.load("./app/views/css/song/instrument.css");
+
+    // container
+    this.#container = document.createElement("div");
+    this.#container.id = "instrument";
+
+    // 1. dropdown
+    this.dropdown = document.createElement("select");
+
+    // 2. key-signature
+    this.key = document.createElement("div");
+    this.key.id = "key-instrument";
+
+    // 3. transpose down
+    this.transpose_down = document.createElement("button");
+    this.transpose_down.textContent = "🔽";
+
+    // 4. transpose up
+    this.transpose_up = document.createElement("button");
+    this.transpose_up.textContent = "🔼";
+
+    // fill container
+    this.#container.append(
+      this.dropdown,
+      this.key, this.transpose_down, this.transpose_up,
+    );
+  }
+
+  get container() {
+    return this.#container;
+  }
+  
+  // 1. dropdown
+
+  addOption(index, title, color) {
+    const option = document.createElement("option");
+
+    option.value = index;
+    
+    const colors = {
+      null: "⚪️",
+      undefined: "⚪️",
+      
+      "grey": "⚪️",
+      "red": "🔴",
+      "yellow": "🟡",
+      "green": "🟢",
+    };
+    
+    option.textContent = colors[color] + " " + title;
+    
+    this.dropdown.append(option);
+  }
+
+  setOption(index) {
+    this.dropdown.selectedIndex = index;
+  }
+
+  getValue() {
+    return this.dropdown.value;
+  }
+
+  // 2. key-signature (instrument)
+
+  setKey(key) {
+    this.key.textContent = key;
+  }
+
+  // 3. transpose down (instrument)
+
+  // 4. transpose up (instrument)
+
+  // *** binding: view -> controller ***
 
   // 1. dropdown
 
@@ -352,16 +396,16 @@ export default class SongView {
 
   // 3. transpose down (instrument)
 
-  bindTransposeDownInstrument(handler) {
-    this.transpose_down_instrument.addEventListener("click", () => {
+  bindTransposeDown(handler) {
+    this.transpose_down.addEventListener("click", () => {
       handler();
     });
   }
 
   // 4. transpose up (instrument)
 
-  bindTransposeUpInstrument(handler) {
-    this.transpose_up_instrument.addEventListener("click", () => {
+  bindTransposeUp(handler) {
+    this.transpose_up.addEventListener("click", () => {
       handler();
     });
   }
