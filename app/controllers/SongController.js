@@ -30,8 +30,8 @@ export default class SongController {
     // *** title ***
     
     this.view.setPageTitle(this.song.band + " - " + this.song.title);
-    this.view.setTitle(this.song.title);
-    this.view.setBand(this.song.band);
+    this.view.title.setTitle(this.song.title);
+    this.view.title.setBand(this.song.band);
 
     // *** settings-song ***
 
