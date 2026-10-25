@@ -34,7 +34,9 @@ export default class Instrument {
     // fill container
     this.#container.append(
       this.dropdown,
-      this.key, this.transpose_down, this.transpose_up,
+      this.key,
+      this.transpose_down,
+      this.transpose_up,
     );
   }
 
