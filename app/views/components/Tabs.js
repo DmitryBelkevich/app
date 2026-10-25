@@ -3,9 +3,9 @@ import CssLoader from '../../loaders/CssLoader.js';
 export default class Tabs {
   #container;
 
-  tab_text;
-  tab_score;
-  tab_playback;
+  text;
+  score;
+  playback;
 
   constructor() {
     this.cssLoader = new CssLoader();
@@ -16,28 +16,28 @@ export default class Tabs {
     this.#container.id = "tabs";
 
     // 1. Tab 1
-    this.tab_text = document.createElement("button");
-    this.tab_text.id = "tab_text";
-    this.tab_text.classList.add("tab");
-    this.tab_text.textContent = "📝 Text & Chords";
+    this.text = document.createElement("button");
+    this.text.id = "tab_text";
+    this.text.classList.add("tab");
+    this.text.textContent = "📝 Text & Chords";
     
     // 2. Tab 2
-    this.tab_score = document.createElement("button");
-    this.tab_score.id = "tab_score";
-    this.tab_score.classList.add("tab");
-    this.tab_score.textContent = "🎵 Scores";
+    this.score = document.createElement("button");
+    this.score.id = "tab_score";
+    this.score.classList.add("tab");
+    this.score.textContent = "🎵 Scores";
     
     // 3. Tab 3
-    this.tab_playback = document.createElement("button");
-    this.tab_playback.id = "tab_playback";
-    this.tab_playback.classList.add("tab");
-    this.tab_playback.textContent = "🎧 Playbacks";
+    this.playback = document.createElement("button");
+    this.playback.id = "tab_playback";
+    this.playback.classList.add("tab");
+    this.playback.textContent = "🎧 Playbacks";
 
     // fill container
     this.#container.append(
-      this.tab_text,
-      this.tab_score,
-      this.tab_playback,
+      this.text,
+      this.score,
+      this.playback,
     );
   }
 
@@ -47,24 +47,24 @@ export default class Tabs {
 
   // 1. Tab 1
   
-  bindTextTab(handler) {
-    this.tab_text.addEventListener("click", () => {
+  bindText(handler) {
+    this.text.addEventListener("click", () => {
       handler();
     });
   }
 
   // 2. Tab 2
 
-  bindScoreTab(handler) {
-    this.tab_score.addEventListener("click", () => {
+  bindScore(handler) {
+    this.score.addEventListener("click", () => {
       handler();
     });
   }
 
   // 3. Tab 3
 
-  bindPlaybackTab(handler) {
-    this.tab_playback.addEventListener("click", () => {
+  bindPlayback(handler) {
+    this.playback.addEventListener("click", () => {
       handler();
     });
   }
