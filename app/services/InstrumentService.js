@@ -26,7 +26,7 @@ export default class InstrumentService {
     this.#current = cookie_obj.value;
 
     // *** dropdown ***
-    this.#view.setOption(this.#current);
+    this.#view.instrument.setOption(this.#current);
 
     // *** Text ***
     this.htmlLoader = new HtmlLoader();
@@ -63,11 +63,11 @@ export default class InstrumentService {
 
   loadKey() {
     const instrument = this.getCurrentInstrument();
-    this.#view.setKeyInstrument(instrument.key);
+    this.#view.instrument.setKey(instrument.key);
   }
 
   loadTuning() {
-    this.#view.clearTuning();
+    this.#view.tuning.clear();
 
     const instrument = this.#song.instruments[this.#current];
     
@@ -79,16 +79,16 @@ export default class InstrumentService {
     const isStandard = tuning.isStandard();
     
     tuning.forEach((note) => {
-      this.#view.addString(note, isStandard);
+      this.#view.tuning.addString(note, isStandard);
     });
 
     if (instrument.capo)
-      this.#view.addCapo(instrument.capo);
+      this.#view.tuning.addCapo(instrument.capo);
   }
 
   async loadText() {
     const instrument = this.#song.instruments[this.#current];
     const text = await this.htmlLoader.load(instrument.chords);
-    this.#view.setText(text);
+    this.#view.text.setText(text);
   }
 }
