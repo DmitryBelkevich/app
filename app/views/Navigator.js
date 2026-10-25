@@ -3,6 +3,9 @@ import CssLoader from '../loaders/CssLoader.js';
 export default class Navigator {
   #container;
 
+  list;
+  autoscroll;
+
   constructor() {
     this.cssLoader = new CssLoader();
     this.cssLoader.load("./app/views/css/song/nav.css");
