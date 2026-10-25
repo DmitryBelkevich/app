@@ -89,6 +89,6 @@ export default class InstrumentService {
   async loadText() {
     const instrument = this.#song.instruments[this.#current];
     const text = await this.htmlLoader.load(instrument.chords);
-    this.#view.setText(text);
+    this.#view.text.setText(text);
   }
 }
