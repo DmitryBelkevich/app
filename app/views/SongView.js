@@ -14,7 +14,7 @@ export default class SongView {
   tuning;
   
   constructor() {
-    this.navigator = new Nav();
+    this.navigator = new Navigator();
     this.title = new Title();
     this.song = new Song();
     this.instrument = new Instrument();
