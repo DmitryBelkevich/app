@@ -4,6 +4,7 @@ export default class Tuning {
   #container;
   
   constructor() {
+    this.cssLoader = new CssLoader();
     this.cssLoader.load("./app/views/css/song/tuning.css");
 
     // container
