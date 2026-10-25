@@ -33,7 +33,10 @@ export default class Song {
 
     // fill settings
     this.#container.append(
-      this.key, this.transposition, this.transpose_down, this.transpose_up,
+      this.key,
+      this.transposition,
+      this.transpose_down,
+      this.transpose_up,
     );
   }
 
