@@ -21,8 +21,6 @@ export default class Navigator {
 
     // fill container
     this.#container.append(this.list_button, this.autoscroll_button);
-
-    // fill container
   }
 
   get container() {
