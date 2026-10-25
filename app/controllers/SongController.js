@@ -75,10 +75,10 @@ export default class SongController {
     // *** nav ***
 
     // 1. list
-    this.view.bindListButton(this.openList);
+    this.view.navigator.bindListButton(this.openList);
 
     // 2. auto-scroll
-    this.view.bindAutoScroll(this.auto_scroll);
+    this.view.navigator.bindAutoScrollButton(this.auto_scroll);
 
     // *** tabs ***
     
