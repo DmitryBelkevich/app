@@ -39,7 +39,7 @@ export default class Navigator {
 
   // 2. auto-scroll
 
-  bindAutoScroll(handler) {
+  bindAutoScrollButton(handler) {
     this.autoscroll_button.addEventListener("click", () => {
       handler();
     });
