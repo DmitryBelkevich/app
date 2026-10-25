@@ -41,7 +41,7 @@ export default class Tuning {
 
     div.textContent = note;
 
-    this.tuning.append(div);
+    this.#container.append(div);
   }
 
   // 2. capo
