@@ -1,15 +1,18 @@
 import Song from './Song.js';
 import Instrument from './Instrument.js';
+import Tuning from './Tuning.js';
 
 import CssLoader from '../loaders/CssLoader.js';
 
 export default class SongView {
   song;
   instrument;
+  tuning;
   
   constructor() {
     this.song = new Song();
     this.instrument = new Instrument();
+    this.tuning = new Tuning();
     
     this.cssLoader = new CssLoader();
 
@@ -73,18 +76,6 @@ export default class SongView {
 
     // fill container
     this.tabs.append(this.tab_text, this.tab_score, this.tab_playback);
-
-    // *** settings-song ***
-    
-    // *** instrument ***
-
-    // *** tuning ***
-
-    this.cssLoader.load("./app/views/css/song/tuning.css");
-    this.tuning = document.createElement("div");
-    this.tuning.id = "tuning";
-
-    // 3. capo
     
     // *** Text ***
     this.cssLoader.load("./app/views/css/song/text.css");
@@ -104,7 +95,7 @@ export default class SongView {
       this.tabs,
       this.song.container,
       this.instrument.container,
-      this.tuning,
+      this.tuning.container,
       this.text,
       this.footer
     );
@@ -130,40 +121,6 @@ export default class SongView {
 
   setBand(band) {
     this.band_e.textContent = band;
-  }
-
-  // *** settings-song ***
-
-  // *** instrument ***
-
-  // *** tuning ***
-
-  clearTuning() {
-    this.tuning.replaceChildren();
-  }
-
-  addString(note, isStandard) {
-    const div = document.createElement("div");
-
-    const standards = {
-      true: "standard",
-      false: "non-standard",
-    }
-
-    div.classList.add("string");
-    div.classList.add(standards[isStandard]);
-
-    div.textContent = note;
-
-    this.tuning.append(div);
-  }
-
-  addCapo(capo) {
-    const div = document.createElement("div");
-    div.classList.add("capo");
-    div.textContent = "Capo: +" + capo;
-
-    this.tuning.append(div);
   }
 
   // *** text ***
