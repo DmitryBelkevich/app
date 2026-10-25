@@ -15,12 +15,12 @@ export default class Navigator {
     this.list_button.textContent = "◀️";
 
     // 2. auto-scroll
-    this.autoscroll = document.createElement("button");
-    this.autoscroll.id = "autoscroll";
-    this.autoscroll.textContent = "⏬";
+    this.autoscroll_button = document.createElement("button");
+    this.autoscroll_button.id = "autoscroll";
+    this.autoscroll_button.textContent = "⏬";
 
     // fill container
-    this.#container.append(this.list_button, this.autoscroll);
+    this.#container.append(this.list_button, this.autoscroll_button);
 
     // fill container
   }
@@ -40,7 +40,7 @@ export default class Navigator {
   // 2. auto-scroll
 
   bindAutoScroll(handler) {
-    this.autoscroll.addEventListener("click", () => {
+    this.autoscroll_button.addEventListener("click", () => {
       handler();
     });
   }
