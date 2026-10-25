@@ -1,7 +1,7 @@
 import Navigator from './Navigator.js';
 import Title from './Title.js';
 import Song from './Song.js';
-import Instrument from './Instrument.js';
+import Instrument from './components/Instrument.js';
 import Tuning from './Tuning.js';
 import Text from './Text.js';
 
