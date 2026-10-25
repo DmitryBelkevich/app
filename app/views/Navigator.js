@@ -11,16 +11,16 @@ export default class Navigator {
     this.#container = document.createElement("nav");
 
     // 1. list
-    this.list_button = document.createElement("button");
-    this.list_button.textContent = "◀️";
+    this.list = document.createElement("button");
+    this.list.textContent = "◀️";
 
     // 2. auto-scroll
-    this.autoscroll_button = document.createElement("button");
-    this.autoscroll_button.id = "autoscroll";
-    this.autoscroll_button.textContent = "⏬";
+    this.autoscroll = document.createElement("button");
+    this.autoscroll.id = "autoscroll";
+    this.autoscroll.textContent = "⏬";
 
     // fill container
-    this.#container.append(this.list_button, this.autoscroll_button);
+    this.#container.append(this.list, this.autoscroll);
   }
 
   get container() {
@@ -29,16 +29,16 @@ export default class Navigator {
 
   // 1. list
 
-  bindListButton(handler) {
-    this.list_button.addEventListener("click", () => {
+  bindList(handler) {
+    this.list.addEventListener("click", () => {
       handler();
     });
   }
 
   // 2. auto-scroll
 
-  bindAutoScrollButton(handler) {
-    this.autoscroll_button.addEventListener("click", () => {
+  bindAutoScroll(handler) {
+    this.autoscroll.addEventListener("click", () => {
       handler();
     });
   }
