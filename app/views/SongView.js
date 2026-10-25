@@ -20,6 +20,11 @@ export default class SongView {
   footer;
   
   constructor() {
+    // reset css
+    this.cssLoader = new CssLoader();
+    this.cssLoader.load("./app/views/css/reset.css");
+    
+    // components
     this.navigator = new Navigator();
     this.title = new Title();
     this.tabs = new Tabs();
@@ -28,12 +33,6 @@ export default class SongView {
     this.tuning = new Tuning();
     this.text = new Text();
     this.footer = new Footer();
-    
-    // reset css
-    this.cssLoader = new CssLoader();
-    this.cssLoader.load("./app/views/css/reset.css");
-
-    // *** components ***
     
     // fill container
     document.body.append(
