@@ -1,9 +1,9 @@
-import Navigator from './Navigator.js';
-import Title from './Title.js';
-import Song from './Song.js';
+import Navigator from './components/Navigator.js';
+import Title from './components/Title.js';
+import Song from './components/Song.js';
 import Instrument from './components/Instrument.js';
-import Tuning from './Tuning.js';
-import Text from './Text.js';
+import Tuning from './components/Tuning.js';
+import Text from './components/Text.js';
 
 import CssLoader from '../loaders/CssLoader.js';
 
