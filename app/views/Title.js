@@ -2,6 +2,9 @@ import CssLoader from '../loaders/CssLoader.js';
 
 export default class Title {
   #container;
+
+  title;
+  band;
   
   constructor() {
     this.cssLoader = new CssLoader();
