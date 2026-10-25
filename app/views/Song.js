@@ -65,22 +65,14 @@ export default class Song {
 
   // 3. transpose down
 
-  // 4. transpose up
-
-  // *** binding: view -> controller ***
-
-  // 1. key-signature
-
-  // 2. transpose down
-
   bindTransposeDown(handler) {
     this.transpose_down.addEventListener("click", () => {
       handler();
     });
   }
 
-  // 3. transpose up
-  
+  // 4. transpose up
+
   bindTransposeUp(handler) {
     this.transpose_up.addEventListener("click", () => {
       handler();
