@@ -17,9 +17,7 @@ export default class Text {
   get container() {
     return this.#container;
   }
-
-  // 1. text
-
+  
   setText(text) {
     this.#container.innerHTML = text;
   }
