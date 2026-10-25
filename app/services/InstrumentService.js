@@ -79,11 +79,11 @@ export default class InstrumentService {
     const isStandard = tuning.isStandard();
     
     tuning.forEach((note) => {
-      this.#view.addString(note, isStandard);
+      this.#view.tuning.addString(note, isStandard);
     });
 
     if (instrument.capo)
-      this.#view.addCapo(instrument.capo);
+      this.#view.tuning.addCapo(instrument.capo);
   }
 
   async loadText() {
