@@ -27,10 +27,14 @@ export default class Title {
     return this.#container;
   }
 
+  // 1. title
+  
   setTitle(title) {
     this.title.textContent = title;
   }
 
+  // 2. band
+  
   setBand(band) {
     this.band.textContent = band;
   }
