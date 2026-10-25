@@ -82,9 +82,9 @@ export default class SongController {
 
     // *** tabs ***
     
-    this.view.bindTextTab(this.openText);
-    this.view.bindScoreTab(this.openScore);
-    this.view.bindPlaybackTab(this.openPlayback);
+    this.view.tabs.bindText(this.openText);
+    this.view.tabs.bindScore(this.openScore);
+    this.view.tabs.bindPlayback(this.openPlayback);
 
     // *** settings-song ***
     
