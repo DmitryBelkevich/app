@@ -48,6 +48,7 @@ export default class Tuning {
 
   addCapo(capo) {
     const div = document.createElement("div");
+    
     div.classList.add("capo");
     div.textContent = "Capo: +" + capo;
 
