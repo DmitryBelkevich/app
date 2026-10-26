@@ -29,31 +29,32 @@ export default class Tuning {
   }
 
   addString(note, isStandard) {
-    const div = document.createElement("div");
+    const element = document.createElement("div");
 
     const standards = {
       true: "standard",
       false: "non-standard",
     }
 
-    div.classList.add("string");
-    div.classList.add(standards[isStandard]);
+    element.classList.add("string");
+    element.classList.add(standards[isStandard]);
 
-    div.textContent = note;
+    element.textContent = note;
 
     // fill container
-    this.#container.append(div);
+    this.#container.append(element);
   }
 
   // 2. capo
 
   addCapo(capo) {
-    const div = document.createElement("div");
+    const element = document.createElement("div");
     
-    div.classList.add("capo");
-    div.textContent = "Capo: +" + capo;
+    element.classList.add("capo");
+    
+    element.textContent = "Capo: +" + capo;
 
     // fill container
-    this.#container.append(div);
+    this.#container.append(element);
   }
 }
