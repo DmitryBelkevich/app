@@ -41,6 +41,7 @@ export default class Tuning {
 
     div.textContent = note;
 
+    // fill container
     this.#container.append(div);
   }
 
@@ -52,6 +53,7 @@ export default class Tuning {
     div.classList.add("capo");
     div.textContent = "Capo: +" + capo;
 
+    // fill container
     this.#container.append(div);
   }
 }
