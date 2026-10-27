@@ -446,6 +446,7 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Dm",
         "tuning": ["B", "F#", "B", "E", "G#", "C#"]
       },
       {
