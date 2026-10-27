@@ -4677,7 +4677,9 @@
     "key": "Bbm",
     "instruments": [
       {
-        "title": "Guitar"
+        "title": "Guitar",
+        "key": "Am",
+        "capo": 1
       },
       {
         "title": "Bass Guitar"
