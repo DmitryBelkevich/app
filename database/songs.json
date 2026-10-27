@@ -463,13 +463,16 @@
     "text": "Metal/Эпидемия/Эпидемия - Всадник из льда.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1IldgkFBComMiC1WS49ROU4AqIQjXAEWT?usp=drive_link",
+    "key": "F#m",
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Gm",
         "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Gm",
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
@@ -487,10 +490,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "G#m",
         "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "G#m",
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
