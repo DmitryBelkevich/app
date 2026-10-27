@@ -11,10 +11,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Em",
         "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Em",
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
@@ -131,10 +133,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Dm",
         "tuning": ["C", "G", "C", "F", "A", "D"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Dm",
         "tuning": ["C", "G", "C", "F"]
       }
     ],
@@ -152,10 +156,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Am",
         "tuning": ["C", "G", "C", "F", "A", "D"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Am",
         "tuning": ["C", "G", "C", "F"]
       }
     ],
@@ -174,10 +180,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Am",
         "tuning": ["C#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Am",
         "tuning": ["C#", "G#", "C#", "F#"]
       }
     ],
@@ -195,10 +203,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Dm",
         "tuning": ["C", "G", "C", "F", "A", "D"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Dm",
         "tuning": ["C", "G", "C", "F"]
       }
     ],
@@ -233,10 +243,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Dm",
         "tuning": ["B", "F#", "B", "E", "G#", "C#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Dm",
         "tuning": ["B", "F#", "B", "E"]
       }
     ],
@@ -268,10 +280,14 @@
     "key": "Gb",
     "instruments": [
       {
-        "title": "Guitar"
+        "title": "Guitar",
+        "key": "Am",
+        "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
-        "title": "Bass Guitar"
+        "title": "Bass Guitar",
+        "key": "Am",
+        "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
     "visible": "true"
@@ -321,10 +337,14 @@
     "key": "C#m",
     "instruments": [
       {
-        "title": "Guitar"
+        "title": "Guitar",
+        "key": "Dm",
+        "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
-        "title": "Bass Guitar"
+        "title": "Bass Guitar",
+        "key": "Dm",
+        "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
     "visible": "true"
@@ -408,6 +428,7 @@
       },
       {
         "title": "Bass Guitar",
+        "key": "Dm",
         "tuning": ["D", "G", "C", "F"]
       }
     ],
@@ -425,6 +446,7 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Dm",
         "tuning": ["B", "F#", "B", "E", "G#", "C#"]
       },
       {
