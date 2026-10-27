@@ -4672,11 +4672,15 @@
     "genre": "Rock, Punk",
     "raiting": 3,
     "text": "Rock, Punk/Юлия Савичева/Юлия Савичева - Прости за любовь.html",
-    "score": "",
+    "score": "https://drive.google.com/file/d/1pQHa1JNxPl2aMrTQ3AHsKcEbg3Ep3o-R/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/1CfiY2zLbruYmm5OFJ6YFgVroKaUP0fWw?usp=drive_link",
+    "key": "Bbm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": "true"
