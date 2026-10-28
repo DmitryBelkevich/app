@@ -20,6 +20,8 @@ export default class ChordsService {
 
       const chord = new Chord(content);
       chord.transpose(count);
+
+      element.textContent = chord;
     });
   }
 }
