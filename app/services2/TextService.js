@@ -11,14 +11,14 @@ export default class TextService {
     this.#view = view;
 
     this.#htmlLoader = new HtmlLoader();
-    this.#chordsService = new ChordsService();
+    this.#chordsService = new ChordsService(this.#view);
   }
 
   async load(text) {
     const content = await this.#htmlLoader.load(text);
     this.#view.setText(content)
 
-    this.#chordsService.getChords();
+    // this.#chordsService.getChords();
   }
 
   transpose(count) {
