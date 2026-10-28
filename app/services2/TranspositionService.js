@@ -5,11 +5,17 @@ export default class TranspositionService {
   constructor(song, view) {
     this.#song = song;
     this.#view = view;
+
+    this.setTransposition();
+  }
+
+  setTransposition() {
+    this.#view.song.setKey(this.#song.key, this.#song.isTransposed());
   }
 
   transpose(count) {
     this.#song.transpose(count);
 
-    this.#view.song.setKey(this.#song.key, this.#song.isTransposed());
+    this.setTransposition();
   }
 }
