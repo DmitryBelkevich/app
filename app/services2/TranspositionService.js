@@ -4,7 +4,7 @@ export default class TranspositionService {
 
   #instrumentService;
   
-  constructor(song, view, nstrumentService) {
+  constructor(song, view, instrumentService) {
     this.#song = song;
     this.#view = view;
     this.#instrumentService = instrumentService;
