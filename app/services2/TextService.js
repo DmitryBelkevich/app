@@ -14,13 +14,12 @@ export default class TextService {
 
   async load(text) {
     const content = await this.#htmlLoader.load(text);
+    this.#view.setText(content)
     
     this.#chords.length = 0;
     this.#chords.push(...this.#getChords());
 
     console.log(this.#chords);
-    
-    this.#view.setText(content)
   }
 
   #getChords() {
