@@ -28,7 +28,8 @@ export default class InstrumentService {
     this.setTransposition();
 
     // text
-    this.#textService = new TextService();
+    this.#textService = new TextService(this.#view);
+    this.#textService.load(this.#instrument.chords);
   }
 
   setTransposition() {
@@ -55,11 +56,13 @@ export default class InstrumentService {
 }
 
 class TextService {
-  #song;
   #view;
   
-  constructor(song, view) {
-    this.#song = song;
+  constructor(view) {
     this.#view = view;
+  }
+
+  load(text) {
+    this.#view.text.setText(text)
   }
 }
