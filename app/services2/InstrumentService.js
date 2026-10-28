@@ -45,15 +45,12 @@ export default class InstrumentService {
 }
 
 class TuningService {
-  #song;
-  #view;
-
   #instrument;
+  #view;
   
-  constructor(song, view, instrument) {
-    this.#song = song;
-    this.#view = view;
+  constructor(instrument, view) {
     this.#instrument = instrument;
+    this.#view = view;
 
     this.loadTuning();
   }
