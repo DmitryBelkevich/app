@@ -8,7 +8,7 @@ export default class TuningService {
   loadTuning(instrument) {
     this.#view.tuning.clear();
 
-    const tuning = this.#instrument.tuning;
+    const tuning = instrument.tuning;
 
     if (!tuning)
       return;
@@ -17,7 +17,7 @@ export default class TuningService {
     
     tuning.forEach(note => this.#view.tuning.addString(note, isStandard));
 
-    if (this.#instrument.capo)
-      this.#view.tuning.addCapo(this.#instrument.capo);
+    if (instrument.capo)
+      this.#view.tuning.addCapo(instrument.capo);
   }
 }
