@@ -21,6 +21,8 @@ export default class TextService {
     const chords = [];
     
     const lines = document.querySelectorAll('div.chords');
+
+    console.log(lines);
     
     lines.forEach(line => {
       const line_arr = line.querySelectorAll('div');
