@@ -7,9 +7,7 @@ import InstrumentService from '../services2/InstrumentService.js';
 
 import SongView from '../views/SongView.js';
 
-// import AutoScroll from '../helpers/page/AutoScroll.js';
-
-// import InstrumentService from '../services/InstrumentService.js';
+import AutoScroll from '../helpers/page/AutoScroll.js';
 
 export default class SongController {
   #songService;
@@ -32,7 +30,7 @@ export default class SongController {
     // 1. list
 
     // 2. auto-scroll
-    // this.autoScroll = new AutoScroll();
+    this.autoScroll = new AutoScroll();
 
     // *** title ***
     
@@ -52,9 +50,6 @@ export default class SongController {
 
     // *** text ***
 
-    // state
-    // this.instrumentService.load();
-
     // *** binding controller-view ***
 
     // binding: view -> model
@@ -65,7 +60,7 @@ export default class SongController {
     // this.view.navigator.bindList(this.openList);
 
     // 2. auto-scroll
-    // this.view.navigator.bindAutoScroll(this.auto_scroll);
+    this.view.navigator.bindAutoScroll(this.auto_scroll);
 
     // *** tabs ***
     
@@ -149,9 +144,6 @@ export default class SongController {
   transpose_down_song = () => {
     this.#transpositionService.transpose(-1);
     this.#instrumentService.setTransposition();
-    
-    // tuning-view
-    // this.instrumentService.loadTuning();
   }
 
   // 4. transpose up (song)
@@ -159,9 +151,6 @@ export default class SongController {
   transpose_up_song = () => {
     this.#transpositionService.transpose(1);
     this.#instrumentService.setTransposition();
-
-    // tuning-view
-    // this.instrumentService.loadTuning();
   }
 
   // *** instrument ***
@@ -178,18 +167,12 @@ export default class SongController {
 
   transpose_down_instrument = () => {
     this.#instrumentService.transpose(-1);
-
-    // tuning-view
-    // this.instrumentService.loadTuning();
   }
 
   // 4. transpose down (instrument)
 
   transpose_up_instrument = () => {
     this.#instrumentService.transpose(1);
-
-    // tuning-view
-    // this.instrumentService.loadTuning();
   }
 
   // *** text ***
