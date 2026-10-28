@@ -11,6 +11,7 @@ export default class TranspositionService {
 
   setTransposition() {
     this.#view.song.setKey(this.#song.key, this.#song.isTransposed());
+    // this.#view.song.setTransposition(this.#song.transposition);
   }
 
   transpose(count) {
