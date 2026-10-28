@@ -38,6 +38,8 @@ export default class InstrumentService {
     this.#instrument = this.#song.instruments[index];
 
     this.setTransposition();
+
+    this.#tuningService.loadTuning();
   }
 }
 
