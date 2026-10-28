@@ -1,3 +1,5 @@
+import Chord from '../models/Chord.js';
+
 export default class ChordsService {
   #chords = [];
 
@@ -15,8 +17,9 @@ export default class ChordsService {
   transpose(count) {
     this.#chords.forEach(element => {
       const content = element.textContent;//Am
-      
-      console.log(content);
+
+      const chord = new Chord(content);
+      console.log(chord);
     });
   }
 }
