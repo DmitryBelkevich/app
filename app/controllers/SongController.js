@@ -179,29 +179,33 @@ export default class SongController {
 
   // // 3. transpose down (instrument)
 
-  // transpose_down_instrument = () => {
-  //   // this.instrumentService.transposeService.transposeDown();
+  transpose_down_instrument = () => {
+  // this.instrumentService.transposeService.transposeDown();
 
   //   const instrument = this.instrumentService.getCurrentInstrument();
   //   instrument.transpose(-1);
   //   this.instrumentService.loadKey();
 
+    this.#instrumentService.transpose(-1);
+
   //   // tuning-view
   //   this.instrumentService.loadTuning();
-  // }
+  }
 
   // // 4. transpose down (instrument)
 
-  // transpose_up_instrument = () => {
-  //   // this.instrumentService.transposeService.transposeUp();
+  transpose_up_instrument = () => {
+  // this.instrumentService.transposeService.transposeUp();
 
   //   const instrument = this.instrumentService.getCurrentInstrument();
   //   instrument.transpose(1);
   //   this.instrumentService.loadKey();
 
+    this.#instrumentService.transpose(1);
+
   //   // tuning-view
   //   this.instrumentService.loadTuning();
-  // }
+  }
 
   // *** text ***
 }
