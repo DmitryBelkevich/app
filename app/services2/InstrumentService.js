@@ -2,13 +2,15 @@ export default class InstrumentService {
   #song;
   #view;
 
-  #tuningService;
-
   #instrument;
+
+  #tuningService;
   
   constructor(song, view) {
     this.#song = song;
     this.#view = view;
+
+    this.#instrument = this.#song.instruments[0];//this.getCurrentInstrument();
 
     // dropdown
     this.#song.instruments.forEach((instrument, index) => {
@@ -16,8 +18,6 @@ export default class InstrumentService {
     });
 
     this.#tuningService = new TuningService();
-
-    this.#instrument = this.#song.instruments[0];//this.getCurrentInstrument();
 
     this.setTransposition();
   }
