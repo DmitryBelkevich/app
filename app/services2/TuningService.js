@@ -5,14 +5,14 @@ export default class TuningService {
     this.#view = view;
   }
 
-  loadTuning(instrument) {
+  loadTuning(tuning, capo) {
     this.clear();
 
-    if (instrument.tuning)
-      instrument.tuning.forEach(note => this.#view.tuning.addString(note, instrument.tuning.isStandard()));
+    if (tuning)
+      tuning.forEach(note => this.#view.tuning.addString(note, tuning.isStandard()));
 
-    if (instrument.capo)
-      this.#view.tuning.addCapo(instrument.capo);
+    if (capo)
+      this.#view.tuning.addCapo(capo);
   }
 
   clear() {
