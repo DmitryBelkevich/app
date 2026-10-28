@@ -7,6 +7,7 @@ export default class InstrumentService {
   #instrument;
 
   #tuningService;
+  #textService;
   
   constructor(song, view) {
     this.#song = song;
@@ -19,10 +20,14 @@ export default class InstrumentService {
       this.#view.instrument.addOption(index, instrument.title, instrument.color);
     });
 
+    // tuning
     this.#tuningService = new TuningService(this.#view);
     this.#tuningService.loadTuning(this.#instrument.tuning, this.#instrument.capo);
 
-    this.setTransposition();
+    // transposition
+    // this.setTransposition();
+
+    // text
   }
 
   setTransposition() {
@@ -45,5 +50,15 @@ export default class InstrumentService {
     this.setTransposition();
 
     this.#tuningService.loadTuning(this.#instrument.tuning, this.#instrument.capo);
+  }
+}
+
+class TextService {
+  #song;
+  #view;
+  
+  constructor(song, view) {
+    this.#song = song;
+    this.#view = view;
   }
 }
