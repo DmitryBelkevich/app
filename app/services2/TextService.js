@@ -2,14 +2,18 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 
 export default class TextService {
   #view;
+  #htmlLoader;
+  
   #chords = [];
   
   constructor(view) {
     this.#view = view;
+
+    this.#htmlLoader = new HtmlLoader();
   }
 
   async load(text) {
-    const content = await this.htmlLoader.load(text);
+    const content = await this.#htmlLoader.load(text);
     
     // this.#chords.length = 0;
     // this.#chords.push(...this.#getChords());
