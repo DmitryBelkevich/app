@@ -9,13 +9,13 @@ export default class TuningService {
     this.clear();
 
     if (tuning)
-      tuning.forEach(note => this.#view.tuning.addString(note, tuning.isStandard()));
+      tuning.forEach(note => this.#view.addString(note, tuning.isStandard()));
 
     if (capo)
       this.#view.tuning.addCapo(capo);
   }
 
   clear() {
-    this.#view.tuning.clear();
+    this.#view.clear();
   }
 }
