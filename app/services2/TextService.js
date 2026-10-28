@@ -18,6 +18,10 @@ export default class TextService {
 
     this.#chordsService.getChords();
   }
+
+  transpose(count) {
+    this.#chordsService.transpose(count);
+  }
 }
 
 class ChordsService {
@@ -32,5 +36,9 @@ class ChordsService {
       const line_arr = line.querySelectorAll('div');
       this.#chords.push(...line_arr);
     });
+  }
+
+  transpose(count) {
+    console.log(this.#chords);
   }
 }
