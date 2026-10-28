@@ -44,6 +44,8 @@ export default class InstrumentService {
     this.#instrument.transpose(count);
 
     this.setTransposition();
+
+    this.#textService.transpose(count);
   }
 
   load(index) {
