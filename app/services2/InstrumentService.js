@@ -17,7 +17,7 @@ export default class InstrumentService {
       this.#view.instrument.addOption(index, instrument.title, instrument.color);
     });
 
-    this.#tuningService = new TuningService(this.#instrument);
+    this.#tuningService = new TuningService(this.#instrument, this.#view);
 
     this.setTransposition();
   }
