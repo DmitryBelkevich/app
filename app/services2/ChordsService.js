@@ -19,7 +19,7 @@ export default class ChordsService {
       const content = element.textContent;
 
       const chord = new Chord(content);
-      chord.transpose(count);
+      chord.transpose(-count);
 
       element.textContent = chord;
     });
