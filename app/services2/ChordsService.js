@@ -12,11 +12,16 @@ export default class ChordsService {
     
     elements.forEach(element => {
       const content = element.textContent;
+      const chords_arr = content.split(" ");
 
-      const chord = new Chord(content);
-      chord.transpose(-count);
+      chords_arr.forEach(str, index => {
+        const chord = new Chord(str);
+        chord.transpose(-count);
 
-      element.textContent = chord;
+        chords_arr[index] = chord;
+      });
+
+      element.textContent = chords_arr.join(" ");
     });
   }
 }
