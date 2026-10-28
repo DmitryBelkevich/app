@@ -8,9 +8,9 @@ export default class ChordsService {
   }
 
   transpose(count) {
-    const c = this.#view.getChords()
+    const elements = this.#view.getChords()
     
-    c.forEach(element => {
+    elements.forEach(element => {
       const content = element.textContent;
 
       const chord = new Chord(content);
