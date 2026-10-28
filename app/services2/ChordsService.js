@@ -2,12 +2,12 @@ import Chord from '../models/Chord.js';
 
 export default class ChordsService {
   #view;
-  #chords;
+  // #chords;
 
   constructor(view) {
     this.#view = view;
 
-    this.#chords = this.#view.getChords();
+    // this.#chords = this.#view.getChords();
   }
 
   // getChords() {
@@ -22,14 +22,15 @@ export default class ChordsService {
   // }
 
   transpose(count) {
-    console.log(this.#view.getChords());
-    // this.#chords.forEach(element => {
-    //   const content = element.textContent;
+    const c = this.#view.getChords()
+    
+    c.forEach(element => {
+      const content = element.textContent;
 
-    //   const chord = new Chord(content);
-    //   chord.transpose(-count);
+      const chord = new Chord(content);
+      chord.transpose(-count);
 
-    //   element.textContent = chord;
-    // });
+      element.textContent = chord;
+    });
   }
 }
