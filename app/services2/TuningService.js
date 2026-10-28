@@ -11,7 +11,7 @@ export default class TuningService {
     if (!instrument.tuning)
       return;
     
-    tuning.forEach(note => this.#view.tuning.addString(note, instrument.tuning.isStandard));
+    instrument.tuning.forEach(note => this.#view.tuning.addString(note, instrument.tuning.isStandard));
 
     if (instrument.capo)
       this.#view.tuning.addCapo(instrument.capo);
