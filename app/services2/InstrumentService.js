@@ -20,7 +20,7 @@ export default class InstrumentService {
 
   setTransposition() {
     this.#view.instrument.setKey(this.#instrument.key.toString());
-    console.log(this.#instrument.transposition);
+    this.#view.instrument.setTransposition(this.#instrument.transposition);
   }
 
   load(index) {
