@@ -25,8 +25,6 @@ export default class SongController {
     // view
     this.view = new SongView();
 
-    this.#transpositionService = new TranspositionService(this.song, this.view);
-
     // *** nav ***
 
     // 1. list
@@ -42,14 +40,7 @@ export default class SongController {
 
     // *** settings-song ***
 
-    // 1. key-signature (song)
-    this.view.song.setKey(this.song.key, this.song.isTransposed());
-
-    // 2. transposition_song
-    // this.view.song.setTransposition(this.song.transposition);
-
-    // 3. transpose down (song)
-    // 4. transpose up (song)
+    this.#transpositionService = new TranspositionService(this.song, this.view);
 
     // *** instrument ***
 
