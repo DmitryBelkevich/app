@@ -16,10 +16,10 @@ export default class ChordsService {
 
   transpose(count) {
     this.#chords.forEach(element => {
-      const content = element.textContent;//Am
+      const content = element.textContent;
 
       const chord = new Chord(content);
-      console.log(chord);
+      chord.transpose(count);
     });
   }
 }
