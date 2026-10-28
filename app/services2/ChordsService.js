@@ -21,7 +21,8 @@ export default class ChordsService {
   //   });
   // }
 
-  transpose(count) {console.log(this.#chords);
+  transpose(count) {
+    console.log(this.#view.getChords());
     // this.#chords.forEach(element => {
     //   const content = element.textContent;
 
