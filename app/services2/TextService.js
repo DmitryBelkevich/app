@@ -15,10 +15,10 @@ export default class TextService {
   async load(text) {
     const content = await this.#htmlLoader.load(text);
     
-    // this.#chords.length = 0;
-    // this.#chords.push(...this.#getChords());
+    this.#chords.length = 0;
+    this.#chords.push(...this.#getChords());
 
-    // console.log(this.#chords);
+    console.log(this.#chords);
     
     this.#view.setText(content)
   }
@@ -27,8 +27,6 @@ export default class TextService {
     const chords = [];
     
     const lines = document.querySelectorAll('div.chords');
-
-    console.log(lines);
     
     lines.forEach(line => {
       const line_arr = line.querySelectorAll('div');
