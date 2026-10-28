@@ -172,7 +172,7 @@ export default class SongController {
   // // 1. dropdown
 
   select_instrument = (event) => {
-    this.instrumentService.load(event.target.value);
+    this.#instrumentService.load(event.target.value);
   }
 
   // // 2. key-signature (instrument)
