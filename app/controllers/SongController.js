@@ -3,6 +3,7 @@ import Song from '../models/Song.js';
 import ParamsService from '../services2/ParamsService.js';
 import SongService from '../services2/SongService.js';
 import TranspositionService from '../services2/TranspositionService.js';
+import InstrumentService from '../services2/InstrumentService.js';
 
 import SongView from '../views/SongView.js';
 
@@ -13,6 +14,7 @@ import SongView from '../views/SongView.js';
 export default class SongController {
   #songService;
   #transpositionService;
+  #instrumentService;
   
   async init() {
     const paramsService = new ParamsService();
@@ -44,20 +46,7 @@ export default class SongController {
 
     // *** instrument ***
 
-    // 1. dropdown
-    // this.song.instruments.forEach((instrument, index) => {
-    //   this.view.instrument.addOption(index, instrument.title, instrument.color);
-    // });
-
-    // 2. key-signature (instrument)
-
-    // this.instrumentService = new InstrumentService(this.song, this.view);
-    // const instrument = this.instrumentService.getCurrentInstrument();
-    // this.view.instrument.setKey(instrument.key.toString());
-
-    // 3. transpose down (instrument)
-
-    // 4. transpose up (instrument)
+    this.#instrumentService = new InstrumentService(this.song, this.view);
 
     // *** tuning ***
 
@@ -99,7 +88,7 @@ export default class SongController {
     // *** instrument ***
 
     // 1. dropdown
-    // this.view.instrument.bindDropdown(this.select_instrument);
+    this.view.instrument.bindDropdown(this.select_instrument);
 
     // 2. key-signature (instrument)
 
@@ -182,10 +171,9 @@ export default class SongController {
 
   // // 1. dropdown
 
-  // select_instrument = (event) => {
-  //   this.instrumentService.current = event.target.value;
-  //   this.instrumentService.load();
-  // }
+  select_instrument = (event) => {
+    this.instrumentService.load(event.target.value);
+  }
 
   // // 2. key-signature (instrument)
 
