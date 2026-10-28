@@ -23,11 +23,14 @@ export default class Instrument {
     this.key = document.createElement("div");
     this.key.id = "key-instrument";
 
-    // 3. transpose down
+    // 3. transposition
+    this.transposition = document.createElement("div");
+
+    // 4. transpose down
     this.transpose_down = document.createElement("button");
     this.transpose_down.textContent = "🔽";
 
-    // 4. transpose up
+    // 5. transpose up
     this.transpose_up = document.createElement("button");
     this.transpose_up.textContent = "🔼";
 
@@ -35,6 +38,7 @@ export default class Instrument {
     this.#container.append(
       this.dropdown,
       this.key,
+      this.transposition,
       this.transpose_down,
       this.transpose_up,
     );
@@ -86,7 +90,13 @@ export default class Instrument {
     this.key.textContent = key;
   }
 
-  // 3. transpose down
+  // 3. transposition
+
+  setTransposition(count) {
+    this.transposition.textContent = count;
+  }
+
+  // 4. transpose down
 
   bindTransposeDown(handler) {
     this.transpose_down.addEventListener("click", () => {
@@ -94,7 +104,7 @@ export default class Instrument {
     });
   }
 
-  // 4. transpose up
+  // 5. transpose up
 
   bindTransposeUp(handler) {
     this.transpose_up.addEventListener("click", () => {
