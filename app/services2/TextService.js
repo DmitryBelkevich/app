@@ -9,12 +9,14 @@ export default class TextService {
   }
 
   load(text) {
-    this.#chords.length = 0;
-    this.#chords.push(...this.#getChords());
-
-    console.log(this.#chords);
+    const content = await this.htmlLoader.load(text);
     
-    this.#view.setText(text)
+    // this.#chords.length = 0;
+    // this.#chords.push(...this.#getChords());
+
+    // console.log(this.#chords);
+    
+    this.#view.setText(content)
   }
 
   #getChords() {
