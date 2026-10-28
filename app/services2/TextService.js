@@ -8,7 +8,7 @@ export default class TextService {
     this.#view = view;
   }
 
-  load(text) {
+  async load(text) {
     const content = await this.htmlLoader.load(text);
     
     // this.#chords.length = 0;
