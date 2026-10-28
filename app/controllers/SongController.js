@@ -113,7 +113,7 @@ export default class SongController {
     window.location.href = window.location.origin + "/app" + "/list";
   }
 
-  // // 2. auto-scroll
+  // 2. auto-scroll
   
   auto_scroll = () => {
     // this.autoScroll.speed = 10;
@@ -150,20 +150,18 @@ export default class SongController {
     this.#transpositionService.transpose(-1);
     this.#instrumentService.setTransposition();
     
-  //   // tuning-view
-  //   this.instrumentService.loadKey();
-  //   this.instrumentService.loadTuning();
+    // tuning-view
+    // this.instrumentService.loadTuning();
   }
 
-  // // 4. transpose up (song)
+  // 4. transpose up (song)
 
   transpose_up_song = () => {
     this.#transpositionService.transpose(1);
     this.#instrumentService.setTransposition();
 
-  //   // tuning-view
-  //   this.instrumentService.loadKey();
-  //   this.instrumentService.loadTuning();
+    // tuning-view
+    // this.instrumentService.loadTuning();
   }
 
   // *** instrument ***
@@ -174,24 +172,24 @@ export default class SongController {
     this.#instrumentService.load(event.target.value);
   }
 
-  // // 2. key-signature (instrument)
+  // 2. key-signature (instrument)
 
-  // // 3. transpose down (instrument)
+  // 3. transpose down (instrument)
 
   transpose_down_instrument = () => {
     this.#instrumentService.transpose(-1);
 
-  //   // tuning-view
-  //   this.instrumentService.loadTuning();
+    // tuning-view
+    // this.instrumentService.loadTuning();
   }
 
-  // // 4. transpose down (instrument)
+  // 4. transpose down (instrument)
 
   transpose_up_instrument = () => {
     this.#instrumentService.transpose(1);
 
-  //   // tuning-view
-  //   this.instrumentService.loadTuning();
+    // tuning-view
+    // this.instrumentService.loadTuning();
   }
 
   // *** text ***
