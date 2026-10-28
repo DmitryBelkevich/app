@@ -21,14 +21,14 @@ export default class ChordsService {
   //   });
   // }
 
-  transpose(count) {
-    this.#chords.forEach(element => {
-      const content = element.textContent;
+  transpose(count) {console.log(this.#chords);
+    // this.#chords.forEach(element => {
+    //   const content = element.textContent;
 
-      const chord = new Chord(content);
-      chord.transpose(-count);
+    //   const chord = new Chord(content);
+    //   chord.transpose(-count);
 
-      element.textContent = chord;
-    });
+    //   element.textContent = chord;
+    // });
   }
 }
