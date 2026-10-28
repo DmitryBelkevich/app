@@ -39,6 +39,10 @@ class ChordsService {
   }
 
   transpose(count) {
-    console.log(this.#chords);
+    this.#chords.forEach(element => {
+      const content = element.textContent;//Am
+      
+      console.log(content);
+    });
   }
 }
