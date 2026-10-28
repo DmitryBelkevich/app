@@ -13,10 +13,11 @@ export default class SongController {
   #paramsService;
   
   controller() {
-    this.#paramsService = new ParamsService();
+    
   }
   
   async init() {
+    this.#paramsService = new ParamsService();
     console.log(this.#paramsService);
     const id = this.#paramsService.getId();
     
