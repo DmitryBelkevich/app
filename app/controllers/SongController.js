@@ -10,16 +10,9 @@ import SongView from '../views/SongView.js';
 // import InstrumentService from '../services/InstrumentService.js';
 
 export default class SongController {
-  #paramsService;
-  
-  controller() {
-    
-  }
-  
   async init() {
-    this.#paramsService = new ParamsService();
-    console.log(this.#paramsService);
-    const id = this.#paramsService.getId();
+    const paramsService = new ParamsService();
+    const id = paramsService.getId();
     
     // model
     this.songService = new SongService();
@@ -27,6 +20,8 @@ export default class SongController {
 
     // view
     this.view = new SongView();
+
+    console.log(this.song);
 
     // *** nav ***
 
