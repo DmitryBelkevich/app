@@ -22,7 +22,7 @@ export default class InstrumentService {
     });
 
     // tuning
-    this.#tuningService = new TuningService(this.#view);
+    this.#tuningService = new TuningService(this.#view.tuning);
     this.#tuningService.loadTuning(this.#instrument.tuning, this.#instrument.capo);
 
     // transposition
