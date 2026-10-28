@@ -1,5 +1,7 @@
 import HtmlLoader from '../loaders/HtmlLoader.js';
 
+import ChordsService from './ChordsService.js';
+
 export default class TextService {
   #view;
   #htmlLoader;
@@ -21,28 +23,5 @@ export default class TextService {
 
   transpose(count) {
     this.#chordsService.transpose(count);
-  }
-}
-
-class ChordsService {
-  #chords = [];
-
-  getChords() {
-    this.#chords.length = 0;
-    
-    const lines = document.querySelectorAll('div.chords');
-    
-    lines.forEach(line => {
-      const line_arr = line.querySelectorAll('div');
-      this.#chords.push(...line_arr);
-    });
-  }
-
-  transpose(count) {
-    this.#chords.forEach(element => {
-      const content = element.textContent;//Am
-      
-      console.log(content);
-    });
   }
 }
