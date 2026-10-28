@@ -26,7 +26,7 @@ export default class InstrumentService {
     this.#tuningService.loadTuning(this.#instrument.tuning, this.#instrument.capo);
 
     // transposition
-    this.setTransposition();
+    this.setTransposition( );
 
     // text
     this.#textService = new TextService(this.#view.text);
