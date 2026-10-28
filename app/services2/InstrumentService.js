@@ -55,6 +55,6 @@ export default class InstrumentService {
     this.setTransposition();
 
     this.#tuningService.loadTuning(this.#instrument.tuning, this.#instrument.capo);
-    this.#textService.load(this.#instrument.chords);
+    this.#textService.load(this.#instrument.chords, this.#instrument.transposition);
   }
 }
