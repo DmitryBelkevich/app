@@ -64,7 +64,7 @@ class TuningService {
     
     tuning.forEach(note => this.#view.tuning.addString(note, isStandard));
 
-    if (instrument.capo)
-      this.#view.tuning.addCapo(instrument.capo);
+    if (this.#instrument.capo)
+      this.#view.tuning.addCapo(this.#instrument.capo);
   }
 }
