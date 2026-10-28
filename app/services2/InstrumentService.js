@@ -2,8 +2,6 @@ export default class InstrumentService {
   #song;
   #view;
 
-  #dropdown;
-
   #instrument;
   
   constructor(song, view) {
