@@ -31,7 +31,7 @@ export default class InstrumentService {
 
   load(index) {
     this.#view.instrument.setOption(index);
-    console.log("load instrument");
+    this.#instrument = this.#song.instruments[index];
 
     this.setTransposition();
   }
