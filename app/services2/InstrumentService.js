@@ -19,7 +19,7 @@ export default class InstrumentService {
 
     this.#tuningService = new TuningService(this.#instrument);
 
-    this.setTransposition( );
+    this.setTransposition();
   }
 
   setTransposition() {
