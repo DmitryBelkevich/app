@@ -42,7 +42,7 @@ export default class SongController {
 
     // *** settings-song ***
 
-    this.#transpositionService = new TranspositionService(this.song, this.view, this.#instrumentService);
+    this.#transpositionService = new TranspositionService(this.song, this.view);
 
     // *** instrument ***
 
@@ -148,6 +148,7 @@ export default class SongController {
 
   transpose_down_song = () => {
     this.#transpositionService.transpose(-1);
+    this.#instrumentService.setTransposition();
     
   //   // tuning-view
   //   this.instrumentService.loadKey();
@@ -158,6 +159,7 @@ export default class SongController {
 
   transpose_up_song = () => {
     this.#transpositionService.transpose(1);
+    this.#instrumentService.setTransposition();
   //   // key (song)
   //   this.song.transpose(1);
   //   this.view.song.setKey(this.song.key, this.song.isTransposed());
