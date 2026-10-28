@@ -17,9 +17,7 @@ export default class InstrumentService {
     this.#instrument = this.#song.instruments[0];//this.getCurrentInstrument();
 
     // dropdown
-    this.#song.instruments.forEach((instrument, index) => {
-      this.#view.instrument.addOption(index, instrument.title, instrument.color);
-    });
+    this.#view.instrument.create(this.#song.instruments);
 
     // tuning
     this.#tuningService = new TuningService(this.#view.tuning);
