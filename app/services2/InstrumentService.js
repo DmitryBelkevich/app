@@ -23,6 +23,12 @@ export default class InstrumentService {
     this.#view.instrument.setTransposition(this.#instrument.transposition);
   }
 
+  transpose(count) {
+    this.#instrument.transpose(count);
+
+    this.setTransposition();
+  }
+
   load(index) {
     this.#view.instrument.setOption(index);
     console.log("load instrument");
