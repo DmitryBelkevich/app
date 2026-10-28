@@ -29,7 +29,7 @@ export default class InstrumentService {
     this.setTransposition();
 
     // text
-    this.#textService = new TextService(this.#view.text);
+    this.#textService = new TextService(this.#instrument, this.#view.text);
     this.#textService.load(this.#instrument.chords);
   }
 
