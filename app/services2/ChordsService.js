@@ -14,7 +14,7 @@ export default class ChordsService {
       const content = element.textContent;
       const chords_arr = content.split(" ");
 
-      chords_arr.forEach(str, index => {
+      chords_arr.forEach((str, index) => {
         const chord = new Chord(str);
         chord.transpose(-count);
 
