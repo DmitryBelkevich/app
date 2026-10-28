@@ -1,5 +1,8 @@
 import Song from '../models/Song.js';
+
+import ParamsService from '../services2/ParamsService.js';
 import SongService from '../services2/SongService.js';
+
 import SongView from '../views/SongView.js';
 
 // import AutoScroll from '../helpers/page/AutoScroll.js';
@@ -7,11 +10,14 @@ import SongView from '../views/SongView.js';
 // import InstrumentService from '../services/InstrumentService.js';
 
 export default class SongController {
-  #params;
-
+  #paramsService;
+  
+  controller() {
+    this.#paramsService = new ParamsService();
+  }
+  
   async init() {
-    this.#params = new URLSearchParams(window.location.search);
-    const id = this.#params.get("id");
+    const id = this.#paramsService.getId();
     
     // model
     this.songService = new SongService();
