@@ -1,4 +1,5 @@
 import TuningService from './TuningService.js';
+import TextService from './TextService.js';
 
 export default class InstrumentService {
   #song;
@@ -53,17 +54,5 @@ export default class InstrumentService {
 
     this.#tuningService.loadTuning(this.#instrument.tuning, this.#instrument.capo);
     this.#textService.load(this.#instrument.chords);
-  }
-}
-
-class TextService {
-  #view;
-  
-  constructor(view) {
-    this.#view = view;
-  }
-
-  load(text) {
-    this.#view.text.setText(text)
   }
 }
