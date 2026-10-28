@@ -42,11 +42,11 @@ export default class SongController {
 
     // *** settings-song ***
 
-    this.#transpositionService = new TranspositionService(this.song, this.view);
+    this.#transpositionService = new TranspositionService(this.song, this.view, this.#instrumentService);
 
     // *** instrument ***
 
-    this.#instrumentService = new InstrumentService(this.song, this.view, this.#transpositionService);
+    this.#instrumentService = new InstrumentService(this.song, this.view);
 
     // *** tuning ***
 
