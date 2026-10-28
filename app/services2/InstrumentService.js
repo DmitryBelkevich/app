@@ -19,7 +19,8 @@ export default class InstrumentService {
       this.#view.instrument.addOption(index, instrument.title, instrument.color);
     });
 
-    this.#tuningService = new TuningService(this.#instrument, this.#view);
+    this.#tuningService = new TuningService(this.#view);
+    this.#tuningService.loadTuning(this.#instrument);
 
     this.setTransposition();
   }
@@ -28,8 +29,7 @@ export default class InstrumentService {
     this.#view.instrument.setKey(this.#instrument.key.toString());
     this.#view.instrument.setTransposition(this.#instrument.transposition);
 
-    this.#tuningService.instrument = this.#instrument;
-    this.#tuningService.loadTuning();
+    this.#tuningService.loadTuning(this.#instrument);
   }
 
   transpose(count) {
@@ -44,7 +44,6 @@ export default class InstrumentService {
 
     this.setTransposition();
 
-    this.#tuningService.instrument = this.#instrument;
-    this.#tuningService.loadTuning();
+    this.#tuningService.loadTuning(this.#instrument);
   }
 }
