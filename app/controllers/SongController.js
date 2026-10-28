@@ -25,7 +25,7 @@ export default class SongController {
     // 1. list
 
     // 2. auto-scroll
-    this.autoScroll = new AutoScroll();
+    // this.autoScroll = new AutoScroll();
 
     // *** title ***
     
