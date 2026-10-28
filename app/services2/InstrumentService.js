@@ -2,6 +2,8 @@ export default class InstrumentService {
   #song;
   #view;
 
+  #tuningService;
+
   #instrument;
   
   constructor(song, view) {
@@ -12,6 +14,8 @@ export default class InstrumentService {
     this.#song.instruments.forEach((instrument, index) => {
       this.#view.instrument.addOption(index, instrument.title, instrument.color);
     });
+
+    this.#tuningService = new TuningService();
 
     this.#instrument = this.#song.instruments[0];//this.getCurrentInstrument();
 
@@ -34,5 +38,33 @@ export default class InstrumentService {
     this.#instrument = this.#song.instruments[index];
 
     this.setTransposition();
+  }
+}
+
+class TuningService {
+  #song;
+  #view;
+  
+  constructor(song, view) {
+    this.#song = song;
+    this.#view = view;
+
+    this.loadTuning();
+  }
+
+  loadTuning() {
+    this.#view.tuning.clear();
+
+    const tuning = this.#instrument.tuning;
+
+    if (!tuning)
+      return;
+
+    const isStandard = tuning.isStandard();
+    
+    tuning.forEach(note => this.#view.tuning.addString(note, isStandard));
+
+    if (instrument.capo)
+      this.#view.tuning.addCapo(instrument.capo);
   }
 }
