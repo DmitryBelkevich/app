@@ -1,19 +1,11 @@
 export default class TuningService {
-  #instrument;
   #view;
   
-  constructor(instrument, view) {
-    this.#instrument = instrument;
+  constructor(view) {
     this.#view = view;
-
-    this.loadTuning();
   }
 
-  set instrument(instrument) {
-    this.#instrument = instrument;
-  }
-
-  loadTuning() {
+  loadTuning(instrument) {
     this.#view.tuning.clear();
 
     const tuning = this.#instrument.tuning;
