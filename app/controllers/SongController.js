@@ -2,6 +2,7 @@ import Song from '../models/Song.js';
 
 import ParamsService from '../services2/ParamsService.js';
 import SongService from '../services2/SongService.js';
+import TranspositionService from '../services2/TranspositionService.js';
 
 import SongView from '../views/SongView.js';
 
@@ -10,18 +11,21 @@ import SongView from '../views/SongView.js';
 // import InstrumentService from '../services/InstrumentService.js';
 
 export default class SongController {
+  #songService;
+  #transpositionService;
+  
   async init() {
     const paramsService = new ParamsService();
     const id = paramsService.getId();
     
     // model
-    this.songService = new SongService();
-    this.song = await this.songService.getById(id);
+    this.#songService = new SongService();
+    this.song = await this.#songService.getById(id);
 
     // view
     this.view = new SongView();
 
-    console.log(this.song);
+    this.#transpositionService = new TranspositionService(this.song, this.view);
 
     // *** nav ***
 
@@ -162,19 +166,18 @@ export default class SongController {
 
   // 3. transpose down (song)
 
-  // transpose_down_song = () => {
-  //   // key (song)
-  //   this.song.transpose(-1);
-  //   this.view.song.setKey(this.song.key, this.song.isTransposed());
-
+  transpose_down_song = () => {
+    this.#transpositionService.transpose(-1);
+    
   //   // tuning-view
   //   this.instrumentService.loadKey();
   //   this.instrumentService.loadTuning();
-  // }
+  }
 
   // // 4. transpose up (song)
 
-  // transpose_up_song = () => {
+  transpose_up_song = () => {
+    this.#transpositionService.transpose(1);
   //   // key (song)
   //   this.song.transpose(1);
   //   this.view.song.setKey(this.song.key, this.song.isTransposed());
@@ -182,7 +185,7 @@ export default class SongController {
   //   // tuning-view
   //   this.instrumentService.loadKey();
   //   this.instrumentService.loadTuning();
-  // }
+  }
 
   // // *** instrument ***
 
