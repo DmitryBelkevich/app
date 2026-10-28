@@ -17,6 +17,7 @@ export default class SongController {
   }
   
   async init() {
+    console.log(this.#paramsService);
     const id = this.#paramsService.getId();
     
     // model
