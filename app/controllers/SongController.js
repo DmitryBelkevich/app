@@ -100,10 +100,10 @@ export default class SongController {
     // 2. transposition (song)
     
     // 3. transpose down (song)
-    // this.view.song.bindTransposeDown(this.transpose_down_song);
+    this.view.song.bindTransposeDown(this.transpose_down_song);
     
     // 4. transpose up (song)
-    // this.view.song.bindTransposeUp(this.transpose_up_song);
+    this.view.song.bindTransposeUp(this.transpose_up_song);
 
     // *** instrument ***
 
