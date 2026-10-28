@@ -46,7 +46,7 @@ export default class SongController {
 
     // *** instrument ***
 
-    this.#instrumentService = new InstrumentService(this.song, this.view);
+    this.#instrumentService = new InstrumentService(this.song, this.view, this.#transpositionService);
 
     // *** tuning ***
 
