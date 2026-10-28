@@ -3,33 +3,34 @@ import HtmlLoader from '../loaders/HtmlLoader.js';
 export default class TextService {
   #view;
   #htmlLoader;
-  
-  #chords = [];
+  #chordsService;
   
   constructor(view) {
     this.#view = view;
 
     this.#htmlLoader = new HtmlLoader();
+    this.#chordsService = new ChordsService();
   }
 
   async load(text) {
     const content = await this.#htmlLoader.load(text);
     this.#view.setText(content)
-    
-    this.#chords.length = 0;
-    this.#chords.push(...this.#getChords());
-  }
 
-  #getChords() {
-    const chords = [];
+    this.#chordsService.getChords();
+  }
+}
+
+class ChordsService {
+  #chords = [];
+
+  getChords() {
+    this.#chords.length = 0;
     
     const lines = document.querySelectorAll('div.chords');
     
     lines.forEach(line => {
       const line_arr = line.querySelectorAll('div');
-      chords.push(...line_arr);
+      this.#chords.push(...line_arr);
     });
-
-    return chords;
   }
 }
