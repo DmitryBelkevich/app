@@ -93,10 +93,10 @@ export default class SongController {
     // 2. key-signature (instrument)
 
     // 3. transpose down (instrument)
-    // this.view.instrument.bindTransposeDown(this.transpose_down_instrument);
+    this.view.instrument.bindTransposeDown(this.transpose_down_instrument);
 
     // 4. transpose up (instrument)
-    // this.view.instrument.bindTransposeUp(this.transpose_up_instrument);
+    this.view.instrument.bindTransposeUp(this.transpose_up_instrument);
 
     // *** tuning ***
 
