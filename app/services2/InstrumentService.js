@@ -25,6 +25,9 @@ export default class InstrumentService {
   setTransposition() {
     this.#view.instrument.setKey(this.#instrument.key.toString());
     this.#view.instrument.setTransposition(this.#instrument.transposition);
+
+    this.#tuningService.instrument = this.#instrument;
+    this.#tuningService.loadTuning();
   }
 
   transpose(count) {
