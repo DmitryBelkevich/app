@@ -1,10 +1,10 @@
 import Song from '../models/Song.js';
-import SongService from '../services/SongService.js';
+import SongService from '../services2/SongService.js';
 import SongView from '../views/SongView.js';
 
-import AutoScroll from '../helpers/page/AutoScroll.js';
+// import AutoScroll from '../helpers/page/AutoScroll.js';
 
-import InstrumentService from '../services/InstrumentService.js';
+// import InstrumentService from '../services/InstrumentService.js';
 
 export default class SongController {
   #params;
@@ -39,7 +39,7 @@ export default class SongController {
     this.view.song.setKey(this.song.key, this.song.isTransposed());
 
     // 2. transposition_song
-    this.view.song.setTransposition(this.song.transposition);
+    // this.view.song.setTransposition(this.song.transposition);
 
     // 3. transpose down (song)
     // 4. transpose up (song)
@@ -47,15 +47,15 @@ export default class SongController {
     // *** instrument ***
 
     // 1. dropdown
-    this.song.instruments.forEach((instrument, index) => {
-      this.view.instrument.addOption(index, instrument.title, instrument.color);
-    });
+    // this.song.instruments.forEach((instrument, index) => {
+    //   this.view.instrument.addOption(index, instrument.title, instrument.color);
+    // });
 
     // 2. key-signature (instrument)
 
-    this.instrumentService = new InstrumentService(this.song, this.view);
-    const instrument = this.instrumentService.getCurrentInstrument();
-    this.view.instrument.setKey(instrument.key.toString());
+    // this.instrumentService = new InstrumentService(this.song, this.view);
+    // const instrument = this.instrumentService.getCurrentInstrument();
+    // this.view.instrument.setKey(instrument.key.toString());
 
     // 3. transpose down (instrument)
 
@@ -66,7 +66,7 @@ export default class SongController {
     // *** text ***
 
     // state
-    this.instrumentService.load();
+    // this.instrumentService.load();
 
     // *** binding controller-view ***
 
@@ -75,16 +75,16 @@ export default class SongController {
     // *** nav ***
 
     // 1. list
-    this.view.navigator.bindList(this.openList);
+    // this.view.navigator.bindList(this.openList);
 
     // 2. auto-scroll
-    this.view.navigator.bindAutoScroll(this.auto_scroll);
+    // this.view.navigator.bindAutoScroll(this.auto_scroll);
 
     // *** tabs ***
     
-    this.view.tabs.bindText(this.openText);
-    this.view.tabs.bindScore(this.openScore);
-    this.view.tabs.bindPlayback(this.openPlayback);
+    // this.view.tabs.bindText(this.openText);
+    // this.view.tabs.bindScore(this.openScore);
+    // this.view.tabs.bindPlayback(this.openPlayback);
 
     // *** settings-song ***
     
@@ -93,23 +93,23 @@ export default class SongController {
     // 2. transposition (song)
     
     // 3. transpose down (song)
-    this.view.song.bindTransposeDown(this.transpose_down_song);
+    // this.view.song.bindTransposeDown(this.transpose_down_song);
     
     // 4. transpose up (song)
-    this.view.song.bindTransposeUp(this.transpose_up_song);
+    // this.view.song.bindTransposeUp(this.transpose_up_song);
 
     // *** instrument ***
 
     // 1. dropdown
-    this.view.instrument.bindDropdown(this.select_instrument);
+    // this.view.instrument.bindDropdown(this.select_instrument);
 
     // 2. key-signature (instrument)
 
     // 3. transpose down (instrument)
-    this.view.instrument.bindTransposeDown(this.transpose_down_instrument);
+    // this.view.instrument.bindTransposeDown(this.transpose_down_instrument);
 
     // 4. transpose up (instrument)
-    this.view.instrument.bindTransposeUp(this.transpose_up_instrument);
+    // this.view.instrument.bindTransposeUp(this.transpose_up_instrument);
 
     // *** tuning ***
 
@@ -122,34 +122,34 @@ export default class SongController {
 
   // 1. list
 
-  openList = () => {
-    window.location.href = window.location.origin + "/app" + "/list";
-  }
+  // openList = () => {
+  //   window.location.href = window.location.origin + "/app" + "/list";
+  // }
 
-  // 2. auto-scroll
+  // // 2. auto-scroll
   
-  auto_scroll = () => {
-    // this.autoScroll.speed = 10;
+  // auto_scroll = () => {
+  //   // this.autoScroll.speed = 10;
     
-    this.autoScroll.run();
-  }
+  //   this.autoScroll.run();
+  // }
 
-  // *** tabs ***
+  // // *** tabs ***
 
-  openText = () => {
-    // console.log("open Text tab");
-    console.log(this.song);
-  }
+  // openText = () => {
+  //   // console.log("open Text tab");
+  //   console.log(this.song);
+  // }
 
-  openScore = () => {
-    if (!!this.song.score)
-      window.open(this.song.score, "_blank");
-  }
+  // openScore = () => {
+  //   if (!!this.song.score)
+  //     window.open(this.song.score, "_blank");
+  // }
 
-  openPlayback = () => {
-    if (!!this.song.playback)
-      window.open(this.song.playback, "_blank");
-  }
+  // openPlayback = () => {
+  //   if (!!this.song.playback)
+  //     window.open(this.song.playback, "_blank");
+  // }
 
   // *** settings-song ***
 
@@ -159,64 +159,64 @@ export default class SongController {
 
   // 3. transpose down (song)
 
-  transpose_down_song = () => {
-    // key (song)
-    this.song.transpose(-1);
-    this.view.song.setKey(this.song.key, this.song.isTransposed());
+  // transpose_down_song = () => {
+  //   // key (song)
+  //   this.song.transpose(-1);
+  //   this.view.song.setKey(this.song.key, this.song.isTransposed());
 
-    // tuning-view
-    this.instrumentService.loadKey();
-    this.instrumentService.loadTuning();
-  }
+  //   // tuning-view
+  //   this.instrumentService.loadKey();
+  //   this.instrumentService.loadTuning();
+  // }
 
-  // 4. transpose up (song)
+  // // 4. transpose up (song)
 
-  transpose_up_song = () => {
-    // key (song)
-    this.song.transpose(1);
-    this.view.song.setKey(this.song.key, this.song.isTransposed());
+  // transpose_up_song = () => {
+  //   // key (song)
+  //   this.song.transpose(1);
+  //   this.view.song.setKey(this.song.key, this.song.isTransposed());
 
-    // tuning-view
-    this.instrumentService.loadKey();
-    this.instrumentService.loadTuning();
-  }
+  //   // tuning-view
+  //   this.instrumentService.loadKey();
+  //   this.instrumentService.loadTuning();
+  // }
 
-  // *** instrument ***
+  // // *** instrument ***
 
-  // 1. dropdown
+  // // 1. dropdown
 
-  select_instrument = (event) => {
-    this.instrumentService.current = event.target.value;
-    this.instrumentService.load();
-  }
+  // select_instrument = (event) => {
+  //   this.instrumentService.current = event.target.value;
+  //   this.instrumentService.load();
+  // }
 
-  // 2. key-signature (instrument)
+  // // 2. key-signature (instrument)
 
-  // 3. transpose down (instrument)
+  // // 3. transpose down (instrument)
 
-  transpose_down_instrument = () => {
-    // this.instrumentService.transposeService.transposeDown();
+  // transpose_down_instrument = () => {
+  //   // this.instrumentService.transposeService.transposeDown();
 
-    const instrument = this.instrumentService.getCurrentInstrument();
-    instrument.transpose(-1);
-    this.instrumentService.loadKey();
+  //   const instrument = this.instrumentService.getCurrentInstrument();
+  //   instrument.transpose(-1);
+  //   this.instrumentService.loadKey();
 
-    // tuning-view
-    this.instrumentService.loadTuning();
-  }
+  //   // tuning-view
+  //   this.instrumentService.loadTuning();
+  // }
 
-  // 4. transpose down (instrument)
+  // // 4. transpose down (instrument)
 
-  transpose_up_instrument = () => {
-    // this.instrumentService.transposeService.transposeUp();
+  // transpose_up_instrument = () => {
+  //   // this.instrumentService.transposeService.transposeUp();
 
-    const instrument = this.instrumentService.getCurrentInstrument();
-    instrument.transpose(1);
-    this.instrumentService.loadKey();
+  //   const instrument = this.instrumentService.getCurrentInstrument();
+  //   instrument.transpose(1);
+  //   this.instrumentService.loadKey();
 
-    // tuning-view
-    this.instrumentService.loadTuning();
-  }
+  //   // tuning-view
+  //   this.instrumentService.loadTuning();
+  // }
 
   // *** text ***
 }
