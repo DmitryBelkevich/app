@@ -18,8 +18,6 @@ export default class TextService {
     
     this.#chords.length = 0;
     this.#chords.push(...this.#getChords());
-
-    console.log(this.#chords);
   }
 
   #getChords() {
