@@ -21,7 +21,7 @@ export default class TextService {
     const content = await this.#htmlLoader.load(text);
     this.#view.setText(content)
 
-    this.#chordsService.transpose(this.#instrument.transposition);
+    // this.#chordsService.transpose(this.#instrument.transposition);
   }
 
   transpose(count) {
