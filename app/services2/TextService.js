@@ -4,24 +4,22 @@ import ChordsService from './ChordsService.js';
 
 export default class TextService {
   #view;
-  #instrument;
   
   #htmlLoader;
   #chordsService;
   
-  constructor(instrument, view) {
-    this.#instrument = instrument;
+  constructor(view) {
     this.#view = view;
 
     this.#htmlLoader = new HtmlLoader();
     this.#chordsService = new ChordsService(this.#view);
   }
 
-  async load(text) {
+  async load(text, transposition) {
     const content = await this.#htmlLoader.load(text);
     this.#view.setText(content)
 
-    // this.#chordsService.transpose(this.#instrument.transposition);
+    this.#chordsService.transpose(transposition);
   }
 
   transpose(count) {
