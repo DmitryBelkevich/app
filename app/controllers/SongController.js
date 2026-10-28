@@ -109,34 +109,34 @@ export default class SongController {
 
   // 1. list
 
-  // openList = () => {
-  //   window.location.href = window.location.origin + "/app" + "/list";
-  // }
+  openList = () => {
+    window.location.href = window.location.origin + "/app" + "/list";
+  }
 
   // // 2. auto-scroll
   
-  // auto_scroll = () => {
-  //   // this.autoScroll.speed = 10;
+  auto_scroll = () => {
+    // this.autoScroll.speed = 10;
     
-  //   this.autoScroll.run();
-  // }
+    this.autoScroll.run();
+  }
 
-  // // *** tabs ***
+  // *** tabs ***
 
-  // openText = () => {
-  //   // console.log("open Text tab");
-  //   console.log(this.song);
-  // }
+  openText = () => {
+    // console.log("open Text tab");
+    console.log(this.song);
+  }
 
-  // openScore = () => {
-  //   if (!!this.song.score)
-  //     window.open(this.song.score, "_blank");
-  // }
+  openScore = () => {
+    if (!!this.song.score)
+      window.open(this.song.score, "_blank");
+  }
 
-  // openPlayback = () => {
-  //   if (!!this.song.playback)
-  //     window.open(this.song.playback, "_blank");
-  // }
+  openPlayback = () => {
+    if (!!this.song.playback)
+      window.open(this.song.playback, "_blank");
+  }
 
   // *** settings-song ***
 
@@ -166,9 +166,9 @@ export default class SongController {
   //   this.instrumentService.loadTuning();
   }
 
-  // // *** instrument ***
+  // *** instrument ***
 
-  // // 1. dropdown
+  // 1. dropdown
 
   select_instrument = (event) => {
     this.#instrumentService.load(event.target.value);
