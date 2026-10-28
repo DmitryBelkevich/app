@@ -70,6 +70,10 @@ export default class Instrument {
     this.dropdown.append(option);
   }
 
+  create(instruments) {
+    instruments.forEach((instrument, index) => this.addOption(index, instrument.title, instrument.color));
+  }
+
   setOption(index) {
     this.dropdown.selectedIndex = index;
   }
