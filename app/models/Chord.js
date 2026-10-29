@@ -6,6 +6,8 @@ export default class Chord {
   #prefix = "";
   #note;
   #postfix = "";
+
+  #bass_note;
   
   constructor(value) {
     this.parser(value);
