@@ -18,7 +18,7 @@ export default class ChordTest {
     console.log("[TEST] " + "chord test:");
 
     // init
-    const chord = new Chord();
+    const chord = new Chord("Am");
 
     // method
 
