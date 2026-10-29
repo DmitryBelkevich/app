@@ -24,7 +24,7 @@ export default class ChordTest {
     // chord.transpose(2);
 
     // checks
-    this.test.check("chord.value", chord, "D#m/A#");
+    this.test.check("chord.value", chord, "C#m/A#");
 
     // print object
     console.log(chord);
