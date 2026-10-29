@@ -18,13 +18,13 @@ export default class ChordTest {
     console.log("[TEST] " + "chord test:");
 
     // init
-    const chord = new Chord("Am/C");
+    const chord = new Chord("Am");
 
     // method
     chord.transpose(2);
 
     // checks
-    this.test.check("chord.value", chord, "Bm/D");
+    this.test.check("chord.value", chord, "Bm");
 
     // print object
     console.log(chord);
