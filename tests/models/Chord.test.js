@@ -21,9 +21,10 @@ export default class ChordTest {
     const chord = new Chord("Am");
 
     // method
+    chord.transpose(2);
 
     // checks
-    this.test.check("chord.value", chord, "Am");
+    this.test.check("chord.value", chord, "Bm");
 
     // print object
     console.log(chord);
