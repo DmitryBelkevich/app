@@ -23,7 +23,7 @@ export default class ChordTest {
     // method
 
     // checks
-    // this.test.check("chord.chord", chord.chord, 0);
+    this.test.check("chord.value", chord, "Am");
 
     // print object
     console.log(chord);
