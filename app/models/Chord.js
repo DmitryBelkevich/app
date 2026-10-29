@@ -8,7 +8,7 @@ export default class Chord {
   #postfix = "";
 
   #bass_prefix = "";
-  #bass_note;
+  #bass_note = null;
   #bass_postfix = "";
   
   constructor(value) {
