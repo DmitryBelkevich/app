@@ -22,14 +22,15 @@ export default class Chord {
   }
 
   parser(value) {
-    const notes = ["A", "B", "C", "D", "E", "F", "G", "#", "b"];
+    const notes = ["A", "B", "C", "D", "E", "F", "G"];
+    const symbols = ["#", "b"];
     
     // prefix
     var chars = value.split("");
 
     var index = 0;
     for (const char of chars) {
-      if (!notes.includes(char)) {
+      if (!notes.includes(char) && !symbols.includes(char)) {
         this.#prefix = this.#prefix.concat(char);
         index++;
       } else
@@ -42,7 +43,7 @@ export default class Chord {
     var note = "";
     index = 0;
     for (const char of chars) {
-      if (notes.includes(char)) {
+      if (notes.includes(char) || symbols.includes(char)) {
         note = note.concat(char);
         index++;
       } else
