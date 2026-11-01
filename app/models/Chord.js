@@ -93,9 +93,3 @@ export default class Chord {
     this.#value = this.#prefix + this.#note + this.#postfix;
   }
 }
-
-class Parser {
-  parse(str) {
-    
-  }
-}
