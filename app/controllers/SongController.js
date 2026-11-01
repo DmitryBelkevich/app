@@ -1,21 +1,26 @@
 import Song from '../models/Song.js';
-import SongService from '../services/SongService.js';
+
+import ParamsService from '../services2/ParamsService.js';
+import SongService from '../services2/SongService.js';
+import TranspositionService from '../services2/TranspositionService.js';
+import InstrumentService from '../services2/InstrumentService.js';
+
 import SongView from '../views/SongView.js';
 
 import AutoScroll from '../helpers/page/AutoScroll.js';
 
-import InstrumentService from '../services/InstrumentService.js';
-
 export default class SongController {
-  #params;
-
+  #songService;
+  #transpositionService;
+  #instrumentService;
+  
   async init() {
-    this.#params = new URLSearchParams(window.location.search);
-    const id = this.#params.get("id");
+    const paramsService = new ParamsService();
+    const id = paramsService.getId();
     
     // model
-    this.songService = new SongService();
-    this.song = await this.songService.getById(id);
+    this.#songService = new SongService();
+    this.song = await this.#songService.getById(id);
 
     // view
     this.view = new SongView();
@@ -35,38 +40,15 @@ export default class SongController {
 
     // *** settings-song ***
 
-    // 1. key-signature (song)
-    this.view.song.setKey(this.song.key, this.song.isTransposed());
-
-    // 2. transposition_song
-    this.view.song.setTransposition(this.song.transposition);
-
-    // 3. transpose down (song)
-    // 4. transpose up (song)
+    this.#transpositionService = new TranspositionService(this.song, this.view);
 
     // *** instrument ***
 
-    // 1. dropdown
-    this.song.instruments.forEach((instrument, index) => {
-      this.view.instrument.addOption(index, instrument.title, instrument.color);
-    });
-
-    // 2. key-signature (instrument)
-
-    this.instrumentService = new InstrumentService(this.song, this.view);
-    const instrument = this.instrumentService.getCurrentInstrument();
-    this.view.instrument.setKey(instrument.key.toString());
-
-    // 3. transpose down (instrument)
-
-    // 4. transpose up (instrument)
+    this.#instrumentService = new InstrumentService(this.song, this.view);
 
     // *** tuning ***
 
     // *** text ***
-
-    // state
-    this.instrumentService.load();
 
     // *** binding controller-view ***
 
@@ -75,7 +57,7 @@ export default class SongController {
     // *** nav ***
 
     // 1. list
-    this.view.navigator.bindList(this.openList);
+    // this.view.navigator.bindList(this.openList);
 
     // 2. auto-scroll
     this.view.navigator.bindAutoScroll(this.auto_scroll);
@@ -160,25 +142,15 @@ export default class SongController {
   // 3. transpose down (song)
 
   transpose_down_song = () => {
-    // key (song)
-    this.song.transpose(-1);
-    this.view.song.setKey(this.song.key, this.song.isTransposed());
-
-    // tuning-view
-    this.instrumentService.loadKey();
-    this.instrumentService.loadTuning();
+    this.#transpositionService.transpose(-1);
+    this.#instrumentService.setTransposition();
   }
 
   // 4. transpose up (song)
 
   transpose_up_song = () => {
-    // key (song)
-    this.song.transpose(1);
-    this.view.song.setKey(this.song.key, this.song.isTransposed());
-
-    // tuning-view
-    this.instrumentService.loadKey();
-    this.instrumentService.loadTuning();
+    this.#transpositionService.transpose(1);
+    this.#instrumentService.setTransposition();
   }
 
   // *** instrument ***
@@ -186,8 +158,7 @@ export default class SongController {
   // 1. dropdown
 
   select_instrument = (event) => {
-    this.instrumentService.current = event.target.value;
-    this.instrumentService.load();
+    this.#instrumentService.load(event.target.value);
   }
 
   // 2. key-signature (instrument)
@@ -195,27 +166,13 @@ export default class SongController {
   // 3. transpose down (instrument)
 
   transpose_down_instrument = () => {
-    // this.instrumentService.transposeService.transposeDown();
-
-    const instrument = this.instrumentService.getCurrentInstrument();
-    instrument.transpose(-1);
-    this.instrumentService.loadKey();
-
-    // tuning-view
-    this.instrumentService.loadTuning();
+    this.#instrumentService.transpose(-1);
   }
 
   // 4. transpose down (instrument)
 
   transpose_up_instrument = () => {
-    // this.instrumentService.transposeService.transposeUp();
-
-    const instrument = this.instrumentService.getCurrentInstrument();
-    instrument.transpose(1);
-    this.instrumentService.loadKey();
-
-    // tuning-view
-    this.instrumentService.loadTuning();
+    this.#instrumentService.transpose(1);
   }
 
   // *** text ***

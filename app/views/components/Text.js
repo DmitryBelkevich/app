@@ -21,4 +21,8 @@ export default class Text {
   setText(text) {
     this.#container.innerHTML = text;
   }
+
+  getChords() {
+    return Array.from(this.#container.querySelectorAll("div.chords div"));
+  }
 }
