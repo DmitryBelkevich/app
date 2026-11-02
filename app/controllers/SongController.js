@@ -2,7 +2,7 @@ import Song from '../models/Song.js';
 
 import ParamsService from '../services2/ParamsService.js';
 import SongService from '../services2/SongService.js';
-import TranspositionService from '../services2/TranspositionService.js';
+import SettingsService from '../services2/SettingsService.js';
 import InstrumentService from '../services2/InstrumentService.js';
 
 import SongView from '../views/SongView.js';
@@ -11,7 +11,7 @@ import AutoScroll from '../helpers/page/AutoScroll.js';
 
 export default class SongController {
   #songService;
-  #transpositionService;
+  #settingsService;
   #instrumentService;
   
   async init() {
@@ -40,7 +40,7 @@ export default class SongController {
 
     // *** settings-song ***
 
-    this.#transpositionService = new TranspositionService(this.song, this.view);
+    this.#settingsService = new SettingsService(this.song, this.view);
 
     // *** instrument ***
 
@@ -142,14 +142,14 @@ export default class SongController {
   // 3. transpose down (song)
 
   transpose_down_song = () => {
-    this.#transpositionService.transpose(-1);
+    this.#settingsService.transpose(-1);
     this.#instrumentService.setTransposition();
   }
 
   // 4. transpose up (song)
 
   transpose_up_song = () => {
-    this.#transpositionService.transpose(1);
+    this.#settingsService.transpose(1);
     this.#instrumentService.setTransposition();
   }
 
