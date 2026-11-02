@@ -6,17 +6,10 @@ export default class Chord {
   #prefix = "";
   #note;
   #postfix = "";
-
-  #bass_prefix = "";
-  #bass_note;
-  #bass_postfix = "";
   
   constructor(value) {
     this.parser(value);
-    this.#value =
-      this.#prefix + this.#note + this.#postfix
-      // + this.#bass_prefix + this.#bass_note + this.#bass_postfix
-      ;
+    this.#value = this.#prefix + this.#note + this.#postfix;
   }
 
   get value() {
