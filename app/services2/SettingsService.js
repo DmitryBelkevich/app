@@ -1,4 +1,4 @@
-export default class TranspositionService {
+export default class SettingsService {
   #song;
   #view;
   
