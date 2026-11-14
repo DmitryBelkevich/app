@@ -4,6 +4,7 @@ import NavigatorPanel from './panels/NavigatorPanel.js';
 import TitlePanel from './panels/TitlePanel.js';
 import TabsPanel from './panels/TabsPanel.js';
 import TextPanel from './panels/TextPanel.js';
+import FooterPanel from './panels/FooterPanel.js';
 
 import Autoscroll from './services/Autoscroll.js';
 
@@ -20,6 +21,7 @@ export default class SongView extends View {
     this.#panels.set("title", new TitlePanel(song));
     this.#panels.set("tabs", new TabsPanel());
     this.#panels.set("text", new TextPanel());
+    this.#panels.set("footer", new FooterPanel());
   }
 
   init() {
