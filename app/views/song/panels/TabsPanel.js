@@ -15,9 +15,9 @@ export default class TabsPanel {
     this.#element.id = "tabs";
     this.#element.classList.add("panel");
 
-    this.#components.set("tab_text", new Tab("📝 Text & Chords").id("tab_text"));
-    this.#components.set("tab_score", new Tab("🎵 Scores").id("tab_score"));
-    this.#components.set("tab_playback", new Tab("🎧 Playbacks").id("tab_playback"));
+    this.#components.set("text", new Tab("📝 Text & Chords").id("tab_text"));
+    this.#components.set("score", new Tab("🎵 Scores").id("tab_score"));
+    this.#components.set("playback", new Tab("🎧 Playbacks").id("tab_playback"));
   }
 
   init() {
