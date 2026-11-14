@@ -8,9 +8,9 @@ export default class FooterPanel {
     this.#cssLoader.load("./app/views/song/css/footer.css");
 
     // container
-    this.#container = document.createElement("div");
-    this.#container.id = "footer";
-    this.#container.textContent = "Copyright © Dmitry Belkevich";
+    this.#element = document.createElement("div");
+    this.#element.id = "footer";
+    this.#element.textContent = "Copyright © Dmitry Belkevich";
   }
 
   init() {
