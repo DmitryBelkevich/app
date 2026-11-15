@@ -24,8 +24,14 @@ export default class SongController extends Controller {
     this.#view.init();
 
     // binds
+
+    // *** nav ***
     this.#view.panels.get("navigator").components.get("list_button").click(this.open_list_controller);
     this.#view.panels.get("navigator").components.get("autoscroll_button").click(this.run_autoscroll);
+
+    // *** tabs ***
+    for (const component of view.panels.get("tabs"))
+      component.click(this.#open_tab);
   }
 
   // *** nav ***
