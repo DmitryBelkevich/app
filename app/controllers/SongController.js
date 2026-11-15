@@ -67,6 +67,6 @@ export default class SongController extends Controller {
     //     if (!!this.#song.playback)
     //       window.open(this.#song.playback, "_blank");
     //     break;
-    }
+    // }
   }
 }
