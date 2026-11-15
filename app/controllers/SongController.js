@@ -53,16 +53,7 @@ export default class SongController extends Controller {
 
   open_tab = (id) => {
     this.#view.tabsMediator.panel = id;
-
-    // switch (id) {
-    //   case "tab_text":
-    //     // console.log("open Text tab");
-    //     console.log(this.#song);
-    //     break;
-    //   case "tab_playback":
-    //     if (!!this.#song.playback)
-    //       window.open(this.#song.playback, "_blank");
-    //     break;
-    // }
+    
+    console.log(this.#song);
   }
 }
