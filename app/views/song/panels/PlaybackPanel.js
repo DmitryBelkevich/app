@@ -20,6 +20,10 @@ export default class PlaybackPanel {
     }
   }
 
+  get element() {
+    return this.#element;
+  }
+
   init() {
     document.body.append(this.#element);
   }
