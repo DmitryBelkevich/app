@@ -4,7 +4,7 @@ export default class PlaybackPanel {
   #cssLoader = new CssLoader();
   #element;
   
-  constructor() {
+  constructor(song) {
     // this.#cssLoader.load("./app/views/song/css/playback.css");
     
     // container
