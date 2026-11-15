@@ -9,6 +9,8 @@ export default class TabsMediator {
     // TODO
     console.log("active tab: " + id);
     console.log("hidden tabs: ");
-    console.log("all tabs: " + this.#panels.values());
+    console.log("all tabs:");
+    for (const panel of this.#panels.values())
+      console.log(panel);
   }
 }
