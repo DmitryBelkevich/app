@@ -19,7 +19,7 @@ export default class PlaybackPanel {
     playback.textContent = "Playbacks";
     playback.style.padding = "10px 20px";
     playback.style.display = "flex";
-    playback.style.justifyContent = "flex-end";
+    playback.style.margin = "20px auto";
 
     playback.addEventListener("click", () => {
       if (!!song.playback)
