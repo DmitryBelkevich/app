@@ -15,7 +15,7 @@ export default class PlaybackPanel {
     // components
     for (let i = 0; i < 100; i++) {
       const div = document.createElement("div");
-      div.textContent = i + " " + "playback content";
+      div.textContent = i + " playback_content playback_content playback_content playback_content";
       this.#element.append(div);
     }
   }
