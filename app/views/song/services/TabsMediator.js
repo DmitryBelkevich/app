@@ -5,13 +5,12 @@ export default class TabsMediator {
     this.#panels.set(id, panel);
   }
 
+  // TODO
   set panel(id) {
-    const panel = this.#panels.get(id);
-    console.log(panel);
-    // TODO
-    // console.log("hidden tabs: ");
-    // console.log("all tabs:");
     // for (const panel of this.#panels.values())
-    //   console.log(panel);
+    //   console.log(panel);// all hidden
+    
+    const panel = this.#panels.get(id);
+    console.log(panel);// set active
   }
 }
