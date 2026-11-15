@@ -2,7 +2,6 @@ import CssLoader from '../../loaders/CssLoader.js';
 
 export default class TitlePanel {
   #cssLoader = new CssLoader();
-  
   #element;
   
   constructor(song) {
