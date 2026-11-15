@@ -15,7 +15,7 @@ export default class TextPanel {
     // components
     for (let i = 0; i < 50; i++) {
       const div = document.createElement("div");
-      div.textContent = i + " text_content text_content text_content text_content";
+      div.textContent = i + " text_content text_content text_content";
       this.#element.append(div);
     }
   }
