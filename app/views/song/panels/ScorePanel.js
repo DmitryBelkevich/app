@@ -4,7 +4,7 @@ export default class ScorePanel {
   #cssLoader = new CssLoader();
   #element;
 
-  constructor() {
+  constructor(song) {
     // this.#cssLoader.load("./app/views/song/css/score.css");
     
     // container
@@ -13,11 +13,21 @@ export default class ScorePanel {
     this.#element.classList.add("panel");
 
     // components
-    for (let i = 0; i < 50; i++) {
-      const div = document.createElement("div");
-      div.textContent = i + " score_content score_content score_content";
-      this.#element.append(div);
-    }
+    const score = document.createElement("button");
+
+    // styles
+    score.textContent = "Sibelius";
+    score.style.padding = "10px 20px";
+    score.style.display = "flex";
+    score.style.margin = "20px auto";
+
+    score.addEventListener("click", () => {
+      if (!!song.score)
+        window.open(song.score, "_blank");
+    });
+
+    // fill
+    this.#element.append(score);
   }
 
   get element() {

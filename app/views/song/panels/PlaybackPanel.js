@@ -4,7 +4,7 @@ export default class PlaybackPanel {
   #cssLoader = new CssLoader();
   #element;
   
-  constructor() {
+  constructor(song) {
     // this.#cssLoader.load("./app/views/song/css/playback.css");
     
     // container
@@ -13,11 +13,21 @@ export default class PlaybackPanel {
     this.#element.classList.add("panel");
 
     // components
-    for (let i = 0; i < 50; i++) {
-      const div = document.createElement("div");
-      div.textContent = i + " playback_content playback_content";
-      this.#element.append(div);
-    }
+    const playback = document.createElement("button");
+
+    // styles
+    playback.textContent = "Playbacks";
+    playback.style.padding = "10px 20px";
+    playback.style.display = "flex";
+    playback.style.margin = "20px auto";
+
+    playback.addEventListener("click", () => {
+      if (!!song.playback)
+        window.open(song.playback, "_blank");
+    });
+
+    // fill
+    this.#element.append(playback);
   }
 
   get element() {
