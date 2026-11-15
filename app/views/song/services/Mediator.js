@@ -8,5 +8,6 @@ export default class Mediator {
   set tab(id) {
     // TODO
     console.log("active tab: " + id);
+    console.log("hidden tabs: ");
   }
 }
