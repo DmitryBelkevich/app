@@ -20,6 +20,10 @@ export default class TextPanel {
     }
   }
 
+  get element() {
+    return this.#element;
+  }
+
   init() {
     document.body.append(this.#element);
   }
