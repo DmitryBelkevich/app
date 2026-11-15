@@ -1,4 +1,4 @@
-export default class Mediator {
+export default class TabsMediator {
   #panels = [];
 
   add(panel) {
