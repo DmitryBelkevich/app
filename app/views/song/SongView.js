@@ -9,10 +9,12 @@ import PlaybackPanel from './panels/PlaybackPanel.js';
 import FooterPanel from './panels/FooterPanel.js';
 
 import Autoscroll from './services/Autoscroll.js';
+import Mediator from './services/Mediator.js';
 
 export default class SongView extends View {
   #panels = new Map();
   #autoscroll = new Autoscroll();
+  #mediator = new Mediator();
   
   constructor(song) {
     super();
