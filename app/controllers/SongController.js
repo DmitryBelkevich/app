@@ -61,10 +61,10 @@ export default class SongController extends Controller {
         break;
       case "tab_score":
         if (!!this.#song.score)
-          window.open(this.song.score, "_blank");
+          window.open(this.#song.score, "_blank");
         break;
       case "tab_playback":
-        if (!!this.song.playback)
+        if (!!this.#song.playback)
           window.open(this.#song.playback, "_blank");
         break;
     }
