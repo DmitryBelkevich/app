@@ -19,7 +19,7 @@ export default class ScorePanel {
     score.textContent = "Sibelius";
     score.style.padding = "10px 20px";
     score.style.display = "flex";
-    score.style.margin = "10px auto";
+    score.style.margin = "20px auto";
 
     score.addEventListener("click", () => {
       if (!!song.score)
