@@ -5,6 +5,8 @@ export default class TextPanel {
   #element;
   
   constructor() {
+    // this.#cssLoader.load("./app/views/song/css/text.css");
+    
     // container
     this.#element = document.createElement("div");
     this.#element.id = "text";
