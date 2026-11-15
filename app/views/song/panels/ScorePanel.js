@@ -13,7 +13,7 @@ export default class ScorePanel {
     this.#element.classList.add("panel");
 
     // components
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 50; i++) {
       const div = document.createElement("div");
       div.textContent = i + " score_content score_content score_content";
       this.#element.append(div);
