@@ -1,3 +1,7 @@
 export default class Mediator {
-  #panels;
+  #panels = [];
+
+  add(panel) {
+    this.#panels.push(panel);
+  }
 }
