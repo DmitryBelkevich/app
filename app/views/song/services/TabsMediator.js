@@ -5,7 +5,6 @@ export default class TabsMediator {
     this.#panels.set(id, panel);
   }
 
-  // TODO
   set panel(id) {
     // all hidden
     for (const panel of this.#panels.values())
