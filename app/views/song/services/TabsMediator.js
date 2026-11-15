@@ -8,7 +8,7 @@ export default class TabsMediator {
   // TODO
   set panel(id) {
     for (const panel of this.#panels.values())
-      panel.style.display = "none";
+      panel.element.style.display = "none";
     
     const panel = this.#panels.get(id);
     console.log(panel);// set active
