@@ -16,6 +16,7 @@ export default class ScorePanel {
     const score = document.createElement("button");
     score.textContent = "Sibelius";
     score.style.padding = "10px";
+    score.style.margin = "10px";
 
     this.#element.append(score);
   }
