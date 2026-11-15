@@ -21,7 +21,7 @@ export default class ScorePanel {
     // }
 
     const score = document.createElement("button");
-    score.textContent = song.score;
+    score.textContent = "Score: .sib";
 
     this.#element.append(score);
   }
