@@ -21,7 +21,7 @@ export default class ScorePanel {
     // }
 
     const score = document.createElement("button");
-    score.textContent = "Score: .sib";
+    score.textContent = "Sibelius";
 
     this.#element.append(score);
   }
