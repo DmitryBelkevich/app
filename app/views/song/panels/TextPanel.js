@@ -13,11 +13,12 @@ export default class TextPanel {
     this.#element.classList.add("panel");
 
     // components
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 1000; i++) {
       const div = document.createElement("div");
-      div.textContent = i + " " + "text content";
-      this.#element.append(div);
+      div.textContent = "text_content ";
     }
+
+    this.#element.append(div);
   }
 
   init() {
