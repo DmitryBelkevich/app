@@ -47,4 +47,8 @@ export default class SongView extends View {
   get autoscroll() {
     return this.#autoscroll;
   }
+
+  get mediator() {
+    return this.#mediator;
+  }
 }
