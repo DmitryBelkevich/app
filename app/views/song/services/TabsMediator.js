@@ -1,13 +1,14 @@
 export default class TabsMediator {
-  #panels = [];
+  #panels = new Map();
 
-  add(panel) {
-    this.#panels.push(panel);
+  add(key, panel) {
+    this.#panels.set(key, panel);
   }
 
   set tab(id) {
     // TODO
     console.log("active tab: " + id);
     console.log("hidden tabs: ");
+    console.log("all tabs: " + this.#panels);
   }
 }
