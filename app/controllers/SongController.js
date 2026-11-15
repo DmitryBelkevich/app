@@ -24,8 +24,14 @@ export default class SongController extends Controller {
     this.#view.init();
 
     // binds
+
+    // *** nav ***
     this.#view.panels.get("navigator").components.get("list_button").click(this.open_list_controller);
     this.#view.panels.get("navigator").components.get("autoscroll_button").click(this.run_autoscroll);
+
+    // *** tabs ***
+    for (const component of this.#view.panels.get("tabs").components.values())
+      component.click(this.open_tab);
   }
 
   // *** nav ***
@@ -46,6 +52,6 @@ export default class SongController extends Controller {
 
   open_tab = (id) => {
     // TODO
-    console.log("tab " + id);
+    console.log(id);
   }
 }

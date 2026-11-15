@@ -22,7 +22,7 @@ export default class Tab {
 
   click(handler) {
     this.#element.addEventListener("click", () => {
-      handler();
+      handler(this.#element.id);
     });
   }
 }

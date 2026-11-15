@@ -28,14 +28,19 @@ export default class ListController extends Controller {
     view.init();
 
     // binds
-    view.panels.get("list").songs.forEach(component => component.click(this.#open_song_controller));
+
+    // *** nav ***
+
+    // *** list ***
+    for (const component of view.panels.get("list").songs)
+      component.click(this.open_song_controller);
   }
 
   // *** nav ***
 
   // *** list ***
 
-  #open_song_controller = (id) => {
+  open_song_controller = (id) => {
     window.location.href = window.location.origin + "/" + Config.APP_NAME + "/song?id=" + id;
   }
 }
