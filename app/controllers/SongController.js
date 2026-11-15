@@ -55,8 +55,8 @@ export default class SongController extends Controller {
 
     switch (id) {
       case "tab_text":
-        // console.log("open Text tab");
-        console.log(this.song);
+        console.log("open Text tab");
+        // console.log(this.#song);
         break;
       case "tab_score":
         if (!!this.song.score)
