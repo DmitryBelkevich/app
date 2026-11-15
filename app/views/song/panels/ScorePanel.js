@@ -26,6 +26,7 @@ export default class ScorePanel {
         window.open(song.score, "_blank");
     });
 
+    // fill
     this.#element.append(score);
   }
 
