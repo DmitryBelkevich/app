@@ -7,10 +7,12 @@ export default class TabsMediator {
 
   // TODO
   set panel(id) {
+    // all hidden
     for (const panel of this.#panels.values())
       panel.element.style.display = "none";
-    
-    // const panel = this.#panels.get(id);
-    // console.log(panel);// set active
+
+    // set active
+    const panel = this.#panels.get(id);
+    panel.element.style.display = "block";
   }
 }
