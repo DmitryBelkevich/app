@@ -9,6 +9,7 @@ import SongView from '../views/song/SongView.js';
 export default class SongController extends Controller {
   #songService;
 
+  #song;
   #view;
   
   constructor() {
@@ -17,8 +18,8 @@ export default class SongController extends Controller {
   }
 
   async init() {
-    const song = await this.#songService.getById(this._params.id);
-    console.log(song);
+    this.#song = await this.#songService.getById(this._params.id);
+    // console.log(this.#song);
 
     this.#view = new SongView(song);
     this.#view.init();
@@ -55,8 +56,8 @@ export default class SongController extends Controller {
 
     switch (id) {
       case "tab_text":
-        console.log("open Text tab");
-        // console.log(this.#song);
+        // console.log("open Text tab");
+        console.log(this.#song);
         break;
       case "tab_score":
         if (!!this.song.score)
