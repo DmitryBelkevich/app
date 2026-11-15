@@ -18,6 +18,11 @@ export default class ScorePanel {
     score.style.padding = "10px";
     score.style.margin = "10px";
 
+    score.addEventListener("click", () => {
+      if (!!song.score)
+        window.open(song.score, "_blank");
+    });
+
     this.#element.append(score);
   }
 
