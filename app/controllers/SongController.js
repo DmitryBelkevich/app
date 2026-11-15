@@ -31,7 +31,7 @@ export default class SongController extends Controller {
 
     // *** tabs ***
     for (const component of view.panels.get("tabs"))
-      component.click(this.#open_tab);
+      component.click(this.open_tab);
   }
 
   // *** nav ***
