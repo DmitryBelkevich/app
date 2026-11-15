@@ -5,7 +5,7 @@ export default class ScorePanel {
   #element;
 
   constructor() {
-    // this.#cssLoader.load("./app/views/song/css/playback.css");
+    // this.#cssLoader.load("./app/views/song/css/score.css");
     
     // container
     this.#element = document.createElement("div");
