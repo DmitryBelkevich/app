@@ -51,6 +51,6 @@ export default class SongController extends Controller {
   // *** tabs ***
 
   open_tab = (id) => {
-    this.#view.tabsMediator.tab = id;
+    this.#view.tabsMediator.panel = id;
   }
 }
