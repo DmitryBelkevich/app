@@ -52,21 +52,21 @@ export default class SongController extends Controller {
   // *** tabs ***
 
   open_tab = (id) => {
-    // this.#view.tabsMediator.panel = id;
+    this.#view.tabsMediator.panel = id;
 
-    switch (id) {
-      case "tab_text":
-        // console.log("open Text tab");
-        console.log(this.#song);
-        break;
-      case "tab_score":
-        if (!!this.#song.score)
-          window.open(this.#song.score, "_blank");
-        break;
-      case "tab_playback":
-        if (!!this.#song.playback)
-          window.open(this.#song.playback, "_blank");
-        break;
+    // switch (id) {
+    //   case "tab_text":
+    //     // console.log("open Text tab");
+    //     console.log(this.#song);
+    //     break;
+    //   case "tab_score":
+    //     if (!!this.#song.score)
+    //       window.open(this.#song.score, "_blank");
+    //     break;
+    //   case "tab_playback":
+    //     if (!!this.#song.playback)
+    //       window.open(this.#song.playback, "_blank");
+    //     break;
     }
   }
 }
