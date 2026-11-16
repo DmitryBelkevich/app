@@ -5,4 +5,17 @@ export default class Display {
     this.#element = document.createElement("div");
     this.#element.textContent = content;
   }
+
+  get element() {
+    return this.#element;
+  }
+
+  id(id) {
+    this.#element.id = id;
+    return this;
+  }
+  
+  init() {
+    
+  }
 }
