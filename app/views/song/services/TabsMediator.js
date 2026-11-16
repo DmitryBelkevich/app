@@ -23,7 +23,8 @@ export default class TabsMediator {
     for (const [key, tab] of this.#tabs)
       tab.active = id == key;
 
-    // for (const [key, panel] of this.#panels)
-    //   panel.visible = id == key;
+    for (const [key, panels] of this.#panels)
+      for (const panel of panels)
+        panel.visible = id == key;
   }
 }
