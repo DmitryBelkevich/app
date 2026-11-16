@@ -1,11 +1,11 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
-export default class TitlePanel {
-  #cssLoader = new CssLoader();
+export default class TitlePanel extends Panel {
   #element;
   
   constructor(song) {
-    this.#cssLoader.load("./app/views/song/css/title.css");
+    super();
+    this._cssLoader.load("./app/views/song/css/title.css");
     
     // container
     this.#element = document.createElement("div");
