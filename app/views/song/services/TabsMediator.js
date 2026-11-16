@@ -6,9 +6,7 @@ export default class TabsMediator {
     this.#tabs.set(id, tab);
     this.#panels.set(id, panel);
 
-    tab.click((id) => {
-      this.activate(id);
-    });
+    tab.click(id => this.activate(id));
   }
 
   activate(id) {
