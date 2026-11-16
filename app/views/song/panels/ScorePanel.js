@@ -28,10 +28,6 @@ export default class ScorePanel extends Panel {
     this._element.append(score);
   }
 
-  get element() {
-    return this._element;
-  }
-
   set visible(isVisible) {
     const state = {
       true: "block",
