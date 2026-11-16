@@ -22,6 +22,7 @@ export default class Tab {
 
   set active(isActive) {
     // TODO
+    console.log(isActive);
   }
 
   click(handler) {
