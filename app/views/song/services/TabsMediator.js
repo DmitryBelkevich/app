@@ -13,7 +13,7 @@ export default class TabsMediator {
   }
 
   registerPanel(id, panel) {
-    if (!this.#panels.get(id)) {
+    if (!this.#panels.has(id)) {
       this.#panels.set(id, []);
     }
     
