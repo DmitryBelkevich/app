@@ -32,9 +32,9 @@ export default class SongView extends View {
     // Mediator
 
     // add tabs-panels
-    this.#tabsMediator.register("tab_text", this.#panels.tabs.get("text"), this.#panels.get("text"));
-    this.#tabsMediator.register("tab_score", this.#panels.tabs.get("score"), this.#panels.get("score"));
-    this.#tabsMediator.register("tab_playback", this.#panels.tabs.get("playback"), this.#panels.get("playback"));
+    this.#tabsMediator.register("tab_text", this.#panels.tabs.get("tabs").get("text"), this.#panels.get("text"));
+    this.#tabsMediator.register("tab_score", this.#panels.tabs.get("tabs").get("score"), this.#panels.get("score"));
+    this.#tabsMediator.register("tab_playback", this.#panels.tabs.get("tabs").get("playback"), this.#panels.get("playback"));
 
     // activate default tab
     this.#tabsMediator.activate("tab_text");
