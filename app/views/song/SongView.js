@@ -29,7 +29,7 @@ export default class SongView extends View {
     this.#panels.set("playback", new PlaybackPanel(song));
     this.#panels.set("footer", new FooterPanel());
 
-    // *** Mediator ***
+    // *** Tabs-Mediator ***
 
     // register tabs
     this.#tabsMediator.registerTab("tab_text", this.#panels.get("tabs").tabs.get("text"));
