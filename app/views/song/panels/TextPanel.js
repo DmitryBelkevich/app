@@ -18,15 +18,6 @@ export default class TextPanel extends Panel {
     }
   }
 
-  set visible(isVisible) {
-    const state = {
-      true: "block",
-      false: "none",
-    };
-
-    this._element.style.display = state[isVisible];
-  }
-
   init() {
     document.body.append(this._element);
   }
