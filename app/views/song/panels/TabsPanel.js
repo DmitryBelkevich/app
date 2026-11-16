@@ -30,4 +30,13 @@ export default class TabsPanel {
   get tabs() {
     return this.#tabs;
   }
+
+  set visible(isVisible) {
+    const state = {
+      true: "block",
+      false: "none",
+    };
+
+    this.#element.style.display = state[isVisible];
+  }
 }
