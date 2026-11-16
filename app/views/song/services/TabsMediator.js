@@ -2,18 +2,25 @@ export default class TabsMediator {
   #tabs = new Map();
   #panels = new Map();
 
-  register(id, tab, panel) {
-    this.#tabs.set(id, tab);
-    this.#panels.set(id, panel);
+  constructor() {
+    console.log(this.#panels);
+  }
 
+  registerTab(id, tab) {
+    this.#tabs.set(id, tab);
+    
     tab.click(id => this.activate(id));
   }
 
-  activate(id) {
-    for (const [key, tab] of this.#tabs)
-      tab.active = id == key;
+  registerPanel(id, panel) {
+    this.#panels.set(id, ...panel);
+  }
 
-    for (const [key, panel] of this.#panels)
-      panel.visible = id == key;
+  activate(id) {
+    // for (const [key, tab] of this.#tabs)
+    //   tab.active = id == key;
+
+    // for (const [key, panel] of this.#panels)
+    //   panel.visible = id == key;
   }
 }
