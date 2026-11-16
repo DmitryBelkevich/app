@@ -8,6 +8,7 @@ export default class SettingsPanel extends Panel {
     // container
     this._element = document.createElement("div");
     this._element.id = "settings-song";
+    this._element.classList.add("panel");
   }
 
   init() {
