@@ -1,19 +1,18 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
 import Tab from '../components/Tab.js';
 
-export default class TabsPanel {
-  #cssLoader = new CssLoader();
-  #element;
+export default class TabsPanel extends Panel {
   #tabs = new Map();
   
   constructor() {
-    this.#cssLoader.load("./app/views/song/css/tabs.css");
+    super();
+    this._cssLoader.load("./app/views/song/css/tabs.css");
     
     // container
-    this.#element = document.createElement("div");
-    this.#element.id = "tabs";
-    this.#element.classList.add("panel");
+    this._element = document.createElement("div");
+    this._element.id = "tabs";
+    this._element.classList.add("panel");
 
     this.#tabs.set("text", new Tab("📝 Text & Chords").id("tab_text"));
     this.#tabs.set("score", new Tab("🎵 Scores").id("tab_score"));
@@ -22,9 +21,9 @@ export default class TabsPanel {
 
   init() {
     for (const component of this.#tabs.values())
-      this.#element.append(component.element);
+      this._element.append(component.element);
     
-    document.body.append(this.#element);
+    document.body.append(this._element);
   }
 
   get tabs() {

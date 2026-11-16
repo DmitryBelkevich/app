@@ -1,16 +1,14 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
-export default class TitlePanel {
-  #cssLoader = new CssLoader();
-  #element;
-  
+export default class TitlePanel extends Panel {
   constructor(song) {
-    this.#cssLoader.load("./app/views/song/css/title.css");
+    super();
+    this._cssLoader.load("./app/views/song/css/title.css");
     
     // container
-    this.#element = document.createElement("div");
-    this.#element.id = "title";
-    this.#element.classList.add("panel");
+    this._element = document.createElement("div");
+    this._element.id = "title";
+    this._element.classList.add("panel");
 
     // 1. title
     const title = document.createElement('div');
@@ -23,10 +21,10 @@ export default class TitlePanel {
     band.textContent = song.band;
 
     // fill container
-    this.#element.append(title, band);
+    this._element.append(title, band);
   }
 
   init() {
-    document.body.append(this.#element);
+    document.body.append(this._element);
   }
 }

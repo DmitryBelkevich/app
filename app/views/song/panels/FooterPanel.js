@@ -1,19 +1,17 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
-export default class FooterPanel {
-  #cssLoader = new CssLoader();
-  #element;
-
+export default class FooterPanel extends Panel {
   constructor() {
-    this.#cssLoader.load("./app/views/song/css/footer.css");
+    super();
+    this._cssLoader.load("./app/views/song/css/footer.css");
 
     // container
-    this.#element = document.createElement("div");
-    this.#element.id = "footer";
-    this.#element.textContent = "Copyright © Dmitry Belkevich";
+    this._element = document.createElement("div");
+    this._element.id = "footer";
+    this._element.textContent = "Copyright © Dmitry Belkevich";
   }
 
   init() {
-    document.body.append(this.#element);
+    document.body.append(this._element);
   }
 }

@@ -1,16 +1,14 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
-export default class ScorePanel {
-  #cssLoader = new CssLoader();
-  #element;
-
+export default class ScorePanel extends Panel {
   constructor(song) {
-    // this.#cssLoader.load("./app/views/song/css/score.css");
+    super();
+    // this._cssLoader.load("./app/views/song/css/score.css");
     
     // container
-    this.#element = document.createElement("div");
-    this.#element.id = "score";
-    this.#element.classList.add("panel");
+    this._element = document.createElement("div");
+    this._element.id = "score";
+    this._element.classList.add("panel");
 
     // components
     const score = document.createElement("button");
@@ -27,23 +25,10 @@ export default class ScorePanel {
     });
 
     // fill
-    this.#element.append(score);
-  }
-
-  get element() {
-    return this.#element;
-  }
-
-  set visible(isVisible) {
-    const state = {
-      true: "block",
-      false: "none",
-    };
-
-    this.#element.style.display = state[isVisible];
+    this._element.append(score);
   }
 
   init() {
-    document.body.append(this.#element);
+    document.body.append(this._element);
   }
 }
