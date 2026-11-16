@@ -31,8 +31,8 @@ export default class SongController extends Controller {
     this.#view.panels.get("navigator").components.get("autoscroll_button").click(this.run_autoscroll);
 
     // *** tabs ***
-    for (const component of this.#view.panels.get("tabs").components.values())
-      component.click(this.open_tab);
+    for (const tab of this.#view.panels.get("tabs").tabs.values())
+      tab.click(this.open_tab);
   }
 
   // *** nav ***
@@ -54,8 +54,9 @@ export default class SongController extends Controller {
   // TODO
   // remove from Controller to View
   open_tab = (id) => {
-    this.#view.tabsMediator.activate(id);
+    console.log("controller: tab: " + id);
+    // this.#view.tabsMediator.activate(id);
     
-    console.log(this.#song);
+    // console.log(this.#song);
   }
 }

@@ -1,7 +1,13 @@
 export default class TabsMediator {
+  #tabs = new Map();
   #panels = new Map();
 
-  register(id, panel) {
+  constructor() {
+    console.log(this);
+  }
+
+  register(id, tab, panel) {
+    this.#tabs.set(id, tab);
     this.#panels.set(id, panel);
   }
 
