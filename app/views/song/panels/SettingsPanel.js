@@ -1,6 +1,6 @@
 import Panel from './Panel.js';
 
-import Diplay from '../components/Diplay.js';
+import Display from '../components/Display.js';
 
 export default class SettingsPanel extends Panel {
   #components = new Map();
