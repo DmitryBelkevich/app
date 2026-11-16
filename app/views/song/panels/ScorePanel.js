@@ -30,6 +30,10 @@ export default class ScorePanel {
     this.#element.append(score);
   }
 
+  get element() {
+    return this.#element;
+  }
+
   set visible(isVisible) {
     const state = {
       true: "block",
@@ -37,10 +41,6 @@ export default class ScorePanel {
     };
 
     this.#element.style.display = state[isVisible];
-  }
-
-  get element() {
-    return this.#element;
   }
 
   init() {
