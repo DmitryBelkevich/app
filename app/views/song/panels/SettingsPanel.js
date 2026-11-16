@@ -1,6 +1,10 @@
 import Panel from './Panel.js';
 
+import Diplay from '../components/Diplay.js';
+
 export default class SettingsPanel extends Panel {
+  #components = new Map();
+  
   constructor() {
     super();
     this._cssLoader.load("./app/views/song/css/settings_song.css");
@@ -9,9 +13,22 @@ export default class SettingsPanel extends Panel {
     this._element = document.createElement("div");
     this._element.id = "settings-song";
     this._element.classList.add("panel");
+
+    // components
+    const display = new Display("000").id("key-song");
+    
+    this.#components.set("display", display);
+    // TODO add class original/transposed
+  }
+
+  get components() {
+    return this.#components;
   }
 
   init() {
+    for (const component of this.#components.values())
+      this._element.append(component.element);
+    
     document.body.append(this._element);
   }
 }
