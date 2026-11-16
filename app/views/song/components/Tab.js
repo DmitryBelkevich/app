@@ -20,6 +20,11 @@ export default class Tab {
     
   }
 
+  setActive(state) {
+    // TODO
+    console.log(this + " " + state);
+  }
+
   click(handler) {
     this.#element.addEventListener("click", () => {
       handler(this.#element.id);
