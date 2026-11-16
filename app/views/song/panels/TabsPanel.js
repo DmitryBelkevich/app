@@ -1,14 +1,14 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
 import Tab from '../components/Tab.js';
 
-export default class TabsPanel {
-  #cssLoader = new CssLoader();
+export default class TabsPanel extends Panel {
   #element;
   #tabs = new Map();
   
   constructor() {
-    this.#cssLoader.load("./app/views/song/css/tabs.css");
+    super();
+    this._cssLoader.load("./app/views/song/css/tabs.css");
     
     // container
     this.#element = document.createElement("div");
