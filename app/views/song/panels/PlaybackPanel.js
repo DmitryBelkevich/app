@@ -28,15 +28,6 @@ export default class PlaybackPanel extends Panel {
     this._element.append(playback);
   }
 
-  set visible(isVisible) {
-    const state = {
-      true: "block",
-      false: "none",
-    };
-
-    this._element.style.display = state[isVisible];
-  }
-
   init() {
     document.body.append(this._element);
   }
