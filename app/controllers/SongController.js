@@ -54,7 +54,7 @@ export default class SongController extends Controller {
   // TODO
   // remove from Controller to View
   open_tab = (id) => {
-    this.#view.tabsMediator.panel = id;
+    this.#view.tabsMediator.activate(id);
     
     console.log(this.#song);
   }
