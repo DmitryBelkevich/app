@@ -24,6 +24,11 @@ export default class TextPanel {
     return this.#element;
   }
 
+  set visible(isVisible) {
+    // TODO
+    console.log(isVisible);
+  }
+
   init() {
     document.body.append(this.#element);
   }
