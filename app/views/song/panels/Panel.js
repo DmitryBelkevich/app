@@ -15,4 +15,13 @@ export default class Panel {
   set element(element) {
     this._element = element;;
   }
+
+  set visible(isVisible) {
+    const state = {
+      true: "block",
+      false: "none",
+    };
+
+    this._element.style.display = state[isVisible];
+  }
 }
