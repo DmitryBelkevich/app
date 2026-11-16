@@ -1,11 +1,11 @@
-import CssLoader from '../../loaders/CssLoader.js';
+import Panel from './Panel.js';
 
-export default class FooterPanel {
-  #cssLoader = new CssLoader();
+export default class FooterPanel extends Panel {
   #element;
 
   constructor() {
-    this.#cssLoader.load("./app/views/song/css/footer.css");
+    super();
+    this._cssLoader.load("./app/views/song/css/footer.css");
 
     // container
     this.#element = document.createElement("div");
