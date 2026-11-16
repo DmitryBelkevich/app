@@ -26,11 +26,11 @@ export default class TextPanel {
 
   set visible(isVisible) {
     const state = {
-      true: block,
-      false: none,
-    }
+      true: "block",
+      false: "none",
+    };
 
-    panel.element.style.display = state[isVisible];
+    this.#element.style.display = state[isVisible];
   }
 
   init() {
