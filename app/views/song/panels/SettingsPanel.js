@@ -1,6 +1,7 @@
 import Panel from './Panel.js';
 
 import Display from '../components/Display.js';
+import Button from '../components/Button.js';
 
 export default class SettingsPanel extends Panel {
   #components = new Map();
@@ -17,8 +18,13 @@ export default class SettingsPanel extends Panel {
     // components
     const display = new Display("Am").id("key-song");
     // TODO add class original/transposed
+
+    const up_button = new Button("🔽");
+    const down_button = new Button("🔼");
     
     this.#components.set("display", display);
+    this.#components.set("up_button", up_button);
+    this.#components.set("down_button", down_button);
   }
 
   get components() {
