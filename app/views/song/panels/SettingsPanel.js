@@ -16,9 +16,9 @@ export default class SettingsPanel extends Panel {
 
     // components
     const display = new Display("000").id("key-song");
+    // TODO add class original/transposed
     
     this.#components.set("display", display);
-    // TODO add class original/transposed
   }
 
   get components() {
