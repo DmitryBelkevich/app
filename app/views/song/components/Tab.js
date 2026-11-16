@@ -22,7 +22,6 @@ export default class Tab {
 
   setActive(state) {
     // TODO
-    console.log(this + " " + state);
   }
 
   click(handler) {
