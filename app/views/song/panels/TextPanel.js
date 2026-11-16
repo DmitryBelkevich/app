@@ -25,8 +25,12 @@ export default class TextPanel {
   }
 
   set visible(isVisible) {
-    // TODO
-    console.log(isVisible);
+    const state = {
+      true: block,
+      false: none,
+    }
+
+    panel.element.style.display = state[isVisible];
   }
 
   init() {
