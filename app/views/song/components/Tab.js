@@ -20,7 +20,7 @@ export default class Tab {
     
   }
 
-  set active(state) {
+  set active(isActive) {
     // TODO
   }
 
