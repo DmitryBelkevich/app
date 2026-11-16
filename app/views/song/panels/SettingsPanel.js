@@ -15,7 +15,7 @@ export default class SettingsPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
-    const display = new Display("000").id("key-song");
+    const display = new Display("Am").id("key-song");
     // TODO add class original/transposed
     
     this.#components.set("display", display);
