@@ -1,16 +1,14 @@
 import Panel from './Panel.js';
 
 export default class PlaybackPanel extends Panel {
-  #element;
-  
   constructor(song) {
     super();
     // this._cssLoader.load("./app/views/song/css/playback.css");
     
     // container
-    this.#element = document.createElement("div");
-    this.#element.id = "playback";
-    this.#element.classList.add("panel");
+    this._element = document.createElement("div");
+    this._element.id = "playback";
+    this._element.classList.add("panel");
 
     // components
     const playback = document.createElement("button");
@@ -27,11 +25,7 @@ export default class PlaybackPanel extends Panel {
     });
 
     // fill
-    this.#element.append(playback);
-  }
-
-  get element() {
-    return this.#element;
+    this._element.append(playback);
   }
 
   set visible(isVisible) {
@@ -40,10 +34,10 @@ export default class PlaybackPanel extends Panel {
       false: "none",
     };
 
-    this.#element.style.display = state[isVisible];
+    this._element.style.display = state[isVisible];
   }
 
   init() {
-    document.body.append(this.#element);
+    document.body.append(this._element);
   }
 }
