@@ -5,7 +5,7 @@ import Tab from '../components/Tab.js';
 export default class TabsPanel {
   #cssLoader = new CssLoader();
   #element;
-  #components = new Map();// tabs
+  #tabs = new Map();
   
   constructor() {
     this.#cssLoader.load("./app/views/song/css/tabs.css");
@@ -15,19 +15,19 @@ export default class TabsPanel {
     this.#element.id = "tabs";
     this.#element.classList.add("panel");
 
-    this.#components.set("text", new Tab("📝 Text & Chords").id("tab_text"));
-    this.#components.set("score", new Tab("🎵 Scores").id("tab_score"));
-    this.#components.set("playback", new Tab("🎧 Playbacks").id("tab_playback"));
+    this.#tabs.set("text", new Tab("📝 Text & Chords").id("tab_text"));
+    this.#tabs.set("score", new Tab("🎵 Scores").id("tab_score"));
+    this.#tabs.set("playback", new Tab("🎧 Playbacks").id("tab_playback"));
   }
 
   init() {
-    for (const component of this.#components.values())
+    for (const component of this.#tabs.values())
       this.#element.append(component.element);
     
     document.body.append(this.#element);
   }
 
-  get components() {
-    return this.#components;
+  get tabs() {
+    return this.#tabs;
   }
 }
