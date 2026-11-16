@@ -12,8 +12,9 @@ export default class TabsMediator {
   activate(id) {
     // tabs
     for (const [key, tab] of this.#tabs)
-      tab.setActive(id == key);
-    
+      tab.active = (id == key);
+
+    // panels
     // all hidden
     for (const panel of this.#panels.values())
       panel.element.style.display = "none";
