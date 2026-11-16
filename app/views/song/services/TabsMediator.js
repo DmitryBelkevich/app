@@ -6,18 +6,14 @@ export default class TabsMediator {
     this.#tabs.set(id, tab);
     this.#panels.set(id, panel);
 
-    tab.click((id) => {
-      this.activate(id);
-    });
+    tab.click(id => this.activate(id));
   }
 
   activate(id) {
-    // all hidden
-    for (const panel of this.#panels.values())
-      panel.element.style.display = "none";
+    for (const [key, tab] of this.#tabs)
+      tab.active = id == key;
 
-    // set active
-    const panel = this.#panels.get(id);
-    panel.element.style.display = "block";
+    for (const [key, panel] of this.#panels)
+      panel.visible = id == key;
   }
 }

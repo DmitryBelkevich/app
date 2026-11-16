@@ -34,6 +34,15 @@ export default class PlaybackPanel {
     return this.#element;
   }
 
+  set visible(isVisible) {
+    const state = {
+      true: "block",
+      false: "none",
+    };
+
+    this.#element.style.display = state[isVisible];
+  }
+
   init() {
     document.body.append(this.#element);
   }
