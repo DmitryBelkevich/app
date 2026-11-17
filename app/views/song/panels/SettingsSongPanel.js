@@ -5,12 +5,17 @@ import Button from '../components/Button.js';
 
 class Mediator {
   #buttons = new Map();
-  #displays = new Map();
+  #handlers = new Map();
+  // #displays = new Map();
 
   registerButton(id, button) {
     this.#buttons.set(id, button);
 
     button.click(() => this.handle(id));
+  }
+
+  registerHandler(id, handler) {
+    this.#handlers.set(id, handlers);
   }
 
   registerDisplay(id, display) {
@@ -25,7 +30,7 @@ class Mediator {
 
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
-  #mediator = new Mediator();
+  #mediator;
   
   constructor(song) {
     super();
@@ -49,9 +54,15 @@ export default class SettingsSongPanel extends Panel {
 
     // *** Buttons-Mediator ***
 
+    this.#mediator = new Mediator();
+
     // register buttons
     this.#mediator.registerButton("down_button", this.#components.get("down_button"));
     this.#mediator.registerButton("up_button", this.#components.get("up_button"));
+
+    // register handlers
+    this.#mediator.registerHandler("down_button", () => {song.transpose(-1)});
+    this.#mediator.registerHandler("up_button", () => {song.transpose(1)});
 
     // register displays
     this.#mediator.registerDisplay("display", this.#components.get("display"));
@@ -59,23 +70,23 @@ export default class SettingsSongPanel extends Panel {
 
     // default
 
-    down_button.click(() => {
-      song.transpose(-1);
+    // down_button.click(() => {
+    //   song.transpose(-1);
       
-      display.content(song.key);
-      display.state(song.isTransposed());
+    //   display.content(song.key);
+    //   display.state(song.isTransposed());
       
-      transposition_display.content(song.transposition);
-    });
+    //   transposition_display.content(song.transposition);
+    // });
 
-    up_button.click(() => {
-      song.transpose(1);
+    // up_button.click(() => {
+    //   song.transpose(1);
       
-      display.content(song.key);
-      display.state(song.isTransposed());
+    //   display.content(song.key);
+    //   display.state(song.isTransposed());
       
-      transposition_display.content(song.transposition);
-    });
+    //   transposition_display.content(song.transposition);
+    // });
   }
 
   get components() {
