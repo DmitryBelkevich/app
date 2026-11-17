@@ -35,7 +35,8 @@ export default class SongController extends Controller {
       tab.click(this.open_tab);
 
     // *** settings song ***
-    this.#view.panels.get("settings").panels.get("settings-song");
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("down_button").click(this.transpose_down_song);
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("up_button").click(this.transpose_up_song);
   }
 
   // *** nav ***
