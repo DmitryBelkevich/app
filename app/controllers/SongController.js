@@ -55,15 +55,15 @@ export default class SongController extends Controller {
 
   // *** tabs ***
 
-  open_tab = (id) => {
+  open_tab = (id) => {}
 
   // *** settings song ***
 
   transpose_down_song = () => {
-    this.#song.transpose(-1);console.log(this.#song)}
+    this.#song.transpose(-1);console.log(this.#song);
   }
 
   transpose_up_song = () => {
-    this.#song.transpose(1);console.log(this.#song)}
+    this.#song.transpose(1);console.log(this.#song);
   }
 }
