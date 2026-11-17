@@ -12,11 +12,11 @@ class Mediator {
   }
 
   registerButton(id, button) {
-    
+    this.#buttons.set(id, tab);
   }
 
   registerDisplay(id, display) {
-    
+    this.#displays.set(id, display);
   }
 
   handle(id) {
