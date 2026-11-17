@@ -4,9 +4,13 @@ import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
 class Mediator {
+  #song;
   #buttons = new Map();
-  #handlers = new Map();
   #displays = new Map();
+
+  set song(song) {
+    this.#song = song;
+  }
 
   registerButton(id, button) {
     this.#buttons.set(id, button);
@@ -14,23 +18,24 @@ class Mediator {
     button.click(() => this.handle(id));
   }
 
-  registerHandler(id, handler) {
-    this.#handlers.set(id, handlers);
-  }
-
   registerDisplay(id, display) {
     this.#displays.set(id, display);
   }
 
   handle(id) {
+    if (id == "down_button")
+      this.#song.transpose(-1);
+    else if (id == "up_button")
+      this.#song.transpose(1);
+
     // TODO
-    console.log(id);
+    console.log(this.#song);
   }
 }
 
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
-  #mediator;
+  #mediator = new Mediator();
   
   constructor(song) {
     super();
@@ -54,15 +59,11 @@ export default class SettingsSongPanel extends Panel {
 
     // *** Buttons-Mediator ***
 
-    this.#mediator = new Mediator();
+    this.#mediator.song = song;
 
     // register buttons
     this.#mediator.registerButton("down_button", this.#components.get("down_button"));
     this.#mediator.registerButton("up_button", this.#components.get("up_button"));
-
-    // register handlers
-    this.#mediator.registerHandler("down_button", () => {song.transpose(-1)});
-    this.#mediator.registerHandler("up_button", () => {song.transpose(1)});
 
     // register displays
     this.#mediator.registerDisplay("display", this.#components.get("display"));
