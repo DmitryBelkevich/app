@@ -16,35 +16,10 @@ export default class SettingsSongPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
-    const display = new Display(song.key).id("key-song").state(song.isTransposed());
-
-    const transposition_display = new Display(song.transposition);
-
-    const down_button = new Button("🔽");
-    const up_button = new Button("🔼");
-
-    down_button.click(() => {
-      song.transpose(-1);
-      
-      display.content(song.key);
-      display.state(song.isTransposed());
-      
-      transposition_display.content(song.transposition);
-    });
-
-    up_button.click(() => {
-      song.transpose(1);
-      
-      display.content(song.key);
-      display.state(song.isTransposed());
-      
-      transposition_display.content(song.transposition);
-    });
-    
-    this.#components.set("display", display);
-    this.#components.set("transposition_display", transposition_display);
-    this.#components.set("down_button", down_button);
-    this.#components.set("up_button", up_button);
+    this.#components.set("display1", new Display(song.key).id("key-song").state(song.isTransposed()));
+    this.#components.set("display2", new Display(song.transposition));
+    this.#components.set("down_button", new Button("🔽"));
+    this.#components.set("up_button", new Button("🔼"));
   }
 
   get components() {

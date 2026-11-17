@@ -33,6 +33,10 @@ export default class SongController extends Controller {
     // *** tabs ***
     for (const tab of this.#view.panels.get("tabs").tabs.values())
       tab.click(this.open_tab);
+
+    // *** settings song ***
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("down_button").click(this.transpose_down_song);
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("up_button").click(this.transpose_up_song);
   }
 
   // *** nav ***
@@ -52,4 +56,29 @@ export default class SongController extends Controller {
   // *** tabs ***
 
   open_tab = (id) => {}
+
+  // *** settings song ***
+
+  transpose_down_song = () => {
+    this.#song.transpose(-1);
+    this.update_view();
+  }
+
+  transpose_up_song = () => {
+    this.#song.transpose(1);
+    this.update_view();
+  }
+
+  // *** view ***
+
+  update_view = () => {
+    // *** settings-song ***
+
+    // display 1: key
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("display1").content(this.#song.key);
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("display1").state(this.#song.isTransposed());
+
+    // display 2: transposition
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("display2").content(this.#song.transposition);
+  }
 }
