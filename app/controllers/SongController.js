@@ -33,6 +33,9 @@ export default class SongController extends Controller {
     // *** tabs ***
     for (const tab of this.#view.panels.get("tabs").tabs.values())
       tab.click(this.open_tab);
+
+    // *** settings song ***
+    this.#view.panels.get("settings-song");
   }
 
   // *** nav ***
@@ -52,4 +55,14 @@ export default class SongController extends Controller {
   // *** tabs ***
 
   open_tab = (id) => {}
+
+  // *** settings song ***
+
+  transpose_down_song = () => {
+    this.#song.transpose(-1);
+  }
+
+  transpose_up_song = () => {
+    this.#song.transpose(1);
+  }
 }
