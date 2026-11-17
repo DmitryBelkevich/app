@@ -6,7 +6,7 @@ import Button from '../components/Button.js';
 class Mediator {
   #buttons = new Map();
   #handlers = new Map();
-  // #displays = new Map();
+  #displays = new Map();
 
   registerButton(id, button) {
     this.#buttons.set(id, button);
