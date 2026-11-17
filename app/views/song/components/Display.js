@@ -17,6 +17,7 @@ export default class Display {
 
   content(content) {
     this.#element.textContent = content;
+    return this;
   }
 
   state(isTransposed) {
@@ -29,6 +30,8 @@ export default class Display {
     this.#element.classList.remove(state[false]);
     
     this.#element.classList.add(state[isTransposed]);
+
+    return this;
   }
   
   init() {
