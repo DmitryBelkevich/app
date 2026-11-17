@@ -45,7 +45,7 @@ export default class SongView extends View {
     this.#tabsMediator.registerPanel("tab_playback", this.#panels.get("playback"));
 
     // activate default tab
-    // this.#tabsMediator.activate("tab_text");
+    this.#tabsMediator.activate("tab_text");
   }
 
   get panels() {
