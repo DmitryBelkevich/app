@@ -3,8 +3,30 @@ import Panel from './Panel.js';
 import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
+class Mediator {
+  #buttons = new Map();
+  #displays = new Map();
+
+  constructor() {
+    console.log(this);
+  }
+
+  registerButton(id, button) {
+    
+  }
+
+  registerDisplay(id, display) {
+    
+  }
+
+  handle(id) {
+    // TODO
+  }
+}
+
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
+  #mediator = new Mediator();
   
   constructor(song) {
     super();
@@ -17,11 +39,26 @@ export default class SettingsSongPanel extends Panel {
 
     // components
     const display = new Display(song.key).id("key-song").state(song.isTransposed());
-
     const transposition_display = new Display(song.transposition);
-
     const down_button = new Button("🔽");
     const up_button = new Button("🔼");
+    
+    this.#components.set("display", display);
+    this.#components.set("transposition_display", transposition_display);
+    this.#components.set("down_button", down_button);
+    this.#components.set("up_button", up_button);
+
+    // *** Buttons-Mediator ***
+
+    // register buttons
+    this.#mediator.registerButton("down_button", this.#components.get("down_button");
+    this.#mediator.registerButton("up_button", this.#components.get("up_button");
+
+    // register displays
+    this.#mediator.registerDisplay("display", this.#components.get("display");
+    this.#mediator.registerDisplay("transposition_display", this.#components.get("transposition_display");
+
+    // default
 
     down_button.click(() => {
       song.transpose(-1);
@@ -40,11 +77,6 @@ export default class SettingsSongPanel extends Panel {
       
       transposition_display.content(song.transposition);
     });
-    
-    this.#components.set("display", display);
-    this.#components.set("transposition_display", transposition_display);
-    this.#components.set("down_button", down_button);
-    this.#components.set("up_button", up_button);
   }
 
   get components() {
