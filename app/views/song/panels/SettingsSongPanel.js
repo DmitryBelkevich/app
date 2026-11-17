@@ -3,6 +3,8 @@ import Panel from './Panel.js';
 import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
+import ButtonsMediator from '../services/ButtonsMediator.js';
+
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
   #mediator = new ButtonsMediator();
