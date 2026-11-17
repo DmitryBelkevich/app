@@ -26,7 +26,7 @@ export default class Tab {
 
   click(handler) {
     this.#element.addEventListener("click", () => {
-      handler(this.#element.id);
+      handler();
     });
   }
 }

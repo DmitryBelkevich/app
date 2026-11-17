@@ -34,18 +34,18 @@ export default class SongView extends View {
     // *** Tabs-Mediator ***
 
     // register tabs
-    this.#tabsMediator.registerTab("tab_text", this.#panels.get("tabs").tabs.get("text"));
-    this.#tabsMediator.registerTab("tab_score", this.#panels.get("tabs").tabs.get("score"));
-    this.#tabsMediator.registerTab("tab_playback", this.#panels.get("tabs").tabs.get("playback"));
+    this.#tabsMediator.registerTab("text", this.#panels.get("tabs").tabs.get("text"));
+    this.#tabsMediator.registerTab("score", this.#panels.get("tabs").tabs.get("score"));
+    this.#tabsMediator.registerTab("playback", this.#panels.get("tabs").tabs.get("playback"));
 
     // register panels
-    this.#tabsMediator.registerPanel("tab_text", this.#panels.get("settings"));
-    this.#tabsMediator.registerPanel("tab_text", this.#panels.get("text"));
-    this.#tabsMediator.registerPanel("tab_score", this.#panels.get("score"));
-    this.#tabsMediator.registerPanel("tab_playback", this.#panels.get("playback"));
+    this.#tabsMediator.registerPanel("text", this.#panels.get("settings"));
+    this.#tabsMediator.registerPanel("text", this.#panels.get("text"));
+    this.#tabsMediator.registerPanel("score", this.#panels.get("score"));
+    this.#tabsMediator.registerPanel("playback", this.#panels.get("playback"));
 
     // activate default tab
-    this.#tabsMediator.activate("tab_text");
+    this.#tabsMediator.activate("text");
   }
 
   get panels() {
