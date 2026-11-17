@@ -10,7 +10,7 @@ export default class ButtonsMediator {
   registerButton(id, button) {
     this.#buttons.set(id, button);
 
-    button.click(() => this.handle(id));
+    // button.click(() => this.handle(id));
   }
 
   registerDisplays(id, display) {
@@ -18,9 +18,9 @@ export default class ButtonsMediator {
   }
 
   handle(id) {
-    this.#display1.content(this.#song.key);
-    this.#display1.state(this.#song.isTransposed());
+    // this.#display1.content(this.#song.key);
+    // this.#display1.state(this.#song.isTransposed());
     
-    this.#display2.content(this.#song.transposition);
+    // this.#display2.content(this.#song.transposition);
   }
 }
