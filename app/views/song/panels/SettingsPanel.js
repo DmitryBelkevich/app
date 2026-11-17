@@ -6,7 +6,7 @@ import Button from '../components/Button.js';
 export default class SettingsPanel extends Panel {
   #components = new Map();
   
-  constructor() {
+  constructor(song) {
     super();
     this._cssLoader.load("./app/views/song/css/settings_song.css");
 
