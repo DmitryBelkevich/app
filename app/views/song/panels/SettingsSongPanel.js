@@ -3,33 +3,6 @@ import Panel from './Panel.js';
 import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
-class ButtonsMediator {
-  #song;
-  #buttons = new Map();
-  #displays = new Map();
-
-  set song(song) {
-    this.#song = song;
-  }
-
-  registerButton(id, button) {
-    this.#buttons.set(id, button);
-
-    button.click(() => this.handle(id));
-  }
-
-  registerDisplays(id, display) {
-    this.#displays.set(id, display);
-  }
-
-  handle(id) {
-    this.#display1.content(this.#song.key);
-    this.#display1.state(this.#song.isTransposed());
-    
-    this.#display2.content(this.#song.transposition);
-  }
-}
-
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
   #mediator = new ButtonsMediator();
