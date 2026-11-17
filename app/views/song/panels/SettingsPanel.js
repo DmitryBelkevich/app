@@ -21,13 +21,21 @@ export default class SettingsPanel extends Panel {
 
     const transposition_display = new Display(song.transposition);
 
-    const up_button = new Button("🔽");
-    const down_button = new Button("🔼");
+    const down_button = new Button("🔽");
+    const up_button = new Button("🔼");
+
+    down_button.clic(() => {
+      console.log("-");
+    });
+
+    up_button.clic(() => {
+      console.log("+");
+    });
     
     this.#components.set("display", display);
-    this.#components.set("display2", transposition_display);
-    this.#components.set("up_button", up_button);
+    this.#components.set("transposition_display", transposition_display);
     this.#components.set("down_button", down_button);
+    this.#components.set("up_button", up_button);
   }
 
   get components() {
