@@ -70,7 +70,7 @@ export default class SettingsSongPanel extends Panel {
 
     // set displays
     this.#mediator.display1 = this.#components.get("display1");
-    this.#mediator.display2 = this.#components.get("display2"));
+    this.#mediator.display2 = this.#components.get("display2");
 
     // default
 
