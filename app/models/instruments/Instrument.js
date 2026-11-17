@@ -5,6 +5,7 @@ export default class Instrument extends Model {
   _color;
   _transposition;
   _key;
+  // _chords;
 
   constructor() {
     super();
@@ -45,5 +46,22 @@ export default class Instrument extends Model {
   set key(key) {
     this._key = key;
     // this._key.transpose(this._transposition);
+  }
+
+  //
+  // set-get chords
+
+  transpose(count) {
+    if (!count)
+      return;
+    
+    this._transposition += count;
+
+    if (this._key)
+      this._key.transpose(-count);
+  }
+
+  isTransposed() {
+    return this._transposition != 0;
   }
 }
