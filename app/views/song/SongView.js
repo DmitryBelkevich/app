@@ -6,6 +6,7 @@ import TabsPanel from './panels/TabsPanel.js';
 import TextPanel from './panels/TextPanel.js';
 import ScorePanel from './panels/ScorePanel.js';
 import PlaybackPanel from './panels/PlaybackPanel.js';
+import SettingsPanel from './panels/SettingsPanel.js';
 import FooterPanel from './panels/FooterPanel.js';
 
 import Autoscroll from './services/Autoscroll.js';
@@ -24,9 +25,11 @@ export default class SongView extends View {
     this.#panels.set("navigator", new NavigatorPanel());
     this.#panels.set("title", new TitlePanel(song));
     this.#panels.set("tabs", new TabsPanel());
+    this.#panels.set("settings", new SettingsPanel(song));
     this.#panels.set("text", new TextPanel());
     this.#panels.set("score", new ScorePanel(song));
     this.#panels.set("playback", new PlaybackPanel(song));
+    
     this.#panels.set("footer", new FooterPanel());
 
     // *** Tabs-Mediator ***
@@ -37,6 +40,7 @@ export default class SongView extends View {
     this.#tabsMediator.registerTab("tab_playback", this.#panels.get("tabs").tabs.get("playback"));
 
     // register panels
+    this.#tabsMediator.registerPanel("tab_text", this.#panels.get("settings"));
     this.#tabsMediator.registerPanel("tab_text", this.#panels.get("text"));
     this.#tabsMediator.registerPanel("tab_score", this.#panels.get("score"));
     this.#tabsMediator.registerPanel("tab_playback", this.#panels.get("playback"));

@@ -14,6 +14,7 @@ export default class TabsPanel extends Panel {
     this._element.id = "tabs";
     this._element.classList.add("panel");
 
+    // components
     this.#tabs.set("text", new Tab("📝 Text & Chords").id("tab_text"));
     this.#tabs.set("score", new Tab("🎵 Scores").id("tab_score"));
     this.#tabs.set("playback", new Tab("🎧 Playbacks").id("tab_playback"));

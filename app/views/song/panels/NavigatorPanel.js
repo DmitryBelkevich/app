@@ -12,7 +12,8 @@ export default class NavigatorPanel extends Panel {
     // container
     this._element = document.createElement("nav");
     this._element.classList.add("panel");
-    
+
+    // components
     this.#components.set("list_button", new Button("◀️"));
     this.#components.set("autoscroll_button", new Button("⏬").id("autoscroll"));
   }
