@@ -19,10 +19,14 @@ export default class SettingsPanel extends Panel {
     const display = new Display(song.key).id("key-song");
     // TODO add class original/transposed
 
+    const display2 = document.createElement("div");
+    display2.textContent = song.transposition;
+
     const up_button = new Button("🔽");
     const down_button = new Button("🔼");
     
     this.#components.set("display", display);
+    this.#components.set("display2", display2);
     this.#components.set("up_button", up_button);
     this.#components.set("down_button", down_button);
   }
