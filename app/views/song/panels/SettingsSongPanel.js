@@ -45,7 +45,5 @@ export default class SettingsSongPanel extends Panel {
   init() {
     for (const component of this.#components.values())
       this._element.append(component.element);
-    
-    // document.body.append(this._element);
   }
 }
