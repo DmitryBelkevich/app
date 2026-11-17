@@ -14,7 +14,7 @@ export default class ButtonsMediator {
   registerButton(id, button) {
     this.#buttons.set(id, button);
 
-    button.click(() => console.log("Hello World"));//this.handle(id)
+    button.click(() => this.handle(id));
   }
 
   registerDisplay(id, display) {
@@ -25,6 +25,7 @@ export default class ButtonsMediator {
   }
 
   handle(id) {
+    console.log(id);
     // this.#display1.content(this.#song.key);
     // this.#display1.state(this.#song.isTransposed());
     
