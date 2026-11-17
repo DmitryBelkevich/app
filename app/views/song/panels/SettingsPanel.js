@@ -15,9 +15,6 @@ export default class SettingsPanel extends Panel {
 
     // panels
     this.#panels.set("settings-song", new SettingsSongPanel(song));
-
-    // fill
-    this._element;
   }
 
   get panels() {
@@ -27,5 +24,7 @@ export default class SettingsPanel extends Panel {
   init() {
     for (const panel of this.#panels.values())
       panel.init();
+
+    document.body.append(this._element);
   }
 }
