@@ -25,7 +25,7 @@ export default class SongView extends View {
     this.#panels.set("navigator", new NavigatorPanel());
     this.#panels.set("title", new TitlePanel(song));
     this.#panels.set("tabs", new TabsPanel());
-    this.#panels.set("settings", new SettingsPanel());
+    this.#panels.set("settings", new SettingsPanel(song));
     this.#panels.set("text", new TextPanel());
     this.#panels.set("score", new ScorePanel(song));
     this.#panels.set("playback", new PlaybackPanel(song));
