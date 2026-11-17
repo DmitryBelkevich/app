@@ -14,4 +14,13 @@ export default class SettingsInstrumentPanel extends Panel {
 
     // components
   }
+
+  get components() {
+    return this.#components;
+  }
+
+  init() {
+    for (const component of this.#components.values())
+      this._element.append(component.element);
+  }
 }
