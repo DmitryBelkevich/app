@@ -34,11 +34,6 @@ class Mediator {
   }
 
   handle(id) {
-    // if (id == "down_button")
-    //   this.#song.transpose(-1);
-    // else if (id == "up_button")
-    //   this.#song.transpose(1);
-
     const callback = this.#callbacks.get(id);
     this.execute(0, callback);
 
@@ -49,7 +44,7 @@ class Mediator {
   }
 
   execute(value, callback) {
-    return callback(value);
+    return callback();
   }
 }
 
