@@ -24,11 +24,11 @@ export default class SettingsPanel extends Panel {
     const down_button = new Button("🔽");
     const up_button = new Button("🔼");
 
-    down_button.clic(() => {
+    down_button.click(() => {
       console.log("-");
     });
 
-    up_button.clic(() => {
+    up_button.click(() => {
       console.log("+");
     });
     
