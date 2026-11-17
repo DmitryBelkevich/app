@@ -3,12 +3,10 @@ import Panel from './Panel.js';
 import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
-class Mediator {
+class ButtonsMediator {
   #song;
   #buttons = new Map();
-
-  #display1;
-  #display2;
+  #displays = new Map();
 
   set song(song) {
     this.#song = song;
@@ -20,12 +18,8 @@ class Mediator {
     button.click(() => this.handle(id));
   }
 
-  set display1(display1) {
-    this.#display1 = display1;
-  }
-
-  set display2(display2) {
-    this.#display2 = display2;
+  registerDisplays(id, display) {
+    this.#displays.set(id, display);
   }
 
   handle(id) {
@@ -38,7 +32,7 @@ class Mediator {
 
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
-  #mediator = new Mediator();
+  #mediator = new ButtonsMediator();
   
   constructor(song) {
     super();
@@ -50,7 +44,6 @@ export default class SettingsSongPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
-
     const down_button = new Button("🔽");
     down_button.click(() => song.transpose(-1));
     const up_button = new Button("🔼");
@@ -66,12 +59,15 @@ export default class SettingsSongPanel extends Panel {
     this.#mediator.song = song;
 
     // register buttons
-    this.#mediator.registerButton("down_button", this.#components.get("down_button"));
-    this.#mediator.registerButton("up_button", this.#components.get("up_button"));
+    this.#mediator.registerButton("down", this.#components.get("down_button"));
+    this.#mediator.registerButton("up", this.#components.get("up_button"));
 
-    // set displays
-    this.#mediator.display1 = this.#components.get("display1");
-    this.#mediator.display2 = this.#components.get("display2");
+    // register displays
+    this.#mediator.registerDisplay("down", this.#components.get("display1"));
+    this.#mediator.registerDisplay("down", this.#components.get("display2"));
+
+    this.#mediator.registerDisplay("up", this.#components.get("display1"));
+    this.#mediator.registerDisplay("up", this.#components.get("display2"));
   }
 
   get components() {
