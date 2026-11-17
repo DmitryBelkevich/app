@@ -25,7 +25,6 @@ export default class Display {
       false: "original",
     };
 
-    // this._element.style.display = state[isTransposed];
     this.#element.classList.remove(state[true]);
     this.#element.classList.remove(state[false]);
     
