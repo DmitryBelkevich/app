@@ -28,8 +28,10 @@ class Mediator {
     else if (id == "up_button")
       this.#song.transpose(1);
 
-    // TODO
-    console.log(this.#song);
+    this.#displays.get("display").content(this.#song.key);
+    this.#displays.get("display").state(this.#song.isTransposed());
+    
+    this.#displays.get("transposition_display").content(this.#song.transposition);
   }
 }
 
