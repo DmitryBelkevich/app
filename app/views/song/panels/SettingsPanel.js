@@ -27,7 +27,8 @@ export default class SettingsPanel extends Panel {
 
     // fill
     // this._element.append(component.element);
-    console.log(this._element);
+    for (const panel of this.#panels.values())
+      this._element.append(panel.element);
 
     document.body.append(this._element);
   }
