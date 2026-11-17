@@ -55,9 +55,7 @@ export default class SongController extends Controller {
 
   // *** tabs ***
 
-  open_tab = (id) => {
-    console.log(this.#song);
-  }
+  open_tab = (id) => {}
 
   // *** settings song ***
 
