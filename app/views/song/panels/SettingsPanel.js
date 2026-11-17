@@ -26,12 +26,10 @@ export default class SettingsPanel extends Panel {
 
     down_button.click(() => {
       song.transpose(-1);
-      console.log(song);
     });
 
     up_button.click(() => {
       song.transpose(1);
-      console.log(song);
     });
     
     this.#components.set("display", display);
