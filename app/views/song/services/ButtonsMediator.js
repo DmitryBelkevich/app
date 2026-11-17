@@ -18,8 +18,6 @@ export default class ButtonsMediator {
   }
 
   registerDisplay(id, display) {
-    this.#displays.set(id, display);
-
     if (!this.#displays.has(id))
       this.#displays.set(id, []);
     
