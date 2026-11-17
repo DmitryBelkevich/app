@@ -72,9 +72,9 @@ export default class SongController extends Controller {
   // *** view ***
 
   update = () => {
-    this.#view.get("settings").panels.get("settings-song").components.get("display1").content(this.#song.key);
-    this.#view.get("settings").panels.get("settings-song").components.get("display1").state(this.#song.isTransposed());
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("display1").content(this.#song.key);
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("display1").state(this.#song.isTransposed());
 
-    this.#view.get("settings").panels.get("settings-song").components.get("display2").content(this.#song.transposition);
+    this.#view.panels.get("settings").panels.get("settings-song").components.get("display2").content(this.#song.transposition);
   }
 }
