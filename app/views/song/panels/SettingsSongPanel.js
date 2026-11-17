@@ -7,12 +7,10 @@ class Mediator {
   #buttons = new Map();
   #displays = new Map();
 
-  constructor() {
-    console.log(this);
-  }
-
   registerButton(id, button) {
     this.#buttons.set(id, button);
+
+    button.click(() => handle(id));
   }
 
   registerDisplay(id, display) {
@@ -21,6 +19,7 @@ class Mediator {
 
   handle(id) {
     // TODO
+    console.log(id);
   }
 }
 
