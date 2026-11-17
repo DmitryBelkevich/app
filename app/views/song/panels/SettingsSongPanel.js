@@ -29,7 +29,7 @@ class Mediator {
   }
 
   handle(id) {
-    switch (id) {
+    switch (id) {// remove to panel
       case "down_button":
         this.#song.transpose(-1);
         break;
