@@ -40,7 +40,7 @@ class Mediator {
     //   this.#song.transpose(1);
 
     const callback = this.#callbacks.get(id);
-    
+    console.log(callback);
 
     this.#display1.content(this.#song.key);
     this.#display1.state(this.#song.isTransposed());
