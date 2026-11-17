@@ -5,7 +5,6 @@ export default class Instrument extends Model {
   _color;
   _transposition;
   _key;
-  _chords;
 
   constructor() {
     super();
