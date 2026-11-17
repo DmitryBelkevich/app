@@ -3,42 +3,8 @@ import Panel from './Panel.js';
 import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
-class Mediator {
-  #song;
-  #buttons = new Map();
-
-  #display1;
-  #display2;
-
-  set song(song) {
-    this.#song = song;
-  }
-
-  registerButton(id, button) {
-    this.#buttons.set(id, button);
-
-    button.click(() => this.handle(id));
-  }
-
-  set display1(display1) {
-    this.#display1 = display1;
-  }
-
-  set display2(display2) {
-    this.#display2 = display2;
-  }
-
-  handle(id) {
-    this.#display1.content(this.#song.key);
-    this.#display1.state(this.#song.isTransposed());
-    
-    this.#display2.content(this.#song.transposition);
-  }
-}
-
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
-  #mediator = new Mediator();
   
   constructor(song) {
     super();
@@ -50,28 +16,10 @@ export default class SettingsSongPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
-
-    const down_button = new Button("🔽");
-    down_button.click(() => song.transpose(-1));
-    const up_button = new Button("🔼");
-    up_button.click(() => song.transpose(1));
-    
     this.#components.set("display1", new Display(song.key).id("key-song").state(song.isTransposed()));
     this.#components.set("display2", new Display(song.transposition));
-    this.#components.set("down_button", down_button);
-    this.#components.set("up_button", up_button);
-
-    // *** Buttons-Mediator ***
-
-    this.#mediator.song = song;
-
-    // register buttons
-    this.#mediator.registerButton("down_button", this.#components.get("down_button"));
-    this.#mediator.registerButton("up_button", this.#components.get("up_button"));
-
-    // set displays
-    this.#mediator.display1 = this.#components.get("display1");
-    this.#mediator.display2 = this.#components.get("display2");
+    this.#components.set("down_button", new Button("🔽"));
+    this.#components.set("up_button", new Button("🔼"));
   }
 
   get components() {
