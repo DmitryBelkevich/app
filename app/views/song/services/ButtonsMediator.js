@@ -25,7 +25,6 @@ export default class ButtonsMediator {
   }
 
   handle(id) {
-    console.log(id);
     // buttons
     
     // displays
