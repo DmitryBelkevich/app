@@ -28,10 +28,11 @@ export default class ButtonsMediator {
     // buttons
     
     // displays
-    // this.#displays.get(id);
-    for (const [key, displays] of this.#displays) {
-      console.log(key + " " + displays);
-    }
+    const displays = this.#displays.get(id);
+    console.log(displays);
+    // for (const [key, displays] of this.#displays) {
+    //   console.log(key + " " + displays);
+    // }
     // this.#display1.content(this.#song.key);
     // this.#display1.state(this.#song.isTransposed());
     
