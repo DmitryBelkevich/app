@@ -21,6 +21,7 @@ export default class SettingsPanel extends Panel {
 
     const display2 = document.createElement("div");
     display2.textContent = song.transposition;
+    console.log(song.transposition);
 
     const up_button = new Button("🔽");
     const down_button = new Button("🔼");
