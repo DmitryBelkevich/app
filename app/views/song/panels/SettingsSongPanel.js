@@ -3,11 +3,11 @@ import Panel from './Panel.js';
 import Display from '../components/Display.js';
 import Button from '../components/Button.js';
 
-import ButtonsMediator from '../services/ButtonsMediator.js';
+// import ButtonsMediator from '../services/ButtonsMediator.js';
 
 export default class SettingsSongPanel extends Panel {
   #components = new Map();
-  #mediator = new ButtonsMediator();
+  // #mediator = new ButtonsMediator();
   
   constructor(song) {
     super();
@@ -28,16 +28,16 @@ export default class SettingsSongPanel extends Panel {
 
     // this.#mediator.song = song;
 
-    // register buttons
-    this.#mediator.registerButton("down", this.#components.get("down_button"));
-    this.#mediator.registerButton("up", this.#components.get("up_button"));
+    // // register buttons
+    // this.#mediator.registerButton("down", this.#components.get("down_button"));
+    // this.#mediator.registerButton("up", this.#components.get("up_button"));
 
-    // register displays
-    this.#mediator.registerDisplay("down", this.#components.get("display1"));
-    this.#mediator.registerDisplay("down", this.#components.get("display2"));
+    // // register displays
+    // this.#mediator.registerDisplay("down", this.#components.get("display1"));
+    // this.#mediator.registerDisplay("down", this.#components.get("display2"));
 
-    this.#mediator.registerDisplay("up", this.#components.get("display1"));
-    this.#mediator.registerDisplay("up", this.#components.get("display2"));
+    // this.#mediator.registerDisplay("up", this.#components.get("display1"));
+    // this.#mediator.registerDisplay("up", this.#components.get("display2"));
   }
 
   get components() {
