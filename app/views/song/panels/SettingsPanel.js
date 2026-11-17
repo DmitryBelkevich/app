@@ -1,7 +1,7 @@
 import Panel from './Panel.js';
 
 import SettingsSongPanel from './SettingsSongPanel.js';
-import SettingsInstrumentPanel  from './SettingsInstrumentPanel .js';
+import SettingsInstrumentPanel from './SettingsInstrumentPanel.js';
 
 export default class SettingsPanel extends Panel {
   #panels = new Map();
