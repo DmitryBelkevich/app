@@ -15,7 +15,7 @@ export default class Display {
     return this;
   }
 
-  set content(content) {
+  content(content) {
     this.#element.textContent = content;
   }
   
