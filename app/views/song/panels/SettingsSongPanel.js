@@ -10,7 +10,7 @@ class Mediator {
   registerButton(id, button) {
     this.#buttons.set(id, button);
 
-    button.click(() => handle(id));
+    button.click(() => this.handle(id));
   }
 
   registerDisplay(id, display) {
