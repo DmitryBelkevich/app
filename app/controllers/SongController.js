@@ -61,9 +61,20 @@ export default class SongController extends Controller {
 
   transpose_down_song = () => {
     this.#song.transpose(-1);
+    this.update();
   }
 
   transpose_up_song = () => {
     this.#song.transpose(1);
+    this.update();
+  }
+
+  // *** view ***
+
+  update = () => {
+    this.#view.get("settings").panels.get("settings-song").components.get("display1").content(this.#song.key);
+    this.#view.get("settings").panels.get("settings-song").components.get("display1").state(this.#song.isTransposed());
+
+    this.#view.get("settings").panels.get("settings-song").components.get("display2").content(this.#song.transposition);
   }
 }
