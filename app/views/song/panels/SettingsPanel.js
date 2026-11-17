@@ -17,7 +17,7 @@ export default class SettingsPanel extends Panel {
 
     // panels
     this.#panels.set("settings-song", new SettingsSongPanel(song));
-    this.#panels.set("settings-instrument", new SettingsSongPanel(song));
+    this.#panels.set("settings-instrument", new SettingsInstrumentPanel(song));
   }
 
   get panels() {
