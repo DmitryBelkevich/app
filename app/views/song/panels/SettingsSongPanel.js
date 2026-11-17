@@ -1,23 +1,51 @@
 import Panel from './Panel.js';
 
+import Display from '../components/Display.js';
+import Button from '../components/Button.js';
+
 export default class SettingsSongPanel extends Panel {
-  #panels = new Map();
+  #components = new Map();
   
-  constructor() {
+  constructor(song) {
     super();
-    // this._cssLoader.load("./app/views/song/css/000.css");
+    this._cssLoader.load("./app/views/song/css/settings_song.css");
 
     // container
+    this._element = document.createElement("div");
+    this._element.id = "settings-song";
+    this._element.classList.add("panel");
 
     // components
+    const display = new Display(song.key).id("key-song");
+    // TODO add class original/transposed
+
+    const transposition_display = new Display(song.transposition);
+
+    const down_button = new Button("🔽");
+    const up_button = new Button("🔼");
+
+    down_button.click(() => {
+      song.transpose(-1);
+    });
+
+    up_button.click(() => {
+      song.transpose(1);
+    });
+    
+    this.#components.set("display", display);
+    this.#components.set("transposition_display", transposition_display);
+    this.#components.set("down_button", down_button);
+    this.#components.set("up_button", up_button);
   }
 
-  get panels() {
-    return this.#panels;
+  get components() {
+    return this.#components;
   }
 
   init() {
-    for (const panel of this.#panels.values())
-      panel.init();
+    for (const component of this.#components.values())
+      this._element.append(component.element);
+    
+    document.body.append(this._element);
   }
 }
