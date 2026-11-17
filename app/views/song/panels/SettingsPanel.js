@@ -7,7 +7,7 @@ export default class SettingsPanel extends Panel {
 
   constructor(song) {
     super();
-    // this._cssLoader.load("./app/views/song/css/000.css");
+    // this._cssLoader.load("./app/views/song/css/settings.css");
 
     // container
     this._element = document.createElement("div");
