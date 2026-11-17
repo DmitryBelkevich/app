@@ -3,6 +3,10 @@ export default class ButtonsMediator {
   #buttons = new Map();
   #displays = new Map();
 
+  constructor() {
+    console.log(this);
+  }
+
   set song(song) {
     this.#song = song;
   }
