@@ -51,12 +51,12 @@ export default class SettingsSongPanel extends Panel {
     // *** Buttons-Mediator ***
 
     // register buttons
-    this.#mediator.registerButton("down_button", this.#components.get("down_button");
-    this.#mediator.registerButton("up_button", this.#components.get("up_button");
+    this.#mediator.registerButton("down_button", this.#components.get("down_button"));
+    this.#mediator.registerButton("up_button", this.#components.get("up_button"));
 
     // register displays
-    this.#mediator.registerDisplay("display", this.#components.get("display");
-    this.#mediator.registerDisplay("transposition_display", this.#components.get("transposition_display");
+    this.#mediator.registerDisplay("display", this.#components.get("display"));
+    this.#mediator.registerDisplay("transposition_display", this.#components.get("transposition_display"));
 
     // default
 
