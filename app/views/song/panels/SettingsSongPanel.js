@@ -27,7 +27,7 @@ export default class SettingsSongPanel extends Panel {
       song.transpose(-1);
       
       display.content(song.key);
-      display.state = song.isTransposed();
+      display.state(song.isTransposed());
       
       transposition_display.content(song.transposition);
     });
@@ -36,7 +36,7 @@ export default class SettingsSongPanel extends Panel {
       song.transpose(1);
       
       display.content(song.key);
-      display.state = song.isTransposed();
+      display.state(song.isTransposed());
       
       transposition_display.content(song.transposition);
     });
