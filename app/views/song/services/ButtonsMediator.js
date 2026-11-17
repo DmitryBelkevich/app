@@ -29,7 +29,9 @@ export default class ButtonsMediator {
     
     // displays
     const displays = this.#displays.get(id);
-    console.log(displays);
+    for (const display of displays) {
+      console.log(display);
+    }
     // for (const [key, displays] of this.#displays) {
     //   console.log(key + " " + displays);
     // }
