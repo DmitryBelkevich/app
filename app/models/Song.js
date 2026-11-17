@@ -109,4 +109,8 @@ export default class Song extends Model {
     // TODO
     console.log("transpose Playback" + " (" + count + "): " + this.#key);
   }
+
+  isTransposed() {
+    return this.#transposition != 0;
+  }
 }

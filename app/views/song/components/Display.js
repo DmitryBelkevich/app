@@ -17,6 +17,21 @@ export default class Display {
 
   content(content) {
     this.#element.textContent = content;
+    return this;
+  }
+
+  state(isTransposed) {
+    const state = {
+      true: "transposed",
+      false: "original",
+    };
+
+    this.#element.classList.remove(state[true]);
+    this.#element.classList.remove(state[false]);
+    
+    this.#element.classList.add(state[isTransposed]);
+
+    return this;
   }
   
   init() {

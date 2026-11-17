@@ -29,7 +29,6 @@ export default class SongView extends View {
     this.#panels.set("text", new TextPanel());
     this.#panels.set("score", new ScorePanel(song));
     this.#panels.set("playback", new PlaybackPanel(song));
-    
     this.#panels.set("footer", new FooterPanel());
 
     // *** Tabs-Mediator ***
@@ -49,11 +48,6 @@ export default class SongView extends View {
     this.#tabsMediator.activate("tab_text");
   }
 
-  init() {
-    for (const panel of this.#panels.values())
-      panel.init();
-  }
-
   get panels() {
     return this.#panels;
   }
@@ -64,5 +58,10 @@ export default class SongView extends View {
 
   get tabsMediator() {
     return this.#tabsMediator;
+  }
+
+  init() {
+    for (const panel of this.#panels.values())
+      panel.init();
   }
 }

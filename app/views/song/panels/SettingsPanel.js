@@ -1,51 +1,33 @@
 import Panel from './Panel.js';
 
-import Display from '../components/Display.js';
-import Button from '../components/Button.js';
+import SettingsSongPanel from './SettingsSongPanel.js';
 
 export default class SettingsPanel extends Panel {
-  #components = new Map();
-  
+  #panels = new Map();
+
   constructor(song) {
     super();
-    this._cssLoader.load("./app/views/song/css/settings_song.css");
+    // this._cssLoader.load("./app/views/song/css/settings.css");
 
     // container
     this._element = document.createElement("div");
-    this._element.id = "settings-song";
+    this._element.id = "settings";
     this._element.classList.add("panel");
 
-    // components
-    const display = new Display(song.key).id("key-song");
-    // TODO add class original/transposed
-
-    const transposition_display = new Display(song.transposition);
-
-    const down_button = new Button("🔽");
-    const up_button = new Button("🔼");
-
-    down_button.click(() => {
-      song.transpose(-1);
-    });
-
-    up_button.click(() => {
-      song.transpose(1);
-    });
-    
-    this.#components.set("display", display);
-    this.#components.set("transposition_display", transposition_display);
-    this.#components.set("down_button", down_button);
-    this.#components.set("up_button", up_button);
+    // panels
+    this.#panels.set("settings-song", new SettingsSongPanel(song));
   }
 
-  get components() {
-    return this.#components;
+  get panels() {
+    return this.#panels;
   }
 
   init() {
-    for (const component of this.#components.values())
-      this._element.append(component.element);
-    
+    for (const panel of this.#panels.values()) {
+      panel.init();
+      this._element.append(panel.element);
+    }
+
     document.body.append(this._element);
   }
 }
