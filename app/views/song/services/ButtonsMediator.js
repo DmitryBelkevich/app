@@ -14,7 +14,7 @@ export default class ButtonsMediator {
   registerButton(id, button) {
     this.#buttons.set(id, button);
 
-    // button.click(() => this.handle(id));
+    button.click(() => console.log("Hello World"));//this.handle(id)
   }
 
   registerDisplay(id, display) {
