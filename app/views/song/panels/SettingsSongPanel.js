@@ -6,6 +6,7 @@ import Button from '../components/Button.js';
 class Mediator {
   #song;
   #buttons = new Map();
+  #callbacks = new Map();
 
   #display1;
   #display2;
@@ -20,6 +21,10 @@ class Mediator {
     button.click(() => this.handle(id));
   }
 
+  registerCallback(id, callback) {
+    this.#callbacks.set(id, callback);
+  }
+
   set display1(display1) {
     this.#display1 = display1;
   }
@@ -29,10 +34,8 @@ class Mediator {
   }
 
   handle(id) {
-    if (id == "down_button")
-      this.#song.transpose(-1);
-    else if (id == "up_button")
-      this.#song.transpose(1);
+    const callback = this.#callbacks.get(id);
+    callback();
 
     this.#display1.content(this.#song.key);
     this.#display1.state(this.#song.isTransposed());
@@ -68,29 +71,13 @@ export default class SettingsSongPanel extends Panel {
     this.#mediator.registerButton("down_button", this.#components.get("down_button"));
     this.#mediator.registerButton("up_button", this.#components.get("up_button"));
 
+    // register callbacks
+    this.#mediator.registerCallback("down_button", () => song.transpose(-1));
+    this.#mediator.registerCallback("up_button", () => song.transpose(1));
+
     // set displays
     this.#mediator.display1 = this.#components.get("display1");
     this.#mediator.display2 = this.#components.get("display2");
-
-    // default
-
-    // down_button.click(() => {
-    //   song.transpose(-1);
-      
-    //   display.content(song.key);
-    //   display.state(song.isTransposed());
-      
-    //   transposition_display.content(song.transposition);
-    // });
-
-    // up_button.click(() => {
-    //   song.transpose(1);
-      
-    //   display.content(song.key);
-    //   display.state(song.isTransposed());
-      
-    //   transposition_display.content(song.transposition);
-    // });
   }
 
   get components() {
