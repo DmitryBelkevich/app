@@ -22,13 +22,10 @@ export default class SettingsPanel extends Panel {
   }
 
   init() {
-    for (const panel of this.#panels.values())
+    for (const panel of this.#panels.values()) {
       panel.init();
-
-    // fill
-    // this._element.append(component.element);
-    for (const panel of this.#panels.values())
       this._element.append(panel.element);
+    }
 
     document.body.append(this._element);
   }
