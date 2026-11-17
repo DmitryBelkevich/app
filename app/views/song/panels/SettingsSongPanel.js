@@ -36,16 +36,11 @@ class Mediator {
   handle(id) {
     const callback = this.#callbacks.get(id);
     callback();
-    // this.execute(0, callback);
 
     this.#display1.content(this.#song.key);
     this.#display1.state(this.#song.isTransposed());
     
     this.#display2.content(this.#song.transposition);
-  }
-
-  execute(value, callback) {
-    return callback();
   }
 }
 
