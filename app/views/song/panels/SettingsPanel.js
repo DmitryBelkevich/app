@@ -25,11 +25,13 @@ export default class SettingsPanel extends Panel {
     const up_button = new Button("🔼");
 
     down_button.click(() => {
-      console.log("-");
+      song.transpose(-1);
+      console.log(song);
     });
 
     up_button.click(() => {
-      console.log("+");
+      song.transpose(1);
+      console.log(song);
     });
     
     this.#components.set("display", display);
