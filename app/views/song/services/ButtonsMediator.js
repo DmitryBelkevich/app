@@ -1,5 +1,5 @@
 export default class ButtonsMediator {
-  #song;
+  // #song;
   #buttons = new Map();
   #displays = new Map();
 
@@ -7,9 +7,9 @@ export default class ButtonsMediator {
     console.log(this);
   }
 
-  set song(song) {
-    this.#song = song;
-  }
+  // set song(song) {
+  //   this.#song = song;
+  // }
 
   registerButton(id, button) {
     this.#buttons.set(id, button);
@@ -19,6 +19,11 @@ export default class ButtonsMediator {
 
   registerDisplays(id, display) {
     this.#displays.set(id, display);
+
+    if (!this.#displays.has(id))
+      this.#displays.set(id, []);
+    
+    this.#displays.get(id).push(display);
   }
 
   handle(id) {
