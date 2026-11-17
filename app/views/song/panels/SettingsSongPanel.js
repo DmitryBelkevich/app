@@ -18,8 +18,6 @@ export default class SettingsSongPanel extends Panel {
 
   init() {
     for (const panel of this.#panels.values())
-      this._element.append(panel.element);
-    
-    document.body.append(this._element);
+      panel.init();
   }
 }
