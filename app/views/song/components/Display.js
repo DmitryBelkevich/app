@@ -14,6 +14,10 @@ export default class Display {
     this.#element.id = id;
     return this;
   }
+
+  content(content) {
+    this.#element.textContent = content;
+  }
   
   init() {
     
