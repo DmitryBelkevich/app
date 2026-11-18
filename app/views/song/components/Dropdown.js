@@ -13,4 +13,10 @@ export default class Dropdown {
   init() {
     
   }
+
+  change(handler) {
+    this.#element.addEventListener("change", (event) => {
+      handler(event);
+    });
+  }
 }
