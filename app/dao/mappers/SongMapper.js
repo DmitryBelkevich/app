@@ -2,25 +2,7 @@ import Song from '../../models/Song.js';
 import Genre from '../../models/Genre.js';
 import Chord from '../../models/Chord.js';
 
-import Instrument from '../../models/instruments/Instrument.js';
-
-class Factories {
-  getFactory(title) {
-    switch (title) {
-      case "Instrument":
-        return new InstrumentFactory();
-        break;
-    }
-    
-    return new InstrumentFactory();
-  }
-}
-
-class InstrumentFactory {
-  create(obj) {
-    return new Instrument();
-  }
-}
+import Factories from '../factories/Factories.js';
 
 export default class SongMapper {
   #factories = new Factories();
