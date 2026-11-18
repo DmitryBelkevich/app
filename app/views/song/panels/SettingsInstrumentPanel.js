@@ -1,5 +1,7 @@
 import Panel from './Panel.js';
 
+import Dropdown from '../components/Dropdown.js';
+
 export default class SettingsInstrumentPanel extends Panel {
   #components = new Map();
 
@@ -13,6 +15,7 @@ export default class SettingsInstrumentPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
+    this.#components.set("dropdown", new Dropdown());
   }
 
   get components() {
