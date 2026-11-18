@@ -24,8 +24,13 @@ export default class SongController extends Controller {
     this.#view = new SongView(this.#song);
     this.#view.init();
 
-    // binds
+    this.#binding();
 
+    // TODO dropdown-mediator
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
+  }
+
+  #binding() {
     // *** nav ***
     this.#view.panels.get("navigator").components.get("list_button").click(this.open_list_controller);
     this.#view.panels.get("navigator").components.get("autoscroll_button").click(this.run_autoscroll);
