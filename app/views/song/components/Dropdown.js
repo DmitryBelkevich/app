@@ -6,6 +6,7 @@ export default class Dropdown {
 
     for (const [index, instrument] of instruments.entries()) {
       console.log(index + " | " + instrument);
+      this.#element.append(index);
     }
   }
 
