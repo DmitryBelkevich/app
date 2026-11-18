@@ -2,7 +2,7 @@ import Song from '../../models/Song.js';
 import Genre from '../../models/Genre.js';
 import Chord from '../../models/Chord.js';
 
-import Factories from '../factories/Factories.js';
+import Factories from '../../factories/Factories.js';
 
 export default class SongMapper {
   #factories = new Factories();
