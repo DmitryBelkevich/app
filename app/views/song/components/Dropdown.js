@@ -31,7 +31,7 @@ export default class Dropdown {
     };
 
     option.value = index;
-    option.textContent = colors[color] + " " + instrument.title;
+    option.textContent = colors[instrument.color] + " " + instrument.title;
     
     this.#element.append(option);
   }
