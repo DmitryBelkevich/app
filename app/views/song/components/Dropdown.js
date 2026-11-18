@@ -4,13 +4,8 @@ export default class Dropdown {
   constructor(instruments) {
     this.#element = document.createElement("select");
 
-    for (const [index, instrument] of instruments.entries()) {
-      const option = document.createElement("option");
-      
-      option.textContent = instrument.title;
-      
-      this.#element.append(option);
-    }
+    for (const [index, instrument] of instruments.entries())
+      this.addOption(index, instrument);
   }
 
   get element() {
@@ -20,6 +15,15 @@ export default class Dropdown {
   id(id) {
     this.#element.id = id;
     return this;
+  }
+
+  addOption(index, instrument) {
+    const option = document.createElement("option");
+
+    option.value = index;
+    option.textContent = instrument.title;
+    
+    this.#element.append(option);
   }
 
   init() {
