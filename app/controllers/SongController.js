@@ -3,11 +3,13 @@ import Config from '../config/Config.js';
 import Controller from './Controller.js';
 
 import SongService from '../services/SongService.js';
+import DropdownMediator from '../services/DropdownMediator.js';
 
 import SongView from '../views/song/SongView.js';
 
 export default class SongController extends Controller {
   #songService;
+  #mediator;
 
   #song;
   #view;
@@ -15,6 +17,7 @@ export default class SongController extends Controller {
   constructor() {
     super();
     this.#songService = new SongService();
+    this.#mediator = new DropdownMediator();
   }
 
   async init() {
