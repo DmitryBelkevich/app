@@ -14,6 +14,9 @@ export default class Song extends Model {
   #key;
   #transposition = 0;
 
+  #voices = [];
+  #instruments = [];
+
   get band() {
     return this.#band;
   }
@@ -94,6 +97,23 @@ export default class Song extends Model {
     this.transpose(transposition - this.#transposition);
   }
 
+  get voices() {
+    return this.#voices;
+  }
+
+  set voices(voices) {
+    this.#voices = voices;
+  }
+  
+  get instruments() {
+    return this.#instruments;
+  }
+
+  set instruments(instruments) {
+    this.#instruments = instruments;
+    // this.#instruments.forEach(instrument => instrument.transpose(count));
+  }
+
   transpose(count) {
     if (!count)
       return;
@@ -103,11 +123,11 @@ export default class Song extends Model {
 
     this.#transposition += count;
 
-    // for (const instrument of this.#instruments)
-    //   instrument.transpose(count);
+    for (const instrument of this.#instruments)
+      instrument.transpose(count);
          
     // TODO
-    console.log(this);
+    // console.log(this);
     console.log("transpose Playback" + " (" + count + "): " + this.#key);
   }
 
