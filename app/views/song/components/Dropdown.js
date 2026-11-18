@@ -4,6 +4,7 @@ export default class Dropdown {
   constructor(instruments) {
     this.#element = document.createElement("select");
 
+    // create options
     for (const [index, instrument] of instruments.entries())
       this.addOption(index, instrument);
   }
