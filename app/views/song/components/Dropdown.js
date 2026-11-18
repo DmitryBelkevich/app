@@ -40,6 +40,10 @@ export default class Dropdown {
     this.#element.append(option);
   }
 
+  setOption(index) {
+    this.#element.selectedIndex = index;
+  }
+
   init() {
     
   }
