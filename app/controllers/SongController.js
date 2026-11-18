@@ -26,6 +26,7 @@ export default class SongController extends Controller {
 
     this.#binding();
 
+    // TODO dropdown-mediator
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
   }
 
