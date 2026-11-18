@@ -9,20 +9,15 @@ export default class Factories {
     switch (title) {
       case "Instrument":
         return new InstrumentFactory();
-        break;
       case "Keyboards":
         return new KeyboardsFactory();
-        break;
       case "Guitar":
       case "E.Guitar":
         return new GuitarFactory();
-        break;
       case "Bass Guitar":
         return new BassGuitarFactory();
-        break;
       case "5-string Bass Guitar":
         return new FiveStringBassGuitarFactory();
-        break;
       default:
         return new InstrumentFactory();
     }
