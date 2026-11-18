@@ -25,6 +25,8 @@ export default class SongController extends Controller {
     this.#view.init();
 
     this.#binding();
+
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
   }
 
   #binding() {
