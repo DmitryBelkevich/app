@@ -21,7 +21,5 @@ export default class Factories {
       default:
         return new InstrumentFactory();
     }
-    
-    return null;
   }
 }
