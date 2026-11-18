@@ -2,7 +2,11 @@ import Song from '../../models/Song.js';
 import Genre from '../../models/Genre.js';
 import Chord from '../../models/Chord.js';
 
+import Factories from '../../factories/Factories.js';
+
 export default class SongMapper {
+  #factories = new Factories();
+  
   read(data) {
     if (!Array.isArray(data))
       return this.#createSong(data);
@@ -31,6 +35,12 @@ export default class SongMapper {
     song.playback = obj.playback;
     song.key = new Chord(obj.key || "");
     song.transposition = obj.transposition;
+
+    for (const o of obj.instruments) {
+      const factory = this.#factories.getFactory(o.title);
+      const instrument = factory.create(o);
+      song.instruments.push(instrument);
+    }
     
     return song;
   }
@@ -66,6 +76,12 @@ export default class SongMapper {
       song.playback = obj.playback;
       song.key = new Chord(obj.key || "");
       song.transposition = obj.transposition;
+
+      for (const o of obj.instruments) {
+        const factory = this.#factories.getFactory(o.title);
+        const instrument = factory.create(o);
+        song.instruments.push(instrument);
+      }
       
       songs.push(song);
     }

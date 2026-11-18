@@ -2,7 +2,11 @@ import Song from '../../models/Song.js';
 import Genre from '../../models/Genre.js';
 import Chord from '../../models/Chord.js';
 
+import Factories from '../../factories/Factories.js';
+
 export default class GenreMapper {
+  #factories = new Factories();
+  
   read(data) {
     if (!Array.isArray(data))
       return this.#createGenre(data);
@@ -39,6 +43,12 @@ export default class GenreMapper {
         song.playback = s.playback;
         song.key = new Chord(s.key || "");
         song.transposition = s.transposition;
+
+        for (const o of s.instruments) {
+          const factory = this.#factories.getFactory(o.title);
+          const instrument = factory.create(o);
+          song.instruments.push(instrument);
+        }
 
         // mapping
         genre.songs.push(song);
