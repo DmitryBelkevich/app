@@ -17,6 +17,10 @@ export default class Dropdown {
     return this;
   }
 
+  getValue() {
+    return this.#element.value;
+  }
+
   addOption(index, instrument) {
     const option = document.createElement("option");
 
