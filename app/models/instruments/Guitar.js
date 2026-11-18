@@ -1,0 +1,82 @@
+import Instrument from "./Instrument.js";
+import Tuning from "../Tuning.js";
+import Note from "../Note.js";
+
+export default class Guitar extends Instrument {
+  _tuning;
+  _capo;
+  
+  constructor() {
+    super();
+    this.title = "Guitar";
+    this.color = "red";
+    this._tuning = new Tuning(
+      new Note("E"),
+      new Note("A"),
+      new Note("D"),
+      new Note("G"),
+      new Note("B"),
+      new Note("E"),
+    );
+    this._capo = 0;
+  }
+
+  get tuning() {
+    return this._tuning;
+  }
+
+  set tuning(tuning) {
+    this._tuning = tuning;
+
+    this._transposition = this._tuning.transposition + this._capo;
+
+    // if (this._key)
+    //   this._key.transpose(this._transposition);
+  }
+
+  get capo() {
+    return this._capo;
+  }
+
+  set capo(capo) {
+    if (capo < 0)
+      capo = 0;
+    
+    this._capo = capo;
+
+    this._transposition = this._tuning.transposition + this._capo;
+
+    // if (this._key)
+    //   this._key.transpose(this._transposition);
+  }
+
+  transpose(count) {
+    super.transpose(count);
+
+    var tuningCount = 0;
+    var capoCount = 0;
+
+    if (count > 0) {
+      if (count <= -this._tuning.transposition) {
+        tuningCount = count;
+        capoCount = 0;
+      } else if (count > -this._tuning.transposition) {
+        tuningCount = -this._tuning.transposition;
+        capoCount = count - tuningCount;
+      }
+    }
+
+    if (count < 0) {
+      if (count >= -this._capo) {
+        capoCount = count;
+        tuningCount = 0;
+      } else if (count < -this._capo) {
+        capoCount = -this._capo;
+        tuningCount = count - capoCount;
+      }
+    }
+
+    this._tuning.transpose(tuningCount);
+    this._capo += capoCount;
+  }
+}
