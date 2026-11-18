@@ -24,10 +24,10 @@ export default class SongController extends Controller {
     this.#view = new SongView(this.#song);
     this.#view.init();
 
-    this.#binding();
-
     // TODO dropdown-mediator
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
+
+    this.#binding();
   }
 
   #binding() {
