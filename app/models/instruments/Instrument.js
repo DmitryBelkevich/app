@@ -46,8 +46,13 @@ export default class Instrument {
     // this._key.transpose(this._transposition);
   }
 
-  //
-  // set-get chords
+  // get chords() {
+  //   return this._chords;
+  // }
+
+  // set chords(chords) {
+  //   this._chords = chords;
+  // }
 
   transpose(count) {
     if (!count)
