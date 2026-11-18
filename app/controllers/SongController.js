@@ -37,6 +37,9 @@ export default class SongController extends Controller {
     // *** settings song ***
     this.#view.panels.get("settings").panels.get("settings-song").components.get("down_button").click(this.transpose_down_song);
     this.#view.panels.get("settings").panels.get("settings-song").components.get("up_button").click(this.transpose_up_song);
+
+    // *** settings instrument ***
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").change(this.select_instrument);
   }
 
   // *** nav ***
@@ -67,6 +70,12 @@ export default class SongController extends Controller {
   transpose_up_song = () => {
     this.#song.transpose(1);
     this.update_view();
+  }
+
+  // *** settings instrument ***
+
+  select_instrument = (event) => {
+    console.log(event.target.value);
   }
 
   // *** view ***
