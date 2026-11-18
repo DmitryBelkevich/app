@@ -12,7 +12,7 @@ export default class DropdownMediator {
     // listens
   }
 
-  registerInstruments(id, instrument) {
+  registerInstrument(id, instrument) {
     this.#instruments.set(id, instrument);
   }
 }
