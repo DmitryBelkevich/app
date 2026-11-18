@@ -66,6 +66,12 @@ export default class SongMapper {
       song.playback = obj.playback;
       song.key = new Chord(obj.key || "");
       song.transposition = obj.transposition;
+
+      for (const inst of obj.instruments) {
+        // const factory = factories[inst.title];
+        const instrument = null;//factory.create();
+        song.instruments.push(instrument);
+      }
       
       songs.push(song);
     }
