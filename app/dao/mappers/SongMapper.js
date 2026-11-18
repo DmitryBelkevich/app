@@ -17,7 +17,7 @@ class Factories {
 }
 
 class InstrumentFactory {
-  create() {
+  create(obj) {
     return new Instrument();
   }
 }
@@ -91,7 +91,7 @@ export default class SongMapper {
 
       for (const o of obj.instruments) {
         const factory = this.#factories.getFactory(o.title);
-        const instrument = factory.create();
+        const instrument = factory.create(o);
         song.instruments.push(instrument);
       }
       
