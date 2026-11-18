@@ -2,7 +2,7 @@ export default class Dropdown {
   #element;
   
   constructor(song) {
-    this.#element = document.createElement("div");
+    this.#element = document.createElement("select");
   }
 
   get element() {
