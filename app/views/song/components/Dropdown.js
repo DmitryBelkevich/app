@@ -5,8 +5,11 @@ export default class Dropdown {
     this.#element = document.createElement("select");
 
     for (const [index, instrument] of instruments.entries()) {
-      console.log(index + " | " + instrument);
-      this.#element.append(index);
+      const option = document.createElement("option");
+      
+      option.textContent = instrument.title;
+      
+      this.#element.append(option);
     }
   }
 
