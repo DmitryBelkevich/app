@@ -15,4 +15,6 @@ export default class DropdownMediator {
   registerInstrument(id, instrument) {
     this.#instruments.set(id, instrument);
   }
+
+  activate(id) {}
 }
