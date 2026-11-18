@@ -1,3 +1,5 @@
+import InstrumentFactory from './InstrumentFactory.js';
+
 export default class Factories {
   getFactory(title) {
     switch (title) {
@@ -6,6 +8,6 @@ export default class Factories {
         break;
     }
     
-    return new InstrumentFactory();
+    return null;
   }
 }
