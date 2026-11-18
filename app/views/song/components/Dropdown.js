@@ -20,8 +20,18 @@ export default class Dropdown {
   addOption(index, instrument) {
     const option = document.createElement("option");
 
+    const colors = {
+      null: "⚪️",
+      undefined: "⚪️",
+      
+      "grey": "⚪️",
+      "red": "🔴",
+      "yellow": "🟡",
+      "green": "🟢",
+    };
+
     option.value = index;
-    option.textContent = instrument.title;
+    option.textContent = colors[color] + " " + instrument.title;
     
     this.#element.append(option);
   }
