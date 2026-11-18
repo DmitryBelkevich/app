@@ -33,7 +33,7 @@ export default class SongController extends Controller {
 
     // register instruments
     for (const [index, instrument] of this.#song.instruments.entries())
-      this.#mediator.registerInstruments(index, instrument);
+      this.#mediator.registerInstrument(index, instrument);
 
     // set default option
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
