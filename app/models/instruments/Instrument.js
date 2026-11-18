@@ -1,6 +1,4 @@
-import Model from "./Model.js";
-
-export default class Instrument extends Model {
+export default class Instrument {
   _title;
   _color;
   _transposition;
