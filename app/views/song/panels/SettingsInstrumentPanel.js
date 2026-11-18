@@ -15,7 +15,7 @@ export default class SettingsInstrumentPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
-    this.#components.set("dropdown", new Dropdown());
+    this.#components.set("dropdown", new Dropdown(song));
   }
 
   get components() {
