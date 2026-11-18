@@ -5,6 +5,8 @@ import Chord from '../../models/Chord.js';
 import Factories from '../../factories/Factories.js';
 
 export default class GenreMapper {
+  #factories = new Factories();
+  
   read(data) {
     if (!Array.isArray(data))
       return this.#createGenre(data);
