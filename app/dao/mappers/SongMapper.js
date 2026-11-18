@@ -2,7 +2,29 @@ import Song from '../../models/Song.js';
 import Genre from '../../models/Genre.js';
 import Chord from '../../models/Chord.js';
 
+import Instrument from '../../models/instruments/Instrument.js';
+
+class Factories {
+  getFactory(title) {
+    switch (title) {
+      case "Instrument":
+        return new InstrumentFactory();
+        break;
+    }
+    
+    return new InstrumentFactory();
+  }
+}
+
+class GuitarFactory {
+  create() {
+    return new Instrument();
+  }
+}
+
 export default class SongMapper {
+  #factories = new Factories();
+  
   read(data) {
     if (!Array.isArray(data))
       return this.#createSong(data);
@@ -68,8 +90,8 @@ export default class SongMapper {
       song.transposition = obj.transposition;
 
       for (const inst of obj.instruments) {
-        // const factory = factories[inst.title];
-        const instrument = null;//factory.create();
+        const factory = this.#factories.getFactory(inst.title);
+        const instrument = factory.create();
         song.instruments.push(instrument);
       }
       
