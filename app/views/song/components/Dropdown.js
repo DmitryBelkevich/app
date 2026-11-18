@@ -3,11 +3,15 @@ export default class Dropdown {
   
   constructor(song) {
     this.#element = document.createElement("select");
-    this.#element.id = "instruments-menu";
   }
 
   get element() {
     return this.#element;
+  }
+
+  id(id) {
+    this.#element.id = id;
+    return this;
   }
 
   init() {
