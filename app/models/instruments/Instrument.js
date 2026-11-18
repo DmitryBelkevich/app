@@ -6,7 +6,6 @@ export default class Instrument {
   // _chords;
 
   constructor() {
-    super();
     this._title = "Instrument";
     this._color = "grey";
     this._transposition = 0;
