@@ -27,7 +27,15 @@ export default class SongController extends Controller {
     this.#view = new SongView(this.#song);
     this.#view.init();
 
-    // TODO dropdown-mediator
+    // *** dropdown-mediator ***
+
+    // register options
+
+    // register instruments
+    for (const [index, instrument] of this.#song.instruments.entries())
+      this.#mediator.registerInstruments(index, instrument);
+
+    // set default option
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
 
     this.#binding();
