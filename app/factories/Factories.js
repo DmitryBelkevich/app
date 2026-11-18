@@ -13,13 +13,14 @@ export default class Factories {
       case "Keyboards":
         return new KeyboardsFactory();
         break;
-      case "":
+      case "Guitar":
+      case "E.Guitar":
         return new GuitarFactory();
         break;
-      case "":
+      case "Bass Guitar":
         return new BassGuitarFactory();
         break;
-      case "":
+      case "5-string Bass Guitar":
         return new FiveStringBassGuitarFactory();
         break;
       default:
