@@ -16,7 +16,7 @@ class Factories {
   }
 }
 
-class GuitarFactory {
+class InstrumentFactory {
   create() {
     return new Instrument();
   }
