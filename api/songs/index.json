@@ -7282,6 +7282,28 @@
     ],
     "visible": "true"
   },
+
+  {
+    "id": "000",
+    "band": "Band", "title": "song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "new": "true",
+    "visible": "true"
+  },
   
   {
     "id": "0",
