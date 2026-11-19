@@ -31,7 +31,7 @@ export default class SongComponent {
     const isNew = document.createElement("div");
     if (song.isNew)
       isNew.textContent = "🟣 New track";
-    this.#element.append(_new);
+    this.#element.append(isNew);
 
     this.#element.append(isNew);
     this.#element.append(title, band, tags, raiting);
