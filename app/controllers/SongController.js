@@ -95,7 +95,7 @@ export default class SongController extends Controller {
   // *** settings instrument ***
 
   select_instrument = (event) => {
-    console.log(event.target.value);
+    this.#mediator.activate(event.target.value);
   }
 
   // *** view ***
