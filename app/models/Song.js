@@ -116,11 +116,11 @@ export default class Song extends Model {
     // this.#instruments.forEach(instrument => instrument.transpose(count));
   }
 
-  isNew() {
+  get isNew() {
     return this.#isNew;
   }
 
-  setNew(isNew) {
+  set isNew(isNew) {
     this.#isNew = isNew;
   }
 
