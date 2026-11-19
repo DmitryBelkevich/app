@@ -7301,7 +7301,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "new": "true",
+    "new": true,
     "visible": "true"
   },
   {
@@ -7322,7 +7322,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "new": "true",
+    "new": true,
     "visible": "true"
   },
   {
@@ -7343,7 +7343,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "new": "true",
+    "new": true,
     "visible": "true"
   },
   
