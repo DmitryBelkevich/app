@@ -31,9 +31,7 @@ export default class SongController extends Controller {
     this.#view.init();
 
     // Cookie
-    console.log(document.cookie);
-    const obj = this.#cookieService.getByName("instrument");
-    console.log(obj);
+    const cookie = this.#cookieService.getByName("instrument");
 
     // *** dropdown-mediator ***
 
@@ -47,8 +45,7 @@ export default class SongController extends Controller {
       this.#mediator.registerInstrument(index, instrument);
 
     // set default option
-    const index = 0;// TODO get from Cookie
-    this.#mediator.activate(index);
+    this.#mediator.activate(cookie.value || 0);
 
     this.#binding();
   }
