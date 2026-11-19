@@ -10,10 +10,6 @@ export default class SongComponent {
     this.#element.classList.add("song");
 
     // components
-    const id = document.createElement("div");
-    id.textContent = song.id;
-    this.#element.append(id);
-    
     const title = document.createElement("div");
     title.classList.add("title");
     title.textContent = song.title;
@@ -32,6 +28,12 @@ export default class SongComponent {
     for (let i = 0; i < song.raiting; i++)
       raiting.textContent += "⭐️";
 
+    const isNew = document.createElement("div");
+    if (isNew)
+      isNew.textContent = "🟣 " + song.isNew;
+    this.#element.append(_new);
+
+    this.#element.append(isNew);
     this.#element.append(title, band, tags, raiting);
   }
 
