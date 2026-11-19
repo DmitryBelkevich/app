@@ -17,7 +17,7 @@ export default class DropdownMediator {
   }
 
   activate(id) {
-    console.log(this);
+    console.log(this.#options);
     
     // const instrument = this.#instruments.get(id);
     // console.log(instrument);
