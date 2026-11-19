@@ -19,9 +19,9 @@ export default class DropdownMediator {
     // const option = this.#options.get(id);
     // console.log(option);
     
-    for (const option of this.#options) {
+    for (const option of this.#options.entries()) {
       // option.selected = option.value == id;
-      console.log(option.value);
+      console.log(option);
     }
   }
 }
