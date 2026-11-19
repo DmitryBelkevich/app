@@ -22,7 +22,7 @@ export default class DropdownMediator {
     // console.log(option);
     // console.log(instrument);
     for (const option of this.#options) {
-      console.log(option.value);
+      console.log(option);
     }
   }
 }
