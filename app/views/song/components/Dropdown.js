@@ -6,7 +6,7 @@ export default class Dropdown {
 
     // create options
     for (const [index, instrument] of instruments.entries())
-      this.addOption(index+2, instrument);
+      this.addOption(index, instrument);
   }
 
   get element() {
@@ -20,6 +20,10 @@ export default class Dropdown {
 
   getValue() {
     return this.#element.value;
+  }
+
+  getOptions() {
+    return this.#element.options;
   }
 
   addOption(index, instrument) {
