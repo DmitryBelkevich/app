@@ -23,7 +23,7 @@ export default class DropdownMediator {
       if (key == id)
         console.log(instrument);
 
-    this.#cookieService.save(name: "instrument", value: id));
+    this.#cookieService.save({name: "instrument", value: id});
   }
 
   get current() {
