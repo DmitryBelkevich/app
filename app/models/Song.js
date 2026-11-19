@@ -18,6 +18,7 @@ export default class Song extends Model {
   #instruments = [];
 
   #isNew = false;
+  #isVisible = true;
 
   get band() {
     return this.#band;
@@ -122,6 +123,14 @@ export default class Song extends Model {
 
   set isNew(isNew) {
     this.#isNew = isNew;
+  }
+
+  get isVisible() {
+    return this.#isVisible;
+  }
+
+  set isVisible(isVisible) {
+    this.#isVisible = isVisible;
   }
 
   transpose(count) {
