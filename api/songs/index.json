@@ -7284,7 +7284,49 @@
   },
 
   {
-    "id": "000",
+    "id": "403",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "new": "true",
+    "visible": "true"
+  },
+  {
+    "id": "404",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "new": "true",
+    "visible": "true"
+  },
+  {
+    "id": "408",
     "band": "Band", "title": "Song",
     "tags": [],
     "genre": "New tracks",
