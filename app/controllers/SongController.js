@@ -59,7 +59,7 @@ export default class SongController extends Controller {
     this.#view.panels.get("settings").panels.get("settings-song").components.get("up_button").click(this.transpose_up_song);
 
     // *** settings instrument ***
-    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").change(this.select_instrument);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").change(this.select_instrument);
   }
 
   // *** nav ***
