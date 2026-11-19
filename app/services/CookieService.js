@@ -27,7 +27,7 @@ export default class CookieService {
     if (value)
       return {name: name, value: value};
     
-    return null;//this.#default_obj;
+    return {};//this.#default_obj;
   }
   
   save(obj) {
