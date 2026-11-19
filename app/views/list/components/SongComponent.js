@@ -31,9 +31,8 @@ export default class SongComponent {
     const isNew = document.createElement("div");
     if (song.isNew)
       isNew.textContent = "🟣 New track";
+    isNew.style.padding = "0px 0px 0px 100px"; // styles
     this.#element.append(isNew);
-    // styles
-    isNew.style.padding = "0px 0px 0px 100px";
 
     this.#element.append(title, band, tags, raiting);
     this.#element.append(isNew);
