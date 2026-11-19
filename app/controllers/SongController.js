@@ -83,7 +83,9 @@ export default class SongController extends Controller {
 
   // *** tabs ***
 
-  open_tab = (id) => {console.log(this.#mediator.current)}
+  open_tab = (id) => {
+    console.log(this.#song);
+  }
 
   // *** settings song ***
 
