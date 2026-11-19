@@ -19,7 +19,7 @@ export default class SongController extends Controller {
   constructor() {
     super();
     this.#songService = new SongService();
-    this.#cookieService = new SongService();
+    this.#cookieService = new CookieService();
     this.#mediator = new DropdownMediator();
   }
 
