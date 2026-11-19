@@ -17,10 +17,13 @@ export default class DropdownMediator {
   }
 
   activate(id) {
-    // const option = this.#options.get(id);
-    const instrument = this.#instruments.get(id);
-    // console.log(option);
-    console.log(instrument);
+    
+    // const instrument = this.#instruments.get(id);
+    // console.log(instrument);
+
+    const option = this.#options.get(id);
+    console.log(option);
+    
     // for (const option of this.#options.entries()) {
     //   console.log(option);
     // }
