@@ -43,6 +43,7 @@ export default class SongMapper {
     }
 
     song.isNew = obj.new || false;
+    song.isVisible = obj.visible || true;
     
     return song;
   }
@@ -86,6 +87,7 @@ export default class SongMapper {
       }
 
       song.isNew = obj.new || false;
+      song.isVisible = obj.visible || true;
       
       songs.push(song);
     }
