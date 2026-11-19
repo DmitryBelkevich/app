@@ -1,12 +1,12 @@
 export default class CookieService {
-  #default_obj;
+  // #default_obj;
 
-  constructor() {
-    this.#default_obj = {
-      name: "instrument",
-      value: 0
-    };
-  }
+  // constructor() {
+  //   this.#default_obj = {
+  //     name: "instrument",
+  //     value: 0
+  //   };
+  // }
   
   getAll() {
     const obj = document.cookie.split("; ").reduce((acc, current) => {
@@ -27,7 +27,7 @@ export default class CookieService {
     if (value)
       return {name: name, value: value};
     
-    return this.#default_obj;
+    return null;//this.#default_obj;
   }
   
   save(obj) {
