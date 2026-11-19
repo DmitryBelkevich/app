@@ -33,8 +33,8 @@ export default class SongComponent {
       isNew.textContent = "🟣 New track";
     this.#element.append(isNew);
 
-    this.#element.append(isNew);
     this.#element.append(title, band, tags, raiting);
+    this.#element.append(isNew);
   }
 
   get element() {
