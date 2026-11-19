@@ -7295,10 +7295,7 @@
     "key": "",
     "instruments": [
       {
-        "title": "Guitar"
-      },
-      {
-        "title": "Bass Guitar"
+        "title": "Instrument"
       }
     ],
     "new": true,
@@ -7316,10 +7313,7 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Guitar"
-      },
-      {
-        "title": "Bass Guitar"
+        "title": "Instrument"
       }
     ],
     "new": true,
@@ -7337,10 +7331,43 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Guitar"
-      },
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "409",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
       {
-        "title": "Bass Guitar"
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "410",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
+      {
+        "title": "Instrument"
       }
     ],
     "new": true,
