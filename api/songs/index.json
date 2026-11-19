@@ -7285,11 +7285,11 @@
 
   {
     "id": "000",
-    "band": "Band", "title": "song",
+    "band": "Band", "title": "Song",
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Band/Band - song.html",
+    "text": "New tracks/Band/Band - Song.html",
     "score": "",
     "playback": "",
     "key": "Am",
