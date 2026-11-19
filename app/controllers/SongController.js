@@ -30,6 +30,11 @@ export default class SongController extends Controller {
     this.#view = new SongView(this.#song);
     this.#view.init();
 
+    // Cookie
+    console.log(document.cookie);
+    const obj = this.#cookieService.getByName("instrument");
+    console.log(obj);
+
     // *** dropdown-mediator ***
 
     // register options
