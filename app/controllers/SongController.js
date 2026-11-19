@@ -3,11 +3,13 @@ import Config from '../config/Config.js';
 import Controller from './Controller.js';
 
 import SongService from '../services/SongService.js';
+import DropdownMediator from '../services/DropdownMediator.js';
 
 import SongView from '../views/song/SongView.js';
 
 export default class SongController extends Controller {
   #songService;
+  #mediator;
 
   #song;
   #view;
@@ -15,6 +17,7 @@ export default class SongController extends Controller {
   constructor() {
     super();
     this.#songService = new SongService();
+    this.#mediator = new DropdownMediator();
   }
 
   async init() {
@@ -24,8 +27,20 @@ export default class SongController extends Controller {
     this.#view = new SongView(this.#song);
     this.#view.init();
 
-    // TODO dropdown-mediator
-    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").setOption(1);
+    // *** dropdown-mediator ***
+
+    // register options
+    const options = this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").getOptions();
+    for (const option of options)
+      this.#mediator.registerOption(+option.value, option);
+
+    // register instruments
+    for (const [index, instrument] of this.#song.instruments.entries())
+      this.#mediator.registerInstrument(index, instrument);
+
+    // set default option
+    const index = 0;
+    this.#mediator.activate(index);
 
     this.#binding();
   }
@@ -80,7 +95,7 @@ export default class SongController extends Controller {
   // *** settings instrument ***
 
   select_instrument = (event) => {
-    console.log(event.target.value);
+    this.#mediator.activate(+event.target.value);
   }
 
   // *** view ***
