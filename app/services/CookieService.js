@@ -1,13 +1,4 @@
 export default class CookieService {
-  #default_obj;
-
-  constructor() {
-    this.#default_obj = {
-      name: "instrument",
-      value: 0
-    };
-  }
-  
   getAll() {
     const obj = document.cookie.split("; ").reduce((acc, current) => {
       const [key, value] = current.split('=');
@@ -27,7 +18,7 @@ export default class CookieService {
     if (value)
       return {name: name, value: value};
     
-    return this.#default_obj;
+    return {};
   }
   
   save(obj) {
