@@ -50,6 +50,8 @@ export default class GenreMapper {
           song.instruments.push(instrument);
         }
 
+        song.isNew = s.new || false;
+
         // mapping
         genre.songs.push(song);
 
