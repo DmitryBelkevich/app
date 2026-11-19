@@ -1,5 +1,191 @@
 [
   {
+    "id": "403",
+    "band": "Дискотека Авария", "title": "Если хочешь остаться",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Дискотека Авария/Дискотека Авария - Если хочешь остаться.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1NL4pCeSSKvmdolWITZedFymmAyF05VHu?usp=drive_link",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "404",
+    "band": "Валерий Леонтьев", "title": "Полёт на дельтаплане",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Валерий Леонтьев/Валерий Леонтьев - Полёт на дельтаплане.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1AuIsz6UhalXMNqgFnCAI6CoCpGbVBdGF?usp=drive_link",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "408",
+    "band": "Татьяна Буланова", "title": "Ледяное сердце",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Татьяна Буланова/Татьяна Буланова - Ледяное сердце.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1t2OJaukGBIYn6PbgMSQvOPWwxgBunNUO?usp=drive_link",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "409",
+    "band": "Татьяна Буланова", "title": "Не плачь",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Татьяна Буланова/Татьяна Буланова - Не плачь.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1AJnSQJSgEkCgcrcBapNTJgDtV5ioJwnb?usp=drive_link",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "410",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "411",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "412",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "413",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "414",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "415",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+
+
+
+
+  
+  
+  {
     "id": "1",
     "band": "Metallica", "title": "No Leaf Clover",
     "genre": "Metal",
@@ -7280,97 +7466,6 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": true
-  },
-
-  {
-    "id": "403",
-    "band": "Дискотека Авария", "title": "Если хочешь остаться",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Дискотека Авария/Дискотека Авария - Если хочешь остаться.html",
-    "score": "",
-    "playback": "https://drive.google.com/drive/folders/1NL4pCeSSKvmdolWITZedFymmAyF05VHu?usp=drive_link",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "404",
-    "band": "Валерий Леонтьев", "title": "Полёт на дельтаплане",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Валерий Леонтьев/Валерий Леонтьев - Полёт на дельтаплане.html",
-    "score": "",
-    "playback": "https://drive.google.com/drive/folders/1AuIsz6UhalXMNqgFnCAI6CoCpGbVBdGF?usp=drive_link",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "408",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "409",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "410",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
     "visible": true
   },
   
