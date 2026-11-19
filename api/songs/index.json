@@ -73,13 +73,13 @@
   },
   {
     "id": "410",
-    "band": "Band", "title": "Song",
+    "band": "Полина Гагарина", "title": "Спектакль окончен",
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
+    "text": "New tracks/Полина Гагарина/Полина Гагарина - Спектакль окончен.html",
     "score": "",
-    "playback": "",
+    "playback": "https://drive.google.com/drive/folders/1OtxslsNsQFhHyuP1CjgOj4EIL8C2ybRF?usp=drive_link",
     "key": "",
     "instruments": [
       {
@@ -91,13 +91,13 @@
   },
   {
     "id": "411",
-    "band": "Band", "title": "Song",
+    "band": "Андрей Губин", "title": "Зима-Холода",
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
+    "text": "New tracks/Андрей Губин/Андрей Губин - Зима-Холода.html",
     "score": "",
-    "playback": "",
+    "playback": "https://drive.google.com/drive/folders/19asjXjiylNfy04roRugmh0YybgCCntoI?usp=drive_link",
     "key": "",
     "instruments": [
       {
@@ -414,6 +414,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
@@ -511,6 +512,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
@@ -4843,6 +4845,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
@@ -4899,6 +4902,7 @@
         "title": "Bass Guitar"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
