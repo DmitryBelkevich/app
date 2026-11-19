@@ -39,7 +39,7 @@ export default class SongController extends Controller {
       this.#mediator.registerInstrument(index, instrument);
 
     // set default option
-    const index = 0;
+    const index = 0;// TODO get from Cookie
     this.#mediator.activate(index);
 
     this.#binding();
