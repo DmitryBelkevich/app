@@ -7289,16 +7289,13 @@
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
+    "text": "New tracks/Дискотека Авария/Дискотека Авария - Если хочешь остаться.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1NL4pCeSSKvmdolWITZedFymmAyF05VHu?usp=drive_link",
     "key": "",
     "instruments": [
       {
-        "title": "Guitar"
-      },
-      {
-        "title": "Bass Guitar"
+        "title": "Instrument"
       }
     ],
     "new": true,
@@ -7306,20 +7303,17 @@
   },
   {
     "id": "404",
-    "band": "Band", "title": "Song",
+    "band": "Валерий Леонтьев", "title": "Полёт на дельтаплане",
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
+    "text": "New tracks/Валерий Леонтьев/Валерий Леонтьев - Полёт на дельтаплане.html",
     "score": "",
-    "playback": "",
-    "key": "Am",
+    "playback": "https://drive.google.com/drive/folders/1AuIsz6UhalXMNqgFnCAI6CoCpGbVBdGF?usp=drive_link",
+    "key": "",
     "instruments": [
       {
-        "title": "Guitar"
-      },
-      {
-        "title": "Bass Guitar"
+        "title": "Instrument"
       }
     ],
     "new": true,
@@ -7334,13 +7328,46 @@
     "text": "New tracks/Band/Band - Song.html",
     "score": "",
     "playback": "",
-    "key": "Am",
+    "key": "",
     "instruments": [
       {
-        "title": "Guitar"
-      },
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "409",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
       {
-        "title": "Bass Guitar"
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "410",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
       }
     ],
     "new": true,
