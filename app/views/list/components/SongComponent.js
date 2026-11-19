@@ -10,6 +10,10 @@ export default class SongComponent {
     this.#element.classList.add("song");
 
     // components
+    const id = document.createElement("div");
+    id.textContent = song.id;
+    this.#element.append(id);
+    
     const title = document.createElement("div");
     title.classList.add("title");
     title.textContent = song.title;
