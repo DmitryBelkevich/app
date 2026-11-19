@@ -21,6 +21,8 @@ export default class DropdownMediator {
     // const instrument = this.#instruments.get(id);
     // console.log(option);
     // console.log(instrument);
-    console.log(this.#options.get(0));
+    for (const option of this.#options) {
+      console.log(option);
+    }
   }
 }
