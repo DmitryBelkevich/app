@@ -24,7 +24,7 @@ export default class DropdownMediator {
   get current() {
     for (const [key, option] of this.#options) {
       if (option.selected)
-        return option;
+        return +option.value;
     }
 
     return null;
