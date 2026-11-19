@@ -17,6 +17,8 @@ export default class Song extends Model {
   #voices = [];
   #instruments = [];
 
+  #isNew = false;
+
   get band() {
     return this.#band;
   }
@@ -112,6 +114,14 @@ export default class Song extends Model {
   set instruments(instruments) {
     this.#instruments = instruments;
     // this.#instruments.forEach(instrument => instrument.transpose(count));
+  }
+
+  get isNew() {
+    return this.#isNew;
+  }
+
+  set isNew(isNew) {
+    this.#isNew = isNew;
   }
 
   transpose(count) {

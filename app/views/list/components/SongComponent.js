@@ -28,7 +28,13 @@ export default class SongComponent {
     for (let i = 0; i < song.raiting; i++)
       raiting.textContent += "⭐️";
 
+    const isNew = document.createElement("div");
+    if (song.isNew)
+      isNew.textContent = "🟣 New track";
+    this.#element.append(isNew);
+
     this.#element.append(title, band, tags, raiting);
+    this.#element.append(isNew);
   }
 
   get element() {

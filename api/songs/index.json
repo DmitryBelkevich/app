@@ -20,7 +20,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "2",
@@ -39,7 +39,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "3",
@@ -58,7 +58,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "4",
@@ -79,7 +79,7 @@
         "tuning": ["D", "A", "D", "G"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "5",
@@ -98,7 +98,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "6",
@@ -119,7 +119,7 @@
         "tuning": ["D", "A", "D", "G"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "7",
@@ -142,7 +142,7 @@
         "tuning": ["C", "G", "C", "F"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "8",
@@ -165,7 +165,7 @@
         "tuning": ["C", "G", "C", "F"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "9",
@@ -189,7 +189,7 @@
         "tuning": ["C#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "10",
@@ -212,7 +212,7 @@
         "tuning": ["C", "G", "C", "F"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "244",
@@ -228,7 +228,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "11",
@@ -252,7 +252,7 @@
         "tuning": ["B", "F#", "B", "E"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "248",
@@ -267,7 +267,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "12",
@@ -291,7 +291,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "13",
@@ -310,7 +310,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "223",
@@ -325,7 +325,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "14",
@@ -348,7 +348,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "15",
@@ -369,7 +369,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "16",
@@ -388,7 +388,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "17",
@@ -412,7 +412,7 @@
         "tuning": ["D", "G", "C", "F"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "18",
@@ -433,7 +433,7 @@
         "tuning": ["D", "G", "C", "F"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "20",
@@ -454,7 +454,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "21",
@@ -477,7 +477,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "22",
@@ -500,7 +500,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -522,7 +522,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "24",
@@ -542,7 +542,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "25",
@@ -562,7 +562,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "26",
@@ -582,7 +582,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "27",
@@ -603,7 +603,7 @@
         "tuning": ["C#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "28",
@@ -622,7 +622,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "29",
@@ -641,7 +641,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "30",
@@ -660,7 +660,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "31",
@@ -679,7 +679,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "32",
@@ -698,7 +698,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "33",
@@ -715,7 +715,7 @@
         "tuning": ["D", "G", "C", "F", "A", "D"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "34",
@@ -734,7 +734,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "35",
@@ -754,7 +754,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "36",
@@ -773,7 +773,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "37",
@@ -793,7 +793,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "38",
@@ -809,7 +809,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "39",
@@ -829,7 +829,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "40",
@@ -845,7 +845,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "41",
@@ -862,7 +862,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "42",
@@ -882,7 +882,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "43",
@@ -900,7 +900,7 @@
         "tuning": ["D", "G", "C", "F", "A", "D"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "44",
@@ -916,7 +916,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "45",
@@ -936,7 +936,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "46",
@@ -955,7 +955,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "47",
@@ -974,7 +974,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "48",
@@ -994,7 +994,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "49",
@@ -1010,7 +1010,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "50",
@@ -1029,7 +1029,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "51",
@@ -1049,7 +1049,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "52",
@@ -1068,7 +1068,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "53",
@@ -1087,7 +1087,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "54",
@@ -1106,7 +1106,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "55",
@@ -1125,7 +1125,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "56",
@@ -1144,7 +1144,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "57",
@@ -1163,7 +1163,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "58",
@@ -1178,7 +1178,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "59",
@@ -1194,7 +1194,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "60",
@@ -1210,7 +1210,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "61",
@@ -1226,7 +1226,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "62",
@@ -1245,7 +1245,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "63",
@@ -1261,7 +1261,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "64",
@@ -1277,7 +1277,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "65",
@@ -1293,7 +1293,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "66",
@@ -1312,7 +1312,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "67",
@@ -1327,7 +1327,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "68",
@@ -1346,7 +1346,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "69",
@@ -1365,7 +1365,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "70",
@@ -1381,7 +1381,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "71",
@@ -1397,7 +1397,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "72",
@@ -1413,7 +1413,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "73",
@@ -1432,7 +1432,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "74",
@@ -1451,7 +1451,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "75",
@@ -1470,7 +1470,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "76",
@@ -1489,7 +1489,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "265",
@@ -1504,7 +1504,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "77",
@@ -1523,7 +1523,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "78",
@@ -1539,7 +1539,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "79",
@@ -1555,7 +1555,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "80",
@@ -1575,7 +1575,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "82",
@@ -1596,7 +1596,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "267",
@@ -1611,7 +1611,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "84",
@@ -1630,7 +1630,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "85",
@@ -1649,7 +1649,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "86",
@@ -1665,7 +1665,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "87",
@@ -1681,7 +1681,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "88",
@@ -1700,7 +1700,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "89",
@@ -1719,7 +1719,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "90",
@@ -1735,7 +1735,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "91",
@@ -1755,7 +1755,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "93",
@@ -1774,7 +1774,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "94",
@@ -1793,7 +1793,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "95",
@@ -1812,7 +1812,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "96",
@@ -1832,7 +1832,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "97",
@@ -1848,7 +1848,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "98",
@@ -1864,7 +1864,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "99",
@@ -1884,7 +1884,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "100",
@@ -1901,7 +1901,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "101",
@@ -1917,7 +1917,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "102",
@@ -1937,7 +1937,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "103",
@@ -1953,7 +1953,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "104",
@@ -1973,7 +1973,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "105",
@@ -1992,7 +1992,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "106",
@@ -2008,7 +2008,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "107",
@@ -2024,7 +2024,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "108",
@@ -2043,7 +2043,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "109",
@@ -2059,7 +2059,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "110",
@@ -2078,7 +2078,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "111",
@@ -2097,7 +2097,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "112",
@@ -2113,7 +2113,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "113",
@@ -2132,7 +2132,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "114",
@@ -2151,7 +2151,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "115",
@@ -2170,7 +2170,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "116",
@@ -2189,7 +2189,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "117",
@@ -2208,7 +2208,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "118",
@@ -2227,7 +2227,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "119",
@@ -2243,7 +2243,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "120",
@@ -2259,7 +2259,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "121",
@@ -2275,7 +2275,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "123",
@@ -2294,7 +2294,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "124",
@@ -2313,7 +2313,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "125",
@@ -2328,7 +2328,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "126",
@@ -2347,7 +2347,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "127",
@@ -2362,7 +2362,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "128",
@@ -2381,7 +2381,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "129",
@@ -2400,7 +2400,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "130",
@@ -2419,7 +2419,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "131",
@@ -2438,7 +2438,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "132",
@@ -2453,7 +2453,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "133",
@@ -2469,7 +2469,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "134",
@@ -2488,7 +2488,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "135",
@@ -2507,7 +2507,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "136",
@@ -2526,7 +2526,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "137",
@@ -2546,7 +2546,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "138",
@@ -2565,7 +2565,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "139",
@@ -2584,7 +2584,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "140",
@@ -2603,7 +2603,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "141",
@@ -2622,7 +2622,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "142",
@@ -2642,7 +2642,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "143",
@@ -2665,7 +2665,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "144",
@@ -2681,7 +2681,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "19",
@@ -2696,7 +2696,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "145",
@@ -2715,7 +2715,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "146",
@@ -2734,7 +2734,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "147",
@@ -2753,7 +2753,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "148",
@@ -2772,7 +2772,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "149",
@@ -2791,7 +2791,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "150",
@@ -2806,7 +2806,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "151",
@@ -2825,7 +2825,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "152",
@@ -2844,7 +2844,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "153",
@@ -2863,7 +2863,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "154",
@@ -2882,7 +2882,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "155",
@@ -2898,7 +2898,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "156",
@@ -2913,7 +2913,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "157",
@@ -2932,7 +2932,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "158",
@@ -2951,7 +2951,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "159",
@@ -2970,7 +2970,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "160",
@@ -2989,7 +2989,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "161",
@@ -3010,7 +3010,7 @@
         "tuning": ["D", "A", "D", "G"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "162",
@@ -3029,7 +3029,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "163",
@@ -3045,7 +3045,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "164",
@@ -3064,7 +3064,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "165",
@@ -3083,7 +3083,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "166",
@@ -3102,7 +3102,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "167",
@@ -3121,7 +3121,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "168",
@@ -3140,7 +3140,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "169",
@@ -3159,7 +3159,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "170",
@@ -3178,7 +3178,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "171",
@@ -3197,7 +3197,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "172",
@@ -3216,7 +3216,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "173",
@@ -3232,7 +3232,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "174",
@@ -3251,7 +3251,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "175",
@@ -3270,7 +3270,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "176",
@@ -3285,7 +3285,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "177",
@@ -3300,7 +3300,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "178",
@@ -3316,7 +3316,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "179",
@@ -3335,7 +3335,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "180",
@@ -3350,7 +3350,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "181",
@@ -3369,7 +3369,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "182",
@@ -3388,7 +3388,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "183",
@@ -3407,7 +3407,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "184",
@@ -3426,7 +3426,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "185",
@@ -3446,7 +3446,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "186",
@@ -3466,7 +3466,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "187",
@@ -3485,7 +3485,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "188",
@@ -3505,7 +3505,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "189",
@@ -3524,7 +3524,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "190",
@@ -3543,7 +3543,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "191",
@@ -3562,7 +3562,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "192",
@@ -3578,7 +3578,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "193",
@@ -3597,7 +3597,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "194",
@@ -3616,7 +3616,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "195",
@@ -3635,7 +3635,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "196",
@@ -3654,7 +3654,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "197",
@@ -3669,7 +3669,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "198",
@@ -3688,7 +3688,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "199",
@@ -3707,7 +3707,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "200",
@@ -3726,7 +3726,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "201",
@@ -3745,7 +3745,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "202",
@@ -3764,7 +3764,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "203",
@@ -3783,7 +3783,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "204",
@@ -3802,7 +3802,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "205",
@@ -3821,7 +3821,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "206",
@@ -3840,7 +3840,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "208",
@@ -3860,7 +3860,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "209",
@@ -3880,7 +3880,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "210",
@@ -3897,7 +3897,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "211",
@@ -3914,7 +3914,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "212",
@@ -3934,7 +3934,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "213",
@@ -3954,7 +3954,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "214",
@@ -3974,7 +3974,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "215",
@@ -3993,7 +3993,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "216",
@@ -4012,7 +4012,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "217",
@@ -4027,7 +4027,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "218",
@@ -4046,7 +4046,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "219",
@@ -4070,7 +4070,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "221",
@@ -4089,7 +4089,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "222",
@@ -4109,7 +4109,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "224",
@@ -4128,7 +4128,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "207",
@@ -4147,7 +4147,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "225",
@@ -4162,7 +4162,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "226",
@@ -4177,7 +4177,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "227",
@@ -4192,7 +4192,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "228",
@@ -4212,7 +4212,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "229",
@@ -4231,7 +4231,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "230",
@@ -4250,7 +4250,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "231",
@@ -4269,7 +4269,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "232",
@@ -4289,7 +4289,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "233",
@@ -4305,7 +4305,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "234",
@@ -4324,7 +4324,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "235",
@@ -4343,7 +4343,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "236",
@@ -4362,7 +4362,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "237",
@@ -4381,7 +4381,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "238",
@@ -4400,7 +4400,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "239",
@@ -4419,7 +4419,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "240",
@@ -4435,7 +4435,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "241",
@@ -4454,7 +4454,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "242",
@@ -4473,7 +4473,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "243",
@@ -4493,7 +4493,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "245",
@@ -4512,7 +4512,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "246",
@@ -4531,7 +4531,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "247",
@@ -4551,7 +4551,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "250",
@@ -4570,7 +4570,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "251",
@@ -4589,7 +4589,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "252",
@@ -4608,7 +4608,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "253",
@@ -4623,7 +4623,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "249",
@@ -4642,7 +4642,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "326",
@@ -4657,7 +4657,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "254",
@@ -4673,7 +4673,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "255",
@@ -4692,7 +4692,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "381",
@@ -4713,7 +4713,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "256",
@@ -4732,7 +4732,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "257",
@@ -4747,7 +4747,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -4767,7 +4767,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "259",
@@ -4786,7 +4786,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -4806,7 +4806,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
 
   {
@@ -4826,7 +4826,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "354",
@@ -4846,7 +4846,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "355",
@@ -4866,7 +4866,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "356",
@@ -4886,7 +4886,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "357",
@@ -4902,7 +4902,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "358",
@@ -4922,7 +4922,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "359",
@@ -4941,7 +4941,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "360",
@@ -4961,7 +4961,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "361",
@@ -4981,7 +4981,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "362",
@@ -5000,7 +5000,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "363",
@@ -5019,7 +5019,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "364",
@@ -5040,7 +5040,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "365",
@@ -5056,7 +5056,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "366",
@@ -5072,7 +5072,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "367",
@@ -5091,7 +5091,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "81",
@@ -5106,7 +5106,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "368",
@@ -5122,7 +5122,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "369",
@@ -5137,7 +5137,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -5154,7 +5154,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "262",
@@ -5171,7 +5171,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "263",
@@ -5186,7 +5186,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "399",
@@ -5202,7 +5202,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "405",
@@ -5218,7 +5218,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "264",
@@ -5238,7 +5238,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "266",
@@ -5258,7 +5258,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "268",
@@ -5275,7 +5275,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "269",
@@ -5291,7 +5291,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "270",
@@ -5306,7 +5306,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "271",
@@ -5323,7 +5323,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "272",
@@ -5340,7 +5340,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "273",
@@ -5356,7 +5356,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "274",
@@ -5372,7 +5372,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "275",
@@ -5389,7 +5389,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "276",
@@ -5406,7 +5406,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "277",
@@ -5423,7 +5423,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "278",
@@ -5440,7 +5440,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "279",
@@ -5457,7 +5457,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "280",
@@ -5473,7 +5473,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "281",
@@ -5489,7 +5489,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "282",
@@ -5506,7 +5506,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "283",
@@ -5523,7 +5523,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "284",
@@ -5539,7 +5539,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "285",
@@ -5555,7 +5555,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "286",
@@ -5571,7 +5571,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "287",
@@ -5587,7 +5587,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "288",
@@ -5603,7 +5603,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "289",
@@ -5619,7 +5619,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "290",
@@ -5635,7 +5635,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "291",
@@ -5650,7 +5650,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "407",
@@ -5665,7 +5665,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "292",
@@ -5681,7 +5681,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "293",
@@ -5696,7 +5696,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "294",
@@ -5711,7 +5711,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "295",
@@ -5726,7 +5726,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "296",
@@ -5741,7 +5741,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "297",
@@ -5757,7 +5757,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "298",
@@ -5772,7 +5772,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "299",
@@ -5787,7 +5787,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "300",
@@ -5802,7 +5802,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "301",
@@ -5817,7 +5817,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "302",
@@ -5832,7 +5832,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "303",
@@ -5847,7 +5847,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "304",
@@ -5862,7 +5862,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "400",
@@ -5878,7 +5878,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "401",
@@ -5894,7 +5894,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "305",
@@ -5910,7 +5910,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "306",
@@ -5926,7 +5926,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "307",
@@ -5942,7 +5942,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "308",
@@ -5958,7 +5958,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "309",
@@ -5974,7 +5974,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "310",
@@ -5990,7 +5990,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "311",
@@ -6006,7 +6006,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "312",
@@ -6022,7 +6022,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "313",
@@ -6038,7 +6038,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "83",
@@ -6054,7 +6054,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "314",
@@ -6071,7 +6071,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "315",
@@ -6088,7 +6088,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "92",
@@ -6104,7 +6104,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "122",
@@ -6120,7 +6120,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "316",
@@ -6136,7 +6136,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "317",
@@ -6152,7 +6152,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "318",
@@ -6168,7 +6168,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "319",
@@ -6184,7 +6184,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "320",
@@ -6200,7 +6200,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "321",
@@ -6222,7 +6222,7 @@
         "tuning": ["D", "G", "C", "F"]
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "322",
@@ -6239,7 +6239,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "323",
@@ -6254,7 +6254,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "324",
@@ -6269,7 +6269,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "325",
@@ -6289,7 +6289,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "327",
@@ -6305,7 +6305,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "328",
@@ -6321,7 +6321,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "402",
@@ -6337,7 +6337,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "329",
@@ -6353,7 +6353,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "330",
@@ -6369,7 +6369,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "331",
@@ -6389,7 +6389,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -6409,7 +6409,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "334",
@@ -6428,7 +6428,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -6445,7 +6445,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "336",
@@ -6465,7 +6465,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "337",
@@ -6481,7 +6481,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "338",
@@ -6498,7 +6498,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "339",
@@ -6514,7 +6514,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "340",
@@ -6533,7 +6533,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "341",
@@ -6552,7 +6552,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "342",
@@ -6573,7 +6573,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "343",
@@ -6593,7 +6593,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "344",
@@ -6613,7 +6613,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "345",
@@ -6633,7 +6633,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "346",
@@ -6652,7 +6652,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "347",
@@ -6671,7 +6671,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "348",
@@ -6690,7 +6690,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "349",
@@ -6706,7 +6706,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "350",
@@ -6722,7 +6722,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "351",
@@ -6738,7 +6738,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "352",
@@ -6754,7 +6754,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -6775,7 +6775,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "398",
@@ -6791,7 +6791,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "371",
@@ -6810,7 +6810,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "372",
@@ -6825,7 +6825,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "373",
@@ -6844,7 +6844,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "374",
@@ -6860,7 +6860,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "375",
@@ -6876,7 +6876,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "376",
@@ -6892,7 +6892,7 @@
         "title": "Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "377",
@@ -6908,7 +6908,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "378",
@@ -6927,7 +6927,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "379",
@@ -6943,7 +6943,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "380",
@@ -6963,7 +6963,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "382",
@@ -6983,7 +6983,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "383",
@@ -6999,7 +6999,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "384",
@@ -7015,7 +7015,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "385",
@@ -7034,7 +7034,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "386",
@@ -7049,7 +7049,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "387",
@@ -7068,7 +7068,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "388",
@@ -7084,7 +7084,7 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -7104,7 +7104,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "390",
@@ -7123,7 +7123,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "391",
@@ -7142,7 +7142,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "392",
@@ -7161,7 +7161,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "393",
@@ -7180,7 +7180,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "406",
@@ -7200,7 +7200,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "394",
@@ -7219,7 +7219,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   {
     "id": "395",
@@ -7238,7 +7238,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -7259,7 +7259,7 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
   },
   
   {
@@ -7280,7 +7280,71 @@
         "title": "Bass Guitar"
       }
     ],
-    "visible": "true"
+    "visible": true
+  },
+
+  {
+    "id": "403",
+    "band": "Дискотека Авария", "title": "Если хочешь остаться",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/1NL4pCeSSKvmdolWITZedFymmAyF05VHu?usp=drive_link",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "404",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "408",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "Am",
+    "instruments": [
+      {
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
+      }
+    ],
+    "new": true,
+    "visible": true
   },
   
   {
@@ -7297,6 +7361,6 @@
         "title": "Instrument"
       }
     ],
-    "visible": "true"
+    "visible": true
   }
 ]

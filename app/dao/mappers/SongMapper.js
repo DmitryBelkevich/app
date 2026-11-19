@@ -41,6 +41,8 @@ export default class SongMapper {
       const instrument = factory.create(o);
       song.instruments.push(instrument);
     }
+
+    song.isNew = obj.new || false;
     
     return song;
   }
@@ -82,6 +84,8 @@ export default class SongMapper {
         const instrument = factory.create(o);
         song.instruments.push(instrument);
       }
+
+      song.isNew = obj.new || false;
       
       songs.push(song);
     }
