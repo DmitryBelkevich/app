@@ -2,10 +2,6 @@ export default class DropdownMediator {
   #options = new Map();
   #instruments = new Map();
 
-  constructor() {
-    
-  }
-
   registerOption(id, option) {
     this.#options.set(id, option);
 
