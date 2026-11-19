@@ -3,7 +3,7 @@ import CookieService from '../services/CookieService.js';
 export default class DropdownMediator {
   #options = new Map();
   #instruments = new Map();
-  this.#cookieService = new CookieService();
+  #cookieService = new CookieService();
 
   registerOption(id, option) {
     this.#options.set(id, option);
