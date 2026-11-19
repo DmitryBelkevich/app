@@ -23,7 +23,8 @@ export default class DropdownMediator {
 
   get current() {
     for (const [key, option] of this.#options) {
-      console.log(option.selected);
+      if (option.selected)
+        return option;
     }
 
     return null;
