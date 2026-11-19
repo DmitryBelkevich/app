@@ -20,4 +20,12 @@ export default class DropdownMediator {
       if (key == id)
         console.log(instrument);
   }
+
+  get current() {
+    for (const [key, option] of this.#options) {
+      
+    }
+
+    return null;
+  }
 }
