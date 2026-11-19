@@ -5,7 +5,7 @@ export default class DropdownMediator {
   registerOption(id, option) {
     this.#options.set(id, option);
 
-    // listeners
+    // listeners (optional)
   }
 
   registerInstrument(id, instrument) {
