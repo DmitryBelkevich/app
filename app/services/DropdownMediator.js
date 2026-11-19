@@ -3,7 +3,7 @@ export default class DropdownMediator {
   #instruments = new Map();
 
   constructor() {
-    console.log(this);
+    
   }
 
   registerOption(id, option) {
@@ -17,6 +17,7 @@ export default class DropdownMediator {
   }
 
   activate(id) {
+    console.log(this);
     
     // const instrument = this.#instruments.get(id);
     // console.log(instrument);
