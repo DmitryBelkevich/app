@@ -3,12 +3,14 @@ import Config from '../config/Config.js';
 import Controller from './Controller.js';
 
 import SongService from '../services/SongService.js';
+import CookieService from '../services/CookieService.js';
 import DropdownMediator from '../services/DropdownMediator.js';
 
 import SongView from '../views/song/SongView.js';
 
 export default class SongController extends Controller {
   #songService;
+  #cookieService;
   #mediator;
 
   #song;
@@ -17,6 +19,7 @@ export default class SongController extends Controller {
   constructor() {
     super();
     this.#songService = new SongService();
+    this.#cookieService = new SongService();
     this.#mediator = new DropdownMediator();
   }
 
