@@ -1,6 +1,9 @@
+import CookieService from '../services/CookieService.js';
+
 export default class DropdownMediator {
   #options = new Map();
   #instruments = new Map();
+  this.#cookieService = new CookieService();
 
   registerOption(id, option) {
     this.#options.set(id, option);
@@ -19,6 +22,8 @@ export default class DropdownMediator {
     for (const [key, instrument] of this.#instruments)
       if (key == id)
         console.log(instrument);
+
+    this.#cookieService.save(name: "instrument", value: id);
   }
 
   get current() {
