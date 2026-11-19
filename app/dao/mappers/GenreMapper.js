@@ -51,6 +51,7 @@ export default class GenreMapper {
         }
 
         song.isNew = s.new || false;
+        song.isVisible = s.visible || true;
 
         // mapping
         genre.songs.push(song);
