@@ -88,6 +88,7 @@ export default class SongController extends Controller {
 
   open_tab = (id) => {
     console.log(this.#song);
+    this.update_view();
   }
 
   // *** settings song ***
