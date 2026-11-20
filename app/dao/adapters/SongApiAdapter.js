@@ -22,8 +22,7 @@ export default class SongApiAdapter {
     const id = this.#getId(path);
     const song = songs.find(song => song.id == id) || null;
 
-    console.log(song);
-    return null;//song;
+    return song;
   }
 
   #getId(path) {
