@@ -6,7 +6,7 @@ export default class GuitarFactory {
   create(obj) {
     const instrument = new Guitar();
 
-    // instrument.key = new Chord();
+    instrument.key = new Chord(obj);
     
     return instrument;
   }
