@@ -4,7 +4,7 @@ export default class CookieService {
   #cookieDao;
   
   constructor() {
-    // this.#cookieDao = new CookieDao();
+    this.#cookieDao = new CookieDao();
   }
   
   getAll() {
