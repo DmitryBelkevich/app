@@ -1,27 +1,21 @@
-export default class CookieService {
-  getAll() {
-    const obj = document.cookie.split("; ").reduce((acc, current) => {
-      const [key, value] = current.split('=');
-      acc[key] = value || "";
-      
-      return acc;
-    }, {});
+import CookieDao from '../dao/CookieDao.js';
 
-    return obj;
+export default class CookieService {
+  #cookieDao;
+  
+  constructor() {
+    this.#cookieDao = new CookieDao();
+  }
+  
+  getAll() {
+    return this.#cookieDao.getAll();
   }
   
   getByName(name) {
-    const obj = this.getAll();
-
-    const value = obj[name];
-
-    if (value)
-      return {name: name, value: value};
-    
-    return {};
+    return this.#cookieDao.getByName(name);
   }
   
   save(obj) {
-    document.cookie = obj.name + "=" + obj.value;
+    this.#cookieDao.save(obj);
   }
 }
