@@ -12,12 +12,16 @@ export default class SongApiAdapter {
   async load(path) {
     const songs = await this.#jsonLoader.load(path);
 
-    for (const song of songs)
+    for (const song of songs) {
+      for (const instrument of song.instruments) {
+        instrument.key = instrument.key || song.key;
+      }
       song.text = Config.STORAGE + song.text;
+    }
 
     const id = this.#getId(path);
     const song = songs.find(song => song.id == id) || null;
-    
+
     return song;
   }
 
