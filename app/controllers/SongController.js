@@ -129,10 +129,10 @@ export default class SongController extends Controller {
     // *** settings instrument ***
 
     // display 1: key
-    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").content(this.#song.instruments[0].key);
-    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").state(this.#song.instruments[0].isTransposed());
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").content(this.#song.instruments[this.#mediator.current].key);
+    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").state(this.#song.instruments[this.#mediator.current].isTransposed());
 
     // display 2: transposition
-    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display2").content(this.#song.instruments[0].transposition);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display2").content(this.#song.instruments[this.#mediator.current].transposition);
   }
 }
