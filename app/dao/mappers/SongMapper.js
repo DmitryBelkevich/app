@@ -81,12 +81,8 @@ export default class SongMapper {
       song.transposition = obj.transposition;
 
       for (const o of obj.instruments) {
-        console.log(o);
         const factory = this.#factories.getFactory(o.title);
         const instrument = factory.create(o);
-
-        // instrument.key(o.key || song.key.toString());
-        
         song.instruments.push(instrument);
       }
 
