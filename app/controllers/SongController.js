@@ -105,12 +105,12 @@ export default class SongController extends Controller {
   }
 
   transpose_down_instrument = () => {console.log("-1");
-    // this.#song.transpose(-1);
+    // this.#song.instruments[0].transpose(-1);
     this.update_view();
   }
 
   transpose_up_instrument = () => {console.log("+1");
-    // this.#song.transpose(1);
+    // this.#song.instruments[0].transpose(1);
     this.update_view();
   }
 
