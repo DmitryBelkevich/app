@@ -19,7 +19,7 @@ export default class SettingsInstrumentPanel extends Panel {
     // components
     this.#components.set("dropdown", new Dropdown(song.instruments).id("instruments-menu"));
     
-    this.#components.set("display1", new Display("Am").id("key-instrument"));
+    this.#components.set("display1", new Display("").id("key-instrument"));
     // this.#components.set("display1", new Display(song.instruments[0].key).id("key-instrument").state(song.instruments[0].isTransposed()));
 
     this.#components.set("display2", new Display(0));
