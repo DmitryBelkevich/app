@@ -46,7 +46,7 @@ export default class SongController extends Controller {
 
     // TODO set defaults for song [display1, display2]
     // TODO set defaults for instrument [display1, display2]
-    // TODO update view
+    this.update_view();
 
     this.#binding();
   }
@@ -88,7 +88,6 @@ export default class SongController extends Controller {
 
   open_tab = (id) => {
     console.log(this.#song);
-    this.update_view();
   }
 
   // *** settings song ***
