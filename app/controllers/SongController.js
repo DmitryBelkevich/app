@@ -62,6 +62,8 @@ export default class SongController extends Controller {
 
     // *** settings instrument ***
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").change(this.select_instrument);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("down_button").click(this.transpose_down_instrument);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("up_button").click(this.transpose_up_instrument);
   }
 
   // *** nav ***
@@ -102,10 +104,20 @@ export default class SongController extends Controller {
     this.#mediator.activate(+event.target.value);
   }
 
+  transpose_down_instrument = () => {console.log("-1");
+    // this.#song.transpose(-1);
+    this.update_view();
+  }
+
+  transpose_up_instrument = () => {console.log("+1");
+    // this.#song.transpose(1);
+    this.update_view();
+  }
+
   // *** view ***
 
   update_view = () => {
-    // *** settings-song ***
+    // *** settings song ***
 
     // display 1: key
     this.#view.panels.get("settings").panels.get("settings-song").components.get("display1").content(this.#song.key);
@@ -113,5 +125,14 @@ export default class SongController extends Controller {
 
     // display 2: transposition
     this.#view.panels.get("settings").panels.get("settings-song").components.get("display2").content(this.#song.transposition);
+
+    // *** settings instrument ***
+
+    // display 1: key
+    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").content(this.#song.instruments[0].key);
+    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").state(this.#song.instruments[0].isTransposed());
+
+    // display 2: transposition
+    // this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display2").content(this.#song.instruments[0].transposition);
   }
 }
