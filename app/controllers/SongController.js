@@ -104,13 +104,13 @@ export default class SongController extends Controller {
     this.#mediator.activate(+event.target.value);
   }
 
-  transpose_down_instrument = () => {console.log("-1");
-    // this.#song.instruments[0].transpose(-1);
+  transpose_down_instrument = () => {
+    this.#song.instruments[this.#mediator.current].transpose(-1);
     this.update_view();
   }
 
-  transpose_up_instrument = () => {console.log("+1");
-    // this.#song.instruments[0].transpose(1);
+  transpose_up_instrument = () => {
+    this.#song.instruments[this.#mediator.current].transpose(1);
     this.update_view();
   }
 
