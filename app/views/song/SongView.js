@@ -64,4 +64,8 @@ export default class SongView extends View {
     for (const panel of this.#panels.values())
       panel.init();
   }
+
+  update() {
+    // TODO
+  }
 }
