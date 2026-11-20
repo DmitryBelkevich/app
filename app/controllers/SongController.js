@@ -44,6 +44,8 @@ export default class SongController extends Controller {
     // set default option
     this.#mediator.activate(cookie.value || 0);
 
+    // TODO set defaults for [display1, display2]
+
     this.#binding();
   }
 
