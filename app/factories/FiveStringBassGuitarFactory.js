@@ -6,7 +6,7 @@ export default class FiveStringBassGuitarFactory {
   create(obj) {
     const instrument = new FiveStringBassGuitar();
 
-    instrument.key = new Chord(obj.key);
+    instrument.key = new Chord(obj.key || "");
     
     return instrument;
   }
