@@ -1,7 +1,13 @@
 import Instrument from '../models/instruments/Instrument.js';
 
+import Chord from '../models/Chord.js';
+
 export default class InstrumentFactory {
   create(obj) {
-    return new Instrument();
+    const instrument = new Instrument();
+
+    instrument.key = new Chord(obj.key);
+    
+    return instrument;
   }
 }
