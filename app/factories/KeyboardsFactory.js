@@ -6,7 +6,7 @@ export default class KeyboardsFactory {
   create(obj) {
     const instrument = new Keyboards();
 
-    instrument.key = new Chord(obj.key);
+    instrument.key = new Chord(obj.key || "");
     
     return instrument;
   }
