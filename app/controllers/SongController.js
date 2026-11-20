@@ -102,6 +102,7 @@ export default class SongController extends Controller {
 
   select_instrument = (event) => {
     this.#mediator.activate(+event.target.value);
+    this.update_view();
   }
 
   transpose_down_instrument = () => {
