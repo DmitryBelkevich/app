@@ -44,6 +44,10 @@ export default class SongController extends Controller {
     // set default option
     this.#mediator.activate(cookie.value || 0);
 
+    // TODO set defaults for song [display1, display2]
+    // TODO set defaults for instrument [display1, display2]
+    // TODO update view
+
     this.#binding();
   }
 
@@ -62,6 +66,8 @@ export default class SongController extends Controller {
 
     // *** settings instrument ***
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").change(this.select_instrument);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("down_button").click(this.transpose_down_instrument);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("up_button").click(this.transpose_up_instrument);
   }
 
   // *** nav ***
@@ -100,12 +106,23 @@ export default class SongController extends Controller {
 
   select_instrument = (event) => {
     this.#mediator.activate(+event.target.value);
+    this.update_view();
+  }
+
+  transpose_down_instrument = () => {
+    this.#song.instruments[this.#mediator.current].transpose(-1);
+    this.update_view();
+  }
+
+  transpose_up_instrument = () => {
+    this.#song.instruments[this.#mediator.current].transpose(1);
+    this.update_view();
   }
 
   // *** view ***
 
   update_view = () => {
-    // *** settings-song ***
+    // *** settings song ***
 
     // display 1: key
     this.#view.panels.get("settings").panels.get("settings-song").components.get("display1").content(this.#song.key);
@@ -113,5 +130,14 @@ export default class SongController extends Controller {
 
     // display 2: transposition
     this.#view.panels.get("settings").panels.get("settings-song").components.get("display2").content(this.#song.transposition);
+
+    // *** settings instrument ***
+
+    // display 1: key
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").content(this.#song.instruments[this.#mediator.current].key);
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display1").state(this.#song.instruments[this.#mediator.current].isTransposed());
+
+    // display 2: transposition
+    this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display2").content(this.#song.instruments[this.#mediator.current].transposition);
   }
 }
