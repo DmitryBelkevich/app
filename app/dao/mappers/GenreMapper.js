@@ -47,10 +47,6 @@ export default class GenreMapper {
         for (const o of s.instruments) {
           const factory = this.#factories.getFactory(o.title);
           const instrument = factory.create(o);
-          
-          if (o.transposition)
-            instrument.transposition = o.transposition;
-          
           song.instruments.push(instrument);
         }
 
