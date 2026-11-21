@@ -37,7 +37,7 @@ export default class TuningPanel extends Panel {
 
       string.classList.add("string");
       
-      this.#_element.append(string);
+      this._element.append(string);
     }
     // const string = document.createElement("div");
 
