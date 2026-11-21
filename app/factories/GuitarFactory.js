@@ -1,6 +1,7 @@
 import Guitar from '../models/instruments/Guitar.js';
 
 import Chord from '../models/Chord.js';
+import Note from '../models/Note.js';
 
 export default class GuitarFactory {
   create(obj) {
@@ -10,7 +11,7 @@ export default class GuitarFactory {
 
     if (obj.tuning) {
       for (const [index, note] of obj.tuning.entries()) {
-        console.log(index+" "+note);
+        instrument.tuning[index] = new Note(note);
       }
     }
     
