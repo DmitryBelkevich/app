@@ -39,6 +39,10 @@ export default class SongMapper {
     for (const o of obj.instruments) {
       const factory = this.#factories.getFactory(o.title);
       const instrument = factory.create(o);
+
+      if (o.transposition)
+        instrument.transposition = o.transposition;
+      
       song.instruments.push(instrument);
     }
 
@@ -83,6 +87,10 @@ export default class SongMapper {
       for (const o of obj.instruments) {
         const factory = this.#factories.getFactory(o.title);
         const instrument = factory.create(o);
+
+        if (o.transposition)
+          instrument.transposition = o.transposition;
+        
         song.instruments.push(instrument);
       }
 
