@@ -7,6 +7,9 @@ export default class InstrumentFactory {
     const instrument = new Instrument();
 
     instrument.key = new Chord(obj.key || "");
+
+    if (obj.transposition)
+      instrument.transposition = obj.transposition;
     
     return instrument;
   }
