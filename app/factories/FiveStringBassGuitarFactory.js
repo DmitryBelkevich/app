@@ -14,7 +14,7 @@ export default class FiveStringBassGuitarFactory {
         instrument.tuning[index] = new Note(note);
 
     if (obj.capo)
-      guitar.capo = obj.capo;
+      instrument.capo = obj.capo;
     
     return instrument;
   }
