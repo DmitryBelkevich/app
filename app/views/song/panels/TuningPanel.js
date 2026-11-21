@@ -11,9 +11,21 @@ export default class TuningPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
+
+    // 1. tuning
+
+    // 2. capo
   }
   
   init() {
     
+  }
+
+  setTuning(tuning) {
+    console.log(tuning);
+  }
+
+  setCapo(capo) {
+    console.log(capo);
   }
 }
