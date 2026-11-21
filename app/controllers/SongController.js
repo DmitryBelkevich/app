@@ -44,9 +44,9 @@ export default class SongController extends Controller {
     // set default option
     this.#mediator.activate(cookie.value || 0);
 
-    // TODO set defaults for song [display1, display2]
-    // TODO set defaults for instrument [display1, display2]
+    // update views
     this.update_view();
+    this.update_text_panel();
 
     this.#binding();
   }
@@ -70,6 +70,8 @@ export default class SongController extends Controller {
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("up_button").click(this.transpose_up_instrument);
 
     // *** tuning ***
+
+    // *** text ***
   }
 
   // *** nav ***
@@ -109,6 +111,7 @@ export default class SongController extends Controller {
   select_instrument = (event) => {
     this.#mediator.activate(+event.target.value);
     this.update_view();
+    this.update_text_panel();
   }
 
   transpose_down_instrument = () => {
@@ -120,6 +123,10 @@ export default class SongController extends Controller {
     this.#song.instruments[this.#mediator.current].transpose(1);
     this.update_view();
   }
+
+  // *** tuning ***
+
+  // *** text ***
 
   // *** view ***
 
@@ -145,5 +152,10 @@ export default class SongController extends Controller {
     // *** tuning ***
     this.#view.panels.get("settings").panels.get("tuning").setTuning(this.#song.instruments[this.#mediator.current].tuning);
     this.#view.panels.get("settings").panels.get("tuning").setCapo(this.#song.instruments[this.#mediator.current].capo);
+  }
+
+  update_text_panel = () => {
+    // *** text ***
+    this.#view.panels.get("text").setText(this.#song.instruments[this.#mediator.current].content);
   }
 }
