@@ -2,6 +2,7 @@ import Panel from './Panel.js';
 
 import SettingsSongPanel from './SettingsSongPanel.js';
 import SettingsInstrumentPanel from './SettingsInstrumentPanel.js';
+import TuningPanel from './TuningPanel.js';
 
 export default class SettingsPanel extends Panel {
   #panels = new Map();
@@ -18,6 +19,7 @@ export default class SettingsPanel extends Panel {
     // panels
     this.#panels.set("settings-song", new SettingsSongPanel(song));
     this.#panels.set("settings-instrument", new SettingsInstrumentPanel(song));
+    this.#panels.set("tuning", new TuningPanel());
   }
 
   get panels() {

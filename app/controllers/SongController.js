@@ -68,6 +68,8 @@ export default class SongController extends Controller {
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("dropdown").change(this.select_instrument);
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("down_button").click(this.transpose_down_instrument);
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("up_button").click(this.transpose_up_instrument);
+
+    // *** tuning ***
   }
 
   // *** nav ***
@@ -139,5 +141,9 @@ export default class SongController extends Controller {
 
     // display 2: transposition
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display2").content(this.#song.instruments[this.#mediator.current].transposition);
+
+    // *** tuning ***
+    this.#view.panels.get("settings").panels.get("tuning").setTuning(this.#song.instruments[this.#mediator.current].tuning);
+    this.#view.panels.get("settings").panels.get("tuning").setCapo(this.#song.instruments[this.#mediator.current].capo);
   }
 }
