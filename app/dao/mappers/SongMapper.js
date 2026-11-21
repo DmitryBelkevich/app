@@ -34,15 +34,15 @@ export default class SongMapper {
     song.score = obj.score;
     song.playback = obj.playback;
     song.key = new Chord(obj.key || "");
-    
-    if (obj.transposition)
-      song.transposition = obj.transposition;
 
     for (const o of obj.instruments) {
       const factory = this.#factories.getFactory(o.title);
       const instrument = factory.create(o);
       song.instruments.push(instrument);
     }
+
+    if (obj.transposition)
+      song.transposition = obj.transposition;
 
     song.isNew = obj.new || false;
     song.isVisible = obj.visible || true;
@@ -80,15 +80,15 @@ export default class SongMapper {
       song.score = obj.score;
       song.playback = obj.playback;
       song.key = new Chord(obj.key || "");
-      
-      if (obj.transposition)
-        song.transposition = obj.transposition;
 
       for (const o of obj.instruments) {
         const factory = this.#factories.getFactory(o.title);
         const instrument = factory.create(o);
         song.instruments.push(instrument);
       }
+
+      if (obj.transposition)
+        song.transposition = obj.transposition;
 
       song.isNew = obj.new || false;
       song.isVisible = obj.visible || true;
