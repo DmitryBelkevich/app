@@ -21,15 +21,15 @@ export default class Display {
   }
 
   state(isTransposed) {
-    const state = {
+    const states = {
       true: "transposed",
       false: "original",
     };
 
-    this.#element.classList.remove(state[true]);
-    this.#element.classList.remove(state[false]);
+    this.#element.classList.remove(states[true]);
+    this.#element.classList.remove(states[false]);
     
-    this.#element.classList.add(state[isTransposed]);
+    this.#element.classList.add(states[isTransposed]);
 
     return this;
   }
