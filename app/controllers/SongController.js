@@ -44,9 +44,6 @@ export default class SongController extends Controller {
     // set default option
     this.#mediator.activate(cookie.value || 0);
 
-    // *** tuning ***
-    this.#view.panels.get("settings").panels.get("tuning").setTuning(this.#song.instruments[this.#mediator.current].tuning);//.components.get("dropdown").getOptions();
-
     // TODO set defaults for song [display1, display2]
     // TODO set defaults for instrument [display1, display2]
     this.update_view();
@@ -144,5 +141,8 @@ export default class SongController extends Controller {
 
     // display 2: transposition
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("display2").content(this.#song.instruments[this.#mediator.current].transposition);
+
+    // *** tuning ***
+    this.#view.panels.get("settings").panels.get("tuning").setTuning(this.#song.instruments[this.#mediator.current].tuning);
   }
 }
