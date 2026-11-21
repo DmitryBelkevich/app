@@ -148,7 +148,7 @@ export default class Song extends Model {
     }
          
     // TODO
-    console.log(this);
+    // console.log(this);
     // console.log("transpose Playback" + " (" + count + "): " + this.#key);
   }
 
