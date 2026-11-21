@@ -144,5 +144,6 @@ export default class SongController extends Controller {
 
     // *** tuning ***
     this.#view.panels.get("settings").panels.get("tuning").setTuning(this.#song.instruments[this.#mediator.current].tuning);
+    this.#view.panels.get("settings").panels.get("tuning").setCapo(this.#song.instruments[this.#mediator.current].capo);
   }
 }
