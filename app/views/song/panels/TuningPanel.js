@@ -31,6 +31,9 @@ export default class TuningPanel extends Panel {
   setTuning(tuning) {
     // clear
     this._element.replaceChildren();
+    
+    if (!tuning)
+      return;
 
     const states = {
       true: "standard",
