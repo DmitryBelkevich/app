@@ -11,11 +11,11 @@ export default class TextPanel extends Panel {
     this._element.classList.add("panel");
 
     // components
-    for (let i = 0; i < 100; i++) {
-      const div = document.createElement("div");
-      div.textContent = i + " text_content text_content text_content";
-      this._element.append(div);
-    }
+    // for (let i = 0; i < 100; i++) {
+    //   const div = document.createElement("div");
+    //   div.textContent = i + " text_content text_content text_content";
+    //   this._element.append(div);
+    // }
   }
 
   init() {
