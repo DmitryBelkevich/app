@@ -12,6 +12,9 @@ export default class BassGuitarFactory {
     if (obj.tuning)
       for (const [index, note] of obj.tuning.entries())
         instrument.tuning[index] = new Note(note);
+
+    if (obj.capo)
+      instrument.capo = obj.capo;
     
     return instrument;
   }
