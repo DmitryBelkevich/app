@@ -43,7 +43,7 @@ export default class TuningPanel extends Panel {
       string.textContent = note;
 
       string.classList.add("string");
-      string.classList.add(states[isStandard]);
+      string.classList.add(states[tuning.isStandard()]);
       
       this._element.append(string);
     }
