@@ -70,6 +70,8 @@ export default class SongController extends Controller {
     this.#view.panels.get("settings").panels.get("settings-instrument").components.get("up_button").click(this.transpose_up_instrument);
 
     // *** tuning ***
+
+    // *** text ***
   }
 
   // *** nav ***
@@ -121,6 +123,10 @@ export default class SongController extends Controller {
     this.update_view();
   }
 
+  // *** tuning ***
+
+  // *** text ***
+
   // *** view ***
 
   update_view = () => {
@@ -145,5 +151,7 @@ export default class SongController extends Controller {
     // *** tuning ***
     this.#view.panels.get("settings").panels.get("tuning").setTuning(this.#song.instruments[this.#mediator.current].tuning);
     this.#view.panels.get("settings").panels.get("tuning").setCapo(this.#song.instruments[this.#mediator.current].capo);
+
+    // *** text ***
   }
 }
