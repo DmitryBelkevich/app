@@ -40,6 +40,6 @@ export default class SongDao {
       return song.text;
     
     const index = song.text.length - ".html".length;
-    return text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
+    return song.text.slice(0, index) + " (" + instrument.transposition + ")" + song.text.slice(index);
   }
 }
