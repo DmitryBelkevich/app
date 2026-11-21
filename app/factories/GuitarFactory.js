@@ -8,6 +8,9 @@ export default class GuitarFactory {
   create(obj) {
     const instrument = new Guitar();
 
+    if (obj.transposition)
+      instrument.transposition = obj.transposition;
+
     instrument.key = new Chord(obj.key || "");
 
     // if (obj.tuning)
