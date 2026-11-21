@@ -18,7 +18,7 @@ export default class GuitarFactory {
       for (const note of obj.tuning)
         notes.push(new Note(note));
 
-      guitar.tuning = new Tuning(...notes);
+      instrument.tuning = new Tuning(...notes);
     }
 
     if (obj.capo)
