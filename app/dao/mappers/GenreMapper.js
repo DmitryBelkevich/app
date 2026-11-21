@@ -42,13 +42,15 @@ export default class GenreMapper {
         song.score = s.score;
         song.playback = s.playback;
         song.key = new Chord(s.key || "");
-        song.transposition = s.transposition;
 
         for (const o of s.instruments) {
           const factory = this.#factories.getFactory(o.title);
           const instrument = factory.create(o);
           song.instruments.push(instrument);
         }
+
+        if (s.transposition)
+          song.transposition = s.transposition;
 
         song.isNew = s.new || false;
         song.isVisible = s.visible || true;
