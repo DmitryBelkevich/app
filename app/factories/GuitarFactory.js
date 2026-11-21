@@ -2,6 +2,7 @@ import Guitar from '../models/instruments/Guitar.js';
 
 import Chord from '../models/Chord.js';
 import Note from '../models/Note.js';
+import Tuning from '../models/Tuning.js';
 
 export default class GuitarFactory {
   create(obj) {
