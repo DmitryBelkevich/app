@@ -29,6 +29,9 @@ export default class TuningPanel extends Panel {
   }
 
   setTuning(tuning) {
+    if (!tuning)
+      return;
+    
     // clear
     this._element.replaceChildren();
 
