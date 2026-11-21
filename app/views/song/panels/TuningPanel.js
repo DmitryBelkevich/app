@@ -37,19 +37,29 @@ export default class TuningPanel extends Panel {
       false: "non-standard",
     }
 
-    // fill
     for (const note of tuning) {
       const string = document.createElement("div");
       string.textContent = note;
 
       string.classList.add("string");
       string.classList.add(states[tuning.isStandard()]);
-      
+
+      // fill
       this._element.append(string);
     }
   }
 
   setCapo(capo) {
-    console.log(capo);
+    if (!capo)
+      return;
+    
+    const element = document.createElement("div");
+
+    element.classList.add("capo");
+
+    element.textContent = "Capo: +" + capo;
+
+    // fill
+    this._element.append(element);
   }
 }
