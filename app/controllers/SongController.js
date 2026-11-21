@@ -48,10 +48,6 @@ export default class SongController extends Controller {
     // TODO set defaults for instrument [display1, display2]
     this.update_view();
 
-    // text & chords
-    const content = this.#song.instruments[this.#mediator.current].content;
-    this.#view.panels.get("text").setText(content);
-
     this.#binding();
   }
 
@@ -115,6 +111,7 @@ export default class SongController extends Controller {
   select_instrument = (event) => {
     this.#mediator.activate(+event.target.value);
     this.update_view();
+    this.#view.panels.get("text").setText(this.#song.instruments[this.#mediator.current].content);
   }
 
   transpose_down_instrument = () => {
