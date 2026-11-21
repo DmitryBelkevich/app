@@ -1,6 +1,8 @@
 import Panel from './Panel.js';
 
 export default class TuningPanel extends Panel {
+  #components = new Map();
+  
   constructor() {
     super();
     this._cssLoader.load("./app/views/song/css/tuning.css");
@@ -16,9 +18,14 @@ export default class TuningPanel extends Panel {
 
     // 2. capo
   }
+
+  get components() {
+    return this.#components;
+  }
   
   init() {
-    
+    for (const component of this.#components.values())
+      this._element.append(component.element);
   }
 
   setTuning(tuning) {
