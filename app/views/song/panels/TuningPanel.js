@@ -1,3 +1,5 @@
-export default class TuningPanel {
+import Panel from './Panel.js';
+
+export default class TuningPanel extends Panel {
   
 }
