@@ -49,7 +49,8 @@ export default class SongController extends Controller {
     this.update_view();
 
     // text & chords
-    this.#view.panels.get("text").setText("<button>Hello World</button>");
+    const content = "<button>Hello World</button>";
+    this.#view.panels.get("text").setText(content);
 
     this.#binding();
   }
