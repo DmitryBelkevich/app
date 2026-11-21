@@ -29,8 +29,10 @@ export default class TuningPanel extends Panel {
   }
 
   setTuning(tuning) {
-    // this._element.replaceChildren();
+    // clear
+    this._element.replaceChildren();
 
+    // fill
     for (const note of tuning) {
       const string = document.createElement("div");
       string.textContent = note;
@@ -39,10 +41,6 @@ export default class TuningPanel extends Panel {
       
       this._element.append(string);
     }
-    // const string = document.createElement("div");
-
-    // fill container
-    // this.#_element.append(string);
   }
 
   setCapo(capo) {
