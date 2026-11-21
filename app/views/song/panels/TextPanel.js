@@ -21,4 +21,8 @@ export default class TextPanel extends Panel {
   init() {
     document.body.append(this._element);
   }
+
+  setText(text) {
+    this._element.innerHTML = text;
+  }
 }
