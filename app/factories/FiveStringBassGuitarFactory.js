@@ -8,11 +8,6 @@ export default class FiveStringBassGuitarFactory {
   create(obj) {
     const instrument = new FiveStringBassGuitar();
 
-    if (obj.transposition)
-      instrument.transposition = obj.transposition;
-
-    instrument.key = new Chord(obj.key || "");
-
     // if (obj.tuning)
     //   for (const [index, note] of obj.tuning.entries())
     //     instrument.tuning[index] = new Note(note);
@@ -27,6 +22,11 @@ export default class FiveStringBassGuitarFactory {
 
     if (obj.capo)
       instrument.capo = obj.capo;
+
+    if (obj.transposition)
+      instrument.transposition = obj.transposition;
+
+    instrument.key = new Chord(obj.key || "");
     
     return instrument;
   }
