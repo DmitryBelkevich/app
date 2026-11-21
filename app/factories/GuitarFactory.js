@@ -9,7 +9,9 @@ export default class GuitarFactory {
     instrument.key = new Chord(obj.key || "");
 
     if (obj.tuning) {
-      console.log(obj.tuning);
+      for (const [index, note] of obj.tuning) {
+        console.log(index+" "+note);
+      }
     }
     
     return instrument;
