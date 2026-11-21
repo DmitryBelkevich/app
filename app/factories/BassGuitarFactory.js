@@ -8,6 +8,9 @@ export default class BassGuitarFactory {
   create(obj) {
     const instrument = new BassGuitar();
 
+    if (obj.transposition)
+      instrument.transposition = obj.transposition;
+
     instrument.key = new Chord(obj.key || "");
 
     // if (obj.tuning)
