@@ -49,7 +49,7 @@ export default class SongController extends Controller {
     this.update_view();
 
     // text & chords
-    const content = "<button>Hello World</button>";
+    const content = this.#song.instruments[this.#mediator.current].content;
     this.#view.panels.get("text").setText(content);
 
     this.#binding();
