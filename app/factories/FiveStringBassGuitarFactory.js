@@ -19,6 +19,9 @@ export default class FiveStringBassGuitarFactory {
       for (const note of obj.tuning)
         notes.push(new Note(note));
 
+      instrument.tuning = new Tuning(...notes);
+    }
+
     if (obj.capo)
       instrument.capo = obj.capo;
     
