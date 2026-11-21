@@ -32,7 +32,7 @@ export default class TuningPanel extends Panel {
     // this._element.replaceChildren();
 
     for (const note of tuning) {
-      console.log(note);
+      console.log(note.value);
     }
     // const string = document.createElement("div");
 
