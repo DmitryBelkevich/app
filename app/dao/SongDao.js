@@ -30,7 +30,7 @@ export default class SongDao {
     const song = this.#mapper.read(obj);
 
     for (const instrument of song.instruments) {
-      const path = this.#createContentLink(song, instrument);console.log(path);
+      const path = this.#createContentLink(song, instrument);
       instrument.content = await this.#htmlLoader.load(path);
     }
     
