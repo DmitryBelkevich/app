@@ -1085,6 +1085,7 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Am",
         "tuning": ["D", "G", "C", "F", "A", "D"]
       }
     ],
