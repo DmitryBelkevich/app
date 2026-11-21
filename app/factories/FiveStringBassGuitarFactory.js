@@ -8,6 +8,9 @@ export default class FiveStringBassGuitarFactory {
   create(obj) {
     const instrument = new FiveStringBassGuitar();
 
+    if (obj.transposition)
+      instrument.transposition = obj.transposition;
+
     instrument.key = new Chord(obj.key || "");
 
     // if (obj.tuning)
