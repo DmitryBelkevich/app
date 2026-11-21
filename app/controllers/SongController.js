@@ -48,6 +48,9 @@ export default class SongController extends Controller {
     // TODO set defaults for instrument [display1, display2]
     this.update_view();
 
+    // text & chords
+    this.#view.panels.get("text").setText(this.#song.instruments[this.#mediator.current].content);
+
     this.#binding();
   }
 
