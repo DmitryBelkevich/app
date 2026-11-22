@@ -70,6 +70,8 @@ export default class Instrument {
 
     if (this._key)
       this._key.transpose(-count);
+
+    this._content.transpose(count);
   }
 
   isTransposed() {
