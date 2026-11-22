@@ -16,7 +16,7 @@ export default class Content {
   }
 
   transpose(count) {
-    const element = document.getElementById("text")
+    const element = document.getElementById("text");
     const divs = Array.from(element.querySelectorAll("div.chords div"));
     
     for (const div of divs) {
@@ -24,5 +24,8 @@ export default class Content {
       chord.transpose(count);
       div.textContent = chord.value;
     }
+
+    console.log(element);
+    // this.#value = 
   }
 }
