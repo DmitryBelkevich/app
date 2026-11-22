@@ -4,6 +4,7 @@ export default class Instrument {
   _transposition;
   _key;
   // _chords;
+  _content;
 
   constructor() {
     this._title = "Instrument";
@@ -52,6 +53,14 @@ export default class Instrument {
   // set chords(chords) {
   //   this._chords = chords;
   // }
+
+  get content() {
+    return this._content;
+  }
+
+  set content(content) {
+    this._content = content;
+  }
 
   transpose(count) {
     if (!count)
