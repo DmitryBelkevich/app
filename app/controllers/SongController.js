@@ -156,6 +156,6 @@ export default class SongController extends Controller {
 
   update_text_panel = () => {
     // *** text ***
-    this.#view.panels.get("text").setText(this.#song.instruments[this.#mediator.current].content);
+    this.#view.panels.get("text").setText(this.#song.instruments[this.#mediator.current].content.value);
   }
 }
