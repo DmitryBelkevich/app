@@ -12,4 +12,9 @@ export default class Content {
   set value(value) {
     this.#value = value;
   }
+
+  transpose(count) {
+    // TODO
+    console.log("transpose content");
+  }
 }
