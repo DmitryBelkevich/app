@@ -25,6 +25,6 @@ export default class Content {
       div.textContent = chord.value;
     }
 
-    this.#value = document.getElementById("text").innerHTML;
+    this.#value = element.innerHTML;
   }
 }
