@@ -25,7 +25,6 @@ export default class Content {
       div.textContent = chord.value;
     }
 
-    console.log(element);
-    // this.#value = 
+    this.#value = element.textContent;
   }
 }
