@@ -1,3 +1,5 @@
+import Chord from './Chord.js';
+
 export default class Content {
   #value;
 
@@ -15,9 +17,11 @@ export default class Content {
 
   transpose(count) {
     const element = document.getElementById("text")
-    const chords = Array.from(element.querySelectorAll("div.chords div"));
+    const divs = Array.from(element.querySelectorAll("div.chords div"));
     
-    for (const chord of chords)
+    for (const div of divs) {
+      const chord = new Chord(div.textContent);
       console.log(chord);
+    }
   }
 }
