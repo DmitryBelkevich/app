@@ -22,7 +22,7 @@ export default class Content {
     for (const div of divs) {
       const chord = new Chord(div.textContent);
       chord.transpose(count);
-      console.log(chord);
+      div.textContent = chord.value;
     }
   }
 }
