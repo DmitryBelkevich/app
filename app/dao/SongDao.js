@@ -7,6 +7,8 @@ import SongMapper from './mappers/SongMapper.js';
 
 import HtmlLoader from '../loaders/HtmlLoader.js';
 
+import Content from '../models/Content.js';
+
 export default class SongDao {
   #mapper;
   #htmlLoader;
@@ -31,7 +33,8 @@ export default class SongDao {
 
     for (const instrument of song.instruments) {
       const path = this.#createContentLink(song, instrument);
-      instrument.content = await this.#htmlLoader.load(path);
+      const str = await this.#htmlLoader.load(path);
+      instrument.content = new Content(str);
     }
     
     return song;
