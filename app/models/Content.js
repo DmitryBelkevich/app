@@ -6,7 +6,7 @@ export default class Content {
   }
 
   get value() {
-    return #value;
+    return this.#value;
   }
 
   set value(value) {
