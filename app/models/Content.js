@@ -3,7 +3,6 @@ export default class Content {
 
   constructor(value) {
     this.#value = value;
-    
   }
 
   get value() {
