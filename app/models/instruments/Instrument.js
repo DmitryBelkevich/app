@@ -3,7 +3,6 @@ export default class Instrument {
   _color;
   _transposition;
   _key;
-  
   _content;
 
   constructor() {
