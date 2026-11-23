@@ -5,7 +5,7 @@
     "tags": [],
     "genre": "Charts",
     "raiting": 3,
-    "text": "Charts/Татьяна Буланова/Татьяна Буланова - Ледяное сердце.html",
+    "text": "Pop, Dance/Татьяна Буланова/Татьяна Буланова - Ледяное сердце.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1t2OJaukGBIYn6PbgMSQvOPWwxgBunNUO?usp=drive_link",
     "key": "",
@@ -23,7 +23,7 @@
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Дискотека Авария/Дискотека Авария - Если хочешь остаться.html",
+    "text": "Pop, Dance/Дискотека Авария/Дискотека Авария - Если хочешь остаться.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1NL4pCeSSKvmdolWITZedFymmAyF05VHu?usp=drive_link",
     "key": "",
@@ -41,7 +41,7 @@
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Валерий Леонтьев/Валерий Леонтьев - Полёт на дельтаплане.html",
+    "text": "Pop, Dance/Валерий Леонтьев/Валерий Леонтьев - Полёт на дельтаплане.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1AuIsz6UhalXMNqgFnCAI6CoCpGbVBdGF?usp=drive_link",
     "key": "",
@@ -59,7 +59,7 @@
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Татьяна Буланова/Татьяна Буланова - Не плачь.html",
+    "text": "Pop, Dance/Татьяна Буланова/Татьяна Буланова - Не плачь.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1AJnSQJSgEkCgcrcBapNTJgDtV5ioJwnb?usp=drive_link",
     "key": "",
@@ -77,7 +77,7 @@
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Полина Гагарина/Полина Гагарина - Спектакль окончен.html",
+    "text": "Pop, Dance/Полина Гагарина/Полина Гагарина - Спектакль окончен.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1OtxslsNsQFhHyuP1CjgOj4EIL8C2ybRF?usp=drive_link",
     "key": "",
@@ -95,7 +95,7 @@
     "tags": [],
     "genre": "New tracks",
     "raiting": 3,
-    "text": "New tracks/Андрей Губин/Андрей Губин - Зима-Холода.html",
+    "text": "Pop, Dance/Андрей Губин/Андрей Губин - Зима-Холода.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/19asjXjiylNfy04roRugmh0YybgCCntoI?usp=drive_link",
     "key": "",
@@ -125,65 +125,6 @@
     "new": true,
     "visible": true
   },
-  {
-    "id": "413",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "414",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "415",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-
-
-
-
-  
   
   {
     "id": "1",
@@ -7478,7 +7419,8 @@
   
   {
     "id": "0",
-    "band": "Band", "title": "Title",
+    "band": "Band", "title": "Song",
+    "tags": [],
     "genre": "",
     "raiting": 0,
     "text": "Template.html",
@@ -7490,6 +7432,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   }
 ]
