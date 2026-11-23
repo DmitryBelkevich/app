@@ -5503,7 +5503,8 @@
     "key": "Gm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Instrument",
+        "key": "Em"
       },
       {
         "title": "Bass Guitar"
