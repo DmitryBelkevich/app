@@ -4819,7 +4819,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": true
