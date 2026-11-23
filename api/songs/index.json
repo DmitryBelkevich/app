@@ -107,24 +107,6 @@
     "new": true,
     "visible": true
   },
-  {
-    "id": "412",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "new",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
   
   {
     "id": "1",
@@ -1432,6 +1414,24 @@
         "title": "Instrument"
       }
     ],
+    "visible": true
+  },
+  {
+    "id": "412",
+    "band": "Владимир Клявин", "title": "Планы",
+    "tags": [],
+    "genre": "new",
+    "raiting": 3,
+    "text": "Rock, Punk/Владимир Клявин/Владимир Клявин - Планы.html",
+    "score": "",
+    "playback": "https://drive.google.com/drive/folders/18XXl_pDiD0yG05N-znDWY3VRF-QNodVb?usp=drive_link",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
     "visible": true
   },
   {
