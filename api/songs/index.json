@@ -8,7 +8,7 @@
     "text": "Pop, Dance/Татьяна Буланова/Татьяна Буланова - Ледяное сердце.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1t2OJaukGBIYn6PbgMSQvOPWwxgBunNUO?usp=drive_link",
-    "key": "",
+    "key": "Am",
     "instruments": [
       {
         "title": "Instrument"
@@ -4819,7 +4819,10 @@
     "key": "Am",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": true
