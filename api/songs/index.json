@@ -636,7 +636,7 @@
   {
     "id": "23",
     "band": "Guns N’ Roses", "title": "Don't Cry",
-    "genre": "Rock, Punk",
+    "genre": "New tracks",
     "raiting": 3,
     "text": "Rock, Punk/Guns N’ Roses/Guns N’ Roses - Don't Cry.html",
     "score": "https://drive.google.com/file/d/174W1Z8uXUpc9g8jWtNT-0_NjZxtQ9XFB/view?usp=drive_link",
@@ -652,6 +652,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
+    "new": true,
     "visible": true
   },
   {
