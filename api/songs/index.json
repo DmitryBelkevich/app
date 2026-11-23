@@ -5503,7 +5503,12 @@
     "key": "Gm",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Instrument",
+        "key": "Em",
+        "transposition": 3
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "visible": true
