@@ -662,7 +662,7 @@
     "id": "24",
     "band": "H.I.M.", "title": "Join Me In Death",
     "tags": ["HIM", "ХИМ"],
-    "genre": "Rock, Punk",
+    "genre": "New tracks",
     "raiting": 3,
     "text": "Rock, Punk/H.I.M/H.I.M. - Join Me In Death.html",
     "score": "https://drive.google.com/file/d/1nj-NwVIBUTvztMpUZO2tvcab6l5A8wOa/view?usp=drive_link",
@@ -676,6 +676,7 @@
         "title": "5-string Bass Guitar"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
