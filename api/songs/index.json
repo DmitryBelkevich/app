@@ -107,6 +107,24 @@
     "new": true,
     "visible": true
   },
+  {
+    "id": "412",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
   
   {
     "id": "1",
@@ -7398,83 +7416,11 @@
     ],
     "visible": true
   },
-
-  {
-    "id": "412",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "413",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "414",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "415",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
   
   {
     "id": "0",
-    "band": "Band", "title": "Title",
+    "band": "Band", "title": "Song",
+    "tags": [],
     "genre": "",
     "raiting": 0,
     "text": "Template.html",
@@ -7486,6 +7432,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   }
 ]
