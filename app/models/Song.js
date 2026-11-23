@@ -143,8 +143,8 @@ export default class Song extends Model {
     this.#transposition += count;
 
     for (const instrument of this.#instruments) {
-      instrument.key.transpose(count);// !!!
       instrument.transpose(count);
+      instrument.key.transpose(count);// !!!
       instrument.content.transpose(-count);
     }
          
