@@ -480,10 +480,12 @@
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Fm",
         "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Fm",
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
