@@ -642,13 +642,16 @@
     "score": "https://drive.google.com/file/d/174W1Z8uXUpc9g8jWtNT-0_NjZxtQ9XFB/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/12VGkAeePdGSKgLKUEV0GGIY9xjMElYiu?usp=drive_link",
     "key": "Abm",
+    "transposition": 1,
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Am",
         "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Am",
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
