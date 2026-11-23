@@ -385,7 +385,7 @@
   {
     "id": "248",
     "band": "Ария", "title": "Ангельская пыль",
-    "genre": "Metal",
+    "genre": "New tracks",
     "raiting": 3,
     "text": "Metal/Ария/Ария - Ангельская пыль.html",
     "score": "",
@@ -395,6 +395,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
@@ -443,7 +444,7 @@
   {
     "id": "223",
     "band": "Ария", "title": "Потерянный рай",
-    "genre": "Metal",
+    "genre": "New tracks",
     "raiting": 3,
     "text": "Metal/Ария/Ария - Потерянный рай.html",
     "score": "",
@@ -589,7 +590,7 @@
   {
     "id": "21",
     "band": "Эпидемия", "title": "Всадник из льда",
-    "genre": "Metal",
+    "genre": "New tracks",
     "raiting": 2,
     "text": "Metal/Эпидемия/Эпидемия - Всадник из льда.html",
     "score": "",
@@ -607,6 +608,7 @@
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
+    "new": true,
     "visible": true
   },
   {
