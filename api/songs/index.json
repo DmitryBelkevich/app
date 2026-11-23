@@ -7132,7 +7132,7 @@
     "id": "383",
     "band": "Муслим Магомаев", "title": "Синяя вечность",
     "tags": ["О море, море..."],
-    "genre": "Estrada",
+    "genre": "new",
     "raiting": 3,
     "text": "Estrada/Муслим Магомаев/Муслим Магомаев - Синяя вечность.html",
     "score": "",
@@ -7142,6 +7142,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
