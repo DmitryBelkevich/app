@@ -2818,7 +2818,7 @@
   {
     "id": "19",
     "band": "Корза", "title": "Тело похудело",
-    "genre": "Rock, Punk",
+    "genre": "New tracks",
     "raiting": 3,
     "text": "Rock, Punk/Корза/Корза - Тело похудело.html",
     "score": "",
@@ -2828,6 +2828,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
@@ -6638,7 +6639,7 @@
     "id": "339",
     "band": "Kentukki", "title": "Замигает свет",
     "tags": ["Кентукки"],
-    "genre": "Rap, Hip-hop",
+    "genre": "New tracks",
     "raiting": 3,
     "text": "Rap, Hip-hop/Kentukki/Kentukki - Замигает свет.html",
     "score": "",
@@ -6648,6 +6649,7 @@
         "title": "Instrument"
       }
     ],
+    "new": true,
     "visible": true
   },
   {
