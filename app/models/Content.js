@@ -2,6 +2,7 @@ import Chord from './Chord.js';
 
 export default class Content {
   #value;
+  // _chords;
 
   constructor(value) {
     this.#value = value;
@@ -14,6 +15,14 @@ export default class Content {
   set value(value) {
     this.#value = value;
   }
+
+  // get chords() {
+  //   return this._chords;
+  // }
+
+  // set chords(chords) {
+  //   this._chords = chords;
+  // }
 
   transpose(count) {
     const element = document.getElementById("text");
