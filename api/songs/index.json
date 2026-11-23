@@ -107,83 +107,6 @@
     "new": true,
     "visible": true
   },
-  {
-    "id": "412",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "413",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "414",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-  {
-    "id": "415",
-    "band": "Band", "title": "Song",
-    "tags": [],
-    "genre": "New tracks",
-    "raiting": 3,
-    "text": "New tracks/Band/Band - Song.html",
-    "score": "",
-    "playback": "",
-    "key": "",
-    "instruments": [
-      {
-        "title": "Instrument"
-      }
-    ],
-    "new": true,
-    "visible": true
-  },
-
-
-
-
-  
   
   {
     "id": "1",
@@ -7473,6 +7396,79 @@
         "title": "Bass Guitar"
       }
     ],
+    "visible": true
+  },
+
+  {
+    "id": "412",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "413",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "414",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
+    "visible": true
+  },
+  {
+    "id": "415",
+    "band": "Band", "title": "Song",
+    "tags": [],
+    "genre": "New tracks",
+    "raiting": 3,
+    "text": "New tracks/Band/Band - Song.html",
+    "score": "",
+    "playback": "",
+    "key": "",
+    "instruments": [
+      {
+        "title": "Instrument"
+      }
+    ],
+    "new": true,
     "visible": true
   },
   
