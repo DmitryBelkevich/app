@@ -5504,7 +5504,8 @@
     "instruments": [
       {
         "title": "Instrument",
-        "key": "Em"
+        "key": "Em",
+        "transposition": 3
       },
       {
         "title": "Bass Guitar"
