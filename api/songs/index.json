@@ -372,9 +372,13 @@
     "text": "Metal/Ария/Ария - Ангельская пыль.html",
     "score": "",
     "playback": "https://drive.google.com/drive/folders/1816p29aFDa1fkR_60Yo-B2jUY_OKmHoz?usp=drive_link",
+    "key": "Em",
     "instruments": [
       {
-        "title": "Instrument"
+        "title": "Guitar"
+      },
+      {
+        "title": "Bass Guitar"
       }
     ],
     "new": true,
@@ -472,16 +476,20 @@
     "score": "https://drive.google.com/file/d/1Kfod3B8jVAZd_-HupOqehgvsa5AThsNg/view?usp=drive_link",
     "playback": "https://drive.google.com/drive/folders/17qQF5qMhdmFp5c74DlZVu5OHcdsphtw2?usp=drive_link",
     "key": "Fm",
+    "transposition": 1,
     "instruments": [
       {
         "title": "Guitar",
+        "key": "Fm",
         "tuning": ["D#", "G#", "C#", "F#", "A#", "D#"]
       },
       {
         "title": "Bass Guitar",
+        "key": "Fm",
         "tuning": ["D#", "G#", "C#", "F#"]
       }
     ],
+    "new": true,
     "visible": true
   },
   {
@@ -2829,7 +2837,7 @@
     "raiting": 3,
     "text": "Rock, Punk/Корза/Корза - Тело похудело.html",
     "score": "",
-    "playback": "",
+    "playback": "https://drive.google.com/drive/folders/1Qj5buVv7E1isjShF7AP8mQ7kIq2EFlgJ?usp=drive_link",
     "instruments": [
       {
         "title": "Instrument"
