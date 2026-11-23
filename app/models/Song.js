@@ -145,7 +145,7 @@ export default class Song extends Model {
     for (const instrument of this.#instruments) {
       instrument.key.transpose(count);// !!!
       instrument.transpose(count);
-      instrument.content.transpose(count);
+      instrument.content.transpose(-count);
     }
          
     // TODO
