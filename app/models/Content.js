@@ -33,7 +33,7 @@ export default class Content {
       
       for (const [str, i] of arr) {
         console.log(str);
-      //   const chord = new Chord(str);
+        const chord = new Chord(str);
       //   chord.transpose(count);
       //   arr[i] = chord.value;
       }
