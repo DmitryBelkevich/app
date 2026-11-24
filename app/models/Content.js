@@ -31,12 +31,12 @@ export default class Content {
     for (const div of divs) {
       const arr = div.textContent.split(" ");
       
-      for (const [str, i] of arr) {
-        const chord = new Chord(str);
+      for (let i = 0; i < arr.length; i++) {
+        const chord = new Chord(arr[i]);
         chord.transpose(count);
         arr[i] = chord.value;
       }
-      // div.textContent = arr.join(" ");
+      div.textContent = arr.join(" ");
     }
 
     this.#value = element.innerHTML;
