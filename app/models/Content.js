@@ -36,9 +36,9 @@ export default class Content {
       //   const chord = new Chord(str);
       //   chord.transpose(count);
       //   arr[i] = chord.value;
-      // }
+      }
       // div.textContent = arr.join(" ");
-    // }
+    }
 
     this.#value = element.innerHTML;
   }
