@@ -29,9 +29,13 @@ export default class Content {
     const divs = Array.from(element.querySelectorAll("div.chords div"));
     
     for (const div of divs) {
-      const chord = new Chord(div.textContent);
-      chord.transpose(count);
-      div.textContent = chord.value;
+      const arr = div.textContent.split(" ");// ['E_', 'Emaj7_']
+      for (const [str, i] of arr) {
+        const chord = new Chord(str);
+        chord.transpose(count);
+        arr[i] = chord.value;
+      }
+      div.textContent = arr.join(" ");
     }
 
     this.#value = element.innerHTML;
