@@ -29,12 +29,12 @@ export default class Content {
     const divs = Array.from(element.querySelectorAll("div.chords div"));
     
     for (const div of divs) {
-      const arr = div.textContent.split(" ");// ['E_', 'Emaj7_']
+      const arr = div.textContent.split(" ");
       
       for (const [str, i] of arr) {
         const chord = new Chord(str);
-        chord.transpose(count);console.log(chord.value);
-      //   arr[i] = chord.value;
+        chord.transpose(count);
+        arr[i] = chord.value;
       }
       // div.textContent = arr.join(" ");
     }
