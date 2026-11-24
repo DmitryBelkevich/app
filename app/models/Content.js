@@ -32,9 +32,8 @@ export default class Content {
       const arr = div.textContent.split(" ");// ['E_', 'Emaj7_']
       
       for (const [str, i] of arr) {
-        console.log(str);
         const chord = new Chord(str);
-      //   chord.transpose(count);
+        chord.transpose(count);console.log(chord.value);
       //   arr[i] = chord.value;
       }
       // div.textContent = arr.join(" ");
