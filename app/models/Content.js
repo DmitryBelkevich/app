@@ -30,7 +30,7 @@ export default class Content {
     
     for (const div of divs) {
       const arr = div.textContent.split(" ");// ['E_', 'Emaj7_']
-      for (const [str, i] of arr) {
+      for (const [str, i] of arr.entries()) {
         const chord = new Chord(str);
         chord.transpose(count);
         arr[i] = chord.value;
